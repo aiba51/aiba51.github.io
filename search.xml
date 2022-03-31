@@ -4556,6 +4556,8 @@
       
         <tags>
             
+            <tag> 文章 </tag>
+            
             <tag> Hexo </tag>
             
             <tag> 模板文件 </tag>
@@ -4569,8 +4571,6 @@
             <tag> Next </tag>
             
             <tag> 安装 </tag>
-            
-            <tag> 文章 </tag>
             
             <tag> 发表日期 </tag>
             
@@ -4615,8 +4615,6 @@
             
             <tag> 蓝牙音箱 </tag>
             
-            <tag> 浪费 </tag>
-            
             <tag> 两件事 </tag>
             
             <tag> 太频繁 </tag>
@@ -4626,6 +4624,8 @@
             <tag> 感觉累 </tag>
             
             <tag> 更新文章 </tag>
+            
+            <tag> 浪费 </tag>
             
         </tags>
       
@@ -6662,9 +6662,9 @@
             
             <tag> B站 </tag>
             
-            <tag> 说明书 </tag>
-            
             <tag> m.2固态 </tag>
+            
+            <tag> 说明书 </tag>
             
             <tag> 主板 </tag>
             
@@ -8598,9 +8598,9 @@
       
         <tags>
             
-            <tag> 会员 </tag>
-            
             <tag> 免费 </tag>
+            
+            <tag> 会员 </tag>
             
             <tag> 软件 </tag>
             
@@ -10988,9 +10988,9 @@
       
         <tags>
             
-            <tag> 抖音 </tag>
-            
             <tag> 割韭菜 </tag>
+            
+            <tag> 抖音 </tag>
             
             <tag> 套路 </tag>
             
@@ -11082,9 +11082,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Github </tag>
+            
+            <tag> Hexo </tag>
             
             <tag> Gitee </tag>
             
@@ -12274,9 +12274,9 @@
             
             <tag> 今天 </tag>
             
-            <tag> 浪费 </tag>
-            
             <tag> 更新文章 </tag>
+            
+            <tag> 浪费 </tag>
             
             <tag> 主观题 </tag>
             
@@ -12307,9 +12307,9 @@
       
         <tags>
             
-            <tag> 安装 </tag>
-            
             <tag> 文章 </tag>
+            
+            <tag> 安装 </tag>
             
             <tag> 教程 </tag>
             
@@ -14642,9 +14642,9 @@
       
         <tags>
             
-            <tag> 抖音 </tag>
-            
             <tag> 免费 </tag>
+            
+            <tag> 抖音 </tag>
             
             <tag> 短视频 </tag>
             
@@ -16548,6 +16548,8 @@
             
             <tag> 优惠券 </tag>
             
+            <tag> 浪费 </tag>
+            
             <tag> 做题任务 </tag>
             
             <tag> 太难了 </tag>
@@ -16555,8 +16557,6 @@
             <tag> 兴趣 </tag>
             
             <tag> 播放量 </tag>
-            
-            <tag> 浪费 </tag>
             
             <tag> 橙心优选 </tag>
             
@@ -18438,19 +18438,19 @@
             
             <tag> 更新 </tag>
             
-            <tag> Hexo </tag>
-            
             <tag> Github </tag>
             
-            <tag> 配置文件 </tag>
+            <tag> Hexo </tag>
             
-            <tag> Git </tag>
+            <tag> 配置文件 </tag>
             
             <tag> 推送 </tag>
             
             <tag> Gitee </tag>
             
             <tag> win10 </tag>
+            
+            <tag> Git </tag>
             
             <tag> 网站配置 </tag>
             
@@ -18542,9 +18542,9 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Github </tag>
+            
+            <tag> Hexo </tag>
             
             <tag> Git </tag>
             
@@ -18605,9 +18605,9 @@
             
             <tag> 路径 </tag>
             
-            <tag> 换电脑 </tag>
-            
             <tag> 迁移 </tag>
+            
+            <tag> 换电脑 </tag>
             
             <tag> mini主机 </tag>
             
@@ -18642,15 +18642,15 @@
       
         <tags>
             
-            <tag> Hexo </tag>
-            
             <tag> Github </tag>
             
-            <tag> 迁移 </tag>
+            <tag> Hexo </tag>
             
             <tag> 电脑 </tag>
             
             <tag> 推送 </tag>
+            
+            <tag> 迁移 </tag>
             
             <tag> Gitee </tag>
             
@@ -18804,8 +18804,6 @@
       
         <tags>
             
-            <tag> 文章 </tag>
-            
             <tag> Gitalk </tag>
             
             <tag> 评论插件 </tag>
@@ -18821,6 +18819,8 @@
             <tag> Utterances </tag>
             
             <tag> 仓库名 </tag>
+            
+            <tag> 文章 </tag>
             
         </tags>
       
