@@ -8264,9 +8264,9 @@
             
             <tag> 小米商城 </tag>
             
-            <tag> 小米 </tag>
-            
             <tag> 月费 </tag>
+            
+            <tag> 小米 </tag>
             
             <tag> 客服 </tag>
             
@@ -8327,9 +8327,9 @@
             
             <tag> 价格 </tag>
             
-            <tag> 借鸡生蛋 </tag>
-            
             <tag> 支付宝 </tag>
+            
+            <tag> 借鸡生蛋 </tag>
             
             <tag> 第一次 </tag>
             
@@ -9004,11 +9004,11 @@
             
             <tag> 白发 </tag>
             
-            <tag> 容乐 </tag>
+            <tag> 漫夭 </tag>
             
             <tag> 宗政无忧 </tag>
             
-            <tag> 漫夭 </tag>
+            <tag> 容乐 </tag>
             
             <tag> 欲望 </tag>
             
@@ -10030,11 +10030,11 @@
             
             <tag> 兴趣 </tag>
             
+            <tag> 心理预期 </tag>
+            
             <tag> 难受 </tag>
             
             <tag> 做什么 </tag>
-            
-            <tag> 心理预期 </tag>
             
             <tag> 女人 </tag>
             
@@ -18699,21 +18699,21 @@
             
             <tag> 白发 </tag>
             
+            <tag> 容齐 </tag>
+            
+            <tag> 天命之毒 </tag>
+            
+            <tag> 宗政无忧 </tag>
+            
             <tag> 全集 </tag>
             
             <tag> 结局 </tag>
             
             <tag> 完美 </tag>
             
-            <tag> 容齐 </tag>
-            
             <tag> 容乐 </tag>
             
-            <tag> 天命之毒 </tag>
-            
             <tag> 烟消云散 </tag>
-            
-            <tag> 宗政无忧 </tag>
             
             <tag> 北临皇帝 </tag>
             
@@ -18748,10 +18748,6 @@
             
             <tag> 容齐 </tag>
             
-            <tag> 天命之毒 </tag>
-            
-            <tag> 宗政无忧 </tag>
-            
             <tag> 漫夭 </tag>
             
             <tag> 初恋 </tag>
@@ -18762,6 +18758,8 @@
             
             <tag> 秦漫 </tag>
             
+            <tag> 天命之毒 </tag>
+            
             <tag> 扶鸢 </tag>
             
             <tag> 林申 </tag>
@@ -18769,6 +18767,8 @@
             <tag> 宗政允赫 </tag>
             
             <tag> 傅筹 </tag>
+            
+            <tag> 宗政无忧 </tag>
             
             <tag> 云贵妃 </tag>
             
@@ -18921,7 +18921,7 @@
       <link href="%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Hexo%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AASSH-Key%E4%B8%80%E8%B5%B7%E6%8E%A8%E9%80%81%E5%A4%9A%E4%B8%AA%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/"/>
       <url>%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Hexo%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AASSH-Key%E4%B8%80%E8%B5%B7%E6%8E%A8%E9%80%81%E5%A4%9A%E4%B8%AA%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</url>
       
-        <content type="html"><![CDATA[<p>我要用<code>SSH</code>密钥这种链接推送其实不是因为它方便，当然也其实很方便，只是要在不设置<code>Git</code>密码的情况下，设置<code>Git</code>密码就要每次都输密码才能推送，所以我后面设置都是留空，这样我一键推送以后就可以去做其他事了。</p><span id="more"></span><p>之前用https这个链接其实也很方便的，至于有的人说每次都要输入密码才可以，我是第一次输入过后面的推送都是不用的，因为现在的<code>win10</code>系统是可以在本地账号里面保存凭据的，有了凭据肯定是不用每次都输密码了。</p><p>所以我要换成<code>SSH</code>这种链接的推送方式不是方便和不方便的问题了，问题是<code>Github</code>不能通过<code>https</code>这种加密链接推送了，几天之前<code>Github</code>就发邮件给我说这种推送方法不能用了，当时也还没有觉得有多大的问题，后面有一天是真的就推送不了，连用了几次一键推送都是失败的，于是就下定决心在昨天把它换了。</p><p>换个推送链接说起来和做起来真的不太难，可是关键的问题是换了之后出问题了，<code>Github</code>倒是能推送上去了，但是<code>Gitee</code>这个平台的仓库就推送不上去了，当时也不知道什么原因，就想着把<code>Gitee</code>这个链接在站点配置文件里注释一下，只保留Github这个单独推送，果然单独推送确实是可以的，那么问题就只在<code>Gitee</code>这一边了。当然其实我也可以用<code>Gitee</code>这里依然保持用<code>https</code>推送，因为那样也是可以的，只是我强迫症犯了，我做事喜欢保持整齐划一，要换自然要两个都换了才行。</p><p>在网上查了一下都没有找到什么答案，最后还是去看了<code>Gitee</code>上面的帮助文档，在文档里面搜了一下关于公钥配置的问题，突然看到可以配置多个<code>SSH-Key</code>的方法：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span>. 一个gitee</span><br><span class="line"><span class="selector-tag">b</span>. 一个github</span><br></pre></td></tr></table></figure><p><strong>解决方法：</strong></p><p>1.生成一个<code>Gitee</code>用的<code>SSH-Key</code></p><figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&#x27;xxxxx@company.com&#x27;</span> -f ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br></pre></td></tr></table></figure><p>2.生成一个<code>github</code>用的<code>SSH-Key</code></p><figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&#x27;xxxxx@qq.com&#x27;</span> -f ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br></pre></td></tr></table></figure><p>3.在<code> ~/.ssh</code> 目录下新建一个<code>config</code>文件，添加如下内容（其中<code>Host</code>和<code>HostName</code>填写<code>git</code>服务器的域名，<code>IdentityFile</code>指定私钥的路径）。这里的<code>config</code>文件怎么创建刚开始我也是搞不懂，其实也不难，就是找到<code>~/.ssh</code>这个文件夹目录，在它里面新建一个文本文档，然后把这个文本文档的名字和后缀改成<code>config</code>，这样就创建好了这个<code>config</code>文件，然后用<code>notepad++</code>打开添加如下内容后保存。</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># gitee</span></span><br><span class="line">Host gitee.com</span><br><span class="line">HostName gitee.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment"># github</span></span><br><span class="line">Host github.com</span><br><span class="line">HostName github.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br></pre></td></tr></table></figure><p>4.用ssh命令分别测试</p><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh -T <span class="symbol">git@</span>gitee.com</span><br><span class="line">ssh -T <span class="symbol">git@</span>github.com</span><br></pre></td></tr></table></figure><p>以gitee为例，成功的话会返回下图内容<br><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Hexo%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AASSH-Key%E4%B8%80%E8%B5%B7%E6%8E%A8%E9%80%81%E5%A4%9A%E4%B8%AA%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/1.png"><br>到这里两个平台的<code>SSH-Key</code>就配置完成了，把两个不同平台的公钥分别添加到各自的平台，用<code>notepad++</code>分别打开<code>gitee_id_rsa.pub</code>和<code>github_id_rsa.pub</code>，打开后复制到添加公钥的地方就可以。</p><p>这里要注意<code>Gitee</code>的公钥必须要添加到个人公钥才可以，具体不能推送的问题应该也不是要配置多个<code>SSH</code>密钥的这个问题，这个报错的问题是我后面才发现的，那就是我把电脑上创建的公钥放到部署公钥那里去了，发现这个问题是因为配置了两个密钥还是不能推送，后面一看原因就是在这里，因为部署公钥只能下载不能写入，就是这个公钥只能从这里部署到其他服务器上去，而不能用这个公钥从<code>Git</code>推送写入到仓库里面。</p><p>后面才发现后面有一行如下图的小字：<br><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Hexo%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AASSH-Key%E4%B8%80%E8%B5%B7%E6%8E%A8%E9%80%81%E5%A4%9A%E4%B8%AA%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/2.png"><br>说是要添加个人公钥才能对仓库进行写操作，到这里总算搞清楚问题所在了，那就先把添加到部署公钥这个删了，点了那个蓝色一行小字，跳转过去添加个人公钥，从本地电脑<code>notepad++</code>上打开的公钥直接复制过去添加确定输入密码就可以了。</p><p>然后回到<code>Git</code>，设置推送的配置信息</p><figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">config</span> --<span class="keyword">global</span> user<span class="variable">.name</span> <span class="string">&quot;yourname&quot;</span></span><br><span class="line">git <span class="keyword">config</span> --<span class="keyword">global</span> user<span class="variable">.email</span> <span class="string">&quot;youremail&quot;</span></span><br></pre></td></tr></table></figure><p>重新使用一键编译和推送，然后发现正常推送了，也不需要输入密码的操作了，是的第一次就不需要，这个确实要比<code>https</code>这种方便很多了，只要一键推送了后面的事都可以不用管了，只要它不推送失败，都没有什么问题，打开网站只要刷新一下就更新了。</p>]]></content>
+        <content type="html"><![CDATA[<p>我要用<code>SSH</code>密钥这种链接推送其实不是因为它方便，当然也其实很方便，只是要在不设置<code>Git</code>密码的情况下，设置<code>Git</code>密码就要每次都输密码才能推送，所以我后面设置都是留空，这样我一键推送以后就可以去做其他事了。</p><span id="more"></span><p>之前用https这个链接其实也很方便的，至于有的人说每次都要输入密码才可以，我是第一次输入过后面的推送都是不用的，因为现在的<code>win10</code>系统是可以在本地账号里面保存凭据的，有了凭据肯定是不用每次都输密码了。</p><p>所以我要换成<code>SSH</code>这种链接的推送方式不是方便和不方便的问题了，问题是<code>Github</code>不能通过<code>https</code>这种加密链接推送了，几天之前<code>Github</code>就发邮件给我说这种推送方法不能用了，当时也还没有觉得有多大的问题，后面有一天是真的就推送不了，连用了几次一键推送都是失败的，于是就下定决心在昨天把它换了。</p><p>换个推送链接说起来和做起来真的不太难，可是关键的问题是换了之后出问题了，<code>Github</code>倒是能推送上去了，但是<code>Gitee</code>这个平台的仓库就推送不上去了，当时也不知道什么原因，就想着把<code>Gitee</code>这个链接在站点配置文件里注释一下，只保留Github这个单独推送，果然单独推送确实是可以的，那么问题就只在<code>Gitee</code>这一边了。当然其实我也可以用<code>Gitee</code>这里依然保持用<code>https</code>推送，因为那样也是可以的，只是我强迫症犯了，我做事喜欢保持整齐划一，要换自然要两个都换了才行。</p><p>在网上查了一下都没有找到什么答案，最后还是去看了<code>Gitee</code>上面的帮助文档，在文档里面搜了一下关于公钥配置的问题，突然看到可以配置多个<code>SSH-Key</code>的方法：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span>. 一个gitee</span><br><span class="line"><span class="selector-tag">b</span>. 一个github</span><br></pre></td></tr></table></figure><p><strong>解决方法：</strong></p><p>1.生成一个<code>Gitee</code>用的<code>SSH-Key</code></p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&#x27;xxxxx@company.com&#x27;</span> -f ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之前的版本</span></span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;xxxxx@company.com&quot;</span> -f ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之后的版本</span></span><br></pre></td></tr></table></figure><p>2.生成一个<code>github</code>用的<code>SSH-Key</code></p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&#x27;xxxxx@qq.com&#x27;</span> -f ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之前的版本</span></span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;xxxxx@qq.com&quot;</span> -f ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之后的版本</span></span><br></pre></td></tr></table></figure><p>3.在<code> ~/.ssh</code> 目录下新建一个<code>config</code>文件，添加如下内容（其中<code>Host</code>和<code>HostName</code>填写<code>git</code>服务器的域名，<code>IdentityFile</code>指定私钥的路径）。这里的<code>config</code>文件怎么创建刚开始我也是搞不懂，其实也不难，就是找到<code>~/.ssh</code>这个文件夹目录，在它里面新建一个文本文档，然后把这个文本文档的名字和后缀改成<code>config</code>，这样就创建好了这个<code>config</code>文件，然后用<code>notepad++</code>打开添加如下内容后保存。</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># gitee</span></span><br><span class="line">Host gitee.com</span><br><span class="line">HostName gitee.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment"># github</span></span><br><span class="line">Host github.com</span><br><span class="line">HostName github.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br></pre></td></tr></table></figure><p>4.添加私钥,分别按顺序输入下面的代码</p><figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ssh-agent bash</span><br><span class="line">ssh-add ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line">ssh-add ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br></pre></td></tr></table></figure><p>注意：电脑重置系统以后就算密钥还在，这几个指令也必须按顺序添加。</p><p>5.把公钥添加到远程服务器Gitee和Github<br>到这里两个平台的<code>SSH-Key</code>就配置完成了，把两个不同平台的公钥分别添加到各自的平台，用<code>notepad++</code>分别打开<code>gitee_id_rsa.pub</code>和<code>github_id_rsa.pub</code>，打开后复制到添加公钥的地方就可以。</p><p>6.用ssh命令分别测试</p><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh -T <span class="symbol">git@</span>gitee.com</span><br><span class="line">ssh -T <span class="symbol">git@</span>github.com</span><br></pre></td></tr></table></figure><p>以gitee为例，成功的话会返回下图内容<br><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Hexo%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AASSH-Key%E4%B8%80%E8%B5%B7%E6%8E%A8%E9%80%81%E5%A4%9A%E4%B8%AA%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/1.png"></p><p>7.设置推送的配置信息</p><figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">config</span> --<span class="keyword">global</span> user<span class="variable">.name</span> <span class="string">&quot;yourname&quot;</span></span><br><span class="line">git <span class="keyword">config</span> --<span class="keyword">global</span> user<span class="variable">.email</span> <span class="string">&quot;youremail&quot;</span></span><br></pre></td></tr></table></figure><p>这里要注意<code>Gitee</code>的公钥必须要添加到个人公钥才可以，具体不能推送的问题应该也不是要配置多个<code>SSH</code>密钥的这个问题，这个报错的问题是我后面才发现的，那就是我把电脑上创建的公钥放到部署公钥那里去了，发现这个问题是因为配置了两个密钥还是不能推送，后面一看原因就是在这里，因为部署公钥只能下载不能写入，就是这个公钥只能从这里部署到其他服务器上去，而不能用这个公钥从<code>Git</code>推送写入到仓库里面。</p><p>后面才发现后面有一行如下图的小字：<br><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Hexo%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AASSH-Key%E4%B8%80%E8%B5%B7%E6%8E%A8%E9%80%81%E5%A4%9A%E4%B8%AA%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/2.png"><br>说是要添加个人公钥才能对仓库进行写操作，到这里总算搞清楚问题所在了，那就先把添加到部署公钥这个删了，点了那个蓝色一行小字，跳转过去添加个人公钥，从本地电脑<code>notepad++</code>上打开的公钥直接复制过去添加确定输入密码就可以了。</p><p>重新使用一键编译和推送，然后发现正常推送了，也不需要输入密码的操作了，是的第一次就不需要，这个确实要比<code>https</code>这种方便很多了，只要一键推送了后面的事都可以不用管了，只要它不推送失败，都没有什么问题，打开网站只要刷新一下就更新了。</p>]]></content>
       
       
       <categories>
