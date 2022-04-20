@@ -4586,9 +4586,9 @@
     
     
     <entry>
-      <title>用Hexo和github搭建网站并成功接入谷歌广告</title>
-      <link href="Hexo/%E7%94%A8hexo%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99%E5%B9%B6%E6%88%90%E5%8A%9F%E6%8E%A5%E5%85%A5%E8%B0%B7%E6%AD%8C%E5%B9%BF%E5%91%8A/"/>
-      <url>Hexo/%E7%94%A8hexo%E5%92%8Cgithub%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99%E5%B9%B6%E6%88%90%E5%8A%9F%E6%8E%A5%E5%85%A5%E8%B0%B7%E6%AD%8C%E5%B9%BF%E5%91%8A/</url>
+      <title>用Hexo和Github搭建网站并成功接入谷歌广告</title>
+      <link href="Hexo/%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99%E5%B9%B6%E6%88%90%E5%8A%9F%E6%8E%A5%E5%85%A5%E8%B0%B7%E6%AD%8C%E5%B9%BF%E5%91%8A/"/>
+      <url>Hexo/%E7%94%A8Hexo%E5%92%8CGithub%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99%E5%B9%B6%E6%88%90%E5%8A%9F%E6%8E%A5%E5%85%A5%E8%B0%B7%E6%AD%8C%E5%B9%BF%E5%91%8A/</url>
       
         <content type="html"><![CDATA[<p>我的网站搭建也基本上有四五个月了，记得是三月份搭建好的，之前也申请过谷歌广告，但是一直都没有通过，我想是我用的之前那个域名有问题，那个域名是免费使用的，是国外的一个网络服务商的，但是才用了大概三个月吧，他就不让用了。</p><span id="more"></span><p>后来我又重新在阿里云上注册了一个，是一个新顶级域名，价格也不贵一年才六块钱。好像也就是在上个月吧，我又重新申请了谷歌广告，好像也就在前几天吧，我用手机打开我的网站，居然可以看到广告了，我就知道已经通过了，果然换个域名就可以了。之前是没有通过就会收到邮件提醒，这次是没有邮件提醒我通过了。</p><p>虽然现在还没有人点击上面的广告，还没有收入，但是也是一种新的尝试。我用的是自动广告模式，感觉这模式在移动端还是可以的，我试过挺有效率的，广告投得很多，现在的广告也主要是移动浏览器上还可以看，PC端都被屏蔽的，所以选择自动广告模式就可以了，反正代码那些也不用管的。</p>]]></content>
       
@@ -4602,15 +4602,15 @@
       
         <tags>
             
-            <tag> 代码 </tag>
+            <tag> Github </tag>
             
-            <tag> hexo </tag>
+            <tag> Hexo </tag>
+            
+            <tag> 代码 </tag>
             
             <tag> 搭建网站 </tag>
             
             <tag> 申请 </tag>
-            
-            <tag> github </tag>
             
             <tag> 接入谷歌广告 </tag>
             
@@ -6600,9 +6600,9 @@
       
         <tags>
             
-            <tag> 原则 </tag>
-            
             <tag> 世界 </tag>
+            
+            <tag> 原则 </tag>
             
             <tag> 围炉夜话 </tag>
             
@@ -7899,15 +7899,15 @@
     
     <entry>
       <title>网站终于弄好了，插入的本地图片也可以正常打开了</title>
-      <link href="%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E7%BD%91%E7%AB%99%E7%BB%88%E4%BA%8E%E5%BC%84%E5%A5%BD%E4%BA%86%EF%BC%8C%E6%8F%92%E5%85%A5%E7%9A%84%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E4%B9%9F%E5%8F%AF%E4%BB%A5%E6%AD%A3%E5%B8%B8%E6%89%93%E5%BC%80%E4%BA%86/"/>
-      <url>%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E7%BD%91%E7%AB%99%E7%BB%88%E4%BA%8E%E5%BC%84%E5%A5%BD%E4%BA%86%EF%BC%8C%E6%8F%92%E5%85%A5%E7%9A%84%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E4%B9%9F%E5%8F%AF%E4%BB%A5%E6%AD%A3%E5%B8%B8%E6%89%93%E5%BC%80%E4%BA%86/</url>
+      <link href="Hexo/%E7%BD%91%E7%AB%99%E7%BB%88%E4%BA%8E%E5%BC%84%E5%A5%BD%E4%BA%86%EF%BC%8C%E6%8F%92%E5%85%A5%E7%9A%84%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E4%B9%9F%E5%8F%AF%E4%BB%A5%E6%AD%A3%E5%B8%B8%E6%89%93%E5%BC%80%E4%BA%86/"/>
+      <url>Hexo/%E7%BD%91%E7%AB%99%E7%BB%88%E4%BA%8E%E5%BC%84%E5%A5%BD%E4%BA%86%EF%BC%8C%E6%8F%92%E5%85%A5%E7%9A%84%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87%E4%B9%9F%E5%8F%AF%E4%BB%A5%E6%AD%A3%E5%B8%B8%E6%89%93%E5%BC%80%E4%BA%86/</url>
       
-        <content type="html"><![CDATA[<p>昨晚上弄了一晚上，把以前写的带图片的一些文章重新编辑了一下，图片不显示的原因是要安装hexo-asset-image插件，然后再打开网站配置文件-config.yml中的post_asset_folder这里设置成true。</p><span id="more"></span><p>这样设置后如果之前就有文章带有图片的，就重新编译就可以显示图片了，没有的就新建一篇文章，然后它会自动新建一个和文章名字同名的文件夹，把图片放到这个文件夹里面，通过用makedown语法<code>![](图片名.格式)</code>这样就可以直接引用了，可以说还是非常方便的。</p><p>昨晚还发现了一个以前没有发现的新功能，数据文件夹，这个功能是从hexo3.0开始就已经有的。只是我之前用的一直是久版本的，所以一直都没有去使用这个功能，这个功能在主题next8.2的配置文件中可以直接开启，在source下新建一个文件夹_date，在这个数据文件夹里面在新建要开启的文件，我用到的是head.njk这个文件，所以就只新建这个文件就可以了。</p><p>有了这个文件就可以很方便的放谷歌广告代码了，直接把谷歌广告代码放到这个文件里面就可以，再也不用大刀阔斧地去改主题文件了，那样改错了也麻烦。只要是需要放在<head></head>中的代码都可以放在里面就可以，可以说是真的很方便，不会写代码也轻松建网站了，比起要放到某个文件夹下的某个文件一大堆代码中是真方便很多。</p>]]></content>
+        <content type="html"><![CDATA[<p>昨晚上弄了一晚上，把以前写的带图片的一些文章重新编辑了一下，图片不显示的原因是要安装hexo-asset-image插件，然后再打开网站配置文件-config.yml中的post_asset_folder这里设置成true。</p><span id="more"></span><p>这样设置后如果之前就有文章带有图片的，就重新编译就可以显示图片了，没有的就新建一篇文章，然后它会自动新建一个和文章名字同名的文件夹，把图片放到这个文件夹里面，通过用Makedown语法<code>![](图片名.格式)</code>这样就可以直接引用了，可以说还是非常方便的。</p><p>昨晚还发现了一个以前没有发现的新功能，数据文件夹，这个功能是从Hexo3.0开始就已经有的。只是我之前用的一直是旧版本的，所以一直都没有去使用这个功能，这个功能在主题Next8.2的配置文件中可以直接开启，在source下新建一个文件夹_date，在这个数据文件夹里面在新建要开启的文件，我用到的是head.njk这个文件，所以就只新建这个文件就可以了。</p><p>有了这个文件就可以很方便的放谷歌广告代码了，直接把谷歌广告代码放到这个文件里面就可以，再也不用大刀阔斧地去改主题文件了，那样改错了也麻烦。只要是需要放在<head></head>中的代码都可以放在里面就可以，可以说是真的很方便，不会写代码也轻松建网站了，比起要放到某个文件夹下的某个文件一大堆代码中是真方便很多。</p>]]></content>
       
       
       <categories>
           
-          <category> 日常记录 </category>
+          <category> Hexo </category>
           
       </categories>
       
@@ -7937,41 +7937,41 @@
     
     
     <entry>
-      <title>网站差不多快弄好了，已经部署到Github和gitee了</title>
-      <link href="%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E7%BD%91%E7%AB%99%E5%B7%AE%E4%B8%8D%E5%A4%9A%E5%BF%AB%E5%BC%84%E5%A5%BD%E4%BA%86%EF%BC%8C%E5%B7%B2%E7%BB%8F%E9%83%A8%E7%BD%B2%E5%88%B0github%E5%92%8Cgitee%E4%BA%86/"/>
-      <url>%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E7%BD%91%E7%AB%99%E5%B7%AE%E4%B8%8D%E5%A4%9A%E5%BF%AB%E5%BC%84%E5%A5%BD%E4%BA%86%EF%BC%8C%E5%B7%B2%E7%BB%8F%E9%83%A8%E7%BD%B2%E5%88%B0github%E5%92%8Cgitee%E4%BA%86/</url>
+      <title>网站差不多快弄好了，已经部署到Github和Gitee了</title>
+      <link href="Hexo/%E7%BD%91%E7%AB%99%E5%B7%AE%E4%B8%8D%E5%A4%9A%E5%BF%AB%E5%BC%84%E5%A5%BD%E4%BA%86%EF%BC%8C%E5%B7%B2%E7%BB%8F%E9%83%A8%E7%BD%B2%E5%88%B0github%E5%92%8Cgitee%E4%BA%86/"/>
+      <url>Hexo/%E7%BD%91%E7%AB%99%E5%B7%AE%E4%B8%8D%E5%A4%9A%E5%BF%AB%E5%BC%84%E5%A5%BD%E4%BA%86%EF%BC%8C%E5%B7%B2%E7%BB%8F%E9%83%A8%E7%BD%B2%E5%88%B0github%E5%92%8Cgitee%E4%BA%86/</url>
       
-        <content type="html"><![CDATA[<p>现在是已经上传的线上了，就是以前的一些带图片的文章现在图片，显示不了，看来还得再弄一下才行，经过几个晚上是已经恢复到以前的差不多样子了，新主题还增加了，多语言支持和聊天系统支持。</p><span id="more"></span><p>但是以前的一些东西现在是用不了，以前我用的cnzz来统计网站数据的，现在这个版本的next不支持显示被隐藏了，也不知道代码是不是对能不能统计到，现在都是未知了。</p><p>没有重新做之前发一篇文章到github等了半天怎么都没有更新，我还发觉奇怪了，昨晚重新部署才知道，原来我的github仓库上面有两个分支，一个是hexo一个master，后面应该是github更新了，把hexo设置成默认的了，那我是把网站部署在master这个分支上的，所以一直刷新网站都是没有更新。</p><p>后面在设置里面看了一下才知道，把默认的分支改成master这个分支以后，网站就重新更新了。</p><p>之前没有升级的时候部署到gitee后更新了然后打开网站就是一片空白，现在升级了这个问题也解决了。</p>]]></content>
+        <content type="html"><![CDATA[<p>现在是已经上传的线上了，就是以前的一些带图片的文章现在图片，显示不了，看来还得再弄一下才行，经过几个晚上是已经恢复到以前的差不多样子了，新主题还增加了，多语言支持和聊天系统支持。</p><span id="more"></span><p>但是以前的一些东西现在是用不了，以前我用的CNZZ来统计网站数据的，现在这个版本的Next不支持显示被隐藏了，也不知道代码是不是对的能不能统计到，现在都是未知了。</p><p>没有重新做之前发一篇文章到Github等了半天怎么都没有更新，我还发觉奇怪了，昨晚重新部署才知道，原来我的Github仓库上面有两个分支，一个是Hexo一个master，后面应该是Github更新了，把Hexo设置成默认的了，那我是把网站部署在master这个分支上的，所以一直刷新网站都是没有更新。</p><p>后面在设置里面看了一下才知道，把默认的分支改成master这个分支以后，网站就重新更新了。</p><p>之前没有升级的时候部署到Gitee后更新了然后打开网站就是一片空白，现在升级了这个问题也解决了。</p>]]></content>
       
       
       <categories>
           
-          <category> 日常记录 </category>
+          <category> Hexo </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> gitee </tag>
+            <tag> Github </tag>
             
-            <tag> hexo </tag>
+            <tag> Hexo </tag>
+            
+            <tag> Next </tag>
+            
+            <tag> CNZZ </tag>
+            
+            <tag> Gitee </tag>
             
             <tag> 网站 </tag>
             
             <tag> 主题 </tag>
-            
-            <tag> github </tag>
             
             <tag> 部署 </tag>
             
             <tag> 聊天系统 </tag>
             
             <tag> 多语言 </tag>
-            
-            <tag> cnzz </tag>
-            
-            <tag> next </tag>
             
             <tag> 分支 </tag>
             
@@ -10823,24 +10823,26 @@
     
     <entry>
       <title>昨天我把自己的网站同步到Gitee了</title>
-      <link href="%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E6%98%A8%E5%A4%A9%E6%88%91%E6%8A%8A%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99%E5%90%8C%E6%AD%A5%E5%88%B0gitee%E4%BA%86/"/>
-      <url>%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E6%98%A8%E5%A4%A9%E6%88%91%E6%8A%8A%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99%E5%90%8C%E6%AD%A5%E5%88%B0gitee%E4%BA%86/</url>
+      <link href="Hexo/%E6%98%A8%E5%A4%A9%E6%88%91%E6%8A%8A%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99%E5%90%8C%E6%AD%A5%E5%88%B0Gitee%E4%BA%86/"/>
+      <url>Hexo/%E6%98%A8%E5%A4%A9%E6%88%91%E6%8A%8A%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99%E5%90%8C%E6%AD%A5%E5%88%B0Gitee%E4%BA%86/</url>
       
-        <content type="html"><![CDATA[<p>之前就有看到过别人说可以把hexo搭建的网站同步到github和gitee两个平台，说是gitee在国内的访问速度比较快，但是一直都没有去做过，这段时间有空去码云把以前的账号重新登陆了，还开通了免费的企业版。</p><span id="more"></span><p>免费的企业版比个人版好的就是空间的域名能够自定义的比个人版要好点，个人版好的都被人抢完了。</p><p>我用自己注册的域名来做这个空间域名感觉还是很不错的，因为很简短才四个字母，这些都是越短越好记。</p><p>gitee不好的就是自定义域名要钱，还有每次更新都要去点一次那个更新按钮，不过我也没有多余的域名，就先用着给的空间域名吧，这种空间域名其实也是可以被搜索引擎收录的，我用必应搜了下很多用这种域名的只要内容好也被收录了，但是百度就没有收录的。</p><p>免费的也不需要那么多了，反正就当个备用好了，要是真的想搞谷歌广告那些，还是用github自己买个域名来绑定会比较好，二级域名可能弄不了谷歌广告，我以前记得我用免费的域名都不行，还是自己买了个域名来换了才审核通过了。</p><p>速度的话电脑上访问感觉没有快多少，手机浏览器上感觉会快一点。</p><hr>]]></content>
+        <content type="html"><![CDATA[<p>之前就有看到过别人说可以把Hexo搭建的网站同步到Github和Gitee两个平台，说是Gitee在国内的访问速度比较快，但是一直都没有去做过，这段时间有空去码云把以前的账号重新登陆了，还开通了免费的企业版。</p><span id="more"></span><p>免费的企业版比个人版好的就是空间的域名能够自定义的比个人版要好点，个人版好的都被人抢完了。</p><p>我用自己注册的域名来做这个空间域名感觉还是很不错的，因为很简短才四个字母，这些都是越短越好记。</p><p>Gitee不好的就是自定义域名要钱，还有每次更新都要去点一次那个更新按钮，不过我也没有多余的域名，就先用着给的空间域名吧，这种空间域名其实也是可以被搜索引擎收录的，我用必应搜了下很多用这种域名的只要内容好也被收录了，但是百度就没有收录的。</p><p>免费的也不需要那么多了，反正就当个备用好了，要是真的想搞谷歌广告那些，还是用Github自己买个域名来绑定会比较好，二级域名可能弄不了谷歌广告，我以前记得我用免费的域名都不行，还是自己买了个域名来换了才审核通过了。</p><p>速度的话电脑上访问感觉没有快多少，手机浏览器上感觉会快一点。</p>]]></content>
       
       
       <categories>
           
-          <category> 日常记录 </category>
+          <category> Hexo </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> gitee </tag>
+            <tag> Github </tag>
             
-            <tag> hexo </tag>
+            <tag> Hexo </tag>
+            
+            <tag> Gitee </tag>
             
             <tag> 免费 </tag>
             
@@ -10849,8 +10851,6 @@
             <tag> 网站 </tag>
             
             <tag> 搜索引擎 </tag>
-            
-            <tag> github </tag>
             
             <tag> 企业版 </tag>
             
@@ -11683,15 +11683,15 @@
     
     <entry>
       <title>把Hexo网站文件转移到固态硬盘，编译速度翻了几倍</title>
-      <link href="%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E6%8A%8AHexo%E7%BD%91%E7%AB%99%E6%96%87%E4%BB%B6%E8%BD%AC%E7%A7%BB%E5%88%B0%E5%9B%BA%E6%80%81%E7%A1%AC%E7%9B%98%EF%BC%8C%E7%BC%96%E8%AF%91%E9%80%9F%E5%BA%A6%E7%BF%BB%E4%BA%86%E5%87%A0%E5%80%8D/"/>
-      <url>%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E6%8A%8AHexo%E7%BD%91%E7%AB%99%E6%96%87%E4%BB%B6%E8%BD%AC%E7%A7%BB%E5%88%B0%E5%9B%BA%E6%80%81%E7%A1%AC%E7%9B%98%EF%BC%8C%E7%BC%96%E8%AF%91%E9%80%9F%E5%BA%A6%E7%BF%BB%E4%BA%86%E5%87%A0%E5%80%8D/</url>
+      <link href="Hexo/%E6%8A%8AHexo%E7%BD%91%E7%AB%99%E6%96%87%E4%BB%B6%E8%BD%AC%E7%A7%BB%E5%88%B0%E5%9B%BA%E6%80%81%E7%A1%AC%E7%9B%98%EF%BC%8C%E7%BC%96%E8%AF%91%E9%80%9F%E5%BA%A6%E7%BF%BB%E4%BA%86%E5%87%A0%E5%80%8D/"/>
+      <url>Hexo/%E6%8A%8AHexo%E7%BD%91%E7%AB%99%E6%96%87%E4%BB%B6%E8%BD%AC%E7%A7%BB%E5%88%B0%E5%9B%BA%E6%80%81%E7%A1%AC%E7%9B%98%EF%BC%8C%E7%BC%96%E8%AF%91%E9%80%9F%E5%BA%A6%E7%BF%BB%E4%BA%86%E5%87%A0%E5%80%8D/</url>
       
         <content type="html"><![CDATA[<p>之前我从旧电脑换过来为了图方便就一直都放在移动机械硬盘里，但是编译的速度真的非常的满，因为编译完了有一个公共文件是需要移动的，所以这里就很慢了，这都是因为机械硬盘写入和读取太慢的原因。</p><span id="more"></span><p>以前也听人在网上说过Hexo编译很慢的问题，其实这个和建站工具没有关系，还是要和建站文件有没有放在固态硬盘有很大的关系，和电脑性能也没有关系，当然有没有固态硬盘也是对电脑性能有影响的。</p><p>其实编译慢就只有一个原因那就是没有一块速度快的固态硬盘，特别是M.2 NVME的那速度简直快得飞起，以前我把建站文件放在旧电脑的时候就是放在SATA的固态上的，那时候感觉不是太快，编译一次大概是需要三分多钟，但是直到我换到新电脑上放在机械硬盘里，我才感觉这个才是龟速，我想为什么新的电脑性能比旧的高了几倍，为什么这编译速度反而还变慢了。</p><p>最后换到M.2的固态上才知道是机械硬盘的速度太慢拖累的，现在一键推送加编译的过程到成功推送到Github和Gitee也不到一分钟就完成了，放在机械硬盘里每次都需要用七八分钟才可以，终于算是明白了，机械硬盘就只适合用来装电影和单机游戏之类的，需要速度快了的都不适合放在上面。</p>]]></content>
       
       
       <categories>
           
-          <category> 日常记录 </category>
+          <category> Hexo </category>
           
       </categories>
       
@@ -13406,15 +13406,15 @@
     
     <entry>
       <title>如何零成本搭建属于自己的网站</title>
-      <link href="%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/%E5%A6%82%E4%BD%95%E9%9B%B6%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99/"/>
-      <url>%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/%E5%A6%82%E4%BD%95%E9%9B%B6%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99/</url>
+      <link href="Hexo/%E5%A6%82%E4%BD%95%E9%9B%B6%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99/"/>
+      <url>Hexo/%E5%A6%82%E4%BD%95%E9%9B%B6%E6%88%90%E6%9C%AC%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E7%9A%84%E7%BD%91%E7%AB%99/</url>
       
-        <content type="html"><![CDATA[<p>上一篇写到了如何学会搭建一个网站，但是那个搭建的是动态网站还是需要点成本的，这一篇主要写如何零成本搭建一个属于自己的静态网站。静态网站好处自然是很多的，不用自己维护服务器，一次搭建好了以后就只需要专心的写文章发文章就可以了。</p><span id="more"></span><p>目前最好的搭建静态网站的方法就是用Github+hexo来搭建，因为用这两个搭建网站的人很多，自然在网上能找到的教程自然是也很多。Github免费的提供了服务器和域名，而且服务器还不用自己去维护，这点可以说是非常的方便，也可以真正说是实现了零成本搭建属于自己的网站了。</p><p>以前我还没有用这个搭建网站的时候，我还觉得有点难，但是当自己做起来以后是真的不难，因为网上的教程是真的很多。主要就是在本地电脑安装一下node.js环境和安装git这个软件，用得最多的其实是git，网站搭建好了以后每次创建文章和更新文章都会用到这个软件，这个软件用起来也不是很难，因为每次用到的都是那几个命令，记不住的可以直接写在记事本上，要用的时候直接复制粘贴就可以了。</p><p>用这个hexo搭建网站还有一个好处，那就是比较安全，因为没有数据库那些自然不会被黑客攻击。在本地的文章是用Markdown格式写成的，然后在通过node.js编译成HTML格式的文件上传到Github的，所以在Github上的就是一堆HTML文件，别人拿去都没有什么用。</p><p>不用自己买域名也不用自己买服务器，所以说这个比较适合新手学习搭建网站，只需要找个教程照着安装几个软件，自己设置一下配置文件，设置一下主题文件，就是这么简单的一个网站就很容易搭建成功了，所以说零成本搭建网站我比较推荐用这种方式。</p><p>虽然优点很多，但是它也有个缺点就是每次更新文章都要在自己电脑上更新才可以，如果自己没有电脑的还是可以忽略了，因为如果自己没有电脑是不可能用这种方式来搭建网站的，还有如果换电脑的时候也需要重新在新电脑上安装Git和node.js，然后再把老电脑的hexo文件复制过去，就这点不好而已。但是既然都不用花钱，还怕什么麻烦呢，只要想搭建还是值得去一试的。</p><p>想试下用这种方式搭建网站的可以去网上搜下教程，因为网上重复的教程实在太多了，所以我这里不详写具体的细节，这里就是只作为一个分享的窗口。</p><hr>]]></content>
+        <content type="html"><![CDATA[<p>上一篇写到了如何学会搭建一个网站，但是那个搭建的是动态网站还是需要点成本的，这一篇主要写如何零成本搭建一个属于自己的静态网站。静态网站好处自然是很多的，不用自己维护服务器，一次搭建好了以后就只需要专心的写文章发文章就可以了。</p><span id="more"></span><p>目前最好的搭建静态网站的方法就是用Github+Hexo来搭建，因为用这两个搭建网站的人很多，自然在网上能找到的教程自然是也很多。Github免费的提供了服务器和域名，而且服务器还不用自己去维护，这点可以说是非常的方便，也可以真正说是实现了零成本搭建属于自己的网站了。</p><p>以前我还没有用这个搭建网站的时候，我还觉得有点难，但是当自己做起来以后是真的不难，因为网上的教程是真的很多。主要就是在本地电脑安装一下Node.js环境和安装Git这个软件，用得最多的其实是Git，网站搭建好了以后每次创建文章和更新文章都会用到这个软件，这个软件用起来也不是很难，因为每次用到的都是那几个命令，记不住的可以直接写在记事本上，要用的时候直接复制粘贴就可以了。</p><p>用这个Hexo搭建网站还有一个好处，那就是比较安全，因为没有数据库那些自然不会被黑客攻击。在本地的文章是用Markdown格式写成的，然后在通过Node.js编译成HTML格式的文件上传到Github的，所以在Github上的就是一堆HTML文件，别人拿去都没有什么用。</p><p>不用自己买域名也不用自己买服务器，所以说这个比较适合新手学习搭建网站，只需要找个教程照着安装几个软件，自己设置一下配置文件，设置一下主题文件，就是这么简单的一个网站就很容易搭建成功了，所以说零成本搭建网站我比较推荐用这种方式。</p><p>虽然优点很多，但是它也有个缺点就是每次更新文章都要在自己电脑上更新才可以，如果自己没有电脑的还是可以忽略了，因为如果自己没有电脑是不可能用这种方式来搭建网站的，还有如果换电脑的时候也需要重新在新电脑上安装Git和Node.js，然后再把老电脑的Hexo文件复制过去，就这点不好而已。但是既然都不用花钱，还怕什么麻烦呢，只要想搭建还是值得去一试的。</p><p>想试下用这种方式搭建网站的可以去网上搜下教程，因为网上重复的教程实在太多了，所以我这里不详写具体的细节，这里就是只作为一个分享的窗口。</p>]]></content>
       
       
       <categories>
           
-          <category> 互联网科技 </category>
+          <category> Hexo </category>
           
       </categories>
       
@@ -13423,7 +13423,7 @@
             
             <tag> Github </tag>
             
-            <tag> hexo </tag>
+            <tag> Hexo </tag>
             
             <tag> 教程 </tag>
             
@@ -13445,7 +13445,7 @@
             
             <tag> Markdown </tag>
             
-            <tag> node.js </tag>
+            <tag> Node.js </tag>
             
             <tag> HTML </tag>
             
@@ -15366,15 +15366,15 @@
     
     <entry>
       <title>利用Hexo和GitHub搭建属于自己完全免费的网站</title>
-      <link href="%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E5%88%A9%E7%94%A8Hexo%E5%92%8CGitHub%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E7%BD%91%E7%AB%99/"/>
-      <url>%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/%E5%88%A9%E7%94%A8Hexo%E5%92%8CGitHub%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E7%BD%91%E7%AB%99/</url>
+      <link href="Hexo/%E5%88%A9%E7%94%A8Hexo%E5%92%8CGitHub%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E7%BD%91%E7%AB%99/"/>
+      <url>Hexo/%E5%88%A9%E7%94%A8Hexo%E5%92%8CGitHub%E6%90%AD%E5%BB%BA%E5%B1%9E%E4%BA%8E%E8%87%AA%E5%B7%B1%E5%AE%8C%E5%85%A8%E5%85%8D%E8%B4%B9%E7%9A%84%E7%BD%91%E7%AB%99/</url>
       
         <content type="html"><![CDATA[<h1 id="一、先在电脑本地实现"><a href="#一、先在电脑本地实现" class="headerlink" title="一、先在电脑本地实现"></a>一、先在电脑本地实现</h1><p>安装Hexo之前需要下载安装：<br>• <a href="http://nodejs.org/" target="_blank" rel="noopener nofollow"><strong>Node.js</strong></a><br>• <a href="http://git-scm.com/" target="_blank" rel="noopener nofollow"><strong>Git</strong></a></p><p>如果您的电脑中已经安装上述必备程序，那么恭喜您！接下来只需要在Git Bash中使用 npm 即可完成 Hexo 的安装。</p><span id="more"></span><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-<span class="keyword">cli</span></span><br></pre></td></tr></table></figure><p>如果没有安装这是<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener nofollow"><strong>Hexo</strong></a>的官网安装教程，这两个程序安装很简单，就不多说了。</p><h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-<span class="keyword">cli</span></span><br></pre></td></tr></table></figure><p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。我这里在D盘新建blog夹。</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init <span class="regexp">/d/</span>blog</span><br><span class="line">$ cd <span class="regexp">/d/</span>blog</span><br><span class="line">$ npm install</span><br></pre></td></tr></table></figure><h2 id="本地调试"><a href="#本地调试" class="headerlink" title="本地调试"></a>本地调试</h2><p>目前为止，已经搭建好自己的Hexo博客了，但是只能在本机上查看。执行以下命令</p><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo clean</span><br><span class="line"><span class="variable">$ </span>hexo g </span><br><span class="line"><span class="variable">$ </span>hexo s</span><br></pre></td></tr></table></figure><p>然后在浏览器中输入 localhost:4000 就可以看到自己的博客了。</p><p>但是只能在本地查看，如果想让别人也能访问，那么就需要部署到Github上面，下面我们就部署上去。</p><h1 id="二、上传Github"><a href="#二、上传Github" class="headerlink" title="二、上传Github"></a>二、上传Github</h1><p>注册<a href="https://github.com/" target="_blank" rel="noopener nofollow"><strong>Github</strong></a>账户<br>前往Github网站，注册一个新用户。注意用户名不要用大写，后面的二级域名要用到，大写的会出问题，用邮箱注册的一定前往邮箱去验证邮件。要不然之后可能会有小问题。</p><h2 id="创建一个新的repository"><a href="#创建一个新的repository" class="headerlink" title="创建一个新的repository"></a>创建一个新的repository</h2><p>在自己的Github主页右下角,创建一个新的repository。比如我的Github用户名为gitzhaoyang，那么我创建的repository的名字应该是 gitzhaoyang.github.io</p><p><strong>这里严重注意:</strong></p><p>一定要以你的Github用户名.github.io创建，创建的类型是必须公开的，不然后面的网页功能不能使用。假如我没有用gitzhaoyang.github.io而是用了mungo.github.io，那么当我浏览器访问博客的时候会出现404错误。这里并不是没有部署成功，而是把它部署在了这里:</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http:<span class="regexp">//gi</span>tzhaoyang.github.io/mungo.github.io</span><br></pre></td></tr></table></figure><p>所以，如果想直接gitzhaoyang.github.io访问，那么就需要和用户名保持一致。题主在这里吃了不小的苦头，最后给Github客服发邮件才知道原因。</p><h2 id="将本地的文件部署（上传）到Github账户中"><a href="#将本地的文件部署（上传）到Github账户中" class="headerlink" title="将本地的文件部署（上传）到Github账户中"></a>将本地的文件部署（上传）到Github账户中</h2><p>安装 hexo-deployer-git。</p><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git <span class="comment">--save</span></span><br></pre></td></tr></table></figure><p>编辑本地Hexo目录下文件_comfig.yml，在最后添加如下代码（在你修改时，把 gitzhaoyang 要替换成你自己的用户名）</p><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">deploy:</span> </span><br><span class="line"><span class="symbol">type:</span> git </span><br><span class="line"><span class="symbol">repository:</span> http:<span class="comment">//github.com/Gitzhaoyang/gitzhaoyang.github.io.git </span></span><br><span class="line"><span class="symbol">branch:</span> master</span><br></pre></td></tr></table></figure><p>.yml文件对格式规范要求很严格，type: repository: branch: 前面有两个空格，冒号后面都有一个空格，不然会提示错误。</p><p>配置文件完成以后就可以部署到Github了</p><p>生成站点文件并推送至远程库。执行</p><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean <span class="meta">&amp;&amp; hexo deploy</span></span><br></pre></td></tr></table></figure><p>命令。前者清除站点文件，后者重新生成站点文件并将之推送到指定的库分支。</p><p>上传完成后就可以通过gitzhaoyang.github.io看到自己的网站了。</p><h1 id="三、申请免费域名"><a href="#三、申请免费域名" class="headerlink" title="三、申请免费域名"></a>三、申请免费域名</h1><p>免费的域名可以到<a href="https://my.freenom.com/" target="_blank" rel="noopener nofollow"><strong>freenom</strong></a>这个网站去注册，注册也是很简单的，先用自己的邮箱注册这个网站，然后再选择自己想要的域名就可以了，这个网站有很多后缀的域名是可以免费使用一年的，比如我的用的是<a href="https://airibi.cf/" target="_blank" rel="noopener"><strong>airibi.cf</strong></a>就是可以直接使用一年的。</p><h1 id="四、域名解析"><a href="#四、域名解析" class="headerlink" title="四、域名解析"></a>四、域名解析</h1><p>域名注册好了以后可以通过<a href="https://www.dnspod.cn/" target="_blank" rel="noopener nofollow"><strong>dnspod</strong></a>这个网站来解析到自己GitHub的网站上，这个网站是属于腾讯的云服务，所以直接用QQ登录就可以了，进入后台以后点击域名解析，再点击添加域名然后里面就会出现两条默认的NS记录，将这两条默认的NS记录复制到刚刚注册域名的<a href="https://my.freenom.com/" target="_blank" rel="noopener nofollow"><strong>freenom</strong></a>这个网站的域名管理那里，找到自己的域名，在解析那里选择DNS记录，把复制过来的两条NS记录添加到这里,刚申请的域名就和这个DNS解析网站连在一起了。</p><p>Ping出你Github网站的二级域名的IP地址，一定要用你ping出的IP地址，因为原来的二级域名就是支持https的，用其他的IP地址可能会解析错误或者用不了https。</p><p>Ping出二级域名的IP地址后在<a href="https://www.dnspod.cn/" target="_blank" rel="noopener nofollow"><strong>dnspod</strong></a>这个网站上添加两条A记录，一条是带www的一条是不带的，记录值都是你ping出来的IP地址，以后想要通过网站SEO验证比如谷歌站长平台，也同样可以在这里添加TXT记录就可以。</p><p>解析完成后，在Github你的仓库后台添加你的域名，如果强制使用https那里还不能打勾，那就需要在等几分钟，说明解析还没有完成，解析完成后那里就可以打勾强制使用https了，并且是带有证书的，到这里域名解析完成可以用你的域名来访问你的网站了。</p><h1 id="五、添加CNAME文件"><a href="#五、添加CNAME文件" class="headerlink" title="五、添加CNAME文件"></a>五、添加CNAME文件</h1><p>在本地网站目录source文件夹里添加CNAME文件，这个CNAME文件在你添加域名的时候就会自动添加到你Github的网站根目录里，但是为方便可以把它克隆或者下载下来放到source文件夹里，或者自己在这个文件下自己创建这个文件，里面放上你的域名也是可以的，这样做每次更新网站，这个文件就不会被覆盖了，也不用每次添加域名就能访问了。</p><p>到这里免费的网站就已经搭建完成了，后面就是安装主题和修改配置文件了，这里的内容很细也很分散，我有机会再写另外的一篇。</p>]]></content>
       
       
       <categories>
           
-          <category> 日常记录 </category>
+          <category> Hexo </category>
           
       </categories>
       
@@ -15493,9 +15493,9 @@
             
             <tag> 推荐 </tag>
             
-            <tag> 收入 </tag>
-            
             <tag> 阅读量 </tag>
+            
+            <tag> 收入 </tag>
             
             <tag> 挂载广告 </tag>
             
@@ -15608,8 +15608,6 @@
             
             <tag> 头条文章 </tag>
             
-            <tag> 阅读量 </tag>
-            
             <tag> 公众号 </tag>
             
             <tag> 新功能 </tag>
@@ -15619,6 +15617,8 @@
             <tag> 页面模板 </tag>
             
             <tag> 菜单 </tag>
+            
+            <tag> 阅读量 </tag>
             
             <tag> 粉丝 </tag>
             
@@ -15737,6 +15737,8 @@
       
         <tags>
             
+            <tag> 世界 </tag>
+            
             <tag> 写作 </tag>
             
             <tag> 心情 </tag>
@@ -15748,8 +15750,6 @@
             <tag> 生活点滴 </tag>
             
             <tag> 关联 </tag>
-            
-            <tag> 世界 </tag>
             
             <tag> 价值观 </tag>
             
@@ -19037,15 +19037,15 @@
     
     <entry>
       <title>Hexo网站配置多个SSH-Key一起推送多个远程仓库</title>
-      <link href="%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Hexo%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AASSH-Key%E4%B8%80%E8%B5%B7%E6%8E%A8%E9%80%81%E5%A4%9A%E4%B8%AA%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/"/>
-      <url>%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Hexo%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AASSH-Key%E4%B8%80%E8%B5%B7%E6%8E%A8%E9%80%81%E5%A4%9A%E4%B8%AA%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</url>
+      <link href="Hexo/Hexo%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AASSH-Key%E4%B8%80%E8%B5%B7%E6%8E%A8%E9%80%81%E5%A4%9A%E4%B8%AA%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/"/>
+      <url>Hexo/Hexo%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AASSH-Key%E4%B8%80%E8%B5%B7%E6%8E%A8%E9%80%81%E5%A4%9A%E4%B8%AA%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/</url>
       
-        <content type="html"><![CDATA[<p>我要用<code>SSH</code>密钥这种链接推送其实不是因为它方便，当然也其实很方便，只是要在不设置<code>Git</code>密码的情况下，设置<code>Git</code>密码就要每次都输密码才能推送，所以我后面设置都是留空，这样我一键推送以后就可以去做其他事了。</p><span id="more"></span><p>之前用https这个链接其实也很方便的，至于有的人说每次都要输入密码才可以，我是第一次输入过后面的推送都是不用的，因为现在的<code>win10</code>系统是可以在本地账号里面保存凭据的，有了凭据肯定是不用每次都输密码了。</p><p>所以我要换成<code>SSH</code>这种链接的推送方式不是方便和不方便的问题了，问题是<code>Github</code>不能通过<code>https</code>这种加密链接推送了，几天之前<code>Github</code>就发邮件给我说这种推送方法不能用了，当时也还没有觉得有多大的问题，后面有一天是真的就推送不了，连用了几次一键推送都是失败的，于是就下定决心在昨天把它换了。</p><p>换个推送链接说起来和做起来真的不太难，可是关键的问题是换了之后出问题了，<code>Github</code>倒是能推送上去了，但是<code>Gitee</code>这个平台的仓库就推送不上去了，当时也不知道什么原因，就想着把<code>Gitee</code>这个链接在站点配置文件里注释一下，只保留Github这个单独推送，果然单独推送确实是可以的，那么问题就只在<code>Gitee</code>这一边了。当然其实我也可以用<code>Gitee</code>这里依然保持用<code>https</code>推送，因为那样也是可以的，只是我强迫症犯了，我做事喜欢保持整齐划一，要换自然要两个都换了才行。</p><p>在网上查了一下都没有找到什么答案，最后还是去看了<code>Gitee</code>上面的帮助文档，在文档里面搜了一下关于公钥配置的问题，突然看到可以配置多个<code>SSH-Key</code>的方法：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span>. 一个gitee</span><br><span class="line"><span class="selector-tag">b</span>. 一个github</span><br></pre></td></tr></table></figure><p><strong>解决方法：</strong></p><p>1.生成一个<code>Gitee</code>用的<code>SSH-Key</code></p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&#x27;xxxxx@company.com&#x27;</span> -f ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之前的版本</span></span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;xxxxx@company.com&quot;</span> -f ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之后的版本</span></span><br></pre></td></tr></table></figure><p>2.生成一个<code>github</code>用的<code>SSH-Key</code></p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&#x27;xxxxx@qq.com&#x27;</span> -f ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之前的版本</span></span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;xxxxx@qq.com&quot;</span> -f ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之后的版本</span></span><br></pre></td></tr></table></figure><p>3.在<code> ~/.ssh</code> 目录下新建一个<code>config</code>文件，添加如下内容（其中<code>Host</code>和<code>HostName</code>填写<code>git</code>服务器的域名，<code>IdentityFile</code>指定私钥的路径）。这里的<code>config</code>文件怎么创建刚开始我也是搞不懂，其实也不难，就是找到<code>~/.ssh</code>这个文件夹目录，在它里面新建一个文本文档，然后把这个文本文档的名字和后缀改成<code>config</code>，这样就创建好了这个<code>config</code>文件，然后用<code>notepad++</code>打开添加如下内容后保存。</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># gitee</span></span><br><span class="line">Host gitee.com</span><br><span class="line">HostName gitee.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment"># github</span></span><br><span class="line">Host github.com</span><br><span class="line">HostName github.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br></pre></td></tr></table></figure><p>4.添加私钥,分别按顺序输入下面的代码</p><figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ssh-agent bash</span><br><span class="line">ssh-add ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line">ssh-add ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br></pre></td></tr></table></figure><p>注意：电脑重置系统以后就算密钥还在，这几个指令也必须按顺序添加。</p><p>5.把公钥添加到远程服务器Gitee和Github<br>到这里两个平台的<code>SSH-Key</code>就配置完成了，把两个不同平台的公钥分别添加到各自的平台，用<code>notepad++</code>分别打开<code>gitee_id_rsa.pub</code>和<code>github_id_rsa.pub</code>，打开后复制到添加公钥的地方就可以。</p><p>6.用ssh命令分别测试</p><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh -T <span class="symbol">git@</span>gitee.com</span><br><span class="line">ssh -T <span class="symbol">git@</span>github.com</span><br></pre></td></tr></table></figure><p>以gitee为例，成功的话会返回下图内容<br><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Hexo%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AASSH-Key%E4%B8%80%E8%B5%B7%E6%8E%A8%E9%80%81%E5%A4%9A%E4%B8%AA%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/1.png"></p><p>7.设置推送的配置信息</p><figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">config</span> --<span class="keyword">global</span> user<span class="variable">.name</span> <span class="string">&quot;yourname&quot;</span></span><br><span class="line">git <span class="keyword">config</span> --<span class="keyword">global</span> user<span class="variable">.email</span> <span class="string">&quot;youremail&quot;</span></span><br></pre></td></tr></table></figure><p>这里要注意<code>Gitee</code>的公钥必须要添加到个人公钥才可以，具体不能推送的问题应该也不是要配置多个<code>SSH</code>密钥的这个问题，这个报错的问题是我后面才发现的，那就是我把电脑上创建的公钥放到部署公钥那里去了，发现这个问题是因为配置了两个密钥还是不能推送，后面一看原因就是在这里，因为部署公钥只能下载不能写入，就是这个公钥只能从这里部署到其他服务器上去，而不能用这个公钥从<code>Git</code>推送写入到仓库里面。</p><p>后面才发现后面有一行如下图的小字：<br><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Hexo%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AASSH-Key%E4%B8%80%E8%B5%B7%E6%8E%A8%E9%80%81%E5%A4%9A%E4%B8%AA%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/2.png"><br>说是要添加个人公钥才能对仓库进行写操作，到这里总算搞清楚问题所在了，那就先把添加到部署公钥这个删了，点了那个蓝色一行小字，跳转过去添加个人公钥，从本地电脑<code>notepad++</code>上打开的公钥直接复制过去添加确定输入密码就可以了。</p><p>重新使用一键编译和推送，然后发现正常推送了，也不需要输入密码的操作了，是的第一次就不需要，这个确实要比<code>https</code>这种方便很多了，只要一键推送了后面的事都可以不用管了，只要它不推送失败，都没有什么问题，打开网站只要刷新一下就更新了。</p>]]></content>
+        <content type="html"><![CDATA[<p>我要用<code>SSH</code>密钥这种链接推送其实不是因为它方便，当然也其实很方便，只是要在不设置<code>Git</code>密码的情况下，设置<code>Git</code>密码就要每次都输密码才能推送，所以我后面设置都是留空，这样我一键推送以后就可以去做其他事了。</p><span id="more"></span><p>之前用https这个链接其实也很方便的，至于有的人说每次都要输入密码才可以，我是第一次输入过后面的推送都是不用的，因为现在的<code>win10</code>系统是可以在本地账号里面保存凭据的，有了凭据肯定是不用每次都输密码了。</p><p>所以我要换成<code>SSH</code>这种链接的推送方式不是方便和不方便的问题了，问题是<code>Github</code>不能通过<code>https</code>这种加密链接推送了，几天之前<code>Github</code>就发邮件给我说这种推送方法不能用了，当时也还没有觉得有多大的问题，后面有一天是真的就推送不了，连用了几次一键推送都是失败的，于是就下定决心在昨天把它换了。</p><p>换个推送链接说起来和做起来真的不太难，可是关键的问题是换了之后出问题了，<code>Github</code>倒是能推送上去了，但是<code>Gitee</code>这个平台的仓库就推送不上去了，当时也不知道什么原因，就想着把<code>Gitee</code>这个链接在站点配置文件里注释一下，只保留Github这个单独推送，果然单独推送确实是可以的，那么问题就只在<code>Gitee</code>这一边了。当然其实我也可以用<code>Gitee</code>这里依然保持用<code>https</code>推送，因为那样也是可以的，只是我强迫症犯了，我做事喜欢保持整齐划一，要换自然要两个都换了才行。</p><p>在网上查了一下都没有找到什么答案，最后还是去看了<code>Gitee</code>上面的帮助文档，在文档里面搜了一下关于公钥配置的问题，突然看到可以配置多个<code>SSH-Key</code>的方法：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span>. 一个gitee</span><br><span class="line"><span class="selector-tag">b</span>. 一个github</span><br></pre></td></tr></table></figure><p><strong>解决方法：</strong></p><p>1.生成一个<code>Gitee</code>用的<code>SSH-Key</code></p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&#x27;xxxxx@company.com&#x27;</span> -f ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之前的版本</span></span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;xxxxx@company.com&quot;</span> -f ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之后的版本</span></span><br></pre></td></tr></table></figure><p>2.生成一个<code>github</code>用的<code>SSH-Key</code></p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&#x27;xxxxx@qq.com&#x27;</span> -f ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之前的版本</span></span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;xxxxx@qq.com&quot;</span> -f ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之后的版本</span></span><br></pre></td></tr></table></figure><p>3.在<code> ~/.ssh</code> 目录下新建一个<code>config</code>文件，添加如下内容（其中<code>Host</code>和<code>HostName</code>填写<code>git</code>服务器的域名，<code>IdentityFile</code>指定私钥的路径）。这里的<code>config</code>文件怎么创建刚开始我也是搞不懂，其实也不难，就是找到<code>~/.ssh</code>这个文件夹目录，在它里面新建一个文本文档，然后把这个文本文档的名字和后缀改成<code>config</code>，这样就创建好了这个<code>config</code>文件，然后用<code>notepad++</code>打开添加如下内容后保存。</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># gitee</span></span><br><span class="line">Host gitee.com</span><br><span class="line">HostName gitee.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment"># github</span></span><br><span class="line">Host github.com</span><br><span class="line">HostName github.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br></pre></td></tr></table></figure><p>4.添加私钥,分别按顺序输入下面的代码</p><figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ssh-agent bash</span><br><span class="line">ssh-add ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line">ssh-add ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br></pre></td></tr></table></figure><p>注意：电脑重置系统以后就算密钥还在，这几个指令也必须按顺序添加。</p><p>5.把公钥添加到远程服务器Gitee和Github<br>到这里两个平台的<code>SSH-Key</code>就配置完成了，把两个不同平台的公钥分别添加到各自的平台，用<code>notepad++</code>分别打开<code>gitee_id_rsa.pub</code>和<code>github_id_rsa.pub</code>，打开后复制到添加公钥的地方就可以。</p><p>6.用ssh命令分别测试</p><figure class="highlight angelscript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh -T <span class="symbol">git@</span>gitee.com</span><br><span class="line">ssh -T <span class="symbol">git@</span>github.com</span><br></pre></td></tr></table></figure><p>以gitee为例，成功的话会返回下图内容<br><img data-src="/Hexo/Hexo%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AASSH-Key%E4%B8%80%E8%B5%B7%E6%8E%A8%E9%80%81%E5%A4%9A%E4%B8%AA%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/1.png"></p><p>7.设置推送的配置信息</p><figure class="highlight verilog"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git <span class="keyword">config</span> --<span class="keyword">global</span> user<span class="variable">.name</span> <span class="string">&quot;yourname&quot;</span></span><br><span class="line">git <span class="keyword">config</span> --<span class="keyword">global</span> user<span class="variable">.email</span> <span class="string">&quot;youremail&quot;</span></span><br></pre></td></tr></table></figure><p>这里要注意<code>Gitee</code>的公钥必须要添加到个人公钥才可以，具体不能推送的问题应该也不是要配置多个<code>SSH</code>密钥的这个问题，这个报错的问题是我后面才发现的，那就是我把电脑上创建的公钥放到部署公钥那里去了，发现这个问题是因为配置了两个密钥还是不能推送，后面一看原因就是在这里，因为部署公钥只能下载不能写入，就是这个公钥只能从这里部署到其他服务器上去，而不能用这个公钥从<code>Git</code>推送写入到仓库里面。</p><p>后面才发现后面有一行如下图的小字：<br><img data-src="/Hexo/Hexo%E7%BD%91%E7%AB%99%E9%85%8D%E7%BD%AE%E5%A4%9A%E4%B8%AASSH-Key%E4%B8%80%E8%B5%B7%E6%8E%A8%E9%80%81%E5%A4%9A%E4%B8%AA%E8%BF%9C%E7%A8%8B%E4%BB%93%E5%BA%93/2.png"><br>说是要添加个人公钥才能对仓库进行写操作，到这里总算搞清楚问题所在了，那就先把添加到部署公钥这个删了，点了那个蓝色一行小字，跳转过去添加个人公钥，从本地电脑<code>notepad++</code>上打开的公钥直接复制过去添加确定输入密码就可以了。</p><p>重新使用一键编译和推送，然后发现正常推送了，也不需要输入密码的操作了，是的第一次就不需要，这个确实要比<code>https</code>这种方便很多了，只要一键推送了后面的事都可以不用管了，只要它不推送失败，都没有什么问题，打开网站只要刷新一下就更新了。</p>]]></content>
       
       
       <categories>
           
-          <category> 日常记录 </category>
+          <category> Hexo </category>
           
       </categories>
       
@@ -19060,9 +19060,9 @@
             
             <tag> 配置文件 </tag>
             
-            <tag> 推送 </tag>
-            
             <tag> Gitee </tag>
+            
+            <tag> 推送 </tag>
             
             <tag> win10 </tag>
             
@@ -19097,25 +19097,23 @@
     
     
     <entry>
-      <title>hexo搭建网站之用MarkdownPad2发文排版</title>
-      <link href="%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/hexo%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99%E4%B9%8B%E7%94%A8MarkdownPad2%E5%8F%91%E6%96%87%E6%8E%92%E7%89%88/"/>
-      <url>%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/hexo%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99%E4%B9%8B%E7%94%A8MarkdownPad2%E5%8F%91%E6%96%87%E6%8E%92%E7%89%88/</url>
+      <title>Hexo搭建网站之用MarkdownPad2发文排版</title>
+      <link href="Hexo/Hexo%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99%E4%B9%8B%E7%94%A8MarkdownPad2%E5%8F%91%E6%96%87%E6%8E%92%E7%89%88/"/>
+      <url>Hexo/Hexo%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99%E4%B9%8B%E7%94%A8MarkdownPad2%E5%8F%91%E6%96%87%E6%8E%92%E7%89%88/</url>
       
-        <content type="html"><![CDATA[<p>我用hexo和GitHub搭建网站已经快3个月了，主题设置这些也基本上完善了，文章也有几十篇了，总结出来一些用MarkdownPad2排版文章的经验分享出来给大家。</p><span id="more"></span><p>我用的主题是next主题，这个主题还是挺不错的有很多人使用，搜索引擎收录得也是挺快，我的网站才没有多久都已经被谷歌和必应收录了，由于百度蜘蛛被GitHub屏蔽了，所以百度是收录不了我网站的，这个主题对于个人做博客网站来说是相当可以的了。</p><p>也是支持文章封面的，在用MarkdownPad2写文章的时候用自定义摘要，就是用<code>&lt;！-- more --&gt;</code>把要当作摘要的部分隔开，这里用的如果是文字，那就是把文章第一段作为文章摘要部分，如果是图片那就是把第一张图片作为摘要，在网站上看到的效果就是这篇文章的封面图。在网站上点开标题或者阅读全文就可以就可以看全篇文章，我的图片是没有用到图床那些的，我是直接用了hexo插件和Markdown语法从本地电脑上传的，只要图片不是太大的，一般两三百K的图片打开也是挺快的。</p><p>当然想要方便的话，我还是比较推荐把摘要符这些每篇文章都要用的放在文章模板那里，这样每次创建文章它就会自动一起创建这些。</p>]]></content>
+        <content type="html"><![CDATA[<p>我用Hexo和GitHub搭建网站已经快3个月了，主题设置这些也基本上完善了，文章也有几十篇了，总结出来一些用MarkdownPad2排版文章的经验分享出来给大家。</p><span id="more"></span><p>我用的主题是Next主题，这个主题还是挺不错的有很多人使用，搜索引擎收录得也是挺快，我的网站才没有多久都已经被谷歌和必应收录了，由于百度蜘蛛被GitHub屏蔽了，所以百度是收录不了我网站的，这个主题对于个人做博客网站来说是相当可以的了。</p><p>也是支持文章封面的，在用MarkdownPad2写文章的时候用自定义摘要，就是用<code>&lt;！-- more --&gt;</code>把要当作摘要的部分隔开，这里用的如果是文字，那就是把文章第一段作为文章摘要部分，如果是图片那就是把第一张图片作为摘要，在网站上看到的效果就是这篇文章的封面图。在网站上点开标题或者阅读全文就可以就可以看全篇文章，我的图片是没有用到图床那些的，我是直接用了Hexo插件和Markdown语法从本地电脑上传的，只要图片不是太大的，一般两三百K的图片打开也是挺快的。</p><p>当然想要方便的话，我还是比较推荐把摘要符这些每篇文章都要用的放在文章模板那里，这样每次创建文章它就会自动一起创建这些。</p>]]></content>
       
       
       <categories>
           
-          <category> 日常记录 </category>
+          <category> Hexo </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> next主题 </tag>
-            
-            <tag> hexo </tag>
+            <tag> Hexo </tag>
             
             <tag> 搭建网站 </tag>
             
@@ -19126,6 +19124,8 @@
             <tag> GitHub </tag>
             
             <tag> 排版文章 </tag>
+            
+            <tag> Next主题 </tag>
             
             <tag> 百度蜘蛛 </tag>
             
@@ -19143,15 +19143,15 @@
     
     <entry>
       <title>Hexo推送失败的问题解决</title>
-      <link href="%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Hexo%E6%8E%A8%E9%80%81%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
-      <url>%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Hexo%E6%8E%A8%E9%80%81%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</url>
+      <link href="Hexo/Hexo%E6%8E%A8%E9%80%81%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+      <url>Hexo/Hexo%E6%8E%A8%E9%80%81%E5%A4%B1%E8%B4%A5%E7%9A%84%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</url>
       
         <content type="html"><![CDATA[<p>错误失败的问题就如以下：</p><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Unlink of file &#x27;.git/objects/pack/pack</span><br><span class="line">-<span class="number">2334</span>b<span class="number">7896</span>f1a646c<span class="number">0137</span>9d<span class="number">3725</span>4fad<span class="number">0944</span>xxxxxxxx</span><br><span class="line">idx&#x27; failed. Should I try again? (y/n)</span><br></pre></td></tr></table></figure><span id="more"></span><p>一直按y也是没有用一直重复，网上的各种方法都试过了，但是都没有用，包括重新去Git官网重新下载安装Git，问题还是没有得到解决，这个问题也是苦恼了我一个晚上，但是踏破铁鞋无觅处，得来全不费工夫，我首先就是想到查看<code>.deploy_git</code>这个文件夹的属性，因为这个文件夹每次<code>hexo d</code>它都会更新一次，这一不看属性不知道一看吓了我一跳，TM的居然占了4G多的硬盘空间，话说我这一个小博客哪来这么多的文件，这简直就是一个巨无霸了。</p><p>后面又在网上查找了一下看到说这个文件夹是可以删除的，那当然是毫不犹豫的删掉它了，再每次<code>hexo d</code>它都会重新更新一次干嘛不删掉呢，删掉之后我重新用一键编译推送命令<code>hexo clean &amp;&amp; hexo deploy</code>更新推送，这一次居然问题解决了，只是时间比平时用得多了一点。</p><p>再次打开Git刚创建的这个文件夹看了下属性，这次终于不是我被它吓一跳了，而是感到很惊喜，这一次居然只占用300多M的硬盘空间了，真后悔早知道直接把它删了重新更新就可以解决问题，还走那么多弯路，但是不能保证长期有用，估计推送次数多了，它也还会重新变成巨无霸，所以如果以后遇到同样的问题还是得删，这个应该是Git设计有问题，为了追求每次推送的速度，所以每次都是往这个文件夹里增加文件，而不是每次用新的覆盖旧的，长此以往这个文件夹就会变得越来越大，到最后大到不能再继续写入就推送失败了。这个和QQ文件夹一个原理，QQ文件夹当里面文件大一定程度，那QQ发语音都会发不了，所以这个QQ文件就需要经常的删除，这个Git也是这个原理。</p><p>推送到Github成功以后自然要在浏览器上打开网站看下有没有什么不妥的地方，这也是给我的第二个惊喜的地方，之前打开网站一直很慢还以为是Github的访问速度问题，现在看来还真的不是了，这次打开可以用秒速来形容，真的比以往的打开速度非比寻常的快，没有想到删除这个文件夹带来的还有意外惊喜，看来以后还是要经常删一下才行啊。</p><p>仔细想一想还真的是觉得不可思议，先前那么4G多的巨无霸全部推送到Github那网站速度能快才怪了，一下加载4G多的文件网速再怎么快都会感觉慢了，相当于一下子下载一个4K的电影，用迅雷下载最快也要7到8分钟才行啊，到这里这一次Hexo网站更新遇到的问题就完美的解决了，还有意外收获感觉很值得记录一下，也对以后自己和别人有帮助。</p>]]></content>
       
       
       <categories>
           
-          <category> 日常记录 </category>
+          <category> Hexo </category>
           
       </categories>
       
@@ -19202,15 +19202,15 @@
     
     <entry>
       <title>Hexo换电脑迁移</title>
-      <link href="%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Hexo%E6%8D%A2%E7%94%B5%E8%84%91%E8%BF%81%E7%A7%BB/"/>
-      <url>%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Hexo%E6%8D%A2%E7%94%B5%E8%84%91%E8%BF%81%E7%A7%BB/</url>
+      <link href="Hexo/Hexo%E6%8D%A2%E7%94%B5%E8%84%91%E8%BF%81%E7%A7%BB/"/>
+      <url>Hexo/Hexo%E6%8D%A2%E7%94%B5%E8%84%91%E8%BF%81%E7%A7%BB/</url>
       
         <content type="html"><![CDATA[<p>因为自己组装好了一台mini主机了，所以就想把以前的旧电脑上的Hexo网站的文件复制到新电脑上，这里我用的是换到移动硬盘里，因为这样更新应该是比直接放在电脑的硬盘里面要好一些，毕竟移动硬盘只要在其他电脑安装了那几个程序那插上移动硬盘也是可以照样接着更新。</p><span id="more"></span><p>这个方法也很简单，就是先在新电脑上安装Node.js和Git，然后再用Git安装Hexo，安装好以后初始化到要放站点文件的移动硬盘盘符。</p><p>新电脑弄好了就开始从旧电脑复制了，这里旧电脑上先要升级一下Hexo版本和插件，主题不用升级，升级完成以后复制整个站点文件到移动硬盘刚在新电脑上安装初始化的那个文件夹，同名文件夹复制过来覆盖就可以了，比如我这里旧电脑上的网站文件的路径是/d/blog，但是我移动硬盘在新电脑里也刚好有个D盘，所以这里我就不用改了，就直接复制旧站点的整个blog文件夹来覆盖新建的这个就可以了。</p><p>复制完了就把移动硬盘插到新电脑上，切换到网站的根目录，然后用hexo v检查一下版本，能出现版本就说明已经迁移成功了，我这里已经是成功了并且Hexo的版本是我刚在旧电脑上更新的5.30版本，这个是目前最新的版本。</p><p>本地预览也完全没有问题，唯一不足的缺点就是以前发布的文章全部是按今天发布的来显示了，这个也没有什么好的解决办法，也只能是这样了，发这一篇文章上去就看线上的效果如何了。这里不建议一下就删除旧电脑上的站点文件，如果不行还可以从那里恢复，只要新增加的文章不是太多还是可以同步一下的。</p>]]></content>
       
       
       <categories>
           
-          <category> 日常记录 </category>
+          <category> Hexo </category>
           
       </categories>
       
@@ -19243,15 +19243,15 @@
     
     <entry>
       <title>Hexo换电脑更新，能推送上去了才算迁移成功</title>
-      <link href="%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Hexo%E6%8D%A2%E7%94%B5%E8%84%91%E6%9B%B4%E6%96%B0%EF%BC%8C%E8%83%BD%E6%8E%A8%E9%80%81%E4%B8%8A%E5%8E%BB%E4%BA%86%E6%89%8D%E7%AE%97%E8%BF%81%E7%A7%BB%E6%88%90%E5%8A%9F/"/>
-      <url>%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Hexo%E6%8D%A2%E7%94%B5%E8%84%91%E6%9B%B4%E6%96%B0%EF%BC%8C%E8%83%BD%E6%8E%A8%E9%80%81%E4%B8%8A%E5%8E%BB%E4%BA%86%E6%89%8D%E7%AE%97%E8%BF%81%E7%A7%BB%E6%88%90%E5%8A%9F/</url>
+      <link href="Hexo/Hexo%E6%8D%A2%E7%94%B5%E8%84%91%E6%9B%B4%E6%96%B0%EF%BC%8C%E8%83%BD%E6%8E%A8%E9%80%81%E4%B8%8A%E5%8E%BB%E4%BA%86%E6%89%8D%E7%AE%97%E8%BF%81%E7%A7%BB%E6%88%90%E5%8A%9F/"/>
+      <url>Hexo/Hexo%E6%8D%A2%E7%94%B5%E8%84%91%E6%9B%B4%E6%96%B0%EF%BC%8C%E8%83%BD%E6%8E%A8%E9%80%81%E4%B8%8A%E5%8E%BB%E4%BA%86%E6%89%8D%E7%AE%97%E8%BF%81%E7%A7%BB%E6%88%90%E5%8A%9F/</url>
       
         <content type="html"><![CDATA[<p>昨天刚弄好，在本地预览是正常的，但是无论怎么也推送不到Github和Gitee上，刚开始是要我输入用户名和密码，一开始输错了一次，因为这个问题之前也遇到过，所以解决起来还是有一点思路的，但还忘记具体的操作方法了，在网上搜了一下才知道去怎么修改凭据，只要是更换了电脑新的电脑自然是没有旧的凭据了，而如果直接输错了那就只能用电脑上win10自带的搜索功能搜索凭据，搜出来修改了就可以了。</p><span id="more"></span><p>等这两个凭据的问题搞好了以后我还以为就可以了，但是还是不行，一直提醒要我按照那个格式输入邮箱和名字，刚开始也不知道怎么回事，因为看不懂，用百度翻译那几句英文才终于看得懂了一点，但是还是不知道要怎么弄才好。</p><p>因为之前也遇到这个问题，后面在网上查了下才知道，其实也不难就是按照那个格式在注释里面输入自己的邮箱和用户名就可以了，Gitee和Github按道理来说是要输入两个才行的，但是我只输入了Gitee的用户名两个都可以推送了，我还以为Github的没有推送上去，但去Github页面看了也是有提交的新纪录的，刷新网站也是有刚提交的那篇文章的，到这里这次换电脑更新才算完美的结束，唯一缺点还是昨天写的那样，所有的文章都变成昨天刚发表的了。</p>]]></content>
       
       
       <categories>
           
-          <category> 日常记录 </category>
+          <category> Hexo </category>
           
       </categories>
       
@@ -19262,13 +19262,13 @@
             
             <tag> Hexo </tag>
             
+            <tag> Gitee </tag>
+            
             <tag> 电脑 </tag>
             
             <tag> 推送 </tag>
             
             <tag> 迁移 </tag>
-            
-            <tag> Gitee </tag>
             
             <tag> 思路 </tag>
             
@@ -19290,15 +19290,15 @@
     
     <entry>
       <title>Hexo在数据文件夹里添加谷歌和百度站点验证</title>
-      <link href="%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/Hexo%E5%9C%A8%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E6%B7%BB%E5%8A%A0%E8%B0%B7%E6%AD%8C%E5%92%8C%E7%99%BE%E5%BA%A6%E7%AB%99%E7%82%B9%E9%AA%8C%E8%AF%81/"/>
-      <url>%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/Hexo%E5%9C%A8%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E6%B7%BB%E5%8A%A0%E8%B0%B7%E6%AD%8C%E5%92%8C%E7%99%BE%E5%BA%A6%E7%AB%99%E7%82%B9%E9%AA%8C%E8%AF%81/</url>
+      <link href="Hexo/Hexo%E5%9C%A8%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E6%B7%BB%E5%8A%A0%E8%B0%B7%E6%AD%8C%E5%92%8C%E7%99%BE%E5%BA%A6%E7%AB%99%E7%82%B9%E9%AA%8C%E8%AF%81/"/>
+      <url>Hexo/Hexo%E5%9C%A8%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6%E5%A4%B9%E9%87%8C%E6%B7%BB%E5%8A%A0%E8%B0%B7%E6%AD%8C%E5%92%8C%E7%99%BE%E5%BA%A6%E7%AB%99%E7%82%B9%E9%AA%8C%E8%AF%81/</url>
       
-        <content type="html"><![CDATA[<p>首先在source文件夹下新建一个_data文件夹，已经建过的这一步就可以略过。然后在next配置文件里面把custom_file_path下面的head前的注释去掉。</p><span id="more"></span><p>复制下-data后面的head.njk文件名，在-data文件夹里面新建一个head.njk文件，在谷歌获得的html标签文件到这里面，百度也是一样。</p><p>我开始第一次是用文件验证可以，第二次我用gitee的二级域名再用文件验证的方式就不行了，但是我用gitee的二级域名用的标签验证是可以的，所以还是直接用标签验证的这种方法比较可靠，百度和谷歌我都用的gitee的二级域名验证成功了，就等着被收录就可以了。</p>]]></content>
+        <content type="html"><![CDATA[<p>首先在source文件夹下新建一个_data文件夹，已经建过的这一步就可以略过。然后在next配置文件里面把custom_file_path下面的head前的注释去掉。</p><span id="more"></span><p>复制下-data后面的head.njk文件名，在-data文件夹里面新建一个head.njk文件，在谷歌获得的html标签文件到这里面，百度也是一样。</p><p>我开始第一次是用文件验证可以，第二次我用Gitee的二级域名再用文件验证的方式就不行了，但是我用Gitee的二级域名用的标签验证是可以的，所以还是直接用标签验证的这种方法比较可靠，百度和谷歌我都用的Gitee的二级域名验证成功了，就等着被收录就可以了。</p>]]></content>
       
       
       <categories>
           
-          <category> 互联网科技 </category>
+          <category> Hexo </category>
           
       </categories>
       
@@ -19319,7 +19319,7 @@
             
             <tag> html标签文件 </tag>
             
-            <tag> gitee </tag>
+            <tag> Gitee </tag>
             
             <tag> 二级域名 </tag>
             
@@ -19333,15 +19333,15 @@
     
     <entry>
       <title>Hexo在数据文件夹中添加CNZZ统计</title>
-      <link href="%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Hexo%E5%9C%A8%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%AD%E6%B7%BB%E5%8A%A0CNZZ%E7%BB%9F%E8%AE%A1/"/>
-      <url>%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Hexo%E5%9C%A8%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%AD%E6%B7%BB%E5%8A%A0CNZZ%E7%BB%9F%E8%AE%A1/</url>
+      <link href="Hexo/Hexo%E5%9C%A8%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%AD%E6%B7%BB%E5%8A%A0CNZZ%E7%BB%9F%E8%AE%A1/"/>
+      <url>Hexo/Hexo%E5%9C%A8%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6%E5%A4%B9%E4%B8%AD%E6%B7%BB%E5%8A%A0CNZZ%E7%BB%9F%E8%AE%A1/</url>
       
         <content type="html"><![CDATA[<p>首先在source文件夹下新建一个_data文件夹，打开主题配置文件或者备用主题配置文件，我用的是备用主题配置文件，搜索找到custom_file_path，这里下面是自定义数据文件路径，把第六个footer前面的注释符#去掉，可以看到路径上有个_data文件夹下面还要有个footer.njk文件才可以。</p><span id="more"></span><p>复制footer.njk这个文件名，在刚才新建的_data文件夹下新建一个文本文件，把名字改成footer.njk,到这里这个文件就建好了。</p><p>复制友盟的cnzz统计代码放到这个footer.njk这个文件里面就可以了，我这里用的工具是notepad++,用这个工具打开footer.njk自己新建的这个文件，把复制的代码粘贴到里面，然后把主题配置文件的cnzz_siteid这里设置成true,注意冒号后面有个空格，保存主题配置文件这样就可以了，用其他工具打开也可以，但是我一直用的这个，感觉很简洁。这样是真的简单很多，不用去修改主题文件。</p>]]></content>
       
       
       <categories>
           
-          <category> 日常记录 </category>
+          <category> Hexo </category>
           
       </categories>
       
@@ -19370,15 +19370,15 @@
     
     <entry>
       <title>Hexo使用代替主题配置文件配置next主题</title>
-      <link href="%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/Hexo%E4%BD%BF%E7%94%A8%E4%BB%A3%E6%9B%BF%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AEnext%E4%B8%BB%E9%A2%98/"/>
-      <url>%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/Hexo%E4%BD%BF%E7%94%A8%E4%BB%A3%E6%9B%BF%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AEnext%E4%B8%BB%E9%A2%98/</url>
+      <link href="Hexo/Hexo%E4%BD%BF%E7%94%A8%E4%BB%A3%E6%9B%BF%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AEnext%E4%B8%BB%E9%A2%98/"/>
+      <url>Hexo/Hexo%E4%BD%BF%E7%94%A8%E4%BB%A3%E6%9B%BF%E4%B8%BB%E9%A2%98%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AEnext%E4%B8%BB%E9%A2%98/</url>
       
         <content type="html"><![CDATA[<p>首先在站点根目录下创建一个<code>_config.[theme].yml</code>配置文件，这里的“[theme]”就是自己使用的主题的名字，比如我这里使用的是next主题，那这个文件名就是<code>_config.next.yml</code>，这个文件创建好之后打开，把主题的配置文件里面的内容全部复制过来。</p><span id="more"></span><p>在原来的next主题配置文件里面的开始加上如下代码：</p><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">bio:</span> <span class="string">&quot;Some generic bio&quot;</span></span><br><span class="line"><span class="symbol">logo:</span> <span class="string">&quot;a-cool-image.png&quot;</span></span><br><span class="line"><span class="symbol">  foo:</span></span><br><span class="line"><span class="symbol">baz:</span> <span class="string">&#x27;b&#x27;</span></span><br></pre></td></tr></table></figure><p>然后保存。</p><p>在新建的主题配置文件里面开始加上如下代码：</p><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">bio:</span> <span class="string">&quot;My awesome bio&quot;</span></span><br><span class="line"><span class="symbol">foo:</span></span><br><span class="line"><span class="symbol">  bar:</span> <span class="string">&#x27;a&#x27;</span></span><br></pre></td></tr></table></figure><p>加上以后保存。</p><p>最终的输出形式就是两个主题文件合并在一起，后面要修改就只需修改后面新建的这个就可以，这样做好处有很多，一是主题更新以后不会覆盖自己的配置，二是如果新建的这里改错了，还可以对照原来的改回来，比起直接在原主题配置文件上修改这样是安全很多。</p><p>看到网上有的说放在数据文件里，这种做法我是不知道怎么弄，但是上面我用的这种方法是Hexo官方推荐的，而且这样做非常容易。</p>]]></content>
       
       
       <categories>
           
-          <category> 互联网科技 </category>
+          <category> Hexo </category>
           
       </categories>
       
@@ -19405,15 +19405,15 @@
     
     <entry>
       <title>Gitalk这个评论插件突然就用不了</title>
-      <link href="%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Gitalk%E8%BF%99%E4%B8%AA%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6%E7%AA%81%E7%84%B6%E5%B0%B1%E7%94%A8%E4%B8%8D%E4%BA%86/"/>
-      <url>%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Gitalk%E8%BF%99%E4%B8%AA%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6%E7%AA%81%E7%84%B6%E5%B0%B1%E7%94%A8%E4%B8%8D%E4%BA%86/</url>
+      <link href="Hexo/Gitalk%E8%BF%99%E4%B8%AA%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6%E7%AA%81%E7%84%B6%E5%B0%B1%E7%94%A8%E4%B8%8D%E4%BA%86/"/>
+      <url>Hexo/Gitalk%E8%BF%99%E4%B8%AA%E8%AF%84%E8%AE%BA%E6%8F%92%E4%BB%B6%E7%AA%81%E7%84%B6%E5%B0%B1%E7%94%A8%E4%B8%8D%E4%BA%86/</url>
       
-        <content type="html"><![CDATA[<p>前天晚上突然就用不了，登录Github初始化一直403，用了网上看到的方法也没有解决，也不知道是什么原因，然后昨晚又用了很多方法还是不行，弄不好就不想用它了。</p><span id="more"></span><p>还好还有其他的评论插件可以用，就用了Utterances这个，这个安装很方便，新建一个仓库，然后安装到这个仓库里面，在网站主题的配置文件设置一下就可以用了，不用什么客户端ID那些，只要一个“用户名/仓库名”就可以。</p><p>和Gitalk比起来就是不支持多语言，这个只有英文界面，但是能用就行了，现在hexo的很多评论插件都用不了，有一个用着就很不错了。</p><p>再说了Utterances这个还是有很多优点的，不用仓库的所有者才可以初始化了，任何人只要刷新一下都可以初始化了，以前用Gitalk自己每发一篇文章都要自己先打开这篇文章初始化一下才可以，这个完全不用，不用自己初始化别人也可以评论了。</p>]]></content>
+        <content type="html"><![CDATA[<p>前天晚上突然就用不了，登录Github初始化一直403，用了网上看到的方法也没有解决，也不知道是什么原因，然后昨晚又用了很多方法还是不行，弄不好就不想用它了。</p><span id="more"></span><p>还好还有其他的评论插件可以用，就用了Utterances这个，这个安装很方便，新建一个仓库，然后安装到这个仓库里面，在网站主题的配置文件设置一下就可以用了，不用什么客户端ID那些，只要一个“用户名/仓库名”就可以。</p><p>和Gitalk比起来就是不支持多语言，这个只有英文界面，但是能用就行了，现在Hexo的很多评论插件都用不了，有一个用着就很不错了。</p><p>再说了Utterances这个还是有很多优点的，不用仓库的所有者才可以初始化了，任何人只要刷新一下都可以初始化了，以前用Gitalk自己每发一篇文章都要自己先打开这篇文章初始化一下才可以，这个完全不用，不用自己初始化别人也可以评论了。</p>]]></content>
       
       
       <categories>
           
-          <category> 日常记录 </category>
+          <category> Hexo </category>
           
       </categories>
       
@@ -19495,24 +19495,28 @@
     
     <entry>
       <title>Hello World</title>
-      <link href="%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/hello-world/"/>
-      <url>%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/hello-world/</url>
+      <link href="Hexo/hello-world/"/>
+      <url>Hexo/hello-world/</url>
       
         <content type="html"><![CDATA[<p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo<i class="fa fa-external-link-alt"></i></span>! This is your very first post. Check <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv">documentation<i class="fa fa-external-link-alt"></i></span> for more info. If you get any problems when using Hexo, you can find the answer in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=">troubleshooting<i class="fa fa-external-link-alt"></i></span> or you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==">GitHub<i class="fa fa-external-link-alt"></i></span>.</p><span id="more"></span><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s">Writing<i class="fa fa-external-link-alt"></i></span></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=">Server<i class="fa fa-external-link-alt"></i></span></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s">Generating<i class="fa fa-external-link-alt"></i></span></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZGVwbG95bWVudC5odG1s">Deployment<i class="fa fa-external-link-alt"></i></span></p>]]></content>
       
       
       <categories>
           
-          <category> 日常记录 </category>
+          <category> Hexo </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 你好，世界 </tag>
+            <tag> 文章 </tag>
             
-            <tag> 第一篇文章 </tag>
+            <tag> 你好 </tag>
+            
+            <tag> 世界 </tag>
+            
+            <tag> 第一篇 </tag>
             
         </tags>
       
