@@ -2591,93 +2591,93 @@ ul.breadcrumb li:last-child {
   margin: 10px;
 }
 .tag-cloud-0 {
-  border-bottom-color: #aaa;
-  color: #aaa;
+  border-bottom-color: #a9a9a9;
+  color: #a9a9a9;
 }
 .tag-cloud-1 {
-  border-bottom-color: #9a9a9a;
-  color: #9a9a9a;
+  border-bottom-color: #ababab;
+  color: #ababab;
 }
 .tag-cloud-2 {
-  border-bottom-color: #8b8b8b;
-  color: #8b8b8b;
+  border-bottom-color: #adadad;
+  color: #adadad;
 }
 .tag-cloud-3 {
-  border-bottom-color: #7c7c7c;
-  color: #7c7c7c;
+  border-bottom-color: #afafaf;
+  color: #afafaf;
 }
 .tag-cloud-4 {
-  border-bottom-color: #6c6c6c;
-  color: #6c6c6c;
+  border-bottom-color: #b2b2b2;
+  color: #b2b2b2;
 }
 .tag-cloud-5 {
-  border-bottom-color: #5d5d5d;
-  color: #5d5d5d;
+  border-bottom-color: #b4b4b4;
+  color: #b4b4b4;
 }
 .tag-cloud-6 {
-  border-bottom-color: #4e4e4e;
-  color: #4e4e4e;
+  border-bottom-color: #b6b6b6;
+  color: #b6b6b6;
 }
 .tag-cloud-7 {
-  border-bottom-color: #3e3e3e;
-  color: #3e3e3e;
+  border-bottom-color: #b9b9b9;
+  color: #b9b9b9;
 }
 .tag-cloud-8 {
-  border-bottom-color: #2f2f2f;
-  color: #2f2f2f;
+  border-bottom-color: #bbb;
+  color: #bbb;
 }
 .tag-cloud-9 {
-  border-bottom-color: #202020;
-  color: #202020;
+  border-bottom-color: #bdbdbd;
+  color: #bdbdbd;
 }
 .tag-cloud-10 {
-  border-bottom-color: #111;
-  color: #111;
+  border-bottom-color: #c0c0c0;
+  color: #c0c0c0;
 }
 @media (prefers-color-scheme: dark) {
   .tag-cloud-0 {
-    border-bottom-color: #555;
-    color: #555;
+    border-bottom-color: #ff8033;
+    color: #ff8033;
   }
   .tag-cloud-1 {
-    border-bottom-color: #646464;
-    color: #646464;
+    border-bottom-color: #fd733e;
+    color: #fd733e;
   }
   .tag-cloud-2 {
-    border-bottom-color: #737373;
-    color: #737373;
+    border-bottom-color: #fc6649;
+    color: #fc6649;
   }
   .tag-cloud-3 {
-    border-bottom-color: #828282;
-    color: #828282;
+    border-bottom-color: #fb5954;
+    color: #fb5954;
   }
   .tag-cloud-4 {
-    border-bottom-color: #929292;
-    color: #929292;
+    border-bottom-color: #fa4c5f;
+    color: #fa4c5f;
   }
   .tag-cloud-5 {
-    border-bottom-color: #a1a1a1;
-    color: #a1a1a1;
+    border-bottom-color: #f9406a;
+    color: #f9406a;
   }
   .tag-cloud-6 {
-    border-bottom-color: #b0b0b0;
-    color: #b0b0b0;
+    border-bottom-color: #f83375;
+    color: #f83375;
   }
   .tag-cloud-7 {
-    border-bottom-color: #c0c0c0;
-    color: #c0c0c0;
+    border-bottom-color: #f7267f;
+    color: #f7267f;
   }
   .tag-cloud-8 {
-    border-bottom-color: #cfcfcf;
-    color: #cfcfcf;
+    border-bottom-color: #f6198b;
+    color: #f6198b;
   }
   .tag-cloud-9 {
-    border-bottom-color: #dedede;
-    color: #dedede;
+    border-bottom-color: #f50c96;
+    color: #f50c96;
   }
   .tag-cloud-10 {
-    border-bottom-color: #eee;
-    color: #eee;
+    border-bottom-color: #f400a1;
+    color: #f400a1;
   }
 }
 .utterances {
@@ -3119,4 +3119,20 @@ mjx-container[display='true'] + br {
   pointer-events: none;
   position: fixed;
   top: 0;
+}
+.post-body p a {
+  color: #0593d3;
+  border-bottom: none;
+}
+.post-body p a:hover {
+  color: #ff106c;
+  text-decoration: underline;
+}
+li.recent_posts_li {
+  text-align: cengter;
+  display: block;
+  word-break: keep-all;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
