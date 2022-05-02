@@ -416,9 +416,9 @@
     
     <category term="网站" scheme="https://aixz.xyz/tags/%E7%BD%91%E7%AB%99/"/>
     
-    <category term="本地调试" scheme="https://aixz.xyz/tags/%E6%9C%AC%E5%9C%B0%E8%B0%83%E8%AF%95/"/>
-    
     <category term="部署" scheme="https://aixz.xyz/tags/%E9%83%A8%E7%BD%B2/"/>
+    
+    <category term="本地调试" scheme="https://aixz.xyz/tags/%E6%9C%AC%E5%9C%B0%E8%B0%83%E8%AF%95/"/>
     
     <category term="安装插件" scheme="https://aixz.xyz/tags/%E5%AE%89%E8%A3%85%E6%8F%92%E4%BB%B6/"/>
     
@@ -447,7 +447,7 @@
     
     <category term="Hexo" scheme="https://aixz.xyz/tags/Hexo/"/>
     
-    <category term="Next主题" scheme="https://aixz.xyz/tags/Next%E4%B8%BB%E9%A2%98/"/>
+    <category term="next主题" scheme="https://aixz.xyz/tags/next%E4%B8%BB%E9%A2%98/"/>
     
     <category term="安装成功" scheme="https://aixz.xyz/tags/%E5%AE%89%E8%A3%85%E6%88%90%E5%8A%9F/"/>
     
@@ -455,7 +455,7 @@
     
     <category term="编译" scheme="https://aixz.xyz/tags/%E7%BC%96%E8%AF%91/"/>
     
-    <category term="Node.js" scheme="https://aixz.xyz/tags/Node-js/"/>
+    <category term="node.js" scheme="https://aixz.xyz/tags/node-js/"/>
     
     <category term="配置主题" scheme="https://aixz.xyz/tags/%E9%85%8D%E7%BD%AE%E4%B8%BB%E9%A2%98/"/>
     
@@ -600,9 +600,9 @@
     
     <category term="网购" scheme="https://aixz.xyz/tags/%E7%BD%91%E8%B4%AD/"/>
     
-    <category term="淘宝客" scheme="https://aixz.xyz/tags/%E6%B7%98%E5%AE%9D%E5%AE%A2/"/>
-    
     <category term="推广商品" scheme="https://aixz.xyz/tags/%E6%8E%A8%E5%B9%BF%E5%95%86%E5%93%81/"/>
+    
+    <category term="淘宝客" scheme="https://aixz.xyz/tags/%E6%B7%98%E5%AE%9D%E5%AE%A2/"/>
     
     <category term="获得佣金" scheme="https://aixz.xyz/tags/%E8%8E%B7%E5%BE%97%E4%BD%A3%E9%87%91/"/>
     
