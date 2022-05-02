@@ -7432,7 +7432,7 @@
       <link href="/Hexo/Hexo%E5%88%A9%E7%94%A8%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6%EF%BC%8C%E7%BB%99%E6%96%87%E7%AB%A0%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E6%A0%87%E9%A2%98%E5%92%8C%E6%97%A5%E6%9C%9F/"/>
       <url>/Hexo/Hexo%E5%88%A9%E7%94%A8%E6%A8%A1%E6%9D%BF%E6%96%87%E4%BB%B6%EF%BC%8C%E7%BB%99%E6%96%87%E7%AB%A0%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E6%A0%87%E9%A2%98%E5%92%8C%E6%97%A5%E6%9C%9F/</url>
       
-        <content type="html"><![CDATA[<p>最近因为把<code>Hexo</code>版本和<code>Next</code>主题版本更新了，但是更新得并不顺利，所以是把网站的文件全部备份了又重新安装，但是复制过来的文章的发表日期却是全部变成一天了。</p><span id="more"></span><p>但是以前的有些文章是有建立日期的，所以那些文章就还是按以前的日期顺序来排列的，这个自动添加文章建立日期的功能是有的，但是后来不知道为什么被我改掉了。</p><p>现在想起来于是还是要把它改过来，因为有些文章就是必须要按时间线来排列才有意义。</p><p>要改这个就必须要改<code>hexo</code>根目录下的<code>scaffolds</code>这个模板文件夹里面的<code>post</code>文章模板，很多人估计都是不知道这个模板文件方便之处，它就相当于微信公众号的模板，每次写文章就是直接套用就可以了，不用重复的创建。</p><p>打开<code>post</code>这个文件，改成这样</p><figure class="highlight handlebars"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="language-xml">date: </span><span class="template-variable">&#123;&#123; <span class="name">date</span> &#125;&#125;</span><span class="language-xml"></span></span><br><span class="line"><span class="language-xml">title: </span><span class="template-variable">&#123;&#123; <span class="name">title</span> &#125;&#125;</span></span><br></pre></td></tr></table></figure><p>有<code>date</code>标记的就在后面添加<code>&#123;&#123; date &#125;&#125;</code>这个，没有就直接添加<code>date: &#123;&#123; date &#125;&#125;</code>，<code>title</code>也是一样，有的这个标记的就在后面添加<code>&#123;&#123; title &#125;&#125;</code>，一般都是有这个标记的，所以直接添加就可以，注意冒号后面要有空格，不然就会报错。</p><p>这样添加好以后保存，用<code>hexo new post 文章名</code>，建立文章的时候就会在<code>date</code>那里自动添加文章建立的日期，可以具体到时间，自动在<code>title</code>那里添加文章标题，也就是和创建文章的名字一样，减少了要重新粘贴标题的麻烦。</p>]]></content>
+        <content type="html"><![CDATA[<p>最近因为把Hexo版本和Next主题版本更新了，但是更新得并不顺利，所以是把网站的文件全部备份了又重新安装，但是复制过来的文章的发表日期却是全部变成一天了。</p><span id="more"></span><p>但是以前的有些文章是有建立日期的，所以那些文章就还是按以前的日期顺序来排列的，这个自动添加文章建立日期的功能是有的，但是后来不知道为什么被我改掉了。</p><p>现在想起来于是还是要把它改过来，因为有些文章就是必须要按时间线来排列才有意义。</p><p>要改这个就必须要改<code>hexo</code>根目录下的<code>scaffolds</code>这个模板文件夹里面的<code>post</code>文章模板，很多人估计都是不知道这个模板文件方便之处，它就相当于微信公众号的模板，每次写文章就是直接套用就可以了，不用重复的创建。</p><p>打开<code>post</code>这个文件，改成这样</p><figure class="highlight handlebars"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="language-xml">date: </span><span class="template-variable">&#123;&#123; <span class="name">date</span> &#125;&#125;</span><span class="language-xml"></span></span><br><span class="line"><span class="language-xml">title: </span><span class="template-variable">&#123;&#123; <span class="name">title</span> &#125;&#125;</span></span><br></pre></td></tr></table></figure><p>有<code>date</code>标记的就在后面添加<code>&#123;&#123; date &#125;&#125;</code>这个，没有就直接添加<code>date: &#123;&#123; date &#125;&#125;</code>，<code>title</code>也是一样，有的这个标记的就在后面添加<code>&#123;&#123; title &#125;&#125;</code>，一般都是有这个标记的，所以直接添加就可以，注意冒号后面要有空格，不然就会报错。</p><p>这样添加好以后保存，用<code>hexo new post 文章名</code>，建立文章的时候就会在<code>date</code>那里自动添加文章建立的日期，可以具体到时间，自动在<code>title</code>那里添加文章标题，也就是和创建文章的名字一样，减少了要重新粘贴标题的麻烦。</p>]]></content>
       
       
       <categories>
@@ -7448,6 +7448,8 @@
             
             <tag> Hexo </tag>
             
+            <tag> Next主题 </tag>
+            
             <tag> 模板文件 </tag>
             
             <tag> 自动 </tag>
@@ -7455,8 +7457,6 @@
             <tag> 添加标题 </tag>
             
             <tag> 日期 </tag>
-            
-            <tag> Next </tag>
             
             <tag> 安装 </tag>
             
@@ -7503,8 +7503,6 @@
             
             <tag> 蓝牙音箱 </tag>
             
-            <tag> 浪费 </tag>
-            
             <tag> 两件事 </tag>
             
             <tag> 太频繁 </tag>
@@ -7514,6 +7512,8 @@
             <tag> 感觉累 </tag>
             
             <tag> 更新文章 </tag>
+            
+            <tag> 浪费 </tag>
             
         </tags>
       
@@ -8098,9 +8098,9 @@
             
             <tag> 浏览器 </tag>
             
-            <tag> 结婚 </tag>
-            
             <tag> 普通人 </tag>
+            
+            <tag> 结婚 </tag>
             
             <tag> 重点 </tag>
             
@@ -9552,9 +9552,9 @@
             
             <tag> B站 </tag>
             
-            <tag> m.2固态 </tag>
-            
             <tag> 说明书 </tag>
+            
+            <tag> m.2固态 </tag>
             
             <tag> 主板 </tag>
             
@@ -10213,7 +10213,7 @@
       <link href="/Hexo/%E7%BD%91%E7%AB%99%E5%B7%AE%E4%B8%8D%E5%A4%9A%E5%BF%AB%E5%BC%84%E5%A5%BD%E4%BA%86%EF%BC%8C%E5%B7%B2%E7%BB%8F%E9%83%A8%E7%BD%B2%E5%88%B0github%E5%92%8Cgitee%E4%BA%86/"/>
       <url>/Hexo/%E7%BD%91%E7%AB%99%E5%B7%AE%E4%B8%8D%E5%A4%9A%E5%BF%AB%E5%BC%84%E5%A5%BD%E4%BA%86%EF%BC%8C%E5%B7%B2%E7%BB%8F%E9%83%A8%E7%BD%B2%E5%88%B0github%E5%92%8Cgitee%E4%BA%86/</url>
       
-        <content type="html"><![CDATA[<p>现在是已经上传的线上了，就是以前的一些带图片的文章现在图片，显示不了，看来还得再弄一下才行，经过几个晚上是已经恢复到以前的差不多样子了，新主题还增加了，多语言支持和聊天系统支持。</p><span id="more"></span><p>但是以前的一些东西现在是用不了，以前我用的CNZZ来统计网站数据的，现在这个版本的Next不支持显示被隐藏了，也不知道代码是不是对的能不能统计到，现在都是未知了。</p><p>没有重新做之前发一篇文章到Github等了半天怎么都没有更新，我还发觉奇怪了，昨晚重新部署才知道，原来我的Github仓库上面有两个分支，一个是Hexo一个master，后面应该是Github更新了，把Hexo设置成默认的了，那我是把网站部署在master这个分支上的，所以一直刷新网站都是没有更新。</p><p>后面在设置里面看了一下才知道，把默认的分支改成master这个分支以后，网站就重新更新了。</p><p>之前没有升级的时候部署到Gitee后更新了然后打开网站就是一片空白，现在升级了这个问题也解决了。</p>]]></content>
+        <content type="html"><![CDATA[<p>现在是已经上传的线上了，就是以前的一些带图片的文章现在图片，显示不了，看来还得再弄一下才行，经过几个晚上是已经恢复到以前的差不多样子了，新主题还增加了，多语言支持和聊天系统支持。</p><span id="more"></span><p>但是以前的一些东西现在是用不了，以前我用的CNZZ来统计网站数据的，现在这个版本的Next主题不支持显示被隐藏了，也不知道代码是不是对的能不能统计到，现在都是未知了。</p><p>没有重新做之前发一篇文章到Github等了半天怎么都没有更新，我还发觉奇怪了，昨晚重新部署才知道，原来我的Github仓库上面有两个分支，一个是Hexo一个master，后面应该是Github更新了，把Hexo设置成默认的了，那我是把网站部署在master这个分支上的，所以一直刷新网站都是没有更新。</p><p>后面在设置里面看了一下才知道，把默认的分支改成master这个分支以后，网站就重新更新了。</p><p>之前没有升级的时候部署到Gitee后更新了然后打开网站就是一片空白，现在升级了这个问题也解决了。</p>]]></content>
       
       
       <categories>
@@ -10229,7 +10229,7 @@
             
             <tag> Hexo </tag>
             
-            <tag> Next </tag>
+            <tag> Next主题 </tag>
             
             <tag> CNZZ </tag>
             
@@ -10669,13 +10669,13 @@
             
             <tag> 电信 </tag>
             
-            <tag> 网购 </tag>
-            
             <tag> 网上营业厅 </tag>
             
             <tag> 套餐 </tag>
             
             <tag> 国内流量 </tag>
+            
+            <tag> 网购 </tag>
             
             <tag> 天翼 </tag>
             
@@ -15162,9 +15162,9 @@
             
             <tag> 今天 </tag>
             
-            <tag> 浪费 </tag>
-            
             <tag> 更新文章 </tag>
+            
+            <tag> 浪费 </tag>
             
             <tag> 主观题 </tag>
             
@@ -16071,11 +16071,11 @@
             
             <tag> 天气 </tag>
             
+            <tag> 难受 </tag>
+            
             <tag> 不想动 </tag>
             
             <tag> 昏昏沉沉 </tag>
-            
-            <tag> 难受 </tag>
             
             <tag> 主题 </tag>
             
@@ -16110,9 +16110,9 @@
             
             <tag> 凉快 </tag>
             
-            <tag> 难受 </tag>
-            
             <tag> 变热 </tag>
+            
+            <tag> 难受 </tag>
             
             <tag> 绿化环保 </tag>
             
@@ -19436,6 +19436,8 @@
             
             <tag> 优惠券 </tag>
             
+            <tag> 浪费 </tag>
+            
             <tag> 做题任务 </tag>
             
             <tag> 太难了 </tag>
@@ -19443,8 +19445,6 @@
             <tag> 兴趣 </tag>
             
             <tag> 播放量 </tag>
-            
-            <tag> 浪费 </tag>
             
             <tag> 橙心优选 </tag>
             
