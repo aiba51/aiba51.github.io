@@ -698,8 +698,6 @@
     
     <category term="复习" scheme="https://aixz.xyz/tags/%E5%A4%8D%E4%B9%A0/"/>
     
-    <category term="漫长" scheme="https://aixz.xyz/tags/%E6%BC%AB%E9%95%BF/"/>
-    
     <category term="自习" scheme="https://aixz.xyz/tags/%E8%87%AA%E4%B9%A0/"/>
     
     <category term="自考" scheme="https://aixz.xyz/tags/%E8%87%AA%E8%80%83/"/>
@@ -727,6 +725,8 @@
     <category term="试卷" scheme="https://aixz.xyz/tags/%E8%AF%95%E5%8D%B7/"/>
     
     <category term="成绩" scheme="https://aixz.xyz/tags/%E6%88%90%E7%BB%A9/"/>
+    
+    <category term="漫长" scheme="https://aixz.xyz/tags/%E6%BC%AB%E9%95%BF/"/>
     
     <category term="理由" scheme="https://aixz.xyz/tags/%E7%90%86%E7%94%B1/"/>
     
@@ -816,9 +816,9 @@
     <category term="情感美文" scheme="https://aixz.xyz/categories/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/"/>
     
     
-    <category term="目标" scheme="https://aixz.xyz/tags/%E7%9B%AE%E6%A0%87/"/>
-    
     <category term="回忆" scheme="https://aixz.xyz/tags/%E5%9B%9E%E5%BF%86/"/>
+    
+    <category term="目标" scheme="https://aixz.xyz/tags/%E7%9B%AE%E6%A0%87/"/>
     
     <category term="风景" scheme="https://aixz.xyz/tags/%E9%A3%8E%E6%99%AF/"/>
     
