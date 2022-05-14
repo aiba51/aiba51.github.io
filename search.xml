@@ -4,6 +4,41 @@
   
     
     <entry>
+      <title>在 Hexo-Next 主题中添加日历云插件</title>
+      <link href="/Hexo/910a6a1b/"/>
+      <url>/Hexo/910a6a1b/</url>
+      
+        <content type="html"><![CDATA[<p><code>theme-next-calendar</code> 是一款简洁的日历云插件，可以在日历上显示提交标记，由于原项目因为已经几年没有更新了，我拉取原项目作了几处修改，以适配新版的 Next 主题。</p><span id="more"></span><center><p>效果如图所示：</p></center><p><img data-src="/Hexo/undefined/%E4%BA%91%E6%97%A5%E5%8E%86%E6%95%88%E6%9E%9C%E5%9B%BE.png" alt="云日历效果图"></p><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ol><li>首先安装 hexo 插件 </li></ol><figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install aiba51/theme-next-calendar</span><br></pre></td></tr></tbody></table></figure><ol start="2"><li>在 next 主题配置文件<code>_config.yml</code> 配置 <figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">CloudCalendar:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line">  <span class="attr">single:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">root:</span> <span class="string">/calendar/</span></span><br><span class="line">  <span class="attr">calendarCdn:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js</span></span><br><span class="line">  <span class="attr">langCdn:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js</span></span><br><span class="line">  <span class="comment">#disableSidebar: false</span></span><br></pre></td></tr></tbody></table></figure></li></ol><h3 id="渲染日历"><a href="#渲染日历" class="headerlink" title="渲染日历"></a>渲染日历</h3><p>默认是在边栏中渲染，当然也可以在任何位置显示，只要 <code>disableSidebar</code> 禁用，并添加 <code>sidebar.swig</code> 中的代码至你希望的位置</p><h3 id="自定义日历颜色"><a href="#自定义日历颜色" class="headerlink" title="自定义日历颜色"></a>自定义日历颜色</h3><p>日历插件内各元素的颜色都是可定制的，可以通过添加自定义样式覆盖 <code>calendar.styl</code> 中的定义来达到更好的效果.</p><h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>提取自 <code>Landscape-F</code> 主题，修改后适配 theme-next</p><h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><p>为了适配新版的 Next 主题，作了几处修改：</p><ol><li><code>calendar.swig</code> 修改为 <code>calendar.njk</code>，并且将里面的 <code>{% if theme.CloudCalendar.enable %}{% endif %}</code> 标签修改为 <code>&lt;div&gt;&lt;/div&gt;</code>。</li><li>将 <code>sidebar.swig</code> 修改为 <code>sidebar.njk</code>, 里面的文件保持不变。</li><li>两个<code>.swig</code> 已经修改为<code>.njk</code>，自然 <code>index.js</code> 里面的路径也要修改，修改如下：<figure class="highlight pgsql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> <span class="type">path</span>.<span class="keyword">join</span>(__dirname ,<span class="string">'sidebar.njk'</span>)</span><br><span class="line"><span class="type">path</span>.<span class="keyword">join</span>(__dirname ,<span class="string">'calendar.njk'</span>)</span><br></pre></td></tr></tbody></table></figure></li></ol><p>Next-8.11.0 版本实测可用。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> next主题 </tag>
+            
+            <tag> 日历云 </tag>
+            
+            <tag> 插件 </tag>
+            
+            <tag> 主题 </tag>
+            
+            <tag> 配置 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>总是做一些奇奇怪怪的梦</title>
       <link href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/5496ea38/"/>
       <url>/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/5496ea38/</url>
@@ -824,11 +859,11 @@
       
         <tags>
             
-            <tag> Python </tag>
+            <tag> python </tag>
             
             <tag> 小游戏 </tag>
             
-            <tag> Windows </tag>
+            <tag> windows </tag>
             
             <tag> Hello World </tag>
             
@@ -13214,9 +13249,9 @@
             
             <tag> 抖音极速版 </tag>
             
-            <tag> 快手极速版 </tag>
-            
             <tag> 模拟滑动 </tag>
+            
+            <tag> 快手极速版 </tag>
             
             <tag> 涨粉 </tag>
             
@@ -15691,11 +15726,11 @@
             
             <tag> 安卓系统 </tag>
             
+            <tag> python </tag>
+            
             <tag> Termux </tag>
             
             <tag> 操作系统 </tag>
-            
-            <tag> python </tag>
             
             <tag> 系统环境 </tag>
             
@@ -16676,6 +16711,8 @@
             
             <tag> 系统 </tag>
             
+            <tag> windows </tag>
+            
             <tag> 微软 </tag>
             
             <tag> 设备 </tag>
@@ -16683,8 +16720,6 @@
             <tag> 竞争力 </tag>
             
             <tag> M1 </tag>
-            
-            <tag> windows </tag>
             
         </tags>
       
@@ -17624,13 +17659,13 @@
             
             <tag> 天气 </tag>
             
+            <tag> 主题 </tag>
+            
             <tag> 难受 </tag>
             
             <tag> 不想动 </tag>
             
             <tag> 昏昏沉沉 </tag>
-            
-            <tag> 主题 </tag>
             
             <tag> 实在 </tag>
             

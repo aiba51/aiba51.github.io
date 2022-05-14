@@ -6,7 +6,7 @@
   <link href="https://aixz.xyz/atom.xml" rel="self"/>
   
   <link href="https://aixz.xyz/"/>
-  <updated>2022-05-14T08:17:06.000Z</updated>
+  <updated>2022-05-14T09:40:43.000Z</updated>
   <id>https://aixz.xyz/</id>
   
   <author>
@@ -15,6 +15,37 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>在 Hexo-Next 主题中添加日历云插件</title>
+    <link href="https://aixz.xyz/Hexo/910a6a1b/"/>
+    <id>https://aixz.xyz/Hexo/910a6a1b/</id>
+    <published>2022-05-14T09:40:43.000Z</published>
+    <updated>2022-05-14T09:40:43.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><code>theme-next-calendar</code> 是一款简洁的日历云插件，可以在日历上显示提交标记，由于原项目因为已经几年没有更新了，我拉取原项目作了几处修改，以适配新版的 Next 主题。</p><span id="more"></span><center><p>效果如图所示：</p></center><p><img data-src="/Hexo/undefined/%E4%BA%91%E6%97%A5%E5%8E%86%E6%95%88%E6%9E%9C%E5%9B%BE.png" alt="云日历效果图"></p><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ol><li>首先安装 hexo 插件 </li></ol><figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install aiba51/theme-next-calendar</span><br></pre></td></tr></tbody></table></figure><ol start="2"><li>在 next 主题配置文件<code>_config.yml</code> 配置 <figure class="highlight yaml"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">CloudCalendar:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line">  <span class="attr">single:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">root:</span> <span class="string">/calendar/</span></span><br><span class="line">  <span class="attr">calendarCdn:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js</span></span><br><span class="line">  <span class="attr">langCdn:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js</span></span><br><span class="line">  <span class="comment">#disableSidebar: false</span></span><br></pre></td></tr></tbody></table></figure></li></ol><h3 id="渲染日历"><a href="#渲染日历" class="headerlink" title="渲染日历"></a>渲染日历</h3><p>默认是在边栏中渲染，当然也可以在任何位置显示，只要 <code>disableSidebar</code> 禁用，并添加 <code>sidebar.swig</code> 中的代码至你希望的位置</p><h3 id="自定义日历颜色"><a href="#自定义日历颜色" class="headerlink" title="自定义日历颜色"></a>自定义日历颜色</h3><p>日历插件内各元素的颜色都是可定制的，可以通过添加自定义样式覆盖 <code>calendar.styl</code> 中的定义来达到更好的效果.</p><h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>提取自 <code>Landscape-F</code> 主题，修改后适配 theme-next</p><h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><p>为了适配新版的 Next 主题，作了几处修改：</p><ol><li><code>calendar.swig</code> 修改为 <code>calendar.njk</code>，并且将里面的 <code>{% if theme.CloudCalendar.enable %}{% endif %}</code> 标签修改为 <code>&lt;div&gt;&lt;/div&gt;</code>。</li><li>将 <code>sidebar.swig</code> 修改为 <code>sidebar.njk</code>, 里面的文件保持不变。</li><li>两个<code>.swig</code> 已经修改为<code>.njk</code>，自然 <code>index.js</code> 里面的路径也要修改，修改如下：<figure class="highlight pgsql"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> <span class="type">path</span>.<span class="keyword">join</span>(__dirname ,<span class="string">'sidebar.njk'</span>)</span><br><span class="line"><span class="type">path</span>.<span class="keyword">join</span>(__dirname ,<span class="string">'calendar.njk'</span>)</span><br></pre></td></tr></tbody></table></figure></li></ol><p>Next-8.11.0 版本实测可用。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;code&gt;theme-next-calendar&lt;/code&gt; 是一款简洁的日历云插件，可以在日历上显示提交标记，由于原项目因为已经几年没有更新了，我拉取原项目作了几处修改，以适配新版的 Next 主题。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Hexo" scheme="https://aixz.xyz/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://aixz.xyz/tags/Hexo/"/>
+    
+    <category term="next主题" scheme="https://aixz.xyz/tags/next%E4%B8%BB%E9%A2%98/"/>
+    
+    <category term="日历云" scheme="https://aixz.xyz/tags/%E6%97%A5%E5%8E%86%E4%BA%91/"/>
+    
+    <category term="插件" scheme="https://aixz.xyz/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+    <category term="主题" scheme="https://aixz.xyz/tags/%E4%B8%BB%E9%A2%98/"/>
+    
+    <category term="配置" scheme="https://aixz.xyz/tags/%E9%85%8D%E7%BD%AE/"/>
+    
+  </entry>
   
   <entry>
     <title>总是做一些奇奇怪怪的梦</title>
@@ -781,11 +812,11 @@
     <category term="Python" scheme="https://aixz.xyz/categories/Python/"/>
     
     
-    <category term="Python" scheme="https://aixz.xyz/tags/Python/"/>
+    <category term="python" scheme="https://aixz.xyz/tags/python/"/>
     
     <category term="小游戏" scheme="https://aixz.xyz/tags/%E5%B0%8F%E6%B8%B8%E6%88%8F/"/>
     
-    <category term="Windows" scheme="https://aixz.xyz/tags/Windows/"/>
+    <category term="windows" scheme="https://aixz.xyz/tags/windows/"/>
     
     <category term="Hello World" scheme="https://aixz.xyz/tags/Hello-World/"/>
     
@@ -966,37 +997,6 @@
     <category term="体温" scheme="https://aixz.xyz/tags/%E4%BD%93%E6%B8%A9/"/>
     
     <category term="笔记本" scheme="https://aixz.xyz/tags/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>立冬都已经过了，南方这里还是依然很热</title>
-    <link href="https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8f5fe6b5/"/>
-    <id>https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8f5fe6b5/</id>
-    <published>2022-05-11T07:22:39.000Z</published>
-    <updated>2022-05-11T07:22:39.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>立冬昨天都已经过了，可是这边还是依然的很热，这边是真的没有冬天啊，现在这个天气穿短袖都还很热呢。</p><span id="more"></span><p>这里最是适合过冬了，特别适合冬天怕冷的人，来这里几年了，只有一年是最冷的，其他的几年都没有感觉很冷，有一年我买了一件羽绒服，但是都没有穿过几次，因为这里的天气根本就用不着。</p><p>来这边的这几年都没有见到过下雪了，以前在老家的时候每年都可以遇着下几场雪，但是在这边那根本是永远也不会看到的景象了，天气冬天都很暖和了又怎么还会能看到下雪的景象呢。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;立冬昨天都已经过了，可是这边还是依然的很热，这边是真的没有冬天啊，现在这个天气穿短袖都还很热呢。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="日常记录" scheme="https://aixz.xyz/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="南方" scheme="https://aixz.xyz/tags/%E5%8D%97%E6%96%B9/"/>
-    
-    <category term="立冬" scheme="https://aixz.xyz/tags/%E7%AB%8B%E5%86%AC/"/>
-    
-    <category term="穿短袖" scheme="https://aixz.xyz/tags/%E7%A9%BF%E7%9F%AD%E8%A2%96/"/>
-    
-    <category term="适合过冬" scheme="https://aixz.xyz/tags/%E9%80%82%E5%90%88%E8%BF%87%E5%86%AC/"/>
-    
-    <category term="景象" scheme="https://aixz.xyz/tags/%E6%99%AF%E8%B1%A1/"/>
-    
-    <category term="羽绒服" scheme="https://aixz.xyz/tags/%E7%BE%BD%E7%BB%92%E6%9C%8D/"/>
     
   </entry>
   
