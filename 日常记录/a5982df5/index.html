@@ -84,7 +84,40 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><!-- 谷歌广告代码 -->
+</style><script>
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    
+      if (NexT.utils.hasMobileUA()) return;
+    
+    let time, hidden, visible, title = document.title;
+    let favicon = document.querySelector('link[rel="icon"]');
+    
+      hidden = '';
+      visible = '';
+    
+    let random = t => t[Math.floor(Math.random() * t.length)];
+    const change = () => {
+      if (document.hidden) {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = hidden;
+        
+        clearTimeout(time);
+      } else {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = visible;
+        
+        time = setTimeout(() => {
+          document.title = title;
+        }, 2019);
+      }
+    }
+    document.addEventListener('visibilitychange', change, false);
+  });
+</script>
+<!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -182,7 +215,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4141</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">530</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4149</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">531</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -253,7 +286,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">530</span>
+          <span class="site-state-item-count">531</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -264,7 +297,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">4141</span>
+        <span class="site-state-item-count">4149</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -312,7 +345,10 @@
         </li>
     </ul>
   </div>
-<!-- 近期文章 -->
+<!-- CloudCalendar -->
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+	<div class="widget" id="CloudCalendar"></div>
+</div><!-- 近期文章 -->
 
 
 
@@ -333,6 +369,14 @@
         
 
         
+
+       
+
+         <li>
+
+           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/5496ea38/" title="总是做一些奇奇怪怪的梦" target="_blank">总是做一些奇奇怪怪的梦</a>
+
+         </li>
 
        
 
@@ -362,15 +406,7 @@
 
          <li>
 
-           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018年最后的夜晚你怎样度过，12月31日我的过年回家路" target="_blank">2018年最后的夜晚你怎样度过，12月31日我的过年回家路</a>
-
-         </li>
-
-       
-
-         <li>
-
-           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/fa2bea6f/" title="元旦过后，新年上班的第一天，发生了这些事，让人很难过" target="_blank">元旦过后，新年上班的第一天，发生了这些事，让人很难过</a>
+           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路" target="_blank">2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路</a>
 
          </li>
 
@@ -521,7 +557,7 @@
 <p>还有那个鸡胸肉一斤鸡胸肉能够拧出半斤水来，比我以前在另一个平台买的差远了，好像里面就是注水了的，而且吃起来一点鸡肉的味道都没有，就和合成的鸡肉一样，刚开始做那些平台确实是认真做的，后面这些完全就是为了打价格战，品质非常差，也不怕砸了自己的招牌了，比淘宝买东西还不如，淘宝卖家怕你给差评还发好的，这些平台你连差评都没有地方给，反正都是继续坑下一个。</p>
 <p>水饺是其他的都到了那个就没有货，我也是醉了，就是看着这个水饺可以才一起买的。价格便宜的那种是带包装的反正就是不发货，等到你去拿的时候才说没有货，然后就让退款，没有货为什么还要上架，完全就是为了吸引消费者的眼球，因为这些带包装的价格和品质都一样，从中不可能做手脚来赚利润，不用怎么包装没有统一规格的这种就不一样了。</p>
 <p>一般的带包装有一定规格的，要么就是买的时候刚付完款他就给你退款了，今天早上我就遇到一次，搞得我莫名其妙，而且上面退款原因也没有。还有一种就是一起买的几样，带包装有一定规格的其他到了有货那个就是没有，多多买菜和美团都遇到过一次了，以后买还是要擦亮眼睛了，我发觉如果只单独买那一样估计也是秒退的，不发货还挂在上面干嘛，而且还显示再买一单，这不是有问题吗，总结出来就只有一句话，挂羊头买狗肉，真的再贴切不过了。</p>
-<p>社区团购前年2019年的大概12月就开始在同程上买过了，那些虽然是斤两差了一些，但是品质有保证，也没有不发货的情况，后面的这些是什么鬼真的搞不清楚。</p>
+<p>社区团购前年 2019 年的大概 12 月就开始在同程上买过了，那些虽然是斤两差了一些，但是品质有保证，也没有不发货的情况，后面的这些是什么鬼真的搞不清楚。</p>
 
     </div>
 
@@ -699,14 +735,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">285k</span>
+    <span title="站点总字数">287k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:19</span>
+    <span title="站点阅读时长">4:21</span>
   </span>
 </div>
 <div class="busuanzi-count">
@@ -734,15 +770,12 @@
   </div><!-- 打字效果代码 -->
 <div> 
 	<script src="https://cdn.jsdelivr.net/gh/suyin-long/activate-power-mode@1.0/dist/activate-power-mode.js"></script>
-</div>
-
-<!-- 礼花代码 -->
-<div>
 	<script>
-	POWERMODE.colorful = true; // make power mode colorful
-	POWERMODE.shake = false; // turn off shake
-	document.body.addEventListener('input', POWERMODE);
-	</script> 
+		POWERMODE.colorful = true; // make power mode colorful
+		POWERMODE.shake = false; // turn off shake
+		document.body.addEventListener('input', POWERMODE);
+	</script>
+
 </div>
 
     </div>
@@ -788,7 +821,24 @@
   <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
   <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a5982df5/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
+<!-- calendar widget -->
+<div>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js"></script>
+    <script>
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN',
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
 
+</div>
   <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
   <script>
       pbOptions = {};

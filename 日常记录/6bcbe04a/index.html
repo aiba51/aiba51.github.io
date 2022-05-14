@@ -85,7 +85,40 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><!-- 谷歌广告代码 -->
+</style><script>
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    
+      if (NexT.utils.hasMobileUA()) return;
+    
+    let time, hidden, visible, title = document.title;
+    let favicon = document.querySelector('link[rel="icon"]');
+    
+      hidden = '';
+      visible = '';
+    
+    let random = t => t[Math.floor(Math.random() * t.length)];
+    const change = () => {
+      if (document.hidden) {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = hidden;
+        
+        clearTimeout(time);
+      } else {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = visible;
+        
+        time = setTimeout(() => {
+          document.title = title;
+        }, 2019);
+      }
+    }
+    document.addEventListener('visibilitychange', change, false);
+  });
+</script>
+<!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -183,7 +216,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4141</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">530</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4149</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">531</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -254,7 +287,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">530</span>
+          <span class="site-state-item-count">531</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -265,7 +298,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">4141</span>
+        <span class="site-state-item-count">4149</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -313,7 +346,10 @@
         </li>
     </ul>
   </div>
-<!-- 近期文章 -->
+<!-- CloudCalendar -->
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+	<div class="widget" id="CloudCalendar"></div>
+</div><!-- 近期文章 -->
 
 
 
@@ -334,6 +370,14 @@
         
 
         
+
+       
+
+         <li>
+
+           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/5496ea38/" title="总是做一些奇奇怪怪的梦" target="_blank">总是做一些奇奇怪怪的梦</a>
+
+         </li>
 
        
 
@@ -363,15 +407,7 @@
 
          <li>
 
-           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018年最后的夜晚你怎样度过，12月31日我的过年回家路" target="_blank">2018年最后的夜晚你怎样度过，12月31日我的过年回家路</a>
-
-         </li>
-
-       
-
-         <li>
-
-           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/fa2bea6f/" title="元旦过后，新年上班的第一天，发生了这些事，让人很难过" target="_blank">元旦过后，新年上班的第一天，发生了这些事，让人很难过</a>
+           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路" target="_blank">2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路</a>
 
          </li>
 
@@ -521,7 +557,7 @@
 
 <p>我刚把电动车搬到楼下，一出门口就看到下雨了，当时还下得不太大，我有点犹豫了是去还是不去，看着还不太大，只是些小雨点打在地上，但是最终我还是选择不去了，那时候只是才刚开始下，当然是看到没有多大的。</p>
 <p>决定不去了我又把电动车搬回楼上了，才回到楼上家里没有多久，那雨就下得很大了，还好我决定不去是正确的选择了，要不然肯定是才到半路就淋得很惨了。</p>
-<p>那时候我看了表时间已经是17点55分了，大概是下了20多分钟左右，到了18点20多分钟的时候，我看外面是已经没有下了。</p>
+<p>那时候我看了表时间已经是 17 点 55 分了，大概是下了 20 多分钟左右，到了 18 点 20 多分钟的时候，我看外面是已经没有下了。</p>
 <p>从楼上的窗子外面看不出来还下没有，所以我又下楼出门口去看了下，确定是真的没有下了，只看到房顶上的积水在往下掉了，天空已经很少看到雨了。</p>
 <p>确定没有下了，我还是回到楼上准备是骑电车去买菜做饭，又再次把电动车重新搬下楼了，然后就去菜市场那里买菜了，卖菜的还是以前买的那个老太婆那里买，买完菜回到家里天就都已经黑了。</p>
 
@@ -702,14 +738,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">285k</span>
+    <span title="站点总字数">287k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:19</span>
+    <span title="站点阅读时长">4:21</span>
   </span>
 </div>
 <div class="busuanzi-count">
@@ -737,15 +773,12 @@
   </div><!-- 打字效果代码 -->
 <div> 
 	<script src="https://cdn.jsdelivr.net/gh/suyin-long/activate-power-mode@1.0/dist/activate-power-mode.js"></script>
-</div>
-
-<!-- 礼花代码 -->
-<div>
 	<script>
-	POWERMODE.colorful = true; // make power mode colorful
-	POWERMODE.shake = false; // turn off shake
-	document.body.addEventListener('input', POWERMODE);
-	</script> 
+		POWERMODE.colorful = true; // make power mode colorful
+		POWERMODE.shake = false; // turn off shake
+		document.body.addEventListener('input', POWERMODE);
+	</script>
+
 </div>
 
     </div>
@@ -791,7 +824,24 @@
   <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
   <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6bcbe04a/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
+<!-- calendar widget -->
+<div>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js"></script>
+    <script>
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN',
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
 
+</div>
   <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
   <script>
       pbOptions = {};

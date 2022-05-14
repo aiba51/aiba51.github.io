@@ -28,12 +28,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"aixz.xyz","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.11.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"width":280},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"buttons","active":"utterances","storage":false,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="经常都会在QQ群里面看到，抖音点赞一元一单，一单一结这样的广告，真的有这么好的事吗，完全没有可能，但是我想试一下看他到底是怎么诈骗的，随所以我也按他的步奏来进行。">
+    <meta name="description" content="经常都会在 QQ 群里面看到，抖音点赞一元一单，一单一结这样的广告，真的有这么好的事吗，完全没有可能，但是我想试一下看他到底是怎么诈骗的，随所以我也按他的步奏来进行。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="记一次潜入抖音点赞诈骗群">
 <meta property="og:url" content="https://aixz.xyz/en/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e03c5d7/index.html">
 <meta property="og:site_name" content="夜色酒庄">
-<meta property="og:description" content="经常都会在QQ群里面看到，抖音点赞一元一单，一单一结这样的广告，真的有这么好的事吗，完全没有可能，但是我想试一下看他到底是怎么诈骗的，随所以我也按他的步奏来进行。">
+<meta property="og:description" content="经常都会在 QQ 群里面看到，抖音点赞一元一单，一单一结这样的广告，真的有这么好的事吗，完全没有可能，但是我想试一下看他到底是怎么诈骗的，随所以我也按他的步奏来进行。">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e03c5d7/1.jpg">
 <meta property="og:image" content="https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e03c5d7/2.jpg">
@@ -91,7 +91,40 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><!-- 谷歌广告代码 -->
+</style><script>
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    
+      if (NexT.utils.hasMobileUA()) return;
+    
+    let time, hidden, visible, title = document.title;
+    let favicon = document.querySelector('link[rel="icon"]');
+    
+      hidden = '';
+      visible = '';
+    
+    let random = t => t[Math.floor(Math.random() * t.length)];
+    const change = () => {
+      if (document.hidden) {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = hidden;
+        
+        clearTimeout(time);
+      } else {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = visible;
+        
+        time = setTimeout(() => {
+          document.title = title;
+        }, 2019);
+      }
+    }
+    document.addEventListener('visibilitychange', change, false);
+  });
+</script>
+<!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -189,7 +222,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">4141</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">530</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">4149</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">531</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -260,7 +293,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">530</span>
+          <span class="site-state-item-count">531</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -271,7 +304,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">4141</span>
+        <span class="site-state-item-count">4149</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -319,7 +352,10 @@
         </li>
     </ul>
   </div>
-<!-- 近期文章 -->
+<!-- CloudCalendar -->
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+	<div class="widget" id="CloudCalendar"></div>
+</div><!-- 近期文章 -->
 
 
 
@@ -340,6 +376,14 @@
         
 
         
+
+       
+
+         <li>
+
+           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/5496ea38/" title="总是做一些奇奇怪怪的梦" target="_blank">总是做一些奇奇怪怪的梦</a>
+
+         </li>
 
        
 
@@ -369,15 +413,7 @@
 
          <li>
 
-           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018年最后的夜晚你怎样度过，12月31日我的过年回家路" target="_blank">2018年最后的夜晚你怎样度过，12月31日我的过年回家路</a>
-
-         </li>
-
-       
-
-         <li>
-
-           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/fa2bea6f/" title="元旦过后，新年上班的第一天，发生了这些事，让人很难过" target="_blank">元旦过后，新年上班的第一天，发生了这些事，让人很难过</a>
+           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路" target="_blank">2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路</a>
 
          </li>
 
@@ -522,15 +558,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>经常都会在QQ群里面看到，抖音点赞一元一单，一单一结这样的广告，真的有这么好的事吗，完全没有可能，但是我想试一下看他到底是怎么诈骗的，随所以我也按他的步奏来进行。</p>
+        <p>经常都会在 QQ 群里面看到，抖音点赞一元一单，一单一结这样的广告，真的有这么好的事吗，完全没有可能，但是我想试一下看他到底是怎么诈骗的，随所以我也按他的步奏来进行。</p>
 <span id="more"></span>
 
 <p>刚开始是让加一个企业微信，现在开始玩得高档了，连企业微信号都有了，估计是买来的，不然别人一举报他还是会完蛋。进了这个企业微信以后好像还有一个群，然后就一个群管理员一直在里面发消息，让还没有领到工作任务的私聊他。</p>
-<p>私聊他以后他还是会给尝到一点甜头的，让去关注一个抖音账号，然后截图给他，他就给结算0.3元，这里确实他会0.3元，目的就是取得我的信任，但是不是直接转账的，是要用我的赞赏码才可以，好吧，只要有钱给我用什么都可以，于是就发了我的赞赏码给他，不一会0.3元就到账了。</p>
-<p>然后就说要做后面的接单任务，就要把他给的那条消息和图片发8个群和微信朋友圈，好吧，这里我也是照做就是了，反正还没有到我交钱的那一步，他这个目的就是帮他骗到更多的人。</p>
-<p>发完了截图给他，然后又让下载一个IS语音的软件，真正骗钱的他是在这个软件上进行的，下载了这个软件就让改昵称，什么某某人推荐加我自己的微信昵称，改好以后又发截图给他，还有把加好友那里改成拒绝加好友，果然都是套路。</p>
-<p>反正我也是按照他的来，然后就进了那个语音聊天软件的公会群里面了，然后就是在里面上课，讲的也是一些简单又重复的东西，重要的是最后，最后就是要钱了，说要做任务就要激活账号什么的，到这里我就知道这是骗人的了，要交199块钱，我果断不理他了，于是这次潜入就到尾声画上了一个完美的句号了。</p>
-<p>最后说明一点只要自己不贪心，不交钱给他，那他也骗不了什么，怕的就是有的人相信他这里交钱给他激活账号就可以做任务什么的，那就真的被他骗了，其实他哪有什么任务给你做，目的就是骗这个199块钱。</p>
+<p>私聊他以后他还是会给尝到一点甜头的，让去关注一个抖音账号，然后截图给他，他就给结算 0.3 元，这里确实他会 0.3 元，目的就是取得我的信任，但是不是直接转账的，是要用我的赞赏码才可以，好吧，只要有钱给我用什么都可以，于是就发了我的赞赏码给他，不一会 0.3 元就到账了。</p>
+<p>然后就说要做后面的接单任务，就要把他给的那条消息和图片发 8 个群和微信朋友圈，好吧，这里我也是照做就是了，反正还没有到我交钱的那一步，他这个目的就是帮他骗到更多的人。</p>
+<p>发完了截图给他，然后又让下载一个 IS 语音的软件，真正骗钱的他是在这个软件上进行的，下载了这个软件就让改昵称，什么某某人推荐加我自己的微信昵称，改好以后又发截图给他，还有把加好友那里改成拒绝加好友，果然都是套路。</p>
+<p>反正我也是按照他的来，然后就进了那个语音聊天软件的公会群里面了，然后就是在里面上课，讲的也是一些简单又重复的东西，重要的是最后，最后就是要钱了，说要做任务就要激活账号什么的，到这里我就知道这是骗人的了，要交 199 块钱，我果断不理他了，于是这次潜入就到尾声画上了一个完美的句号了。</p>
+<p>最后说明一点只要自己不贪心，不交钱给他，那他也骗不了什么，怕的就是有的人相信他这里交钱给他激活账号就可以做任务什么的，那就真的被他骗了，其实他哪有什么任务给你做，目的就是骗这个 199 块钱。</p>
 <p>看着确实不容易被骗的，但是有的人确实容易在这里被骗了，在那个公会群里面我感觉至少有两三个人被骗了，因为骗子的语音一直开着，后面还听到得了多少钱要分之类的，还好我一开始就不相信他，所以他也骗不了我什么，下面是骗子微信群的截图和骗子要钱的截图。</p>
 <p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e03c5d7/1.jpg"></p>
 <p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e03c5d7/2.jpg"></p>
@@ -656,8 +692,8 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e9465d1/" rel="prev" title="让iPad不再是盖泡面神器，还可以用它来赚点小钱">
-                  <i class="fa fa-chevron-left"></i> 让iPad不再是盖泡面神器，还可以用它来赚点小钱
+                <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e9465d1/" rel="prev" title="让 iPad 不再是盖泡面神器，还可以用它来赚点小钱">
+                  <i class="fa fa-chevron-left"></i> 让 iPad 不再是盖泡面神器，还可以用它来赚点小钱
                 </a>
             </div>
             <div class="post-nav-item">
@@ -715,14 +751,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>Symbols count total: </span>
-    <span title="Symbols count total">285k</span>
+    <span title="Symbols count total">287k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>Reading time total &asymp;</span>
-    <span title="Reading time total">4:19</span>
+    <span title="Reading time total">4:21</span>
   </span>
 </div>
 <div class="busuanzi-count">
@@ -750,15 +786,12 @@
   </div><!-- 打字效果代码 -->
 <div> 
 	<script src="https://cdn.jsdelivr.net/gh/suyin-long/activate-power-mode@1.0/dist/activate-power-mode.js"></script>
-</div>
-
-<!-- 礼花代码 -->
-<div>
 	<script>
-	POWERMODE.colorful = true; // make power mode colorful
-	POWERMODE.shake = false; // turn off shake
-	document.body.addEventListener('input', POWERMODE);
-	</script> 
+		POWERMODE.colorful = true; // make power mode colorful
+		POWERMODE.shake = false; // turn off shake
+		document.body.addEventListener('input', POWERMODE);
+	</script>
+
 </div>
 
     </div>
@@ -804,7 +837,24 @@
   <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
   <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://aixz.xyz/en/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e03c5d7/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
+<!-- calendar widget -->
+<div>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js"></script>
+    <script>
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN',
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
 
+</div>
   <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
   <script>
       pbOptions = {};

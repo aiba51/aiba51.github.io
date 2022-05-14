@@ -91,7 +91,40 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><!-- 谷歌广告代码 -->
+</style><script>
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    
+      if (NexT.utils.hasMobileUA()) return;
+    
+    let time, hidden, visible, title = document.title;
+    let favicon = document.querySelector('link[rel="icon"]');
+    
+      hidden = '';
+      visible = '';
+    
+    let random = t => t[Math.floor(Math.random() * t.length)];
+    const change = () => {
+      if (document.hidden) {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = hidden;
+        
+        clearTimeout(time);
+      } else {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = visible;
+        
+        time = setTimeout(() => {
+          document.title = title;
+        }, 2019);
+      }
+    }
+    document.addEventListener('visibilitychange', change, false);
+  });
+</script>
+<!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -189,7 +222,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">4141</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">530</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">4149</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">531</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -260,7 +293,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">530</span>
+          <span class="site-state-item-count">531</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -271,7 +304,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">4141</span>
+        <span class="site-state-item-count">4149</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -319,7 +352,10 @@
         </li>
     </ul>
   </div>
-<!-- 近期文章 -->
+<!-- CloudCalendar -->
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+	<div class="widget" id="CloudCalendar"></div>
+</div><!-- 近期文章 -->
 
 
 
@@ -340,6 +376,14 @@
         
 
         
+
+       
+
+         <li>
+
+           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/5496ea38/" title="总是做一些奇奇怪怪的梦" target="_blank">总是做一些奇奇怪怪的梦</a>
+
+         </li>
 
        
 
@@ -369,15 +413,7 @@
 
          <li>
 
-           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018年最后的夜晚你怎样度过，12月31日我的过年回家路" target="_blank">2018年最后的夜晚你怎样度过，12月31日我的过年回家路</a>
-
-         </li>
-
-       
-
-         <li>
-
-           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/fa2bea6f/" title="元旦过后，新年上班的第一天，发生了这些事，让人很难过" target="_blank">元旦过后，新年上班的第一天，发生了这些事，让人很难过</a>
+           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路" target="_blank">2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路</a>
 
          </li>
 
@@ -525,7 +561,7 @@
         <p>会写作可以说是做自媒体最基础的入门课程，而写作是没有人可以教得会的，只有通过不断的练习，也只有通过不断的练习自己写出的句子才会越来越通顺，自己想到什么就可以写出什么来，对于写不好或者刚接触写作的人来说一个句子可能都要想半天，甚至是写了又删，删了又写，一直就这样的循环着是根本写不出一篇文章来的。</p>
 <span id="more"></span>
 
-<p>写作就和说话一样，你说错话了别人一样会笑你，说错话了你还不能反悔，什么“君子一言，驷马难追，口无遮拦，说话不经过大脑”这些描述都是说一个人要谨言慎行，然而写文章却不一样，只要是写错了还是可以改，只要写出来的东西自己认为不是表达自己要说的话，那都是可以改过来的。</p>
+<p>写作就和说话一样，你说错话了别人一样会笑你，说错话了你还不能反悔，什么 “君子一言，驷马难追，口无遮拦，说话不经过大脑” 这些描述都是说一个人要谨言慎行，然而写文章却不一样，只要是写错了还是可以改，只要写出来的东西自己认为不是表达自己要说的话，那都是可以改过来的。</p>
 <p>写作是真的没有那么难，至少现在是真的没有那么难了，现在的手机电脑都很普及了，只要会在手机上打字聊天都能学会写作，以前是还要一支笔一张纸，现在都不需要了。现在的我们每天在网上聊天评论，其实都可以算是在练习写作，只是你没有特别的意识去将你写下的这些文字组织起来，当然没有组织起来的这些文字碎片也不能称为你写出来的作品，就是因为如此有很多人才会感觉写作很难，那其实只是你没有用心，等你用心了一切都会自然而然的水到渠成。</p>
 <p>写作的灵感本身就是来源于生活的，只要你还活在生活中那你就会有写的，只是有些人平时聊家常碎碎念很厉害，你要是让他写出来他就无从下笔，不知道从何说起了。话多有时候还真的不如写出一篇思想深刻的文章来更让人信服，文字的力量有时候比语言更能打动人心，所以能说的都尽量用写，你写不出来，在别人面前说什么都没有文字表达得更深刻。只有思想深刻，经过你自己思考的东西别人才会认可，也才能打动别人的心思，也才能让人容易记住，还记得很牢固而不容易忘记。让人记得不深刻，不能打动人心的东西都是表面的虚华，华而不实的东西给人就不是真实的感受，不真实的感受带给人的是没有一点用处的东西。</p>
 <p>只要坚持每天都写几百字，那只要不多久对于你来说写个七八百字的都可以很轻松了，不要因为没有写作素材就认为找不到写的了，生活中的每件小事其实都可以写出来，只是有的人不愿意表达罢了。连文字都不愿意表达自我的人是真正内向的人，这种人一般不想让人了解自己的生活，更不可能让人了解自己的内心世界。写作必须要让文字从你的内心世界里走出来，不这样永远都写不出自己的东西。也许你写出来的东西别人会不喜欢，但又有什么关系，那本来就是真实的自己，你连自己都认识不清楚，又怎么去认识他人，了解他人的世界，你得先让你的想法从你的世界里走出来。</p>
@@ -715,14 +751,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>Symbols count total: </span>
-    <span title="Symbols count total">285k</span>
+    <span title="Symbols count total">287k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>Reading time total &asymp;</span>
-    <span title="Reading time total">4:19</span>
+    <span title="Reading time total">4:21</span>
   </span>
 </div>
 <div class="busuanzi-count">
@@ -750,15 +786,12 @@
   </div><!-- 打字效果代码 -->
 <div> 
 	<script src="https://cdn.jsdelivr.net/gh/suyin-long/activate-power-mode@1.0/dist/activate-power-mode.js"></script>
-</div>
-
-<!-- 礼花代码 -->
-<div>
 	<script>
-	POWERMODE.colorful = true; // make power mode colorful
-	POWERMODE.shake = false; // turn off shake
-	document.body.addEventListener('input', POWERMODE);
-	</script> 
+		POWERMODE.colorful = true; // make power mode colorful
+		POWERMODE.shake = false; // turn off shake
+		document.body.addEventListener('input', POWERMODE);
+	</script>
+
 </div>
 
     </div>
@@ -804,7 +837,24 @@
   <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
   <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://aixz.xyz/en/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/82f51e6b/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
+<!-- calendar widget -->
+<div>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js"></script>
+    <script>
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN',
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
 
+</div>
   <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
   <script>
       pbOptions = {};

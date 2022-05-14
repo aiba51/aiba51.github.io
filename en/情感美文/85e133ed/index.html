@@ -96,7 +96,40 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><!-- 谷歌广告代码 -->
+</style><script>
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    
+      if (NexT.utils.hasMobileUA()) return;
+    
+    let time, hidden, visible, title = document.title;
+    let favicon = document.querySelector('link[rel="icon"]');
+    
+      hidden = '';
+      visible = '';
+    
+    let random = t => t[Math.floor(Math.random() * t.length)];
+    const change = () => {
+      if (document.hidden) {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = hidden;
+        
+        clearTimeout(time);
+      } else {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = visible;
+        
+        time = setTimeout(() => {
+          document.title = title;
+        }, 2019);
+      }
+    }
+    document.addEventListener('visibilitychange', change, false);
+  });
+</script>
+<!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -194,7 +227,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">4141</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">530</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">4149</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">531</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -265,7 +298,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">530</span>
+          <span class="site-state-item-count">531</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -276,7 +309,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">4141</span>
+        <span class="site-state-item-count">4149</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -324,7 +357,10 @@
         </li>
     </ul>
   </div>
-<!-- 近期文章 -->
+<!-- CloudCalendar -->
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+	<div class="widget" id="CloudCalendar"></div>
+</div><!-- 近期文章 -->
 
 
 
@@ -345,6 +381,14 @@
         
 
         
+
+       
+
+         <li>
+
+           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/5496ea38/" title="总是做一些奇奇怪怪的梦" target="_blank">总是做一些奇奇怪怪的梦</a>
+
+         </li>
 
        
 
@@ -374,15 +418,7 @@
 
          <li>
 
-           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018年最后的夜晚你怎样度过，12月31日我的过年回家路" target="_blank">2018年最后的夜晚你怎样度过，12月31日我的过年回家路</a>
-
-         </li>
-
-       
-
-         <li>
-
-           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/fa2bea6f/" title="元旦过后，新年上班的第一天，发生了这些事，让人很难过" target="_blank">元旦过后，新年上班的第一天，发生了这些事，让人很难过</a>
+           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路" target="_blank">2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路</a>
 
          </li>
 
@@ -534,9 +570,9 @@
 <p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/85e133ed/%E5%9B%BE%E7%89%872.png"></p>
 <p>也许我们真的在回想这一年时会有很多的未完成之事，我们在一八年初的计划没有去实现，但那又算得了什么呢，总不能把一生当成一年来过吧，以后的日子那可是还长着的呢。我们想在一年就要完成我们所想的理想，那却不是我们想想就能完成得了的，理想它是具有长期性的，一年完不成的事，那我们还有两年呢，两年实在不行，那就给三年吧，三年应该是可以了吧，只要你想的理想不是伟大而艰巨的，那么是总会有完成的一天的，只要你坚持不放弃那这一天是终会到来的。</p>
 <p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/85e133ed/%E5%9B%BE%E7%89%873.png"></p>
-<p>我们都听说过有“一万小时”定律吧，就是说无论什么事，只要你能够坚持一万个小时，那你肯定就会成功，你就会成为某一类的专家，那这二零一八年那些还未完成之事又算得了什么呢，只要你坚持着那以后大把的机会还在时光的后头呢。</p>
+<p>我们都听说过有 “一万小时” 定律吧，就是说无论什么事，只要你能够坚持一万个小时，那你肯定就会成功，你就会成为某一类的专家，那这二零一八年那些还未完成之事又算得了什么呢，只要你坚持着那以后大把的机会还在时光的后头呢。</p>
 <p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/85e133ed/%E5%9B%BE%E7%89%874.png"></p>
-<p>我们有时喜欢在年初定下一些或大或小的目标，我们在一八年定下的小目标没有去实现，这也不影响我们在二零一九年重新定下这些小目标，在这二零一八年的最后几天里我们也可以去想想二零一九年该要去实现哪些目标了。都说“一日之计在于晨，一年之计在于春”，虽然我们离春天还远，但“人无远虑，必有近忧”，是时候也到了我们为来年的计划谋划一番了。</p>
+<p>我们有时喜欢在年初定下一些或大或小的目标，我们在一八年定下的小目标没有去实现，这也不影响我们在二零一九年重新定下这些小目标，在这二零一八年的最后几天里我们也可以去想想二零一九年该要去实现哪些目标了。都说 “一日之计在于晨，一年之计在于春”，虽然我们离春天还远，但 “人无远虑，必有近忧”，是时候也到了我们为来年的计划谋划一番了。</p>
 <p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/85e133ed/%E5%9B%BE%E7%89%875.png"></p>
 <p>人生也许总会遇到些不如意之事，我们这即将走完的这一年可能有许多让我们伤痛的往事，趁着这一年还有几天，我们试着捋一遍，然后将它们统统忘掉吧，那样我们在二零一九年可能就会朝着努力奋斗的方向走得很轻松，因为没有负重，所以我们才能奔跑前行，随着新年的钟声一声敲响，那些伤感之事也将化成虚无的泡影，来年的你就将是一个快乐的你。</p>
 <p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/85e133ed/%E5%9B%BE%E7%89%876.png"></p>
@@ -725,14 +761,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>Symbols count total: </span>
-    <span title="Symbols count total">285k</span>
+    <span title="Symbols count total">287k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>Reading time total &asymp;</span>
-    <span title="Reading time total">4:19</span>
+    <span title="Reading time total">4:21</span>
   </span>
 </div>
 <div class="busuanzi-count">
@@ -760,15 +796,12 @@
   </div><!-- 打字效果代码 -->
 <div> 
 	<script src="https://cdn.jsdelivr.net/gh/suyin-long/activate-power-mode@1.0/dist/activate-power-mode.js"></script>
-</div>
-
-<!-- 礼花代码 -->
-<div>
 	<script>
-	POWERMODE.colorful = true; // make power mode colorful
-	POWERMODE.shake = false; // turn off shake
-	document.body.addEventListener('input', POWERMODE);
-	</script> 
+		POWERMODE.colorful = true; // make power mode colorful
+		POWERMODE.shake = false; // turn off shake
+		document.body.addEventListener('input', POWERMODE);
+	</script>
+
 </div>
 
     </div>
@@ -814,7 +847,24 @@
   <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
   <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://aixz.xyz/en/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/85e133ed/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
+<!-- calendar widget -->
+<div>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js"></script>
+    <script>
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN',
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
 
+</div>
   <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
   <script>
       pbOptions = {};

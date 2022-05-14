@@ -28,12 +28,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"aixz.xyz","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.11.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"width":280},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"buttons","active":"utterances","storage":false,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="我在简书发文章也有段时间了，以前一直不知道区块链是什么东西，也不知道它和我们普通人有什么联系，比特币那些也只是听到别人说说而已，感觉离自己非常遥远。最近在简书坚持每天更新一篇文章得到了20个简书贝，之前也不知道这简书贝有什么用，看到有简友发的文章说简书贝可以换钱，我一直也都是将信将疑的，自己没有去做过太多的考证。">
+    <meta name="description" content="我在简书发文章也有段时间了，以前一直不知道区块链是什么东西，也不知道它和我们普通人有什么联系，比特币那些也只是听到别人说说而已，感觉离自己非常遥远。最近在简书坚持每天更新一篇文章得到了 20 个简书贝，之前也不知道这简书贝有什么用，看到有简友发的文章说简书贝可以换钱，我一直也都是将信将疑的，自己没有去做过太多的考证。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="第一次体验区块链">
 <meta property="og:url" content="https://aixz.xyz/en/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/bf99784d/index.html">
 <meta property="og:site_name" content="夜色酒庄">
-<meta property="og:description" content="我在简书发文章也有段时间了，以前一直不知道区块链是什么东西，也不知道它和我们普通人有什么联系，比特币那些也只是听到别人说说而已，感觉离自己非常遥远。最近在简书坚持每天更新一篇文章得到了20个简书贝，之前也不知道这简书贝有什么用，看到有简友发的文章说简书贝可以换钱，我一直也都是将信将疑的，自己没有去做过太多的考证。">
+<meta property="og:description" content="我在简书发文章也有段时间了，以前一直不知道区块链是什么东西，也不知道它和我们普通人有什么联系，比特币那些也只是听到别人说说而已，感觉离自己非常遥远。最近在简书坚持每天更新一篇文章得到了 20 个简书贝，之前也不知道这简书贝有什么用，看到有简友发的文章说简书贝可以换钱，我一直也都是将信将疑的，自己没有去做过太多的考证。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-05-25T15:06:36.830Z">
 <meta property="article:modified_time" content="2021-05-25T15:06:36.830Z">
@@ -102,7 +102,40 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><!-- 谷歌广告代码 -->
+</style><script>
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    
+      if (NexT.utils.hasMobileUA()) return;
+    
+    let time, hidden, visible, title = document.title;
+    let favicon = document.querySelector('link[rel="icon"]');
+    
+      hidden = '';
+      visible = '';
+    
+    let random = t => t[Math.floor(Math.random() * t.length)];
+    const change = () => {
+      if (document.hidden) {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = hidden;
+        
+        clearTimeout(time);
+      } else {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = visible;
+        
+        time = setTimeout(() => {
+          document.title = title;
+        }, 2019);
+      }
+    }
+    document.addEventListener('visibilitychange', change, false);
+  });
+</script>
+<!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -200,7 +233,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">4141</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">530</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">4149</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">531</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -271,7 +304,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">530</span>
+          <span class="site-state-item-count">531</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -282,7 +315,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">4141</span>
+        <span class="site-state-item-count">4149</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -330,7 +363,10 @@
         </li>
     </ul>
   </div>
-<!-- 近期文章 -->
+<!-- CloudCalendar -->
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+	<div class="widget" id="CloudCalendar"></div>
+</div><!-- 近期文章 -->
 
 
 
@@ -351,6 +387,14 @@
         
 
         
+
+       
+
+         <li>
+
+           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/5496ea38/" title="总是做一些奇奇怪怪的梦" target="_blank">总是做一些奇奇怪怪的梦</a>
+
+         </li>
 
        
 
@@ -380,15 +424,7 @@
 
          <li>
 
-           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018年最后的夜晚你怎样度过，12月31日我的过年回家路" target="_blank">2018年最后的夜晚你怎样度过，12月31日我的过年回家路</a>
-
-         </li>
-
-       
-
-         <li>
-
-           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/fa2bea6f/" title="元旦过后，新年上班的第一天，发生了这些事，让人很难过" target="_blank">元旦过后，新年上班的第一天，发生了这些事，让人很难过</a>
+           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路" target="_blank">2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路</a>
 
          </li>
 
@@ -533,14 +569,14 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>我在简书发文章也有段时间了，以前一直不知道区块链是什么东西，也不知道它和我们普通人有什么联系，比特币那些也只是听到别人说说而已，感觉离自己非常遥远。最近在简书坚持每天更新一篇文章得到了20个简书贝，之前也不知道这简书贝有什么用，看到有简友发的文章说简书贝可以换钱，我一直也都是将信将疑的，自己没有去做过太多的考证。</p>
+        <p>我在简书发文章也有段时间了，以前一直不知道区块链是什么东西，也不知道它和我们普通人有什么联系，比特币那些也只是听到别人说说而已，感觉离自己非常遥远。最近在简书坚持每天更新一篇文章得到了 20 个简书贝，之前也不知道这简书贝有什么用，看到有简友发的文章说简书贝可以换钱，我一直也都是将信将疑的，自己没有去做过太多的考证。</p>
 <span id="more"></span>
 
-<p>这次我看到我简书账户上终于有二十个简书贝了，我就想到将它兑换成FTN币，上面的简书贝官方给的能兑换成人民币的暂时就只有这一途径，我看了FTN项目官方的兑换流程，我也仔细的研究了几遍其他人的教程，这样翻来覆去研究过几遍之后，我算是有点眉目了。简书钻是可以兑换成简书贝的，只不过到账时间很漫长，要13周才能到账，第一笔是一周后到账，借钻不能兑换，借钻只是简书借给作者赚取收益的，七天到期后就会被收回，收益属于作者自己，这个方法就相当于是借鸡生蛋的原理。</p>
-<p>简书钻兑换成简书贝我还没有兑换过，因为我的简书账户上除了借钻其实属于自己的钻没有几个，别看我现在都有500多钻了，属于我自己能兑换的钻大概不到20个，所以从钻到贝这一兑换流程我是还没有体验过。我体验过的是从贝到FTN这一流程，要体验这一兑换流程自己要先在手机上安装注册一个数字钱包，我用到的是imToken，这个数字钱包被称为虚拟货币中的支付宝，既可以收虚拟币也可以把虚拟币转到别的平台账号。唯一的缺点就是FTN在这个软件上还不能兑换为其他币，要转到别的平台才可以，而且转账出去是要收矿工费的，矿工费是用以太币来支付，所以就必须要先买点以太币在里面才能转账。</p>
-<p>我的20个简书贝兑换到FTN再到转到这个imToken上，其实已经只剩下15个了，简书贝到FTN是一对一兑换，但是这其中是要收手续费的，我就被扣了5个作为手续费，后面看了兑换规则，我才知道100以内的都只要收5个，如果是兑换100个就会划算一点，我这个才20个就被扣掉5个确实是有点坑了。不过这只是作为我第一次体验，反正没有自己花一分钱，以后多了转到其他平台换成以太币再换成人民币也是可以的。这15个我也先不打算转出去了，就先放在imToken上等它积累多了再做打算。</p>
-<p>这个FTN币目前来说虽然市场价不是太贵，也就0.24元一个，这还是几天前我看的价格，已经过去了几天，这几天我都没有去关注，也不知道现在是涨了还是跌了，反正这虚拟币的价格是每分钟都在变化，人为操纵的水分不是太大，因为每一笔兑换和转账交易都是公开透明的能在各区块链之间查询到，唯一让它价格变动的就是产出的多少和交易中的买入和卖出。</p>
-<p>我第一次体验这东西反正我不是太懂，只是抱着试一试的心态来体验整个兑换流程，后面我还知道有个币虎，也是手机上的一个虚拟币交易软件，上面可以看到每种币每分钟的价格变化趋势，只是这都是我后面才发现的，我FTN币都已经转到前面的那个数字钱包里去了。微信上也还有个币礼包的公众号，上面的FTN币已经是可以用来充话费了，当然也可以在上面买入和卖出FTN，至于怎么把FTN从数字钱包或者简书贝直接兑换成FTN转到这里我还没有搞明白。总的来说区块链是未来财富一个超前的概念，早些入门看懂并理解也是一件对自己不能错过的好事，对于未来财富分配也是有着巨大的影响。</p>
+<p>这次我看到我简书账户上终于有二十个简书贝了，我就想到将它兑换成 FTN 币，上面的简书贝官方给的能兑换成人民币的暂时就只有这一途径，我看了 FTN 项目官方的兑换流程，我也仔细的研究了几遍其他人的教程，这样翻来覆去研究过几遍之后，我算是有点眉目了。简书钻是可以兑换成简书贝的，只不过到账时间很漫长，要 13 周才能到账，第一笔是一周后到账，借钻不能兑换，借钻只是简书借给作者赚取收益的，七天到期后就会被收回，收益属于作者自己，这个方法就相当于是借鸡生蛋的原理。</p>
+<p>简书钻兑换成简书贝我还没有兑换过，因为我的简书账户上除了借钻其实属于自己的钻没有几个，别看我现在都有 500 多钻了，属于我自己能兑换的钻大概不到 20 个，所以从钻到贝这一兑换流程我是还没有体验过。我体验过的是从贝到 FTN 这一流程，要体验这一兑换流程自己要先在手机上安装注册一个数字钱包，我用到的是 imToken，这个数字钱包被称为虚拟货币中的支付宝，既可以收虚拟币也可以把虚拟币转到别的平台账号。唯一的缺点就是 FTN 在这个软件上还不能兑换为其他币，要转到别的平台才可以，而且转账出去是要收矿工费的，矿工费是用以太币来支付，所以就必须要先买点以太币在里面才能转账。</p>
+<p>我的 20 个简书贝兑换到 FTN 再到转到这个 imToken 上，其实已经只剩下 15 个了，简书贝到 FTN 是一对一兑换，但是这其中是要收手续费的，我就被扣了 5 个作为手续费，后面看了兑换规则，我才知道 100 以内的都只要收 5 个，如果是兑换 100 个就会划算一点，我这个才 20 个就被扣掉 5 个确实是有点坑了。不过这只是作为我第一次体验，反正没有自己花一分钱，以后多了转到其他平台换成以太币再换成人民币也是可以的。这 15 个我也先不打算转出去了，就先放在 imToken 上等它积累多了再做打算。</p>
+<p>这个 FTN 币目前来说虽然市场价不是太贵，也就 0.24 元一个，这还是几天前我看的价格，已经过去了几天，这几天我都没有去关注，也不知道现在是涨了还是跌了，反正这虚拟币的价格是每分钟都在变化，人为操纵的水分不是太大，因为每一笔兑换和转账交易都是公开透明的能在各区块链之间查询到，唯一让它价格变动的就是产出的多少和交易中的买入和卖出。</p>
+<p>我第一次体验这东西反正我不是太懂，只是抱着试一试的心态来体验整个兑换流程，后面我还知道有个币虎，也是手机上的一个虚拟币交易软件，上面可以看到每种币每分钟的价格变化趋势，只是这都是我后面才发现的，我 FTN 币都已经转到前面的那个数字钱包里去了。微信上也还有个币礼包的公众号，上面的 FTN 币已经是可以用来充话费了，当然也可以在上面买入和卖出 FTN，至于怎么把 FTN 从数字钱包或者简书贝直接兑换成 FTN 转到这里我还没有搞明白。总的来说区块链是未来财富一个超前的概念，早些入门看懂并理解也是一件对自己不能错过的好事，对于未来财富分配也是有着巨大的影响。</p>
 <hr>
 
     </div>
@@ -737,14 +773,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>Symbols count total: </span>
-    <span title="Symbols count total">285k</span>
+    <span title="Symbols count total">287k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>Reading time total &asymp;</span>
-    <span title="Reading time total">4:19</span>
+    <span title="Reading time total">4:21</span>
   </span>
 </div>
 <div class="busuanzi-count">
@@ -772,15 +808,12 @@
   </div><!-- 打字效果代码 -->
 <div> 
 	<script src="https://cdn.jsdelivr.net/gh/suyin-long/activate-power-mode@1.0/dist/activate-power-mode.js"></script>
-</div>
-
-<!-- 礼花代码 -->
-<div>
 	<script>
-	POWERMODE.colorful = true; // make power mode colorful
-	POWERMODE.shake = false; // turn off shake
-	document.body.addEventListener('input', POWERMODE);
-	</script> 
+		POWERMODE.colorful = true; // make power mode colorful
+		POWERMODE.shake = false; // turn off shake
+		document.body.addEventListener('input', POWERMODE);
+	</script>
+
 </div>
 
     </div>
@@ -826,7 +859,24 @@
   <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
   <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://aixz.xyz/en/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/bf99784d/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
+<!-- calendar widget -->
+<div>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js"></script>
+    <script>
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN',
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
 
+</div>
   <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
   <script>
       pbOptions = {};

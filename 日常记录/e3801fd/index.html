@@ -28,12 +28,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"aixz.xyz","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.11.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"width":280},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"buttons","active":"utterances","storage":false,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="Macmini发布也有很长一段时间了，但是价格一直都是很贵的，如果能用更少的价格能自己组装一台这样的电脑那感觉是很爽的，其实最先考虑的还是机箱的选择，既然是要组装的是Mini主机那机箱肯定是选择越小越好的，其次就是选择主板，选主板肯定是要选能装到机箱的主板。">
+    <meta name="description" content="Macmini 发布也有很长一段时间了，但是价格一直都是很贵的，如果能用更少的价格能自己组装一台这样的电脑那感觉是很爽的，其实最先考虑的还是机箱的选择，既然是要组装的是 Mini 主机那机箱肯定是选择越小越好的，其次就是选择主板，选主板肯定是要选能装到机箱的主板。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="自己组装一个和Macmini差不多一样的电脑">
+<meta property="og:title" content="自己组装一个和 Macmini 差不多一样的电脑">
 <meta property="og:url" content="https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e3801fd/index.html">
 <meta property="og:site_name" content="夜色酒庄">
-<meta property="og:description" content="Macmini发布也有很长一段时间了，但是价格一直都是很贵的，如果能用更少的价格能自己组装一台这样的电脑那感觉是很爽的，其实最先考虑的还是机箱的选择，既然是要组装的是Mini主机那机箱肯定是选择越小越好的，其次就是选择主板，选主板肯定是要选能装到机箱的主板。">
+<meta property="og:description" content="Macmini 发布也有很长一段时间了，但是价格一直都是很贵的，如果能用更少的价格能自己组装一台这样的电脑那感觉是很爽的，其实最先考虑的还是机箱的选择，既然是要组装的是 Mini 主机那机箱肯定是选择越小越好的，其次就是选择主板，选主板肯定是要选能装到机箱的主板。">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2021-05-25T15:06:36.873Z">
 <meta property="article:modified_time" content="2021-05-25T15:06:36.873Z">
@@ -61,10 +61,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e3801fd/","path":"日常记录/e3801fd/","title":"自己组装一个和Macmini差不多一样的电脑"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-CN","comments":true,"permalink":"https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e3801fd/","path":"日常记录/e3801fd/","title":"自己组装一个和 Macmini 差不多一样的电脑"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>自己组装一个和Macmini差不多一样的电脑 | 夜色酒庄</title>
+<title>自己组装一个和 Macmini 差不多一样的电脑 | 夜色酒庄</title>
   
 
   <script src="/js/third-party/analytics/baidu-analytics.js"></script>
@@ -92,7 +92,40 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><!-- 谷歌广告代码 -->
+</style><script>
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    
+      if (NexT.utils.hasMobileUA()) return;
+    
+    let time, hidden, visible, title = document.title;
+    let favicon = document.querySelector('link[rel="icon"]');
+    
+      hidden = '';
+      visible = '';
+    
+    let random = t => t[Math.floor(Math.random() * t.length)];
+    const change = () => {
+      if (document.hidden) {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = hidden;
+        
+        clearTimeout(time);
+      } else {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = visible;
+        
+        time = setTimeout(() => {
+          document.title = title;
+        }, 2019);
+      }
+    }
+    document.addEventListener('visibilitychange', change, false);
+  });
+</script>
+<!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -190,7 +223,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4141</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">530</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4149</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">531</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -261,7 +294,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">530</span>
+          <span class="site-state-item-count">531</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -272,7 +305,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">4141</span>
+        <span class="site-state-item-count">4149</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -320,7 +353,10 @@
         </li>
     </ul>
   </div>
-<!-- 近期文章 -->
+<!-- CloudCalendar -->
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+	<div class="widget" id="CloudCalendar"></div>
+</div><!-- 近期文章 -->
 
 
 
@@ -341,6 +377,14 @@
         
 
         
+
+       
+
+         <li>
+
+           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/5496ea38/" title="总是做一些奇奇怪怪的梦" target="_blank">总是做一些奇奇怪怪的梦</a>
+
+         </li>
 
        
 
@@ -370,15 +414,7 @@
 
          <li>
 
-           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018年最后的夜晚你怎样度过，12月31日我的过年回家路" target="_blank">2018年最后的夜晚你怎样度过，12月31日我的过年回家路</a>
-
-         </li>
-
-       
-
-         <li>
-
-           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/fa2bea6f/" title="元旦过后，新年上班的第一天，发生了这些事，让人很难过" target="_blank">元旦过后，新年上班的第一天，发生了这些事，让人很难过</a>
+           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路" target="_blank">2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路</a>
 
          </li>
 
@@ -459,12 +495,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="自己组装一个和Macmini差不多一样的电脑 | 夜色酒庄">
+      <meta itemprop="name" content="自己组装一个和 Macmini 差不多一样的电脑 | 夜色酒庄">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          自己组装一个和Macmini差不多一样的电脑
+          自己组装一个和 Macmini 差不多一样的电脑
         </h1>
 
         <div class="post-meta-container">
@@ -523,15 +559,15 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>Macmini发布也有很长一段时间了，但是价格一直都是很贵的，如果能用更少的价格能自己组装一台这样的电脑那感觉是很爽的，其实最先考虑的还是机箱的选择，既然是要组装的是Mini主机那机箱肯定是选择越小越好的，其次就是选择主板，选主板肯定是要选能装到机箱的主板。</p>
+        <p>Macmini 发布也有很长一段时间了，但是价格一直都是很贵的，如果能用更少的价格能自己组装一台这样的电脑那感觉是很爽的，其实最先考虑的还是机箱的选择，既然是要组装的是 Mini 主机那机箱肯定是选择越小越好的，其次就是选择主板，选主板肯定是要选能装到机箱的主板。</p>
 <span id="more"></span>
 
-<p>就比如我选择的是立人的E-H80机箱，而这个机箱是只能支持17*17的主板，那我肯定是不能选比这个还要大的主板，这样选才能和机箱更好的搭配。</p>
-<p>机箱选好就是选择处理器了，这里选处理器一定要选带核显的APU才行，因为既然都是用的小机箱了肯定是装不下显卡了，如果选了不带核显的那还要一个独立显卡，那样肯定装不下了，不装独立显卡就根本点不亮，显示器上肯定是没有信号的。</p>
-<p>而处理器带核显最强的还是要选AMD的，一是性能比较强，二是性价比很高，我选择的是锐龙R3 3200G的，当然还有R5 3400G比较强一点也是可以选的，只是我在京东买的时候R5 3400G没有货，而且是比R3 3200G贵上两百多块钱，所以我干脆就选择R3 3200G了，选择这个性能也是挺强的了。</p>
-<p>锐龙R3 3200G虽然是没有R5 3400G那么强的核显性能，但是玩一般的网游也是没有问题了，英雄联盟我自己玩过1080P开到最高画质也是可以保持在100帧左右的，我这个安装好后鲁大师跑分能跑到55万分左右，感觉还是挺不错的，因为只花了3500左右的价钱，再加上迷你便携性，就这样的价格能做出这样的电脑是真的很可以了。</p>
+<p>就比如我选择的是立人的 E-H80 机箱，而这个机箱是只能支持 17*17 的主板，那我肯定是不能选比这个还要大的主板，这样选才能和机箱更好的搭配。</p>
+<p>机箱选好就是选择处理器了，这里选处理器一定要选带核显的 APU 才行，因为既然都是用的小机箱了肯定是装不下显卡了，如果选了不带核显的那还要一个独立显卡，那样肯定装不下了，不装独立显卡就根本点不亮，显示器上肯定是没有信号的。</p>
+<p>而处理器带核显最强的还是要选 AMD 的，一是性能比较强，二是性价比很高，我选择的是锐龙 R3 3200G 的，当然还有 R5 3400G 比较强一点也是可以选的，只是我在京东买的时候 R5 3400G 没有货，而且是比 R3 3200G 贵上两百多块钱，所以我干脆就选择 R3 3200G 了，选择这个性能也是挺强的了。</p>
+<p>锐龙 R3 3200G 虽然是没有 R5 3400G 那么强的核显性能，但是玩一般的网游也是没有问题了，英雄联盟我自己玩过 1080P 开到最高画质也是可以保持在 100 帧左右的，我这个安装好后鲁大师跑分能跑到 55 万分左右，感觉还是挺不错的，因为只花了 3500 左右的价钱，再加上迷你便携性，就这样的价格能做出这样的电脑是真的很可以了。</p>
 <p>还有因为电脑是自己一手组装的那后期升级起来也不是太难啊，而且我买的这个技嘉的主板本身也是支持独立显卡的，如果显卡便宜那在外面接一个显卡也是可以的，那样玩大型游戏也不在话下，只是我也不怎么玩这种大型游戏，所以我感觉没有必要，玩这种大型游戏需要花钱买，还浪费时间，所以那些高端显卡对于我来说并没有什么吸引力。</p>
-<p>但是我这次装机也感觉还有些地方不足，就比如买的USB3.0这个线根本就没有什么用，因为机箱布局的原因这个线头子比较大根本就装不下，虽然只是13块钱的但是还是白花了，最后还是又用了送的USB2.0的线，这个2.0的头子要稍微小一点，这个要好装点，但是还是感觉不太完美，因为还是有些偏。</p>
+<p>但是我这次装机也感觉还有些地方不足，就比如买的 USB3.0 这个线根本就没有什么用，因为机箱布局的原因这个线头子比较大根本就装不下，虽然只是 13 块钱的但是还是白花了，最后还是又用了送的 USB2.0 的线，这个 2.0 的头子要稍微小一点，这个要好装点，但是还是感觉不太完美，因为还是有些偏。</p>
 
     </div>
 
@@ -600,7 +636,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e3801fd/" title="自己组装一个和Macmini差不多一样的电脑">https://aixz.xyz/日常记录/e3801fd/</a>
+      <a href="https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e3801fd/" title="自己组装一个和 Macmini 差不多一样的电脑">https://aixz.xyz/日常记录/e3801fd/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC96aC1DTg=="><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</span> 许可协议。转载请注明出处！
@@ -663,8 +699,8 @@
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6bb32ccc/" rel="next" title="自己组装一台迷你机比买因特尔的NUC划算很多">
-                  自己组装一台迷你机比买因特尔的NUC划算很多 <i class="fa fa-chevron-right"></i>
+                <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6bb32ccc/" rel="next" title="自己组装一台迷你机比买因特尔的 NUC 划算很多">
+                  自己组装一台迷你机比买因特尔的 NUC 划算很多 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -717,14 +753,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">285k</span>
+    <span title="站点总字数">287k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:19</span>
+    <span title="站点阅读时长">4:21</span>
   </span>
 </div>
 <div class="busuanzi-count">
@@ -752,15 +788,12 @@
   </div><!-- 打字效果代码 -->
 <div> 
 	<script src="https://cdn.jsdelivr.net/gh/suyin-long/activate-power-mode@1.0/dist/activate-power-mode.js"></script>
-</div>
-
-<!-- 礼花代码 -->
-<div>
 	<script>
-	POWERMODE.colorful = true; // make power mode colorful
-	POWERMODE.shake = false; // turn off shake
-	document.body.addEventListener('input', POWERMODE);
-	</script> 
+		POWERMODE.colorful = true; // make power mode colorful
+		POWERMODE.shake = false; // turn off shake
+		document.body.addEventListener('input', POWERMODE);
+	</script>
+
 </div>
 
     </div>
@@ -806,7 +839,24 @@
   <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
   <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e3801fd/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
+<!-- calendar widget -->
+<div>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js"></script>
+    <script>
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN',
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
 
+</div>
   <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
   <script>
       pbOptions = {};

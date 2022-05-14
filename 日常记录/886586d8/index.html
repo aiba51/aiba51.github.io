@@ -87,7 +87,40 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><!-- 谷歌广告代码 -->
+</style><script>
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    
+      if (NexT.utils.hasMobileUA()) return;
+    
+    let time, hidden, visible, title = document.title;
+    let favicon = document.querySelector('link[rel="icon"]');
+    
+      hidden = '';
+      visible = '';
+    
+    let random = t => t[Math.floor(Math.random() * t.length)];
+    const change = () => {
+      if (document.hidden) {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = hidden;
+        
+        clearTimeout(time);
+      } else {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = visible;
+        
+        time = setTimeout(() => {
+          document.title = title;
+        }, 2019);
+      }
+    }
+    document.addEventListener('visibilitychange', change, false);
+  });
+</script>
+<!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -185,7 +218,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4141</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">530</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4149</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">531</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -256,7 +289,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">530</span>
+          <span class="site-state-item-count">531</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -267,7 +300,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">4141</span>
+        <span class="site-state-item-count">4149</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -315,7 +348,10 @@
         </li>
     </ul>
   </div>
-<!-- 近期文章 -->
+<!-- CloudCalendar -->
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+	<div class="widget" id="CloudCalendar"></div>
+</div><!-- 近期文章 -->
 
 
 
@@ -336,6 +372,14 @@
         
 
         
+
+       
+
+         <li>
+
+           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/5496ea38/" title="总是做一些奇奇怪怪的梦" target="_blank">总是做一些奇奇怪怪的梦</a>
+
+         </li>
 
        
 
@@ -365,15 +409,7 @@
 
          <li>
 
-           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018年最后的夜晚你怎样度过，12月31日我的过年回家路" target="_blank">2018年最后的夜晚你怎样度过，12月31日我的过年回家路</a>
-
-         </li>
-
-       
-
-         <li>
-
-           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/fa2bea6f/" title="元旦过后，新年上班的第一天，发生了这些事，让人很难过" target="_blank">元旦过后，新年上班的第一天，发生了这些事，让人很难过</a>
+           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路" target="_blank">2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路</a>
 
          </li>
 
@@ -521,12 +557,12 @@
         <p>今天感觉有点困，都感觉不想写了，但是昨天的事还没有写完，所以今天还得继续接着写，也为了不放弃每日更新。</p>
 <span id="more"></span>
 
-<p>昨天写到我等来了公交车回到了基地，虽然说坐公交车花了一个多小时的时间才到，但在车上看着路边的绿叶葱葱的植物，一路的心情也还算不坏，半路有几个美女上车看着也挺养眼的。坐公交车大约一路上经过了30多个站，有村庄，也有工业区，车内空调开着也是挺凉快，和外面感觉就是两个不同的世界了。</p>
+<p>昨天写到我等来了公交车回到了基地，虽然说坐公交车花了一个多小时的时间才到，但在车上看着路边的绿叶葱葱的植物，一路的心情也还算不坏，半路有几个美女上车看着也挺养眼的。坐公交车大约一路上经过了 30 多个站，有村庄，也有工业区，车内空调开着也是挺凉快，和外面感觉就是两个不同的世界了。</p>
 <p>经过了一个多小时是终于坐到了离我基地不远的一个公交站下车了，这一路我都不敢走神了，我怕自己睡着了坐过站了，因为是第一次坐这条线路的公交车。所以我一直用百度地图上的到站提醒，这样快到站了我就好准备下车，就这样一路上看着路边的风景，还不忘记看着手机上的百度地图。</p>
-<p>回到基地大概已经是中午十一点半了吧，到了基地我把窗子打开透了下气，也顺便把前几天没有倒的垃圾拿去倒了。这样搞了一会儿时间也过得很快，大概就12点了吧。我想到我还有上次买的一个土豆没有吃完，于是就去超市买了些青椒和五块多钱的猪肉，就买这两样就够了，我是打算做土豆炒肉片。</p>
-<p>对了，我还买了一小瓶五块钱的酒，虽然度数不是很高，但还是挺好喝的，大概量就125ml的样子。等到我把基地的锅碗什么都洗了下就已经快到下午一点钟了，做好饭炒好菜大概都已经快下午两点了，我吃完饭喝完酒，大概休息了下就带上东西是准备回去了。</p>
-<p>其实回来的时候都已经快下午五点了，因为是下班时间，所以公交车等了很久才来，差不多等了半个多小时，两辆406前面一辆很满了，我就坐了后边一辆。</p>
-<p>回去的时候就没有感觉路边的风景没有来的时候那么好看了。但也还算过得去，回到宿舍就已经是下午的6点过了，太阳已经落山了，但地面的温度其实还是很热。沿着去的时候的路，没有多久就走到宿舍里了。</p>
+<p>回到基地大概已经是中午十一点半了吧，到了基地我把窗子打开透了下气，也顺便把前几天没有倒的垃圾拿去倒了。这样搞了一会儿时间也过得很快，大概就 12 点了吧。我想到我还有上次买的一个土豆没有吃完，于是就去超市买了些青椒和五块多钱的猪肉，就买这两样就够了，我是打算做土豆炒肉片。</p>
+<p>对了，我还买了一小瓶五块钱的酒，虽然度数不是很高，但还是挺好喝的，大概量就 125ml 的样子。等到我把基地的锅碗什么都洗了下就已经快到下午一点钟了，做好饭炒好菜大概都已经快下午两点了，我吃完饭喝完酒，大概休息了下就带上东西是准备回去了。</p>
+<p>其实回来的时候都已经快下午五点了，因为是下班时间，所以公交车等了很久才来，差不多等了半个多小时，两辆 406 前面一辆很满了，我就坐了后边一辆。</p>
+<p>回去的时候就没有感觉路边的风景没有来的时候那么好看了。但也还算过得去，回到宿舍就已经是下午的 6 点过了，太阳已经落山了，但地面的温度其实还是很热。沿着去的时候的路，没有多久就走到宿舍里了。</p>
 
     </div>
 
@@ -653,8 +689,8 @@
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/76f98354/" rel="next" title="新人下载点淘，填我邀请码立赚5元">
-                  新人下载点淘，填我邀请码立赚5元 <i class="fa fa-chevron-right"></i>
+                <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/76f98354/" rel="next" title="新人下载点淘，填我邀请码立赚 5 元">
+                  新人下载点淘，填我邀请码立赚 5 元 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -707,14 +743,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">285k</span>
+    <span title="站点总字数">287k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:19</span>
+    <span title="站点阅读时长">4:21</span>
   </span>
 </div>
 <div class="busuanzi-count">
@@ -742,15 +778,12 @@
   </div><!-- 打字效果代码 -->
 <div> 
 	<script src="https://cdn.jsdelivr.net/gh/suyin-long/activate-power-mode@1.0/dist/activate-power-mode.js"></script>
-</div>
-
-<!-- 礼花代码 -->
-<div>
 	<script>
-	POWERMODE.colorful = true; // make power mode colorful
-	POWERMODE.shake = false; // turn off shake
-	document.body.addEventListener('input', POWERMODE);
-	</script> 
+		POWERMODE.colorful = true; // make power mode colorful
+		POWERMODE.shake = false; // turn off shake
+		document.body.addEventListener('input', POWERMODE);
+	</script>
+
 </div>
 
     </div>
@@ -796,7 +829,24 @@
   <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
   <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/886586d8/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
+<!-- calendar widget -->
+<div>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js"></script>
+    <script>
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN',
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
 
+</div>
   <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
   <script>
       pbOptions = {};

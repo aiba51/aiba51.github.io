@@ -105,7 +105,40 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><!-- 谷歌广告代码 -->
+</style><script>
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    
+      if (NexT.utils.hasMobileUA()) return;
+    
+    let time, hidden, visible, title = document.title;
+    let favicon = document.querySelector('link[rel="icon"]');
+    
+      hidden = '';
+      visible = '';
+    
+    let random = t => t[Math.floor(Math.random() * t.length)];
+    const change = () => {
+      if (document.hidden) {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = hidden;
+        
+        clearTimeout(time);
+      } else {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = visible;
+        
+        time = setTimeout(() => {
+          document.title = title;
+        }, 2019);
+      }
+    }
+    document.addEventListener('visibilitychange', change, false);
+  });
+</script>
+<!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -203,7 +236,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4141</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">530</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4149</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">531</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -274,7 +307,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">530</span>
+          <span class="site-state-item-count">531</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -285,7 +318,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">4141</span>
+        <span class="site-state-item-count">4149</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -333,7 +366,10 @@
         </li>
     </ul>
   </div>
-<!-- 近期文章 -->
+<!-- CloudCalendar -->
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+	<div class="widget" id="CloudCalendar"></div>
+</div><!-- 近期文章 -->
 
 
 
@@ -354,6 +390,14 @@
         
 
         
+
+       
+
+         <li>
+
+           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/5496ea38/" title="总是做一些奇奇怪怪的梦" target="_blank">总是做一些奇奇怪怪的梦</a>
+
+         </li>
 
        
 
@@ -383,15 +427,7 @@
 
          <li>
 
-           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018年最后的夜晚你怎样度过，12月31日我的过年回家路" target="_blank">2018年最后的夜晚你怎样度过，12月31日我的过年回家路</a>
-
-         </li>
-
-       
-
-         <li>
-
-           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/fa2bea6f/" title="元旦过后，新年上班的第一天，发生了这些事，让人很难过" target="_blank">元旦过后，新年上班的第一天，发生了这些事，让人很难过</a>
+           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路" target="_blank">2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路</a>
 
          </li>
 
@@ -540,7 +576,7 @@
 <span id="more"></span>
 
 <p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/e74259e2/%E5%9B%BE%E7%89%871.jpg"></p>
-<p>感觉还是挺舒服的，因为第一次坐高铁，比以前坐的普通火车那是舒服很多倍，车上的乘务员小姐姐也长得很漂亮，就像空姐一样。有一节车厢是用餐车厢，在那里可以买到盒饭吃，还是热着的，挺不错，那时候高铁上的盒饭还是10元一盒的，现在都好像涨价了，那时候10元一盒的吃起来都感觉很好吃的。</p>
+<p>感觉还是挺舒服的，因为第一次坐高铁，比以前坐的普通火车那是舒服很多倍，车上的乘务员小姐姐也长得很漂亮，就像空姐一样。有一节车厢是用餐车厢，在那里可以买到盒饭吃，还是热着的，挺不错，那时候高铁上的盒饭还是 10 元一盒的，现在都好像涨价了，那时候 10 元一盒的吃起来都感觉很好吃的。</p>
 <p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/e74259e2/%E5%9B%BE%E7%89%872.jpg"></p>
 <p>我是从贵阳北站坐的高铁出发去广州的，我前一天就从家里坐车去了贵阳，因为前一天不到贵阳的话第二天肯定是赶不上高铁的，因为高铁的开车时间是下午两点，我家那里坐车到贵阳最快也要六个小时才能到达，所以只能头天坐车去贵阳，在贵阳住一晚上，然后第二天去坐高铁了。</p>
 <p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/e74259e2/%E5%9B%BE%E7%89%873.jpg"></p>
@@ -548,13 +584,13 @@
 <p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/e74259e2/%E5%9B%BE%E7%89%874.jpg"></p>
 <p>贵阳北站这里的候车大厅很宽，每两列车分在一个候车区，每个候车区都是好几排椅子，坐车乘客全都坐在那里等车，进去得早的就有座位在那里坐着等，去得晚的没有座位了，就只能是站着了，候车大厅里有免费的无线网，可以连接着用手机上网，这总算不是太无聊，拿着手机看下新闻，时间很快也就过去了。</p>
 <p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/e74259e2/%E5%9B%BE%E7%89%875.jpg"></p>
-<p>等到下午1点40分的时候就开始检票上车了，检票口分成了两排来检，红色票的用人工检，蓝色的就直接过闸机检就可以了，虽然排着长长的队伍，但由于这样检票的速度很快，几乎没有十分钟就检完了，检完票之后就是直接坐着电梯下楼去上车了，车已经停在下面的轨道上了，看着外观还是很好看的和谐号列车。</p>
+<p>等到下午 1 点 40 分的时候就开始检票上车了，检票口分成了两排来检，红色票的用人工检，蓝色的就直接过闸机检就可以了，虽然排着长长的队伍，但由于这样检票的速度很快，几乎没有十分钟就检完了，检完票之后就是直接坐着电梯下楼去上车了，车已经停在下面的轨道上了，看着外观还是很好看的和谐号列车。</p>
 <p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/e74259e2/%E5%9B%BE%E7%89%876.jpg"></p>
-<p>上车后不久就开车了，感觉在动车车厢里非常的平稳，一点也不像普通火车那样颠簸，发出来的噪音也很小。速度刚开始是慢慢的走，后来就变得很快了，有时可以达到300的速度，比普通火车那是快了好几倍呢。</p>
+<p>上车后不久就开车了，感觉在动车车厢里非常的平稳，一点也不像普通火车那样颠簸，发出来的噪音也很小。速度刚开始是慢慢的走，后来就变得很快了，有时可以达到 300 的速度，比普通火车那是快了好几倍呢。</p>
 <p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/e74259e2/%E5%9B%BE%E7%89%877.jpg"></p>
 <p>我记得期间调换了下车头，调了一下座位的方向，先前我是坐在车厢座椅后面的，这下成了前面了，我又得拿着书走到另一面去坐了，就这样坐着有时候无聊也会犯困了，由于地形的原因隧道比较多，所以手机信号也是时有时无的，玩手机这就没法玩了，因为网络不好玩起来也没有意思。</p>
 <p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/e74259e2/%E5%9B%BE%E7%89%878.jpg"></p>
-<p>就这样犯困的迷迷糊糊睡了一下几个小时就过去了，从贵阳北站到广州南站是四个小时多点，等我醒来时候车已经快到广州了，过了几分钟后，已经开始减慢速度了，广播里面已经在提醒“广州南站就要到了，请所有乘客收拾好自己的行李物品准备下车”，好多乘客也已经把行李从行李架上面拿下来了，有些乘客已经站起来，准备向车门走过去了，终于车停了，全部乘客也都在下车了，我也跟着拿着我自己的行李走下车了，这就是我人生中第一次乘坐高铁的经历。</p>
+<p>就这样犯困的迷迷糊糊睡了一下几个小时就过去了，从贵阳北站到广州南站是四个小时多点，等我醒来时候车已经快到广州了，过了几分钟后，已经开始减慢速度了，广播里面已经在提醒 “广州南站就要到了，请所有乘客收拾好自己的行李物品准备下车”，好多乘客也已经把行李从行李架上面拿下来了，有些乘客已经站起来，准备向车门走过去了，终于车停了，全部乘客也都在下车了，我也跟着拿着我自己的行李走下车了，这就是我人生中第一次乘坐高铁的经历。</p>
 <p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/e74259e2/%E5%9B%BE%E7%89%879.jpg"></p>
 
     </div>
@@ -690,6 +726,9 @@
                 </a>
             </div>
             <div class="post-nav-item">
+                <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/5496ea38/" rel="next" title="总是做一些奇奇怪怪的梦">
+                  总是做一些奇奇怪怪的梦 <i class="fa fa-chevron-right"></i>
+                </a>
             </div>
           </div>
     </footer>
@@ -741,14 +780,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">285k</span>
+    <span title="站点总字数">287k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:19</span>
+    <span title="站点阅读时长">4:21</span>
   </span>
 </div>
 <div class="busuanzi-count">
@@ -776,15 +815,12 @@
   </div><!-- 打字效果代码 -->
 <div> 
 	<script src="https://cdn.jsdelivr.net/gh/suyin-long/activate-power-mode@1.0/dist/activate-power-mode.js"></script>
-</div>
-
-<!-- 礼花代码 -->
-<div>
 	<script>
-	POWERMODE.colorful = true; // make power mode colorful
-	POWERMODE.shake = false; // turn off shake
-	document.body.addEventListener('input', POWERMODE);
-	</script> 
+		POWERMODE.colorful = true; // make power mode colorful
+		POWERMODE.shake = false; // turn off shake
+		document.body.addEventListener('input', POWERMODE);
+	</script>
+
 </div>
 
     </div>
@@ -830,7 +866,24 @@
   <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
   <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://aixz.xyz/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/e74259e2/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
+<!-- calendar widget -->
+<div>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js"></script>
+    <script>
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN',
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
 
+</div>
   <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
   <script>
       pbOptions = {};

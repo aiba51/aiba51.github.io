@@ -75,7 +75,40 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><!-- 谷歌广告代码 -->
+</style><script>
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    
+      if (NexT.utils.hasMobileUA()) return;
+    
+    let time, hidden, visible, title = document.title;
+    let favicon = document.querySelector('link[rel="icon"]');
+    
+      hidden = '';
+      visible = '';
+    
+    let random = t => t[Math.floor(Math.random() * t.length)];
+    const change = () => {
+      if (document.hidden) {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = hidden;
+        
+        clearTimeout(time);
+      } else {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = visible;
+        
+        time = setTimeout(() => {
+          document.title = title;
+        }, 2019);
+      }
+    }
+    document.addEventListener('visibilitychange', change, false);
+  });
+</script>
+<!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -173,7 +206,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">4141</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">530</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">4149</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">531</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -244,7 +277,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">530</span>
+          <span class="site-state-item-count">531</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -255,7 +288,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">4141</span>
+        <span class="site-state-item-count">4149</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -303,7 +336,10 @@
         </li>
     </ul>
   </div>
-<!-- 近期文章 -->
+<!-- CloudCalendar -->
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+	<div class="widget" id="CloudCalendar"></div>
+</div><!-- 近期文章 -->
 
 
 
@@ -324,6 +360,14 @@
         
 
         
+
+       
+
+         <li>
+
+           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/5496ea38/" title="总是做一些奇奇怪怪的梦" target="_blank">总是做一些奇奇怪怪的梦</a>
+
+         </li>
 
        
 
@@ -353,15 +397,7 @@
 
          <li>
 
-           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018年最后的夜晚你怎样度过，12月31日我的过年回家路" target="_blank">2018年最后的夜晚你怎样度过，12月31日我的过年回家路</a>
-
-         </li>
-
-       
-
-         <li>
-
-           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/fa2bea6f/" title="元旦过后，新年上班的第一天，发生了这些事，让人很难过" target="_blank">元旦过后，新年上班的第一天，发生了这些事，让人很难过</a>
+           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路" target="_blank">2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路</a>
 
          </li>
 
@@ -419,6 +455,110 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1d3ff104/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/avatar.gif">
+      <meta itemprop="name" content="头号梦想家">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="夜色酒庄">
+      <meta itemprop="description" content="夜色酒庄是我用来记录自己生活点滴的网站">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 夜色酒庄">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1d3ff104/" class="post-title-link" itemprop="url">墨茶走了，他却是我们自己最真实的一面</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-05-25 23:06:36" itemprop="dateCreated datePublished" datetime="2021-05-25T23:06:36+08:00">2021-05-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">日常记录</span></a>
+        </span>
+    </span>
+
+  <!-- 置顶标签 -->
+
+
+
+
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Symbols count in article">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Symbols count in article: </span>
+      <span>561</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>1 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>前几天看到新闻说一个 B 站 UP 主去世才得到人们的关注，而我开始却不怎么相信，也不知道是怎么一回事，而后面又在贴吧和知乎看到关于他去世的消息，B 站有人为他贴了讣告，看了别人发出的他动态，那一刻我感到很难受，他去世得很年轻，才 23 岁的青春年华，却死于贫病交加的冬日里。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1d3ff104/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -550,7 +690,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29c02f2/" class="post-title-link" itemprop="url">在迷你主机虚拟机上安装黑苹果系统，体验一下Mac mini的感觉</a>
+          <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29c02f2/" class="post-title-link" itemprop="url">在迷你主机虚拟机上安装黑苹果系统，体验一下 Mac mini 的感觉</a>
         </h2>
 
         <div class="post-meta-container">
@@ -602,7 +742,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>我这里用的虚拟机是<code>VMware 16</code>的版本，当然用15的版本也是可以安装的，安装好虚拟机之后是不能直接安装黑苹果系统的，因为这个虚拟机上直接安装是没有苹果系统的选项的，需要使用一个解锁软件对它进行解锁，这个解锁软件就是<code>unlocker</code>。</p>
+          <p>我这里用的虚拟机是 <code>VMware 16</code> 的版本，当然用 15 的版本也是可以安装的，安装好虚拟机之后是不能直接安装黑苹果系统的，因为这个虚拟机上直接安装是没有苹果系统的选项的，需要使用一个解锁软件对它进行解锁，这个解锁软件就是 <code>unlocker</code>。</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29c02f2/#more" rel="contents">
@@ -654,7 +794,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/302d33ef/" class="post-title-link" itemprop="url">在贝壳小岛卖出150贝，赚了9块钱</a>
+          <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/302d33ef/" class="post-title-link" itemprop="url">在贝壳小岛卖出 150 贝，赚了 9 块钱</a>
         </h2>
 
         <div class="post-meta-container">
@@ -706,7 +846,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>这是我第一次用这个平台卖贝，以前都是转换成FTN，但是FTN却不知道怎么变现，现在也不知道怎么转换FTN了，就在网上搜了一下，原来是有一个叫贝壳小岛这个平台可以交易贝。</p>
+          <p>这是我第一次用这个平台卖贝，以前都是转换成 FTN，但是 FTN 却不知道怎么变现，现在也不知道怎么转换 FTN 了，就在网上搜了一下，原来是有一个叫贝壳小岛这个平台可以交易贝。</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/302d33ef/#more" rel="contents">
@@ -810,7 +950,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>用的安卓系统是FydeOS，这个是一个基于 Chromium OS的系统，但是它里面可以安装安卓应用，安装也不难，它是有VMWare这个虚拟机版本的，直接下载下来，用虚拟机直接打开，然后就可以像在虚拟机上安装其他系统一样，很容易就安装了。</p>
+          <p>用的安卓系统是 FydeOS，这个是一个基于 Chromium OS 的系统，但是它里面可以安装安卓应用，安装也不难，它是有 VMWare 这个虚拟机版本的，直接下载下来，用虚拟机直接打开，然后就可以像在虚拟机上安装其他系统一样，很容易就安装了。</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c04fbedb/#more" rel="contents">
@@ -862,7 +1002,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/78fbe2d/" class="post-title-link" itemprop="url">在简书写了快25万字了</a>
+          <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/78fbe2d/" class="post-title-link" itemprop="url">在简书写了快 25 万字了</a>
         </h2>
 
         <div class="post-meta-container">
@@ -914,7 +1054,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>今天在简书我的主页上看了下，我离25万字只差7000多字了，今年写到30万字应该是没有问题的，只要坚持每天都写一点感觉还是很轻松的，字数都是通过时间积累起来的，想在几天就写几万字是根本不可能的事。</p>
+          <p>今天在简书我的主页上看了下，我离 25 万字只差 7000 多字了，今年写到 30 万字应该是没有问题的，只要坚持每天都写一点感觉还是很轻松的，字数都是通过时间积累起来的，想在几天就写几万字是根本不可能的事。</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/78fbe2d/#more" rel="contents">
@@ -1070,7 +1210,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6ea82b0e/" class="post-title-link" itemprop="url">在电脑上免费安装Office2021</a>
+          <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6ea82b0e/" class="post-title-link" itemprop="url">在电脑上免费安装 Office2021</a>
         </h2>
 
         <div class="post-meta-container">
@@ -1122,7 +1262,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>现在的Office办公软件已经更新到2021版本了，而在没有安装这个版本之前我还用着Office2016，连2019都没有用上，而我安装这个版本是失败了几次才安装上的，之前安装过2019版本，但是尝试过几次之后都以失败告终了，这次安装2021虽然是失败过几次，但是最终还是安装成功了。</p>
+          <p>现在的 Office 办公软件已经更新到 2021 版本了，而在没有安装这个版本之前我还用着 Office2016，连 2019 都没有用上，而我安装这个版本是失败了几次才安装上的，之前安装过 2019 版本，但是尝试过几次之后都以失败告终了，这次安装 2021 虽然是失败过几次，但是最终还是安装成功了。</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6ea82b0e/#more" rel="contents">
@@ -1356,112 +1496,8 @@
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8e289469/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/avatar.gif">
-      <meta itemprop="name" content="头号梦想家">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="夜色酒庄">
-      <meta itemprop="description" content="夜色酒庄是我用来记录自己生活点滴的网站">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 夜色酒庄">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8e289469/" class="post-title-link" itemprop="url">在模拟器上用自动点击软件刷短视频</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-05-25 23:06:36" itemprop="dateCreated datePublished" datetime="2021-05-25T23:06:36+08:00">2021-05-25</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">日常记录</span></a>
-        </span>
-    </span>
-
-  <!-- 置顶标签 -->
-
-
-
-
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="Symbols count in article">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">Symbols count in article: </span>
-      <span>395</span>
-    </span>
-    <span class="post-meta-item" title="Reading time">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">Reading time &asymp;</span>
-      <span>1 mins.</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>在模拟器上自动刷短视频确实是可以的，也有一款这样的自动点击软件，但是短视频软件一更新了就容易闪退，模拟器的适配做得不行，上面的应用商店的软件都是几年前的，如果不闪退都是可以用新版的短视频软件的。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8e289469/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/en/page/41/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/en/">1</a><span class="space">&hellip;</span><a class="page-number" href="/en/page/41/">41</a><span class="page-number current">42</span><a class="page-number" href="/en/page/43/">43</a><span class="space">&hellip;</span><a class="page-number" href="/en/page/53/">53</a><a class="extend next" rel="next" href="/en/page/43/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
+    <a class="extend prev" rel="prev" href="/en/page/41/"><i class="fa fa-angle-left" aria-label="Previous page"></i></a><a class="page-number" href="/en/">1</a><span class="space">&hellip;</span><a class="page-number" href="/en/page/41/">41</a><span class="page-number current">42</span><a class="page-number" href="/en/page/43/">43</a><span class="space">&hellip;</span><a class="page-number" href="/en/page/54/">54</a><a class="extend next" rel="next" href="/en/page/43/"><i class="fa fa-angle-right" aria-label="Next page"></i></a>
   </nav>
 
 </div>
@@ -1503,14 +1539,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>Symbols count total: </span>
-    <span title="Symbols count total">285k</span>
+    <span title="Symbols count total">287k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>Reading time total &asymp;</span>
-    <span title="Reading time total">4:19</span>
+    <span title="Reading time total">4:21</span>
   </span>
 </div>
 <div class="busuanzi-count">
@@ -1538,15 +1574,12 @@
   </div><!-- 打字效果代码 -->
 <div> 
 	<script src="https://cdn.jsdelivr.net/gh/suyin-long/activate-power-mode@1.0/dist/activate-power-mode.js"></script>
-</div>
-
-<!-- 礼花代码 -->
-<div>
 	<script>
-	POWERMODE.colorful = true; // make power mode colorful
-	POWERMODE.shake = false; // turn off shake
-	document.body.addEventListener('input', POWERMODE);
-	</script> 
+		POWERMODE.colorful = true; // make power mode colorful
+		POWERMODE.shake = false; // turn off shake
+		document.body.addEventListener('input', POWERMODE);
+	</script>
+
 </div>
 
     </div>
@@ -1592,7 +1625,24 @@
   <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
   <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://aixz.xyz/en/page/42/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
+<!-- calendar widget -->
+<div>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js"></script>
+    <script>
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN',
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
 
+</div>
   <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
   <script>
       pbOptions = {};

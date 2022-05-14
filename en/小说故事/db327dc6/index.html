@@ -78,7 +78,40 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><!-- 谷歌广告代码 -->
+</style><script>
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    
+      if (NexT.utils.hasMobileUA()) return;
+    
+    let time, hidden, visible, title = document.title;
+    let favicon = document.querySelector('link[rel="icon"]');
+    
+      hidden = '';
+      visible = '';
+    
+    let random = t => t[Math.floor(Math.random() * t.length)];
+    const change = () => {
+      if (document.hidden) {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = hidden;
+        
+        clearTimeout(time);
+      } else {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = visible;
+        
+        time = setTimeout(() => {
+          document.title = title;
+        }, 2019);
+      }
+    }
+    document.addEventListener('visibilitychange', change, false);
+  });
+</script>
+<!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -176,7 +209,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">4141</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">530</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">4149</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">531</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -248,7 +281,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">530</span>
+          <span class="site-state-item-count">531</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -259,7 +292,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">4141</span>
+        <span class="site-state-item-count">4149</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -307,7 +340,10 @@
         </li>
     </ul>
   </div>
-<!-- 近期文章 -->
+<!-- CloudCalendar -->
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+	<div class="widget" id="CloudCalendar"></div>
+</div><!-- 近期文章 -->
 
 
 
@@ -328,6 +364,14 @@
         
 
         
+
+       
+
+         <li>
+
+           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/5496ea38/" title="总是做一些奇奇怪怪的梦" target="_blank">总是做一些奇奇怪怪的梦</a>
+
+         </li>
 
        
 
@@ -357,15 +401,7 @@
 
          <li>
 
-           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018年最后的夜晚你怎样度过，12月31日我的过年回家路" target="_blank">2018年最后的夜晚你怎样度过，12月31日我的过年回家路</a>
-
-         </li>
-
-       
-
-         <li>
-
-           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/fa2bea6f/" title="元旦过后，新年上班的第一天，发生了这些事，让人很难过" target="_blank">元旦过后，新年上班的第一天，发生了这些事，让人很难过</a>
+           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路" target="_blank">2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路</a>
 
          </li>
 
@@ -516,7 +552,7 @@
 <p>屋里的床上躺着刚生完孩子的女主人，她盖着厚厚的被子，这个冬天尽管寒冷，但也挡不住她脸上露出的喜悦，她看上去气力还很虚弱，也许是她刚生完孩子的缘故。接生婆开心地把孩子抱到她的面前，她用力地用双手的手臂微微把头撑了起来，看着接生婆抱着自己刚生下的孩子，那孩子的笑脸让她觉得已经不是在冬天，她看着那孩子白白胖胖的笑脸，就像春天开的一朵花，是那样的美丽又是那样的娇嫩，她静静地看着，她不敢伸手去碰，她怕一不小心就碰坏了他，那是她的心肝宝贝，是她用了十个月忍着各种身体的不适和病痛折磨带来的结晶。</p>
 <p>她问了接生婆是男孩还是女孩，接生婆高兴地对她说：“是男孩，是个大胖小子，你们夫妻俩命好，一下就生了个大胖小子，这孩子将来长大后一定是个大有用之才，看他父亲那一身武艺，那在整个的灵翼镇上没有人能打得过他，这孩子将来肯定也不差，……”。接生婆还是那样一五一十的说着，只是她听着听着慢慢的就困了，她的身体刚生完孩子太过虚弱，她此时正是需要休息。接生婆把孩子抱到男主人的身边要他给孩子取个名字，每个小孩都有自己的小名，他怎么可能没有呢。屋里的男主人想了想给这孩子取了一个名字叫小鸿，他希望他长大后可以飞鸿腾达，他相信他长大后一定可以做到，加上他的姓，那就是令鸿。而就是这个孩子他将来还会搅动整个武林格局，甚至他还将会成为拯救整个国家于危难之中的民族英雄。</p>
 <p>天空看上去是那样的明亮，还有些许的太阳照在白茫茫的雪地上，看着那些许阳光在雪地上的反光让人的眼睛很是刺得难受。此时也快到中午的吃饭时间，男主人拿出了一天前上山打的几只野兔子，那几只兔子看着死得很安详，都是被一箭射死的，他武功和箭术在那个离他居住说远不远的小镇上，那还真是无人能及，那几只兔子身上的灰毛映衬着屋外的白雪那是又灰又亮。</p>
-<p>不一会儿那几只兔子就被他以极快的手法清理得干净利落，那几只兔子被他砍成了块状放到了铁锅里，铁锅里加上清水，再加上各种各样山里特有的香料，然后放到燃得很旺的柴火炉上，没有多久满屋子都是兔子肉的香味。那接生婆闻着这肉香都像是在流口水了，来到火炉边称赞了他一番：“没有想到令师傅，不仅武功厉害，连这下厨的功夫也是相当了得。”她手里抱着的婴儿此时也开始哭闹起来，像是闻到了他父亲做的兔子肉，或许是这兔子肉的味道闻着就很香了，他也要尝尝了，只是他此时还吃不了。</p>
+<p>不一会儿那几只兔子就被他以极快的手法清理得干净利落，那几只兔子被他砍成了块状放到了铁锅里，铁锅里加上清水，再加上各种各样山里特有的香料，然后放到燃得很旺的柴火炉上，没有多久满屋子都是兔子肉的香味。那接生婆闻着这肉香都像是在流口水了，来到火炉边称赞了他一番：“没有想到令师傅，不仅武功厉害，连这下厨的功夫也是相当了得。” 她手里抱着的婴儿此时也开始哭闹起来，像是闻到了他父亲做的兔子肉，或许是这兔子肉的味道闻着就很香了，他也要尝尝了，只是他此时还吃不了。</p>
 <p>这茅草屋里的男主人他叫令高别人都叫他令师傅，是整个灵翼镇上的武林高手，也是这个镇上的好人，只要别人有什么困难他都会去帮助，受他帮助的人多了，他也就渐渐地有了名气，这整个镇上的无论是达官还是贵人那都和他交情不浅。就拿如今天来帮他妻子接生的这个接生婆，就是几年前受过他的帮助，为了报恩所以她愿意走好几里的山路来给他妻子接生。</p>
 <p>给他妻子接生的这个接生婆她的名字叫张蓉，镇上的人都叫她蓉婶，她自己开了家酒坊，卖自己家酿的酒。说来也奇怪，这个小小的镇上就有十多家酿酒的，但是每家的生意都很好。这个小镇的山后有一条小河穿沿而过，只要是用这个河水酿出的酒那都是清香无比，再加上他们各家祖辈留传下来的制酒技法，虽是各家的口感喝起来稍微有些不同，但是都有个统一的优点那就是各家酒的口感都清香而且甘醇。</p>
 <p>这个镇子不大，但是街面都铺着青石板，而且这石板打磨得还很整齐，块与块之间根本看不出缝隙，街面也很平整，街道很宽敞。这个小镇的布局由三条街道组合而成，中间交汇处形成了一个丫字形，丫字形街道的三边是三家不同的酒楼，古色古香的木制建筑，每家都建有三层高，每层地面都是铺着厚厚的木板，每家酒楼的柱子都是用的本地山中盛产的杉木，那柱子的粗大，就是一个高大的成年人两只手也抱不完，可见是用了至少十年以上的杉木制成的。</p>
@@ -704,14 +740,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>Symbols count total: </span>
-    <span title="Symbols count total">285k</span>
+    <span title="Symbols count total">287k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>Reading time total &asymp;</span>
-    <span title="Reading time total">4:19</span>
+    <span title="Reading time total">4:21</span>
   </span>
 </div>
 <div class="busuanzi-count">
@@ -739,15 +775,12 @@
   </div><!-- 打字效果代码 -->
 <div> 
 	<script src="https://cdn.jsdelivr.net/gh/suyin-long/activate-power-mode@1.0/dist/activate-power-mode.js"></script>
-</div>
-
-<!-- 礼花代码 -->
-<div>
 	<script>
-	POWERMODE.colorful = true; // make power mode colorful
-	POWERMODE.shake = false; // turn off shake
-	document.body.addEventListener('input', POWERMODE);
-	</script> 
+		POWERMODE.colorful = true; // make power mode colorful
+		POWERMODE.shake = false; // turn off shake
+		document.body.addEventListener('input', POWERMODE);
+	</script>
+
 </div>
 
     </div>
@@ -793,7 +826,24 @@
   <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
   <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://aixz.xyz/en/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/db327dc6/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
+<!-- calendar widget -->
+<div>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js"></script>
+    <script>
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN',
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
 
+</div>
   <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
   <script>
       pbOptions = {};

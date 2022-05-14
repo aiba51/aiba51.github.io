@@ -89,7 +89,40 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><!-- 谷歌广告代码 -->
+</style><script>
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    
+      if (NexT.utils.hasMobileUA()) return;
+    
+    let time, hidden, visible, title = document.title;
+    let favicon = document.querySelector('link[rel="icon"]');
+    
+      hidden = '';
+      visible = '';
+    
+    let random = t => t[Math.floor(Math.random() * t.length)];
+    const change = () => {
+      if (document.hidden) {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = hidden;
+        
+        clearTimeout(time);
+      } else {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = visible;
+        
+        time = setTimeout(() => {
+          document.title = title;
+        }, 2019);
+      }
+    }
+    document.addEventListener('visibilitychange', change, false);
+  });
+</script>
+<!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -187,7 +220,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4141</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">530</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4149</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">531</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -258,7 +291,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">530</span>
+          <span class="site-state-item-count">531</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -269,7 +302,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">4141</span>
+        <span class="site-state-item-count">4149</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -317,7 +350,10 @@
         </li>
     </ul>
   </div>
-<!-- 近期文章 -->
+<!-- CloudCalendar -->
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+	<div class="widget" id="CloudCalendar"></div>
+</div><!-- 近期文章 -->
 
 
 
@@ -338,6 +374,14 @@
         
 
         
+
+       
+
+         <li>
+
+           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/5496ea38/" title="总是做一些奇奇怪怪的梦" target="_blank">总是做一些奇奇怪怪的梦</a>
+
+         </li>
 
        
 
@@ -367,15 +411,7 @@
 
          <li>
 
-           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018年最后的夜晚你怎样度过，12月31日我的过年回家路" target="_blank">2018年最后的夜晚你怎样度过，12月31日我的过年回家路</a>
-
-         </li>
-
-       
-
-         <li>
-
-           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/fa2bea6f/" title="元旦过后，新年上班的第一天，发生了这些事，让人很难过" target="_blank">元旦过后，新年上班的第一天，发生了这些事，让人很难过</a>
+           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路" target="_blank">2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路</a>
 
          </li>
 
@@ -534,8 +570,8 @@
 <span id="more"></span>
 
 <p>因为它是真正产自印度，并不是大家所知那些以往国内或者印度小作坊生产的产品，那些都是添加了大量危害健康激素成份的产品，使用只会带来危害。</p>
-<p>印度真大膏由印度REPL公司出品，因为在印度REPL公司是印度阿育吠陀疗法的专利拥有者，名声更是享誉中外，是一家专注男士健康的企业。</p>
-<p>百臻堂印度大膏从研发到批量生产上市销售经历了整整5年的时间，从成分的配制，效果的测试和不停的改良，还有产品成分检测，各种繁琐的程序走下来就已经花费了不少的时间了。为的就是让客户买得放心，用得安心。</p>
+<p>印度真大膏由印度 REPL 公司出品，因为在印度 REPL 公司是印度阿育吠陀疗法的专利拥有者，名声更是享誉中外，是一家专注男士健康的企业。</p>
+<p>百臻堂印度大膏从研发到批量生产上市销售经历了整整 5 年的时间，从成分的配制，效果的测试和不停的改良，还有产品成分检测，各种繁琐的程序走下来就已经花费了不少的时间了。为的就是让客户买得放心，用得安心。</p>
 <p>所以，真大膏在线销售是合法合格的，有相关的检测报告。主要成分：芦荟提取物，橄榄油，杏仁油，辣椒素油，肉豆蔻液，油麻藻液，丁香液，秋葵液，狗牙花液派利吞草液，灯油藻液等。真大膏是属于外用产品，对于外用产品，是没有副作用这个说法的，只有内服的产品才有这个说法。</p>
 <p><strong>百臻堂真大膏的产品功效</strong></p>
 <ol>
@@ -552,9 +588,9 @@
 <li><p>修复海绵体，对于一些纵欲过度或者手淫过多的，通过用真大膏，可以起到修复受损海绵体。</p>
 </li>
 </ol>
-<p>真大膏四支一疗程，按疗程使用一般可以增加长度4公分。使用后会几次会有明显发热的感觉，不仅有体验感更有长期效果，坚持按疗程使用真大膏可以给你带来与众不同的效果。</p>
-<p>印度真大膏的来历相信大家心里都明白了，因为印度真大膏的确是一款真正合法且有效的产品。其作用在男士功能方面上，效果是非常显著的。尤其对硬度不好的，举起困难、时间短的（秒s）、和短小的朋友是能够起到非常大的改善作用。</p>
-<p>通常通过合理的调理，1-2瓶即可见到明显的效果展现，特别是每天坚持使用的朋友。因为在修复的时候，海绵细胞都处于激活状态，如果用用停停，三天打鱼两天晒网去用的话，那么效果则会大打折扣的。</p>
+<p>真大膏四支一疗程，按疗程使用一般可以增加长度 4 公分。使用后会几次会有明显发热的感觉，不仅有体验感更有长期效果，坚持按疗程使用真大膏可以给你带来与众不同的效果。</p>
+<p>印度真大膏的来历相信大家心里都明白了，因为印度真大膏的确是一款真正合法且有效的产品。其作用在男士功能方面上，效果是非常显著的。尤其对硬度不好的，举起困难、时间短的（秒 s）、和短小的朋友是能够起到非常大的改善作用。</p>
+<p>通常通过合理的调理，1-2 瓶即可见到明显的效果展现，特别是每天坚持使用的朋友。因为在修复的时候，海绵细胞都处于激活状态，如果用用停停，三天打鱼两天晒网去用的话，那么效果则会大打折扣的。</p>
 <p>所以大家务必坚持每天用，至少每天使用一次。通过调理下来后，不出两个月您会明显感觉到各方面功能全面提升更多。</p>
 <p><strong><span class="exturl" data-url="aHR0cHM6Ly9qLnlvdXphbi5jb20vYUVySHpK" title="印度真大膏购买">印度真大膏购买<i class="fa fa-external-link-alt"></i></span></strong> </p>
 
@@ -739,14 +775,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">285k</span>
+    <span title="站点总字数">287k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:19</span>
+    <span title="站点阅读时长">4:21</span>
   </span>
 </div>
 <div class="busuanzi-count">
@@ -774,15 +810,12 @@
   </div><!-- 打字效果代码 -->
 <div> 
 	<script src="https://cdn.jsdelivr.net/gh/suyin-long/activate-power-mode@1.0/dist/activate-power-mode.js"></script>
-</div>
-
-<!-- 礼花代码 -->
-<div>
 	<script>
-	POWERMODE.colorful = true; // make power mode colorful
-	POWERMODE.shake = false; // turn off shake
-	document.body.addEventListener('input', POWERMODE);
-	</script> 
+		POWERMODE.colorful = true; // make power mode colorful
+		POWERMODE.shake = false; // turn off shake
+		document.body.addEventListener('input', POWERMODE);
+	</script>
+
 </div>
 
     </div>
@@ -828,7 +861,24 @@
   <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
   <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f17100e6/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
+<!-- calendar widget -->
+<div>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js"></script>
+    <script>
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN',
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
 
+</div>
   <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
   <script>
       pbOptions = {};

@@ -98,7 +98,40 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><!-- 谷歌广告代码 -->
+</style><script>
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    
+      if (NexT.utils.hasMobileUA()) return;
+    
+    let time, hidden, visible, title = document.title;
+    let favicon = document.querySelector('link[rel="icon"]');
+    
+      hidden = '';
+      visible = '';
+    
+    let random = t => t[Math.floor(Math.random() * t.length)];
+    const change = () => {
+      if (document.hidden) {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = hidden;
+        
+        clearTimeout(time);
+      } else {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = visible;
+        
+        time = setTimeout(() => {
+          document.title = title;
+        }, 2019);
+      }
+    }
+    document.addEventListener('visibilitychange', change, false);
+  });
+</script>
+<!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -196,7 +229,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4141</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">530</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4149</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">531</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -267,7 +300,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">530</span>
+          <span class="site-state-item-count">531</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -278,7 +311,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">4141</span>
+        <span class="site-state-item-count">4149</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -326,7 +359,10 @@
         </li>
     </ul>
   </div>
-<!-- 近期文章 -->
+<!-- CloudCalendar -->
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+	<div class="widget" id="CloudCalendar"></div>
+</div><!-- 近期文章 -->
 
 
 
@@ -347,6 +383,14 @@
         
 
         
+
+       
+
+         <li>
+
+           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/5496ea38/" title="总是做一些奇奇怪怪的梦" target="_blank">总是做一些奇奇怪怪的梦</a>
+
+         </li>
 
        
 
@@ -376,15 +420,7 @@
 
          <li>
 
-           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018年最后的夜晚你怎样度过，12月31日我的过年回家路" target="_blank">2018年最后的夜晚你怎样度过，12月31日我的过年回家路</a>
-
-         </li>
-
-       
-
-         <li>
-
-           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/fa2bea6f/" title="元旦过后，新年上班的第一天，发生了这些事，让人很难过" target="_blank">元旦过后，新年上班的第一天，发生了这些事，让人很难过</a>
+           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路" target="_blank">2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路</a>
 
          </li>
 
@@ -532,15 +568,15 @@
         <p>说起来我有两张米粉卡，一张是联通的一张是电信的，电信这张是在小米商城买东西的时候送的，好像是买了个蓝牙音箱送的，另外一张联通是我在联通的网上营业厅买的。其实小米也有这种卡，只是我看到在联通网上营业厅的号比较好，估计当时也还没有多少人用这个套餐的卡，好的号码还都全部有。</p>
 <span id="more"></span>
 
-<p>两张米粉卡其实套餐费用都差不多的，都是5元的月费，小米送的电信那张刚开始的时候是1元800m的省内流量，后面流量取消省内和国内的区别了，这也是给了我们老百姓一个很大的实惠，我用的电信这张米粉卡自然也升级到了1元800m的国内流量。</p>
-<p>只是这张卡我也没有怎么用，记得拿到这张米粉卡的时候还是2017年,当时我还用着一张很贵的卡，也是电信的卡，当时是买手机说送话费的，其实这都是坑，每个月不管用不用都得花49的月租费用，只差一块钱就是50了，而且有的地方用支付宝付款网速奇慢。</p>
-<p>这张49元月费的电信卡对比小米送的那张米粉卡其实没有任何优势，虽然都是电信的卡，但是米粉卡才5元的月费，资费优势其实就已经很明显了。49元月费那张卡是在杭州的时候就用的，在2012年买第一个小米手机小米1电信版的时候买的。那个时候我还不会网购，买手机都只会在线下买，那个手机就是在电信的天翼店里买的，当时买那个手机其实就是个和约机，后面看了网上价格贵了两百多。</p>
-<p>那张卡也随着那个手机用了差不多5年吧，直到手机太卡了，终于是被我换了，手机是换了但卡我还是用的那张因为是送话费的，其实就算是送话费的，我每月也还得花30多的月费。这个卡它送话费是按每个月消费的百分之三十来送的，我每个月都是49它也就送个十多块钱而已，连15块钱都没有。换了新手机时我已经想把它换掉了，因为我新买的手机是支持4G网络的，而那张卡只支持3G网络，放在新手机里连网都上不了。这还真没有办法了，当时想到的就只有换成4G卡了，从3G升到4G就是必须换卡，无论怎么样好像都是跳不过这个环节的。于是我打电话问了电信的客服，说是要去号码归属地才能换，当时我就只有用愤怒之情才能表达当时我的心境了。这时已经是几年过去了，我早已不在杭州那里，我已经是来到广东这边，我只能说当时用那张卡不仅是坑而且是个很大的坑。后面我也真的坐着火车跑到杭州去换成了4G卡，当时也想过这换张手机卡的成本有点高了，当时要坚持跑去换也只有两个原因，除了那张卡还送话费以外，就是用的时间长了，绑定的东西太多了，什么银行卡网银等等这些，我怕一时换了我还真的不适应。</p>
-<p>后来的忍痛割爱证明了一切，所有的不适应都不过是暂时的，后面这张卡是终于被我换掉了。前面说到拿到这张电信的米粉卡的时候我是还没有换掉那张卡的，这张电信的米粉卡我也是时不时的往里面充个二三十的话费在里面，其实不用也就是每个月才5块钱，充30在里面其实半年都不会停机。那时候我用的是红米手机，上面的小米应用商店下应用是有积分的，而积分是可以换成话费的，好像是三千积分就可以换30元话费，而我每次兑换都是把它充到这张米粉卡上，相当于也没有花什么钱在它上面。</p>
-<p>大约好像就是在去年的七八月份，我无意中上了联通网上营业厅，看到上面有米粉卡买而且号还非常好记漂亮，月费也只是5元，还是1元1G的全国流量，当时看着是比电信的那张米粉卡还划算，于是我就下单买了这张联通的米粉卡，还没有发货联通的就打电话来问我手里已经有一张联通卡了，是不是可以把我手里那张换成米粉卡套餐，我说可以，只是后面过了几天我还是收到了这张米粉卡，我猜在联通公司这种换套餐肯定是行不通的，我手里那张是19的月费，米粉卡才5块钱的月费，从高换到低都没有利润谁会愿意。</p>
-<p>从此有了这张联通的米粉卡，那张电信的高资费的卡我算是可以扔掉了，以前觉得换不换都无所谓是因为我住的这里不仅电信的网速慢有时信号还不好，这下有了联通这张米粉卡不仅网速快，而且资费还合理。把那张一个月要49月费的卡换掉也是在情理之中，换起来也没有那么难，现在的手机都是双卡的或者一个人有几个手机，只要绑定的东西全换成自己要用的号码就可以，过度到它停机就彻底换掉了。现在用着两张米粉卡都比用着那张划算，如果想换卡的感觉资费太高的，那要换还是得趁早，越晚换就会被陷得越深，时间一长换起来就更麻烦。</p>
-<p>这张电信的米粉卡我已经用了十九个月了，其实是用了多久我也不清楚，只是前几天突然在米粉卡的公众号上看到有一个消息说是有福利可以领，我点开看了还真的有，输入自己用的米粉卡手机号获取验证码，用验证码验证了手机号后就可以看到自己用这张卡的网龄有多久了。我一看我居然用了19个月了，上面有ABCD四个档次的福利，上面提醒我说我可以领取D档次的福利，因为入网大于12个月就可以领取这个最高档次的福利，我一看上面有优酷会员半年卡，爱奇艺会员半年卡，还有京东300元现金券，最后这项我看到的时候已经变灰了，估计我去晚了早被别人领完了。所以我只能在优酷和爱奇艺之间选择了，我选了爱奇艺的半年会员卡，领取之后发短信来说我第一个月已经开通了，以后还连续送5个月。</p>
-<p>其实我用这张电信的米粉卡并没有花多少钱，就算用了20个月我也才花了100块钱，这样还能领到半年爱奇艺视频会员卡，自然是感到开心的，而且是没有什么附加条件，感觉是很值得的。还好我这张卡是小米送的，如果从其他渠道买的估计是没有这么好的事，我联通的那张就是从联通买的，虽然号很好，但是小米送的云服务会员都没有，和联通的客服联系了说送话费给我补偿，后面话费也没有送，尽是会忽悠人。</p>
+<p>两张米粉卡其实套餐费用都差不多的，都是 5 元的月费，小米送的电信那张刚开始的时候是 1 元 800m 的省内流量，后面流量取消省内和国内的区别了，这也是给了我们老百姓一个很大的实惠，我用的电信这张米粉卡自然也升级到了 1 元 800m 的国内流量。</p>
+<p>只是这张卡我也没有怎么用，记得拿到这张米粉卡的时候还是 2017 年，当时我还用着一张很贵的卡，也是电信的卡，当时是买手机说送话费的，其实这都是坑，每个月不管用不用都得花 49 的月租费用，只差一块钱就是 50 了，而且有的地方用支付宝付款网速奇慢。</p>
+<p>这张 49 元月费的电信卡对比小米送的那张米粉卡其实没有任何优势，虽然都是电信的卡，但是米粉卡才 5 元的月费，资费优势其实就已经很明显了。49 元月费那张卡是在杭州的时候就用的，在 2012 年买第一个小米手机小米 1 电信版的时候买的。那个时候我还不会网购，买手机都只会在线下买，那个手机就是在电信的天翼店里买的，当时买那个手机其实就是个和约机，后面看了网上价格贵了两百多。</p>
+<p>那张卡也随着那个手机用了差不多 5 年吧，直到手机太卡了，终于是被我换了，手机是换了但卡我还是用的那张因为是送话费的，其实就算是送话费的，我每月也还得花 30 多的月费。这个卡它送话费是按每个月消费的百分之三十来送的，我每个月都是 49 它也就送个十多块钱而已，连 15 块钱都没有。换了新手机时我已经想把它换掉了，因为我新买的手机是支持 4G 网络的，而那张卡只支持 3G 网络，放在新手机里连网都上不了。这还真没有办法了，当时想到的就只有换成 4G 卡了，从 3G 升到 4G 就是必须换卡，无论怎么样好像都是跳不过这个环节的。于是我打电话问了电信的客服，说是要去号码归属地才能换，当时我就只有用愤怒之情才能表达当时我的心境了。这时已经是几年过去了，我早已不在杭州那里，我已经是来到广东这边，我只能说当时用那张卡不仅是坑而且是个很大的坑。后面我也真的坐着火车跑到杭州去换成了 4G 卡，当时也想过这换张手机卡的成本有点高了，当时要坚持跑去换也只有两个原因，除了那张卡还送话费以外，就是用的时间长了，绑定的东西太多了，什么银行卡网银等等这些，我怕一时换了我还真的不适应。</p>
+<p>后来的忍痛割爱证明了一切，所有的不适应都不过是暂时的，后面这张卡是终于被我换掉了。前面说到拿到这张电信的米粉卡的时候我是还没有换掉那张卡的，这张电信的米粉卡我也是时不时的往里面充个二三十的话费在里面，其实不用也就是每个月才 5 块钱，充 30 在里面其实半年都不会停机。那时候我用的是红米手机，上面的小米应用商店下应用是有积分的，而积分是可以换成话费的，好像是三千积分就可以换 30 元话费，而我每次兑换都是把它充到这张米粉卡上，相当于也没有花什么钱在它上面。</p>
+<p>大约好像就是在去年的七八月份，我无意中上了联通网上营业厅，看到上面有米粉卡买而且号还非常好记漂亮，月费也只是 5 元，还是 1 元 1G 的全国流量，当时看着是比电信的那张米粉卡还划算，于是我就下单买了这张联通的米粉卡，还没有发货联通的就打电话来问我手里已经有一张联通卡了，是不是可以把我手里那张换成米粉卡套餐，我说可以，只是后面过了几天我还是收到了这张米粉卡，我猜在联通公司这种换套餐肯定是行不通的，我手里那张是 19 的月费，米粉卡才 5 块钱的月费，从高换到低都没有利润谁会愿意。</p>
+<p>从此有了这张联通的米粉卡，那张电信的高资费的卡我算是可以扔掉了，以前觉得换不换都无所谓是因为我住的这里不仅电信的网速慢有时信号还不好，这下有了联通这张米粉卡不仅网速快，而且资费还合理。把那张一个月要 49 月费的卡换掉也是在情理之中，换起来也没有那么难，现在的手机都是双卡的或者一个人有几个手机，只要绑定的东西全换成自己要用的号码就可以，过度到它停机就彻底换掉了。现在用着两张米粉卡都比用着那张划算，如果想换卡的感觉资费太高的，那要换还是得趁早，越晚换就会被陷得越深，时间一长换起来就更麻烦。</p>
+<p>这张电信的米粉卡我已经用了十九个月了，其实是用了多久我也不清楚，只是前几天突然在米粉卡的公众号上看到有一个消息说是有福利可以领，我点开看了还真的有，输入自己用的米粉卡手机号获取验证码，用验证码验证了手机号后就可以看到自己用这张卡的网龄有多久了。我一看我居然用了 19 个月了，上面有 ABCD 四个档次的福利，上面提醒我说我可以领取 D 档次的福利，因为入网大于 12 个月就可以领取这个最高档次的福利，我一看上面有优酷会员半年卡，爱奇艺会员半年卡，还有京东 300 元现金券，最后这项我看到的时候已经变灰了，估计我去晚了早被别人领完了。所以我只能在优酷和爱奇艺之间选择了，我选了爱奇艺的半年会员卡，领取之后发短信来说我第一个月已经开通了，以后还连续送 5 个月。</p>
+<p>其实我用这张电信的米粉卡并没有花多少钱，就算用了 20 个月我也才花了 100 块钱，这样还能领到半年爱奇艺视频会员卡，自然是感到开心的，而且是没有什么附加条件，感觉是很值得的。还好我这张卡是小米送的，如果从其他渠道买的估计是没有这么好的事，我联通的那张就是从联通买的，虽然号很好，但是小米送的云服务会员都没有，和联通的客服联系了说送话费给我补偿，后面话费也没有送，尽是会忽悠人。</p>
 <p>写在最后，如果有从小米领取过这个电信的米粉卡就赶紧去领取这个福利吧，去晚了估计被别人领完了怕是连汤都喝不着了，从小米渠道领的联通的米粉卡有没有我不清楚，但是电信的是有的，有需要领的就赶紧去领吧。</p>
 <hr>
 
@@ -734,14 +770,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">285k</span>
+    <span title="站点总字数">287k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:19</span>
+    <span title="站点阅读时长">4:21</span>
   </span>
 </div>
 <div class="busuanzi-count">
@@ -769,15 +805,12 @@
   </div><!-- 打字效果代码 -->
 <div> 
 	<script src="https://cdn.jsdelivr.net/gh/suyin-long/activate-power-mode@1.0/dist/activate-power-mode.js"></script>
-</div>
-
-<!-- 礼花代码 -->
-<div>
 	<script>
-	POWERMODE.colorful = true; // make power mode colorful
-	POWERMODE.shake = false; // turn off shake
-	document.body.addEventListener('input', POWERMODE);
-	</script> 
+		POWERMODE.colorful = true; // make power mode colorful
+		POWERMODE.shake = false; // turn off shake
+		document.body.addEventListener('input', POWERMODE);
+	</script>
+
 </div>
 
     </div>
@@ -823,7 +856,24 @@
   <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
   <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://aixz.xyz/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/463123e5/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
+<!-- calendar widget -->
+<div>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js"></script>
+    <script>
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN',
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
 
+</div>
   <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
   <script>
       pbOptions = {};

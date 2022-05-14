@@ -28,12 +28,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"aixz.xyz","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.11.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"width":280},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"buttons","active":"utterances","storage":false,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="用CPU挖狗狗币算力居然是显卡的1000倍，别人用显卡挖的速度单位是MH，我用CPU挖的速度是H，而1H&#x3D;1000MH，就是我用CPU挖一个小时的产量用显卡要挖1000个小时才可以完成。">
+    <meta name="description" content="用 CPU 挖狗狗币算力居然是显卡的 1000 倍，别人用显卡挖的速度单位是 MH，我用 CPU 挖的速度是 H，而 1H&#x3D;1000MH，就是我用 CPU 挖一个小时的产量用显卡要挖 1000 个小时才可以完成。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="用CPU挖狗狗币，一晚上挖了100多个">
+<meta property="og:title" content="用 CPU 挖狗狗币，一晚上挖了 100 多个">
 <meta property="og:url" content="https://aixz.xyz/en/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f8464a66/index.html">
 <meta property="og:site_name" content="夜色酒庄">
-<meta property="og:description" content="用CPU挖狗狗币算力居然是显卡的1000倍，别人用显卡挖的速度单位是MH，我用CPU挖的速度是H，而1H&#x3D;1000MH，就是我用CPU挖一个小时的产量用显卡要挖1000个小时才可以完成。">
+<meta property="og:description" content="用 CPU 挖狗狗币算力居然是显卡的 1000 倍，别人用显卡挖的速度单位是 MH，我用 CPU 挖的速度是 H，而 1H&#x3D;1000MH，就是我用 CPU 挖一个小时的产量用显卡要挖 1000 个小时才可以完成。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-05-25T15:06:36.759Z">
 <meta property="article:modified_time" content="2021-05-25T15:06:36.759Z">
@@ -55,10 +55,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f8464a66/","path":"en/日常记录/f8464a66/","title":"用CPU挖狗狗币，一晚上挖了100多个"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f8464a66/","path":"en/日常记录/f8464a66/","title":"用 CPU 挖狗狗币，一晚上挖了 100 多个"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>用CPU挖狗狗币，一晚上挖了100多个 | 夜色酒庄</title>
+<title>用 CPU 挖狗狗币，一晚上挖了 100 多个 | 夜色酒庄</title>
   
 
   <script src="/js/third-party/analytics/baidu-analytics.js"></script>
@@ -86,7 +86,40 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><!-- 谷歌广告代码 -->
+</style><script>
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    
+      if (NexT.utils.hasMobileUA()) return;
+    
+    let time, hidden, visible, title = document.title;
+    let favicon = document.querySelector('link[rel="icon"]');
+    
+      hidden = '';
+      visible = '';
+    
+    let random = t => t[Math.floor(Math.random() * t.length)];
+    const change = () => {
+      if (document.hidden) {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = hidden;
+        
+        clearTimeout(time);
+      } else {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = visible;
+        
+        time = setTimeout(() => {
+          document.title = title;
+        }, 2019);
+      }
+    }
+    document.addEventListener('visibilitychange', change, false);
+  });
+</script>
+<!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -184,7 +217,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">4141</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">530</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">4149</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">531</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -255,7 +288,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">530</span>
+          <span class="site-state-item-count">531</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -266,7 +299,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">4141</span>
+        <span class="site-state-item-count">4149</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -314,7 +347,10 @@
         </li>
     </ul>
   </div>
-<!-- 近期文章 -->
+<!-- CloudCalendar -->
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+	<div class="widget" id="CloudCalendar"></div>
+</div><!-- 近期文章 -->
 
 
 
@@ -335,6 +371,14 @@
         
 
         
+
+       
+
+         <li>
+
+           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/5496ea38/" title="总是做一些奇奇怪怪的梦" target="_blank">总是做一些奇奇怪怪的梦</a>
+
+         </li>
 
        
 
@@ -364,15 +408,7 @@
 
          <li>
 
-           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018年最后的夜晚你怎样度过，12月31日我的过年回家路" target="_blank">2018年最后的夜晚你怎样度过，12月31日我的过年回家路</a>
-
-         </li>
-
-       
-
-         <li>
-
-           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/fa2bea6f/" title="元旦过后，新年上班的第一天，发生了这些事，让人很难过" target="_blank">元旦过后，新年上班的第一天，发生了这些事，让人很难过</a>
+           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路" target="_blank">2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路</a>
 
          </li>
 
@@ -453,12 +489,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="用CPU挖狗狗币，一晚上挖了100多个 | 夜色酒庄">
+      <meta itemprop="name" content="用 CPU 挖狗狗币，一晚上挖了 100 多个 | 夜色酒庄">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          用CPU挖狗狗币，一晚上挖了100多个
+          用 CPU 挖狗狗币，一晚上挖了 100 多个
         </h1>
 
         <div class="post-meta-container">
@@ -517,12 +553,12 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>用CPU挖狗狗币算力居然是显卡的1000倍，别人用显卡挖的速度单位是MH，我用CPU挖的速度是H，而1H&#x3D;1000MH，就是我用CPU挖一个小时的产量用显卡要挖1000个小时才可以完成。</p>
+        <p>用 CPU 挖狗狗币算力居然是显卡的 1000 倍，别人用显卡挖的速度单位是 MH，我用 CPU 挖的速度是 H，而 1H=1000MH，就是我用 CPU 挖一个小时的产量用显卡要挖 1000 个小时才可以完成。</p>
 <span id="more"></span>
 
-<p>其实从理论上来看也是这样的，因为显卡处理的是图形数据，对于游戏这些需要和图形打交道的显卡就很强，而挖矿软件压根就不需要图形数据，要处理的其实是算法，就是计算机每秒的计算速度要快，这个当然就是CPU的强项了。</p>
-<p>按照当前狗狗币市价是两块多人民币一个，一晚上挖100多个就是两百多块钱了，就连很多矿老板都后悔买显卡了，因为显卡的算力只是CPU的一千分之一，而耗电量却是CPU的5倍。</p>
-<p>我用的CPU挖的电脑总的才是150瓦的，挖一个晚上10小时也最多用1.5度电，但是如果用的显卡挖就不一样了，显卡一晚上最少要8度电，而挖出的产量却极低，随着狗狗币价格的上涨，CPU毫无疑问的会出现一波缺货潮，因为CPU对于挖狗狗币，性能实在是很强。</p>
+<p>其实从理论上来看也是这样的，因为显卡处理的是图形数据，对于游戏这些需要和图形打交道的显卡就很强，而挖矿软件压根就不需要图形数据，要处理的其实是算法，就是计算机每秒的计算速度要快，这个当然就是 CPU 的强项了。</p>
+<p>按照当前狗狗币市价是两块多人民币一个，一晚上挖 100 多个就是两百多块钱了，就连很多矿老板都后悔买显卡了，因为显卡的算力只是 CPU 的一千分之一，而耗电量却是 CPU 的 5 倍。</p>
+<p>我用的 CPU 挖的电脑总的才是 150 瓦的，挖一个晚上 10 小时也最多用 1.5 度电，但是如果用的显卡挖就不一样了，显卡一晚上最少要 8 度电，而挖出的产量却极低，随着狗狗币价格的上涨，CPU 毫无疑问的会出现一波缺货潮，因为 CPU 对于挖狗狗币，性能实在是很强。</p>
 
     </div>
 
@@ -591,7 +627,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>Post link: </strong>
-      <a href="https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f8464a66/" title="用CPU挖狗狗币，一晚上挖了100多个">https://aixz.xyz/日常记录/f8464a66/</a>
+      <a href="https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f8464a66/" title="用 CPU 挖狗狗币，一晚上挖了 100 多个">https://aixz.xyz/日常记录/f8464a66/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC96aC1DTg=="><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</span> unless stating additionally.
@@ -648,8 +684,8 @@
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1e50e113/" rel="next" title="用了很多电脑系统，最后发现win10才是最好用的">
-                  用了很多电脑系统，最后发现win10才是最好用的 <i class="fa fa-chevron-right"></i>
+                <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1e50e113/" rel="next" title="用了很多电脑系统，最后发现 win10 才是最好用的">
+                  用了很多电脑系统，最后发现 win10 才是最好用的 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>
@@ -702,14 +738,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>Symbols count total: </span>
-    <span title="Symbols count total">285k</span>
+    <span title="Symbols count total">287k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>Reading time total &asymp;</span>
-    <span title="Reading time total">4:19</span>
+    <span title="Reading time total">4:21</span>
   </span>
 </div>
 <div class="busuanzi-count">
@@ -737,15 +773,12 @@
   </div><!-- 打字效果代码 -->
 <div> 
 	<script src="https://cdn.jsdelivr.net/gh/suyin-long/activate-power-mode@1.0/dist/activate-power-mode.js"></script>
-</div>
-
-<!-- 礼花代码 -->
-<div>
 	<script>
-	POWERMODE.colorful = true; // make power mode colorful
-	POWERMODE.shake = false; // turn off shake
-	document.body.addEventListener('input', POWERMODE);
-	</script> 
+		POWERMODE.colorful = true; // make power mode colorful
+		POWERMODE.shake = false; // turn off shake
+		document.body.addEventListener('input', POWERMODE);
+	</script>
+
 </div>
 
     </div>
@@ -791,7 +824,24 @@
   <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
   <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://aixz.xyz/en/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f8464a66/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
+<!-- calendar widget -->
+<div>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js"></script>
+    <script>
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN',
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
 
+</div>
   <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
   <script>
       pbOptions = {};

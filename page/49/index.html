@@ -75,7 +75,40 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><!-- 谷歌广告代码 -->
+</style><script>
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    
+      if (NexT.utils.hasMobileUA()) return;
+    
+    let time, hidden, visible, title = document.title;
+    let favicon = document.querySelector('link[rel="icon"]');
+    
+      hidden = '';
+      visible = '';
+    
+    let random = t => t[Math.floor(Math.random() * t.length)];
+    const change = () => {
+      if (document.hidden) {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = hidden;
+        
+        clearTimeout(time);
+      } else {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = visible;
+        
+        time = setTimeout(() => {
+          document.title = title;
+        }, 2019);
+      }
+    }
+    document.addEventListener('visibilitychange', change, false);
+  });
+</script>
+<!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -173,7 +206,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4141</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">530</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">4149</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">531</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>公益 404</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -244,7 +277,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">530</span>
+          <span class="site-state-item-count">531</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -255,7 +288,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">4141</span>
+        <span class="site-state-item-count">4149</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -303,7 +336,10 @@
         </li>
     </ul>
   </div>
-<!-- 近期文章 -->
+<!-- CloudCalendar -->
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+	<div class="widget" id="CloudCalendar"></div>
+</div><!-- 近期文章 -->
 
 
 
@@ -324,6 +360,14 @@
         
 
         
+
+       
+
+         <li>
+
+           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/5496ea38/" title="总是做一些奇奇怪怪的梦" target="_blank">总是做一些奇奇怪怪的梦</a>
+
+         </li>
 
        
 
@@ -353,15 +397,7 @@
 
          <li>
 
-           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018年最后的夜晚你怎样度过，12月31日我的过年回家路" target="_blank">2018年最后的夜晚你怎样度过，12月31日我的过年回家路</a>
-
-         </li>
-
-       
-
-         <li>
-
-           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/fa2bea6f/" title="元旦过后，新年上班的第一天，发生了这些事，让人很难过" target="_blank">元旦过后，新年上班的第一天，发生了这些事，让人很难过</a>
+           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路" target="_blank">2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路</a>
 
          </li>
 
@@ -419,6 +455,110 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3d9ddda8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/avatar.gif">
+      <meta itemprop="name" content="头号梦想家">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="夜色酒庄">
+      <meta itemprop="description" content="夜色酒庄是我用来记录自己生活点滴的网站">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 夜色酒庄">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3d9ddda8/" class="post-title-link" itemprop="url">今天休息没有上班，回了一趟基地</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2021-05-25 23:06:36" itemprop="dateCreated datePublished" datetime="2021-05-25T23:06:36+08:00">2021-05-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">日常记录</span></a>
+        </span>
+    </span>
+
+  <!-- 置顶标签 -->
+
+
+
+
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>800</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>这是我来到这里第一次回基地，来的时候是坐的面包车来的，来的时候是走的近路，大概只用半个小时吧，坐公交车回去大概花了一个半小时。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3d9ddda8/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -498,7 +638,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>昨天用手机上那个Vlog拍的视频今天发觉太短了，每一段都才有11秒钟4个镜头，发到快手上配首歌曲的音乐都感觉很短，于是我就想到把它传到电脑上去把每段的片尾剪了几段合成一个视频。</p>
+          <p>昨天用手机上那个 Vlog 拍的视频今天发觉太短了，每一段都才有 11 秒钟 4 个镜头，发到快手上配首歌曲的音乐都感觉很短，于是我就想到把它传到电脑上去把每段的片尾剪了几段合成一个视频。</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/42f2ef49/#more" rel="contents">
@@ -758,7 +898,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/275a991/" class="post-title-link" itemprop="url">人力资源管理(一)错题集</a>
+          <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/275a991/" class="post-title-link" itemprop="url">人力资源管理 (一) 错题集</a>
         </h2>
 
         <div class="post-meta-container">
@@ -810,7 +950,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>1.功能性职务分析法的基础是DPT理论。其中P指的是( B )。(2018年4月《人力资源管理(一)》真题)<br>A.资料方面的信息<br>B.人员方面的信息<br>C.事物方面的信息<br>D.其他方面的信息<br>解析：功能性职务分析法的基础是DPT理论。D（date）：资料方面的信息；P（people）：“人”方面的信息；T（thing）：事物方面的信息。</p>
+          <p>1. 功能性职务分析法的基础是 DPT 理论。其中 P 指的是 (B)。(2018 年 4 月《人力资源管理 (一)》真题)<br>A. 资料方面的信息<br>B. 人员方面的信息<br>C. 事物方面的信息<br>D. 其他方面的信息<br>解析：功能性职务分析法的基础是 DPT 理论。D（date）：资料方面的信息；P（people）：“人” 方面的信息；T（thing）：事物方面的信息。</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/275a991/#more" rel="contents">
@@ -862,7 +1002,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ffb90031/" class="post-title-link" itemprop="url">人力资源管理（一）自考通错题集2</a>
+          <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ffb90031/" class="post-title-link" itemprop="url">人力资源管理（一）自考通错题集 2</a>
         </h2>
 
         <div class="post-meta-container">
@@ -914,7 +1054,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="二、多项选择题"><a href="#二、多项选择题" class="headerlink" title="二、多项选择题"></a>二、多项选择题</h2><p>26.针对“自动人”假设的管理措施，以下说法正确的是 （DE）<br>A.管理工作的重点是完成任务，提高劳动生产率<br>B.采用胡罗卜加大棒的管理方法，效率高的重奖，消极怠工的重罚<br>C.管理者因人、因事、因其不同情况，灵活采用不同的管理方法<br>D.管理职能的改变，主要是减少和消除员工在自我实现过程中的困难和障碍<br>E.管理重点的改变，把重点转移到为员工创造适宜的工作环境、工作条件上，使劳动者在这种适宜的环境中能够充分地发挥自己的潜能<br>解析：DE(P50-51)本题主要考查的知识点是“自动人”假设的管理措施。选项A、B是“经济人”假设的管理措施，选项C是“复杂人”假设的管理措施。</p>
+          <h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="二、多项选择题"><a href="#二、多项选择题" class="headerlink" title="二、多项选择题"></a>二、多项选择题</h2><p>26. 针对 “自动人” 假设的管理措施，以下说法正确的是 （DE）<br>A. 管理工作的重点是完成任务，提高劳动生产率<br>B. 采用胡罗卜加大棒的管理方法，效率高的重奖，消极怠工的重罚<br>C. 管理者因人、因事、因其不同情况，灵活采用不同的管理方法<br>D. 管理职能的改变，主要是减少和消除员工在自我实现过程中的困难和障碍<br>E. 管理重点的改变，把重点转移到为员工创造适宜的工作环境、工作条件上，使劳动者在这种适宜的环境中能够充分地发挥自己的潜能<br>解析：DE (P50-51) 本题主要考查的知识点是 “自动人” 假设的管理措施。选项 A、B 是 “经济人” 假设的管理措施，选项 C 是 “复杂人” 假设的管理措施。</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ffb90031/#more" rel="contents">
@@ -966,7 +1106,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d84e05fc/" class="post-title-link" itemprop="url">人力资源管理(一)自考通错题集1</a>
+          <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d84e05fc/" class="post-title-link" itemprop="url">人力资源管理 (一) 自考通错题集 1</a>
         </h2>
 
         <div class="post-meta-container">
@@ -1018,7 +1158,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="一、单项选择题"><a href="#一、单项选择题" class="headerlink" title="一、单项选择题"></a>一、单项选择题</h2><p>4.下列属于内容型激励理论的是 （A）<br>A.双因素理论<br>B.期望理论<br>C.公平理论<br>D.强化理论<br>解析：A(P73) 本题主要考查的知识点是激励理论的分类。激励理论主要分为内容型激励理论和过程型激励理论。内容型激励理论包括马斯洛的需要层次理论、阿德福的ERG理论、赫茨伯格的双因素理论等；过程型激励理论包括费鲁姆的期望理论、亚当斯的公平理论、波特——劳勒的综合激励过程模型、斯金纳的强化理论等。</p>
+          <h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="一、单项选择题"><a href="#一、单项选择题" class="headerlink" title="一、单项选择题"></a>一、单项选择题</h2><p>4. 下列属于内容型激励理论的是 （A）<br>A. 双因素理论<br>B. 期望理论<br>C. 公平理论<br>D. 强化理论<br>解析：A (P73) 本题主要考查的知识点是激励理论的分类。激励理论主要分为内容型激励理论和过程型激励理论。内容型激励理论包括马斯洛的需要层次理论、阿德福的 ERG 理论、赫茨伯格的双因素理论等；过程型激励理论包括费鲁姆的期望理论、亚当斯的公平理论、波特 —— 劳勒的综合激励过程模型、斯金纳的强化理论等。</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d84e05fc/#more" rel="contents">
@@ -1070,7 +1210,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/52e18ab8/" class="post-title-link" itemprop="url">人力资源管理（一）自考通论述题1</a>
+          <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/52e18ab8/" class="post-title-link" itemprop="url">人力资源管理（一）自考通论述题 1</a>
         </h2>
 
         <div class="post-meta-container">
@@ -1122,7 +1262,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="四、论述题"><a href="#四、论述题" class="headerlink" title="四、论述题"></a>四、论述题</h2><p>36.如何进行绩效反馈面谈? (P239-240)<br>答:绩效反馈有正式的绩效反馈和非正式的绩效反馈，以及口头绩效反馈和书面绩效反馈等不同形式。其中在绩效考核之后所进行的绩效反馈面谈是一种重要和有效的绩效反馈形式。</p>
+          <h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="四、论述题"><a href="#四、论述题" class="headerlink" title="四、论述题"></a>四、论述题</h2><p>36. 如何进行绩效反馈面谈？(P239-240)<br>答：绩效反馈有正式的绩效反馈和非正式的绩效反馈，以及口头绩效反馈和书面绩效反馈等不同形式。其中在绩效考核之后所进行的绩效反馈面谈是一种重要和有效的绩效反馈形式。</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/52e18ab8/#more" rel="contents">
@@ -1174,7 +1314,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3bf0c43d/" class="post-title-link" itemprop="url">人力资源管理（一）自考通简答题1</a>
+          <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3bf0c43d/" class="post-title-link" itemprop="url">人力资源管理（一）自考通简答题 1</a>
         </h2>
 
         <div class="post-meta-container">
@@ -1226,7 +1366,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="三、简答题"><a href="#三、简答题" class="headerlink" title="三、简答题"></a>三、简答题</h2><p>31.简述“社会人”假设理论的主要观点和管理措施。(P50~51)<br>答:主要观点:<br>(1)	人类工作的主要动机是社会需要而不是经济需要。<br>(2)	现代工业机械化程度越高，分工越细，会使工作本身变得越单调、越枯	燥。因此，人们只能从社会关系上去寻求意义。<br>(3)	人受非正式组织的社会影响比受正式组织的经济诱惑影响更大。<br>(4)	工作积极性取决于管理者对下属需求的满足程度。<br>管理措施;<br>(1)	管理人员在注重完成任务的同时，也要关注人,重视满足人的社会需要,	培养员工的归属感。<br>(2)	在实行奖励时，提倡集体奖励制度。<br>(3)	重视非正式组织的作用。</p>
+          <h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="三、简答题"><a href="#三、简答题" class="headerlink" title="三、简答题"></a>三、简答题</h2><p>31. 简述 “社会人” 假设理论的主要观点和管理措施。(P50~51)<br>答：主要观点:<br>(1)	人类工作的主要动机是社会需要而不是经济需要。<br>(2)	现代工业机械化程度越高，分工越细，会使工作本身变得越单调、越枯	燥。因此，人们只能从社会关系上去寻求意义。<br>(3)	人受非正式组织的社会影响比受正式组织的经济诱惑影响更大。<br>(4)	工作积极性取决于管理者对下属需求的满足程度。<br>管理措施；<br>(1)	管理人员在注重完成任务的同时，也要关注人，重视满足人的社会需要，	培养员工的归属感。<br>(2)	在实行奖励时，提倡集体奖励制度。<br>(3)	重视非正式组织的作用。</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3bf0c43d/#more" rel="contents">
@@ -1278,7 +1418,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ec01e93e/" class="post-title-link" itemprop="url">人力资源管理（一）自考通案例分析题1</a>
+          <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ec01e93e/" class="post-title-link" itemprop="url">人力资源管理（一）自考通案例分析题 1</a>
         </h2>
 
         <div class="post-meta-container">
@@ -1330,7 +1470,7 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="六、案例分析题"><a href="#六、案例分析题" class="headerlink" title="六、案例分析题"></a>六、案例分析题</h2><p>38.案例:<br>某家专业咨询公司给一家民营企业做咨询，咨询内容侧重于薪酬设计。通过了解，目前公司的中层及以下员工的薪酬在本地区本行业内处于中等偏上水平，高管的薪酬水平与同行业持平。公司的福利也很好，五险一金、过节费、通讯费、交通补贴等都有。由于企业尚处于创业期，企业给出这样的薪资待遇，员工们都很满意。老板对所有的高管实行了股权激励，不管是一起打江山的元老，还是刚外聘的高管，一视同仁，老板将自己的股权拿出来，无偿赠予。对中层管理者及一般员工,老板也计划实行股权激励，正在让下面的人制订方案。</p>
+          <h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="六、案例分析题"><a href="#六、案例分析题" class="headerlink" title="六、案例分析题"></a>六、案例分析题</h2><p>38. 案例:<br>某家专业咨询公司给一家民营企业做咨询，咨询内容侧重于薪酬设计。通过了解，目前公司的中层及以下员工的薪酬在本地区本行业内处于中等偏上水平，高管的薪酬水平与同行业持平。公司的福利也很好，五险一金、过节费、通讯费、交通补贴等都有。由于企业尚处于创业期，企业给出这样的薪资待遇，员工们都很满意。老板对所有的高管实行了股权激励，不管是一起打江山的元老，还是刚外聘的高管，一视同仁，老板将自己的股权拿出来，无偿赠予。对中层管理者及一般员工，老板也计划实行股权激励，正在让下面的人制订方案。</p>
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ec01e93e/#more" rel="contents">
@@ -1356,112 +1496,8 @@
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d850f6a5/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/avatar.gif">
-      <meta itemprop="name" content="头号梦想家">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="夜色酒庄">
-      <meta itemprop="description" content="夜色酒庄是我用来记录自己生活点滴的网站">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 夜色酒庄">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d850f6a5/" class="post-title-link" itemprop="url">人力资源管理（一）自考通分析说明题1</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-
-      <time title="创建时间：2021-05-25 23:06:36" itemprop="dateCreated datePublished" datetime="2021-05-25T23:06:36+08:00">2021-05-25</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/" itemprop="url" rel="index"><span itemprop="name">日常记录</span></a>
-        </span>
-    </span>
-
-  <!-- 置顶标签 -->
-
-
-
-
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>751</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="五、分析说明题"><a href="#五、分析说明题" class="headerlink" title="五、分析说明题"></a>五、分析说明题</h2><p>37.背景资料：<br>美国最年轻的医学院——弗吉尼亚理工大学卡里赖恩医学院推行了全新的招生政策。 引起热议的焦点是，卡里赖恩医学院并不是严格按照成绩、标准化考试分数，以及一场面试的表现对申请者进行评估，而是让他们参加9轮简短面试，“评估他们的反应速度和团队协作意愿”。该流程的专业名称叫M.M.I.，即多轮微型面试,《纽约时报》称之为“速配型招生”,即在9场8分钟的对话中,面试官会设置一个道德困境,要求申请者现场做出决定，甚至对医疗保健政策发表看法，其目的是考察申请者是怎样的人，而不是他们有多聪明。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d850f6a5/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/page/48/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/48/">48</a><span class="page-number current">49</span><a class="page-number" href="/page/50/">50</a><span class="space">&hellip;</span><a class="page-number" href="/page/53/">53</a><a class="extend next" rel="next" href="/page/50/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+    <a class="extend prev" rel="prev" href="/page/48/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/48/">48</a><span class="page-number current">49</span><a class="page-number" href="/page/50/">50</a><span class="space">&hellip;</span><a class="page-number" href="/page/54/">54</a><a class="extend next" rel="next" href="/page/50/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
   </nav>
 
 </div>
@@ -1503,14 +1539,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>站点总字数：</span>
-    <span title="站点总字数">285k</span>
+    <span title="站点总字数">287k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>站点阅读时长 &asymp;</span>
-    <span title="站点阅读时长">4:19</span>
+    <span title="站点阅读时长">4:21</span>
   </span>
 </div>
 <div class="busuanzi-count">
@@ -1538,15 +1574,12 @@
   </div><!-- 打字效果代码 -->
 <div> 
 	<script src="https://cdn.jsdelivr.net/gh/suyin-long/activate-power-mode@1.0/dist/activate-power-mode.js"></script>
-</div>
-
-<!-- 礼花代码 -->
-<div>
 	<script>
-	POWERMODE.colorful = true; // make power mode colorful
-	POWERMODE.shake = false; // turn off shake
-	document.body.addEventListener('input', POWERMODE);
-	</script> 
+		POWERMODE.colorful = true; // make power mode colorful
+		POWERMODE.shake = false; // turn off shake
+		document.body.addEventListener('input', POWERMODE);
+	</script>
+
 </div>
 
     </div>
@@ -1592,7 +1625,24 @@
   <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
   <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://aixz.xyz/page/49/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
+<!-- calendar widget -->
+<div>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js"></script>
+    <script>
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN',
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
 
+</div>
   <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
   <script>
       pbOptions = {};

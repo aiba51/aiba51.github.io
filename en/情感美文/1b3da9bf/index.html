@@ -28,12 +28,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"aixz.xyz","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.11.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"width":280},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"buttons","active":"utterances","storage":false,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="最近看了简书上的很多人都在写自己做微信公众号的经历，我也来写写我自己的做公众号历程，我的公众号其实注册已经有几年了，大约是在微信刚推出公众号的时候我就注册了，大概是在2015年，也就是4年前，那是时候的公众号是还没有现在的功能这么完善，要是我认真写文章做起来获取粉丝关注还是很容易的，至少是没有现在怎么难，现在的公众号多了，自然做起来竞争也大了。">
+    <meta name="description" content="最近看了简书上的很多人都在写自己做微信公众号的经历，我也来写写我自己的做公众号历程，我的公众号其实注册已经有几年了，大约是在微信刚推出公众号的时候我就注册了，大概是在 2015 年，也就是 4 年前，那是时候的公众号是还没有现在的功能这么完善，要是我认真写文章做起来获取粉丝关注还是很容易的，至少是没有现在怎么难，现在的公众号多了，自然做起来竞争也大了。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于我的微信公众号和我知道其他自媒体号的历程">
 <meta property="og:url" content="https://aixz.xyz/en/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/1b3da9bf/index.html">
 <meta property="og:site_name" content="夜色酒庄">
-<meta property="og:description" content="最近看了简书上的很多人都在写自己做微信公众号的经历，我也来写写我自己的做公众号历程，我的公众号其实注册已经有几年了，大约是在微信刚推出公众号的时候我就注册了，大概是在2015年，也就是4年前，那是时候的公众号是还没有现在的功能这么完善，要是我认真写文章做起来获取粉丝关注还是很容易的，至少是没有现在怎么难，现在的公众号多了，自然做起来竞争也大了。">
+<meta property="og:description" content="最近看了简书上的很多人都在写自己做微信公众号的经历，我也来写写我自己的做公众号历程，我的公众号其实注册已经有几年了，大约是在微信刚推出公众号的时候我就注册了，大概是在 2015 年，也就是 4 年前，那是时候的公众号是还没有现在的功能这么完善，要是我认真写文章做起来获取粉丝关注还是很容易的，至少是没有现在怎么难，现在的公众号多了，自然做起来竞争也大了。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2021-05-25T15:06:36.329Z">
 <meta property="article:modified_time" content="2021-05-25T15:06:36.329Z">
@@ -108,7 +108,40 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><!-- 谷歌广告代码 -->
+</style><script>
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    
+      if (NexT.utils.hasMobileUA()) return;
+    
+    let time, hidden, visible, title = document.title;
+    let favicon = document.querySelector('link[rel="icon"]');
+    
+      hidden = '';
+      visible = '';
+    
+    let random = t => t[Math.floor(Math.random() * t.length)];
+    const change = () => {
+      if (document.hidden) {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = hidden;
+        
+        clearTimeout(time);
+      } else {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = visible;
+        
+        time = setTimeout(() => {
+          document.title = title;
+        }, 2019);
+      }
+    }
+    document.addEventListener('visibilitychange', change, false);
+  });
+</script>
+<!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -206,7 +239,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">4141</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">530</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">4149</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">531</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -277,7 +310,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">530</span>
+          <span class="site-state-item-count">531</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -288,7 +321,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">4141</span>
+        <span class="site-state-item-count">4149</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -336,7 +369,10 @@
         </li>
     </ul>
   </div>
-<!-- 近期文章 -->
+<!-- CloudCalendar -->
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+	<div class="widget" id="CloudCalendar"></div>
+</div><!-- 近期文章 -->
 
 
 
@@ -357,6 +393,14 @@
         
 
         
+
+       
+
+         <li>
+
+           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/5496ea38/" title="总是做一些奇奇怪怪的梦" target="_blank">总是做一些奇奇怪怪的梦</a>
+
+         </li>
 
        
 
@@ -386,15 +430,7 @@
 
          <li>
 
-           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018年最后的夜晚你怎样度过，12月31日我的过年回家路" target="_blank">2018年最后的夜晚你怎样度过，12月31日我的过年回家路</a>
-
-         </li>
-
-       
-
-         <li>
-
-           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/fa2bea6f/" title="元旦过后，新年上班的第一天，发生了这些事，让人很难过" target="_blank">元旦过后，新年上班的第一天，发生了这些事，让人很难过</a>
+           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路" target="_blank">2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路</a>
 
          </li>
 
@@ -539,10 +575,10 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>最近看了简书上的很多人都在写自己做微信公众号的经历，我也来写写我自己的做公众号历程，我的公众号其实注册已经有几年了，大约是在微信刚推出公众号的时候我就注册了，大概是在2015年，也就是4年前，那是时候的公众号是还没有现在的功能这么完善，要是我认真写文章做起来获取粉丝关注还是很容易的，至少是没有现在怎么难，现在的公众号多了，自然做起来竞争也大了。</p>
+        <p>最近看了简书上的很多人都在写自己做微信公众号的经历，我也来写写我自己的做公众号历程，我的公众号其实注册已经有几年了，大约是在微信刚推出公众号的时候我就注册了，大概是在 2015 年，也就是 4 年前，那是时候的公众号是还没有现在的功能这么完善，要是我认真写文章做起来获取粉丝关注还是很容易的，至少是没有现在怎么难，现在的公众号多了，自然做起来竞争也大了。</p>
 <span id="more"></span>
 
-<p>我虽然注册得早但没有真正的在上面写过几篇文章，也只是随便的写了两篇文章，有17个关注，那时候我也还不知道头条号和百家号这些，简书也是去年才注册的，这些自媒体号，除了微信公众号最初接触的就是百家号了，百家号也不过是去年夏天才注册的，接触百家号其实也是因为百度的熊掌号我才知道百家号的，注册的时候也没有想得太多也就只是随便注册来玩玩，也没有真正的在上面发过一篇文章，至于是什么时候通过的我都不是很清楚，因为那是几个月之后的事了。</p>
+<p>我虽然注册得早但没有真正的在上面写过几篇文章，也只是随便的写了两篇文章，有 17 个关注，那时候我也还不知道头条号和百家号这些，简书也是去年才注册的，这些自媒体号，除了微信公众号最初接触的就是百家号了，百家号也不过是去年夏天才注册的，接触百家号其实也是因为百度的熊掌号我才知道百家号的，注册的时候也没有想得太多也就只是随便注册来玩玩，也没有真正的在上面发过一篇文章，至于是什么时候通过的我都不是很清楚，因为那是几个月之后的事了。</p>
 <p>由于我自己有其他事要忙，所以就觉得百家号估计和公众号是没有什么区别的，在还没有知道有自媒体号这么一回事之前，我认为把文章发在百家号和微信公众号区别不大，但直到几个月后的一天我再次打开百家号的后台我才发现原来这里发文章是有收益的，于是间我打开了自媒体写作的这道大门，每天在百家号发文，直到发了大概十多篇以后，我也看了其他人发在百家号关于做自媒体号这一方面的知识和见解，在之后我才了解原来还有其他的自媒体号。</p>
 <p>但看了他们写的总觉得没有多少核心的知识点分享出来，于是我认识到应该只有书本上的才是最经典最核心的知识点，于是乎我用了微信读书找了几本关于自媒体这方面的书，没有一两天就加班加点看完了，看完了才终于明白，在自媒体领域百家号和微信公众号也只是冰山的一角，除了微信公众号和百家号外，还有最出名的头条号、大鱼号、企鹅号、网易号、搜狐号、凤凰号，后面又知道了简书这个写作平台，还有爱奇艺号、趣头条，惠头条，东方头条，微博的头条文章。这些都是后来才知道的，但我有些虽然注册通过了却很少在上面发过文章，因为实在太多了，是真的管不过来。</p>
 <p>微信公众号也是去年开始在百家号上发文章才开始打理起来的，把几年前用的微信公众号的名字改成了和简书这个一样的名字，也是为了好统一管理，另外百家号和头条号的名字和简书的不一样，因为百度的账号我已经注册很久了，所以也不想换昵称了，于是百家号名字就用了我百度账号以前的昵称，至于头条号也是同样的道理，头条号的名字和用户名是统一的，要改就得改用户昵称，所以我也就没有改了，用了以前取的用户昵称。</p>
@@ -750,14 +786,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>Symbols count total: </span>
-    <span title="Symbols count total">285k</span>
+    <span title="Symbols count total">287k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>Reading time total &asymp;</span>
-    <span title="Reading time total">4:19</span>
+    <span title="Reading time total">4:21</span>
   </span>
 </div>
 <div class="busuanzi-count">
@@ -785,15 +821,12 @@
   </div><!-- 打字效果代码 -->
 <div> 
 	<script src="https://cdn.jsdelivr.net/gh/suyin-long/activate-power-mode@1.0/dist/activate-power-mode.js"></script>
-</div>
-
-<!-- 礼花代码 -->
-<div>
 	<script>
-	POWERMODE.colorful = true; // make power mode colorful
-	POWERMODE.shake = false; // turn off shake
-	document.body.addEventListener('input', POWERMODE);
-	</script> 
+		POWERMODE.colorful = true; // make power mode colorful
+		POWERMODE.shake = false; // turn off shake
+		document.body.addEventListener('input', POWERMODE);
+	</script>
+
 </div>
 
     </div>
@@ -839,7 +872,24 @@
   <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
   <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://aixz.xyz/en/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/1b3da9bf/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
+<!-- calendar widget -->
+<div>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js"></script>
+    <script>
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN',
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
 
+</div>
   <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
   <script>
       pbOptions = {};

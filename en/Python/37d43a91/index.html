@@ -28,12 +28,12 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"aixz.xyz","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.11.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"width":280},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"buttons","active":"utterances","storage":false,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="我们现在已经知道Python语言已经成为了全世界排名第一的编程语言，那该如何来入门学习呢，在电脑上安装Python环境,用Windows PowerShell在电脑上输出第一个Hello World。">
+    <meta name="description" content="我们现在已经知道 Python 语言已经成为了全世界排名第一的编程语言，那该如何来入门学习呢，在电脑上安装 Python 环境，用 Windows PowerShell 在电脑上输出第一个 Hello World。">
 <meta property="og:type" content="article">
-<meta property="og:title" content="如何入门Python语言，可以通过一个小游戏来学习入门">
+<meta property="og:title" content="如何入门 Python 语言，可以通过一个小游戏来学习入门">
 <meta property="og:url" content="https://aixz.xyz/en/Python/37d43a91/index.html">
 <meta property="og:site_name" content="夜色酒庄">
-<meta property="og:description" content="我们现在已经知道Python语言已经成为了全世界排名第一的编程语言，那该如何来入门学习呢，在电脑上安装Python环境,用Windows PowerShell在电脑上输出第一个Hello World。">
+<meta property="og:description" content="我们现在已经知道 Python 语言已经成为了全世界排名第一的编程语言，那该如何来入门学习呢，在电脑上安装 Python 环境，用 Windows PowerShell 在电脑上输出第一个 Hello World。">
 <meta property="og:locale" content="en_US">
 <meta property="og:image" content="https://aixz.xyz/Python/37d43a91/%E5%9B%BE%E7%89%871.jpg">
 <meta property="og:image" content="https://aixz.xyz/Python/37d43a91/%E5%9B%BE%E7%89%872.jpg">
@@ -70,10 +70,10 @@
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://aixz.xyz/Python/37d43a91/","path":"en/Python/37d43a91/","title":"如何入门Python语言，可以通过一个小游戏来学习入门"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://aixz.xyz/Python/37d43a91/","path":"en/Python/37d43a91/","title":"如何入门 Python 语言，可以通过一个小游戏来学习入门"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>如何入门Python语言，可以通过一个小游戏来学习入门 | 夜色酒庄</title>
+<title>如何入门 Python 语言，可以通过一个小游戏来学习入门 | 夜色酒庄</title>
   
 
   <script src="/js/third-party/analytics/baidu-analytics.js"></script>
@@ -101,7 +101,40 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><!-- 谷歌广告代码 -->
+</style><script>
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    
+      if (NexT.utils.hasMobileUA()) return;
+    
+    let time, hidden, visible, title = document.title;
+    let favicon = document.querySelector('link[rel="icon"]');
+    
+      hidden = '';
+      visible = '';
+    
+    let random = t => t[Math.floor(Math.random() * t.length)];
+    const change = () => {
+      if (document.hidden) {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = hidden;
+        
+        clearTimeout(time);
+      } else {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = visible;
+        
+        time = setTimeout(() => {
+          document.title = title;
+        }, 2019);
+      }
+    }
+    document.addEventListener('visibilitychange', change, false);
+  });
+</script>
+<!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -199,7 +232,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">4141</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">530</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">4149</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">531</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -270,7 +303,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">530</span>
+          <span class="site-state-item-count">531</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -281,7 +314,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">4141</span>
+        <span class="site-state-item-count">4149</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -329,7 +362,10 @@
         </li>
     </ul>
   </div>
-<!-- 近期文章 -->
+<!-- CloudCalendar -->
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+	<div class="widget" id="CloudCalendar"></div>
+</div><!-- 近期文章 -->
 
 
 
@@ -350,6 +386,14 @@
         
 
         
+
+       
+
+         <li>
+
+           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/5496ea38/" title="总是做一些奇奇怪怪的梦" target="_blank">总是做一些奇奇怪怪的梦</a>
+
+         </li>
 
        
 
@@ -379,15 +423,7 @@
 
          <li>
 
-           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018年最后的夜晚你怎样度过，12月31日我的过年回家路" target="_blank">2018年最后的夜晚你怎样度过，12月31日我的过年回家路</a>
-
-         </li>
-
-       
-
-         <li>
-
-           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/fa2bea6f/" title="元旦过后，新年上班的第一天，发生了这些事，让人很难过" target="_blank">元旦过后，新年上班的第一天，发生了这些事，让人很难过</a>
+           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路" target="_blank">2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路</a>
 
          </li>
 
@@ -468,12 +504,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="如何入门Python语言，可以通过一个小游戏来学习入门 | 夜色酒庄">
+      <meta itemprop="name" content="如何入门 Python 语言，可以通过一个小游戏来学习入门 | 夜色酒庄">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          如何入门Python语言，可以通过一个小游戏来学习入门
+          如何入门 Python 语言，可以通过一个小游戏来学习入门
         </h1>
 
         <div class="post-meta-container">
@@ -532,13 +568,13 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>我们现在已经知道Python语言已经成为了全世界排名第一的编程语言，那该如何来入门学习呢，在电脑上安装Python环境,用Windows PowerShell在电脑上输出第一个Hello World。</p>
+        <p>我们现在已经知道 Python 语言已经成为了全世界排名第一的编程语言，那该如何来入门学习呢，在电脑上安装 Python 环境，用 Windows PowerShell 在电脑上输出第一个 Hello World。</p>
 <span id="more"></span>
 
 <p><img data-src="/Python/37d43a91/%E5%9B%BE%E7%89%871.jpg"></p>
-<p>其实这些对刚开始入门的新手来说还不是很重要，重要的是一开始学习一门语言必须先让自己感兴趣，下面就来介绍这一款对于新手入门学习Python语言比较有意思的小游戏，这个小游戏叫代码竞技场。</p>
+<p>其实这些对刚开始入门的新手来说还不是很重要，重要的是一开始学习一门语言必须先让自己感兴趣，下面就来介绍这一款对于新手入门学习 Python 语言比较有意思的小游戏，这个小游戏叫代码竞技场。</p>
 <p><img data-src="/Python/37d43a91/%E5%9B%BE%E7%89%872.jpg"></p>
-<p>Android和App Store都是可以下载安装的。</p>
+<p>Android 和 App Store 都是可以下载安装的。</p>
 <p><img data-src="/Python/37d43a91/%E5%9B%BE%E7%89%873.jpg"></p>
 <p>我这里已经在自己手机上下载安装好了。</p>
 <p><img data-src="/Python/37d43a91/%E5%9B%BE%E7%89%874.jpg"></p>
@@ -558,7 +594,7 @@
 <p><img data-src="/Python/37d43a91/%E5%9B%BE%E7%89%8711.jpg"></p>
 <p>有意思的学情报告，分析了你本关学习了哪些知识点，以及综合评价和能力图谱。</p>
 <p><img data-src="/Python/37d43a91/%E5%9B%BE%E7%89%8712.jpg"></p>
-<p>目前可以通过这个小游戏学习到Python语言的While循环，数据类型，数据类型转换，If判断语句，数据运算，逻辑运算，变量赋值；Python语言的基础这三章就已经学得差不多了，是不是感觉学习Python语言也很轻松还有趣呢，欢迎留言交流。</p>
+<p>目前可以通过这个小游戏学习到 Python 语言的 While 循环，数据类型，数据类型转换，If 判断语句，数据运算，逻辑运算，变量赋值；Python 语言的基础这三章就已经学得差不多了，是不是感觉学习 Python 语言也很轻松还有趣呢，欢迎留言交流。</p>
 
     </div>
 
@@ -627,7 +663,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>Post link: </strong>
-      <a href="https://aixz.xyz/Python/37d43a91/" title="如何入门Python语言，可以通过一个小游戏来学习入门">https://aixz.xyz/Python/37d43a91/</a>
+      <a href="https://aixz.xyz/Python/37d43a91/" title="如何入门 Python 语言，可以通过一个小游戏来学习入门">https://aixz.xyz/Python/37d43a91/</a>
   </li>
   <li class="post-copyright-license">
     <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC96aC1DTg=="><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</span> unless stating additionally.
@@ -740,14 +776,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>Symbols count total: </span>
-    <span title="Symbols count total">285k</span>
+    <span title="Symbols count total">287k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>Reading time total &asymp;</span>
-    <span title="Reading time total">4:19</span>
+    <span title="Reading time total">4:21</span>
   </span>
 </div>
 <div class="busuanzi-count">
@@ -775,15 +811,12 @@
   </div><!-- 打字效果代码 -->
 <div> 
 	<script src="https://cdn.jsdelivr.net/gh/suyin-long/activate-power-mode@1.0/dist/activate-power-mode.js"></script>
-</div>
-
-<!-- 礼花代码 -->
-<div>
 	<script>
-	POWERMODE.colorful = true; // make power mode colorful
-	POWERMODE.shake = false; // turn off shake
-	document.body.addEventListener('input', POWERMODE);
-	</script> 
+		POWERMODE.colorful = true; // make power mode colorful
+		POWERMODE.shake = false; // turn off shake
+		document.body.addEventListener('input', POWERMODE);
+	</script>
+
 </div>
 
     </div>
@@ -829,7 +862,24 @@
   <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
   <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://aixz.xyz/en/Python/37d43a91/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
+<!-- calendar widget -->
+<div>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js"></script>
+    <script>
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN',
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
 
+</div>
   <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
   <script>
       pbOptions = {};

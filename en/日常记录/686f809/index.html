@@ -89,7 +89,40 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><!-- 谷歌广告代码 -->
+</style><script>
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    
+      if (NexT.utils.hasMobileUA()) return;
+    
+    let time, hidden, visible, title = document.title;
+    let favicon = document.querySelector('link[rel="icon"]');
+    
+      hidden = '';
+      visible = '';
+    
+    let random = t => t[Math.floor(Math.random() * t.length)];
+    const change = () => {
+      if (document.hidden) {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = hidden;
+        
+        clearTimeout(time);
+      } else {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = visible;
+        
+        time = setTimeout(() => {
+          document.title = title;
+        }, 2019);
+      }
+    }
+    document.addEventListener('visibilitychange', change, false);
+  });
+</script>
+<!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -187,7 +220,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">4141</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">530</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">4149</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">8</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">531</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -258,7 +291,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">530</span>
+          <span class="site-state-item-count">531</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -269,7 +302,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">4141</span>
+        <span class="site-state-item-count">4149</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -317,7 +350,10 @@
         </li>
     </ul>
   </div>
-<!-- 近期文章 -->
+<!-- CloudCalendar -->
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+	<div class="widget" id="CloudCalendar"></div>
+</div><!-- 近期文章 -->
 
 
 
@@ -338,6 +374,14 @@
         
 
         
+
+       
+
+         <li>
+
+           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/5496ea38/" title="总是做一些奇奇怪怪的梦" target="_blank">总是做一些奇奇怪怪的梦</a>
+
+         </li>
 
        
 
@@ -367,15 +411,7 @@
 
          <li>
 
-           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018年最后的夜晚你怎样度过，12月31日我的过年回家路" target="_blank">2018年最后的夜晚你怎样度过，12月31日我的过年回家路</a>
-
-         </li>
-
-       
-
-         <li>
-
-           <a href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/fa2bea6f/" title="元旦过后，新年上班的第一天，发生了这些事，让人很难过" target="_blank">元旦过后，新年上班的第一天，发生了这些事，让人很难过</a>
+           <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/" title="2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路" target="_blank">2018 年最后的夜晚你怎样度过，12 月 31 日我的过年回家路</a>
 
          </li>
 
@@ -524,10 +560,10 @@
 <span id="more"></span>
 
 <p>由于是一起买的几样菜，每样菜是多少钱也是无法计算了；我家里虽然自己在淘宝上买了个小电子秤，每次买菜和水果回家来我也会自己称下，看看自己有没有被摊主坑了钱，但这次也是无无济于事了，因为很多菜当天的价格我是不清楚的，至于哪样菜花了多少钱，那我就是一头雾水了。</p>
-<p>菜市场那些摊主不得不说是很坑的了，就比如昨天我去菜场买菜问的第一个摊主线椒卖9块钱一斤，问第二个是8块钱一斤，不得不说真是无商不奸，信息不透明这本身就是违反市场经济规律的，微观经济学上说菜市场是比较接近理想市场经济的，但是也只是接近，和理想的市场经济还是差距很大的。</p>
-<p>无论第一个摊主的喊价9块钱一斤还是第二个摊主的喊价8块钱一斤，但他们喊价的时候就已经盘算好了，买的怎么可能有卖的精呢，人家已经是这领域的专家了，因为存在第二个信息不透明，就是他们用的电子秤，有的是买的时候就让卖家帮自己调好一斤称8两或者6两，只能说遇到称8两的已经是很良心的了，都说做人不要斤斤计较，但商人才是真正斤斤计较的人，人家就是从这斤斤计较中才能赚钱，这种商人最没有诚信，专坑中国老百姓的钱。</p>
+<p>菜市场那些摊主不得不说是很坑的了，就比如昨天我去菜场买菜问的第一个摊主线椒卖 9 块钱一斤，问第二个是 8 块钱一斤，不得不说真是无商不奸，信息不透明这本身就是违反市场经济规律的，微观经济学上说菜市场是比较接近理想市场经济的，但是也只是接近，和理想的市场经济还是差距很大的。</p>
+<p>无论第一个摊主的喊价 9 块钱一斤还是第二个摊主的喊价 8 块钱一斤，但他们喊价的时候就已经盘算好了，买的怎么可能有卖的精呢，人家已经是这领域的专家了，因为存在第二个信息不透明，就是他们用的电子秤，有的是买的时候就让卖家帮自己调好一斤称 8 两或者 6 两，只能说遇到称 8 两的已经是很良心的了，都说做人不要斤斤计较，但商人才是真正斤斤计较的人，人家就是从这斤斤计较中才能赚钱，这种商人最没有诚信，专坑中国老百姓的钱。</p>
 <p>不得不说改革开放之初很多商人就是这样起家的，那时候物质缺乏的年代只要你有卖多少钱我都卖，这可以说是那个年代成功商人的成功学，比起那些所谓的成功学来说这才是他们实践得到的真理，所谓的时事造人，也不过说的就是如此，站风口的猪都能飞起来，只怕这风停了，猪会重重的掉在地上被活活摔死。</p>
-<p>还有就是路边上那些卖水果，不得不说他们卖的东西如果你买回来家里没有秤称一下，那么被坑了都是不知道的，他们喊出来的价格很便宜，比如香蕉有时候才是1块5一斤，但是别看到他给的价格便宜，真正是在秤上做了手脚的，以前我没有买那个小电子秤的时候我下班回家的路上就会经常买他们卖的水果，后来我在淘宝上买电子秤时进了淘宝卖家的一个群里才终于知道了他们的成功秘诀，从那以后我就不买他们卖的了。</p>
+<p>还有就是路边上那些卖水果，不得不说他们卖的东西如果你买回来家里没有秤称一下，那么被坑了都是不知道的，他们喊出来的价格很便宜，比如香蕉有时候才是 1 块 5 一斤，但是别看到他给的价格便宜，真正是在秤上做了手脚的，以前我没有买那个小电子秤的时候我下班回家的路上就会经常买他们卖的水果，后来我在淘宝上买电子秤时进了淘宝卖家的一个群里才终于知道了他们的成功秘诀，从那以后我就不买他们卖的了。</p>
 <p>从那以后我宁愿去超市买，毕竟超市里的价格透明，也不会缺斤少两，我每次在超市买回来我都称过，重量和标签上面的是一样的，超市做的是长期回头客的生意，不可能在秤上做手脚坑消费者的，价格也是公开透明的可以自由选择。</p>
 <hr>
 <p>坚持日更，每日一篇，感谢阅读，本文到此结束。</p>
@@ -713,14 +749,14 @@
       <i class="fa fa-chart-line"></i>
     </span>
       <span>Symbols count total: </span>
-    <span title="Symbols count total">285k</span>
+    <span title="Symbols count total">287k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>Reading time total &asymp;</span>
-    <span title="Reading time total">4:19</span>
+    <span title="Reading time total">4:21</span>
   </span>
 </div>
 <div class="busuanzi-count">
@@ -748,15 +784,12 @@
   </div><!-- 打字效果代码 -->
 <div> 
 	<script src="https://cdn.jsdelivr.net/gh/suyin-long/activate-power-mode@1.0/dist/activate-power-mode.js"></script>
-</div>
-
-<!-- 礼花代码 -->
-<div>
 	<script>
-	POWERMODE.colorful = true; // make power mode colorful
-	POWERMODE.shake = false; // turn off shake
-	document.body.addEventListener('input', POWERMODE);
-	</script> 
+		POWERMODE.colorful = true; // make power mode colorful
+		POWERMODE.shake = false; // turn off shake
+		document.body.addEventListener('input', POWERMODE);
+	</script>
+
 </div>
 
     </div>
@@ -802,7 +835,24 @@
   <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
   <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://aixz.xyz/en/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/686f809/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
+<!-- calendar widget -->
+<div>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js"></script>
+    <script>
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN',
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
 
+</div>
   <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
   <script>
       pbOptions = {};
