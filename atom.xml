@@ -6,7 +6,7 @@
   <link href="https://aixz.xyz/atom.xml" rel="self"/>
   
   <link href="https://aixz.xyz/"/>
-  <updated>2022-05-14T12:23:22.000Z</updated>
+  <updated>2022-05-17T03:45:20.000Z</updated>
   <id>https://aixz.xyz/</id>
   
   <author>
@@ -15,6 +15,109 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Windows11 使用 Windows 聚焦不更换图片的问题</title>
+    <link href="https://aixz.xyz/Windows11/954bf4d3/"/>
+    <id>https://aixz.xyz/Windows11/954bf4d3/</id>
+    <published>2022-05-17T03:45:20.000Z</published>
+    <updated>2022-05-17T03:45:20.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>这个问题一般是重新全新安装的系统会出现，之前我也看了很多网上的方法都没有用，直到有一天用了腾讯电脑管家的垃圾清理下的系统盘瘦身后奇迹出现了。下面就是解决问题的方法：</p><span id="more"></span><ol><li><p>打开腾讯电脑管家，当然用其他工具也可以，只要能找到系统自带的示例图片，然后将其删除就可以。</p></li><li><p>找到腾讯电脑管家里面的垃圾清理，下面就有个系统盘瘦身，打开系统盘瘦身，大概会扫描系统盘需要几分钟，之后可以看到扫描出来的有示例图片，显示有垃圾也清理掉，繁体输入法需要就可以保留，不需要也删除，我是选择保留，就删掉示例图片和垃圾。</p></li><li><p>清理完了之后到系统设置 —— 个性化 —— 锁屏，重新设置 windows 聚焦，刚一设置就发现上面的图片已经自动更换了，到这里说明这个功能已经正常了，也可以用大田键 + L 键锁屏确认是否正常，一般都是正常的了，不需要重启。</p></li></ol>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;这个问题一般是重新全新安装的系统会出现，之前我也看了很多网上的方法都没有用，直到有一天用了腾讯电脑管家的垃圾清理下的系统盘瘦身后奇迹出现了。下面就是解决问题的方法：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Windows11" scheme="https://aixz.xyz/categories/Windows11/"/>
+    
+    
+    <category term="windows" scheme="https://aixz.xyz/tags/windows/"/>
+    
+    <category term="聚焦" scheme="https://aixz.xyz/tags/%E8%81%9A%E7%84%A6/"/>
+    
+    <category term="图片" scheme="https://aixz.xyz/tags/%E5%9B%BE%E7%89%87/"/>
+    
+    <category term="系统盘" scheme="https://aixz.xyz/tags/%E7%B3%BB%E7%BB%9F%E7%9B%98/"/>
+    
+    <category term="瘦身" scheme="https://aixz.xyz/tags/%E7%98%A6%E8%BA%AB/"/>
+    
+    <category term="锁屏" scheme="https://aixz.xyz/tags/%E9%94%81%E5%B1%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网站终于弄好了，插入的本地图片也可以正常打开了</title>
+    <link href="https://aixz.xyz/Hexo/b44413f4/"/>
+    <id>https://aixz.xyz/Hexo/b44413f4/</id>
+    <published>2022-05-15T07:32:08.619Z</published>
+    <updated>2022-05-15T07:32:08.619Z</updated>
+    
+    <content type="html"><![CDATA[<p>昨晚上弄了一晚上，把以前写的带图片的一些文章重新编辑了一下，图片不显示的原因是要安装 hexo-asset-image 插件，然后再打开网站配置文件 - config.yml 中的 post_asset_folder 这里设置成 true。</p><span id="more"></span><p>这样设置后如果之前就有文章带有图片的，就重新编译就可以显示图片了，没有的就新建一篇文章，然后它会自动新建一个和文章名字同名的文件夹，把图片放到这个文件夹里面，通过用 Makedown 语法 <code>![](图片名.格式)</code> 这样就可以直接引用了，可以说还是非常方便的。</p><p>昨晚还发现了一个以前没有发现的新功能，数据文件夹，这个功能是从 Hexo3.0 开始就已经有的。只是我之前用的一直是旧版本的，所以一直都没有去使用这个功能，这个功能在主题 Next8.2 的配置文件中可以直接开启，在 source 下新建一个文件夹_date，在这个数据文件夹里面在新建要开启的文件，我用到的是 head.njk 这个文件，所以就只新建这个文件就可以了。</p><p>有了这个文件就可以很方便的放谷歌广告代码了，直接把谷歌广告代码放到这个文件里面就可以，再也不用大刀阔斧地去改主题文件了，那样改错了也麻烦。只要是需要放在中的代码都可以放在里面就可以，可以说是真的很方便，不会写代码也轻松建网站了，比起要放到某个文件夹下的某个文件一大堆代码中是真方便很多。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;昨晚上弄了一晚上，把以前写的带图片的一些文章重新编辑了一下，图片不显示的原因是要安装 hexo-asset-image 插件，然后再打开网站配置文件 - config.yml 中的 post_asset_folder 这里设置成 true。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Hexo" scheme="https://aixz.xyz/categories/Hexo/"/>
+    
+    
+    <category term="文章" scheme="https://aixz.xyz/tags/%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="配置文件" scheme="https://aixz.xyz/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
+    
+    <category term="数据文件夹" scheme="https://aixz.xyz/tags/%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6%E5%A4%B9/"/>
+    
+    <category term="网站" scheme="https://aixz.xyz/tags/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="新功能" scheme="https://aixz.xyz/tags/%E6%96%B0%E5%8A%9F%E8%83%BD/"/>
+    
+    <category term="谷歌广告" scheme="https://aixz.xyz/tags/%E8%B0%B7%E6%AD%8C%E5%B9%BF%E5%91%8A/"/>
+    
+    <category term="本地图片" scheme="https://aixz.xyz/tags/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/"/>
+    
+    <category term="显示图片" scheme="https://aixz.xyz/tags/%E6%98%BE%E7%A4%BA%E5%9B%BE%E7%89%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在 Ubuntu 系统中将自己的用户名设为 root 管理员权限</title>
+    <link href="https://aixz.xyz/Ubuntu/f06d2e/"/>
+    <id>https://aixz.xyz/Ubuntu/f06d2e/</id>
+    <published>2022-05-15T01:29:38.000Z</published>
+    <updated>2022-05-15T01:29:38.000Z</updated>
+    
+    <content type="html"><![CDATA[<ol><li>切换到自己的用户名 <figure class="highlight css"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo -<span class="selector-tag">i</span></span><br></pre></td></tr></tbody></table></figure></li><li>输入用户密码</li><li>修改 root 密码 <figure class="highlight ebnf"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">sudo passwd root</span></span><br></pre></td></tr></tbody></table></figure></li></ol><span id="more"></span><ol start="4"><li>输入新密码，确认新密码</li><li>切换到 root 账户 <figure class="highlight ebnf"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">su root</span></span><br></pre></td></tr></tbody></table></figure></li><li>用 vi 编辑器打开 /etc/passwd 文件 <figure class="highlight awk"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vi <span class="regexp">/etc/</span>passwd</span><br></pre></td></tr></tbody></table></figure></li><li>最顶上可以看到 root 的 ID 和组都为 0</li><li> 把光标移动到最下面，找到自己新建的用户名，把自己的 ID 和组都改为 0</li><li> 首先把光标移动到组 1000 后面的冒号上</li><li>按大写锁定键，用大写的 X 键把组的 1000 删掉，同样移动光标也把 ID 的 1000 删掉</li><li>取消大写锁定，按下小写的 i，此时切换为插入模式</li><li>在 ID 处输入 0</li><li> 按下 Esc 键切换为编辑模式，移动光标到原先组 1000 后面的那个冒号上</li><li>按下小写的 i 键，输入 0</li><li> 按下 Esc 键，再次切换到编辑模式</li><li>保存并退出，输入 <figure class="highlight clojure"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">:wq</span></span><br></pre></td></tr></tbody></table></figure></li><li>切换到自己的用户名，发现后面的 $ 变成了 #，说明 root 管理员权限已经获取成功</li></ol>]]></content>
+    
+    
+    <summary type="html">&lt;ol&gt;
+&lt;li&gt;切换到自己的用户名 &lt;figure class=&quot;highlight css&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;sudo -&lt;span class=&quot;selector-tag&quot;&gt;i&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;输入用户密码&lt;/li&gt;
+&lt;li&gt;修改 root 密码 &lt;figure class=&quot;highlight ebnf&quot;&gt;&lt;table&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;attribute&quot;&gt;sudo passwd root&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;/ol&gt;</summary>
+    
+    
+    
+    <category term="Ubuntu" scheme="https://aixz.xyz/categories/Ubuntu/"/>
+    
+    
+    <category term="用户名" scheme="https://aixz.xyz/tags/%E7%94%A8%E6%88%B7%E5%90%8D/"/>
+    
+    <category term="密码" scheme="https://aixz.xyz/tags/%E5%AF%86%E7%A0%81/"/>
+    
+    <category term="ubuntu" scheme="https://aixz.xyz/tags/ubuntu/"/>
+    
+    <category term="root" scheme="https://aixz.xyz/tags/root/"/>
+    
+    <category term="账户" scheme="https://aixz.xyz/tags/%E8%B4%A6%E6%88%B7/"/>
+    
+    <category term="光标" scheme="https://aixz.xyz/tags/%E5%85%89%E6%A0%87/"/>
+    
+    <category term="编辑模式" scheme="https://aixz.xyz/tags/%E7%BC%96%E8%BE%91%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
   
   <entry>
     <title>社会研究方法的优缺点</title>
@@ -135,13 +238,13 @@
     <category term="小说故事" scheme="https://aixz.xyz/categories/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/"/>
     
     
+    <category term="梦境" scheme="https://aixz.xyz/tags/%E6%A2%A6%E5%A2%83/"/>
+    
     <category term="电动车" scheme="https://aixz.xyz/tags/%E7%94%B5%E5%8A%A8%E8%BD%A6/"/>
     
     <category term="奇奇怪怪" scheme="https://aixz.xyz/tags/%E5%A5%87%E5%A5%87%E6%80%AA%E6%80%AA/"/>
     
     <category term="水泥" scheme="https://aixz.xyz/tags/%E6%B0%B4%E6%B3%A5/"/>
-    
-    <category term="梦境" scheme="https://aixz.xyz/tags/%E6%A2%A6%E5%A2%83/"/>
     
     <category term="快递信息" scheme="https://aixz.xyz/tags/%E5%BF%AB%E9%80%92%E4%BF%A1%E6%81%AF/"/>
     
@@ -390,6 +493,10 @@
     <category term="小说故事" scheme="https://aixz.xyz/categories/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/"/>
     
     
+    <category term="夏天" scheme="https://aixz.xyz/tags/%E5%A4%8F%E5%A4%A9/"/>
+    
+    <category term="人力资源" scheme="https://aixz.xyz/tags/%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%90/"/>
+    
     <category term="产量" scheme="https://aixz.xyz/tags/%E4%BA%A7%E9%87%8F/"/>
     
     <category term="结婚" scheme="https://aixz.xyz/tags/%E7%BB%93%E5%A9%9A/"/>
@@ -408,8 +515,6 @@
     
     <category term="制造业" scheme="https://aixz.xyz/tags/%E5%88%B6%E9%80%A0%E4%B8%9A/"/>
     
-    <category term="夏天" scheme="https://aixz.xyz/tags/%E5%A4%8F%E5%A4%A9/"/>
-    
     <category term="债务" scheme="https://aixz.xyz/tags/%E5%80%BA%E5%8A%A1/"/>
     
     <category term="招工牌" scheme="https://aixz.xyz/tags/%E6%8B%9B%E5%B7%A5%E7%89%8C/"/>
@@ -419,8 +524,6 @@
     <category term="南方城市" scheme="https://aixz.xyz/tags/%E5%8D%97%E6%96%B9%E5%9F%8E%E5%B8%82/"/>
     
     <category term="遮阳伞" scheme="https://aixz.xyz/tags/%E9%81%AE%E9%98%B3%E4%BC%9E/"/>
-    
-    <category term="人力资源" scheme="https://aixz.xyz/tags/%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%90/"/>
     
     <category term="试卷" scheme="https://aixz.xyz/tags/%E8%AF%95%E5%8D%B7/"/>
     
@@ -742,6 +845,8 @@
     
     <category term="结局" scheme="https://aixz.xyz/tags/%E7%BB%93%E5%B1%80/"/>
     
+    <category term="梦想" scheme="https://aixz.xyz/tags/%E6%A2%A6%E6%83%B3/"/>
+    
     <category term="人生" scheme="https://aixz.xyz/tags/%E4%BA%BA%E7%94%9F/"/>
     
     <category term="喜悦" scheme="https://aixz.xyz/tags/%E5%96%9C%E6%82%A6/"/>
@@ -755,8 +860,6 @@
     <category term="坚信自己" scheme="https://aixz.xyz/tags/%E5%9D%9A%E4%BF%A1%E8%87%AA%E5%B7%B1/"/>
     
     <category term="鼓励" scheme="https://aixz.xyz/tags/%E9%BC%93%E5%8A%B1/"/>
-    
-    <category term="梦想" scheme="https://aixz.xyz/tags/%E6%A2%A6%E6%83%B3/"/>
     
     <category term="追梦人" scheme="https://aixz.xyz/tags/%E8%BF%BD%E6%A2%A6%E4%BA%BA/"/>
     
@@ -883,11 +986,11 @@
     <category term="Python" scheme="https://aixz.xyz/categories/Python/"/>
     
     
+    <category term="windows" scheme="https://aixz.xyz/tags/windows/"/>
+    
     <category term="python" scheme="https://aixz.xyz/tags/python/"/>
     
     <category term="小游戏" scheme="https://aixz.xyz/tags/%E5%B0%8F%E6%B8%B8%E6%88%8F/"/>
-    
-    <category term="windows" scheme="https://aixz.xyz/tags/windows/"/>
     
     <category term="Hello World" scheme="https://aixz.xyz/tags/Hello-World/"/>
     
@@ -906,137 +1009,6 @@
     <category term="数据类型" scheme="https://aixz.xyz/tags/%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B/"/>
     
     <category term="变量赋值" scheme="https://aixz.xyz/tags/%E5%8F%98%E9%87%8F%E8%B5%8B%E5%80%BC/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>寒冷的冬天即将过去，温暖的春天即将到来</title>
-    <link href="https://aixz.xyz/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/b8c814cb/"/>
-    <id>https://aixz.xyz/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/b8c814cb/</id>
-    <published>2022-05-11T07:48:40.000Z</published>
-    <updated>2022-05-11T07:48:40.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/b8c814cb/%E5%9B%BE%E7%89%871.jpg"></p><span id="more"></span><p>这是一年中的首日，今天是元旦，远处街上的音乐声节奏欢快的播放着，虽然现在还是寒冷的冬天，但是并没有削弱人们到处走动游玩的意志，人们都希望新年能有个好的开始。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/b8c814cb/%E5%9B%BE%E7%89%872.jpg"></p><p>阳历的新年已到，离农历的新年也不远了，春天的步伐是在一步步向人们慢慢走进，虽然还是在寒冷的冬日，但心里装着春天的故事，自然也是感到暖融融的了。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/b8c814cb/%E5%9B%BE%E7%89%873.jpg"></p><p>不要再害怕寒冷了，寒冷过后就是阳光，不要再害怕黑夜了，黑夜过后就是清晨，拥有一颗炽热的心，那你就将会感觉世界并不是那么的寒冷，它也有温暖的一面，人间处处充满暖意。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/b8c814cb/%E5%9B%BE%E7%89%874.jpg"></p><p>一年四季的变化我们都要经历过，犹如生死轮回一般，年年有今日，岁岁有今朝，一年四季也是在春夏秋冬之间正常的轮换着，把每一个季节当成一天来过，那这一个寒冷的冬季就是短暂的，很轻易地就走过去了。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/b8c814cb/%E5%9B%BE%E7%89%875.jpg"></p><p>想象着春暖花开的日子，想象着十里桃花开满园，一片片落花飞舞的情景，这冷意自然也是被暖意所代替了，自我感觉就不是那样的冷落了，充满希望的能量信心满满地去迎接春天的到来。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/b8c814cb/%E5%9B%BE%E7%89%876.jpg"></p><p>冷暖交替是地球正常的气候变化带来的，冷过后则就是温暖了，我们走过严寒冬日，自然就会迎来春光浪漫的晴天，我们期待着，我们也在满满煎熬中度过这难熬的冬日，冬日暖阳是冬天最难得的小幸运，如果冬天是有暖阳的晴天，那离春天就很近了。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/b8c814cb/%E5%9B%BE%E7%89%877.jpg"></p><p>在这寒冷冬日里如何温暖的度过成了一门生活的学问，手捧一本书，一杯热茶，一个冬天的早上就这样度过了，读书是让人忘记时光存在最好的良药，早上到中午，下午到晚上，在文字间思绪万千，一抬头天色已是黄昏，一个人的冬日就这样匆匆过去了。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/b8c814cb/%E5%9B%BE%E7%89%878.jpg"></p><p>不待时光老去，给她人一片温柔之心待之，向朋友间诉说生活岁月的点滴，一句关怀备至的问候，这冬日里也是暖心暖意了，一个朋友间的拥抱自然也是温暖她人与自身最好的无言表达。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/b8c814cb/%E5%9B%BE%E7%89%879.jpg"></p><p>随着岁月的离去，在未来某个冬日你可能会回想到这个温暖的冬日里发生的那些浪漫的故事，因为你曾经经历过，曾经拥有过，你不会再后悔那年没有好好去珍惜。现在要做的就是做好当下的你自己，每一个选择都可能是对，也可能是错，生活也就是这样没有绝对的对与错，因为这不是一个客观的选择题，而是一个在述说自我不断完美中的一个论述题。也许在未来某一天你会认为当初的选择是错误的，或许你也认为当初的选择没有错，这对与错只在于你一念之间，一念成佛，一念成魔，自然也是这个道理。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/b8c814cb/%E5%9B%BE%E7%89%8710.jpg"></p><p>既然现在所做的事对错在以后难以被分辨，那就何不珍惜当下的岁月，把这个冬天发生的美好故事放在记忆里，等来年的春天让它生根发芽，它也必将带给你希望的正能量。感谢你看完今天我写的这篇碎碎念，这个寒冷的冬日你又是如何度过呢，你也给我一个赞吧，就像你给我一个拥抱我还你一春暖意，你给我一朵小花，我祝你三生幸福，欢迎留言评论。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/b8c814cb/%E5%9B%BE%E7%89%8711.jpg"></p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img data-src=&quot;/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/b8c814cb/%E5%9B%BE%E7%89%871.jpg&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="情感美文" scheme="https://aixz.xyz/categories/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/"/>
-    
-    
-    <category term="表达" scheme="https://aixz.xyz/tags/%E8%A1%A8%E8%BE%BE/"/>
-    
-    <category term="新年" scheme="https://aixz.xyz/tags/%E6%96%B0%E5%B9%B4/"/>
-    
-    <category term="春天" scheme="https://aixz.xyz/tags/%E6%98%A5%E5%A4%A9/"/>
-    
-    <category term="寒冷" scheme="https://aixz.xyz/tags/%E5%AF%92%E5%86%B7/"/>
-    
-    <category term="温暖" scheme="https://aixz.xyz/tags/%E6%B8%A9%E6%9A%96/"/>
-    
-    <category term="游玩" scheme="https://aixz.xyz/tags/%E6%B8%B8%E7%8E%A9/"/>
-    
-    <category term="清晨" scheme="https://aixz.xyz/tags/%E6%B8%85%E6%99%A8/"/>
-    
-    <category term="冬季" scheme="https://aixz.xyz/tags/%E5%86%AC%E5%AD%A3/"/>
-    
-    <category term="桃花" scheme="https://aixz.xyz/tags/%E6%A1%83%E8%8A%B1/"/>
-    
-    <category term="信心满满" scheme="https://aixz.xyz/tags/%E4%BF%A1%E5%BF%83%E6%BB%A1%E6%BB%A1/"/>
-    
-    <category term="春光浪漫" scheme="https://aixz.xyz/tags/%E6%98%A5%E5%85%89%E6%B5%AA%E6%BC%AB/"/>
-    
-    <category term="暖阳" scheme="https://aixz.xyz/tags/%E6%9A%96%E9%98%B3/"/>
-    
-    <category term="思绪万千" scheme="https://aixz.xyz/tags/%E6%80%9D%E7%BB%AA%E4%B8%87%E5%8D%83/"/>
-    
-    <category term="浪漫" scheme="https://aixz.xyz/tags/%E6%B5%AA%E6%BC%AB/"/>
-    
-    <category term="客观" scheme="https://aixz.xyz/tags/%E5%AE%A2%E8%A7%82/"/>
-    
-    <category term="正能量" scheme="https://aixz.xyz/tags/%E6%AD%A3%E8%83%BD%E9%87%8F/"/>
-    
-    <category term="留言评论" scheme="https://aixz.xyz/tags/%E7%95%99%E8%A8%80%E8%AF%84%E8%AE%BA/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>利用一个浏览器插件来下载 P 站的视频</title>
-    <link href="https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/86c5bf45/"/>
-    <id>https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/86c5bf45/</id>
-    <published>2022-05-11T07:34:29.000Z</published>
-    <updated>2022-05-11T07:34:29.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>首先要必须先在电脑上安装一个火狐浏览器，因为这个插件对火狐浏览器兼容比较好，我试过用谷歌浏览器下载过，下载不了 P 站视频，所以这里我推荐用火狐浏览器。</p><span id="more"></span><p>这个插件安装很简单，打开火狐浏览器找到 “附加组件”，然后点击打开，在搜索框搜 “Video DownloadHelper”，或者在推荐里往下拉找到 “Video DownloadHelper”，如下图。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/86c5bf45/%E5%9B%BE%E7%89%871.png"></p><p>然后点击安装就可以了，当然这个不仅可以用来下载 P 站的视频，其他网站视频只要是没有加密的都可以下载，比如微博的也可以，国外的抖音视频也可以，我去年就下载过。</p><p>我最喜欢的还是用来下 P 站的，因为要看 1080P 的网速还是有点慢，所以只有下载到电脑上或者传到手机上慢慢的看。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;首先要必须先在电脑上安装一个火狐浏览器，因为这个插件对火狐浏览器兼容比较好，我试过用谷歌浏览器下载过，下载不了 P 站视频，所以这里我推荐用火狐浏览器。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="日常记录" scheme="https://aixz.xyz/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="安装" scheme="https://aixz.xyz/tags/%E5%AE%89%E8%A3%85/"/>
-    
-    <category term="P站" scheme="https://aixz.xyz/tags/P%E7%AB%99/"/>
-    
-    <category term="火狐浏览器" scheme="https://aixz.xyz/tags/%E7%81%AB%E7%8B%90%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
-    
-    <category term="浏览器插件" scheme="https://aixz.xyz/tags/%E6%B5%8F%E8%A7%88%E5%99%A8%E6%8F%92%E4%BB%B6/"/>
-    
-    <category term="兼容" scheme="https://aixz.xyz/tags/%E5%85%BC%E5%AE%B9/"/>
-    
-    <category term="搜索框" scheme="https://aixz.xyz/tags/%E6%90%9C%E7%B4%A2%E6%A1%86/"/>
-    
-    <category term="Video" scheme="https://aixz.xyz/tags/Video/"/>
-    
-    <category term="下载" scheme="https://aixz.xyz/tags/%E4%B8%8B%E8%BD%BD/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>还没有到双十一，我都在小米上买了差不多 1000 块钱的东西了</title>
-    <link href="https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5161087/"/>
-    <id>https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5161087/</id>
-    <published>2022-05-11T07:28:54.000Z</published>
-    <updated>2022-05-11T07:28:54.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>就在昨天买了一个显示器，花了将近 600 元，我本来是早都想买一个显示器的了，因为我笔记本电脑的显示器坏了，边上一开机一段时间就会有一个大黑癍，看着就很不舒服，用电脑看视频都没有兴趣了，又不想再换个屏幕了，我这电脑已经很老了，已经是八年前买的了，换个屏幕还要花几百块真的也不值得。</p><span id="more"></span><p>与其换笔记本的屏幕我还不如买一个大的显示器来外接还舒服点，昨天买的今天就到货了，收到了就直接装上了感觉还挺清晰的，就是看 1080P 视频有点卡，可能是我电脑带不动 1080P 以上的视频了，电脑自带的屏幕分辨率才是 1366x768 的，估计显卡带不动。</p><p>又买了个路由器，Redmi AX6 双频路由器，这个路由器确实比我以前用那个好多了，这个是 wifi6 的，虽然是用作中继路由器但还是比前面那个稳定多了，现在打王者荣耀都很少卡了，延时不会在五六十左右了，主要用的是租房的免费 WiFi, 如果是自己有宽带那提速就很明显了，这个网速是总的才 200m 然后 5 层楼的人用。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;就在昨天买了一个显示器，花了将近 600 元，我本来是早都想买一个显示器的了，因为我笔记本电脑的显示器坏了，边上一开机一段时间就会有一个大黑癍，看着就很不舒服，用电脑看视频都没有兴趣了，又不想再换个屏幕了，我这电脑已经很老了，已经是八年前买的了，换个屏幕还要花几百块真的也不值得。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="日常记录" scheme="https://aixz.xyz/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="显示器" scheme="https://aixz.xyz/tags/%E6%98%BE%E7%A4%BA%E5%99%A8/"/>
-    
-    <category term="WiFi" scheme="https://aixz.xyz/tags/WiFi/"/>
-    
-    <category term="双频" scheme="https://aixz.xyz/tags/%E5%8F%8C%E9%A2%91/"/>
-    
-    <category term="看视频" scheme="https://aixz.xyz/tags/%E7%9C%8B%E8%A7%86%E9%A2%91/"/>
-    
-    <category term="笔记本" scheme="https://aixz.xyz/tags/%E7%AC%94%E8%AE%B0%E6%9C%AC/"/>
-    
-    <category term="双十一" scheme="https://aixz.xyz/tags/%E5%8F%8C%E5%8D%81%E4%B8%80/"/>
-    
-    <category term="分辨率" scheme="https://aixz.xyz/tags/%E5%88%86%E8%BE%A8%E7%8E%87/"/>
-    
-    <category term="王者荣耀" scheme="https://aixz.xyz/tags/%E7%8E%8B%E8%80%85%E8%8D%A3%E8%80%80/"/>
-    
-    <category term="小米" scheme="https://aixz.xyz/tags/%E5%B0%8F%E7%B1%B3/"/>
-    
-    <category term="屏幕" scheme="https://aixz.xyz/tags/%E5%B1%8F%E5%B9%95/"/>
-    
-    <category term="AX6" scheme="https://aixz.xyz/tags/AX6/"/>
-    
-    <category term="Redmi" scheme="https://aixz.xyz/tags/Redmi/"/>
     
   </entry>
   
