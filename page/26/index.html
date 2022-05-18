@@ -75,40 +75,7 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><script>
-  window.addEventListener('DOMContentLoaded', () => {
-    'use strict';
-    
-      if (NexT.utils.hasMobileUA()) return;
-    
-    let time, hidden, visible, title = document.title;
-    let favicon = document.querySelector('link[rel="icon"]');
-    
-      hidden = '';
-      visible = '';
-    
-    let random = t => t[Math.floor(Math.random() * t.length)];
-    const change = () => {
-      if (document.hidden) {
-        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
-        
-          document.title = hidden;
-        
-        clearTimeout(time);
-      } else {
-        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
-        
-          document.title = visible;
-        
-        time = setTimeout(() => {
-          document.title = title;
-        }, 2019);
-      }
-    }
-    document.addEventListener('visibilitychange', change, false);
-  });
-</script>
-<!-- 谷歌广告代码 -->
+</style><!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -464,7 +431,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://aixz.xyz/Hexo/3e845146/">
+    <link itemprop="mainEntityOfPage" href="https://aixz.xyz/Hexo/7b6e1cf9/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/avatar.gif">
@@ -482,7 +449,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/Hexo/3e845146/" class="post-title-link" itemprop="url">Hexo 换电脑更新，能推送上去了才算迁移成功</a>
+          <a href="/Hexo/7b6e1cf9/" class="post-title-link" itemprop="url">Hexo 在数据文件夹中添加 CNZZ 统计</a>
         </h2>
 
         <div class="post-meta-container">
@@ -523,7 +490,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">本文字数：</span>
-      <span>508</span>
+      <span>422</span>
     </span>
     <span class="post-meta-item" title="阅读时长">
       <span class="post-meta-item-icon">
@@ -541,10 +508,10 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>昨天刚弄好，在本地预览是正常的，但是无论怎么也推送不到 Github 和 Gitee 上，刚开始是要我输入用户名和密码，一开始输错了一次，因为这个问题之前也遇到过，所以解决起来还是有一点思路的，但还忘记具体的操作方法了，在网上搜了一下才知道去怎么修改凭据，只要是更换了电脑新的电脑自然是没有旧的凭据了，而如果直接输错了那就只能用电脑上 win10 自带的搜索功能搜索凭据，搜出来修改了就可以了。</p>
+          <p>首先在 source 文件夹下新建一个_data 文件夹，打开主题配置文件或者备用主题配置文件，我用的是备用主题配置文件，搜索找到 custom_file_path，这里下面是自定义数据文件路径，把第六个 footer 前面的注释符 #去掉，可以看到路径上有个_data 文件夹下面还要有个 footer.njk 文件才可以。</p>
           <!--noindex-->
             <div class="post-button">
-              <a class="btn" href="/Hexo/3e845146/#more" rel="contents">
+              <a class="btn" href="/Hexo/7b6e1cf9/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>

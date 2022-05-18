@@ -75,40 +75,7 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><script>
-  window.addEventListener('DOMContentLoaded', () => {
-    'use strict';
-    
-      if (NexT.utils.hasMobileUA()) return;
-    
-    let time, hidden, visible, title = document.title;
-    let favicon = document.querySelector('link[rel="icon"]');
-    
-      hidden = '';
-      visible = '';
-    
-    let random = t => t[Math.floor(Math.random() * t.length)];
-    const change = () => {
-      if (document.hidden) {
-        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
-        
-          document.title = hidden;
-        
-        clearTimeout(time);
-      } else {
-        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
-        
-          document.title = visible;
-        
-        time = setTimeout(() => {
-          document.title = title;
-        }, 2019);
-      }
-    }
-    document.addEventListener('visibilitychange', change, false);
-  });
-</script>
-<!-- 谷歌广告代码 -->
+</style><!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -1317,117 +1284,6 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://aixz.xyz/Hexo/7b6e1cf9/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/avatar.gif">
-      <meta itemprop="name" content="头号梦想家">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="夜色酒庄">
-      <meta itemprop="description" content="夜色酒庄是我用来记录自己生活点滴的网站">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | 夜色酒庄">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/Hexo/7b6e1cf9/" class="post-title-link" itemprop="url">Hexo 在数据文件夹中添加 CNZZ 统计</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-05-25 23:06:36" itemprop="dateCreated datePublished" datetime="2021-05-25T23:06:36+08:00">2021-05-25</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-05-02 15:27:55" itemprop="dateModified" datetime="2022-05-02T15:27:55+08:00">2022-05-02</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">In</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a>
-        </span>
-    </span>
-
-  <!-- 置顶标签 -->
-
-
-
-
-    <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="Symbols count in article">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">Symbols count in article: </span>
-      <span>422</span>
-    </span>
-    <span class="post-meta-item" title="Reading time">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">Reading time &asymp;</span>
-      <span>1 mins.</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>首先在 source 文件夹下新建一个_data 文件夹，打开主题配置文件或者备用主题配置文件，我用的是备用主题配置文件，搜索找到 custom_file_path，这里下面是自定义数据文件路径，把第六个 footer 前面的注释符 #去掉，可以看到路径上有个_data 文件夹下面还要有个 footer.njk 文件才可以。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/Hexo/7b6e1cf9/#more" rel="contents">
-                Read more &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
     <link itemprop="mainEntityOfPage" href="https://aixz.xyz/Hexo/228e7a34/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1509,6 +1365,117 @@
           <!--noindex-->
             <div class="post-button">
               <a class="btn" href="/Hexo/228e7a34/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="https://aixz.xyz/Hexo/3e845146/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/avatar.gif">
+      <meta itemprop="name" content="头号梦想家">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="夜色酒庄">
+      <meta itemprop="description" content="夜色酒庄是我用来记录自己生活点滴的网站">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | 夜色酒庄">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/Hexo/3e845146/" class="post-title-link" itemprop="url">Hexo 换电脑更新，能推送上去了才算迁移成功</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-05-25 23:06:36" itemprop="dateCreated datePublished" datetime="2021-05-25T23:06:36+08:00">2021-05-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2022-05-02 15:27:55" itemprop="dateModified" datetime="2022-05-02T15:27:55+08:00">2022-05-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Hexo/" itemprop="url" rel="index"><span itemprop="name">Hexo</span></a>
+        </span>
+    </span>
+
+  <!-- 置顶标签 -->
+
+
+
+
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="Symbols count in article">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">Symbols count in article: </span>
+      <span>508</span>
+    </span>
+    <span class="post-meta-item" title="Reading time">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">Reading time &asymp;</span>
+      <span>1 mins.</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>昨天刚弄好，在本地预览是正常的，但是无论怎么也推送不到 Github 和 Gitee 上，刚开始是要我输入用户名和密码，一开始输错了一次，因为这个问题之前也遇到过，所以解决起来还是有一点思路的，但还忘记具体的操作方法了，在网上搜了一下才知道去怎么修改凭据，只要是更换了电脑新的电脑自然是没有旧的凭据了，而如果直接输错了那就只能用电脑上 win10 自带的搜索功能搜索凭据，搜出来修改了就可以了。</p>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/Hexo/3e845146/#more" rel="contents">
                 Read more &raquo;
               </a>
             </div>

@@ -57,9 +57,9 @@
             
             <tag> 文章 </tag>
             
-            <tag> 配置文件 </tag>
-            
             <tag> 数据文件夹 </tag>
+            
+            <tag> 配置文件 </tag>
             
             <tag> 网站 </tag>
             
@@ -5570,9 +5570,9 @@
       
         <tags>
             
-            <tag> 坚持 </tag>
-            
             <tag> 文章 </tag>
+            
+            <tag> 坚持 </tag>
             
             <tag> 连续更新 </tag>
             
@@ -5683,6 +5683,8 @@
             
             <tag> 浏览器 </tag>
             
+            <tag> 刷牙洗脸 </tag>
+            
             <tag> 头痛老病 </tag>
             
             <tag> 珀金一 </tag>
@@ -5690,8 +5692,6 @@
             <tag> 青椒 </tag>
             
             <tag> 蚊香 </tag>
-            
-            <tag> 刷牙洗脸 </tag>
             
         </tags>
       
@@ -6672,9 +6672,9 @@
             
             <tag> 玩手机 </tag>
             
-            <tag> 刷牙洗脸 </tag>
-            
             <tag> 凉水澡 </tag>
+            
+            <tag> 刷牙洗脸 </tag>
             
             <tag> 麻烦 </tag>
             
@@ -9694,9 +9694,9 @@
             
             <tag> 感兴趣 </tag>
             
-            <tag> 安卓手机 </tag>
-            
             <tag> 苹果手机 </tag>
+            
+            <tag> 安卓手机 </tag>
             
             <tag> 盖泡面神器 </tag>
             
@@ -9846,43 +9846,6 @@
     
     
     <entry>
-      <title>Hexo 在数据文件夹中添加 CNZZ 统计</title>
-      <link href="/Hexo/7b6e1cf9/"/>
-      <url>/Hexo/7b6e1cf9/</url>
-      
-        <content type="html"><![CDATA[<p>首先在 source 文件夹下新建一个_data 文件夹，打开主题配置文件或者备用主题配置文件，我用的是备用主题配置文件，搜索找到 custom_file_path，这里下面是自定义数据文件路径，把第六个 footer 前面的注释符 #去掉，可以看到路径上有个_data 文件夹下面还要有个 footer.njk 文件才可以。</p><span id="more"></span><p>复制 footer.njk 这个文件名，在刚才新建的_data 文件夹下新建一个文本文件，把名字改成 footer.njk, 到这里这个文件就建好了。</p><p>复制友盟的 cnzz 统计代码放到这个 footer.njk 这个文件里面就可以了，我这里用的工具是 notepad++, 用这个工具打开 footer.njk 自己新建的这个文件，把复制的代码粘贴到里面，然后把主题配置文件的 cnzz_siteid 这里设置成 true, 注意冒号后面有个空格，保存主题配置文件这样就可以了，用其他工具打开也可以，但是我一直用的这个，感觉很简洁。这样是真的简单很多，不用去修改主题文件。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-            <tag> 数据文件 </tag>
-            
-            <tag> CNZZ </tag>
-            
-            <tag> 路径 </tag>
-            
-            <tag> 统计代码 </tag>
-            
-            <tag> 配置文件 </tag>
-            
-            <tag> footer </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hexo 在数据文件夹里添加谷歌和百度站点验证</title>
       <link href="/Hexo/228e7a34/"/>
       <url>/Hexo/228e7a34/</url>
@@ -9973,6 +9936,43 @@
     
     
     <entry>
+      <title>Hexo 在数据文件夹中添加 CNZZ 统计</title>
+      <link href="/Hexo/7b6e1cf9/"/>
+      <url>/Hexo/7b6e1cf9/</url>
+      
+        <content type="html"><![CDATA[<p>首先在 source 文件夹下新建一个_data 文件夹，打开主题配置文件或者备用主题配置文件，我用的是备用主题配置文件，搜索找到 custom_file_path，这里下面是自定义数据文件路径，把第六个 footer 前面的注释符 #去掉，可以看到路径上有个_data 文件夹下面还要有个 footer.njk 文件才可以。</p><span id="more"></span><p>复制 footer.njk 这个文件名，在刚才新建的_data 文件夹下新建一个文本文件，把名字改成 footer.njk, 到这里这个文件就建好了。</p><p>复制友盟的 cnzz 统计代码放到这个 footer.njk 这个文件里面就可以了，我这里用的工具是 notepad++, 用这个工具打开 footer.njk 自己新建的这个文件，把复制的代码粘贴到里面，然后把主题配置文件的 cnzz_siteid 这里设置成 true, 注意冒号后面有个空格，保存主题配置文件这样就可以了，用其他工具打开也可以，但是我一直用的这个，感觉很简洁。这样是真的简单很多，不用去修改主题文件。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 数据文件 </tag>
+            
+            <tag> CNZZ </tag>
+            
+            <tag> 路径 </tag>
+            
+            <tag> 统计代码 </tag>
+            
+            <tag> 配置文件 </tag>
+            
+            <tag> footer </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo 换电脑迁移</title>
       <link href="/Hexo/cf1c7373/"/>
       <url>/Hexo/cf1c7373/</url>
@@ -9991,9 +9991,9 @@
             
             <tag> Hexo </tag>
             
-            <tag> 路径 </tag>
-            
             <tag> 迁移 </tag>
+            
+            <tag> 路径 </tag>
             
             <tag> 换电脑 </tag>
             
@@ -10140,13 +10140,13 @@
             
             <tag> Hexo </tag>
             
-            <tag> 配置文件 </tag>
-            
             <tag> gitee </tag>
             
             <tag> 推送 </tag>
             
             <tag> win10 </tag>
+            
+            <tag> 配置文件 </tag>
             
             <tag> Git </tag>
             
@@ -11235,6 +11235,47 @@
     
     
     <entry>
+      <title>买菜平台送了两张满 5 减 3 的优惠券</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ae5a979c/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ae5a979c/</url>
+      
+        <content type="html"><![CDATA[<p>就是上次买的那个，因为有两样货没有，所以就退款了，我还以为是退款就可以了，结果今天它发短信给我，说是因为我上次买的东西缺货退款了，所以送我两张优惠券，使用的有效期是七天。</p><span id="more"></span><p>这样还是可以的，自然又是要把它用掉才行啊，我想到以前买过的水饺和汤圆是 5.8 元的一包 500 克的，用这个优惠券刚好就 2.8 元就可以买一包了，确实划算了，去超市买要八块钱，就算没有优惠券都比超市便宜很多的，用了优惠券买得更实惠了。</p><p>那天买的那个土豆是没有，但是今天又变成秒杀价了，那天是用了优惠券的和今天这个秒杀价格也差不多，我今天也重新买了，应该不会又没有货了吧。</p><p>分享买的东西到微信群里面是可以领优惠券的，自己可以领别人也可以，我又领了一块的优惠券，满一块多就可以用，一块多也不知道要买什么，刚好看到罐装的啤酒才只要一块多，所以就买了，买下来一罐啤酒就只需要几角钱就可以了，要去超市买一罐都要三块钱。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 买菜平台 </tag>
+            
+            <tag> 缺货退款 </tag>
+            
+            <tag> 满5减3 </tag>
+            
+            <tag> 优惠券 </tag>
+            
+            <tag> 便宜很多 </tag>
+            
+            <tag> 土豆 </tag>
+            
+            <tag> 秒杀价 </tag>
+            
+            <tag> 啤酒 </tag>
+            
+            <tag> 微信群 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>买的很多电子产品当时觉得好用，后面就吃灰了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/510f3254/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/510f3254/</url>
@@ -11274,47 +11315,6 @@
             <tag> USB </tag>
             
             <tag> 重新开机 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>买菜平台送了两张满 5 减 3 的优惠券</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ae5a979c/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ae5a979c/</url>
-      
-        <content type="html"><![CDATA[<p>就是上次买的那个，因为有两样货没有，所以就退款了，我还以为是退款就可以了，结果今天它发短信给我，说是因为我上次买的东西缺货退款了，所以送我两张优惠券，使用的有效期是七天。</p><span id="more"></span><p>这样还是可以的，自然又是要把它用掉才行啊，我想到以前买过的水饺和汤圆是 5.8 元的一包 500 克的，用这个优惠券刚好就 2.8 元就可以买一包了，确实划算了，去超市买要八块钱，就算没有优惠券都比超市便宜很多的，用了优惠券买得更实惠了。</p><p>那天买的那个土豆是没有，但是今天又变成秒杀价了，那天是用了优惠券的和今天这个秒杀价格也差不多，我今天也重新买了，应该不会又没有货了吧。</p><p>分享买的东西到微信群里面是可以领优惠券的，自己可以领别人也可以，我又领了一块的优惠券，满一块多就可以用，一块多也不知道要买什么，刚好看到罐装的啤酒才只要一块多，所以就买了，买下来一罐啤酒就只需要几角钱就可以了，要去超市买一罐都要三块钱。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 买菜平台 </tag>
-            
-            <tag> 缺货退款 </tag>
-            
-            <tag> 满5减3 </tag>
-            
-            <tag> 优惠券 </tag>
-            
-            <tag> 便宜很多 </tag>
-            
-            <tag> 土豆 </tag>
-            
-            <tag> 秒杀价 </tag>
-            
-            <tag> 啤酒 </tag>
-            
-            <tag> 微信群 </tag>
             
         </tags>
       
@@ -11631,43 +11631,6 @@
     
     
     <entry>
-      <title>人力资源管理（一）一考通论述题</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8607dead/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8607dead/</url>
-      
-        <content type="html"><![CDATA[<h2 id="四、论述题"><a href="#四、论述题" class="headerlink" title="四、论述题"></a>四、论述题</h2><p><strong>1.(1P60) 试述人力资源管理的发展趋势。</strong></p><p>答:</p><p>(1). 人本管理成为人力资源管理的中心思想。</p><p>(2). 人力资源管理全面参与组织战略管理过程。</p><p>(3). 人力资源管理全球化。</p><p>(4). 人力资源管理的重心为知识型员工的管理。</p><p>(5). 人力资源管理的新职能是向员工提供客户化的人力资源产品与服务。</p><span id="more"></span><p><strong>2.(9P265) 试述影响薪酬水平的宏观因素。</strong></p><p>答:</p><p>(1). 劳动生产率水平。员工实际平均薪酬增幅要略低于劳动生产率增幅。</p><p>(2). 积累消费水平。国民收人总量既定时，薪酬水平与消费水平成正比。</p><p>(3). 政府政策法规调节。主要指财政政策、货币政策、最低工资规定等。</p><p>(4). 劳动力市场供求状况。劳动力供大于求，薪酬水平下降；反之亦然。</p><p>(5). 物价变动。货币薪酬水平既定，物价上涨会导致实际薪酬水平下降。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 发展趋势 </tag>
-            
-            <tag> 薪酬水平 </tag>
-            
-            <tag> 中心思想 </tag>
-            
-            <tag> 全球化 </tag>
-            
-            <tag> 知识型 </tag>
-            
-            <tag> 宏观因素 </tag>
-            
-            <tag> 劳动力 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>人力资源管理（一）自考通分析说明题 1</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d850f6a5/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d850f6a5/</url>
@@ -11703,6 +11666,43 @@
             <tag> 先入为主 </tag>
             
             <tag> 互动 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>人力资源管理（一）一考通论述题</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8607dead/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8607dead/</url>
+      
+        <content type="html"><![CDATA[<h2 id="四、论述题"><a href="#四、论述题" class="headerlink" title="四、论述题"></a>四、论述题</h2><p><strong>1.(1P60) 试述人力资源管理的发展趋势。</strong></p><p>答:</p><p>(1). 人本管理成为人力资源管理的中心思想。</p><p>(2). 人力资源管理全面参与组织战略管理过程。</p><p>(3). 人力资源管理全球化。</p><p>(4). 人力资源管理的重心为知识型员工的管理。</p><p>(5). 人力资源管理的新职能是向员工提供客户化的人力资源产品与服务。</p><span id="more"></span><p><strong>2.(9P265) 试述影响薪酬水平的宏观因素。</strong></p><p>答:</p><p>(1). 劳动生产率水平。员工实际平均薪酬增幅要略低于劳动生产率增幅。</p><p>(2). 积累消费水平。国民收人总量既定时，薪酬水平与消费水平成正比。</p><p>(3). 政府政策法规调节。主要指财政政策、货币政策、最低工资规定等。</p><p>(4). 劳动力市场供求状况。劳动力供大于求，薪酬水平下降；反之亦然。</p><p>(5). 物价变动。货币薪酬水平既定，物价上涨会导致实际薪酬水平下降。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 发展趋势 </tag>
+            
+            <tag> 薪酬水平 </tag>
+            
+            <tag> 中心思想 </tag>
+            
+            <tag> 全球化 </tag>
+            
+            <tag> 知识型 </tag>
+            
+            <tag> 宏观因素 </tag>
+            
+            <tag> 劳动力 </tag>
             
         </tags>
       
@@ -11799,41 +11799,6 @@
             <tag> 效果评估 </tag>
             
             <tag> 匹配原则 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>人力资源管理（一）自考通论述题 1</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/52e18ab8/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/52e18ab8/</url>
-      
-        <content type="html"><![CDATA[<h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="四、论述题"><a href="#四、论述题" class="headerlink" title="四、论述题"></a>四、论述题</h2><p><strong>36. 如何进行绩效反馈面谈？(P239-240)</strong></p><p>答：绩效反馈有正式的绩效反馈和非正式的绩效反馈，以及口头绩效反馈和书面绩效反馈等不同形式。其中在绩效考核之后所进行的绩效反馈面谈是一种重要和有效的绩效反馈形式。</p><span id="more"></span><p>(1). 绩效反馈面谈的准备。为了有效地进行绩效反馈面谈。在面谈之前管理者和员工双方都要进行充分的准备。这种面谈前的准备包括：面谈时间、面谈场所和面谈所需资料的准备。</p><p>(2). 应注意的问题有:</p><p>  ①. 确定好面谈目的；<br>  ②. 面谈内容要具体；<br>  ③. 肯定员工的优点与进步；<br>  ④. 尽量减少批评；<br>  ⑤. 鼓励员工积极参与面谈过程；<br>  ⑥. 避免冲突与对抗；<br>  ⑦. 重点放在问题的解决上；<br>  ⑧. 制定具体的绩效改善目标。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 绩效反馈 </tag>
-            
-            <tag> 面谈 </tag>
-            
-            <tag> 资料 </tag>
-            
-            <tag> 问题 </tag>
-            
-            <tag> 正式 </tag>
-            
-            <tag> 考核 </tag>
             
         </tags>
       
@@ -11942,6 +11907,41 @@
             <tag> 简单化 </tag>
             
             <tag> 合理化 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>人力资源管理（一）自考通论述题 1</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/52e18ab8/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/52e18ab8/</url>
+      
+        <content type="html"><![CDATA[<h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="四、论述题"><a href="#四、论述题" class="headerlink" title="四、论述题"></a>四、论述题</h2><p><strong>36. 如何进行绩效反馈面谈？(P239-240)</strong></p><p>答：绩效反馈有正式的绩效反馈和非正式的绩效反馈，以及口头绩效反馈和书面绩效反馈等不同形式。其中在绩效考核之后所进行的绩效反馈面谈是一种重要和有效的绩效反馈形式。</p><span id="more"></span><p>(1). 绩效反馈面谈的准备。为了有效地进行绩效反馈面谈。在面谈之前管理者和员工双方都要进行充分的准备。这种面谈前的准备包括：面谈时间、面谈场所和面谈所需资料的准备。</p><p>(2). 应注意的问题有:</p><p>  ①. 确定好面谈目的；<br>  ②. 面谈内容要具体；<br>  ③. 肯定员工的优点与进步；<br>  ④. 尽量减少批评；<br>  ⑤. 鼓励员工积极参与面谈过程；<br>  ⑥. 避免冲突与对抗；<br>  ⑦. 重点放在问题的解决上；<br>  ⑧. 制定具体的绩效改善目标。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 绩效反馈 </tag>
+            
+            <tag> 面谈 </tag>
+            
+            <tag> 资料 </tag>
+            
+            <tag> 问题 </tag>
+            
+            <tag> 正式 </tag>
+            
+            <tag> 考核 </tag>
             
         </tags>
       
@@ -12728,9 +12728,9 @@
             
             <tag> 更新 </tag>
             
-            <tag> 坚持 </tag>
-            
             <tag> 文章 </tag>
+            
+            <tag> 坚持 </tag>
             
             <tag> 写文 </tag>
             
@@ -13062,45 +13062,6 @@
     
     
     <entry>
-      <title>做小时工住的宿舍真的垃圾</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b598be07/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b598be07/</url>
-      
-        <content type="html"><![CDATA[<p>一开始来的时候住的还可以，前几天突然要让我搬到垃圾宿舍去，下铺是住满人的，上铺那床摇摇晃晃的根本就不能做人，就这样还要每个月扣 150 元，不得不说是真的太坑。</p><span id="more"></span><p>明天决定自己去租房子住了，要我搬到那里根本就不能住，搬来搬去也麻烦，宁愿多出点钱住得舒服点都行了，不然还怎么上班，连睡觉都没有一个过得去地方，这活怕就是真的没有法干了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 睡觉 </tag>
-            
-            <tag> 租房子 </tag>
-            
-            <tag> 宿舍 </tag>
-            
-            <tag> 小时工 </tag>
-            
-            <tag> 垃圾 </tag>
-            
-            <tag> 突然 </tag>
-            
-            <tag> 摇摇晃晃 </tag>
-            
-            <tag> 搬来搬去 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>做自媒体最基础的就是要会写作</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/82f51e6b/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/82f51e6b/</url>
@@ -13394,6 +13355,45 @@
     
     
     <entry>
+      <title>做小时工住的宿舍真的垃圾</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b598be07/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b598be07/</url>
+      
+        <content type="html"><![CDATA[<p>一开始来的时候住的还可以，前几天突然要让我搬到垃圾宿舍去，下铺是住满人的，上铺那床摇摇晃晃的根本就不能做人，就这样还要每个月扣 150 元，不得不说是真的太坑。</p><span id="more"></span><p>明天决定自己去租房子住了，要我搬到那里根本就不能住，搬来搬去也麻烦，宁愿多出点钱住得舒服点都行了，不然还怎么上班，连睡觉都没有一个过得去地方，这活怕就是真的没有法干了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 睡觉 </tag>
+            
+            <tag> 租房子 </tag>
+            
+            <tag> 宿舍 </tag>
+            
+            <tag> 小时工 </tag>
+            
+            <tag> 垃圾 </tag>
+            
+            <tag> 突然 </tag>
+            
+            <tag> 摇摇晃晃 </tag>
+            
+            <tag> 搬来搬去 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>写了 20 万字终于拿到简书创作者标签了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e56f1718/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e56f1718/</url>
@@ -13659,6 +13659,47 @@
     
     
     <entry>
+      <title>写公众号粉丝越来越少了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4733806/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4733806/</url>
+      
+        <content type="html"><![CDATA[<p>昨天晚上去公众号发文章，看到现在又增加一个新功能了，就是专辑，挨着页面模板那里。专辑和页面模板不一样，这个不能添加到菜单，只是发文章的时候选中它就会出现在文章的上面。</p><span id="more"></span><p>搞这么多功能其实就是为了增加阅读量，但是阅读量多也没有什么用，要粉丝够了才能上广告，那才能有收益。</p><p>可是我这个号几年了，还是那点粉丝，不增加到也没有什么奇怪的，关键是居然还减少了，减少就减少吧，反正这个不是自己能控制的，就当成是自己一个发声的窗口就可以了，有没有粉丝不重要，反正不能想着靠这个来赚钱。</p><p>现在我写在简书的文章除了发公众号，还发到我自己的网站和微博头条文章，也就只能发这几处，本身感觉自己都写得不太好，发的平台多了感觉就是浪费精力。</p><p>还好我的网站现在是开通了谷歌广告，只要有人点击上面的广告那我也会有广告费的，就是提现有点难，要满 100 美元才可以。我都不希望能得到提现了，网站就是做来自己玩的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 阅读量 </tag>
+            
+            <tag> 网站 </tag>
+            
+            <tag> 头条文章 </tag>
+            
+            <tag> 公众号 </tag>
+            
+            <tag> 新功能 </tag>
+            
+            <tag> 专辑 </tag>
+            
+            <tag> 页面模板 </tag>
+            
+            <tag> 菜单 </tag>
+            
+            <tag> 粉丝 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>写作的动力来源于生活</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b21d3bc4/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b21d3bc4/</url>
@@ -13696,47 +13737,6 @@
             <tag> 新书 </tag>
             
             <tag> 费点时间 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>写公众号粉丝越来越少了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4733806/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4733806/</url>
-      
-        <content type="html"><![CDATA[<p>昨天晚上去公众号发文章，看到现在又增加一个新功能了，就是专辑，挨着页面模板那里。专辑和页面模板不一样，这个不能添加到菜单，只是发文章的时候选中它就会出现在文章的上面。</p><span id="more"></span><p>搞这么多功能其实就是为了增加阅读量，但是阅读量多也没有什么用，要粉丝够了才能上广告，那才能有收益。</p><p>可是我这个号几年了，还是那点粉丝，不增加到也没有什么奇怪的，关键是居然还减少了，减少就减少吧，反正这个不是自己能控制的，就当成是自己一个发声的窗口就可以了，有没有粉丝不重要，反正不能想着靠这个来赚钱。</p><p>现在我写在简书的文章除了发公众号，还发到我自己的网站和微博头条文章，也就只能发这几处，本身感觉自己都写得不太好，发的平台多了感觉就是浪费精力。</p><p>还好我的网站现在是开通了谷歌广告，只要有人点击上面的广告那我也会有广告费的，就是提现有点难，要满 100 美元才可以。我都不希望能得到提现了，网站就是做来自己玩的。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 阅读量 </tag>
-            
-            <tag> 网站 </tag>
-            
-            <tag> 头条文章 </tag>
-            
-            <tag> 公众号 </tag>
-            
-            <tag> 新功能 </tag>
-            
-            <tag> 专辑 </tag>
-            
-            <tag> 页面模板 </tag>
-            
-            <tag> 菜单 </tag>
-            
-            <tag> 粉丝 </tag>
             
         </tags>
       
@@ -14050,6 +14050,47 @@
     
     
     <entry>
+      <title>利用腾讯相册管家和图片来制作抖音和微视等短视频</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b96cead/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b96cead/</url>
+      
+        <content type="html"><![CDATA[<p>想玩抖音或者微视，但不会拍视频或者不想拍视频，现在有方法了，就是不用拍视频，也可以玩转抖音和微视这些短视频应用，只要会找图片就可以，把图片放到手机里，然后手机上安装一个腾讯的相册管家，那就可以制作出带有大片特效的短视频了，这软件自带背景音乐，音乐库里面都是免费使用的音乐。</p><span id="more"></span><p>只需要几秒钟就可以用图片制作出一部高大上的短视频了，为什么我会推荐这个软件呢，因为它是免费的，之前也在应用商店下载过两个其他的，但都是收费的，要开了会员才可以用图片来制作短视频，直到我下载了腾讯的这个相册管家，我才终于知道这软件不仅功能强大，关键是还免费。</p><p>添加片头是免费的，如果要去掉片尾的 “腾讯相册管家” 几个字那就需要开会员了，开了会员可以设置自定义的片尾签名，那就比较高大上了，但不用花一分钱，对于普通用户来说已经完全够用了。</p><p>制作完成以后的视频保存在手机相册里，想要上传到抖音和微视都是相当方便的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 图片 </tag>
+            
+            <tag> 免费 </tag>
+            
+            <tag> 抖音 </tag>
+            
+            <tag> 短视频 </tag>
+            
+            <tag> 微视 </tag>
+            
+            <tag> 相册管家 </tag>
+            
+            <tag> 制作抖音 </tag>
+            
+            <tag> 拍视频 </tag>
+            
+            <tag> 手机相册 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>剪辑影视剧这条路行不通了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3e6eef3f/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3e6eef3f/</url>
@@ -14193,6 +14234,43 @@
     
     
     <entry>
+      <title>去年办的澳门通行证快过期了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f2d44d2/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f2d44d2/</url>
+      
+        <content type="html"><![CDATA[<p>今天突然在网上看到澳门回归 21 周年了，去年是 20 周年，还搞了一个很隆重的烟花表演，我也在去年澳门回归 20 周年过后的几天去办的澳门同行证，想着是今年五一的时候去澳门玩一下的，可是谁知道后面发生了疫情，一直到现在。</p><span id="more"></span><p>现在去好像也还要做核酸检测才可以过去，想着去办证的钱也是白白浪费了，因为做核酸检测又还得花钱，去澳门玩有得花钱，所以还不如不去了。</p><p>又都是这疫情闹的把去年的好多计划都给改变了，去年还看过一本写中国经济 2020 年的书，作者写这边书的时候还是 2019 年那时候应该还没有发生疫情，估计连他也没有想到的是，他的预测根本不符合今年的经济形式了，疫情对经济各方面的影响都是巨大的，没有人能提前预测到。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 澳门 </tag>
+            
+            <tag> 通行证 </tag>
+            
+            <tag> 21周年 </tag>
+            
+            <tag> 白白浪费 </tag>
+            
+            <tag> 核酸检测 </tag>
+            
+            <tag> 中国经济 </tag>
+            
+            <tag> 疫情 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>原来想挖狗狗币的人真的很多啊</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dbd37ddf/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dbd37ddf/</url>
@@ -14226,43 +14304,6 @@
             <tag> 互联网经济 </tag>
             
             <tag> 资金 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>去年办的澳门通行证快过期了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f2d44d2/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f2d44d2/</url>
-      
-        <content type="html"><![CDATA[<p>今天突然在网上看到澳门回归 21 周年了，去年是 20 周年，还搞了一个很隆重的烟花表演，我也在去年澳门回归 20 周年过后的几天去办的澳门同行证，想着是今年五一的时候去澳门玩一下的，可是谁知道后面发生了疫情，一直到现在。</p><span id="more"></span><p>现在去好像也还要做核酸检测才可以过去，想着去办证的钱也是白白浪费了，因为做核酸检测又还得花钱，去澳门玩有得花钱，所以还不如不去了。</p><p>又都是这疫情闹的把去年的好多计划都给改变了，去年还看过一本写中国经济 2020 年的书，作者写这边书的时候还是 2019 年那时候应该还没有发生疫情，估计连他也没有想到的是，他的预测根本不符合今年的经济形式了，疫情对经济各方面的影响都是巨大的，没有人能提前预测到。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 澳门 </tag>
-            
-            <tag> 通行证 </tag>
-            
-            <tag> 21周年 </tag>
-            
-            <tag> 白白浪费 </tag>
-            
-            <tag> 核酸检测 </tag>
-            
-            <tag> 中国经济 </tag>
-            
-            <tag> 疫情 </tag>
             
         </tags>
       
@@ -14343,11 +14384,11 @@
     
     
     <entry>
-      <title>利用腾讯相册管家和图片来制作抖音和微视等短视频</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b96cead/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b96cead/</url>
+      <title>发现一个好用的视频剪辑软件 iMovie</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/aa1d3fd7/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/aa1d3fd7/</url>
       
-        <content type="html"><![CDATA[<p>想玩抖音或者微视，但不会拍视频或者不想拍视频，现在有方法了，就是不用拍视频，也可以玩转抖音和微视这些短视频应用，只要会找图片就可以，把图片放到手机里，然后手机上安装一个腾讯的相册管家，那就可以制作出带有大片特效的短视频了，这软件自带背景音乐，音乐库里面都是免费使用的音乐。</p><span id="more"></span><p>只需要几秒钟就可以用图片制作出一部高大上的短视频了，为什么我会推荐这个软件呢，因为它是免费的，之前也在应用商店下载过两个其他的，但都是收费的，要开了会员才可以用图片来制作短视频，直到我下载了腾讯的这个相册管家，我才终于知道这软件不仅功能强大，关键是还免费。</p><p>添加片头是免费的，如果要去掉片尾的 “腾讯相册管家” 几个字那就需要开会员了，开了会员可以设置自定义的片尾签名，那就比较高大上了，但不用花一分钱，对于普通用户来说已经完全够用了。</p><p>制作完成以后的视频保存在手机相册里，想要上传到抖音和微视都是相当方便的。</p>]]></content>
+        <content type="html"><![CDATA[<p>这个软件是苹果手机和电脑上的，以前我买了苹果的平板电脑这个软件就在上面了，一直不知道它是干什么用的，最近想用 IPadmini 玩游戏录视频，才发现找不到剪辑视频的，去下了一个快剪辑居然是收费的，要一年一千六百多块钱，免费的只能是带有水印的，而且到处的视频只能是 720P，看到这里瞬间放弃直接卸载了。</p><span id="more"></span><p>还好的是我视频是相册里，相册里其实也可以轻微的编辑一下，只是功能没有专门的剪辑软件那么多。后面就在相册里发现了这个视频编辑软件，以前好像也看到这个软件，算是比较入门级的了，因为使用确实很简单，比 PR 这些简单很多。</p><p>后面在百度百科查了一下这个软件发现以前居然是很出名的，居然还上过美国电脑杂志的封面，那好像都已经是很多年以前的事了，后面就成为苹果系统自带的软件了，不得不说这个软件确实简单功能强大好用，关键还是免费的而且是没有在视频上加水印的那种，现在的很多视频编辑软件看着是很好用，但是如果不交钱，一般都会被在视频上打上他自己的水印。</p><p>除了编辑的视频大小会变小之外这个软件还是值得一样用的，至于大小设置我是直接在相册里用去黑边的方法设置的，反正目前是没有什么好的方法，如果有好的方法我也去慢慢的折腾一下。</p><p>还有以前的 iPad 系统是没有录屏这个功能的，不知道是在那个版本更新以后就可以了，应该是更新到 14 大版本之后就有的，因为一直都没有用它来录屏，现在这个功能来录制游戏视频真的很舒服一点都不卡，唯一的不足就是要把后面切换按钮的那里剪掉，所以才需要视频剪辑软件，它不像安卓机自带的录频那样有个悬浮按钮悬浮在其他软件上层，这个没有，要自己切换才可以开始录制和结束录制。</p>]]></content>
       
       
       <categories>
@@ -14359,23 +14400,31 @@
       
         <tags>
             
-            <tag> 图片 </tag>
+            <tag> 电脑 </tag>
             
             <tag> 免费 </tag>
             
-            <tag> 抖音 </tag>
+            <tag> 水印 </tag>
             
-            <tag> 短视频 </tag>
+            <tag> 好用 </tag>
             
-            <tag> 微视 </tag>
+            <tag> 视频剪辑 </tag>
             
-            <tag> 相册管家 </tag>
+            <tag> iMovie </tag>
             
-            <tag> 制作抖音 </tag>
+            <tag> 苹果手机 </tag>
             
-            <tag> 拍视频 </tag>
+            <tag> IPadmini </tag>
             
-            <tag> 手机相册 </tag>
+            <tag> 相册 </tag>
+            
+            <tag> 简单 </tag>
+            
+            <tag> 功能强大 </tag>
+            
+            <tag> 游戏视频 </tag>
+            
+            <tag> 悬浮按钮 </tag>
             
         </tags>
       
@@ -14406,6 +14455,8 @@
             
             <tag> 注册 </tag>
             
+            <tag> 视频剪辑 </tag>
+            
             <tag> 免费玩 </tag>
             
             <tag> Steam </tag>
@@ -14415,8 +14466,6 @@
             <tag> 汉化 </tag>
             
             <tag> 爽歪歪 </tag>
-            
-            <tag> 视频剪辑 </tag>
             
             <tag> 灵界女孩 </tag>
             
@@ -14525,53 +14574,6 @@
     
     
     <entry>
-      <title>听说有人在宜家拍污视频了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/af318849/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/af318849/</url>
-      
-        <content type="html"><![CDATA[<p>每次看到这样的新闻，我只能说这些人就是 666, 也不知道真假，新闻传得漫天飞舞，就是没有看到视频，都没有证据证明呢。</p><span id="more"></span><p>上次看到这种新闻还是几年前的优衣库了，也不记得是多少年前了忘了。其实拍这种视频也没有什么奇怪的，这些不都是人类的本质吗，只不过是有些人喜欢追求刺激罢了。只要是不曝光出来谁又知道呢，曝光出来的人才是变态的吧。</p><p>这种事情不是每天都在发生的吗，毕竟性是人类的基本生理需要啊，人是动物，是动物必然就会有动物的本性。记得亚里士多德在《政治学》中说人类是社交的动物，说白了男女社交的纽带不就是基于性吗。</p><p>性是人类的本能，而不是受自己控制需不需的问题，就像狮子老虎需要繁衍后代一样，是大自然赋予的一种本能。</p><p>这些东西其实在有些直播平台也每天都有时不时地上演，那有什么奇怪的，这本身就是一种生活方式而已，成年人的世界不需要大惊小怪，每个人都有每个人的生活方式，有必要去干预吗。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 新闻 </tag>
-            
-            <tag> 宜家 </tag>
-            
-            <tag> 污视频 </tag>
-            
-            <tag> 优衣库 </tag>
-            
-            <tag> 奇怪 </tag>
-            
-            <tag> 曝光 </tag>
-            
-            <tag> 变态 </tag>
-            
-            <tag> 生理需要 </tag>
-            
-            <tag> 性 </tag>
-            
-            <tag> 直播平台 </tag>
-            
-            <tag> 成年人 </tag>
-            
-            <tag> 大惊小怪 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>听雪楼中的几大利器让听雪楼成为了武林霸主</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/995dad82/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/995dad82/</url>
@@ -14647,6 +14649,53 @@
     
     
     <entry>
+      <title>听说有人在宜家拍污视频了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/af318849/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/af318849/</url>
+      
+        <content type="html"><![CDATA[<p>每次看到这样的新闻，我只能说这些人就是 666, 也不知道真假，新闻传得漫天飞舞，就是没有看到视频，都没有证据证明呢。</p><span id="more"></span><p>上次看到这种新闻还是几年前的优衣库了，也不记得是多少年前了忘了。其实拍这种视频也没有什么奇怪的，这些不都是人类的本质吗，只不过是有些人喜欢追求刺激罢了。只要是不曝光出来谁又知道呢，曝光出来的人才是变态的吧。</p><p>这种事情不是每天都在发生的吗，毕竟性是人类的基本生理需要啊，人是动物，是动物必然就会有动物的本性。记得亚里士多德在《政治学》中说人类是社交的动物，说白了男女社交的纽带不就是基于性吗。</p><p>性是人类的本能，而不是受自己控制需不需的问题，就像狮子老虎需要繁衍后代一样，是大自然赋予的一种本能。</p><p>这些东西其实在有些直播平台也每天都有时不时地上演，那有什么奇怪的，这本身就是一种生活方式而已，成年人的世界不需要大惊小怪，每个人都有每个人的生活方式，有必要去干预吗。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 新闻 </tag>
+            
+            <tag> 宜家 </tag>
+            
+            <tag> 污视频 </tag>
+            
+            <tag> 优衣库 </tag>
+            
+            <tag> 奇怪 </tag>
+            
+            <tag> 曝光 </tag>
+            
+            <tag> 变态 </tag>
+            
+            <tag> 生理需要 </tag>
+            
+            <tag> 性 </tag>
+            
+            <tag> 直播平台 </tag>
+            
+            <tag> 成年人 </tag>
+            
+            <tag> 大惊小怪 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>喝了点酒过敏了身上起了很多泡</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b7d51ef5/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b7d51ef5/</url>
@@ -14676,55 +14725,6 @@
             <tag> 抗过敏 </tag>
             
             <tag> 多难受 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>发现一个好用的视频剪辑软件 iMovie</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/aa1d3fd7/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/aa1d3fd7/</url>
-      
-        <content type="html"><![CDATA[<p>这个软件是苹果手机和电脑上的，以前我买了苹果的平板电脑这个软件就在上面了，一直不知道它是干什么用的，最近想用 IPadmini 玩游戏录视频，才发现找不到剪辑视频的，去下了一个快剪辑居然是收费的，要一年一千六百多块钱，免费的只能是带有水印的，而且到处的视频只能是 720P，看到这里瞬间放弃直接卸载了。</p><span id="more"></span><p>还好的是我视频是相册里，相册里其实也可以轻微的编辑一下，只是功能没有专门的剪辑软件那么多。后面就在相册里发现了这个视频编辑软件，以前好像也看到这个软件，算是比较入门级的了，因为使用确实很简单，比 PR 这些简单很多。</p><p>后面在百度百科查了一下这个软件发现以前居然是很出名的，居然还上过美国电脑杂志的封面，那好像都已经是很多年以前的事了，后面就成为苹果系统自带的软件了，不得不说这个软件确实简单功能强大好用，关键还是免费的而且是没有在视频上加水印的那种，现在的很多视频编辑软件看着是很好用，但是如果不交钱，一般都会被在视频上打上他自己的水印。</p><p>除了编辑的视频大小会变小之外这个软件还是值得一样用的，至于大小设置我是直接在相册里用去黑边的方法设置的，反正目前是没有什么好的方法，如果有好的方法我也去慢慢的折腾一下。</p><p>还有以前的 iPad 系统是没有录屏这个功能的，不知道是在那个版本更新以后就可以了，应该是更新到 14 大版本之后就有的，因为一直都没有用它来录屏，现在这个功能来录制游戏视频真的很舒服一点都不卡，唯一的不足就是要把后面切换按钮的那里剪掉，所以才需要视频剪辑软件，它不像安卓机自带的录频那样有个悬浮按钮悬浮在其他软件上层，这个没有，要自己切换才可以开始录制和结束录制。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 电脑 </tag>
-            
-            <tag> 免费 </tag>
-            
-            <tag> 水印 </tag>
-            
-            <tag> 视频剪辑 </tag>
-            
-            <tag> 好用 </tag>
-            
-            <tag> iMovie </tag>
-            
-            <tag> 苹果手机 </tag>
-            
-            <tag> IPadmini </tag>
-            
-            <tag> 相册 </tag>
-            
-            <tag> 简单 </tag>
-            
-            <tag> 功能强大 </tag>
-            
-            <tag> 游戏视频 </tag>
-            
-            <tag> 悬浮按钮 </tag>
             
         </tags>
       
@@ -15221,9 +15221,9 @@
             
             <tag> 写作方法 </tag>
             
-            <tag> 每天都写 </tag>
-            
             <tag> 简单 </tag>
+            
+            <tag> 每天都写 </tag>
             
             <tag> 中途败退 </tag>
             
@@ -15238,6 +15238,65 @@
             <tag> 放弃 </tag>
             
             <tag> 失落感 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>在迷你主机虚拟机上安装黑苹果系统，体验一下 Mac mini 的感觉</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29c02f2/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29c02f2/</url>
+      
+        <content type="html"><![CDATA[<p>我这里用的虚拟机是 <code>VMware 16</code> 的版本，当然用 15 的版本也是可以安装的，安装好虚拟机之后是不能直接安装黑苹果系统的，因为这个虚拟机上直接安装是没有苹果系统的选项的，需要使用一个解锁软件对它进行解锁，这个解锁软件就是 <code>unlocker</code>。</p><span id="more"></span><p>解锁之后创建苹果虚拟机系统的时候就可以选择苹果的 Mac 系统的选项了，虚拟机创建好了还需要苹果的系统镜像，镜像也好下载就是用的 “MSDN, 我告诉你” 这个网站上下载，这个用种子文件加迅雷下载比较快，比别人分享在百度网盘的快很多，我大概只用了三十多分钟就下好了。</p><p>以前也下过一个 14G 多的，那个在笔记本电脑上可以用，传到台式机上就用不了，而且占很大空间，这次去这个网站下载的才 7G 多的，没有那么占空间，版本也是一样的都是 10.15.7 的，关键这个安装确实可以用。</p><p>下载下来的是后缀<code>.dmg</code> 的文件，虚拟机直接用是识别不了的，这里需要下载 <code>TransMac</code> 这个软件，用这个软件还有一个 8G 以上的 U 盘把镜像文件做成一个 U 盘启动盘，U 盘里面有数据会被全部格式化得提前备份好。</p><p>做成 U 盘启动盘以后 U 盘要重新使用也要用 <code>DiskGenius</code> 这个软件删除分区才可以正常使用，启动盘做好就可以在刚创建的苹果虚拟机上编辑添加硬盘，选择 U 盘启动盘，这样开启虚拟机就可以安装了，但是这里会显示处理器被禁用了，相信很多人到这里就会放弃了，我上次也是到这一步就无法进行了。</p><p>到这里需要在虚拟机文件里面添加几行代码才能解决，找到创建的苹果虚拟机的位置文件夹，里面有个 <code>macOS 10.15.vmx</code> 文件用 <code>notepad++</code> 打开，在最后面一行下添加一下代码：</p><figure class="highlight ini"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">smc.version</span> = <span class="string">"0"</span></span><br><span class="line"><span class="attr">cpuid.0.eax</span> = <span class="string">"0000:0000:0000:0000:0000:0000:0000:1011"</span></span><br><span class="line"><span class="attr">cpuid.0.ebx</span> = <span class="string">"0111:0101:0110:1110:0110:0101:0100:0111"</span></span><br><span class="line"><span class="attr">cpuid.0.ecx</span> = <span class="string">"0110:1100:0110:0101:0111:0100:0110:1110"</span></span><br><span class="line"><span class="attr">cpuid.0.edx</span> = <span class="string">"0100:1001:0110:0101:0110:1110:0110:1001"</span></span><br><span class="line"><span class="attr">cpuid.1.eax</span> = <span class="string">"0000:0000:0000:0001:0000:0110:0111:0001"</span></span><br><span class="line"><span class="attr">cpuid.1.ebx</span> = <span class="string">"0000:0010:0000:0001:0000:1000:0000:0000"</span></span><br><span class="line"><span class="attr">cpuid.1.ecx</span> = <span class="string">"1000:0010:1001:1000:0010:0010:0000:0011"</span></span><br><span class="line"><span class="attr">cpuid.1.edx</span> = <span class="string">"0000:0111:1000:1011:1111:1011:1111:1111"</span></span><br><span class="line"><span class="attr">smbios.reflectHost</span> = <span class="string">"TRUE"</span></span><br><span class="line"><span class="attr">hw.model</span> = <span class="string">"MacBookPro14,3"</span></span><br><span class="line"><span class="attr">board-id</span> = <span class="string">"Mac-551B86E5744E2388"</span></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure><p>然后保存，再重新开启虚拟机这样就可以正常安装了。</p><p>安装好以后是不能用全屏的，得下载 <code>darwin1012.iso</code> 这个镜像文件来安装 <code>VMware Tools</code>，只有安装了这个才可以全屏，这个要用 <code>CD/DVD</code> 虚拟光驱来安装，我记得我是安装了两次才安装成功的，安装完这个就是体验黑苹果系统的时刻了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 代码 </tag>
+            
+            <tag> 安装 </tag>
+            
+            <tag> 迅雷下载 </tag>
+            
+            <tag> 虚拟机 </tag>
+            
+            <tag> 黑苹果系统 </tag>
+            
+            <tag> VMware 16 </tag>
+            
+            <tag> 进行解锁 </tag>
+            
+            <tag> unlocker </tag>
+            
+            <tag> 创建 </tag>
+            
+            <tag> MSDN </tag>
+            
+            <tag> TransMac </tag>
+            
+            <tag> 镜像文件 </tag>
+            
+            <tag> DiskGenius </tag>
+            
+            <tag> 硬盘 </tag>
+            
+            <tag> macOS </tag>
+            
+            <tag> notepad++ </tag>
+            
+            <tag> darwin1012 </tag>
+            
+            <tag> VMware Tools </tag>
             
         </tags>
       
@@ -15394,65 +15453,6 @@
             <tag> 朵朵小花 </tag>
             
             <tag> 一缕幽香 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>在迷你主机虚拟机上安装黑苹果系统，体验一下 Mac mini 的感觉</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29c02f2/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29c02f2/</url>
-      
-        <content type="html"><![CDATA[<p>我这里用的虚拟机是 <code>VMware 16</code> 的版本，当然用 15 的版本也是可以安装的，安装好虚拟机之后是不能直接安装黑苹果系统的，因为这个虚拟机上直接安装是没有苹果系统的选项的，需要使用一个解锁软件对它进行解锁，这个解锁软件就是 <code>unlocker</code>。</p><span id="more"></span><p>解锁之后创建苹果虚拟机系统的时候就可以选择苹果的 Mac 系统的选项了，虚拟机创建好了还需要苹果的系统镜像，镜像也好下载就是用的 “MSDN, 我告诉你” 这个网站上下载，这个用种子文件加迅雷下载比较快，比别人分享在百度网盘的快很多，我大概只用了三十多分钟就下好了。</p><p>以前也下过一个 14G 多的，那个在笔记本电脑上可以用，传到台式机上就用不了，而且占很大空间，这次去这个网站下载的才 7G 多的，没有那么占空间，版本也是一样的都是 10.15.7 的，关键这个安装确实可以用。</p><p>下载下来的是后缀<code>.dmg</code> 的文件，虚拟机直接用是识别不了的，这里需要下载 <code>TransMac</code> 这个软件，用这个软件还有一个 8G 以上的 U 盘把镜像文件做成一个 U 盘启动盘，U 盘里面有数据会被全部格式化得提前备份好。</p><p>做成 U 盘启动盘以后 U 盘要重新使用也要用 <code>DiskGenius</code> 这个软件删除分区才可以正常使用，启动盘做好就可以在刚创建的苹果虚拟机上编辑添加硬盘，选择 U 盘启动盘，这样开启虚拟机就可以安装了，但是这里会显示处理器被禁用了，相信很多人到这里就会放弃了，我上次也是到这一步就无法进行了。</p><p>到这里需要在虚拟机文件里面添加几行代码才能解决，找到创建的苹果虚拟机的位置文件夹，里面有个 <code>macOS 10.15.vmx</code> 文件用 <code>notepad++</code> 打开，在最后面一行下添加一下代码：</p><figure class="highlight ini"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">smc.version</span> = <span class="string">"0"</span></span><br><span class="line"><span class="attr">cpuid.0.eax</span> = <span class="string">"0000:0000:0000:0000:0000:0000:0000:1011"</span></span><br><span class="line"><span class="attr">cpuid.0.ebx</span> = <span class="string">"0111:0101:0110:1110:0110:0101:0100:0111"</span></span><br><span class="line"><span class="attr">cpuid.0.ecx</span> = <span class="string">"0110:1100:0110:0101:0111:0100:0110:1110"</span></span><br><span class="line"><span class="attr">cpuid.0.edx</span> = <span class="string">"0100:1001:0110:0101:0110:1110:0110:1001"</span></span><br><span class="line"><span class="attr">cpuid.1.eax</span> = <span class="string">"0000:0000:0000:0001:0000:0110:0111:0001"</span></span><br><span class="line"><span class="attr">cpuid.1.ebx</span> = <span class="string">"0000:0010:0000:0001:0000:1000:0000:0000"</span></span><br><span class="line"><span class="attr">cpuid.1.ecx</span> = <span class="string">"1000:0010:1001:1000:0010:0010:0000:0011"</span></span><br><span class="line"><span class="attr">cpuid.1.edx</span> = <span class="string">"0000:0111:1000:1011:1111:1011:1111:1111"</span></span><br><span class="line"><span class="attr">smbios.reflectHost</span> = <span class="string">"TRUE"</span></span><br><span class="line"><span class="attr">hw.model</span> = <span class="string">"MacBookPro14,3"</span></span><br><span class="line"><span class="attr">board-id</span> = <span class="string">"Mac-551B86E5744E2388"</span></span><br><span class="line"></span><br></pre></td></tr></tbody></table></figure><p>然后保存，再重新开启虚拟机这样就可以正常安装了。</p><p>安装好以后是不能用全屏的，得下载 <code>darwin1012.iso</code> 这个镜像文件来安装 <code>VMware Tools</code>，只有安装了这个才可以全屏，这个要用 <code>CD/DVD</code> 虚拟光驱来安装，我记得我是安装了两次才安装成功的，安装完这个就是体验黑苹果系统的时刻了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 代码 </tag>
-            
-            <tag> 安装 </tag>
-            
-            <tag> 迅雷下载 </tag>
-            
-            <tag> 虚拟机 </tag>
-            
-            <tag> 黑苹果系统 </tag>
-            
-            <tag> VMware 16 </tag>
-            
-            <tag> 进行解锁 </tag>
-            
-            <tag> unlocker </tag>
-            
-            <tag> 创建 </tag>
-            
-            <tag> MSDN </tag>
-            
-            <tag> TransMac </tag>
-            
-            <tag> 镜像文件 </tag>
-            
-            <tag> DiskGenius </tag>
-            
-            <tag> 硬盘 </tag>
-            
-            <tag> macOS </tag>
-            
-            <tag> notepad++ </tag>
-            
-            <tag> darwin1012 </tag>
-            
-            <tag> VMware Tools </tag>
             
         </tags>
       
@@ -16089,6 +16089,43 @@
     
     
     <entry>
+      <title>小说今天一章写不完了，还是来一篇日更好了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c7fd72d/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c7fd72d/</url>
+      
+        <content type="html"><![CDATA[<p>我从昨天开始写小说，昨天一下子写了四千多字，今天就是写不出来了，眼看都已经快到二十三点四十了，于是就想到我必须要在简书发一篇日更了，一看我也知道没有多少给我的时间了，毕竟这简书的日更不能断啊，就算是来个四五百字的我也要把它补上才行，我什么也不用想了，打开 Word 的文件菜单快速的新建一个文档，我想我这时是真什么都不用想了，想到什么就写什么，再想就真的没有时间了。</p><span id="more"></span><p>小说还没有写好是肯定不能发上去的了，连有些语句都还不通顺，自己都还没有看过一遍，怎么可能发上去呢，小说这篇日更过了后明天接着写。我这时是真的在和时间赛跑，语句不通也没有办法，我是想先发上去再慢慢的修改了。</p><p>说快也不太快，但也不是很慢，一下就两段了，我这不是水文，这只是一篇和时间赛跑的急切之作，时间在一分一秒的过去，我看了下字数也有三百多了，其实现在发上去日更的标准已经达到了，不管了，再写两分钟就发，忙起来那标准什么的我已经记不得了，算了应该够了，就写这么多，不写了，我赶紧发吧。</p><p><strong>发文后的感想：只能说赶得真好，赶上了最后的末班车，还好今天没有掉队。</strong>👌</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Word </tag>
+            
+            <tag> 简书 </tag>
+            
+            <tag> 小说 </tag>
+            
+            <tag> 日更 </tag>
+            
+            <tag> 发文 </tag>
+            
+            <tag> 时间赛跑 </tag>
+            
+            <tag> 明天 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>山村奇侠（一）</title>
       <link href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/db327dc6/"/>
       <url>/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/db327dc6/</url>
@@ -16181,43 +16218,6 @@
     
     
     <entry>
-      <title>小说今天一章写不完了，还是来一篇日更好了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c7fd72d/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c7fd72d/</url>
-      
-        <content type="html"><![CDATA[<p>我从昨天开始写小说，昨天一下子写了四千多字，今天就是写不出来了，眼看都已经快到二十三点四十了，于是就想到我必须要在简书发一篇日更了，一看我也知道没有多少给我的时间了，毕竟这简书的日更不能断啊，就算是来个四五百字的我也要把它补上才行，我什么也不用想了，打开 Word 的文件菜单快速的新建一个文档，我想我这时是真什么都不用想了，想到什么就写什么，再想就真的没有时间了。</p><span id="more"></span><p>小说还没有写好是肯定不能发上去的了，连有些语句都还不通顺，自己都还没有看过一遍，怎么可能发上去呢，小说这篇日更过了后明天接着写。我这时是真的在和时间赛跑，语句不通也没有办法，我是想先发上去再慢慢的修改了。</p><p>说快也不太快，但也不是很慢，一下就两段了，我这不是水文，这只是一篇和时间赛跑的急切之作，时间在一分一秒的过去，我看了下字数也有三百多了，其实现在发上去日更的标准已经达到了，不管了，再写两分钟就发，忙起来那标准什么的我已经记不得了，算了应该够了，就写这么多，不写了，我赶紧发吧。</p><p><strong>发文后的感想：只能说赶得真好，赶上了最后的末班车，还好今天没有掉队。</strong>👌</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Word </tag>
-            
-            <tag> 简书 </tag>
-            
-            <tag> 小说 </tag>
-            
-            <tag> 日更 </tag>
-            
-            <tag> 发文 </tag>
-            
-            <tag> 时间赛跑 </tag>
-            
-            <tag> 明天 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>已经坚持日更 26 天了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f815bf0f/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f815bf0f/</url>
@@ -16251,6 +16251,49 @@
             <tag> 爱上写作 </tag>
             
             <tag> 一幅画 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>弄了下快手直播，结果没有人看，还遇到骗子了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/adcbe78b/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/adcbe78b/</url>
+      
+        <content type="html"><![CDATA[<p>我今天用快手直播了一下游戏直播，结果总共才有 13 个人看过，而不是有 13 个人一起在看，经常看的人都是零，这还不是最惨的，最惨的是居然有骗子，才直播一会我手机就收到了两条验证码。</p><span id="more"></span><p>这个套路其实我早就知道了，所以开游戏直播我肯定不会用手机开的了，如果用手机开那他肯定就会盗我的账号，因为验证码可以在手机屏幕上看到，但是我用的是平板电脑直播游戏，所以就算他知道我手机号了，也看不到我验证码，因为验证码是发到手机上，我直播的是平板电脑的画面。</p><p>估计骗子遇到我这样的也没有办法了，看了半天直播画面上就是没有验证码，骗子估计都会疯掉。不过还是要注意的，如果我不是预先在快手上看到这种套路，那我直接用手机直播游戏可能就会中骗子的招了。</p><p>好像已经是有人已经被这样骗过了，骗子就是用别人的手机号和验证码去登陆，然后开始骗钱，在快手铁定是有人用手机直接直播游戏被骗过，不然也不会有那个案例，所以做游戏直播还是要小心，千万不能用插手机卡的手机直播，那样真的很危险，虽然骗子骗不了我，那是因为我提前知道了这个套路，但是大多数不知道的还是会被骗的。</p><p>所以做游戏直播还是最好用平板电脑或者没有插手机卡的手机，这样才能保证自己钱财安全，要不支付宝微信银行卡上的钱一下没有了那都不知道怎么回事，只要知道手机号和验证码很多平台都是可以登录的，所以还是要千万小心才是。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 套路 </tag>
+            
+            <tag> 平板电脑 </tag>
+            
+            <tag> 快手直播 </tag>
+            
+            <tag> 遇到骗子 </tag>
+            
+            <tag> 游戏直播 </tag>
+            
+            <tag> 验证码 </tag>
+            
+            <tag> 手机卡 </tag>
+            
+            <tag> 钱财安全 </tag>
+            
+            <tag> 登录 </tag>
+            
+            <tag> 千万小心 </tag>
             
         </tags>
       
@@ -16463,11 +16506,11 @@
             
             <tag> 电脑 </tag>
             
-            <tag> windows </tag>
-            
             <tag> 性能 </tag>
             
             <tag> 处理器 </tag>
+            
+            <tag> windows </tag>
             
             <tag> 话语权 </tag>
             
@@ -16537,49 +16580,6 @@
             <tag> 头破血流 </tag>
             
             <tag> 一层伤害 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>弄了下快手直播，结果没有人看，还遇到骗子了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/adcbe78b/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/adcbe78b/</url>
-      
-        <content type="html"><![CDATA[<p>我今天用快手直播了一下游戏直播，结果总共才有 13 个人看过，而不是有 13 个人一起在看，经常看的人都是零，这还不是最惨的，最惨的是居然有骗子，才直播一会我手机就收到了两条验证码。</p><span id="more"></span><p>这个套路其实我早就知道了，所以开游戏直播我肯定不会用手机开的了，如果用手机开那他肯定就会盗我的账号，因为验证码可以在手机屏幕上看到，但是我用的是平板电脑直播游戏，所以就算他知道我手机号了，也看不到我验证码，因为验证码是发到手机上，我直播的是平板电脑的画面。</p><p>估计骗子遇到我这样的也没有办法了，看了半天直播画面上就是没有验证码，骗子估计都会疯掉。不过还是要注意的，如果我不是预先在快手上看到这种套路，那我直接用手机直播游戏可能就会中骗子的招了。</p><p>好像已经是有人已经被这样骗过了，骗子就是用别人的手机号和验证码去登陆，然后开始骗钱，在快手铁定是有人用手机直接直播游戏被骗过，不然也不会有那个案例，所以做游戏直播还是要小心，千万不能用插手机卡的手机直播，那样真的很危险，虽然骗子骗不了我，那是因为我提前知道了这个套路，但是大多数不知道的还是会被骗的。</p><p>所以做游戏直播还是最好用平板电脑或者没有插手机卡的手机，这样才能保证自己钱财安全，要不支付宝微信银行卡上的钱一下没有了那都不知道怎么回事，只要知道手机号和验证码很多平台都是可以登录的，所以还是要千万小心才是。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 套路 </tag>
-            
-            <tag> 平板电脑 </tag>
-            
-            <tag> 快手直播 </tag>
-            
-            <tag> 遇到骗子 </tag>
-            
-            <tag> 游戏直播 </tag>
-            
-            <tag> 验证码 </tag>
-            
-            <tag> 手机卡 </tag>
-            
-            <tag> 钱财安全 </tag>
-            
-            <tag> 登录 </tag>
-            
-            <tag> 千万小心 </tag>
             
         </tags>
       
@@ -17066,67 +17066,6 @@
     
     
     <entry>
-      <title>我昨晚梦到走一条艰难的路，那条路很窄，下面却是万丈深渊</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/62e9a13e/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/62e9a13e/</url>
-      
-        <content type="html"><![CDATA[<p>我昨晚睡得迷迷糊糊之中，我梦到自己坐车去一个邻县游玩，到了那地方后，突然被一个朋友拉着去赶集，说那天正是赶集的日期，现实中我们这里是五天赶一场集市，邻县估计也是这样的吧。那个拉我和他去赶集的朋友我是一点印象都没有，梦里所见到的东西有时就是如此的荒诞和奇怪，他的样子长什么样我都看不清楚，他拉着我去赶集不会是想害我吧。</p><span id="more"></span><p>后来的梦境说明了一切，他想看我能不能坚持，如果不能克服心里的障碍的话我就会在梦境里面掉下悬崖摔死。我在梦境中问他离去赶集的地方有多远？他说：“两公里，不是太远，你们县那边也有人经常来这边赶集。” 到这里我算是清楚一点了，这个集市是在两县的交界处，我不是要去另外的县游玩的吗，怎么兜兜转转又回来了，肯定不是这样的，因为这不符合我一贯做事的逻辑。</p><p>既然那朋友说了只有两公里远，那我和他走路一下子估计就能赶到了。刚开始走的时候那条路虽然狭窄，但是还算很平坦，那是一片绿叶葱葱的树林，路边上是一条河，河水流得很慢，河水看起来很深，就像那片树林一样，绿得让人心生恐惧。大树茂密的叶子挡住了阳光，偶尔有几声鸟叫和几个赶集的行人走过之外再无其他的热闹可看，死一般的沉寂倒是让我的思绪宁静了不少。</p><p>穿过那片树林以后，到了真正的死亡峡谷，两公里的路程一半是前面那片安静的树林，后面的一公里是这条充满死亡气息的悬崖边缘。刚开始走的时候这悬崖边上还算能走一个人，虽然下面已经是弥漫着雾气深不见底，但还不是太让人感觉害怕，只要靠后面走用手抓着岩石凸出来的地方慢慢走，那也还是可以走过去的，真正难走的是走到悬崖的中间以后。走到悬崖中间后路越来越狭窄，甚至走到最中间大概有一段几十米的地方，路就只有手的巴掌那么宽了。走到这里时我已经是大气不敢出了，我不敢站着走了，我站起来走的话我怕被风把我一下就吹下悬崖。虽然那天的天气是风和日丽的，天空无风也无云，蓝蓝天空下的太阳无情的照晒着这悬崖边上的峡谷，白白的雾气袅绕着恐惧的人心，再加上我小时候就有的恐高症，我在太阳的照晒和雾气的弥漫中竟开始头晕了。</p><p>前方万丈悬崖深渊的恐惧令我不敢快步前进，我只能斜着身体，抓着岩壁上岩石突出的地方慢慢的向前爬行着，就这几十米的距离也不知道我爬行了多久，这可能是我这一生中走过最艰难的路了。从早上的天空中一缕晨曦走进树林到走出这几十米的悬崖已经是快到日落西去的下午了，走出这几十米的艰险历程后面的路也就越走越宽了。没有用半个钟也就走到集市的街头了，走到街头的时候我回头望了望我这一路辛苦走过来的艰险之路，只看到一片白白的雾气笼罩着整个峡谷，犹如仙境一般，在雾气的笼罩下根本就看不到悬崖边上的小路。跟着我身后走硬要拉我来赶集的那位朋友也失去了踪影，我想他要不就是掉下悬崖摔死了，要不就是自己一个人悄悄回去了，莫不是他就成仙了，鬼知道他的，我跟他又不熟，还把我害得那么惨差点丢掉性命。</p><p>走到这街头的时候我已经是满脸和满身被石头刮伤的伤痕，街头的当地人看着我说小伙子你真勇敢，他们说能从那悬崖边上的小路走上街头的不多，每个月都有不少人来赶集从那悬崖边上的小路掉下峡谷摔死。我想到此我感觉我还是幸运的，我远远看着那弥漫着白白雾气从未散去过的峡谷，脸上和身上的汗也渐渐干了，伤口也没有那么痛了。</p><p>望着那如仙气袅绕的峡谷之上，我感觉身体也渐渐凉快舒畅了很多。渐渐的我从梦中醒来，原来是天亮了清晨的气温很凉快，原来这一切都只是我的梦幻，梦醒后终归现实，直到现在我的人生中还没有这样的经历。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 情感美文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 梦境 </tag>
-            
-            <tag> 迷迷糊糊 </tag>
-            
-            <tag> 奇怪 </tag>
-            
-            <tag> 昨晚 </tag>
-            
-            <tag> 艰难 </tag>
-            
-            <tag> 路 </tag>
-            
-            <tag> 万丈深渊 </tag>
-            
-            <tag> 邻县游玩 </tag>
-            
-            <tag> 赶集 </tag>
-            
-            <tag> 荒诞 </tag>
-            
-            <tag> 交界处 </tag>
-            
-            <tag> 绿叶葱葱 </tag>
-            
-            <tag> 死亡峡谷 </tag>
-            
-            <tag> 弥漫 </tag>
-            
-            <tag> 快步前进 </tag>
-            
-            <tag> 一缕晨曦 </tag>
-            
-            <tag> 成仙 </tag>
-            
-            <tag> 悬崖 </tag>
-            
-            <tag> 梦幻 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>我的 mini 小主机算是组装完成了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dcfeae6e/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dcfeae6e/</url>
@@ -17186,6 +17125,67 @@
             <tag> 机械硬盘 </tag>
             
             <tag> 爆满 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我昨晚梦到走一条艰难的路，那条路很窄，下面却是万丈深渊</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/62e9a13e/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/62e9a13e/</url>
+      
+        <content type="html"><![CDATA[<p>我昨晚睡得迷迷糊糊之中，我梦到自己坐车去一个邻县游玩，到了那地方后，突然被一个朋友拉着去赶集，说那天正是赶集的日期，现实中我们这里是五天赶一场集市，邻县估计也是这样的吧。那个拉我和他去赶集的朋友我是一点印象都没有，梦里所见到的东西有时就是如此的荒诞和奇怪，他的样子长什么样我都看不清楚，他拉着我去赶集不会是想害我吧。</p><span id="more"></span><p>后来的梦境说明了一切，他想看我能不能坚持，如果不能克服心里的障碍的话我就会在梦境里面掉下悬崖摔死。我在梦境中问他离去赶集的地方有多远？他说：“两公里，不是太远，你们县那边也有人经常来这边赶集。” 到这里我算是清楚一点了，这个集市是在两县的交界处，我不是要去另外的县游玩的吗，怎么兜兜转转又回来了，肯定不是这样的，因为这不符合我一贯做事的逻辑。</p><p>既然那朋友说了只有两公里远，那我和他走路一下子估计就能赶到了。刚开始走的时候那条路虽然狭窄，但是还算很平坦，那是一片绿叶葱葱的树林，路边上是一条河，河水流得很慢，河水看起来很深，就像那片树林一样，绿得让人心生恐惧。大树茂密的叶子挡住了阳光，偶尔有几声鸟叫和几个赶集的行人走过之外再无其他的热闹可看，死一般的沉寂倒是让我的思绪宁静了不少。</p><p>穿过那片树林以后，到了真正的死亡峡谷，两公里的路程一半是前面那片安静的树林，后面的一公里是这条充满死亡气息的悬崖边缘。刚开始走的时候这悬崖边上还算能走一个人，虽然下面已经是弥漫着雾气深不见底，但还不是太让人感觉害怕，只要靠后面走用手抓着岩石凸出来的地方慢慢走，那也还是可以走过去的，真正难走的是走到悬崖的中间以后。走到悬崖中间后路越来越狭窄，甚至走到最中间大概有一段几十米的地方，路就只有手的巴掌那么宽了。走到这里时我已经是大气不敢出了，我不敢站着走了，我站起来走的话我怕被风把我一下就吹下悬崖。虽然那天的天气是风和日丽的，天空无风也无云，蓝蓝天空下的太阳无情的照晒着这悬崖边上的峡谷，白白的雾气袅绕着恐惧的人心，再加上我小时候就有的恐高症，我在太阳的照晒和雾气的弥漫中竟开始头晕了。</p><p>前方万丈悬崖深渊的恐惧令我不敢快步前进，我只能斜着身体，抓着岩壁上岩石突出的地方慢慢的向前爬行着，就这几十米的距离也不知道我爬行了多久，这可能是我这一生中走过最艰难的路了。从早上的天空中一缕晨曦走进树林到走出这几十米的悬崖已经是快到日落西去的下午了，走出这几十米的艰险历程后面的路也就越走越宽了。没有用半个钟也就走到集市的街头了，走到街头的时候我回头望了望我这一路辛苦走过来的艰险之路，只看到一片白白的雾气笼罩着整个峡谷，犹如仙境一般，在雾气的笼罩下根本就看不到悬崖边上的小路。跟着我身后走硬要拉我来赶集的那位朋友也失去了踪影，我想他要不就是掉下悬崖摔死了，要不就是自己一个人悄悄回去了，莫不是他就成仙了，鬼知道他的，我跟他又不熟，还把我害得那么惨差点丢掉性命。</p><p>走到这街头的时候我已经是满脸和满身被石头刮伤的伤痕，街头的当地人看着我说小伙子你真勇敢，他们说能从那悬崖边上的小路走上街头的不多，每个月都有不少人来赶集从那悬崖边上的小路掉下峡谷摔死。我想到此我感觉我还是幸运的，我远远看着那弥漫着白白雾气从未散去过的峡谷，脸上和身上的汗也渐渐干了，伤口也没有那么痛了。</p><p>望着那如仙气袅绕的峡谷之上，我感觉身体也渐渐凉快舒畅了很多。渐渐的我从梦中醒来，原来是天亮了清晨的气温很凉快，原来这一切都只是我的梦幻，梦醒后终归现实，直到现在我的人生中还没有这样的经历。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 梦境 </tag>
+            
+            <tag> 迷迷糊糊 </tag>
+            
+            <tag> 奇怪 </tag>
+            
+            <tag> 昨晚 </tag>
+            
+            <tag> 艰难 </tag>
+            
+            <tag> 路 </tag>
+            
+            <tag> 万丈深渊 </tag>
+            
+            <tag> 邻县游玩 </tag>
+            
+            <tag> 赶集 </tag>
+            
+            <tag> 荒诞 </tag>
+            
+            <tag> 交界处 </tag>
+            
+            <tag> 绿叶葱葱 </tag>
+            
+            <tag> 死亡峡谷 </tag>
+            
+            <tag> 弥漫 </tag>
+            
+            <tag> 快步前进 </tag>
+            
+            <tag> 一缕晨曦 </tag>
+            
+            <tag> 成仙 </tag>
+            
+            <tag> 悬崖 </tag>
+            
+            <tag> 梦幻 </tag>
             
         </tags>
       
@@ -17608,47 +17608,6 @@
     
     
     <entry>
-      <title>把 Word 换了一个版本结果打不开了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3b95d261/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3b95d261/</url>
-      
-        <content type="html"><![CDATA[<p>之前用的是 Office2021 的预览版，但是激活过期了，然后就想到卸载了换个 2019 版本的试一下，这试一下就害我连写文章的工具都没有了，第一次安装了不是批量版的激活不了，后面又卸载了换了一个批量版的安装，这个倒是自动就激活了，但是期限也只是可以用 60 天，60 天后又会过期。</p><span id="more"></span><p>而且一打开就闪退，终于是打开一次了，但是一看界面和 2021 那个预览版的一比实在看着很晃眼，这个周围都是黑色的，就是中间编辑区那一块是白色，实在真的看着不舒服，2021 的那个是全黑的，写文章看着一点都不刺眼，这个实在用不惯了，等下还是卸载了重新换回那个版本。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Office2021 </tag>
-            
-            <tag> Word </tag>
-            
-            <tag> 卸载 </tag>
-            
-            <tag> 黑色 </tag>
-            
-            <tag> 版本 </tag>
-            
-            <tag> 打不开 </tag>
-            
-            <tag> 2019版 </tag>
-            
-            <tag> 批量版 </tag>
-            
-            <tag> 用不惯 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>抖音上居然有很多人在割韭菜</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d2401c67/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d2401c67/</url>
@@ -17694,6 +17653,47 @@
             <tag> 狮子老虎 </tag>
             
             <tag> 干涉 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>把 Word 换了一个版本结果打不开了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3b95d261/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3b95d261/</url>
+      
+        <content type="html"><![CDATA[<p>之前用的是 Office2021 的预览版，但是激活过期了，然后就想到卸载了换个 2019 版本的试一下，这试一下就害我连写文章的工具都没有了，第一次安装了不是批量版的激活不了，后面又卸载了换了一个批量版的安装，这个倒是自动就激活了，但是期限也只是可以用 60 天，60 天后又会过期。</p><span id="more"></span><p>而且一打开就闪退，终于是打开一次了，但是一看界面和 2021 那个预览版的一比实在看着很晃眼，这个周围都是黑色的，就是中间编辑区那一块是白色，实在真的看着不舒服，2021 的那个是全黑的，写文章看着一点都不刺眼，这个实在用不惯了，等下还是卸载了重新换回那个版本。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Office2021 </tag>
+            
+            <tag> Word </tag>
+            
+            <tag> 卸载 </tag>
+            
+            <tag> 黑色 </tag>
+            
+            <tag> 版本 </tag>
+            
+            <tag> 打不开 </tag>
+            
+            <tag> 2019版 </tag>
+            
+            <tag> 批量版 </tag>
+            
+            <tag> 用不惯 </tag>
             
         </tags>
       
@@ -19725,9 +19725,9 @@
             
             <tag> 考试 </tag>
             
-            <tag> 虚拟机 </tag>
-            
             <tag> 苹果手机 </tag>
+            
+            <tag> 虚拟机 </tag>
             
             <tag> ubuntu </tag>
             
@@ -20508,45 +20508,6 @@
     
     
     <entry>
-      <title>看了很多短视频却发觉一点意义都没有</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e7cf401b/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e7cf401b/</url>
-      
-        <content type="html"><![CDATA[<p>有很多短视频就一张照片，然后就用剪辑软件反复的编辑，然后就是一个视频了，这样的视频看了一点用都没有，看了能从其中明白什么道理或者掌握了什么方法了吗，其实都没有。</p><span id="more"></span><p>但是就是这样的垃圾视频却有很多人观看量，明明是人不喜欢的，但是机器喜欢啊，所以机器喜欢去推所以看的人又多了，看的人多了它又会重新又推一波，就是这样反复循环出来的。</p><p>这样的视频看多了人不仅不能从其中学到东西，最后还白白的浪费了时间，还是要多看点记录真实生活的这样好点，这样才会让自己有独立思考的能力。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 意义 </tag>
-            
-            <tag> 短视频 </tag>
-            
-            <tag> 照片 </tag>
-            
-            <tag> 独立思考 </tag>
-            
-            <tag> 剪辑软件 </tag>
-            
-            <tag> 垃圾视频 </tag>
-            
-            <tag> 机器 </tag>
-            
-            <tag> 真实生活 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>看看春天的风景，一起感受生活的乐趣</title>
       <link href="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/65a253cb/"/>
       <url>/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/65a253cb/</url>
@@ -20604,6 +20565,45 @@
             <tag> 希望 </tag>
             
             <tag> 防线 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>看了很多短视频却发觉一点意义都没有</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e7cf401b/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e7cf401b/</url>
+      
+        <content type="html"><![CDATA[<p>有很多短视频就一张照片，然后就用剪辑软件反复的编辑，然后就是一个视频了，这样的视频看了一点用都没有，看了能从其中明白什么道理或者掌握了什么方法了吗，其实都没有。</p><span id="more"></span><p>但是就是这样的垃圾视频却有很多人观看量，明明是人不喜欢的，但是机器喜欢啊，所以机器喜欢去推所以看的人又多了，看的人多了它又会重新又推一波，就是这样反复循环出来的。</p><p>这样的视频看多了人不仅不能从其中学到东西，最后还白白的浪费了时间，还是要多看点记录真实生活的这样好点，这样才会让自己有独立思考的能力。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 意义 </tag>
+            
+            <tag> 短视频 </tag>
+            
+            <tag> 照片 </tag>
+            
+            <tag> 独立思考 </tag>
+            
+            <tag> 剪辑软件 </tag>
+            
+            <tag> 垃圾视频 </tag>
+            
+            <tag> 机器 </tag>
+            
+            <tag> 真实生活 </tag>
             
         </tags>
       
@@ -20699,9 +20699,9 @@
             
             <tag> 更新 </tag>
             
-            <tag> 坚持 </tag>
-            
             <tag> 文章 </tag>
+            
+            <tag> 坚持 </tag>
             
             <tag> 压力 </tag>
             
@@ -21408,9 +21408,9 @@
             
             <tag> next主题 </tag>
             
-            <tag> CNZZ </tag>
-            
             <tag> gitee </tag>
+            
+            <tag> CNZZ </tag>
             
             <tag> 网站 </tag>
             
@@ -22859,6 +22859,49 @@
     
     
     <entry>
+      <title>读《阁楼里的女孩》</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e049a85/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e049a85/</url>
+      
+        <content type="html"><![CDATA[<p>《阁楼里的女孩》这本书由美国作家弗吉尼亚。安德鲁斯所写，故事发生于美国宾州格拉斯通的一个梦幻家庭，故事一开头展现出来的看似就是一个普通的美国中产阶级家庭，随着故事的发展却有着跌宕起伏的情节。</p><span id="more"></span><p>故事由卡西这个故事里的小女孩以亲身讲述自己的遭遇和不幸，卡西她父亲是通用电气公司的一名公关部门的职员，她母亲柯琳是一名家庭主妇。卡西她还有个哥哥，后来她妈妈又生下了一对龙凤双胞胎，所有加她一起就是四兄妹。因为她父亲有很高的收入，所以年少的她们看起来衣食无忧。</p><p>但是一场变故改变了这原有的一切，她父亲在 33 岁生日那天突然出车祸去世了，原本是一家人等着回来给他庆祝生日，可是等来却是警察带来他的死讯。喜事瞬间就变成了丧事，这个变故给了这个家庭不小的打击。</p><p>因为她母亲柯琳从小是出生在一个富裕的庄园主家庭里，所以私奔嫁给她父亲之后没有什么工作技能，更别说要她独自养活四个孩子，而且她家是提前消费的类型，房子和她父亲之前开的汽车都是每个月要还贷才可以维持的，包括家里所有家具都是贷款购买的，每个月如果没有还上就会被债主收回去。</p><p>因为现实的困难，她的母亲能想到的就是回到她外祖父家那里去。因为柯琳和卡西的父亲私奔结婚，她外祖父很生气，所以这个外祖父把柯琳的继承权给取消了。柯琳想要得到她父亲的原谅重新拿回继承权，而一切曲折的遭遇就是来到这个庄园之后开始展开。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 贷款 </tag>
+            
+            <tag> 收入 </tag>
+            
+            <tag> 女孩 </tag>
+            
+            <tag> 阁楼 </tag>
+            
+            <tag> 梦幻家庭 </tag>
+            
+            <tag> 死讯 </tag>
+            
+            <tag> 私奔 </tag>
+            
+            <tag> 庄园 </tag>
+            
+            <tag> 外祖父 </tag>
+            
+            <tag> 继承权 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>读围炉夜话其一有感</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/cdfc97e/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/cdfc97e/</url>
@@ -22947,49 +22990,6 @@
             <tag> 何猷光 </tag>
             
             <tag> 何猷佳 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>读《阁楼里的女孩》</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e049a85/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e049a85/</url>
-      
-        <content type="html"><![CDATA[<p>《阁楼里的女孩》这本书由美国作家弗吉尼亚。安德鲁斯所写，故事发生于美国宾州格拉斯通的一个梦幻家庭，故事一开头展现出来的看似就是一个普通的美国中产阶级家庭，随着故事的发展却有着跌宕起伏的情节。</p><span id="more"></span><p>故事由卡西这个故事里的小女孩以亲身讲述自己的遭遇和不幸，卡西她父亲是通用电气公司的一名公关部门的职员，她母亲柯琳是一名家庭主妇。卡西她还有个哥哥，后来她妈妈又生下了一对龙凤双胞胎，所有加她一起就是四兄妹。因为她父亲有很高的收入，所以年少的她们看起来衣食无忧。</p><p>但是一场变故改变了这原有的一切，她父亲在 33 岁生日那天突然出车祸去世了，原本是一家人等着回来给他庆祝生日，可是等来却是警察带来他的死讯。喜事瞬间就变成了丧事，这个变故给了这个家庭不小的打击。</p><p>因为她母亲柯琳从小是出生在一个富裕的庄园主家庭里，所以私奔嫁给她父亲之后没有什么工作技能，更别说要她独自养活四个孩子，而且她家是提前消费的类型，房子和她父亲之前开的汽车都是每个月要还贷才可以维持的，包括家里所有家具都是贷款购买的，每个月如果没有还上就会被债主收回去。</p><p>因为现实的困难，她的母亲能想到的就是回到她外祖父家那里去。因为柯琳和卡西的父亲私奔结婚，她外祖父很生气，所以这个外祖父把柯琳的继承权给取消了。柯琳想要得到她父亲的原谅重新拿回继承权，而一切曲折的遭遇就是来到这个庄园之后开始展开。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 贷款 </tag>
-            
-            <tag> 收入 </tag>
-            
-            <tag> 女孩 </tag>
-            
-            <tag> 阁楼 </tag>
-            
-            <tag> 梦幻家庭 </tag>
-            
-            <tag> 死讯 </tag>
-            
-            <tag> 私奔 </tag>
-            
-            <tag> 庄园 </tag>
-            
-            <tag> 外祖父 </tag>
-            
-            <tag> 继承权 </tag>
             
         </tags>
       
