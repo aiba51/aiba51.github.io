@@ -85,7 +85,40 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><!-- 谷歌广告代码 -->
+</style><script>
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    
+      if (NexT.utils.hasMobileUA()) return;
+    
+    let time, hidden, visible, title = document.title;
+    let favicon = document.querySelector('link[rel="icon"]');
+    
+      hidden = '';
+      visible = '';
+    
+    let random = t => t[Math.floor(Math.random() * t.length)];
+    const change = () => {
+      if (document.hidden) {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = hidden;
+        
+        clearTimeout(time);
+      } else {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = visible;
+        
+        time = setTimeout(() => {
+          document.title = title;
+        }, 2019);
+      }
+    }
+    document.addEventListener('visibilitychange', change, false);
+  });
+</script>
+<!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -650,13 +683,13 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4cca1562/" rel="prev" title="今天虽然放假也没有出去玩">
-                  <i class="fa fa-chevron-left"></i> 今天虽然放假也没有出去玩
+                <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5317c220/" rel="prev" title="今天还可以做了很多题，明天继续努力">
+                  <i class="fa fa-chevron-left"></i> 今天还可以做了很多题，明天继续努力
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ee08f0ff/" rel="next" title="今天终于是考完试了">
-                  今天终于是考完试了 <i class="fa fa-chevron-right"></i>
+                <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4cca1562/" rel="next" title="今天虽然放假也没有出去玩">
+                  今天虽然放假也没有出去玩 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>

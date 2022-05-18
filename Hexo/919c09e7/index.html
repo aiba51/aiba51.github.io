@@ -41,8 +41,8 @@
 <meta property="article:tag" content="Github">
 <meta property="article:tag" content="Hexo">
 <meta property="article:tag" content="教程">
-<meta property="article:tag" content="写文章">
 <meta property="article:tag" content="网站">
+<meta property="article:tag" content="写文章">
 <meta property="article:tag" content="搭建">
 <meta property="article:tag" content="node.js">
 <meta property="article:tag" content="域名">
@@ -90,7 +90,40 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><!-- 谷歌广告代码 -->
+</style><script>
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    
+      if (NexT.utils.hasMobileUA()) return;
+    
+    let time, hidden, visible, title = document.title;
+    let favicon = document.querySelector('link[rel="icon"]');
+    
+      hidden = '';
+      visible = '';
+    
+    let random = t => t[Math.floor(Math.random() * t.length)];
+    const change = () => {
+      if (document.hidden) {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = hidden;
+        
+        clearTimeout(time);
+      } else {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = visible;
+        
+        time = setTimeout(() => {
+          document.title = title;
+        }, 2019);
+      }
+    }
+    document.addEventListener('visibilitychange', change, false);
+  });
+</script>
+<!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -647,8 +680,8 @@
               <a href="/tags/Github/" rel="tag"><i class="fa fa-tag"></i> Github</a>
               <a href="/tags/Hexo/" rel="tag"><i class="fa fa-tag"></i> Hexo</a>
               <a href="/tags/%E6%95%99%E7%A8%8B/" rel="tag"><i class="fa fa-tag"></i> 教程</a>
-              <a href="/tags/%E5%86%99%E6%96%87%E7%AB%A0/" rel="tag"><i class="fa fa-tag"></i> 写文章</a>
               <a href="/tags/%E7%BD%91%E7%AB%99/" rel="tag"><i class="fa fa-tag"></i> 网站</a>
+              <a href="/tags/%E5%86%99%E6%96%87%E7%AB%A0/" rel="tag"><i class="fa fa-tag"></i> 写文章</a>
               <a href="/tags/%E6%90%AD%E5%BB%BA/" rel="tag"><i class="fa fa-tag"></i> 搭建</a>
               <a href="/tags/node-js/" rel="tag"><i class="fa fa-tag"></i> node.js</a>
               <a href="/tags/%E5%9F%9F%E5%90%8D/" rel="tag"><i class="fa fa-tag"></i> 域名</a>

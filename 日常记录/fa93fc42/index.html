@@ -84,7 +84,40 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><!-- 谷歌广告代码 -->
+</style><script>
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    
+      if (NexT.utils.hasMobileUA()) return;
+    
+    let time, hidden, visible, title = document.title;
+    let favicon = document.querySelector('link[rel="icon"]');
+    
+      hidden = '';
+      visible = '';
+    
+    let random = t => t[Math.floor(Math.random() * t.length)];
+    const change = () => {
+      if (document.hidden) {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = hidden;
+        
+        clearTimeout(time);
+      } else {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = visible;
+        
+        time = setTimeout(() => {
+          document.title = title;
+        }, 2019);
+      }
+    }
+    document.addEventListener('visibilitychange', change, false);
+  });
+</script>
+<!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -648,13 +681,13 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/5261a1a7/" rel="prev" title="明天要去其他地方上班，可能日更计划不能更新了">
-                  <i class="fa fa-chevron-left"></i> 明天要去其他地方上班，可能日更计划不能更新了
+                <a href="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/" rel="prev" title="春夏之交最是适合去杭州看美景的时节">
+                  <i class="fa fa-chevron-left"></i> 春夏之交最是适合去杭州看美景的时节
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/686f809/" rel="next" title="无论买菜和买水果，超市的都比菜场要便宜很多">
-                  无论买菜和买水果，超市的都比菜场要便宜很多 <i class="fa fa-chevron-right"></i>
+                <a href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/5261a1a7/" rel="next" title="明天要去其他地方上班，可能日更计划不能更新了">
+                  明天要去其他地方上班，可能日更计划不能更新了 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>

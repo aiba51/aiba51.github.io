@@ -41,12 +41,12 @@
 <meta property="article:tag" content="游戏">
 <meta property="article:tag" content="软件">
 <meta property="article:tag" content="注册">
-<meta property="article:tag" content="视频剪辑">
 <meta property="article:tag" content="免费玩">
 <meta property="article:tag" content="Steam">
 <meta property="article:tag" content="破解">
 <meta property="article:tag" content="汉化">
 <meta property="article:tag" content="爽歪歪">
+<meta property="article:tag" content="视频剪辑">
 <meta property="article:tag" content="灵界女孩">
 <meta property="article:tag" content="饥荒">
 <meta property="article:tag" content="WeGame">
@@ -88,7 +88,40 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><!-- 谷歌广告代码 -->
+</style><script>
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    
+      if (NexT.utils.hasMobileUA()) return;
+    
+    let time, hidden, visible, title = document.title;
+    let favicon = document.querySelector('link[rel="icon"]');
+    
+      hidden = '';
+      visible = '';
+    
+    let random = t => t[Math.floor(Math.random() * t.length)];
+    const change = () => {
+      if (document.hidden) {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = hidden;
+        
+        clearTimeout(time);
+      } else {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = visible;
+        
+        time = setTimeout(() => {
+          document.title = title;
+        }, 2019);
+      }
+    }
+    document.addEventListener('visibilitychange', change, false);
+  });
+</script>
+<!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -642,12 +675,12 @@
               <a href="/tags/%E6%B8%B8%E6%88%8F/" rel="tag"><i class="fa fa-tag"></i> 游戏</a>
               <a href="/tags/%E8%BD%AF%E4%BB%B6/" rel="tag"><i class="fa fa-tag"></i> 软件</a>
               <a href="/tags/%E6%B3%A8%E5%86%8C/" rel="tag"><i class="fa fa-tag"></i> 注册</a>
-              <a href="/tags/%E8%A7%86%E9%A2%91%E5%89%AA%E8%BE%91/" rel="tag"><i class="fa fa-tag"></i> 视频剪辑</a>
               <a href="/tags/%E5%85%8D%E8%B4%B9%E7%8E%A9/" rel="tag"><i class="fa fa-tag"></i> 免费玩</a>
               <a href="/tags/Steam/" rel="tag"><i class="fa fa-tag"></i> Steam</a>
               <a href="/tags/%E7%A0%B4%E8%A7%A3/" rel="tag"><i class="fa fa-tag"></i> 破解</a>
               <a href="/tags/%E6%B1%89%E5%8C%96/" rel="tag"><i class="fa fa-tag"></i> 汉化</a>
               <a href="/tags/%E7%88%BD%E6%AD%AA%E6%AD%AA/" rel="tag"><i class="fa fa-tag"></i> 爽歪歪</a>
+              <a href="/tags/%E8%A7%86%E9%A2%91%E5%89%AA%E8%BE%91/" rel="tag"><i class="fa fa-tag"></i> 视频剪辑</a>
               <a href="/tags/%E7%81%B5%E7%95%8C%E5%A5%B3%E5%AD%A9/" rel="tag"><i class="fa fa-tag"></i> 灵界女孩</a>
               <a href="/tags/%E9%A5%A5%E8%8D%92/" rel="tag"><i class="fa fa-tag"></i> 饥荒</a>
               <a href="/tags/WeGame/" rel="tag"><i class="fa fa-tag"></i> WeGame</a>
@@ -662,8 +695,8 @@
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/aa1d3fd7/" rel="next" title="发现一个好用的视频剪辑软件 iMovie">
-                  发现一个好用的视频剪辑软件 iMovie <i class="fa fa-chevron-right"></i>
+                <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b96cead/" rel="next" title="利用腾讯相册管家和图片来制作抖音和微视等短视频">
+                  利用腾讯相册管家和图片来制作抖音和微视等短视频 <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
           </div>

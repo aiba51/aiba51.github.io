@@ -42,8 +42,8 @@
 <meta property="article:tag" content="问题">
 <meta property="article:tag" content="平台">
 <meta property="article:tag" content="赚钱">
-<meta property="article:tag" content="写文章">
 <meta property="article:tag" content="网站">
+<meta property="article:tag" content="写文章">
 <meta property="article:tag" content="权力">
 <meta property="article:tag" content="博客网站">
 <meta property="article:tag" content="封禁">
@@ -87,7 +87,40 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><!-- 谷歌广告代码 -->
+</style><script>
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    
+      if (NexT.utils.hasMobileUA()) return;
+    
+    let time, hidden, visible, title = document.title;
+    let favicon = document.querySelector('link[rel="icon"]');
+    
+      hidden = '';
+      visible = '';
+    
+    let random = t => t[Math.floor(Math.random() * t.length)];
+    const change = () => {
+      if (document.hidden) {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = hidden;
+        
+        clearTimeout(time);
+      } else {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = visible;
+        
+        time = setTimeout(() => {
+          document.title = title;
+        }, 2019);
+      }
+    }
+    document.addEventListener('visibilitychange', change, false);
+  });
+</script>
+<!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -642,8 +675,8 @@
               <a href="/tags/%E9%97%AE%E9%A2%98/" rel="tag"><i class="fa fa-tag"></i> 问题</a>
               <a href="/tags/%E5%B9%B3%E5%8F%B0/" rel="tag"><i class="fa fa-tag"></i> 平台</a>
               <a href="/tags/%E8%B5%9A%E9%92%B1/" rel="tag"><i class="fa fa-tag"></i> 赚钱</a>
-              <a href="/tags/%E5%86%99%E6%96%87%E7%AB%A0/" rel="tag"><i class="fa fa-tag"></i> 写文章</a>
               <a href="/tags/%E7%BD%91%E7%AB%99/" rel="tag"><i class="fa fa-tag"></i> 网站</a>
+              <a href="/tags/%E5%86%99%E6%96%87%E7%AB%A0/" rel="tag"><i class="fa fa-tag"></i> 写文章</a>
               <a href="/tags/%E6%9D%83%E5%8A%9B/" rel="tag"><i class="fa fa-tag"></i> 权力</a>
               <a href="/tags/%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99/" rel="tag"><i class="fa fa-tag"></i> 博客网站</a>
               <a href="/tags/%E5%B0%81%E7%A6%81/" rel="tag"><i class="fa fa-tag"></i> 封禁</a>

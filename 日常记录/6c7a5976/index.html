@@ -85,7 +85,40 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><!-- 谷歌广告代码 -->
+</style><script>
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    
+      if (NexT.utils.hasMobileUA()) return;
+    
+    let time, hidden, visible, title = document.title;
+    let favicon = document.querySelector('link[rel="icon"]');
+    
+      hidden = '';
+      visible = '';
+    
+    let random = t => t[Math.floor(Math.random() * t.length)];
+    const change = () => {
+      if (document.hidden) {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = hidden;
+        
+        clearTimeout(time);
+      } else {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = visible;
+        
+        time = setTimeout(() => {
+          document.title = title;
+        }, 2019);
+      }
+    }
+    document.addEventListener('visibilitychange', change, false);
+  });
+</script>
+<!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -650,8 +683,8 @@
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/aa1d3fd7/" rel="prev" title="发现一个好用的视频剪辑软件 iMovie">
-                  <i class="fa fa-chevron-left"></i> 发现一个好用的视频剪辑软件 iMovie
+                <a href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b96cead/" rel="prev" title="利用腾讯相册管家和图片来制作抖音和微视等短视频">
+                  <i class="fa fa-chevron-left"></i> 利用腾讯相册管家和图片来制作抖音和微视等短视频
                 </a>
             </div>
             <div class="post-nav-item">

@@ -75,7 +75,40 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><!-- 谷歌广告代码 -->
+</style><script>
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    
+      if (NexT.utils.hasMobileUA()) return;
+    
+    let time, hidden, visible, title = document.title;
+    let favicon = document.querySelector('link[rel="icon"]');
+    
+      hidden = '';
+      visible = '';
+    
+    let random = t => t[Math.floor(Math.random() * t.length)];
+    const change = () => {
+      if (document.hidden) {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = hidden;
+        
+        clearTimeout(time);
+      } else {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = visible;
+        
+        time = setTimeout(() => {
+          document.title = title;
+        }, 2019);
+      }
+    }
+    document.addEventListener('visibilitychange', change, false);
+  });
+</script>
+<!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -450,6 +483,26 @@
       </div>
 
       <div class="post-title">
+          <a class="post-title-link" href="/Hexo/727937ad/" itemprop="url">
+            <span itemprop="name">Hexo 网站配置多个 SSH-Key 一起推送多个远程仓库</span>
+          </a>
+      </div>
+
+      
+    </header>
+  </article>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <div class="post-meta-container">
+        <time itemprop="dateCreated"
+              datetime="2021-05-25T23:06:36+08:00"
+              content="2021-05-25">
+          05-25
+        </time>
+      </div>
+
+      <div class="post-title">
           <a class="post-title-link" href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/62b9cd7b/" itemprop="url">
             <span itemprop="name">Office2021 的这个功能真的是创作者的福利</span>
           </a>
@@ -492,26 +545,6 @@
       <div class="post-title">
           <a class="post-title-link" href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a3573799/" itemprop="url">
             <span itemprop="name">mini 主机的性能和比笔记本电脑比起来还是要强上不少</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-05-25T23:06:36+08:00"
-              content="2021-05-25">
-          05-25
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/2bae8fe6/" itemprop="url">
-            <span itemprop="name">520 只不过是平平常常的一天</span>
           </a>
       </div>
 

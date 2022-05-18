@@ -75,7 +75,40 @@
   display: initial;
   padding: 1px 4px;
 }
-</style><!-- 谷歌广告代码 -->
+</style><script>
+  window.addEventListener('DOMContentLoaded', () => {
+    'use strict';
+    
+      if (NexT.utils.hasMobileUA()) return;
+    
+    let time, hidden, visible, title = document.title;
+    let favicon = document.querySelector('link[rel="icon"]');
+    
+      hidden = '';
+      visible = '';
+    
+    let random = t => t[Math.floor(Math.random() * t.length)];
+    const change = () => {
+      if (document.hidden) {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = hidden;
+        
+        clearTimeout(time);
+      } else {
+        favicon.setAttribute('href', '/images/favicon-32x32-next.png');
+        
+          document.title = visible;
+        
+        time = setTimeout(() => {
+          document.title = title;
+        }, 2019);
+      }
+    }
+    document.addEventListener('visibilitychange', change, false);
+  });
+</script>
+<!-- 谷歌广告代码 -->
 <div>
 	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
 		 crossorigin="anonymous"></script>
@@ -450,26 +483,6 @@
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/adcbe78b/" itemprop="url">
-            <span itemprop="name">弄了下快手直播，结果没有人看，还遇到骗子了</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-05-25T23:06:36+08:00"
-              content="2021-05-25">
-          05-25
-        </time>
-      </div>
-
-      <div class="post-title">
           <a class="post-title-link" href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/92bcb8ff/" itemprop="url">
             <span itemprop="name">当读完一本书时才会感觉有成就感</span>
           </a>
@@ -572,6 +585,26 @@
       <div class="post-title">
           <a class="post-title-link" href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/5182a2b3/" itemprop="url">
             <span itemprop="name">忘记那些虚无缥缈的东西，安心的做好自己</span>
+          </a>
+      </div>
+
+      
+    </header>
+  </article>
+
+  <article itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+      <div class="post-meta-container">
+        <time itemprop="dateCreated"
+              datetime="2021-05-25T23:06:36+08:00"
+              content="2021-05-25">
+          05-25
+        </time>
+      </div>
+
+      <div class="post-title">
+          <a class="post-title-link" href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/adcbe78b/" itemprop="url">
+            <span itemprop="name">弄了下快手直播，结果没有人看，还遇到骗子了</span>
           </a>
       </div>
 
