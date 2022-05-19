@@ -184,7 +184,7 @@
       <link href="/Hexo/910a6a1b/"/>
       <url>/Hexo/910a6a1b/</url>
       
-        <content type="html"><![CDATA[<p><code>theme-next-calendar</code>是一款简洁的日历云插件，可以在日历上显示提交标记，由于原项目因为已经几年没有更新了，我拉取原项目作了几处修改，以适配新版的Next主题。</p><span id="more"></span><center><p>效果如图所示：</p></center><p><img data-src="/Hexo/910a6a1b/%E6%97%A5%E5%8E%86%E4%BA%91%E6%95%88%E6%9E%9C%E5%9B%BE.png" alt="日历云效果图"></p><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ol><li>首先安装hexo插件</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install aiba51/theme-next-calendar</span><br></pre></td></tr></table></figure><ol start="2"><li>在next主题配置文件<code>_config.yml</code>配置<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">CloudCalendar:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line">  <span class="attr">single:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">root:</span> <span class="string">/calendar/</span></span><br><span class="line">  <span class="attr">calendarCdn:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js</span></span><br><span class="line">  <span class="attr">langCdn:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js</span></span><br><span class="line">  <span class="comment">#disableSidebar: false</span></span><br></pre></td></tr></table></figure></li></ol><h3 id="渲染日历"><a href="#渲染日历" class="headerlink" title="渲染日历"></a>渲染日历</h3><p>默认是在边栏中渲染, 当然也可以在任何位置显示, 只要<code>disableSidebar</code>禁用，并添加<code>sidebar.swig</code>中的代码至你希望的位置</p><h3 id="自定义日历颜色"><a href="#自定义日历颜色" class="headerlink" title="自定义日历颜色"></a>自定义日历颜色</h3><p>日历插件内各元素的颜色都是可定制的, 可以通过添加自定义样式覆盖<code>calendar.styl</code>中的定义来达到更好的效果.</p><h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>提取自<code>Landscape-F</code>主题, 修改后适配theme-next</p><h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><p>为了适配新版的Next主题，作了几处修改：</p><ol><li><code>calendar.swig</code>修改为<code>calendar.njk</code>，并且将里面的<code>&#123;% if theme.CloudCalendar.enable %&#125;&#123;% endif %&#125;</code>标签修改为<code>&lt;div&gt;&lt;/div&gt;</code>。</li><li>将<code>sidebar.swig</code>修改为<code>sidebar.njk</code>,里面的文件保持不变。</li><li>两个<code>.swig</code>已经修改为<code>.njk</code>，自然<code>index.js</code>里面的路径也要修改，修改如下：<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> <span class="type">path</span>.<span class="keyword">join</span>(__dirname ,<span class="string">&#x27;sidebar.njk&#x27;</span>)</span><br><span class="line"><span class="type">path</span>.<span class="keyword">join</span>(__dirname ,<span class="string">&#x27;calendar.njk&#x27;</span>)</span><br></pre></td></tr></table></figure></li></ol><p>Next-8.11.0版本实测可用。</p>]]></content>
+        <content type="html"><![CDATA[<p><code>theme-next-calendar</code>是一款简洁的日历云插件，可以在日历上显示提交标记，由于原项目因为已经几年没有更新了，我拉取原项目作了几处修改，以适配新版的Next主题。</p><span id="more"></span><center><p>效果如图所示：</p></center><p><img data-src="/Hexo/910a6a1b/%E6%97%A5%E5%8E%86%E4%BA%91%E6%95%88%E6%9E%9C%E5%9B%BE.png" alt="日历云效果图"></p><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ol><li>首先安装hexo插件</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install aiba51/theme-next-calendar</span><br></pre></td></tr></table></figure><ol start="2"><li>在next主题配置文件<code>_config.yml</code>配置<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">CloudCalendar:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line">  <span class="attr">single:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">root:</span> <span class="string">/calendar/</span></span><br><span class="line">  <span class="attr">calendarCdn:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js</span></span><br><span class="line">  <span class="attr">langCdn:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js</span></span><br><span class="line">  <span class="comment">#disableSidebar: false</span></span><br></pre></td></tr></table></figure></li></ol><h3 id="渲染日历"><a href="#渲染日历" class="headerlink" title="渲染日历"></a>渲染日历</h3><p>默认是在边栏中渲染, 当然也可以在任何位置显示, 只要<code>disableSidebar</code>禁用，并添加<code>sidebar.njk</code>中的代码至你希望的位置</p><h3 id="自定义日历颜色"><a href="#自定义日历颜色" class="headerlink" title="自定义日历颜色"></a>自定义日历颜色</h3><p>日历插件内各元素的颜色都是可定制的, 可以通过添加自定义样式覆盖<code>calendar.styl</code>中的定义来达到更好的效果.</p><h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>提取自<code>Landscape-F</code>主题, 修改后适配theme-next</p><h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><p>为了适配新版的Next主题，作了几处修改：</p><ol><li><code>calendar.swig</code>修改为<code>calendar.njk</code>，并且将里面的<code>&#123;% if theme.CloudCalendar.enable %&#125;&#123;% endif %&#125;</code>标签修改为<code>&lt;div&gt;&lt;/div&gt;</code>。</li><li>将<code>sidebar.swig</code>修改为<code>sidebar.njk</code>,里面的文件保持不变。</li><li>两个<code>.swig</code>已经修改为<code>.njk</code>，自然<code>index.js</code>里面的路径也要修改，修改如下：<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> <span class="type">path</span>.<span class="keyword">join</span>(__dirname ,<span class="string">&#x27;sidebar.njk&#x27;</span>)</span><br><span class="line"><span class="type">path</span>.<span class="keyword">join</span>(__dirname ,<span class="string">&#x27;calendar.njk&#x27;</span>)</span><br></pre></td></tr></table></figure></li></ol><p>Next-8.11.0版本实测可用。</p>]]></content>
       
       
       <categories>
@@ -439,6 +439,8 @@
       
         <tags>
             
+            <tag> 泡面 </tag>
+            
             <tag> 夜晚 </tag>
             
             <tag> 回家路 </tag>
@@ -466,8 +468,6 @@
             <tag> 候车大厅 </tag>
             
             <tag> 消费 </tag>
-            
-            <tag> 泡面 </tag>
             
             <tag> 大屏幕 </tag>
             
@@ -514,9 +514,13 @@
             
             <tag> 结婚 </tag>
             
-            <tag> 元旦过后 </tag>
+            <tag> 试卷 </tag>
+            
+            <tag> 辞工 </tag>
             
             <tag> 新年 </tag>
+            
+            <tag> 元旦过后 </tag>
             
             <tag> 以今怀旧 </tag>
             
@@ -538,8 +542,6 @@
             
             <tag> 遮阳伞 </tag>
             
-            <tag> 试卷 </tag>
-            
             <tag> 大专学历 </tag>
             
             <tag> 生产流程 </tag>
@@ -551,8 +553,6 @@
             <tag> 现实生活 </tag>
             
             <tag> 创业 </tag>
-            
-            <tag> 辞工 </tag>
             
             <tag> 雀斑 </tag>
             
@@ -815,9 +815,9 @@
             
             <tag> 思想 </tag>
             
-            <tag> 睡不着 </tag>
-            
             <tag> 看书 </tag>
+            
+            <tag> 睡不着 </tag>
             
             <tag> 弱点 </tag>
             
@@ -1084,8 +1084,6 @@
             
             <tag> 表达 </tag>
             
-            <tag> 新年 </tag>
-            
             <tag> 春天 </tag>
             
             <tag> 寒冷 </tag>
@@ -1093,6 +1091,8 @@
             <tag> 温暖 </tag>
             
             <tag> 游玩 </tag>
+            
+            <tag> 新年 </tag>
             
             <tag> 清晨 </tag>
             
@@ -1694,8 +1694,6 @@
             
             <tag> 复习 </tag>
             
-            <tag> 试卷 </tag>
-            
             <tag> 自习 </tag>
             
             <tag> 自考 </tag>
@@ -1719,6 +1717,8 @@
             <tag> 拍照 </tag>
             
             <tag> 充分 </tag>
+            
+            <tag> 试卷 </tag>
             
             <tag> 漫长 </tag>
             
@@ -4104,11 +4104,9 @@
       
         <tags>
             
-            <tag> 中山 </tag>
+            <tag> 毕节 </tag>
             
             <tag> 珠海 </tag>
-            
-            <tag> 毕节 </tag>
             
             <tag> 坐车 </tag>
             
@@ -4121,6 +4119,8 @@
             <tag> 刷二维码 </tag>
             
             <tag> 广州 </tag>
+            
+            <tag> 中山 </tag>
             
         </tags>
       
@@ -4718,9 +4718,9 @@
       
         <tags>
             
-            <tag> 会员 </tag>
-            
             <tag> 电影 </tag>
+            
+            <tag> 会员 </tag>
             
             <tag> iPad </tag>
             
@@ -5570,9 +5570,9 @@
       
         <tags>
             
-            <tag> 坚持 </tag>
-            
             <tag> 文章 </tag>
+            
+            <tag> 坚持 </tag>
             
             <tag> 连续更新 </tag>
             
@@ -6075,9 +6075,9 @@
             
             <tag> 海边 </tag>
             
-            <tag> 中山 </tag>
-            
             <tag> 珠海 </tag>
+            
+            <tag> 中山 </tag>
             
             <tag> 不认床 </tag>
             
@@ -6106,9 +6106,9 @@
       
         <tags>
             
-            <tag> 中山 </tag>
-            
             <tag> 珠海 </tag>
+            
+            <tag> 中山 </tag>
             
             <tag> 浪费 </tag>
             
@@ -6703,9 +6703,9 @@
       
         <tags>
             
-            <tag> 坚持 </tag>
-            
             <tag> 思维 </tag>
+            
+            <tag> 坚持 </tag>
             
             <tag> 原因 </tag>
             
@@ -6913,8 +6913,6 @@
             
             <tag> 更新 </tag>
             
-            <tag> 辞工 </tag>
-            
             <tag> 写文章 </tag>
             
             <tag> 锡粉 </tag>
@@ -6922,6 +6920,8 @@
             <tag> 满两个月 </tag>
             
             <tag> 焊接 </tag>
+            
+            <tag> 辞工 </tag>
             
         </tags>
       
@@ -8491,13 +8491,13 @@
       
         <tags>
             
-            <tag> 泡面 </tag>
-            
             <tag> 2020 </tag>
             
             <tag> 一开年 </tag>
             
             <tag> 委托 </tag>
+            
+            <tag> 泡面 </tag>
             
             <tag> 感染病毒 </tag>
             
@@ -8594,11 +8594,11 @@
       
         <tags>
             
-            <tag> 上夜班 </tag>
-            
             <tag> 太累 </tag>
             
             <tag> 看书 </tag>
+            
+            <tag> 上夜班 </tag>
             
             <tag> 躺在床上 </tag>
             
@@ -8635,9 +8635,9 @@
       
         <tags>
             
-            <tag> 愉悦 </tag>
-            
             <tag> 学习 </tag>
+            
+            <tag> 愉悦 </tag>
             
             <tag> 喜欢 </tag>
             
@@ -9098,9 +9098,9 @@
       
         <tags>
             
-            <tag> 复活卡 </tag>
-            
             <tag> 坚持更新 </tag>
+            
+            <tag> 复活卡 </tag>
             
             <tag> 星期天 </tag>
             
@@ -9973,47 +9973,6 @@
     
     
     <entry>
-      <title>Hexo换电脑迁移</title>
-      <link href="/Hexo/cf1c7373/"/>
-      <url>/Hexo/cf1c7373/</url>
-      
-        <content type="html"><![CDATA[<p>因为自己组装好了一台mini主机了，所以就想把以前的旧电脑上的Hexo网站的文件复制到新电脑上，这里我用的是换到移动硬盘里，因为这样更新应该是比直接放在电脑的硬盘里面要好一些，毕竟移动硬盘只要在其他电脑安装了那几个程序那插上移动硬盘也是可以照样接着更新。</p><span id="more"></span><p>这个方法也很简单，就是先在新电脑上安装Node.js和Git，然后再用Git安装Hexo，安装好以后初始化到要放站点文件的移动硬盘盘符。</p><p>新电脑弄好了就开始从旧电脑复制了，这里旧电脑上先要升级一下Hexo版本和插件，主题不用升级，升级完成以后复制整个站点文件到移动硬盘刚在新电脑上安装初始化的那个文件夹，同名文件夹复制过来覆盖就可以了，比如我这里旧电脑上的网站文件的路径是&#x2F;d&#x2F;blog，但是我移动硬盘在新电脑里也刚好有个D盘，所以这里我就不用改了，就直接复制旧站点的整个blog文件夹来覆盖新建的这个就可以了。</p><p>复制完了就把移动硬盘插到新电脑上，切换到网站的根目录，然后用hexo v检查一下版本，能出现版本就说明已经迁移成功了，我这里已经是成功了并且Hexo的版本是我刚在旧电脑上更新的5.30版本，这个是目前最新的版本。</p><p>本地预览也完全没有问题，唯一不足的缺点就是以前发布的文章全部是按今天发布的来显示了，这个也没有什么好的解决办法，也只能是这样了，发这一篇文章上去就看线上的效果如何了。这里不建议一下就删除旧电脑上的站点文件，如果不行还可以从那里恢复，只要新增加的文章不是太多还是可以同步一下的。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-            <tag> 路径 </tag>
-            
-            <tag> 迁移 </tag>
-            
-            <tag> 换电脑 </tag>
-            
-            <tag> mini主机 </tag>
-            
-            <tag> 移动硬盘 </tag>
-            
-            <tag> 安装Node.js </tag>
-            
-            <tag> Git </tag>
-            
-            <tag> 效果 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hexo推送失败的问题解决</title>
       <link href="/Hexo/5cc57a7a/"/>
       <url>/Hexo/5cc57a7a/</url>
@@ -10033,8 +9992,6 @@
             <tag> Github </tag>
             
             <tag> Hexo </tag>
-            
-            <tag> Git </tag>
             
             <tag> 推送失败 </tag>
             
@@ -10058,6 +10015,8 @@
             
             <tag> 更新推送 </tag>
             
+            <tag> Git </tag>
+            
             <tag> QQ文件夹 </tag>
             
             <tag> 惊喜 </tag>
@@ -10065,6 +10024,47 @@
             <tag> 迅雷下载 </tag>
             
             <tag> 巨无霸 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo换电脑迁移</title>
+      <link href="/Hexo/cf1c7373/"/>
+      <url>/Hexo/cf1c7373/</url>
+      
+        <content type="html"><![CDATA[<p>因为自己组装好了一台mini主机了，所以就想把以前的旧电脑上的Hexo网站的文件复制到新电脑上，这里我用的是换到移动硬盘里，因为这样更新应该是比直接放在电脑的硬盘里面要好一些，毕竟移动硬盘只要在其他电脑安装了那几个程序那插上移动硬盘也是可以照样接着更新。</p><span id="more"></span><p>这个方法也很简单，就是先在新电脑上安装Node.js和Git，然后再用Git安装Hexo，安装好以后初始化到要放站点文件的移动硬盘盘符。</p><p>新电脑弄好了就开始从旧电脑复制了，这里旧电脑上先要升级一下Hexo版本和插件，主题不用升级，升级完成以后复制整个站点文件到移动硬盘刚在新电脑上安装初始化的那个文件夹，同名文件夹复制过来覆盖就可以了，比如我这里旧电脑上的网站文件的路径是&#x2F;d&#x2F;blog，但是我移动硬盘在新电脑里也刚好有个D盘，所以这里我就不用改了，就直接复制旧站点的整个blog文件夹来覆盖新建的这个就可以了。</p><p>复制完了就把移动硬盘插到新电脑上，切换到网站的根目录，然后用hexo v检查一下版本，能出现版本就说明已经迁移成功了，我这里已经是成功了并且Hexo的版本是我刚在旧电脑上更新的5.30版本，这个是目前最新的版本。</p><p>本地预览也完全没有问题，唯一不足的缺点就是以前发布的文章全部是按今天发布的来显示了，这个也没有什么好的解决办法，也只能是这样了，发这一篇文章上去就看线上的效果如何了。这里不建议一下就删除旧电脑上的站点文件，如果不行还可以从那里恢复，只要新增加的文章不是太多还是可以同步一下的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 路径 </tag>
+            
+            <tag> 迁移 </tag>
+            
+            <tag> Git </tag>
+            
+            <tag> 换电脑 </tag>
+            
+            <tag> mini主机 </tag>
+            
+            <tag> 移动硬盘 </tag>
+            
+            <tag> 安装Node.js </tag>
+            
+            <tag> 效果 </tag>
             
         </tags>
       
@@ -10786,6 +10786,45 @@
     
     
     <entry>
+      <title>不想写关键是还不知道写什么了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2e384f7e/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2e384f7e/</url>
+      
+        <content type="html"><![CDATA[<p>真的有时候感觉写100多个字都很难，关键是自己一时之间找不到写的方向了。这个时候感觉要写什么都很困难，越是感觉越急越是想不起来自己该写什么。</p><span id="more"></span><p>真的就是这样感觉很难，但是又不得不逼自己写一点，就算想不起来也得写。想不起来写什么那就漫无目的写了，反正都是写作，写作不一定是要有一个目标才去写的，而是在写的过程中慢慢的发现自己到底该写的是什么。</p><p>写作本来就是用来记录生活的一种工具，千万不要把写作想得太过于高大上了，就是用文字来记录事件而已，自己想到的写下来就是为了把这个想法记录下来，不让以后自己突然就搞忘记了，写作也就是这么简单随意。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 文字 </tag>
+            
+            <tag> 想法 </tag>
+            
+            <tag> 不想写 </tag>
+            
+            <tag> 写什么 </tag>
+            
+            <tag> 方向 </tag>
+            
+            <tag> 写作 </tag>
+            
+            <tag> 发现 </tag>
+            
+            <tag> 记录 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>不想写文的心情</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/5ba13093/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/5ba13093/</url>
@@ -10825,45 +10864,6 @@
             <tag> 写作理论 </tag>
             
             <tag> 旁观者 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>不想写关键是还不知道写什么了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2e384f7e/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2e384f7e/</url>
-      
-        <content type="html"><![CDATA[<p>真的有时候感觉写100多个字都很难，关键是自己一时之间找不到写的方向了。这个时候感觉要写什么都很困难，越是感觉越急越是想不起来自己该写什么。</p><span id="more"></span><p>真的就是这样感觉很难，但是又不得不逼自己写一点，就算想不起来也得写。想不起来写什么那就漫无目的写了，反正都是写作，写作不一定是要有一个目标才去写的，而是在写的过程中慢慢的发现自己到底该写的是什么。</p><p>写作本来就是用来记录生活的一种工具，千万不要把写作想得太过于高大上了，就是用文字来记录事件而已，自己想到的写下来就是为了把这个想法记录下来，不让以后自己突然就搞忘记了，写作也就是这么简单随意。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 文字 </tag>
-            
-            <tag> 想法 </tag>
-            
-            <tag> 不想写 </tag>
-            
-            <tag> 写什么 </tag>
-            
-            <tag> 方向 </tag>
-            
-            <tag> 写作 </tag>
-            
-            <tag> 发现 </tag>
-            
-            <tag> 记录 </tag>
             
         </tags>
       
@@ -11098,6 +11098,41 @@
     
     
     <entry>
+      <title>为什么那么多人喜欢刷抖音</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ca952d02/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ca952d02/</url>
+      
+        <content type="html"><![CDATA[<p>我手机已经一年多没有安装过抖音了，我觉得抖音没有什么好看的，为什么那么多会喜欢看呢？</p><span id="more"></span><p>我实在是搞不懂，我要是有时间就看下电影看下书还感觉比较好。</p><p>我喜欢看央视拍的记录片，比如最近开播的《航拍中国第三季》，看下祖国的大美河山，难道不香吗。</p><p>去年看了一部《大国崛起》，看这种记录片还是可以了解不少自己不知道的知识。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 抖音 </tag>
+            
+            <tag> 喜欢看 </tag>
+            
+            <tag> 电影 </tag>
+            
+            <tag> 航拍中国 </tag>
+            
+            <tag> 大国崛起 </tag>
+            
+            <tag> 记录片 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>为什么大数据能杀熟</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5427a335/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5427a335/</url>
@@ -11145,41 +11180,6 @@
             <tag> 货比三家 </tag>
             
             <tag> 垄断 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>为什么那么多人喜欢刷抖音</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ca952d02/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ca952d02/</url>
-      
-        <content type="html"><![CDATA[<p>我手机已经一年多没有安装过抖音了，我觉得抖音没有什么好看的，为什么那么多会喜欢看呢？</p><span id="more"></span><p>我实在是搞不懂，我要是有时间就看下电影看下书还感觉比较好。</p><p>我喜欢看央视拍的记录片，比如最近开播的《航拍中国第三季》，看下祖国的大美河山，难道不香吗。</p><p>去年看了一部《大国崛起》，看这种记录片还是可以了解不少自己不知道的知识。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 抖音 </tag>
-            
-            <tag> 喜欢看 </tag>
-            
-            <tag> 电影 </tag>
-            
-            <tag> 航拍中国 </tag>
-            
-            <tag> 大国崛起 </tag>
-            
-            <tag> 记录片 </tag>
             
         </tags>
       
@@ -12046,6 +12046,49 @@
     
     
     <entry>
+      <title>今天休息没有上班，回了一趟基地</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3d9ddda8/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3d9ddda8/</url>
+      
+        <content type="html"><![CDATA[<p>这是我来到这里第一次回基地，来的时候是坐的面包车来的，来的时候是走的近路，大概只用半个小时吧，坐公交车回去大概花了一个半小时。</p><span id="more"></span><p>我是早上九点开始起床的，然后去楼下买了一包洗衣粉洗了两件衣服，用的手洗，这边没有洗衣机，那种投币微信支付宝支付的也没有，我在基地那边的附近是有的，热天还能这样过，冷天就有点麻烦了。</p><p>洗完衣服后都快十点钟了，然后穿鞋穿上衣服带上公交卡就准备出发了，我感觉都晚了点了。用手机上百度地图查了一下从我这里到基地的公交车，看了下最近还算不远，走路就大概走十多分钟就到了。</p><p>既然不是太远就开始锁上门下楼，用百度地图导航走过去，此时一出门就已经开始很热了，太阳也已经很大了，按着导航走了一段小路就过了一个小桥，对面就是一条很宽的大路。远远看着很宽，其实这条路没有通车，中间被阻断了，路面上的沥青和标识线看上去还是很新，不知道什么原因导致不能c。</p><p>看着这宽敞的路面也没有什么车走过，我的脚步自然是加快了，路边的植物长得很旺盛，茎是紫色的，叶片是绿色的，这我不知道是什么植物，可能是种来绿化公路的吧。此时虽然太阳照晒让我眼睛感到难受，但看到路边的植物绿叶成阴让我的心情也感觉舒畅了很多。</p><p>走了没有多久就走到了公交站台了，先是走到回来下车这个站台，这里公交线路比较奇怪，去的是407是我在先走到的这个站台的对面，回的时候是406就是我先走到的那里。比其他地方确实有点不同，不会坐的可能要坐错。</p><p>走到这里等了很久，大概20分钟车才来，在这里等了很久我已经感觉饿了，因为早上没有吃早餐的原因，我这时本来想去旁边的超市里买点东西吃的，但又怕错过了公交车，其实我刚到这面来的时候就已经来了一辆了，只是我怕坐错，所以就研究了下公交站台上站点名和来往哪个方向，正是因为这样才错过了最早的一辆，所以才会等这么久。</p><p>未完待续，公交车上看到的路边的风景，和我回到基地后自己去超市买菜做了一顿饭吃，还有怎么回来的，这个明天写。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 休息 </tag>
+            
+            <tag> 上班 </tag>
+            
+            <tag> 基地 </tag>
+            
+            <tag> 面包车 </tag>
+            
+            <tag> 近路 </tag>
+            
+            <tag> 公交卡 </tag>
+            
+            <tag> 植物 </tag>
+            
+            <tag> 站台 </tag>
+            
+            <tag> 超市 </tag>
+            
+            <tag> 买菜 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>今天什么也没有做就做了一个短视频</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/42f2ef49/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/42f2ef49/</url>
@@ -12091,49 +12134,6 @@
             <tag> 微视 </tag>
             
             <tag> 视频号 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>今天休息没有上班，回了一趟基地</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3d9ddda8/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3d9ddda8/</url>
-      
-        <content type="html"><![CDATA[<p>这是我来到这里第一次回基地，来的时候是坐的面包车来的，来的时候是走的近路，大概只用半个小时吧，坐公交车回去大概花了一个半小时。</p><span id="more"></span><p>我是早上九点开始起床的，然后去楼下买了一包洗衣粉洗了两件衣服，用的手洗，这边没有洗衣机，那种投币微信支付宝支付的也没有，我在基地那边的附近是有的，热天还能这样过，冷天就有点麻烦了。</p><p>洗完衣服后都快十点钟了，然后穿鞋穿上衣服带上公交卡就准备出发了，我感觉都晚了点了。用手机上百度地图查了一下从我这里到基地的公交车，看了下最近还算不远，走路就大概走十多分钟就到了。</p><p>既然不是太远就开始锁上门下楼，用百度地图导航走过去，此时一出门就已经开始很热了，太阳也已经很大了，按着导航走了一段小路就过了一个小桥，对面就是一条很宽的大路。远远看着很宽，其实这条路没有通车，中间被阻断了，路面上的沥青和标识线看上去还是很新，不知道什么原因导致不能c。</p><p>看着这宽敞的路面也没有什么车走过，我的脚步自然是加快了，路边的植物长得很旺盛，茎是紫色的，叶片是绿色的，这我不知道是什么植物，可能是种来绿化公路的吧。此时虽然太阳照晒让我眼睛感到难受，但看到路边的植物绿叶成阴让我的心情也感觉舒畅了很多。</p><p>走了没有多久就走到了公交站台了，先是走到回来下车这个站台，这里公交线路比较奇怪，去的是407是我在先走到的这个站台的对面，回的时候是406就是我先走到的那里。比其他地方确实有点不同，不会坐的可能要坐错。</p><p>走到这里等了很久，大概20分钟车才来，在这里等了很久我已经感觉饿了，因为早上没有吃早餐的原因，我这时本来想去旁边的超市里买点东西吃的，但又怕错过了公交车，其实我刚到这面来的时候就已经来了一辆了，只是我怕坐错，所以就研究了下公交站台上站点名和来往哪个方向，正是因为这样才错过了最早的一辆，所以才会等这么久。</p><p>未完待续，公交车上看到的路边的风景，和我回到基地后自己去超市买菜做了一顿饭吃，还有怎么回来的，这个明天写。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 休息 </tag>
-            
-            <tag> 上班 </tag>
-            
-            <tag> 基地 </tag>
-            
-            <tag> 面包车 </tag>
-            
-            <tag> 近路 </tag>
-            
-            <tag> 公交卡 </tag>
-            
-            <tag> 植物 </tag>
-            
-            <tag> 站台 </tag>
-            
-            <tag> 超市 </tag>
-            
-            <tag> 买菜 </tag>
             
         </tags>
       
@@ -12728,9 +12728,9 @@
             
             <tag> 更新 </tag>
             
-            <tag> 坚持 </tag>
-            
             <tag> 文章 </tag>
+            
+            <tag> 坚持 </tag>
             
             <tag> 写文 </tag>
             
@@ -13278,9 +13278,9 @@
             
             <tag> 喜欢 </tag>
             
-            <tag> 推广 </tag>
-            
             <tag> 成就感 </tag>
+            
+            <tag> 推广 </tag>
             
             <tag> 收益 </tag>
             
@@ -13347,6 +13347,51 @@
     
     
     <entry>
+      <title>写了20万字终于拿到简书创作者标签了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e56f1718/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e56f1718/</url>
+      
+        <content type="html"><![CDATA[<p>这个我第一次申请就没有通过，可能是那时候的字数还达不到，那时候才写了十多万字，要拿到这个标签除了要字数够，还要每篇文章都质量才行就是每篇文章的字数不能只有一两百字，那样肯定不行，我上一次申请的时候就是属于这样的情况，总的字数不够，每篇文章也才一百多两百个字，所以就没有通过也是正常的。</p><span id="more"></span><p>然后过了一段时间我又第二次申请了，这次我只是想试下能通过就好不能通过就算，毕竟通过或者不通过，有没有这个标签好像对我影响也不大，我还是写我自己的文章就行了，通过了也只是多了一些推荐文章的机会，但是我写文章是只负责写，能写好我就感觉很不错了，有没有人看这件事好像影响不大，就算有很多人看这篇文章也不会有收益啊，来这里本来就是练习写作的，自己感觉自己能写好了，那才是真的学到本事了。</p><p>但是第二次申请就在我不经意之间通过了，真的是有心栽花花不活，无心插柳柳成荫，有时候越不在意的事越有机会成功，看来还真的是这个道理。能够申请成功的原因我也有大概的分析过，可能和我近期的文章质量提高了有关系吧，之前每天都只能写一百多字，然后就不想写了，本来写的一件事是可以把细节写得更丰富的，但是好多时候都是选择一笔带过了，写作看来是真的不能太慌，越是慌张那就什么都写不出来，写一件事只写了一个大概，那别人也看不懂我到底写的是什么了。</p><p>写作有时候感觉就是在凑字数，但是其实也不是，只要把细节写得越细那字数肯定是上来了，这样看起来的凑字数看起来也是很自然的，不自然的就是那种生搬硬套的，那种凑字数的嫌疑看起来就比较明显了。细节描写自然是越细致越好了，把自己能想到的写出来，那字数突破一定限制完全不是问题，那些想不到的也没有必要多花脑筋去想了，想了半天还是一个字都没有写出来，最后自己感觉是越写越困难了，感觉自己怎么写都是不好的，这就会陷入一种思维牢笼了，就是自己的思维怎么跳不出那个圈了，更别说还能想到什么新的创意出来了。</p><p>想要字数多会用文字吹水的能真的不可欠缺，其实每个人都有这种能力，但是这是用文字来吹，就是当然要经常练习了，只有自己写得多了，对文字的逻辑技巧才会运用得熟练起来，用多了感觉自己怎么学会使用的其实都已经忘记了，就像那种武林高手一样的就叫无招胜有招了，飞花草木也能当兵器，只有不断的练习熟练了才会显得游刃有余。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 成功 </tag>
+            
+            <tag> 收益 </tag>
+            
+            <tag> 20万字 </tag>
+            
+            <tag> 简书创作者 </tag>
+            
+            <tag> 标签 </tag>
+            
+            <tag> 申请 </tag>
+            
+            <tag> 一两百字 </tag>
+            
+            <tag> 推荐 </tag>
+            
+            <tag> 花脑筋 </tag>
+            
+            <tag> 限制 </tag>
+            
+            <tag> 困难 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于迅雷推出的永久会员靠谱吗？值不值得购买？</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2ffb55a8/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2ffb55a8/</url>
@@ -13386,51 +13431,6 @@
             <tag> 缓冲速度 </tag>
             
             <tag> 简述 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>写了20万字终于拿到简书创作者标签了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e56f1718/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e56f1718/</url>
-      
-        <content type="html"><![CDATA[<p>这个我第一次申请就没有通过，可能是那时候的字数还达不到，那时候才写了十多万字，要拿到这个标签除了要字数够，还要每篇文章都质量才行就是每篇文章的字数不能只有一两百字，那样肯定不行，我上一次申请的时候就是属于这样的情况，总的字数不够，每篇文章也才一百多两百个字，所以就没有通过也是正常的。</p><span id="more"></span><p>然后过了一段时间我又第二次申请了，这次我只是想试下能通过就好不能通过就算，毕竟通过或者不通过，有没有这个标签好像对我影响也不大，我还是写我自己的文章就行了，通过了也只是多了一些推荐文章的机会，但是我写文章是只负责写，能写好我就感觉很不错了，有没有人看这件事好像影响不大，就算有很多人看这篇文章也不会有收益啊，来这里本来就是练习写作的，自己感觉自己能写好了，那才是真的学到本事了。</p><p>但是第二次申请就在我不经意之间通过了，真的是有心栽花花不活，无心插柳柳成荫，有时候越不在意的事越有机会成功，看来还真的是这个道理。能够申请成功的原因我也有大概的分析过，可能和我近期的文章质量提高了有关系吧，之前每天都只能写一百多字，然后就不想写了，本来写的一件事是可以把细节写得更丰富的，但是好多时候都是选择一笔带过了，写作看来是真的不能太慌，越是慌张那就什么都写不出来，写一件事只写了一个大概，那别人也看不懂我到底写的是什么了。</p><p>写作有时候感觉就是在凑字数，但是其实也不是，只要把细节写得越细那字数肯定是上来了，这样看起来的凑字数看起来也是很自然的，不自然的就是那种生搬硬套的，那种凑字数的嫌疑看起来就比较明显了。细节描写自然是越细致越好了，把自己能想到的写出来，那字数突破一定限制完全不是问题，那些想不到的也没有必要多花脑筋去想了，想了半天还是一个字都没有写出来，最后自己感觉是越写越困难了，感觉自己怎么写都是不好的，这就会陷入一种思维牢笼了，就是自己的思维怎么跳不出那个圈了，更别说还能想到什么新的创意出来了。</p><p>想要字数多会用文字吹水的能真的不可欠缺，其实每个人都有这种能力，但是这是用文字来吹，就是当然要经常练习了，只有自己写得多了，对文字的逻辑技巧才会运用得熟练起来，用多了感觉自己怎么学会使用的其实都已经忘记了，就像那种武林高手一样的就叫无招胜有招了，飞花草木也能当兵器，只有不断的练习熟练了才会显得游刃有余。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 成功 </tag>
-            
-            <tag> 收益 </tag>
-            
-            <tag> 20万字 </tag>
-            
-            <tag> 简书创作者 </tag>
-            
-            <tag> 标签 </tag>
-            
-            <tag> 申请 </tag>
-            
-            <tag> 一两百字 </tag>
-            
-            <tag> 推荐 </tag>
-            
-            <tag> 花脑筋 </tag>
-            
-            <tag> 限制 </tag>
-            
-            <tag> 困难 </tag>
             
         </tags>
       
@@ -13510,6 +13510,55 @@
     
     
     <entry>
+      <title>写作就是记录自己每天的生活点滴</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/301e49fc/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/301e49fc/</url>
+      
+        <content type="html"><![CDATA[<p>一直以来我都是认为写作就是为了记录自己的生活点滴，记录自己的心情的变化，现在我的理解依然就是这样，连自己的事都写不好，怎么还可能去写他人的事，关心他人的事还不如先从关心自己开始，有人一直都活在他人世界里，比关心自己还关心他人的事，就比如那些追星的，别人离婚分手了他还会伤心，不知道这是种什么心态，连自己都没有关心好还关心起他人的这些事来了，这有什么意义，他人的事和自己又会产生什么关联呢。</p><span id="more"></span><p>自己的手中的笔先用来写好自己再说吧，你关心他人去写他人琐碎事，可是他人却从来没有来过你的世界里，关心自己用自己的笔来写自己，总比是去关心他人用自己的笔去写他人强了很多，每个人的精神世界都是一个独立的个体，活好自己才是自己来到这个世界的真正意义所在，没有必要一定要把他人所思所想绑定到自己的身上，那样自己就会真的活得很累，你关心他人的那些琐碎事，可是谁又关心过你自己的事呢，答案是没有，因为你都不关心你自己他人又怎么关心你自己。人活在世上真的没有必要活得那么卑微，记住自己是一个有着思想独立的人，自己的思维方式价值观等不应该被任何人左右，自己有自己的生活方式，不应该活成他人想要的模样，自己做好自己就好没有必要去崇拜他人，自己一生只不过数十年，能活好自己就已经很不错了，再也没有什么其他的精力去花费在无关紧要的人身上。真的没有必要那样，一直活在他人世界里，那样会真的很累，人就应该为自己而活才是不愧这自己短短的一生。</p><p>我笔写我所想，我想的就是别人没有的，这本身就是一种创新了，自己所想的，自己的思想是独一无二的，不要就一直跟着他人的思想一直走，那样自己走着走着就会走入他人的世界，最终害了的还是自己，因为自己就一直活在他人世界里始终没有为自己而活过，如果对自己那怕只有一丝一毫的关心，那自己也会感到很幸福，但是一直都活在他人为自己营造的世界中，这样的活法还有什么值得去谈有幸福可言。</p><p>如果自己的笔都不能用来写自己所想的，那还有什么意义，也许自己现在所想的经过很多年后自己怎么也会记不起来，倒不如自己就将它写下来，在多年以后自己翻开曾经写的那些一字一句，也许会感觉曾经的那份热情不够成熟，当自己经历过生活的很多磨难后，自己才知道自己真正想要的是什么，那些曾经自己写下的美好的字句成为了自己最美好的回忆，自己随着年龄的增加再也不可能再次回到过去，再也写不出那些摆在自己眼前的匆匆岁月，自己也不可能还有曾经的那份心思写出让自己感动的文字。</p><p>多写写自己吧，自己才是自己生活的主导者，多年以后你会为自己这曾经的一份坚持所打动，只有文字才是永久不忘的记忆，除此之外还没有什么能表达自己还能让自己记得更牢固的了，多年过后自己一定会感谢自己当下的这一份坚持的初心是多么的难能可贵。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 世界 </tag>
+            
+            <tag> 写作 </tag>
+            
+            <tag> 心情 </tag>
+            
+            <tag> 幸福 </tag>
+            
+            <tag> 琐碎事 </tag>
+            
+            <tag> 记录自己 </tag>
+            
+            <tag> 生活点滴 </tag>
+            
+            <tag> 关联 </tag>
+            
+            <tag> 价值观 </tag>
+            
+            <tag> 崇拜 </tag>
+            
+            <tag> 热情 </tag>
+            
+            <tag> 感动 </tag>
+            
+            <tag> 难能可贵 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>写作就是每天都坚持写一点点</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/92c11313/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/92c11313/</url>
@@ -13555,55 +13604,6 @@
             <tag> 丰富 </tag>
             
             <tag> 有趣 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>写作就是记录自己每天的生活点滴</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/301e49fc/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/301e49fc/</url>
-      
-        <content type="html"><![CDATA[<p>一直以来我都是认为写作就是为了记录自己的生活点滴，记录自己的心情的变化，现在我的理解依然就是这样，连自己的事都写不好，怎么还可能去写他人的事，关心他人的事还不如先从关心自己开始，有人一直都活在他人世界里，比关心自己还关心他人的事，就比如那些追星的，别人离婚分手了他还会伤心，不知道这是种什么心态，连自己都没有关心好还关心起他人的这些事来了，这有什么意义，他人的事和自己又会产生什么关联呢。</p><span id="more"></span><p>自己的手中的笔先用来写好自己再说吧，你关心他人去写他人琐碎事，可是他人却从来没有来过你的世界里，关心自己用自己的笔来写自己，总比是去关心他人用自己的笔去写他人强了很多，每个人的精神世界都是一个独立的个体，活好自己才是自己来到这个世界的真正意义所在，没有必要一定要把他人所思所想绑定到自己的身上，那样自己就会真的活得很累，你关心他人的那些琐碎事，可是谁又关心过你自己的事呢，答案是没有，因为你都不关心你自己他人又怎么关心你自己。人活在世上真的没有必要活得那么卑微，记住自己是一个有着思想独立的人，自己的思维方式价值观等不应该被任何人左右，自己有自己的生活方式，不应该活成他人想要的模样，自己做好自己就好没有必要去崇拜他人，自己一生只不过数十年，能活好自己就已经很不错了，再也没有什么其他的精力去花费在无关紧要的人身上。真的没有必要那样，一直活在他人世界里，那样会真的很累，人就应该为自己而活才是不愧这自己短短的一生。</p><p>我笔写我所想，我想的就是别人没有的，这本身就是一种创新了，自己所想的，自己的思想是独一无二的，不要就一直跟着他人的思想一直走，那样自己走着走着就会走入他人的世界，最终害了的还是自己，因为自己就一直活在他人世界里始终没有为自己而活过，如果对自己那怕只有一丝一毫的关心，那自己也会感到很幸福，但是一直都活在他人为自己营造的世界中，这样的活法还有什么值得去谈有幸福可言。</p><p>如果自己的笔都不能用来写自己所想的，那还有什么意义，也许自己现在所想的经过很多年后自己怎么也会记不起来，倒不如自己就将它写下来，在多年以后自己翻开曾经写的那些一字一句，也许会感觉曾经的那份热情不够成熟，当自己经历过生活的很多磨难后，自己才知道自己真正想要的是什么，那些曾经自己写下的美好的字句成为了自己最美好的回忆，自己随着年龄的增加再也不可能再次回到过去，再也写不出那些摆在自己眼前的匆匆岁月，自己也不可能还有曾经的那份心思写出让自己感动的文字。</p><p>多写写自己吧，自己才是自己生活的主导者，多年以后你会为自己这曾经的一份坚持所打动，只有文字才是永久不忘的记忆，除此之外还没有什么能表达自己还能让自己记得更牢固的了，多年过后自己一定会感谢自己当下的这一份坚持的初心是多么的难能可贵。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 情感美文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 世界 </tag>
-            
-            <tag> 心情 </tag>
-            
-            <tag> 写作 </tag>
-            
-            <tag> 幸福 </tag>
-            
-            <tag> 琐碎事 </tag>
-            
-            <tag> 记录自己 </tag>
-            
-            <tag> 生活点滴 </tag>
-            
-            <tag> 关联 </tag>
-            
-            <tag> 价值观 </tag>
-            
-            <tag> 崇拜 </tag>
-            
-            <tag> 热情 </tag>
-            
-            <tag> 感动 </tag>
-            
-            <tag> 难能可贵 </tag>
             
         </tags>
       
@@ -14275,6 +14275,37 @@
     
     
     <entry>
+      <title>又不知道该写什么了，开始犯难了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/31ccc028/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/31ccc028/</url>
+      
+        <content type="html"><![CDATA[<p>写着写着就不知道该写些什么了，每到这个时候就会感觉开始犯难了，既然是不知道要想着写什么，那就不用想了，直接打字写就是了，反正想半天也是什么都想不出来，只又边写着边想才能写出来。</p><span id="more"></span><p>如果是一直只停留在一开始要写什么的思维里面，那肯定是什么都写不出来的，写东西只有动笔了才有进一步的思维，一直想但是一直都不知道写什么永远只会停留在第一步，就是想的这个阶段。</p><p>想的东西只有写在纸上，把它写出来才算是有点眉目，如果是只想但是没有动笔写，那怎么感觉都想不出什么东西。在写的过程中自然就会把想的东西慢慢理通顺了，在不知道写什么的时候直接动笔顺便写就是最好的方法。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 写什么 </tag>
+            
+            <tag> 自然 </tag>
+            
+            <tag> 犯难 </tag>
+            
+            <tag> 打字 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>去年办的澳门通行证快过期了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f2d44d2/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f2d44d2/</url>
@@ -14304,37 +14335,6 @@
             <tag> 中国经济 </tag>
             
             <tag> 疫情 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>又不知道该写什么了，开始犯难了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/31ccc028/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/31ccc028/</url>
-      
-        <content type="html"><![CDATA[<p>写着写着就不知道该写些什么了，每到这个时候就会感觉开始犯难了，既然是不知道要想着写什么，那就不用想了，直接打字写就是了，反正想半天也是什么都想不出来，只又边写着边想才能写出来。</p><span id="more"></span><p>如果是一直只停留在一开始要写什么的思维里面，那肯定是什么都写不出来的，写东西只有动笔了才有进一步的思维，一直想但是一直都不知道写什么永远只会停留在第一步，就是想的这个阶段。</p><p>想的东西只有写在纸上，把它写出来才算是有点眉目，如果是只想但是没有动笔写，那怎么感觉都想不出什么东西。在写的过程中自然就会把想的东西慢慢理通顺了，在不知道写什么的时候直接动笔顺便写就是最好的方法。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 写什么 </tag>
-            
-            <tag> 自然 </tag>
-            
-            <tag> 犯难 </tag>
-            
-            <tag> 打字 </tag>
             
         </tags>
       
@@ -14733,43 +14733,6 @@
     
     
     <entry>
-      <title>在win10的虚拟机上安装的黑苹果，分辨率却只有720P</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/497bf4b/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/497bf4b/</url>
-      
-        <content type="html"><![CDATA[<p>一直都在找方法调，不知道怎么弄才可以，1080P的显示器上看着720P的分辨率是感觉真的很不清晰，而且两边还有大黑边。</p><span id="more"></span><p>写完这篇文章还是继续弄下看能不能调，在虚拟机安装苹果的系统是真的很卡，比我安装的win7还卡，如果不是因为有个软件kodi在ipad上安装不了，我也不会想到要安装这个操作系统。</p><p>也许直接安装在电脑上可能效果会好点，但是我的硬盘没有空余的分区了，要格式化一个分区，那我这个分区的文件就没有地方可以放了。</p><p>现在都已经是有两个盘是红色的了，我之前以为硬盘还有10多G就不会变红，其实不是这样，而是低于这个分区的10%就会变红。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> win10 </tag>
-            
-            <tag> 1080P </tag>
-            
-            <tag> 虚拟机 </tag>
-            
-            <tag> 黑苹果 </tag>
-            
-            <tag> 分辨率 </tag>
-            
-            <tag> 苹果 </tag>
-            
-            <tag> 格式化 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>在win10虚拟机上安装黑苹果系统</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/942613cb/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/942613cb/</url>
@@ -14854,6 +14817,43 @@
     
     
     <entry>
+      <title>在win10的虚拟机上安装的黑苹果，分辨率却只有720P</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/497bf4b/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/497bf4b/</url>
+      
+        <content type="html"><![CDATA[<p>一直都在找方法调，不知道怎么弄才可以，1080P的显示器上看着720P的分辨率是感觉真的很不清晰，而且两边还有大黑边。</p><span id="more"></span><p>写完这篇文章还是继续弄下看能不能调，在虚拟机安装苹果的系统是真的很卡，比我安装的win7还卡，如果不是因为有个软件kodi在ipad上安装不了，我也不会想到要安装这个操作系统。</p><p>也许直接安装在电脑上可能效果会好点，但是我的硬盘没有空余的分区了，要格式化一个分区，那我这个分区的文件就没有地方可以放了。</p><p>现在都已经是有两个盘是红色的了，我之前以为硬盘还有10多G就不会变红，其实不是这样，而是低于这个分区的10%就会变红。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> win10 </tag>
+            
+            <tag> 1080P </tag>
+            
+            <tag> 虚拟机 </tag>
+            
+            <tag> 黑苹果 </tag>
+            
+            <tag> 分辨率 </tag>
+            
+            <tag> 苹果 </tag>
+            
+            <tag> 格式化 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>在淘宝上买的那个香茅防蚊虫凝胶一点用都没有</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6cb6ef8a/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6cb6ef8a/</url>
@@ -14887,53 +14887,6 @@
             <tag> 充电 </tag>
             
             <tag> 新人红包 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>在电脑上一边自动刷快手，一边写文章</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/63d8d42c/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/63d8d42c/</url>
-      
-        <content type="html"><![CDATA[<p>原来真的只有这样才能体验出电脑的多功能来了，要是用手机最多只能做一样，用电脑开一个模拟器就相当于在电脑上拥有了一个手机，而且写文章的时候，他是在后台自动刷短视频的，完全对我写文章是一点干扰都没有。</p><span id="more"></span><p>这样用似乎电脑就要比手机智能很多了，说手机可以代替电脑，那是真的不可能的，手机就算用分屏都没有电脑这样舒服，而且手机的屏幕本来就不大，再来一个分屏不是就更小了吗。</p><p>而用电脑和模拟器感觉就不一样了，用来写文章的word界面完全可以把模拟器界面盖住也是可以的，而且短视频也照样在自动刷着，就算我把word开了专注模式，也是丝毫没有影响的。试问如果用手机肯定是做不到这样的，开了分屏还是会影响自己写文章，也不能像在电脑上这样可以进入专注模式。</p><p>进入专注模式写文章突然灵感都要多一点了，因为可以完全的把自己想写的表达出来，而且用电脑打字的速度是要比手机快很多的，自己只要想到就可以立刻打出来，似乎比自己用笔在纸上写的感觉还要快很多。</p><p>思路可以随意放飞，手只管在键盘上敲打就行，想到什么就写什么，而且是立刻就表达出来，这是一种很流畅的感觉，不像有时候思维被干扰了就会出现卡顿的现象。</p><p>正是没有了外物的干扰，自己想的一切都可以很轻松的将它变成文字，也是很轻松的就把它写到电脑上。而电脑后台此时正在刷的短视频，对我是没有任何干扰的。</p><p>因为模拟器声音是被我完全关闭了的，我唯一能听到的就是键盘敲击的声音和电脑风扇的呼呼声，其他再没有别的声音可以打扰我了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 电脑 </tag>
-            
-            <tag> 专注模式 </tag>
-            
-            <tag> 灵感 </tag>
-            
-            <tag> 写文章 </tag>
-            
-            <tag> 刷快手 </tag>
-            
-            <tag> 多功能 </tag>
-            
-            <tag> 干扰 </tag>
-            
-            <tag> 智能 </tag>
-            
-            <tag> word界面 </tag>
-            
-            <tag> 键盘 </tag>
-            
-            <tag> 敲击 </tag>
-            
-            <tag> 电脑风扇 </tag>
             
         </tags>
       
@@ -14983,6 +14936,53 @@
             <tag> 提示升级 </tag>
             
             <tag> 许可证书 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>在电脑上一边自动刷快手，一边写文章</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/63d8d42c/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/63d8d42c/</url>
+      
+        <content type="html"><![CDATA[<p>原来真的只有这样才能体验出电脑的多功能来了，要是用手机最多只能做一样，用电脑开一个模拟器就相当于在电脑上拥有了一个手机，而且写文章的时候，他是在后台自动刷短视频的，完全对我写文章是一点干扰都没有。</p><span id="more"></span><p>这样用似乎电脑就要比手机智能很多了，说手机可以代替电脑，那是真的不可能的，手机就算用分屏都没有电脑这样舒服，而且手机的屏幕本来就不大，再来一个分屏不是就更小了吗。</p><p>而用电脑和模拟器感觉就不一样了，用来写文章的word界面完全可以把模拟器界面盖住也是可以的，而且短视频也照样在自动刷着，就算我把word开了专注模式，也是丝毫没有影响的。试问如果用手机肯定是做不到这样的，开了分屏还是会影响自己写文章，也不能像在电脑上这样可以进入专注模式。</p><p>进入专注模式写文章突然灵感都要多一点了，因为可以完全的把自己想写的表达出来，而且用电脑打字的速度是要比手机快很多的，自己只要想到就可以立刻打出来，似乎比自己用笔在纸上写的感觉还要快很多。</p><p>思路可以随意放飞，手只管在键盘上敲打就行，想到什么就写什么，而且是立刻就表达出来，这是一种很流畅的感觉，不像有时候思维被干扰了就会出现卡顿的现象。</p><p>正是没有了外物的干扰，自己想的一切都可以很轻松的将它变成文字，也是很轻松的就把它写到电脑上。而电脑后台此时正在刷的短视频，对我是没有任何干扰的。</p><p>因为模拟器声音是被我完全关闭了的，我唯一能听到的就是键盘敲击的声音和电脑风扇的呼呼声，其他再没有别的声音可以打扰我了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电脑 </tag>
+            
+            <tag> 专注模式 </tag>
+            
+            <tag> 灵感 </tag>
+            
+            <tag> 写文章 </tag>
+            
+            <tag> 刷快手 </tag>
+            
+            <tag> 多功能 </tag>
+            
+            <tag> 干扰 </tag>
+            
+            <tag> 智能 </tag>
+            
+            <tag> word界面 </tag>
+            
+            <tag> 键盘 </tag>
+            
+            <tag> 敲击 </tag>
+            
+            <tag> 电脑风扇 </tag>
             
         </tags>
       
@@ -15140,61 +15140,6 @@
     
     
     <entry>
-      <title>在贝壳小岛卖出150贝，赚了9块钱</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/302d33ef/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/302d33ef/</url>
-      
-        <content type="html"><![CDATA[<p>这是我第一次用这个平台卖贝，以前都是转换成FTN，但是FTN却不知道怎么变现，现在也不知道怎么转换FTN了，就在网上搜了一下，原来是有一个叫贝壳小岛这个平台可以交易贝。</p><span id="more"></span><p>第一次对这个平台不怎么熟悉，就去别人挂单收的那里卖，价格是才0.059，但是第一单买的人没有付款，过了20多分钟还没有付款，联系简信他说付款了，到底付款有没有，系统肯定是有提示的，付款了我微信要收到钱才行啊，估计是看我是新手，想骗我贝，还以为我不懂就确认收款了。</p><p>这里提醒第一次卖贝的，除非是微信已经收到钱了，否则千万不要点击确认收款，骗子是真的很多，有的拍下就故意不付款，真的付款了系统是会提示确认的，看微信真的收到钱了再点确认收款。</p><p>对方不付款我肯定是取消交易了，取消以后是可以把没有卖出去的贝赎回来的，上面显示多少就赎回多少，加上手续费一起的，我卖150贝，那手续费就是2个，加在一起就是152个。</p><p>赎回以后就可以重新再卖了，第二次我就直接自己发布挂单卖了，而且这样价格还高一点，我看前面的都是0.06，我也发布成0.06一个，比前面的那个别人收的价格高。</p><p>才发布了一下子就有人拍了，但是又是不付款，估计又是一个想骗贝的，真的是不想把这些人的简书上的名字曝光。</p><p>后面又过了20多分钟，估计是他那里取消了，然后就又被人秒拍了，因为这时的价格已经涨到0.061了，而我的价格还没有改还是0.06，秒拍而且一下就收到款了，因为上面没有比我价格更便宜的了，买到真的就是秒赚，这次微信收到钱了，我也点确认收款了。</p><p>虽然卖得便宜了，但是无所谓了，这东西一个时候一个价，当我写完这篇文章的时候，收的人价格已经涨到0.06了，挂单卖的还是0.061，这说明马上收马上卖都是有钱赚的，还有说不定晚上又会涨价，或者明天继续涨价，但是我在乎的是当下，穷到连饭都吃不起，谁还管以后的事。</p><p>很多人可能还不知道怎么卖贝，这里就把卖贝的链接发出来了，我也是找了很久才找到，这个可以说是在简书上写文章变现最快捷的方式，当然想囤贝赚钱的也可以去上面买，毕竟价格都是在上涨，买了只赚不亏。卖贝平台：<span class="exturl" data-url="aHR0cHM6Ly93d3cuYmVpa2Vpc2xhbmQuY29tL2luZGV4Lmh0bWwjLz9yZWY9NDczMjkzZjQxOWNiNDQ2MWE2M2IyYjZhOWVhOTRjNGM=" title="贝壳小岛">贝壳小岛<i class="fa fa-external-link-alt"></i></span></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 简书 </tag>
-            
-            <tag> 手续费 </tag>
-            
-            <tag> 微信 </tag>
-            
-            <tag> 简信 </tag>
-            
-            <tag> 贝壳小岛 </tag>
-            
-            <tag> 150贝 </tag>
-            
-            <tag> 9块钱 </tag>
-            
-            <tag> 平台卖贝 </tag>
-            
-            <tag> 转换成FTN </tag>
-            
-            <tag> 变现 </tag>
-            
-            <tag> 付款 </tag>
-            
-            <tag> 取消交易 </tag>
-            
-            <tag> 发布挂单 </tag>
-            
-            <tag> 故意不付款 </tag>
-            
-            <tag> 想骗贝 </tag>
-            
-            <tag> 有钱赚 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>在迷你主机虚拟机上安装黑苹果系统，体验一下Mac mini的感觉</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29c02f2/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29c02f2/</url>
@@ -15270,9 +15215,9 @@
       
         <tags>
             
-            <tag> 坚持 </tag>
-            
             <tag> 乐趣 </tag>
+            
+            <tag> 坚持 </tag>
             
             <tag> 成功 </tag>
             
@@ -15342,6 +15287,61 @@
             <tag> 命运 </tag>
             
             <tag> 医院 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>在贝壳小岛卖出150贝，赚了9块钱</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/302d33ef/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/302d33ef/</url>
+      
+        <content type="html"><![CDATA[<p>这是我第一次用这个平台卖贝，以前都是转换成FTN，但是FTN却不知道怎么变现，现在也不知道怎么转换FTN了，就在网上搜了一下，原来是有一个叫贝壳小岛这个平台可以交易贝。</p><span id="more"></span><p>第一次对这个平台不怎么熟悉，就去别人挂单收的那里卖，价格是才0.059，但是第一单买的人没有付款，过了20多分钟还没有付款，联系简信他说付款了，到底付款有没有，系统肯定是有提示的，付款了我微信要收到钱才行啊，估计是看我是新手，想骗我贝，还以为我不懂就确认收款了。</p><p>这里提醒第一次卖贝的，除非是微信已经收到钱了，否则千万不要点击确认收款，骗子是真的很多，有的拍下就故意不付款，真的付款了系统是会提示确认的，看微信真的收到钱了再点确认收款。</p><p>对方不付款我肯定是取消交易了，取消以后是可以把没有卖出去的贝赎回来的，上面显示多少就赎回多少，加上手续费一起的，我卖150贝，那手续费就是2个，加在一起就是152个。</p><p>赎回以后就可以重新再卖了，第二次我就直接自己发布挂单卖了，而且这样价格还高一点，我看前面的都是0.06，我也发布成0.06一个，比前面的那个别人收的价格高。</p><p>才发布了一下子就有人拍了，但是又是不付款，估计又是一个想骗贝的，真的是不想把这些人的简书上的名字曝光。</p><p>后面又过了20多分钟，估计是他那里取消了，然后就又被人秒拍了，因为这时的价格已经涨到0.061了，而我的价格还没有改还是0.06，秒拍而且一下就收到款了，因为上面没有比我价格更便宜的了，买到真的就是秒赚，这次微信收到钱了，我也点确认收款了。</p><p>虽然卖得便宜了，但是无所谓了，这东西一个时候一个价，当我写完这篇文章的时候，收的人价格已经涨到0.06了，挂单卖的还是0.061，这说明马上收马上卖都是有钱赚的，还有说不定晚上又会涨价，或者明天继续涨价，但是我在乎的是当下，穷到连饭都吃不起，谁还管以后的事。</p><p>很多人可能还不知道怎么卖贝，这里就把卖贝的链接发出来了，我也是找了很久才找到，这个可以说是在简书上写文章变现最快捷的方式，当然想囤贝赚钱的也可以去上面买，毕竟价格都是在上涨，买了只赚不亏。卖贝平台：<span class="exturl" data-url="aHR0cHM6Ly93d3cuYmVpa2Vpc2xhbmQuY29tL2luZGV4Lmh0bWwjLz9yZWY9NDczMjkzZjQxOWNiNDQ2MWE2M2IyYjZhOWVhOTRjNGM=" title="贝壳小岛">贝壳小岛<i class="fa fa-external-link-alt"></i></span></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 简书 </tag>
+            
+            <tag> 手续费 </tag>
+            
+            <tag> 微信 </tag>
+            
+            <tag> 简信 </tag>
+            
+            <tag> 贝壳小岛 </tag>
+            
+            <tag> 150贝 </tag>
+            
+            <tag> 9块钱 </tag>
+            
+            <tag> 平台卖贝 </tag>
+            
+            <tag> 转换成FTN </tag>
+            
+            <tag> 变现 </tag>
+            
+            <tag> 付款 </tag>
+            
+            <tag> 取消交易 </tag>
+            
+            <tag> 发布挂单 </tag>
+            
+            <tag> 故意不付款 </tag>
+            
+            <tag> 想骗贝 </tag>
+            
+            <tag> 有钱赚 </tag>
             
         </tags>
       
@@ -15631,6 +15631,43 @@
     
     
     <entry>
+      <title>好久没有写了，这段时间有空，随便写点吧</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29b7f30d/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29b7f30d/</url>
+      
+        <content type="html"><![CDATA[<p>最近有一个多星期没有上班了，被公司放假休息，做小时工不好就是这点了，没有事做就让休息了，工资都没有，这个月就上了十多天班，工资才一千多块钱。</p><span id="more"></span><p>现在也就是每天躺在床上玩手机，玩到连饭都不想吃了，什么也不想做，反正就是做什么都不感兴趣。玩游戏玩下又不想玩了，用手机看书最多看100页，看着看着就会睡着了。</p><p>不知道做什么，反正每天都无所事事，以前感觉每天要做的事很多，但是当自己真的有很多空闲时间了，却不知道该做什么了。</p><p>每天都是在迷茫中度过，好像也没有什么解脱的办法，只能是度日如年这样的活着，想到什么就写什么，只有写点文字才能让自己的思想活跃下。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 解脱 </tag>
+            
+            <tag> 放假休息 </tag>
+            
+            <tag> 没有上班 </tag>
+            
+            <tag> 工资 </tag>
+            
+            <tag> 空闲时间 </tag>
+            
+            <tag> 做什么 </tag>
+            
+            <tag> 度日如年 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>好久不看微信了，今天看了下还有新的发现</title>
       <link href="/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/72b33af7/"/>
       <url>/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/72b33af7/</url>
@@ -15672,43 +15709,6 @@
             <tag> 认证 </tag>
             
             <tag> 看热闹 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>好久没有写了，这段时间有空，随便写点吧</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29b7f30d/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29b7f30d/</url>
-      
-        <content type="html"><![CDATA[<p>最近有一个多星期没有上班了，被公司放假休息，做小时工不好就是这点了，没有事做就让休息了，工资都没有，这个月就上了十多天班，工资才一千多块钱。</p><span id="more"></span><p>现在也就是每天躺在床上玩手机，玩到连饭都不想吃了，什么也不想做，反正就是做什么都不感兴趣。玩游戏玩下又不想玩了，用手机看书最多看100页，看着看着就会睡着了。</p><p>不知道做什么，反正每天都无所事事，以前感觉每天要做的事很多，但是当自己真的有很多空闲时间了，却不知道该做什么了。</p><p>每天都是在迷茫中度过，好像也没有什么解脱的办法，只能是度日如年这样的活着，想到什么就写什么，只有写点文字才能让自己的思想活跃下。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 解脱 </tag>
-            
-            <tag> 放假休息 </tag>
-            
-            <tag> 没有上班 </tag>
-            
-            <tag> 工资 </tag>
-            
-            <tag> 空闲时间 </tag>
-            
-            <tag> 做什么 </tag>
-            
-            <tag> 度日如年 </tag>
             
         </tags>
       
@@ -15933,9 +15933,9 @@
             
             <tag> 安卓 </tag>
             
-            <tag> 苹果 </tag>
-            
             <tag> 小视频 </tag>
+            
+            <tag> 苹果 </tag>
             
             <tag> 看片 </tag>
             
@@ -15997,6 +15997,43 @@
             <tag> 雷军签名版 </tag>
             
             <tag> 研发技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>小说今天一章写不完了，还是来一篇日更好了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c7fd72d/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c7fd72d/</url>
+      
+        <content type="html"><![CDATA[<p>我从昨天开始写小说，昨天一下子写了四千多字，今天就是写不出来了，眼看都已经快到二十三点四十了，于是就想到我必须要在简书发一篇日更了，一看我也知道没有多少给我的时间了，毕竟这简书的日更不能断啊，就算是来个四五百字的我也要把它补上才行，我什么也不用想了，打开Word的文件菜单快速的新建一个文档，我想我这时是真什么都不用想了，想到什么就写什么，再想就真的没有时间了。</p><span id="more"></span><p>小说还没有写好是肯定不能发上去的了，连有些语句都还不通顺，自己都还没有看过一遍，怎么可能发上去呢，小说这篇日更过了后明天接着写。我这时是真的在和时间赛跑，语句不通也没有办法，我是想先发上去再慢慢的修改了。</p><p>说快也不太快，但也不是很慢，一下就两段了，我这不是水文，这只是一篇和时间赛跑的急切之作，时间在一分一秒的过去，我看了下字数也有三百多了，其实现在发上去日更的标准已经达到了，不管了，再写两分钟就发，忙起来那标准什么的我已经记不得了，算了应该够了，就写这么多，不写了，我赶紧发吧。</p><p><strong>发文后的感想：只能说赶得真好，赶上了最后的末班车，还好今天没有掉队。</strong>👌</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Word </tag>
+            
+            <tag> 简书 </tag>
+            
+            <tag> 小说 </tag>
+            
+            <tag> 日更 </tag>
+            
+            <tag> 发文 </tag>
+            
+            <tag> 时间赛跑 </tag>
+            
+            <tag> 明天 </tag>
             
         </tags>
       
@@ -16089,35 +16126,41 @@
     
     
     <entry>
-      <title>小说今天一章写不完了，还是来一篇日更好了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c7fd72d/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c7fd72d/</url>
+      <title>山村奇侠（二）</title>
+      <link href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/eb24911e/"/>
+      <url>/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/eb24911e/</url>
       
-        <content type="html"><![CDATA[<p>我从昨天开始写小说，昨天一下子写了四千多字，今天就是写不出来了，眼看都已经快到二十三点四十了，于是就想到我必须要在简书发一篇日更了，一看我也知道没有多少给我的时间了，毕竟这简书的日更不能断啊，就算是来个四五百字的我也要把它补上才行，我什么也不用想了，打开Word的文件菜单快速的新建一个文档，我想我这时是真什么都不用想了，想到什么就写什么，再想就真的没有时间了。</p><span id="more"></span><p>小说还没有写好是肯定不能发上去的了，连有些语句都还不通顺，自己都还没有看过一遍，怎么可能发上去呢，小说这篇日更过了后明天接着写。我这时是真的在和时间赛跑，语句不通也没有办法，我是想先发上去再慢慢的修改了。</p><p>说快也不太快，但也不是很慢，一下就两段了，我这不是水文，这只是一篇和时间赛跑的急切之作，时间在一分一秒的过去，我看了下字数也有三百多了，其实现在发上去日更的标准已经达到了，不管了，再写两分钟就发，忙起来那标准什么的我已经记不得了，算了应该够了，就写这么多，不写了，我赶紧发吧。</p><p><strong>发文后的感想：只能说赶得真好，赶上了最后的末班车，还好今天没有掉队。</strong>👌</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="第二章-相思难忘"><a href="#第二章-相思难忘" class="headerlink" title="第二章 相思难忘"></a>第二章 相思难忘</h2><p>酒坊的生意依旧忙碌着，街上各种形形色色的人也在缓慢地行走着，街上人的装束每个人都有自己的特色，有的戴着帽子，他们的帽子看着是用黑布裹了几道而制成的，帽子上还插着两片鸟的羽毛，脚上穿着牛皮的长筒靴子。街上男女的装束相差不大，只是女孩子少了那几道裹着黑布的帽子，头发束得高高的，一头青丝自然的披落在后肩上，额头前戴着一个绿翡翠的装饰品，用金黄色细链子系着，从她们高高的发髻上戴下来，从头发上绕过刚好那绿翡翠就挂在前额头的中间，给人的感觉就是这样女子的装束既有几分野性还戴着几分高雅之气。</p><span id="more"></span><p>王小语还是像平常一样在蓉婶的店里帮忙卖着酒，来买酒的客人络绎不绝，蓉婶在后台的算盘被她打得塔塔地响，看她打这算盘的速度，那绝对可以看得出她是一个精明的人，一个失去了男人的支撑，独自一个女人经营着这么一家酒坊，没有她这样精明的头脑那还真不行。</p><p>王小语自从那日见了令高以后始终都会在自己脑海里想起那个英武而又带着几分侠气的身影。她看着街上来来往往的行人，她希望他的身影突然的出现在那些人群之中，但是她又不想，因为她还只是一个情窦初开的少女，她不知道这算不算爱，在遇到令高之前，她没有爱过别人，也没有被别的男人爱过，她完全没有一点恋爱的经验，她不知道这相思之痛算不算真正的爱上一个人，她不知道这种相思之情是不是传说中真正的爱情。</p><p>她的脸上布满无奈也带着无限的期许，她希望他的再次出现。自从那日他看她久久没有移开的眼神，而后又匆匆不告而别，那日距离如今也有三日了，这三日对于她这个情窦初开的少女来说那就是如隔三秋，她想要再次见到他的那种深深的思念之情，在她的脸上毫不掩饰地表露了出来。</p><p>街上的行人来来往往，有的是为了利，有的是为了自己的目的地，有的是为了自己的归宿。因这灵翼镇地处西南腹地，所以这镇子的周边居住着十多个少数民族，除了明朝来到这里屯田戍边的汉族以外，百万彝家成了这当地西南地区人数最多的民族，除此之外还有人数不多的苗族、白族、侗族等少数民族。走在街上他们的服饰各色各样都能看到，而最以苗族人的服饰最为有特色，他们的衣服都是自己用麻线手工织造的，她们会的蜡染技术是她们在服饰制作领域的绝活，这是她们祖先千百年来留传下来从未丢掉过的技艺。</p><p>这镇上周边的这些民族除了以农耕和打猎为生以外，随着这个小镇的繁荣，很多人也开始来到镇上开店做生意，离蓉婶酒坊不远处的那家卖草药的就是一家苗族人开的，听说他家世代以草药治病救人，他们那整个苗寨的人都对他家的医术赞颂有佳，他们因为没有文字，所有治病救人的草药也都是代代口口相传，所以就没有外族人能知道他们草药治病救人能有奇效的秘诀。</p><p>秋天山里的空气宁静得只有几声虫鸣鸟叫，之外再也没有其他声响，一个茅草屋的山后是一片梯形的土地，在大约只有两手宽的一块刚收完玉米秆的土地上，有一个身材结实的年轻人，他的身后拿着一把镰刀，那把镰刀上还留着收割秸秆时留下的秸秆汁液，地上是一阵阵野花的清香，野花的清香是这玉米地里秸秆收割后特有的芳香，长满草籽又高又壮而有些枯黄的野草上跳动着一两只绿色的蚂蚱，草的下面是几只黑色的蛐蛐在漫无目的地游动着。这个年轻人上身穿着蓝色的上衣，一身黑色裤子，脚上穿着一双稻草织就的草鞋，清晨的露水还可以在他的脚背上看到几丝没有来得及散去的痕迹，他手上的镰刀把掩盖不了他手掌上的那些老茧，他脸上的表情露出了几分深深的思恋之情，还有几许的急切之情。他远远地望着灵翼镇的方向，他是想她了，他想要再次见到她，见到他三日前在灵翼镇一见钟情的那位姑娘。虽然只是才短短的三日不见，但他在这山中一个人度过的日子就如同过了三年。而这个年轻人他正是三日前在灵翼镇上用眼神深深爱着王小语的那个男人，这个年轻人他就是令高，他将要在半年之后娶王小语为妻。</p><p>这一片梯形的土地是在他祖辈的手里开荒开出来的，还有那山脚下那片唯一平坦的洼地，那块洼地上的水田也是在他祖辈的手里开出来的，从他祖辈的手里传到他这一代已经传了四十八代了，岁月历经已有四百多年，得誉于这山里的清新的空气和这地下肥沃的土壤，还有这块水田后面山洞口里流出来的那一沟溪水，再加上牛吃下稻草和玉米杆留在牛圈里的农肥，他们家一代代的用背篓把这些农肥背到土里和稻田里，使得这片梯形的土地和这一块平坦的水田依旧肥沃如初。</p><p>这片梯形的土地上除了种植玉米，他还有在间隔的中间种一些大豆和黄豆，只是这些都比玉米先收完了，到最后秋天才收的就只剩下玉米了。远远望去那些被他蓬好的玉米杆子就像一个个的小山包，他先是把那些玉米杆子一根根地用镰刀砍下来，刚好那些玉米杆子在他怀里一只手抱不完的时候，他就把它们放在地上，然后从地上扯了一把草，他把那些草拧成一股绳，他用这股绳轻车熟路地将这些玉米杆紧紧地捆成一捆，他干这样的活已经有十多年了，从几岁的时候开始他就跟着他父亲来到地里干这样的活，这捆玉米杆的技巧他已经了熟于心，对于他来说干这活已经熟练得太过于普通了。他把捆好后的玉米杆四五捆蓬在一处，再用一根草绳把上面的顶匡一下，一个像小山包一样的杰作就这样被他创造出来了，他看着那些被他堆成一个个小山包一样的玉米杆，他的脸上充满了喜悦，因为那是他亲手打造的杰作，他把它们当成了一个个的艺术品。</p><p>令高在这山里的生活除了种植庄稼以外，他还在每天的闲暇时间练习武术、练习箭术以及熟读他祖辈给他留传下来的那些兵书，在他小的时候他也练习过骑射，在每年秋天田里的稻谷收割完以后，他就把那些稻草扎成一个个的草人，然后骑着马在已经干枯的稻田里肆意驰骋，他骑在马上的那股威武之气，怎么也抹不掉他作为一个戍边将领后代的事实。他骑在马上那弓和那箭似乎成了他身体的一部分，地上的草人就如同和他的马行走在同一平行线上一样，他轻松的拉了一个满弓，那支箭就嗖的一下直直的飞了出去，刚好就射中了那草人的眉心上，他身下的骏马在自由地飞奔着，一旁的草人个个被射中眉心，那些草人像波浪一样，一个接着一个按着顺序全部倒在了地上，这是令高他年轻气盛时候的模样，还是年少轻狂的他箭术和武功已经是相当了得。</p><p>那匹和他一起曾经在稻田里飞奔着，陪伴了他练习过数年骑射的马，后来因为那匹马年龄太大了的缘故就病死了，从那以后他家就在没有养过马。其实他家再也没有养马的原因也是有很多的，山中的道路崎岖，根本就不可能骑着马走山路，那样跌下悬崖的危险比自己走路还要大十倍，再加上马的食性与牛的不同，马不喜欢吃杂草，所以那匹马死后他家就宁愿养牛，也再不养马。对于他家这样的山里人家来说养牛自然是比养马要好很多，牛是他们种庄稼最为得力的助手，如果没有养牛，那每年春天播种的活不知道要累上好几十倍不止。</p><p>自从没有了马以后他的骑射就再也没有练习过，但是对于他身在这个陡峭的山里人来说，会和不会骑射其实已经没有什么两样了，这技艺不过是从他祖辈那沿袭下来的罢了。只因他祖辈令荣曾是明朝的开国将领，靠着一身骑射的技艺在马背上无往不胜，靠着那一身令敌人闻风丧胆的骑射之术，他为当时的皇帝打下了一片大好江山。因为他的功高盖主当时的皇帝怕他在军中做大，继而威胁到自己的统治地位，又因为他的忠勇，所以当时的皇帝把他调到了这西南边陲之地，要他来这里屯田戍边。</p><p>他的祖辈令荣并不是一开始就来到这山里居住的，当时他是来到了离这里一百多公里以外的一个关隘口，他从江南带了三万多兵马来到那个关隘口扎营，他和他的手下的将士们在此关隘口修建了很多御敌的工事，又因那地方地势险要易守难攻，成了一个真正的一夫当关万夫莫开的险要之地。</p><p>令荣和他的手下将士来这里驻扎一晃就是三年多过去了，这三年来他和将士们同甘共苦，一起开垦种田、开荒种地，他与手下士兵同吃同住，这三年来他已经忘记了他曾经的身份，他曾是在战场上举剑一呼，百万士兵像水一样杀入敌阵的将军。这三年来他们除了刚来时带来的粮草，除此之外，朝廷就再没有给他们送来过粮草，他们开垦种田、开荒种地除了自给自足之外粮食都还有剩余。这三年来西南边陲之地也没有发生过任何的战事，他似乎都快忘了那个曾经荣耀无比的大将军身份。</p><p>一切都看起来是那样的岁月静好，这西南的各民族之间也是和睦相处，令荣和他的将士来到这里看起来一切都是多余的，因为他们是军人，他们认为军人就应该上战场上杀敌，那才是作为一个军人真正的意义所在，可是这里的一切都是那样的安静和谐。他来到这里三年来他似乎已经都想明白一切了，这一切都只有他明白得很清楚，他的手下的那些将士是不可能明白的，他手下的那些将士自认为他们来到这西南边陲就是为了来维护这里的和平与安宁，只是他们不明白，或许他们根本就没有去想那么多，其实就算他们不来到这里，这里的各族老百姓那也是生活得安宁和平的。</p><p>令荣他心里明白，再没有人比他自己更能明白自己了，他来到这西南边陲的目的其实就是为了活命，如果他不服从皇帝的旨意来到这里，以他在军中的势力，他恐怕早已经成了皇帝的眼中钉肉中刺了，皇帝只要他感觉有人威胁到他的统治地位，那这样的人是必死无疑的，就如刘邦杀韩信不就是这个道理吗，文官就算有再大的权力皇帝也不会感到害怕，皇帝唯一害怕的就是武将手中的兵力，这不仅仅是威胁到他的统治地位，还直接威胁到他的生命安全。令荣自认为他是一名忠勇的将军，他的使命就是保卫大明的子民和这大明国家的安危。只不过这只是他的一厢情愿罢了，那些天下的百姓不会相信他，人心隔肚皮谁又能看到他那份忠心耿耿的心思，那些文武百官不会去相信他，皇帝那是自然更不会去相信他，只能是他的离开，削弱了他的兵力，皇帝才会觉得少了一分的威胁，而多了一分的安全。</p><p>世上从来就没有什么长久的岁月静好的时光，只是这一切被打破的早晚而已，如果只一味的沉迷于这虚假的美好之中，那当危险来临的时候自己的生命也将随之消亡。这三年来本无战事的西南，但是在三年之后这一切都改变了，这改变的不仅仅是因为这些屯田戍边将士对战事到来的无法应对，还因为这场少数民族动乱，它将使令荣彻底失去他作为一个将军的身份和地位。</p><p>一支彝族的土司武装因不满朝廷的严苛政策，于是在土司首领的带领下开始攻击在西南屯田戍边的明军的地盘，他们不想让屯田戍边的明军永远的占着那些肥沃的土地和水田，他们要收回这一切，所以他们开始联合了周边几个彝族土司首领，他们以喝鸡血酒为誓盟，他们要伺机发动叛乱。</p>]]></content>
       
       
       <categories>
           
-          <category> 日常记录 </category>
+          <category> 小说故事 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> Word </tag>
+            <tag> 山村奇侠 </tag>
             
-            <tag> 简书 </tag>
+            <tag> 相思难忘 </tag>
             
-            <tag> 小说 </tag>
+            <tag> 绿翡翠 </tag>
             
-            <tag> 日更 </tag>
+            <tag> 精明 </tag>
             
-            <tag> 发文 </tag>
+            <tag> 情窦初开 </tag>
             
-            <tag> 时间赛跑 </tag>
+            <tag> 口口相传 </tag>
             
-            <tag> 明天 </tag>
+            <tag> 灵翼镇 </tag>
+            
+            <tag> 玉米杆 </tag>
+            
+            <tag> 大将军 </tag>
+            
+            <tag> 忠心耿耿 </tag>
             
         </tags>
       
@@ -16167,49 +16210,6 @@
             <tag> 酒坊 </tag>
             
             <tag> 酒香 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>山村奇侠（二）</title>
-      <link href="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/eb24911e/"/>
-      <url>/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/eb24911e/</url>
-      
-        <content type="html"><![CDATA[<h2 id="第二章-相思难忘"><a href="#第二章-相思难忘" class="headerlink" title="第二章 相思难忘"></a>第二章 相思难忘</h2><p>酒坊的生意依旧忙碌着，街上各种形形色色的人也在缓慢地行走着，街上人的装束每个人都有自己的特色，有的戴着帽子，他们的帽子看着是用黑布裹了几道而制成的，帽子上还插着两片鸟的羽毛，脚上穿着牛皮的长筒靴子。街上男女的装束相差不大，只是女孩子少了那几道裹着黑布的帽子，头发束得高高的，一头青丝自然的披落在后肩上，额头前戴着一个绿翡翠的装饰品，用金黄色细链子系着，从她们高高的发髻上戴下来，从头发上绕过刚好那绿翡翠就挂在前额头的中间，给人的感觉就是这样女子的装束既有几分野性还戴着几分高雅之气。</p><span id="more"></span><p>王小语还是像平常一样在蓉婶的店里帮忙卖着酒，来买酒的客人络绎不绝，蓉婶在后台的算盘被她打得塔塔地响，看她打这算盘的速度，那绝对可以看得出她是一个精明的人，一个失去了男人的支撑，独自一个女人经营着这么一家酒坊，没有她这样精明的头脑那还真不行。</p><p>王小语自从那日见了令高以后始终都会在自己脑海里想起那个英武而又带着几分侠气的身影。她看着街上来来往往的行人，她希望他的身影突然的出现在那些人群之中，但是她又不想，因为她还只是一个情窦初开的少女，她不知道这算不算爱，在遇到令高之前，她没有爱过别人，也没有被别的男人爱过，她完全没有一点恋爱的经验，她不知道这相思之痛算不算真正的爱上一个人，她不知道这种相思之情是不是传说中真正的爱情。</p><p>她的脸上布满无奈也带着无限的期许，她希望他的再次出现。自从那日他看她久久没有移开的眼神，而后又匆匆不告而别，那日距离如今也有三日了，这三日对于她这个情窦初开的少女来说那就是如隔三秋，她想要再次见到他的那种深深的思念之情，在她的脸上毫不掩饰地表露了出来。</p><p>街上的行人来来往往，有的是为了利，有的是为了自己的目的地，有的是为了自己的归宿。因这灵翼镇地处西南腹地，所以这镇子的周边居住着十多个少数民族，除了明朝来到这里屯田戍边的汉族以外，百万彝家成了这当地西南地区人数最多的民族，除此之外还有人数不多的苗族、白族、侗族等少数民族。走在街上他们的服饰各色各样都能看到，而最以苗族人的服饰最为有特色，他们的衣服都是自己用麻线手工织造的，她们会的蜡染技术是她们在服饰制作领域的绝活，这是她们祖先千百年来留传下来从未丢掉过的技艺。</p><p>这镇上周边的这些民族除了以农耕和打猎为生以外，随着这个小镇的繁荣，很多人也开始来到镇上开店做生意，离蓉婶酒坊不远处的那家卖草药的就是一家苗族人开的，听说他家世代以草药治病救人，他们那整个苗寨的人都对他家的医术赞颂有佳，他们因为没有文字，所有治病救人的草药也都是代代口口相传，所以就没有外族人能知道他们草药治病救人能有奇效的秘诀。</p><p>秋天山里的空气宁静得只有几声虫鸣鸟叫，之外再也没有其他声响，一个茅草屋的山后是一片梯形的土地，在大约只有两手宽的一块刚收完玉米秆的土地上，有一个身材结实的年轻人，他的身后拿着一把镰刀，那把镰刀上还留着收割秸秆时留下的秸秆汁液，地上是一阵阵野花的清香，野花的清香是这玉米地里秸秆收割后特有的芳香，长满草籽又高又壮而有些枯黄的野草上跳动着一两只绿色的蚂蚱，草的下面是几只黑色的蛐蛐在漫无目的地游动着。这个年轻人上身穿着蓝色的上衣，一身黑色裤子，脚上穿着一双稻草织就的草鞋，清晨的露水还可以在他的脚背上看到几丝没有来得及散去的痕迹，他手上的镰刀把掩盖不了他手掌上的那些老茧，他脸上的表情露出了几分深深的思恋之情，还有几许的急切之情。他远远地望着灵翼镇的方向，他是想她了，他想要再次见到她，见到他三日前在灵翼镇一见钟情的那位姑娘。虽然只是才短短的三日不见，但他在这山中一个人度过的日子就如同过了三年。而这个年轻人他正是三日前在灵翼镇上用眼神深深爱着王小语的那个男人，这个年轻人他就是令高，他将要在半年之后娶王小语为妻。</p><p>这一片梯形的土地是在他祖辈的手里开荒开出来的，还有那山脚下那片唯一平坦的洼地，那块洼地上的水田也是在他祖辈的手里开出来的，从他祖辈的手里传到他这一代已经传了四十八代了，岁月历经已有四百多年，得誉于这山里的清新的空气和这地下肥沃的土壤，还有这块水田后面山洞口里流出来的那一沟溪水，再加上牛吃下稻草和玉米杆留在牛圈里的农肥，他们家一代代的用背篓把这些农肥背到土里和稻田里，使得这片梯形的土地和这一块平坦的水田依旧肥沃如初。</p><p>这片梯形的土地上除了种植玉米，他还有在间隔的中间种一些大豆和黄豆，只是这些都比玉米先收完了，到最后秋天才收的就只剩下玉米了。远远望去那些被他蓬好的玉米杆子就像一个个的小山包，他先是把那些玉米杆子一根根地用镰刀砍下来，刚好那些玉米杆子在他怀里一只手抱不完的时候，他就把它们放在地上，然后从地上扯了一把草，他把那些草拧成一股绳，他用这股绳轻车熟路地将这些玉米杆紧紧地捆成一捆，他干这样的活已经有十多年了，从几岁的时候开始他就跟着他父亲来到地里干这样的活，这捆玉米杆的技巧他已经了熟于心，对于他来说干这活已经熟练得太过于普通了。他把捆好后的玉米杆四五捆蓬在一处，再用一根草绳把上面的顶匡一下，一个像小山包一样的杰作就这样被他创造出来了，他看着那些被他堆成一个个小山包一样的玉米杆，他的脸上充满了喜悦，因为那是他亲手打造的杰作，他把它们当成了一个个的艺术品。</p><p>令高在这山里的生活除了种植庄稼以外，他还在每天的闲暇时间练习武术、练习箭术以及熟读他祖辈给他留传下来的那些兵书，在他小的时候他也练习过骑射，在每年秋天田里的稻谷收割完以后，他就把那些稻草扎成一个个的草人，然后骑着马在已经干枯的稻田里肆意驰骋，他骑在马上的那股威武之气，怎么也抹不掉他作为一个戍边将领后代的事实。他骑在马上那弓和那箭似乎成了他身体的一部分，地上的草人就如同和他的马行走在同一平行线上一样，他轻松的拉了一个满弓，那支箭就嗖的一下直直的飞了出去，刚好就射中了那草人的眉心上，他身下的骏马在自由地飞奔着，一旁的草人个个被射中眉心，那些草人像波浪一样，一个接着一个按着顺序全部倒在了地上，这是令高他年轻气盛时候的模样，还是年少轻狂的他箭术和武功已经是相当了得。</p><p>那匹和他一起曾经在稻田里飞奔着，陪伴了他练习过数年骑射的马，后来因为那匹马年龄太大了的缘故就病死了，从那以后他家就在没有养过马。其实他家再也没有养马的原因也是有很多的，山中的道路崎岖，根本就不可能骑着马走山路，那样跌下悬崖的危险比自己走路还要大十倍，再加上马的食性与牛的不同，马不喜欢吃杂草，所以那匹马死后他家就宁愿养牛，也再不养马。对于他家这样的山里人家来说养牛自然是比养马要好很多，牛是他们种庄稼最为得力的助手，如果没有养牛，那每年春天播种的活不知道要累上好几十倍不止。</p><p>自从没有了马以后他的骑射就再也没有练习过，但是对于他身在这个陡峭的山里人来说，会和不会骑射其实已经没有什么两样了，这技艺不过是从他祖辈那沿袭下来的罢了。只因他祖辈令荣曾是明朝的开国将领，靠着一身骑射的技艺在马背上无往不胜，靠着那一身令敌人闻风丧胆的骑射之术，他为当时的皇帝打下了一片大好江山。因为他的功高盖主当时的皇帝怕他在军中做大，继而威胁到自己的统治地位，又因为他的忠勇，所以当时的皇帝把他调到了这西南边陲之地，要他来这里屯田戍边。</p><p>他的祖辈令荣并不是一开始就来到这山里居住的，当时他是来到了离这里一百多公里以外的一个关隘口，他从江南带了三万多兵马来到那个关隘口扎营，他和他的手下的将士们在此关隘口修建了很多御敌的工事，又因那地方地势险要易守难攻，成了一个真正的一夫当关万夫莫开的险要之地。</p><p>令荣和他的手下将士来这里驻扎一晃就是三年多过去了，这三年来他和将士们同甘共苦，一起开垦种田、开荒种地，他与手下士兵同吃同住，这三年来他已经忘记了他曾经的身份，他曾是在战场上举剑一呼，百万士兵像水一样杀入敌阵的将军。这三年来他们除了刚来时带来的粮草，除此之外，朝廷就再没有给他们送来过粮草，他们开垦种田、开荒种地除了自给自足之外粮食都还有剩余。这三年来西南边陲之地也没有发生过任何的战事，他似乎都快忘了那个曾经荣耀无比的大将军身份。</p><p>一切都看起来是那样的岁月静好，这西南的各民族之间也是和睦相处，令荣和他的将士来到这里看起来一切都是多余的，因为他们是军人，他们认为军人就应该上战场上杀敌，那才是作为一个军人真正的意义所在，可是这里的一切都是那样的安静和谐。他来到这里三年来他似乎已经都想明白一切了，这一切都只有他明白得很清楚，他的手下的那些将士是不可能明白的，他手下的那些将士自认为他们来到这西南边陲就是为了来维护这里的和平与安宁，只是他们不明白，或许他们根本就没有去想那么多，其实就算他们不来到这里，这里的各族老百姓那也是生活得安宁和平的。</p><p>令荣他心里明白，再没有人比他自己更能明白自己了，他来到这西南边陲的目的其实就是为了活命，如果他不服从皇帝的旨意来到这里，以他在军中的势力，他恐怕早已经成了皇帝的眼中钉肉中刺了，皇帝只要他感觉有人威胁到他的统治地位，那这样的人是必死无疑的，就如刘邦杀韩信不就是这个道理吗，文官就算有再大的权力皇帝也不会感到害怕，皇帝唯一害怕的就是武将手中的兵力，这不仅仅是威胁到他的统治地位，还直接威胁到他的生命安全。令荣自认为他是一名忠勇的将军，他的使命就是保卫大明的子民和这大明国家的安危。只不过这只是他的一厢情愿罢了，那些天下的百姓不会相信他，人心隔肚皮谁又能看到他那份忠心耿耿的心思，那些文武百官不会去相信他，皇帝那是自然更不会去相信他，只能是他的离开，削弱了他的兵力，皇帝才会觉得少了一分的威胁，而多了一分的安全。</p><p>世上从来就没有什么长久的岁月静好的时光，只是这一切被打破的早晚而已，如果只一味的沉迷于这虚假的美好之中，那当危险来临的时候自己的生命也将随之消亡。这三年来本无战事的西南，但是在三年之后这一切都改变了，这改变的不仅仅是因为这些屯田戍边将士对战事到来的无法应对，还因为这场少数民族动乱，它将使令荣彻底失去他作为一个将军的身份和地位。</p><p>一支彝族的土司武装因不满朝廷的严苛政策，于是在土司首领的带领下开始攻击在西南屯田戍边的明军的地盘，他们不想让屯田戍边的明军永远的占着那些肥沃的土地和水田，他们要收回这一切，所以他们开始联合了周边几个彝族土司首领，他们以喝鸡血酒为誓盟，他们要伺机发动叛乱。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 小说故事 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 山村奇侠 </tag>
-            
-            <tag> 相思难忘 </tag>
-            
-            <tag> 绿翡翠 </tag>
-            
-            <tag> 精明 </tag>
-            
-            <tag> 情窦初开 </tag>
-            
-            <tag> 口口相传 </tag>
-            
-            <tag> 灵翼镇 </tag>
-            
-            <tag> 玉米杆 </tag>
-            
-            <tag> 大将军 </tag>
-            
-            <tag> 忠心耿耿 </tag>
             
         </tags>
       
@@ -16449,6 +16449,51 @@
     
     
     <entry>
+      <title>微软自研处理器增强自身设备的竞争力</title>
+      <link href="/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/6dddc927/"/>
+      <url>/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/6dddc927/</url>
+      
+        <content type="html"><![CDATA[<p>继苹果自研处理器M1成功发布后，由于性能强悍得到了市场的好评，也使苹果的电脑设备得到了很大的市场竞争力。所以很多公司也想这样仿效来提高自家设备的竞争力。</p><span id="more"></span><p>有自己的处理器对于自家的产品来说就相当于是掌握了核心话语权，也能把处理器的性能更好的和设备兼容，得到最大的性能提升和优化。</p><p>比如说苹果没有发布M1处理前之前，苹果电脑用的都是因特尔的处理器，这和其他使用windows的设备比起来是没有多大竞争力的，无能从系统方面还是价格，运行windows的电脑性价比都比苹果系统的高很多。</p><p>但是苹果自从发布了M1处理器以后，这个方面的对比就会现得不是很明显了，因为电脑的核心就在于处理器，如果处理器都不同，那性能是没有可比性的，所以拥有自己的处理器才是电脑的核心竞争力。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 互联网科技 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电脑 </tag>
+            
+            <tag> windows </tag>
+            
+            <tag> 性能 </tag>
+            
+            <tag> 处理器 </tag>
+            
+            <tag> 话语权 </tag>
+            
+            <tag> 设备 </tag>
+            
+            <tag> 系统 </tag>
+            
+            <tag> 苹果 </tag>
+            
+            <tag> 微软 </tag>
+            
+            <tag> 竞争力 </tag>
+            
+            <tag> M1 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>很多今天还没有完成的事</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/78cd337d/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/78cd337d/</url>
@@ -16480,51 +16525,6 @@
             <tag> 进度 </tag>
             
             <tag> 完成 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>微软自研处理器增强自身设备的竞争力</title>
-      <link href="/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/6dddc927/"/>
-      <url>/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/6dddc927/</url>
-      
-        <content type="html"><![CDATA[<p>继苹果自研处理器M1成功发布后，由于性能强悍得到了市场的好评，也使苹果的电脑设备得到了很大的市场竞争力。所以很多公司也想这样仿效来提高自家设备的竞争力。</p><span id="more"></span><p>有自己的处理器对于自家的产品来说就相当于是掌握了核心话语权，也能把处理器的性能更好的和设备兼容，得到最大的性能提升和优化。</p><p>比如说苹果没有发布M1处理前之前，苹果电脑用的都是因特尔的处理器，这和其他使用windows的设备比起来是没有多大竞争力的，无能从系统方面还是价格，运行windows的电脑性价比都比苹果系统的高很多。</p><p>但是苹果自从发布了M1处理器以后，这个方面的对比就会现得不是很明显了，因为电脑的核心就在于处理器，如果处理器都不同，那性能是没有可比性的，所以拥有自己的处理器才是电脑的核心竞争力。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 互联网科技 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 电脑 </tag>
-            
-            <tag> windows </tag>
-            
-            <tag> 性能 </tag>
-            
-            <tag> 处理器 </tag>
-            
-            <tag> 话语权 </tag>
-            
-            <tag> 设备 </tag>
-            
-            <tag> 苹果 </tag>
-            
-            <tag> 系统 </tag>
-            
-            <tag> 微软 </tag>
-            
-            <tag> 竞争力 </tag>
-            
-            <tag> M1 </tag>
             
         </tags>
       
@@ -17665,9 +17665,9 @@
       
         <tags>
             
-            <tag> 割韭菜 </tag>
-            
             <tag> 抖音 </tag>
+            
+            <tag> 割韭菜 </tag>
             
             <tag> 套路 </tag>
             
@@ -17694,6 +17694,55 @@
             <tag> 狮子老虎 </tag>
             
             <tag> 干涉 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>按照别人的要求写稿我也不会写了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c96915ea/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c96915ea/</url>
+      
+        <content type="html"><![CDATA[<p>我是会写文章，但是只会写我熟悉或者感兴趣的，要让我去写的别的我也不会，因为我都不了解让我怎么去写，今天在boos直聘上有个人让我写篇《大秦帝国之纵横》第一集试稿，我一头雾水啊，因为这个电视剧我都没有去看过，这是2012年的电视剧了。</p><span id="more"></span><p>现在做短视频剪辑的是没有题材了吗，又把多年前的老电视剧翻出来再啃一篇，但是只要把解说稿配上音好像是真的有人看的，也是难为这些人了，自己不会写只好找人写了，但是其实我也不会写因为我没有写过这样的文章，我把这个电视剧第一集从头到尾看了一篇我还是不知道这个到底要怎么写才行。</p><p>可能后面我还是会去试着写一下，写一篇发过去试一下，如果她说不行那就是在骗稿了，想让别人帮她写又不想给钱的人现在毕竟是真的很多啊，一想到这样我就不想给她写了，因为本来自己就不怎么会写这个类型的，绞劲脑汁去想怎么写了，还没有钱，感觉也是得不偿失，但是有些事无论是真是假也得去试下才行吧。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电视剧 </tag>
+            
+            <tag> 写文章 </tag>
+            
+            <tag> 感兴趣 </tag>
+            
+            <tag> 要求 </tag>
+            
+            <tag> 写稿 </tag>
+            
+            <tag> 熟悉 </tag>
+            
+            <tag> boos直聘 </tag>
+            
+            <tag> 大秦帝国 </tag>
+            
+            <tag> 纵横 </tag>
+            
+            <tag> 一头雾水 </tag>
+            
+            <tag> 解说稿 </tag>
+            
+            <tag> 骗稿 </tag>
+            
+            <tag> 绞劲脑汁 </tag>
             
         </tags>
       
@@ -17788,55 +17837,6 @@
             <tag> 博客网站 </tag>
             
             <tag> 教程地址 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>按照别人的要求写稿我也不会写了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c96915ea/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c96915ea/</url>
-      
-        <content type="html"><![CDATA[<p>我是会写文章，但是只会写我熟悉或者感兴趣的，要让我去写的别的我也不会，因为我都不了解让我怎么去写，今天在boos直聘上有个人让我写篇《大秦帝国之纵横》第一集试稿，我一头雾水啊，因为这个电视剧我都没有去看过，这是2012年的电视剧了。</p><span id="more"></span><p>现在做短视频剪辑的是没有题材了吗，又把多年前的老电视剧翻出来再啃一篇，但是只要把解说稿配上音好像是真的有人看的，也是难为这些人了，自己不会写只好找人写了，但是其实我也不会写因为我没有写过这样的文章，我把这个电视剧第一集从头到尾看了一篇我还是不知道这个到底要怎么写才行。</p><p>可能后面我还是会去试着写一下，写一篇发过去试一下，如果她说不行那就是在骗稿了，想让别人帮她写又不想给钱的人现在毕竟是真的很多啊，一想到这样我就不想给她写了，因为本来自己就不怎么会写这个类型的，绞劲脑汁去想怎么写了，还没有钱，感觉也是得不偿失，但是有些事无论是真是假也得去试下才行吧。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 电视剧 </tag>
-            
-            <tag> 写文章 </tag>
-            
-            <tag> 感兴趣 </tag>
-            
-            <tag> 要求 </tag>
-            
-            <tag> 写稿 </tag>
-            
-            <tag> 熟悉 </tag>
-            
-            <tag> boos直聘 </tag>
-            
-            <tag> 大秦帝国 </tag>
-            
-            <tag> 纵横 </tag>
-            
-            <tag> 一头雾水 </tag>
-            
-            <tag> 解说稿 </tag>
-            
-            <tag> 骗稿 </tag>
-            
-            <tag> 绞劲脑汁 </tag>
             
         </tags>
       
@@ -18064,6 +18064,45 @@
     
     
     <entry>
+      <title>明天要去打疫苗了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/fa93fc42/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/fa93fc42/</url>
+      
+        <content type="html"><![CDATA[<p>最近村委会的大喇叭一直都在宣传这个事，但是由于之前用的是广东话，我也听不懂她说的是什么，等到今天换成一个男的用普通话宣传，那个女的还是用广东话，用普通话说了我才听懂说的是什么东西。</p><span id="more"></span><p>意思就是要尽快去镇卫生院打疫苗，要在18号之前全部打完，租房的租客就要去房东那里拿预约单，拿了预约单去就不用排队了直接打。</p><p>只要不要排队应该还是很快的吧，我是写的明天去，明天我还是骑电动车去打了吧，反正都要打，早打了好点，前几天是因为要考试一直都没有时间去，现在有时间了，打了也好找个厂上班。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 考试 </tag>
+            
+            <tag> 明天 </tag>
+            
+            <tag> 打疫苗 </tag>
+            
+            <tag> 村委会 </tag>
+            
+            <tag> 大喇叭 </tag>
+            
+            <tag> 广东话 </tag>
+            
+            <tag> 普通话 </tag>
+            
+            <tag> 排队 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>明天要去其他地方上班，可能日更计划不能更新了</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/5261a1a7/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/5261a1a7/</url>
@@ -18113,45 +18152,6 @@
             <tag> 空想 </tag>
             
             <tag> 真情难求 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>明天要去打疫苗了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/fa93fc42/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/fa93fc42/</url>
-      
-        <content type="html"><![CDATA[<p>最近村委会的大喇叭一直都在宣传这个事，但是由于之前用的是广东话，我也听不懂她说的是什么，等到今天换成一个男的用普通话宣传，那个女的还是用广东话，用普通话说了我才听懂说的是什么东西。</p><span id="more"></span><p>意思就是要尽快去镇卫生院打疫苗，要在18号之前全部打完，租房的租客就要去房东那里拿预约单，拿了预约单去就不用排队了直接打。</p><p>只要不要排队应该还是很快的吧，我是写的明天去，明天我还是骑电动车去打了吧，反正都要打，早打了好点，前几天是因为要考试一直都没有时间去，现在有时间了，打了也好找个厂上班。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 考试 </tag>
-            
-            <tag> 明天 </tag>
-            
-            <tag> 打疫苗 </tag>
-            
-            <tag> 村委会 </tag>
-            
-            <tag> 大喇叭 </tag>
-            
-            <tag> 广东话 </tag>
-            
-            <tag> 普通话 </tag>
-            
-            <tag> 排队 </tag>
             
         </tags>
       
@@ -18569,49 +18569,6 @@
     
     
     <entry>
-      <title>昨晚断电一下子，来电后电脑开不了机</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c983425/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c983425/</url>
-      
-        <content type="html"><![CDATA[<p>昨晚我正在用电脑写文章，突然一下子断电了，文章没有来得及保存了，用Word写文章只会5分钟自动保存一次，所以就只保存了前5分钟写的内容，电脑开机以后又重新写后面的。</p><span id="more"></span><p>来电以后电脑就开不了机了，我还以为是烧坏了，把螺丝下开，把盖子打开，按了开机键风扇也不转，怎么按都没有反应，电源插头重新插了也没有反应。</p><p>后面才看到是硬盘盒没有开，虚惊一场，这主板的自检能力真强，一样配件没有开，它怎么都不会开机，我把硬盘盒的开关按下之后，然后再按电脑的开机键风扇也转了，也可以正常开机了。</p><p>正常开机以后就没有什么问题，然后又长按了下让它关机，因为还得把盖子装回去，装回去了再重新开机，要不然碰到正在运行的电脑风扇就不好了，装回去后开机一切正常，只是文章没有完全保存，所以又得重新写后面。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 电脑 </tag>
-            
-            <tag> Word </tag>
-            
-            <tag> 断电 </tag>
-            
-            <tag> 写文章 </tag>
-            
-            <tag> 开不了机 </tag>
-            
-            <tag> 保存 </tag>
-            
-            <tag> 烧坏了 </tag>
-            
-            <tag> 电源插头 </tag>
-            
-            <tag> 正常开机 </tag>
-            
-            <tag> 重新写 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>昨晚喝酒了，以为今天考试过不了，结果还是过了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/59f9dff9/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/59f9dff9/</url>
@@ -18680,6 +18637,49 @@
             <tag> 注意 </tag>
             
             <tag> 心急 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>昨晚断电一下子，来电后电脑开不了机</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c983425/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c983425/</url>
+      
+        <content type="html"><![CDATA[<p>昨晚我正在用电脑写文章，突然一下子断电了，文章没有来得及保存了，用Word写文章只会5分钟自动保存一次，所以就只保存了前5分钟写的内容，电脑开机以后又重新写后面的。</p><span id="more"></span><p>来电以后电脑就开不了机了，我还以为是烧坏了，把螺丝下开，把盖子打开，按了开机键风扇也不转，怎么按都没有反应，电源插头重新插了也没有反应。</p><p>后面才看到是硬盘盒没有开，虚惊一场，这主板的自检能力真强，一样配件没有开，它怎么都不会开机，我把硬盘盒的开关按下之后，然后再按电脑的开机键风扇也转了，也可以正常开机了。</p><p>正常开机以后就没有什么问题，然后又长按了下让它关机，因为还得把盖子装回去，装回去了再重新开机，要不然碰到正在运行的电脑风扇就不好了，装回去后开机一切正常，只是文章没有完全保存，所以又得重新写后面。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电脑 </tag>
+            
+            <tag> Word </tag>
+            
+            <tag> 断电 </tag>
+            
+            <tag> 写文章 </tag>
+            
+            <tag> 开不了机 </tag>
+            
+            <tag> 保存 </tag>
+            
+            <tag> 烧坏了 </tag>
+            
+            <tag> 电源插头 </tag>
+            
+            <tag> 正常开机 </tag>
+            
+            <tag> 重新写 </tag>
             
         </tags>
       
@@ -19086,11 +19086,11 @@
             
             <tag> 不想写 </tag>
             
-            <tag> 辞工 </tag>
-            
             <tag> 上晚班 </tag>
             
             <tag> 绿化环保 </tag>
+            
+            <tag> 辞工 </tag>
             
             <tag> 公司 </tag>
             
@@ -19296,9 +19296,9 @@
             
             <tag> 方法 </tag>
             
-            <tag> 每天 </tag>
-            
             <tag> 赚钱 </tag>
+            
+            <tag> 每天 </tag>
             
             <tag> 吃饭 </tag>
             
@@ -19860,47 +19860,6 @@
     
     
     <entry>
-      <title>用腾讯手游助手这个刷快手是终于不闪退了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2b996869/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2b996869/</url>
-      
-        <content type="html"><![CDATA[<p>找了很多模拟器，就这个比较稳定一点，其他的用来刷快手要么是卡，要么就直接闪退，最烦的就是闪退了，记得用那个凤凰系统，一直可以循环不停的闪退，直到要拼手速把那个软件卸载了才可以。</p><span id="more"></span><p>腾讯手游助手这个用快手是不闪退，快手极速版还是会偶尔闪退的，但就是不能用自动点击器自动刷，这个有点不好，什么都可以自动化的今天，用手动是真的很花时间。</p><p>也没有找到什么其他方法，用按键精灵录制脚本也不行，不知道还有没有什么办法可以实现自动，用这个微信是很稳了，一点都不闪退，比蓝叠那个用微信好很多，蓝叠是用微信经常闪退，但是有些软件要用微信登录就登录不了，提示说没有安装微信，明明微信就已经打开了，还说没有安装微信，也不知道用什么办法才可以。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 刷快手 </tag>
-            
-            <tag> 闪退 </tag>
-            
-            <tag> 腾讯手游助手 </tag>
-            
-            <tag> 不闪退 </tag>
-            
-            <tag> 比较稳定 </tag>
-            
-            <tag> 拼手速 </tag>
-            
-            <tag> 快手极速版 </tag>
-            
-            <tag> 按键精灵 </tag>
-            
-            <tag> 蓝叠 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>用自动点击软件刷抖音极速版赚钱</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a8e10de5/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a8e10de5/</url>
@@ -19950,6 +19909,47 @@
     
     
     <entry>
+      <title>用腾讯手游助手这个刷快手是终于不闪退了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2b996869/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2b996869/</url>
+      
+        <content type="html"><![CDATA[<p>找了很多模拟器，就这个比较稳定一点，其他的用来刷快手要么是卡，要么就直接闪退，最烦的就是闪退了，记得用那个凤凰系统，一直可以循环不停的闪退，直到要拼手速把那个软件卸载了才可以。</p><span id="more"></span><p>腾讯手游助手这个用快手是不闪退，快手极速版还是会偶尔闪退的，但就是不能用自动点击器自动刷，这个有点不好，什么都可以自动化的今天，用手动是真的很花时间。</p><p>也没有找到什么其他方法，用按键精灵录制脚本也不行，不知道还有没有什么办法可以实现自动，用这个微信是很稳了，一点都不闪退，比蓝叠那个用微信好很多，蓝叠是用微信经常闪退，但是有些软件要用微信登录就登录不了，提示说没有安装微信，明明微信就已经打开了，还说没有安装微信，也不知道用什么办法才可以。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 刷快手 </tag>
+            
+            <tag> 闪退 </tag>
+            
+            <tag> 腾讯手游助手 </tag>
+            
+            <tag> 不闪退 </tag>
+            
+            <tag> 比较稳定 </tag>
+            
+            <tag> 拼手速 </tag>
+            
+            <tag> 快手极速版 </tag>
+            
+            <tag> 按键精灵 </tag>
+            
+            <tag> 蓝叠 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>用自动点击软件刷短视频还可以给自己涨粉</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5eaac7b5/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5eaac7b5/</url>
@@ -19976,9 +19976,9 @@
             
             <tag> 抖音极速版 </tag>
             
-            <tag> 快手极速版 </tag>
-            
             <tag> 模拟滑动 </tag>
+            
+            <tag> 快手极速版 </tag>
             
             <tag> 涨粉 </tag>
             
@@ -20699,9 +20699,9 @@
             
             <tag> 更新 </tag>
             
-            <tag> 坚持 </tag>
-            
             <tag> 文章 </tag>
+            
+            <tag> 坚持 </tag>
             
             <tag> 压力 </tag>
             
@@ -21015,47 +21015,6 @@
     
     
     <entry>
-      <title>练习写作的方法就是每日坚持日更</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c9bc365f/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c9bc365f/</url>
-      
-        <content type="html"><![CDATA[<p>我自从参加写作日更挑战已经坚持了七天了，但是比起很多大佬已经坚持日更挑战几百天的来说，我这也只能算是九牛一毛，日更挑战的要求不难，也就是每天都发超过一百字就可以了，关键是在于行动。</p><span id="more"></span><p>想要让自己对写更加熟练，就只有不停的练习写，写作本身就是熟能生巧的东西，就和人学说话一样的，刚开始的时候说第一句话会感觉很难，但是说多了就顺口成章了，大脑里面想的都能通过自己嘴表达出来，这就是语言的魅力，熟练了就容易了很多；写作同样如此的，练得多了自然就会写了，写多了自然就可以把自己内心的想法顺畅地写出来。</p><p>坚持日更每天虽然只是几百字，但是10天就是几千，百天就是几万了，一年坚持下来写上十万字也是完全没有问题的。</p><p>几百字的数量就相当于写篇日记而已，还没有初中生写一篇作文多呢，他们一篇作文都是要写八百字才可以。</p><p>日更的要求不难，重要的是每日坚持，就和寺庙里的和尚一样每天准时敲钟，保持初心不变，不管风里雨里每天都坚持强迫自己去写，去思考。</p><p>有时候感觉写作很痛苦，自己不想去写，但其实一旦开始写就没有那么难了，当自己走出第一步，后面的每一步其实都很容易了。</p><p>风里雨里每日坚持写，这就是最大的收获。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 方法 </tag>
-            
-            <tag> 练习写作 </tag>
-            
-            <tag> 收获 </tag>
-            
-            <tag> 每日 </tag>
-            
-            <tag> 坚持日更 </tag>
-            
-            <tag> 关键 </tag>
-            
-            <tag> 行动 </tag>
-            
-            <tag> 顺口成章 </tag>
-            
-            <tag> 一篇作文 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>紧急救援这部电影还不错</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/42d1fc57/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/42d1fc57/</url>
@@ -21148,6 +21107,47 @@
     
     
     <entry>
+      <title>练习写作的方法就是每日坚持日更</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c9bc365f/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c9bc365f/</url>
+      
+        <content type="html"><![CDATA[<p>我自从参加写作日更挑战已经坚持了七天了，但是比起很多大佬已经坚持日更挑战几百天的来说，我这也只能算是九牛一毛，日更挑战的要求不难，也就是每天都发超过一百字就可以了，关键是在于行动。</p><span id="more"></span><p>想要让自己对写更加熟练，就只有不停的练习写，写作本身就是熟能生巧的东西，就和人学说话一样的，刚开始的时候说第一句话会感觉很难，但是说多了就顺口成章了，大脑里面想的都能通过自己嘴表达出来，这就是语言的魅力，熟练了就容易了很多；写作同样如此的，练得多了自然就会写了，写多了自然就可以把自己内心的想法顺畅地写出来。</p><p>坚持日更每天虽然只是几百字，但是10天就是几千，百天就是几万了，一年坚持下来写上十万字也是完全没有问题的。</p><p>几百字的数量就相当于写篇日记而已，还没有初中生写一篇作文多呢，他们一篇作文都是要写八百字才可以。</p><p>日更的要求不难，重要的是每日坚持，就和寺庙里的和尚一样每天准时敲钟，保持初心不变，不管风里雨里每天都坚持强迫自己去写，去思考。</p><p>有时候感觉写作很痛苦，自己不想去写，但其实一旦开始写就没有那么难了，当自己走出第一步，后面的每一步其实都很容易了。</p><p>风里雨里每日坚持写，这就是最大的收获。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 方法 </tag>
+            
+            <tag> 练习写作 </tag>
+            
+            <tag> 收获 </tag>
+            
+            <tag> 每日 </tag>
+            
+            <tag> 坚持日更 </tag>
+            
+            <tag> 关键 </tag>
+            
+            <tag> 行动 </tag>
+            
+            <tag> 顺口成章 </tag>
+            
+            <tag> 一篇作文 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>终于写了20万字了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b97792b3/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b97792b3/</url>
@@ -21218,55 +21218,6 @@
             <tag> 域名续费 </tag>
             
             <tag> 国家域名 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>网站差不多快弄好了，已经部署到Github和Gitee了</title>
-      <link href="/Hexo/aede53ce/"/>
-      <url>/Hexo/aede53ce/</url>
-      
-        <content type="html"><![CDATA[<p>现在是已经上传的线上了，就是以前的一些带图片的文章现在图片，显示不了，看来还得再弄一下才行，经过几个晚上是已经恢复到以前的差不多样子了，新主题还增加了，多语言支持和聊天系统支持。</p><span id="more"></span><p>但是以前的一些东西现在是用不了，以前我用的CNZZ来统计网站数据的，现在这个版本的Next主题不支持显示被隐藏了，也不知道代码是不是对的能不能统计到，现在都是未知了。</p><p>没有重新做之前发一篇文章到Github等了半天怎么都没有更新，我还发觉奇怪了，昨晚重新部署才知道，原来我的Github仓库上面有两个分支，一个是Hexo一个master，后面应该是Github更新了，把Hexo设置成默认的了，那我是把网站部署在master这个分支上的，所以一直刷新网站都是没有更新。</p><p>后面在设置里面看了一下才知道，把默认的分支改成master这个分支以后，网站就重新更新了。</p><p>之前没有升级的时候部署到Gitee后更新了然后打开网站就是一片空白，现在升级了这个问题也解决了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Github </tag>
-            
-            <tag> Hexo </tag>
-            
-            <tag> next主题 </tag>
-            
-            <tag> CNZZ </tag>
-            
-            <tag> gitee </tag>
-            
-            <tag> 网站 </tag>
-            
-            <tag> 主题 </tag>
-            
-            <tag> 部署 </tag>
-            
-            <tag> 聊天系统 </tag>
-            
-            <tag> 多语言 </tag>
-            
-            <tag> 分支 </tag>
-            
-            <tag> master </tag>
-            
-            <tag> 升级 </tag>
             
         </tags>
       
@@ -21427,6 +21378,55 @@
             <tag> 一淘 </tag>
             
             <tag> 佣金 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>网站差不多快弄好了，已经部署到Github和Gitee了</title>
+      <link href="/Hexo/aede53ce/"/>
+      <url>/Hexo/aede53ce/</url>
+      
+        <content type="html"><![CDATA[<p>现在是已经上传的线上了，就是以前的一些带图片的文章现在图片，显示不了，看来还得再弄一下才行，经过几个晚上是已经恢复到以前的差不多样子了，新主题还增加了，多语言支持和聊天系统支持。</p><span id="more"></span><p>但是以前的一些东西现在是用不了，以前我用的CNZZ来统计网站数据的，现在这个版本的Next主题不支持显示被隐藏了，也不知道代码是不是对的能不能统计到，现在都是未知了。</p><p>没有重新做之前发一篇文章到Github等了半天怎么都没有更新，我还发觉奇怪了，昨晚重新部署才知道，原来我的Github仓库上面有两个分支，一个是Hexo一个master，后面应该是Github更新了，把Hexo设置成默认的了，那我是把网站部署在master这个分支上的，所以一直刷新网站都是没有更新。</p><p>后面在设置里面看了一下才知道，把默认的分支改成master这个分支以后，网站就重新更新了。</p><p>之前没有升级的时候部署到Gitee后更新了然后打开网站就是一片空白，现在升级了这个问题也解决了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Github </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> next主题 </tag>
+            
+            <tag> CNZZ </tag>
+            
+            <tag> gitee </tag>
+            
+            <tag> 网站 </tag>
+            
+            <tag> 主题 </tag>
+            
+            <tag> 部署 </tag>
+            
+            <tag> 聊天系统 </tag>
+            
+            <tag> 多语言 </tag>
+            
+            <tag> 分支 </tag>
+            
+            <tag> master </tag>
+            
+            <tag> 升级 </tag>
             
         </tags>
       
@@ -22185,45 +22185,6 @@
     
     
     <entry>
-      <title>记录自己真实的梦境:我昨晚做了两个梦，后面一个让我感到很害怕</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/</url>
-      
-        <content type="html"><![CDATA[<p>昨晚做了两个梦，第一个是梦到两个自己从未见过的女孩，梦到自己突然回到了高中时期，梦里两个女孩是和我同班的，而且离我家不是太远，一个感觉很真实，而另外一个我感觉很模糊。</p><span id="more"></span><p>真实的这个每天放学后，我都要跟着她后面走很长一段路，直到快要走到她家对面，我只能远远的看着她，我离她家对面的中间是一条河沟，看着不远，其实实际距离是非常的远，因为我站在她家对面，中间的河沟是一个U弧形的，要从我这边走下去，然后又从她家那边走上去，这种地方我现实中是见到过的，不知道为何会出现在我的梦里，而是且时间地点也是错误的。我只能远远的在对面看着她消失在我的视野里，但是我却就是不敢跟她表白，说我喜欢她。</p><p>第二个梦是梦到自己去一个厂里上班，也不知自己怎么就没有衣服穿了，别人就随便给了我一件，我也不看是不是女人穿的，自己就胡乱穿在身上了，后来遇到厂里一个上了年纪的女人，说我身上穿的那件衣服，是一个已经逝去的女人穿的，还告诉我那个女人的名字叫邓红，说她已经病逝一年多了。我他妈顿时就是毛骨悚然，在梦中我都感到害怕了，我怎么就穿着死去女人的衣服，难怪那衣服上还有女人的味道，我顿时就被吓惊醒了，这太恐怖了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 厂里上班 </tag>
-            
-            <tag> 衣服 </tag>
-            
-            <tag> 真实 </tag>
-            
-            <tag> 两个梦 </tag>
-            
-            <tag> 同班 </tag>
-            
-            <tag> 河沟 </tag>
-            
-            <tag> 吓惊醒了 </tag>
-            
-            <tag> 太恐怖了 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>试用一款清僵尸粉的软件</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/992367e2/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/992367e2/</url>
@@ -22257,6 +22218,45 @@
             <tag> 酷V群发器 </tag>
             
             <tag> 群发 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>记录自己真实的梦境:我昨晚做了两个梦，后面一个让我感到很害怕</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/</url>
+      
+        <content type="html"><![CDATA[<p>昨晚做了两个梦，第一个是梦到两个自己从未见过的女孩，梦到自己突然回到了高中时期，梦里两个女孩是和我同班的，而且离我家不是太远，一个感觉很真实，而另外一个我感觉很模糊。</p><span id="more"></span><p>真实的这个每天放学后，我都要跟着她后面走很长一段路，直到快要走到她家对面，我只能远远的看着她，我离她家对面的中间是一条河沟，看着不远，其实实际距离是非常的远，因为我站在她家对面，中间的河沟是一个U弧形的，要从我这边走下去，然后又从她家那边走上去，这种地方我现实中是见到过的，不知道为何会出现在我的梦里，而是且时间地点也是错误的。我只能远远的在对面看着她消失在我的视野里，但是我却就是不敢跟她表白，说我喜欢她。</p><p>第二个梦是梦到自己去一个厂里上班，也不知自己怎么就没有衣服穿了，别人就随便给了我一件，我也不看是不是女人穿的，自己就胡乱穿在身上了，后来遇到厂里一个上了年纪的女人，说我身上穿的那件衣服，是一个已经逝去的女人穿的，还告诉我那个女人的名字叫邓红，说她已经病逝一年多了。我他妈顿时就是毛骨悚然，在梦中我都感到害怕了，我怎么就穿着死去女人的衣服，难怪那衣服上还有女人的味道，我顿时就被吓惊醒了，这太恐怖了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 厂里上班 </tag>
+            
+            <tag> 衣服 </tag>
+            
+            <tag> 真实 </tag>
+            
+            <tag> 两个梦 </tag>
+            
+            <tag> 同班 </tag>
+            
+            <tag> 河沟 </tag>
+            
+            <tag> 吓惊醒了 </tag>
+            
+            <tag> 太恐怖了 </tag>
             
         </tags>
       
@@ -22449,104 +22449,6 @@
     
     
     <entry>
-      <title>读《围炉夜话》其九有感</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f84f140c/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f84f140c/</url>
-      
-        <content type="html"><![CDATA[<p>擅长维持生计的人家，长幼有不同的分工做事方法，年老的和年幼的就在家里维持家业，年轻的就可以去外面打拼，勤勤恳恳做好自己分内的工作，这样虽然不能使自己的家庭富裕，但是生活也自然可以过得安安稳稳。</p><span id="more"></span><p>生活有时候没有必要刻意去追求大富大贵，不是自己该得到的怎么去求也求不来，到头来还弄了一身的伤痕累累，倒不如安安稳稳只要能过得下去，那样又有何不可，安稳可以让自己过得舒心，比起整天去追求那些不属于自己能够得到的，要好了很多，比起整天活在担惊受怕之中，安稳生活是比什么都强。</p><p>善于处理事情的人，只看对错是否可行，制定规章制度也不是为了自己的一己之私。私人的事绝不能用公务的方法来解决，假公济私这样做损害他人的利益，同时对自己也没有好处。</p><p>人的私心不可能没有的，但是满足自己私利的同时我们不能去损害别人的利益，私人之间的事情就应该用私人之间的方法来解决，用公事的做法来打压私人的纠纷，那就真的是有一点过分了，这样做本身也是一件极不道德的事，会处理事情的人就是要做到公私分明，赏罚分明才行。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 围炉夜话 </tag>
-            
-            <tag> 维持生计 </tag>
-            
-            <tag> 年老 </tag>
-            
-            <tag> 年幼 </tag>
-            
-            <tag> 安安稳稳 </tag>
-            
-            <tag> 大富大贵 </tag>
-            
-            <tag> 伤痕累累 </tag>
-            
-            <tag> 假公济私 </tag>
-            
-            <tag> 公事 </tag>
-            
-            <tag> 赏罚分明 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>读《围炉夜话》其二有感</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b7698495/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b7698495/</url>
-      
-        <content type="html"><![CDATA[<p>学习不能没有朋友，独学而无友是学习中的大忌，与朋友之间的交流自然是要互相之间取长补短，学习自己不知道的知识，把自己了解的知识展露出来，让朋友之间互相学习才能一起进步。</p><span id="more"></span><p>我们要学习别人知道的知识，首先自然是先要了解自己的长处和短处，只有自己了解自己之后才能更有效率去很好地吸收别人的长处，学习知识自然就是为弥补信息差所带来的困惑。</p><p>读圣贤之书对自己的修为大有帮助，圣贤们留下的书本身就是通过不断实践才得出来的经验总结和理论，方法论总该是要与现实结合那才能叫方法，不能去实践的那终究还是只能停留在纸上面的理论。</p><p>圣贤之书不但要读而且还要多读，读得多了都还不能就代表自身的修为可以，还得亲自身体力行去证明去实践，那样才能学得好理解得够透彻，懂得真理再用它来指导自己的言行，那样才可以明明白白地说自己真的读过了一点书。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 朋友 </tag>
-            
-            <tag> 学习 </tag>
-            
-            <tag> 方法 </tag>
-            
-            <tag> 理论 </tag>
-            
-            <tag> 围炉夜话 </tag>
-            
-            <tag> 其二 </tag>
-            
-            <tag> 独学 </tag>
-            
-            <tag> 大忌 </tag>
-            
-            <tag> 交流自然 </tag>
-            
-            <tag> 知识展露 </tag>
-            
-            <tag> 信息差 </tag>
-            
-            <tag> 圣贤之书 </tag>
-            
-            <tag> 修为 </tag>
-            
-            <tag> 经验总结 </tag>
-            
-            <tag> 透彻 </tag>
-            
-            <tag> 明明白白 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>读《围炉夜话》其五有感</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e358563c/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e358563c/</url>
@@ -22594,6 +22496,104 @@
             <tag> 言语 </tag>
             
             <tag> 同一本书 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>读《围炉夜话》其二有感</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b7698495/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b7698495/</url>
+      
+        <content type="html"><![CDATA[<p>学习不能没有朋友，独学而无友是学习中的大忌，与朋友之间的交流自然是要互相之间取长补短，学习自己不知道的知识，把自己了解的知识展露出来，让朋友之间互相学习才能一起进步。</p><span id="more"></span><p>我们要学习别人知道的知识，首先自然是先要了解自己的长处和短处，只有自己了解自己之后才能更有效率去很好地吸收别人的长处，学习知识自然就是为弥补信息差所带来的困惑。</p><p>读圣贤之书对自己的修为大有帮助，圣贤们留下的书本身就是通过不断实践才得出来的经验总结和理论，方法论总该是要与现实结合那才能叫方法，不能去实践的那终究还是只能停留在纸上面的理论。</p><p>圣贤之书不但要读而且还要多读，读得多了都还不能就代表自身的修为可以，还得亲自身体力行去证明去实践，那样才能学得好理解得够透彻，懂得真理再用它来指导自己的言行，那样才可以明明白白地说自己真的读过了一点书。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+            <tag> 朋友 </tag>
+            
+            <tag> 方法 </tag>
+            
+            <tag> 理论 </tag>
+            
+            <tag> 围炉夜话 </tag>
+            
+            <tag> 其二 </tag>
+            
+            <tag> 独学 </tag>
+            
+            <tag> 大忌 </tag>
+            
+            <tag> 交流自然 </tag>
+            
+            <tag> 知识展露 </tag>
+            
+            <tag> 信息差 </tag>
+            
+            <tag> 圣贤之书 </tag>
+            
+            <tag> 修为 </tag>
+            
+            <tag> 经验总结 </tag>
+            
+            <tag> 透彻 </tag>
+            
+            <tag> 明明白白 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>读《围炉夜话》其九有感</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f84f140c/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f84f140c/</url>
+      
+        <content type="html"><![CDATA[<p>擅长维持生计的人家，长幼有不同的分工做事方法，年老的和年幼的就在家里维持家业，年轻的就可以去外面打拼，勤勤恳恳做好自己分内的工作，这样虽然不能使自己的家庭富裕，但是生活也自然可以过得安安稳稳。</p><span id="more"></span><p>生活有时候没有必要刻意去追求大富大贵，不是自己该得到的怎么去求也求不来，到头来还弄了一身的伤痕累累，倒不如安安稳稳只要能过得下去，那样又有何不可，安稳可以让自己过得舒心，比起整天去追求那些不属于自己能够得到的，要好了很多，比起整天活在担惊受怕之中，安稳生活是比什么都强。</p><p>善于处理事情的人，只看对错是否可行，制定规章制度也不是为了自己的一己之私。私人的事绝不能用公务的方法来解决，假公济私这样做损害他人的利益，同时对自己也没有好处。</p><p>人的私心不可能没有的，但是满足自己私利的同时我们不能去损害别人的利益，私人之间的事情就应该用私人之间的方法来解决，用公事的做法来打压私人的纠纷，那就真的是有一点过分了，这样做本身也是一件极不道德的事，会处理事情的人就是要做到公私分明，赏罚分明才行。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 围炉夜话 </tag>
+            
+            <tag> 维持生计 </tag>
+            
+            <tag> 年老 </tag>
+            
+            <tag> 年幼 </tag>
+            
+            <tag> 安安稳稳 </tag>
+            
+            <tag> 大富大贵 </tag>
+            
+            <tag> 伤痕累累 </tag>
+            
+            <tag> 假公济私 </tag>
+            
+            <tag> 公事 </tag>
+            
+            <tag> 赏罚分明 </tag>
             
         </tags>
       
@@ -22741,6 +22741,61 @@
     
     
     <entry>
+      <title>读《围炉夜话》其十有感</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4ecdab72/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4ecdab72/</url>
+      
+        <content type="html"><![CDATA[<p>本来不属于自己的名利，但是自己却通过不正当的手段去得到了，开始时是觉得自己的运气好，但是以后也可能会因为这件事而惹祸上身。</p><span id="more"></span><p>塞翁失马未必就是一件坏事，但是马后面不仅回来了，还带了一群马回来，这也未必就是一件好事，福祸所倚，祸福所伏，说的也正是这个道理。</p><p>一个人穷困潦倒到了极点，还能咬紧牙关继续坚持活着，这样的人是最有能耐的，当苦难过去之后，顺境必然会到来，苦难可以磨练一个人的性格，先苦后甜的幸福不属于这样的人，哪还会属于谁呢？</p><p>人的聪明才智，最主要在于忠信二字，做一个不忠不信的人就算怎么有才智，那也是无用之才，忠信二字都没有的无用之才，也很难为他人创造价值，自然也无法实现自己的人生价值。</p><p>自己的聪明才智应该是要表现在忠信二字上，而不是用灵活机变的心思来代替，只有把最基本的做到了，才能往最深层次的去扩展。</p><p>读书人好坏不单就是看成绩考了多少分，还要看品行，品行才是最重要的，品行不好的人，成绩再怎么好，这样的人培养出来了对社会也没有什么用处。</p><p>读书人该做的就是：“为天地立心，为生民立命，为往圣继绝学，为万世开太平。”要以德为本，并且身体力行地去做，并不是认为自己成绩好就能轻易做到的，要以自己的本心，心无杂念地不断去摸索，最终才能做出成功的事业。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 成绩 </tag>
+            
+            <tag> 摸索 </tag>
+            
+            <tag> 围炉夜话 </tag>
+            
+            <tag> 名利 </tag>
+            
+            <tag> 不正当 </tag>
+            
+            <tag> 运气好 </tag>
+            
+            <tag> 惹祸上身 </tag>
+            
+            <tag> 福祸所倚 </tag>
+            
+            <tag> 祸福所伏 </tag>
+            
+            <tag> 穷困潦倒 </tag>
+            
+            <tag> 磨练 </tag>
+            
+            <tag> 忠信二字 </tag>
+            
+            <tag> 聪明才智 </tag>
+            
+            <tag> 读书人 </tag>
+            
+            <tag> 培养 </tag>
+            
+            <tag> 事业 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>读《围炉夜话》其四有感</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/37b7505e/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/37b7505e/</url>
@@ -22839,61 +22894,6 @@
             <tag> 外祖父 </tag>
             
             <tag> 继承权 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>读《围炉夜话》其十有感</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4ecdab72/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4ecdab72/</url>
-      
-        <content type="html"><![CDATA[<p>本来不属于自己的名利，但是自己却通过不正当的手段去得到了，开始时是觉得自己的运气好，但是以后也可能会因为这件事而惹祸上身。</p><span id="more"></span><p>塞翁失马未必就是一件坏事，但是马后面不仅回来了，还带了一群马回来，这也未必就是一件好事，福祸所倚，祸福所伏，说的也正是这个道理。</p><p>一个人穷困潦倒到了极点，还能咬紧牙关继续坚持活着，这样的人是最有能耐的，当苦难过去之后，顺境必然会到来，苦难可以磨练一个人的性格，先苦后甜的幸福不属于这样的人，哪还会属于谁呢？</p><p>人的聪明才智，最主要在于忠信二字，做一个不忠不信的人就算怎么有才智，那也是无用之才，忠信二字都没有的无用之才，也很难为他人创造价值，自然也无法实现自己的人生价值。</p><p>自己的聪明才智应该是要表现在忠信二字上，而不是用灵活机变的心思来代替，只有把最基本的做到了，才能往最深层次的去扩展。</p><p>读书人好坏不单就是看成绩考了多少分，还要看品行，品行才是最重要的，品行不好的人，成绩再怎么好，这样的人培养出来了对社会也没有什么用处。</p><p>读书人该做的就是：“为天地立心，为生民立命，为往圣继绝学，为万世开太平。”要以德为本，并且身体力行地去做，并不是认为自己成绩好就能轻易做到的，要以自己的本心，心无杂念地不断去摸索，最终才能做出成功的事业。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 成绩 </tag>
-            
-            <tag> 摸索 </tag>
-            
-            <tag> 围炉夜话 </tag>
-            
-            <tag> 名利 </tag>
-            
-            <tag> 不正当 </tag>
-            
-            <tag> 运气好 </tag>
-            
-            <tag> 惹祸上身 </tag>
-            
-            <tag> 福祸所倚 </tag>
-            
-            <tag> 祸福所伏 </tag>
-            
-            <tag> 穷困潦倒 </tag>
-            
-            <tag> 磨练 </tag>
-            
-            <tag> 忠信二字 </tag>
-            
-            <tag> 聪明才智 </tag>
-            
-            <tag> 读书人 </tag>
-            
-            <tag> 培养 </tag>
-            
-            <tag> 事业 </tag>
             
         </tags>
       
@@ -23207,6 +23207,63 @@
     
     
     <entry>
+      <title>那些在QQ上求赞的女人是什么心态</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/77b8b612/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/77b8b612/</url>
+      
+        <content type="html"><![CDATA[<p>本来是不想写这个题目的，但是今天突然看到一个女的发信息给我说要我赞她十次她就回赞我一次，我当时就想笑了，我是缺她那一次赞吗，再说也不公平啊，我赞她十次她也应该赞我十次才对，现在的社会应该是男女公平才对啊，为什么她认为她是女人，我就多赞她几下，要让我多付出一点。</p><span id="more"></span><p>虽然我的QQ个人主页上也是有三千多赞了，但我是真的不在乎别人赞不赞我的问题，如果是我写来发在平台上的文章赞得越多，那我肯定是高兴的，因为这样我文章就可以成为热文可以被更多的人看到，但是QQ个人主页那里赞得再多，也是没有什么用的，赞得再多别人如果不打开你自己的主页谁又会看到。</p><p>我赞别人也是无聊的时候顺手点一下而已，但是真的没有要发消息去让别人来赞我的意思，不知道那些喜欢让别人给她点赞的人原因是什么，反正我看不懂，难道是赞得越多自己就可以成为网红吗。我记得还在QQ空间上看到有人卖刷赞，说多少钱刷多少赞，这就有点让我想笑了，就这么个赞真的有必要花钱去刷吗？</p><p>点开那个女人的QQ上的主页我特意留意了她的年龄上面写着五十了，这个年龄的女人对于这些应该不看得那么重了才对，这不是都是小孩子玩意吗，对于她是怎么加我的或者是我怎么加她的这里我就不清楚了，也不想去回忆，也不做过多的讨论。QQ上一直都是年轻人比较多，因为不像微信一样要用手机号才能注册。那为什么一个五十多岁的女人还要要求别人赞她，是虚荣心在作祟吗？还是真的太无聊？这一切都好像就是个未解之谜，我也不知道答案到底是什么。</p><p>说到QQ上的赞这个功能也有好多年了，记得几年前还有身边的朋友去淘宝上买赞，那时候我就不以为然，认为这个东西是一点卵用都没有，怎么还要花钱去买，是钱多没有地方花了吗？但是这是人家的消费自由我也没有必要去反对什么，我也不需要去劝说人家要怎么怎么样，那还真的还没有什么必要，我自己感觉不值得，人家自己认为值得那就行了，每个人的价值观都是千差万别的，不一定都要符合自己思维的才是对的，就是因为个体差异的不同才会有这世界的多姿多彩。</p><p>要说那些在QQ上求赞的女人是什么心态我真的不清楚，因为我对于自己认为没有价值的东西我就很少去研究，我这样写出来我也只是写下我对这些事的感受，因为我的想法不能代表她的看法，我也不是她，也不是她肚子里的蛔虫，怎么可能知道她们所想的、她们心态是怎样的。虽然人在某些时刻确实是可以换位思考的，但我不想，换到她的位置来想我也想不到什么合适的答案，我能想到的还是我自己的想法，所以我写出来的也是这样。</p><p>对于我来说我真的不想去研究一些对自己没有价值的东西，特别是这些无聊的，既然人家喜欢别人对她的点赞，那我点了就是，我点这个东西我可能点的时候都是不计其数的，直到点到不能点为止就不点了，这个说起来真的有点无聊，和小孩子玩的游戏一样了。反正我点了就是了，她给不给我点赞也无所谓，我真的对这种无价值无意义的东西不会去在乎，我这样写下来就是写下自己的感受，完全没有其他别的意思。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 答案 </tag>
+            
+            <tag> 题目 </tag>
+            
+            <tag> 淘宝 </tag>
+            
+            <tag> QQ </tag>
+            
+            <tag> 个人主页 </tag>
+            
+            <tag> 网红 </tag>
+            
+            <tag> 点赞 </tag>
+            
+            <tag> 女人 </tag>
+            
+            <tag> 求赞 </tag>
+            
+            <tag> 心态 </tag>
+            
+            <tag> 回赞 </tag>
+            
+            <tag> 男女公平 </tag>
+            
+            <tag> QQ空间 </tag>
+            
+            <tag> 年龄 </tag>
+            
+            <tag> 年轻人 </tag>
+            
+            <tag> 虚荣心 </tag>
+            
+            <tag> 多姿多彩 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>迷你电脑主机的好处</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5c1dd71a/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5c1dd71a/</url>
@@ -23266,63 +23323,6 @@
             <tag> 性能过剩 </tag>
             
             <tag> 办公 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>那些在QQ上求赞的女人是什么心态</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/77b8b612/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/77b8b612/</url>
-      
-        <content type="html"><![CDATA[<p>本来是不想写这个题目的，但是今天突然看到一个女的发信息给我说要我赞她十次她就回赞我一次，我当时就想笑了，我是缺她那一次赞吗，再说也不公平啊，我赞她十次她也应该赞我十次才对，现在的社会应该是男女公平才对啊，为什么她认为她是女人，我就多赞她几下，要让我多付出一点。</p><span id="more"></span><p>虽然我的QQ个人主页上也是有三千多赞了，但我是真的不在乎别人赞不赞我的问题，如果是我写来发在平台上的文章赞得越多，那我肯定是高兴的，因为这样我文章就可以成为热文可以被更多的人看到，但是QQ个人主页那里赞得再多，也是没有什么用的，赞得再多别人如果不打开你自己的主页谁又会看到。</p><p>我赞别人也是无聊的时候顺手点一下而已，但是真的没有要发消息去让别人来赞我的意思，不知道那些喜欢让别人给她点赞的人原因是什么，反正我看不懂，难道是赞得越多自己就可以成为网红吗。我记得还在QQ空间上看到有人卖刷赞，说多少钱刷多少赞，这就有点让我想笑了，就这么个赞真的有必要花钱去刷吗？</p><p>点开那个女人的QQ上的主页我特意留意了她的年龄上面写着五十了，这个年龄的女人对于这些应该不看得那么重了才对，这不是都是小孩子玩意吗，对于她是怎么加我的或者是我怎么加她的这里我就不清楚了，也不想去回忆，也不做过多的讨论。QQ上一直都是年轻人比较多，因为不像微信一样要用手机号才能注册。那为什么一个五十多岁的女人还要要求别人赞她，是虚荣心在作祟吗？还是真的太无聊？这一切都好像就是个未解之谜，我也不知道答案到底是什么。</p><p>说到QQ上的赞这个功能也有好多年了，记得几年前还有身边的朋友去淘宝上买赞，那时候我就不以为然，认为这个东西是一点卵用都没有，怎么还要花钱去买，是钱多没有地方花了吗？但是这是人家的消费自由我也没有必要去反对什么，我也不需要去劝说人家要怎么怎么样，那还真的还没有什么必要，我自己感觉不值得，人家自己认为值得那就行了，每个人的价值观都是千差万别的，不一定都要符合自己思维的才是对的，就是因为个体差异的不同才会有这世界的多姿多彩。</p><p>要说那些在QQ上求赞的女人是什么心态我真的不清楚，因为我对于自己认为没有价值的东西我就很少去研究，我这样写出来我也只是写下我对这些事的感受，因为我的想法不能代表她的看法，我也不是她，也不是她肚子里的蛔虫，怎么可能知道她们所想的、她们心态是怎样的。虽然人在某些时刻确实是可以换位思考的，但我不想，换到她的位置来想我也想不到什么合适的答案，我能想到的还是我自己的想法，所以我写出来的也是这样。</p><p>对于我来说我真的不想去研究一些对自己没有价值的东西，特别是这些无聊的，既然人家喜欢别人对她的点赞，那我点了就是，我点这个东西我可能点的时候都是不计其数的，直到点到不能点为止就不点了，这个说起来真的有点无聊，和小孩子玩的游戏一样了。反正我点了就是了，她给不给我点赞也无所谓，我真的对这种无价值无意义的东西不会去在乎，我这样写下来就是写下自己的感受，完全没有其他别的意思。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 情感美文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 答案 </tag>
-            
-            <tag> 题目 </tag>
-            
-            <tag> 淘宝 </tag>
-            
-            <tag> QQ </tag>
-            
-            <tag> 个人主页 </tag>
-            
-            <tag> 网红 </tag>
-            
-            <tag> 点赞 </tag>
-            
-            <tag> 女人 </tag>
-            
-            <tag> 求赞 </tag>
-            
-            <tag> 心态 </tag>
-            
-            <tag> 回赞 </tag>
-            
-            <tag> 男女公平 </tag>
-            
-            <tag> QQ空间 </tag>
-            
-            <tag> 年龄 </tag>
-            
-            <tag> 年轻人 </tag>
-            
-            <tag> 虚荣心 </tag>
-            
-            <tag> 多姿多彩 </tag>
             
         </tags>
       
@@ -23611,85 +23611,6 @@
     
     
     <entry>
-      <title>际遇不一样的人生，领略不同的峡谷和山川</title>
-      <link href="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/"/>
-      <url>/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/</url>
-      
-        <content type="html"><![CDATA[<p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/%E9%99%85%E9%81%87%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E4%BA%BA%E7%94%9F%EF%BC%8C%E9%A2%86%E7%95%A5%E4%B8%8D%E5%90%8C%E7%9A%84%E5%B3%A1%E8%B0%B7%E5%92%8C%E5%B1%B1%E5%B7%9D1.jpg"></p><span id="more"></span><center><h1 id="（一）"><a href="#（一）" class="headerlink" title="（一）"></a>（一）</h1></center><center><p>它跟着太阳的炎威逃亡<br>几次回头的时候了<br>乃温饱之人们的末路去了<br>与生命之焰将熄</p><p>失了生命的春<br>不相识人的容仪<br>我不是离开世界的劳动者<br>乃温饱之人们的颜色</p><p>那是一个传奇的世界时<br>这是人们的宝物中<br>不堪视孤桥流水飞溅<br>我的生命之焰将熄</p><p>浮在水面上<br>因为我有时感到世界的声音</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/%E9%99%85%E9%81%87%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E4%BA%BA%E7%94%9F%EF%BC%8C%E9%A2%86%E7%95%A5%E4%B8%8D%E5%90%8C%E7%9A%84%E5%B3%A1%E8%B0%B7%E5%92%8C%E5%B1%B1%E5%B7%9D2.jpg"></p><center><h1 id="（二）"><a href="#（二）" class="headerlink" title="（二）"></a>（二）</h1></center><center><p>万物沐浴着暖和的太阳<br>灿烂的太阳照着山头<br>山谷里回荡着鸟的吟唱<br>太阳给了我们光明和温暖</p><p>弥漫天空的云四处舞动<br>映照着江水山中的故乡<br>在泛绿的山坡上牧羊<br>我眼睛里燃着生命的双翼</p><p>一瓣樱花飘落在我的发间<br>是隐秘而伟大的山峰<br>音调婉转而又动人<br>流水伸展着美丽的翅膀</p><p>他的空气似水地呜咽<br>静听那隙外秋虫的轻声</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/%E9%99%85%E9%81%87%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E4%BA%BA%E7%94%9F%EF%BC%8C%E9%A2%86%E7%95%A5%E4%B8%8D%E5%90%8C%E7%9A%84%E5%B3%A1%E8%B0%B7%E5%92%8C%E5%B1%B1%E5%B7%9D3.jpg"></p><center><h1 id="（三）"><a href="#（三）" class="headerlink" title="（三）"></a>（三）</h1></center><center><p>幸运的人们唱了那远方的家乡<br>石缝中也能长出花朵<br>将美好的春意赋予自然<br>是我生命的青春</p><p>眼前晃过流水的光明<br>太阳照着山岗交出的风光<br>我生命之磨炼的岩石<br>白色羽毛显得纯洁而无瑕</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/%E9%99%85%E9%81%87%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E4%BA%BA%E7%94%9F%EF%BC%8C%E9%A2%86%E7%95%A5%E4%B8%8D%E5%90%8C%E7%9A%84%E5%B3%A1%E8%B0%B7%E5%92%8C%E5%B1%B1%E5%B7%9D4.jpg"></p><center><h1 id="（四）"><a href="#（四）" class="headerlink" title="（四）"></a>（四）</h1></center><center><p>可爱的星光没在天空的云里<br>可爱的光彩升向天空的一瞬<br>当时喜欢的时候我便睡着了<br>一只鱼儿游戏在水心打胸</p><p>而所有的人们一个人来的不仁<br>从梦中醒而复水流<br>欢喜同太阳般的燃烧起来<br>悄悄地散了一点生命的成绩</p><p>绿水长夜的风儿<br>痴想着人间一切<br>但暗水不要伸出我们的一切</p><p>就是人们有的一句话<br>我的世界只有深蓝的暗水里<br>弥漫着破灭的人们的舞台</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/%E9%99%85%E9%81%87%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E4%BA%BA%E7%94%9F%EF%BC%8C%E9%A2%86%E7%95%A5%E4%B8%8D%E5%90%8C%E7%9A%84%E5%B3%A1%E8%B0%B7%E5%92%8C%E5%B1%B1%E5%B7%9D5.jpg"></p><center><h1 id="（五）"><a href="#（五）" class="headerlink" title="（五）"></a>（五）</h1></center><center><p>一颗太阳照在流散的山坡上<br>林中春水悄悄的流过<br>这生命的泉源充满了活力<br>此旅梦的天空里发呆</p><p>往梦见了我的心头<br>秋风吹过山顶与峡谷<br>山谷中传来美妙的声响<br>春水无情的花儿暂谢</p><p>美丽的心灵在飞翔<br>青年都是摇了敌人的耳朵<br>年轻的时候就要去找梦<br>依然伏于江水之内</p><p>顺应着她的心灵<br>我爱的是这生命的艺术</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/%E9%99%85%E9%81%87%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E4%BA%BA%E7%94%9F%EF%BC%8C%E9%A2%86%E7%95%A5%E4%B8%8D%E5%90%8C%E7%9A%84%E5%B3%A1%E8%B0%B7%E5%92%8C%E5%B1%B1%E5%B7%9D6.jpg"></p><center><h1 id="（六）"><a href="#（六）" class="headerlink" title="（六）"></a>（六）</h1></center><center><p>美丽的太阳是这样的迷人<br>氲氤在这青山绿水的山谷中<br>如夕阳一样迷人<br>还不能放进天空的虚幻</p><p>反是聪明的人类<br>见到了你我就心生欢喜<br>写在水上的花纹似<br>微笑如同钻石般的永恒</p><p>抬头望着蔚蓝的天空<br>太阳在你的面前呢喃<br>歌唱你快乐的模样<br>从水塘中跳出水上的土地<br>飞鸟有着清脆的鸣叫<br>心中的热情一次又一次地燃起</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/%E9%99%85%E9%81%87%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E4%BA%BA%E7%94%9F%EF%BC%8C%E9%A2%86%E7%95%A5%E4%B8%8D%E5%90%8C%E7%9A%84%E5%B3%A1%E8%B0%B7%E5%92%8C%E5%B1%B1%E5%B7%9D7.jpg"></p><center><h1 id="（七）"><a href="#（七）" class="headerlink" title="（七）"></a>（七）</h1></center><center><p>夜色中看着水面与天边相接<br>含着美丽的太阳啊<br>日子带给你美好的希望<br>满眼是海水平线上聚集的小孩</p><p>蝴蝶画出美好的盛夏<br>这迷人的时间<br>街上的人变成了一枚漂亮的船<br>天空中星光在闪烁</p><p>清晨新生的太阳是如此闪耀<br>林中传来清脆的鸟叫声<br>我将找到那梦里的花<br>流水在你的心灵上微笑</p><p>像有一万颗太阳挂在中央<br>在世界中找寻一个温暖的地方</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/%E9%99%85%E9%81%87%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E4%BA%BA%E7%94%9F%EF%BC%8C%E9%A2%86%E7%95%A5%E4%B8%8D%E5%90%8C%E7%9A%84%E5%B3%A1%E8%B0%B7%E5%92%8C%E5%B1%B1%E5%B7%9D8.jpg"></p><center><h1 id="（八）"><a href="#（八）" class="headerlink" title="（八）"></a>（八）</h1></center><center><p>多谢这世界一齐捣毁<br>时光如云般轻盈<br>是人们庄严灿烂的艺术<br>这春水也有桃花几瓣的芬芳</p><p>你毋须想到生命的春天<br>铜马驮着浪漫憧憬的步伐<br>用梦想绘出美丽的图画<br>水面上倒映出花的影子</p><p>脚踏着梦影与银波的一颗星<br>这里面有个灿烂的梦的影子<br>一如太阳般的眼睛</p><p>梦中的人和他永不泯灭的梦境<br>不幸的河水正在我的眼前<br>清凉的流水从指间流淌</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/%E9%99%85%E9%81%87%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E4%BA%BA%E7%94%9F%EF%BC%8C%E9%A2%86%E7%95%A5%E4%B8%8D%E5%90%8C%E7%9A%84%E5%B3%A1%E8%B0%B7%E5%92%8C%E5%B1%B1%E5%B7%9D9.jpg"></p><center><h1 id="（九）"><a href="#（九）" class="headerlink" title="（九）"></a>（九）</h1></center><center><p>调皮的波浪冲到海岸上<br>你在寒冷的天空里发呆<br>海滩上亮着点点渔火<br>看看那太阳的灿烂光芒</p><p>有人曾美化了我的梦<br>是懒惰的人们弹出过的音乐<br>海边的贝壳晒得金光灿烂<br>我看见世界上一切的神奇</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/%E9%99%85%E9%81%87%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E4%BA%BA%E7%94%9F%EF%BC%8C%E9%A2%86%E7%95%A5%E4%B8%8D%E5%90%8C%E7%9A%84%E5%B3%A1%E8%B0%B7%E5%92%8C%E5%B1%B1%E5%B7%9D10.jpg"></p><center><h1 id="（十）"><a href="#（十）" class="headerlink" title="（十）"></a>（十）</h1></center><center><p>小河在独自流淌<br>海潮奔腾在天空下<br>林中春水悄悄的流过<br>我在梦中打开心中的窗户</p><p>辉煌的太阳照到春光的花里<br>密林里都是太阳的光热<br>深谷中回荡着美好的歌声<br>那是世界的主人</p><p>今日的太阳映在光里闪烁<br>这才是人生<br>浓浓的祝福送给你</p><p>村长放下手中的枪寻找光明<br>情人散发蓬蓬来到撒旦的面前<br>春天的太阳晒着黄金的大地</p></center>]]></content>
-      
-      
-      <categories>
-          
-          <category> 诗和远方 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 人生 </tag>
-            
-            <tag> 美丽 </tag>
-            
-            <tag> 梦境 </tag>
-            
-            <tag> 心灵 </tag>
-            
-            <tag> 温暖 </tag>
-            
-            <tag> 清脆 </tag>
-            
-            <tag> 美好 </tag>
-            
-            <tag> 际遇 </tag>
-            
-            <tag> 不一样 </tag>
-            
-            <tag> 领略 </tag>
-            
-            <tag> 峡谷 </tag>
-            
-            <tag> 山川 </tag>
-            
-            <tag> 逃亡 </tag>
-            
-            <tag> 温饱 </tag>
-            
-            <tag> 传奇 </tag>
-            
-            <tag> 流水飞溅 </tag>
-            
-            <tag> 山头 </tag>
-            
-            <tag> 四处舞动 </tag>
-            
-            <tag> 赋予自然 </tag>
-            
-            <tag> 纯洁 </tag>
-            
-            <tag> 欢喜 </tag>
-            
-            <tag> 风儿 </tag>
-            
-            <tag> 秋风 </tag>
-            
-            <tag> 一齐捣毁 </tag>
-            
-            <tag> 点点渔火 </tag>
-            
-            <tag> 金光灿烂 </tag>
-            
-            <tag> 独自流淌 </tag>
-            
-            <tag> 歌声 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>雨天美景，心中守着阳光便是晴天</title>
       <link href="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/a7a16319/"/>
       <url>/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/a7a16319/</url>
@@ -23781,47 +23702,6 @@
     
     
     <entry>
-      <title>题库的试题是终于做完了，明天要起早点来去考试了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e2cd592c/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e2cd592c/</url>
-      
-        <content type="html"><![CDATA[<p>今天没有什么事所以一下子就把最后的一套试题做完了，感觉今天做的这一套做得还可以，比前天做的那套正确率要高很多。</p><span id="more"></span><p>今天做的这套单选题只错了三个，多选也只错了两个，照这样的正确率考过应该是没有多大问题的，前面的选择题就可以拿三十多分，后面主观题随便拿个20多分也完全是可以的，反正我是感觉有信心能考过的。</p><p>明天不知道是骑车去考试还是坐公交车，公交车是太难等了，想着还是骑车去吧，骑车去回来的时候方便点，坐公交中午是没有回来的公交车，要走另一条线路太绕了，还要转一路公交车，实在是难等，骑电动车去就是放在外面怕被人偷，有保安在外面看着的应该没有事吧。</p><p>上次看着很多人也是骑电动车去的，上次去考一次是早上一次下午，早上那次回来的时候我坐公交车都坐睡着去。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 公交车 </tag>
-            
-            <tag> 题库 </tag>
-            
-            <tag> 做完 </tag>
-            
-            <tag> 试题 </tag>
-            
-            <tag> 去考试 </tag>
-            
-            <tag> 正确率 </tag>
-            
-            <tag> 有信心 </tag>
-            
-            <tag> 被人偷 </tag>
-            
-            <tag> 坐睡着 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>马上又要到元宵节了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c4e203d2/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c4e203d2/</url>
@@ -23900,6 +23780,126 @@
             <tag> 经常骑 </tag>
             
             <tag> 锂电池 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>际遇不一样的人生，领略不同的峡谷和山川</title>
+      <link href="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/"/>
+      <url>/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/</url>
+      
+        <content type="html"><![CDATA[<p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/%E9%99%85%E9%81%87%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E4%BA%BA%E7%94%9F%EF%BC%8C%E9%A2%86%E7%95%A5%E4%B8%8D%E5%90%8C%E7%9A%84%E5%B3%A1%E8%B0%B7%E5%92%8C%E5%B1%B1%E5%B7%9D1.jpg"></p><span id="more"></span><center><h1 id="（一）"><a href="#（一）" class="headerlink" title="（一）"></a>（一）</h1></center><center><p>它跟着太阳的炎威逃亡<br>几次回头的时候了<br>乃温饱之人们的末路去了<br>与生命之焰将熄</p><p>失了生命的春<br>不相识人的容仪<br>我不是离开世界的劳动者<br>乃温饱之人们的颜色</p><p>那是一个传奇的世界时<br>这是人们的宝物中<br>不堪视孤桥流水飞溅<br>我的生命之焰将熄</p><p>浮在水面上<br>因为我有时感到世界的声音</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/%E9%99%85%E9%81%87%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E4%BA%BA%E7%94%9F%EF%BC%8C%E9%A2%86%E7%95%A5%E4%B8%8D%E5%90%8C%E7%9A%84%E5%B3%A1%E8%B0%B7%E5%92%8C%E5%B1%B1%E5%B7%9D2.jpg"></p><center><h1 id="（二）"><a href="#（二）" class="headerlink" title="（二）"></a>（二）</h1></center><center><p>万物沐浴着暖和的太阳<br>灿烂的太阳照着山头<br>山谷里回荡着鸟的吟唱<br>太阳给了我们光明和温暖</p><p>弥漫天空的云四处舞动<br>映照着江水山中的故乡<br>在泛绿的山坡上牧羊<br>我眼睛里燃着生命的双翼</p><p>一瓣樱花飘落在我的发间<br>是隐秘而伟大的山峰<br>音调婉转而又动人<br>流水伸展着美丽的翅膀</p><p>他的空气似水地呜咽<br>静听那隙外秋虫的轻声</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/%E9%99%85%E9%81%87%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E4%BA%BA%E7%94%9F%EF%BC%8C%E9%A2%86%E7%95%A5%E4%B8%8D%E5%90%8C%E7%9A%84%E5%B3%A1%E8%B0%B7%E5%92%8C%E5%B1%B1%E5%B7%9D3.jpg"></p><center><h1 id="（三）"><a href="#（三）" class="headerlink" title="（三）"></a>（三）</h1></center><center><p>幸运的人们唱了那远方的家乡<br>石缝中也能长出花朵<br>将美好的春意赋予自然<br>是我生命的青春</p><p>眼前晃过流水的光明<br>太阳照着山岗交出的风光<br>我生命之磨炼的岩石<br>白色羽毛显得纯洁而无瑕</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/%E9%99%85%E9%81%87%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E4%BA%BA%E7%94%9F%EF%BC%8C%E9%A2%86%E7%95%A5%E4%B8%8D%E5%90%8C%E7%9A%84%E5%B3%A1%E8%B0%B7%E5%92%8C%E5%B1%B1%E5%B7%9D4.jpg"></p><center><h1 id="（四）"><a href="#（四）" class="headerlink" title="（四）"></a>（四）</h1></center><center><p>可爱的星光没在天空的云里<br>可爱的光彩升向天空的一瞬<br>当时喜欢的时候我便睡着了<br>一只鱼儿游戏在水心打胸</p><p>而所有的人们一个人来的不仁<br>从梦中醒而复水流<br>欢喜同太阳般的燃烧起来<br>悄悄地散了一点生命的成绩</p><p>绿水长夜的风儿<br>痴想着人间一切<br>但暗水不要伸出我们的一切</p><p>就是人们有的一句话<br>我的世界只有深蓝的暗水里<br>弥漫着破灭的人们的舞台</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/%E9%99%85%E9%81%87%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E4%BA%BA%E7%94%9F%EF%BC%8C%E9%A2%86%E7%95%A5%E4%B8%8D%E5%90%8C%E7%9A%84%E5%B3%A1%E8%B0%B7%E5%92%8C%E5%B1%B1%E5%B7%9D5.jpg"></p><center><h1 id="（五）"><a href="#（五）" class="headerlink" title="（五）"></a>（五）</h1></center><center><p>一颗太阳照在流散的山坡上<br>林中春水悄悄的流过<br>这生命的泉源充满了活力<br>此旅梦的天空里发呆</p><p>往梦见了我的心头<br>秋风吹过山顶与峡谷<br>山谷中传来美妙的声响<br>春水无情的花儿暂谢</p><p>美丽的心灵在飞翔<br>青年都是摇了敌人的耳朵<br>年轻的时候就要去找梦<br>依然伏于江水之内</p><p>顺应着她的心灵<br>我爱的是这生命的艺术</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/%E9%99%85%E9%81%87%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E4%BA%BA%E7%94%9F%EF%BC%8C%E9%A2%86%E7%95%A5%E4%B8%8D%E5%90%8C%E7%9A%84%E5%B3%A1%E8%B0%B7%E5%92%8C%E5%B1%B1%E5%B7%9D6.jpg"></p><center><h1 id="（六）"><a href="#（六）" class="headerlink" title="（六）"></a>（六）</h1></center><center><p>美丽的太阳是这样的迷人<br>氲氤在这青山绿水的山谷中<br>如夕阳一样迷人<br>还不能放进天空的虚幻</p><p>反是聪明的人类<br>见到了你我就心生欢喜<br>写在水上的花纹似<br>微笑如同钻石般的永恒</p><p>抬头望着蔚蓝的天空<br>太阳在你的面前呢喃<br>歌唱你快乐的模样<br>从水塘中跳出水上的土地<br>飞鸟有着清脆的鸣叫<br>心中的热情一次又一次地燃起</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/%E9%99%85%E9%81%87%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E4%BA%BA%E7%94%9F%EF%BC%8C%E9%A2%86%E7%95%A5%E4%B8%8D%E5%90%8C%E7%9A%84%E5%B3%A1%E8%B0%B7%E5%92%8C%E5%B1%B1%E5%B7%9D7.jpg"></p><center><h1 id="（七）"><a href="#（七）" class="headerlink" title="（七）"></a>（七）</h1></center><center><p>夜色中看着水面与天边相接<br>含着美丽的太阳啊<br>日子带给你美好的希望<br>满眼是海水平线上聚集的小孩</p><p>蝴蝶画出美好的盛夏<br>这迷人的时间<br>街上的人变成了一枚漂亮的船<br>天空中星光在闪烁</p><p>清晨新生的太阳是如此闪耀<br>林中传来清脆的鸟叫声<br>我将找到那梦里的花<br>流水在你的心灵上微笑</p><p>像有一万颗太阳挂在中央<br>在世界中找寻一个温暖的地方</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/%E9%99%85%E9%81%87%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E4%BA%BA%E7%94%9F%EF%BC%8C%E9%A2%86%E7%95%A5%E4%B8%8D%E5%90%8C%E7%9A%84%E5%B3%A1%E8%B0%B7%E5%92%8C%E5%B1%B1%E5%B7%9D8.jpg"></p><center><h1 id="（八）"><a href="#（八）" class="headerlink" title="（八）"></a>（八）</h1></center><center><p>多谢这世界一齐捣毁<br>时光如云般轻盈<br>是人们庄严灿烂的艺术<br>这春水也有桃花几瓣的芬芳</p><p>你毋须想到生命的春天<br>铜马驮着浪漫憧憬的步伐<br>用梦想绘出美丽的图画<br>水面上倒映出花的影子</p><p>脚踏着梦影与银波的一颗星<br>这里面有个灿烂的梦的影子<br>一如太阳般的眼睛</p><p>梦中的人和他永不泯灭的梦境<br>不幸的河水正在我的眼前<br>清凉的流水从指间流淌</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/%E9%99%85%E9%81%87%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E4%BA%BA%E7%94%9F%EF%BC%8C%E9%A2%86%E7%95%A5%E4%B8%8D%E5%90%8C%E7%9A%84%E5%B3%A1%E8%B0%B7%E5%92%8C%E5%B1%B1%E5%B7%9D9.jpg"></p><center><h1 id="（九）"><a href="#（九）" class="headerlink" title="（九）"></a>（九）</h1></center><center><p>调皮的波浪冲到海岸上<br>你在寒冷的天空里发呆<br>海滩上亮着点点渔火<br>看看那太阳的灿烂光芒</p><p>有人曾美化了我的梦<br>是懒惰的人们弹出过的音乐<br>海边的贝壳晒得金光灿烂<br>我看见世界上一切的神奇</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/%E9%99%85%E9%81%87%E4%B8%8D%E4%B8%80%E6%A0%B7%E7%9A%84%E4%BA%BA%E7%94%9F%EF%BC%8C%E9%A2%86%E7%95%A5%E4%B8%8D%E5%90%8C%E7%9A%84%E5%B3%A1%E8%B0%B7%E5%92%8C%E5%B1%B1%E5%B7%9D10.jpg"></p><center><h1 id="（十）"><a href="#（十）" class="headerlink" title="（十）"></a>（十）</h1></center><center><p>小河在独自流淌<br>海潮奔腾在天空下<br>林中春水悄悄的流过<br>我在梦中打开心中的窗户</p><p>辉煌的太阳照到春光的花里<br>密林里都是太阳的光热<br>深谷中回荡着美好的歌声<br>那是世界的主人</p><p>今日的太阳映在光里闪烁<br>这才是人生<br>浓浓的祝福送给你</p><p>村长放下手中的枪寻找光明<br>情人散发蓬蓬来到撒旦的面前<br>春天的太阳晒着黄金的大地</p></center>]]></content>
+      
+      
+      <categories>
+          
+          <category> 诗和远方 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 人生 </tag>
+            
+            <tag> 美丽 </tag>
+            
+            <tag> 梦境 </tag>
+            
+            <tag> 心灵 </tag>
+            
+            <tag> 温暖 </tag>
+            
+            <tag> 清脆 </tag>
+            
+            <tag> 美好 </tag>
+            
+            <tag> 际遇 </tag>
+            
+            <tag> 不一样 </tag>
+            
+            <tag> 领略 </tag>
+            
+            <tag> 峡谷 </tag>
+            
+            <tag> 山川 </tag>
+            
+            <tag> 逃亡 </tag>
+            
+            <tag> 温饱 </tag>
+            
+            <tag> 传奇 </tag>
+            
+            <tag> 流水飞溅 </tag>
+            
+            <tag> 山头 </tag>
+            
+            <tag> 四处舞动 </tag>
+            
+            <tag> 赋予自然 </tag>
+            
+            <tag> 纯洁 </tag>
+            
+            <tag> 欢喜 </tag>
+            
+            <tag> 风儿 </tag>
+            
+            <tag> 秋风 </tag>
+            
+            <tag> 一齐捣毁 </tag>
+            
+            <tag> 点点渔火 </tag>
+            
+            <tag> 金光灿烂 </tag>
+            
+            <tag> 独自流淌 </tag>
+            
+            <tag> 歌声 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>题库的试题是终于做完了，明天要起早点来去考试了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e2cd592c/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e2cd592c/</url>
+      
+        <content type="html"><![CDATA[<p>今天没有什么事所以一下子就把最后的一套试题做完了，感觉今天做的这一套做得还可以，比前天做的那套正确率要高很多。</p><span id="more"></span><p>今天做的这套单选题只错了三个，多选也只错了两个，照这样的正确率考过应该是没有多大问题的，前面的选择题就可以拿三十多分，后面主观题随便拿个20多分也完全是可以的，反正我是感觉有信心能考过的。</p><p>明天不知道是骑车去考试还是坐公交车，公交车是太难等了，想着还是骑车去吧，骑车去回来的时候方便点，坐公交中午是没有回来的公交车，要走另一条线路太绕了，还要转一路公交车，实在是难等，骑电动车去就是放在外面怕被人偷，有保安在外面看着的应该没有事吧。</p><p>上次看着很多人也是骑电动车去的，上次去考一次是早上一次下午，早上那次回来的时候我坐公交车都坐睡着去。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 公交车 </tag>
+            
+            <tag> 题库 </tag>
+            
+            <tag> 做完 </tag>
+            
+            <tag> 试题 </tag>
+            
+            <tag> 去考试 </tag>
+            
+            <tag> 正确率 </tag>
+            
+            <tag> 有信心 </tag>
+            
+            <tag> 被人偷 </tag>
+            
+            <tag> 坐睡着 </tag>
             
         </tags>
       

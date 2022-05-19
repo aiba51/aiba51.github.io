@@ -197,7 +197,7 @@
     <published>2022-05-14T09:40:43.000Z</published>
     <updated>2022-05-14T09:40:43.000Z</updated>
     
-    <content type="html"><![CDATA[<p><code>theme-next-calendar</code>是一款简洁的日历云插件，可以在日历上显示提交标记，由于原项目因为已经几年没有更新了，我拉取原项目作了几处修改，以适配新版的Next主题。</p><span id="more"></span><center><p>效果如图所示：</p></center><p><img data-src="/Hexo/910a6a1b/%E6%97%A5%E5%8E%86%E4%BA%91%E6%95%88%E6%9E%9C%E5%9B%BE.png" alt="日历云效果图"></p><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ol><li>首先安装hexo插件</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install aiba51/theme-next-calendar</span><br></pre></td></tr></table></figure><ol start="2"><li>在next主题配置文件<code>_config.yml</code>配置<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">CloudCalendar:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line">  <span class="attr">single:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">root:</span> <span class="string">/calendar/</span></span><br><span class="line">  <span class="attr">calendarCdn:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js</span></span><br><span class="line">  <span class="attr">langCdn:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js</span></span><br><span class="line">  <span class="comment">#disableSidebar: false</span></span><br></pre></td></tr></table></figure></li></ol><h3 id="渲染日历"><a href="#渲染日历" class="headerlink" title="渲染日历"></a>渲染日历</h3><p>默认是在边栏中渲染, 当然也可以在任何位置显示, 只要<code>disableSidebar</code>禁用，并添加<code>sidebar.swig</code>中的代码至你希望的位置</p><h3 id="自定义日历颜色"><a href="#自定义日历颜色" class="headerlink" title="自定义日历颜色"></a>自定义日历颜色</h3><p>日历插件内各元素的颜色都是可定制的, 可以通过添加自定义样式覆盖<code>calendar.styl</code>中的定义来达到更好的效果.</p><h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>提取自<code>Landscape-F</code>主题, 修改后适配theme-next</p><h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><p>为了适配新版的Next主题，作了几处修改：</p><ol><li><code>calendar.swig</code>修改为<code>calendar.njk</code>，并且将里面的<code>&#123;% if theme.CloudCalendar.enable %&#125;&#123;% endif %&#125;</code>标签修改为<code>&lt;div&gt;&lt;/div&gt;</code>。</li><li>将<code>sidebar.swig</code>修改为<code>sidebar.njk</code>,里面的文件保持不变。</li><li>两个<code>.swig</code>已经修改为<code>.njk</code>，自然<code>index.js</code>里面的路径也要修改，修改如下：<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> <span class="type">path</span>.<span class="keyword">join</span>(__dirname ,<span class="string">&#x27;sidebar.njk&#x27;</span>)</span><br><span class="line"><span class="type">path</span>.<span class="keyword">join</span>(__dirname ,<span class="string">&#x27;calendar.njk&#x27;</span>)</span><br></pre></td></tr></table></figure></li></ol><p>Next-8.11.0版本实测可用。</p>]]></content>
+    <content type="html"><![CDATA[<p><code>theme-next-calendar</code>是一款简洁的日历云插件，可以在日历上显示提交标记，由于原项目因为已经几年没有更新了，我拉取原项目作了几处修改，以适配新版的Next主题。</p><span id="more"></span><center><p>效果如图所示：</p></center><p><img data-src="/Hexo/910a6a1b/%E6%97%A5%E5%8E%86%E4%BA%91%E6%95%88%E6%9E%9C%E5%9B%BE.png" alt="日历云效果图"></p><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ol><li>首先安装hexo插件</li></ol><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install aiba51/theme-next-calendar</span><br></pre></td></tr></table></figure><ol start="2"><li>在next主题配置文件<code>_config.yml</code>配置<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">CloudCalendar:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">language:</span> <span class="string">zh-CN</span></span><br><span class="line">  <span class="attr">single:</span> <span class="literal">true</span></span><br><span class="line">  <span class="attr">root:</span> <span class="string">/calendar/</span></span><br><span class="line">  <span class="attr">calendarCdn:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js</span></span><br><span class="line">  <span class="attr">langCdn:</span> <span class="string">//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js</span></span><br><span class="line">  <span class="comment">#disableSidebar: false</span></span><br></pre></td></tr></table></figure></li></ol><h3 id="渲染日历"><a href="#渲染日历" class="headerlink" title="渲染日历"></a>渲染日历</h3><p>默认是在边栏中渲染, 当然也可以在任何位置显示, 只要<code>disableSidebar</code>禁用，并添加<code>sidebar.njk</code>中的代码至你希望的位置</p><h3 id="自定义日历颜色"><a href="#自定义日历颜色" class="headerlink" title="自定义日历颜色"></a>自定义日历颜色</h3><p>日历插件内各元素的颜色都是可定制的, 可以通过添加自定义样式覆盖<code>calendar.styl</code>中的定义来达到更好的效果.</p><h3 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h3><p>提取自<code>Landscape-F</code>主题, 修改后适配theme-next</p><h3 id="更新"><a href="#更新" class="headerlink" title="更新"></a>更新</h3><p>为了适配新版的Next主题，作了几处修改：</p><ol><li><code>calendar.swig</code>修改为<code>calendar.njk</code>，并且将里面的<code>&#123;% if theme.CloudCalendar.enable %&#125;&#123;% endif %&#125;</code>标签修改为<code>&lt;div&gt;&lt;/div&gt;</code>。</li><li>将<code>sidebar.swig</code>修改为<code>sidebar.njk</code>,里面的文件保持不变。</li><li>两个<code>.swig</code>已经修改为<code>.njk</code>，自然<code>index.js</code>里面的路径也要修改，修改如下：<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"> <span class="type">path</span>.<span class="keyword">join</span>(__dirname ,<span class="string">&#x27;sidebar.njk&#x27;</span>)</span><br><span class="line"><span class="type">path</span>.<span class="keyword">join</span>(__dirname ,<span class="string">&#x27;calendar.njk&#x27;</span>)</span><br></pre></td></tr></table></figure></li></ol><p>Next-8.11.0版本实测可用。</p>]]></content>
     
     
     <summary type="html">&lt;p&gt;&lt;code&gt;theme-next-calendar&lt;/code&gt;是一款简洁的日历云插件，可以在日历上显示提交标记，由于原项目因为已经几年没有更新了，我拉取原项目作了几处修改，以适配新版的Next主题。&lt;/p&gt;</summary>
@@ -430,6 +430,8 @@
     <category term="情感美文" scheme="https://aixz.xyz/categories/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/"/>
     
     
+    <category term="泡面" scheme="https://aixz.xyz/tags/%E6%B3%A1%E9%9D%A2/"/>
+    
     <category term="夜晚" scheme="https://aixz.xyz/tags/%E5%A4%9C%E6%99%9A/"/>
     
     <category term="回家路" scheme="https://aixz.xyz/tags/%E5%9B%9E%E5%AE%B6%E8%B7%AF/"/>
@@ -457,8 +459,6 @@
     <category term="候车大厅" scheme="https://aixz.xyz/tags/%E5%80%99%E8%BD%A6%E5%A4%A7%E5%8E%85/"/>
     
     <category term="消费" scheme="https://aixz.xyz/tags/%E6%B6%88%E8%B4%B9/"/>
-    
-    <category term="泡面" scheme="https://aixz.xyz/tags/%E6%B3%A1%E9%9D%A2/"/>
     
     <category term="大屏幕" scheme="https://aixz.xyz/tags/%E5%A4%A7%E5%B1%8F%E5%B9%95/"/>
     
@@ -501,9 +501,13 @@
     
     <category term="结婚" scheme="https://aixz.xyz/tags/%E7%BB%93%E5%A9%9A/"/>
     
-    <category term="元旦过后" scheme="https://aixz.xyz/tags/%E5%85%83%E6%97%A6%E8%BF%87%E5%90%8E/"/>
+    <category term="试卷" scheme="https://aixz.xyz/tags/%E8%AF%95%E5%8D%B7/"/>
+    
+    <category term="辞工" scheme="https://aixz.xyz/tags/%E8%BE%9E%E5%B7%A5/"/>
     
     <category term="新年" scheme="https://aixz.xyz/tags/%E6%96%B0%E5%B9%B4/"/>
+    
+    <category term="元旦过后" scheme="https://aixz.xyz/tags/%E5%85%83%E6%97%A6%E8%BF%87%E5%90%8E/"/>
     
     <category term="以今怀旧" scheme="https://aixz.xyz/tags/%E4%BB%A5%E4%BB%8A%E6%80%80%E6%97%A7/"/>
     
@@ -525,8 +529,6 @@
     
     <category term="遮阳伞" scheme="https://aixz.xyz/tags/%E9%81%AE%E9%98%B3%E4%BC%9E/"/>
     
-    <category term="试卷" scheme="https://aixz.xyz/tags/%E8%AF%95%E5%8D%B7/"/>
-    
     <category term="大专学历" scheme="https://aixz.xyz/tags/%E5%A4%A7%E4%B8%93%E5%AD%A6%E5%8E%86/"/>
     
     <category term="生产流程" scheme="https://aixz.xyz/tags/%E7%94%9F%E4%BA%A7%E6%B5%81%E7%A8%8B/"/>
@@ -538,8 +540,6 @@
     <category term="现实生活" scheme="https://aixz.xyz/tags/%E7%8E%B0%E5%AE%9E%E7%94%9F%E6%B4%BB/"/>
     
     <category term="创业" scheme="https://aixz.xyz/tags/%E5%88%9B%E4%B8%9A/"/>
-    
-    <category term="辞工" scheme="https://aixz.xyz/tags/%E8%BE%9E%E5%B7%A5/"/>
     
     <category term="雀斑" scheme="https://aixz.xyz/tags/%E9%9B%80%E6%96%91/"/>
     
@@ -782,9 +782,9 @@
     
     <category term="思想" scheme="https://aixz.xyz/tags/%E6%80%9D%E6%83%B3/"/>
     
-    <category term="睡不着" scheme="https://aixz.xyz/tags/%E7%9D%A1%E4%B8%8D%E7%9D%80/"/>
-    
     <category term="看书" scheme="https://aixz.xyz/tags/%E7%9C%8B%E4%B9%A6/"/>
+    
+    <category term="睡不着" scheme="https://aixz.xyz/tags/%E7%9D%A1%E4%B8%8D%E7%9D%80/"/>
     
     <category term="弱点" scheme="https://aixz.xyz/tags/%E5%BC%B1%E7%82%B9/"/>
     
