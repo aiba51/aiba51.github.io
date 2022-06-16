@@ -4,6 +4,47 @@
   
     
     <entry>
+      <title>在移动端kali安装Java环境</title>
+      <link href="/Kali/3ce20e4f/"/>
+      <url>/Kali/3ce20e4f/</url>
+      
+        <content type="html"><![CDATA[<p>下载时注意选择版本，移动端是arm64。<br>官网下载第址∶<br><code>https://www.oracle.com/java/technologies/downloads/#java18</code></p><span id="more"></span><p>手机向右滑动屏幕可以看到下载链接，复制要下载版本的链接在终端下载。</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget https:<span class="regexp">//</span>download.oracle.com<span class="regexp">/java/</span><span class="number">18</span><span class="regexp">/latest/</span>jdk-<span class="number">18</span>_linux-aarch64_bin.tar.gz</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>查看</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>解压缩</p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf jdk-<span class="number">18</span>_linux-aarch64_bin<span class="selector-class">.tar</span><span class="selector-class">.gz</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>复制解压出来的文件到<code>/etc/opt/</code>，我这里解压出来的是<code>jdk-18.0.1.1</code>。</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cp -r jdk-<span class="number">18.0</span>.<span class="number">1.1</span> <span class="regexp">/etc/</span>opt/</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>同样复制到<code>/usr/bin/</code></p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cp -r jdk-<span class="number">18.0</span>.<span class="number">1.1</span> <span class="regexp">/usr/</span>bin</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>切换到<code>/etc/opt/</code>目录</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd <span class="regexp">/etc/</span>opt/</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>安装并注册，依次执行如下，<code>jdk-18.0.1.1</code>就是前面解压出来的文件名，记得替换。</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update-alternatives --install <span class="regexp">/usr/</span>bin<span class="regexp">/java java /</span>opt<span class="regexp">/jdk-18.0.1.1/</span>bin/java <span class="number">1</span> </span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update-alternatives --install <span class="regexp">/usr/</span>bin<span class="regexp">/javac javac /</span>opt<span class="regexp">/jdk-18.0.1.1/</span>bin/javac <span class="number">1</span></span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update-alternatives --set java <span class="regexp">/etc/</span>opt<span class="regexp">/jdk-18.0.1.1/</span>bin/java</span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update-alternatives --set javac <span class="regexp">/etc/</span>opt<span class="regexp">/jdk-18.0.1.1/</span>bin/javac</span><br></pre></td></tr></table></figure><p>查看版本信息，验证是否安装成功。</p><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">java -<span class="built_in">version</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>出现以下信息，表示安装成功。</p><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">java</span> version <span class="string">&quot;18.0.1.1&quot;</span> <span class="number">2022</span>-<span class="number">04</span>-<span class="number">22</span></span><br><span class="line"><span class="attribute">Java</span>(TM) SE Runtime Environment (build <span class="number">18.0.1.1</span>+<span class="number">2</span>-<span class="number">6</span>)</span><br><span class="line"><span class="attribute">Java</span> HotSpot(TM) <span class="number">64</span>-Bit Server VM (build <span class="number">18.0.1.1</span>+<span class="number">2</span>-<span class="number">6</span>, mixed mode, sharing)</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>安装成功后，<code>home</code>目录下的压缩包可以删除。</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rm</span> <span class="operator">-f</span> jdk<span class="literal">-18_linux-aarch64_bin</span>.tar.gz</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> Kali </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 手机 </tag>
+            
+            <tag> kali </tag>
+            
+            <tag> Java </tag>
+            
+            <tag> 移动端 </tag>
+            
+            <tag> arm64 </tag>
+            
+            <tag> 终端 </tag>
+            
+            <tag> jdk </tag>
+            
+            <tag> 版本 </tag>
+            
+            <tag> home </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>爱奇艺充分利用黄金会员，在电视观看4K视频</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d5e44198/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d5e44198/</url>
@@ -1426,11 +1467,11 @@
             
             <tag> 工作内容 </tag>
             
-            <tag> “社会人”假设 </tag>
-            
             <tag> 公平理论 </tag>
             
             <tag> 亚当斯 </tag>
+            
+            <tag> “社会人”假设 </tag>
             
             <tag> 功能性 </tag>
             
@@ -2840,11 +2881,11 @@
             
             <tag> 玩游戏 </tag>
             
+            <tag> 蓝牙键盘 </tag>
+            
             <tag> 盖世小鸡 </tag>
             
             <tag> 狂野飙车8 </tag>
-            
-            <tag> 蓝牙键盘 </tag>
             
             <tag> 同屏器 </tag>
             
@@ -3974,9 +4015,9 @@
             
             <tag> 文字 </tag>
             
-            <tag> 生活 </tag>
-            
             <tag> 管理心理学 </tag>
+            
+            <tag> 生活 </tag>
             
             <tag> 辅导书 </tag>
             
@@ -4161,9 +4202,9 @@
             
             <tag> 花钱 </tag>
             
-            <tag> 赚钱 </tag>
-            
             <tag> 考完试 </tag>
+            
+            <tag> 赚钱 </tag>
             
             <tag> 回家 </tag>
             
@@ -4192,11 +4233,9 @@
       
         <tags>
             
-            <tag> 中山 </tag>
+            <tag> 毕节 </tag>
             
             <tag> 珠海 </tag>
-            
-            <tag> 毕节 </tag>
             
             <tag> 坐车 </tag>
             
@@ -4209,6 +4248,8 @@
             <tag> 刷二维码 </tag>
             
             <tag> 广州 </tag>
+            
+            <tag> 中山 </tag>
             
         </tags>
       
@@ -6163,9 +6204,9 @@
             
             <tag> 海边 </tag>
             
-            <tag> 中山 </tag>
-            
             <tag> 珠海 </tag>
+            
+            <tag> 中山 </tag>
             
             <tag> 不认床 </tag>
             
@@ -6194,9 +6235,9 @@
       
         <tags>
             
-            <tag> 中山 </tag>
-            
             <tag> 珠海 </tag>
+            
+            <tag> 中山 </tag>
             
             <tag> 浪费 </tag>
             
@@ -7106,9 +7147,9 @@
             
             <tag> 坚持 </tag>
             
-            <tag> 生活 </tag>
-            
             <tag> 学习 </tag>
+            
+            <tag> 生活 </tag>
             
             <tag> 空洞 </tag>
             
@@ -7755,13 +7796,13 @@
             
             <tag> 感觉很累 </tag>
             
+            <tag> 赚钱 </tag>
+            
             <tag> 线路板 </tag>
             
             <tag> 苦逼命 </tag>
             
             <tag> 临时工 </tag>
-            
-            <tag> 赚钱 </tag>
             
         </tags>
       
@@ -9776,9 +9817,9 @@
             
             <tag> iPad </tag>
             
-            <tag> 赚钱 </tag>
-            
             <tag> 网站 </tag>
+            
+            <tag> 赚钱 </tag>
             
             <tag> 感兴趣 </tag>
             
@@ -10102,6 +10143,51 @@
     
     
     <entry>
+      <title>Hexo搭建网站之用MarkdownPad2发文排版</title>
+      <link href="/Hexo/70a3aa22/"/>
+      <url>/Hexo/70a3aa22/</url>
+      
+        <content type="html"><![CDATA[<p>我用Hexo和GitHub搭建网站已经快3个月了，主题设置这些也基本上完善了，文章也有几十篇了，总结出来一些用MarkdownPad2排版文章的经验分享出来给大家。</p><span id="more"></span><p>我用的主题是Next主题，这个主题还是挺不错的有很多人使用，搜索引擎收录得也是挺快，我的网站才没有多久都已经被谷歌和必应收录了，由于百度蜘蛛被Github屏蔽了，所以百度是收录不了我网站的，这个主题对于个人做博客网站来说是相当可以的了。</p><p>也是支持文章封面的，在用MarkdownPad2写文章的时候用自定义摘要，就是用<code>&lt;！-- more --&gt;</code>把要当作摘要的部分隔开，这里用的如果是文字，那就是把文章第一段作为文章摘要部分，如果是图片那就是把第一张图片作为摘要，在网站上看到的效果就是这篇文章的封面图。在网站上点开标题或者阅读全文就可以就可以看全篇文章，我的图片是没有用到图床那些的，我是直接用了Hexo插件和Markdown语法从本地电脑上传的，只要图片不是太大的，一般两三百K的图片打开也是挺快的。</p><p>当然想要方便的话，我还是比较推荐把摘要符这些每篇文章都要用的放在文章模板那里，这样每次创建文章它就会自动一起创建这些。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Github </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> next主题 </tag>
+            
+            <tag> 搭建网站 </tag>
+            
+            <tag> MarkdownPad2 </tag>
+            
+            <tag> 发文排版 </tag>
+            
+            <tag> 排版文章 </tag>
+            
+            <tag> 百度蜘蛛 </tag>
+            
+            <tag> 自定义摘要 </tag>
+            
+            <tag> 文章封面图 </tag>
+            
+            <tag> 文章模板 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo推送失败的问题解决</title>
       <link href="/Hexo/5cc57a7a/"/>
       <url>/Hexo/5cc57a7a/</url>
@@ -10153,51 +10239,6 @@
             <tag> 迅雷下载 </tag>
             
             <tag> 巨无霸 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hexo搭建网站之用MarkdownPad2发文排版</title>
-      <link href="/Hexo/70a3aa22/"/>
-      <url>/Hexo/70a3aa22/</url>
-      
-        <content type="html"><![CDATA[<p>我用Hexo和GitHub搭建网站已经快3个月了，主题设置这些也基本上完善了，文章也有几十篇了，总结出来一些用MarkdownPad2排版文章的经验分享出来给大家。</p><span id="more"></span><p>我用的主题是Next主题，这个主题还是挺不错的有很多人使用，搜索引擎收录得也是挺快，我的网站才没有多久都已经被谷歌和必应收录了，由于百度蜘蛛被Github屏蔽了，所以百度是收录不了我网站的，这个主题对于个人做博客网站来说是相当可以的了。</p><p>也是支持文章封面的，在用MarkdownPad2写文章的时候用自定义摘要，就是用<code>&lt;！-- more --&gt;</code>把要当作摘要的部分隔开，这里用的如果是文字，那就是把文章第一段作为文章摘要部分，如果是图片那就是把第一张图片作为摘要，在网站上看到的效果就是这篇文章的封面图。在网站上点开标题或者阅读全文就可以就可以看全篇文章，我的图片是没有用到图床那些的，我是直接用了Hexo插件和Markdown语法从本地电脑上传的，只要图片不是太大的，一般两三百K的图片打开也是挺快的。</p><p>当然想要方便的话，我还是比较推荐把摘要符这些每篇文章都要用的放在文章模板那里，这样每次创建文章它就会自动一起创建这些。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Github </tag>
-            
-            <tag> Hexo </tag>
-            
-            <tag> next主题 </tag>
-            
-            <tag> 搭建网站 </tag>
-            
-            <tag> MarkdownPad2 </tag>
-            
-            <tag> 发文排版 </tag>
-            
-            <tag> 排版文章 </tag>
-            
-            <tag> 百度蜘蛛 </tag>
-            
-            <tag> 自定义摘要 </tag>
-            
-            <tag> 文章封面图 </tag>
-            
-            <tag> 文章模板 </tag>
             
         </tags>
       
@@ -10753,6 +10794,53 @@
     
     
     <entry>
+      <title>不想写文的心情</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/5ba13093/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/5ba13093/</url>
+      
+        <content type="html"><![CDATA[<p>我坚持在简书上日更挑战已经十四天了，但今天就突然不想写文了，身边自己该分享的事也分享得差不多了，于是我感觉自己没有东西可写了，于是就想到随便写下自己心情感受，只要手指开始在手机屏幕上打字，好像思维也开阔了，能写的东西似乎也变多了。</p><span id="more"></span><p>写作其实不要想得那么高大上，就是记录自己的生活故事而已，从古至今的很多写作大家无不是这样走出来的，只有先写自己对生活的感受，自己真实的事件，写多了才能写出虚构的剧情故事，如果连自己身边真实发生的事都写不出来，那又怎么可能去写那些带有剧情的故事。</p><p>文字的产生本身就是用来记录生活中发生的事，没有文字记录，光靠大脑是记得不长久的，随着时间的推移很多东西就会在大脑里被遗忘，只有文字才是永久的记忆。也许现在感觉记录的是一件微不足道的小事，但多年后再重新翻看曾经的记录，是不是也记忆犹新，还多了份难得的心得体会，想不到以前的自己也会有如此的创造力，也会有这样的情思和才华，亦或是感觉曾经的自己想法是如何的幼稚，随着年龄增长各时期的想法也是在不停地在改变，遇到过什么样的人，看到过什么样的电影和电视剧，读过什么样书，这些都是会改变自己对生活的看法。</p><p>记录现在的自己也可以说是为了做好以后的自己，人生的成长轨迹就是通过不停反思和总结使自己变得更加完美。</p><p>勿以小而不为，只有小短文小事件记录得多了，才能写出让人感悟深刻的长文，就如婴儿先学会爬然后才学会走路是同样的一个道理。什么东西都是有一个积累的过程的，文字和文章也是如此，文章是由文字堆叠起来的，文字在写作者的大脑里那就是无数颗棋子，自己就是那位指挥棋子去战胜千军万马的指挥官，只有更加的操演熟练了，这些棋子他们才会听从自己的指挥。</p><p>我手写我心，我思我所想，每个人的想法是不一样的，所以一千个人中才会有一千个哈姆雷特，写作的思想不应该被他人的思维所限制，跳不出他人的思维限制，自己的写作就会一直跑在别人的跑道上，自己要写的是自己的想法，按别人的模式你永远写的所要表达的，都不过是在重复别人的想法。</p><p>读者千千万万，写作者也是如此之多，文章犹如做菜，自己写出的东西不一定都是适合全部人的口味，菜的口感众口难调，文章也是如此，有人喜欢自然就会有人不喜欢，因为每个人的看法和想法都是不一样的，所以才有了这世间百花齐放无穷无尽的创造精神，写文章就是自己的创意，是自己的想法通过文字表达出来于书面上。</p><p>不知不觉中自己写自己想的也快一千字了，从写题目之前的开始不想写，一篇文章也就这样写出来了，文中没有什么高大上的写作理论，也没有什么金玉良言，有的不过是我写出了我真实的想法，没有说教式的说服力，我只是这棋局之外的旁观者。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 思维 </tag>
+            
+            <tag> 想法 </tag>
+            
+            <tag> 写文 </tag>
+            
+            <tag> 心情 </tag>
+            
+            <tag> 日更挑战 </tag>
+            
+            <tag> 心情感受 </tag>
+            
+            <tag> 剧情 </tag>
+            
+            <tag> 文字记录 </tag>
+            
+            <tag> 创造力 </tag>
+            
+            <tag> 操演熟练 </tag>
+            
+            <tag> 写作理论 </tag>
+            
+            <tag> 旁观者 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>不得不看的夏天的风景，绿草、路和云</title>
       <link href="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/b5186d28/"/>
       <url>/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/b5186d28/</url>
@@ -10905,53 +10993,6 @@
             <tag> 发现 </tag>
             
             <tag> 记录 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>不想写文的心情</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/5ba13093/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/5ba13093/</url>
-      
-        <content type="html"><![CDATA[<p>我坚持在简书上日更挑战已经十四天了，但今天就突然不想写文了，身边自己该分享的事也分享得差不多了，于是我感觉自己没有东西可写了，于是就想到随便写下自己心情感受，只要手指开始在手机屏幕上打字，好像思维也开阔了，能写的东西似乎也变多了。</p><span id="more"></span><p>写作其实不要想得那么高大上，就是记录自己的生活故事而已，从古至今的很多写作大家无不是这样走出来的，只有先写自己对生活的感受，自己真实的事件，写多了才能写出虚构的剧情故事，如果连自己身边真实发生的事都写不出来，那又怎么可能去写那些带有剧情的故事。</p><p>文字的产生本身就是用来记录生活中发生的事，没有文字记录，光靠大脑是记得不长久的，随着时间的推移很多东西就会在大脑里被遗忘，只有文字才是永久的记忆。也许现在感觉记录的是一件微不足道的小事，但多年后再重新翻看曾经的记录，是不是也记忆犹新，还多了份难得的心得体会，想不到以前的自己也会有如此的创造力，也会有这样的情思和才华，亦或是感觉曾经的自己想法是如何的幼稚，随着年龄增长各时期的想法也是在不停地在改变，遇到过什么样的人，看到过什么样的电影和电视剧，读过什么样书，这些都是会改变自己对生活的看法。</p><p>记录现在的自己也可以说是为了做好以后的自己，人生的成长轨迹就是通过不停反思和总结使自己变得更加完美。</p><p>勿以小而不为，只有小短文小事件记录得多了，才能写出让人感悟深刻的长文，就如婴儿先学会爬然后才学会走路是同样的一个道理。什么东西都是有一个积累的过程的，文字和文章也是如此，文章是由文字堆叠起来的，文字在写作者的大脑里那就是无数颗棋子，自己就是那位指挥棋子去战胜千军万马的指挥官，只有更加的操演熟练了，这些棋子他们才会听从自己的指挥。</p><p>我手写我心，我思我所想，每个人的想法是不一样的，所以一千个人中才会有一千个哈姆雷特，写作的思想不应该被他人的思维所限制，跳不出他人的思维限制，自己的写作就会一直跑在别人的跑道上，自己要写的是自己的想法，按别人的模式你永远写的所要表达的，都不过是在重复别人的想法。</p><p>读者千千万万，写作者也是如此之多，文章犹如做菜，自己写出的东西不一定都是适合全部人的口味，菜的口感众口难调，文章也是如此，有人喜欢自然就会有人不喜欢，因为每个人的看法和想法都是不一样的，所以才有了这世间百花齐放无穷无尽的创造精神，写文章就是自己的创意，是自己的想法通过文字表达出来于书面上。</p><p>不知不觉中自己写自己想的也快一千字了，从写题目之前的开始不想写，一篇文章也就这样写出来了，文中没有什么高大上的写作理论，也没有什么金玉良言，有的不过是我写出了我真实的想法，没有说教式的说服力，我只是这棋局之外的旁观者。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 情感美文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 思维 </tag>
-            
-            <tag> 想法 </tag>
-            
-            <tag> 写文 </tag>
-            
-            <tag> 心情 </tag>
-            
-            <tag> 日更挑战 </tag>
-            
-            <tag> 心情感受 </tag>
-            
-            <tag> 剧情 </tag>
-            
-            <tag> 文字记录 </tag>
-            
-            <tag> 创造力 </tag>
-            
-            <tag> 操演熟练 </tag>
-            
-            <tag> 写作理论 </tag>
-            
-            <tag> 旁观者 </tag>
             
         </tags>
       
@@ -11341,13 +11382,13 @@
             
             <tag> 电子产品 </tag>
             
-            <tag> 蓝牙键盘 </tag>
-            
             <tag> 吃灰 </tag>
             
             <tag> 淘宝 </tag>
             
             <tag> iPad </tag>
+            
+            <tag> 蓝牙键盘 </tag>
             
             <tag> 电池 </tag>
             
@@ -11623,49 +11664,6 @@
     
     
     <entry>
-      <title>人力资源管理（一）一考通简答题2</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/db252803/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/db252803/</url>
-      
-        <content type="html"><![CDATA[<h2 id="三、简答题"><a href="#三、简答题" class="headerlink" title="三、简答题"></a>三、简答题</h2><p><strong>31.(1P50)简述“社会人”假设的管理措施。</strong></p><p>答:</p><p>(1).管理人员在注重完成任务的同时，也要关注人,重视满足人的社会需要,培养员工的归属感。</p><p>(2).在实行奖励时,提倡集体奖励制度。</p><p>(3).重视非正式组织的作用。</p><span id="more"></span><p><strong>32.(3P114)简述工作设计的原则。</strong></p><p>答:工作设计的原则:</p><p>(1).因事设岗原则。</p><p>(2).系统性原则。</p><p>(3).实质性原则。</p><p>(4).简单化原则。</p><p>(5).匹配原则。</p><p><strong>33.(5P156)简述招募信息发布的原则。</strong></p><p>答:面广原则,及时原则,层次原则,最佳原则。</p><p><strong>34.(7P216)简述讲授培训法的优缺点。</strong></p><p>答：</p><p>(1).优点：</p><p>①.信息量大。</p><p>②.操作容易。</p><p>③.传授的知识比较系统、全面。<br>　　<br>(2).缺点：</p><p>①.单纯的讲授是单向的信息传递过程,缺少交流和沟通。</p><p>②.对受训者的差异不敏感,难以根据受训者的差异而采取有针对性的培训。</p><p>③.讲授法一般不太适合技能的培训。</p><p><strong>35.(8P233)简述绩效计划的内容。</strong></p><p>答：</p><p>(1).绩效工作目标。</p><p>(2).绩效发展目标。</p><p>(3).绩效权重。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> “社会人”假设 </tag>
-            
-            <tag> 工作设计 </tag>
-            
-            <tag> 招募信息 </tag>
-            
-            <tag> 讲授 </tag>
-            
-            <tag> 培训法 </tag>
-            
-            <tag> 绩效计划 </tag>
-            
-            <tag> 归属感 </tag>
-            
-            <tag> 奖励制度 </tag>
-            
-            <tag> 受训者 </tag>
-            
-            <tag> 权重 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>人力资源管理（一）一考通简答题1</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/422c79b9/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/422c79b9/</url>
@@ -11719,6 +11717,49 @@
     
     
     <entry>
+      <title>人力资源管理（一）一考通简答题2</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/db252803/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/db252803/</url>
+      
+        <content type="html"><![CDATA[<h2 id="三、简答题"><a href="#三、简答题" class="headerlink" title="三、简答题"></a>三、简答题</h2><p><strong>31.(1P50)简述“社会人”假设的管理措施。</strong></p><p>答:</p><p>(1).管理人员在注重完成任务的同时，也要关注人,重视满足人的社会需要,培养员工的归属感。</p><p>(2).在实行奖励时,提倡集体奖励制度。</p><p>(3).重视非正式组织的作用。</p><span id="more"></span><p><strong>32.(3P114)简述工作设计的原则。</strong></p><p>答:工作设计的原则:</p><p>(1).因事设岗原则。</p><p>(2).系统性原则。</p><p>(3).实质性原则。</p><p>(4).简单化原则。</p><p>(5).匹配原则。</p><p><strong>33.(5P156)简述招募信息发布的原则。</strong></p><p>答:面广原则,及时原则,层次原则,最佳原则。</p><p><strong>34.(7P216)简述讲授培训法的优缺点。</strong></p><p>答：</p><p>(1).优点：</p><p>①.信息量大。</p><p>②.操作容易。</p><p>③.传授的知识比较系统、全面。<br>　　<br>(2).缺点：</p><p>①.单纯的讲授是单向的信息传递过程,缺少交流和沟通。</p><p>②.对受训者的差异不敏感,难以根据受训者的差异而采取有针对性的培训。</p><p>③.讲授法一般不太适合技能的培训。</p><p><strong>35.(8P233)简述绩效计划的内容。</strong></p><p>答：</p><p>(1).绩效工作目标。</p><p>(2).绩效发展目标。</p><p>(3).绩效权重。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> “社会人”假设 </tag>
+            
+            <tag> 工作设计 </tag>
+            
+            <tag> 招募信息 </tag>
+            
+            <tag> 讲授 </tag>
+            
+            <tag> 培训法 </tag>
+            
+            <tag> 绩效计划 </tag>
+            
+            <tag> 归属感 </tag>
+            
+            <tag> 奖励制度 </tag>
+            
+            <tag> 受训者 </tag>
+            
+            <tag> 权重 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>人力资源管理（一）一考通论述题</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8607dead/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8607dead/</url>
@@ -11756,11 +11797,11 @@
     
     
     <entry>
-      <title>人力资源管理（一）自考通简答题1</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3bf0c43d/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3bf0c43d/</url>
+      <title>人力资源管理（一）自考通分析说明题1</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d850f6a5/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d850f6a5/</url>
       
-        <content type="html"><![CDATA[<h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="三、简答题"><a href="#三、简答题" class="headerlink" title="三、简答题"></a>三、简答题</h2><p><strong>31.简述“社会人”假设理论的主要观点和管理措施。(P50~51)</strong></p><p>答:(1). 主要观点:</p><p>   ①. 人类工作的主要动机是社会需要而不是经济需要。</p><p>   ②. 现代工业机械化程度越高，分工越细，会使工作本身变得越单调、越枯燥。因此，人们只能从社会关系上去寻求意义。</p><p>   ③. 人受非正式组织的社会影响比受正式组织的经济诱惑影响更大。</p><p>   ④. 工作积极性取决于管理者对下属需求的满足程度。</p><span id="more"></span><p>  (2). 管理措施:</p><p>   ①. 管理人员在注重完成任务的同时，也要关注人,重视满足人的社会需要,培养员工的归属感。</p><p>   ②. 在实行奖励时，提倡集体奖励制度。</p><p>   ③. 重视非正式组织的作用。</p><p><strong>32.简述工作设计的原则。(P114)</strong></p><p>答:</p><p>  (1). 因事设岗原则。<br>  (2). 系统性原则。<br>  (3). 实用性原则。<br>  (4). 简单化原则。<br>  (5). 匹配原则。</p><p><strong>33.简述人力资源需求预测的具体步骤。(P129)</strong></p><p>答:人力资源需求预测分为现实人力资源需求预测、未来增加人力资源需求预测和未来流失人力资源需求预测,其具体步骤如下:</p><p>  (1). 根据工作分析的结果来确定工作职位编制和人员配置。</p><p>  (2). 进行人力资源盘点，统计出人员的数量(缺编、超编)和质量是否符合工作规范的要求。</p><p>  (3). 与部门管理者讨论上述统计结论，修正统计结论。</p><p>  (4). 确定统计结论为现实人力资源需求。</p><p>  (5). 统计预测期内退休的人员信息。</p><p>  (6). 根据历史数据对未来可能发生的离职情况进行预测。</p><p>  (7). 将上面两个步骤的统计和预测结果进行比较汇总，确定未来可能流失的人力资源。</p><p>  (8). 根据企业发展规划(如引进新产品)确定各部门的工作量。</p><p>  (9). 根据工作量的增长情况确定各部门还需要增加的工作及人员数量，并进行汇总统计。</p><p>  (10). 确定该统计结论为未来增加的人力资源需求。</p><p>  (11). 将现实人力资源需求、未来流失的人力资源需求和未来增加的人力资源需求进行汇总,可预测得到企业整体人力资源需求。</p><p><strong>34.简述人员招募的过程。(P150)</strong></p><p>答:人员招募包括三个步骤:</p><p>  (1). 制定招募计划。</p><p>  (2). 实施招募计划。</p><p>  (3). 招募效果评估。</p><p><strong>35.简述职业生涯早期员工的心理特征。(P300)</strong></p><p>答: </p><p>  (1). 进取心强，具有积极向上、争强好胜的心态。</p><p>  (2). 职业竞争力不断增强，具有做出一番轰轰烈烈事业的心理准备。</p><p>  (3). 开始组建家庭，逐步学习调适家庭和工作的关系。</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="五、分析说明题"><a href="#五、分析说明题" class="headerlink" title="五、分析说明题"></a>五、分析说明题</h2><p>37.背景资料：</p><p>美国最年轻的医学院——弗吉尼亚理工大学卡里赖恩医学院推行了全新的招生政策。引起热议的焦点是，卡里赖恩医学院并不是严格按照成绩、标准化考试分数，以及一场面试的表现对申请者进行评估，而是让他们参加9轮简短面试，“评估他们的反应速度和团队协作意愿”。该流程的专业名称叫M.M.I.，即多轮微型面试，《纽约时报》称之为“速配型招生”，即在9场8分钟的对话中，面试官会设置一个道德困境，要求申请者现场做出决定，甚至对医疗保健政策发表看法，其目的是考察申请者是怎样的人，而不是他们有多聪明。</p><span id="more"></span><p><strong>问题:<br>　　　根据自己所了解的面试的相关内容，对医学院的多轮微型面试提出自己的建议。(P163~166)</strong></p><p>答:</p><p>(1). 面试是主试者通过与应聘者直接交谈或者置应聘者于某种特定情景中进行观察。从而对其适应职位要求的某些能力、素质和资格条件进行测评的一种方法。</p><p>(2). 面试的步骤一般包括准备、接触、了解背景、询问有关工作问题。向应聘者提供某些信息、结束面试、面试评价等。</p><p>(3). 面试技巧:</p><p>  ①. 面试提问技巧，即面试者要清楚提问的目的，准备好提问提纲，尤其要采用他人能够理解的方式来提问，以避免理解困难。在提问时，一般须遵从先易后难、循序渐进的原则。另外，需注意提问的方式。</p><p>  ②. 面试评价技巧。面试结束时应给应聘者提问的机会，整理好面试记录表。需要注意的是，面试评价要从面试的目的出发，评价项目尽量数量化、可操作化。</p><p>(4). 提高面试效果的对策有:</p><p>  ①. 做好面试前的准备工作;</p><p>  ②. 紧紧围绕面试的目的提问;</p><p>  ③. 对每一个应试者一视同仁，如面试时间的长短和提问的难度应保持一致，不能前紧后松;</p><p>  ④. 营造和谐的气氛;</p><p>  ⑤. 保持良好的互动;</p><p>  ⑥. 防止先入为主;</p><p>  ⑦. 注意非语言行为;</p><p>  ⑧. 防止“与我相似”的心理因素;</p><p>  ⑨. 避免暗示;</p><p>  ⑩. 尽可能采用小组面试。</p>]]></content>
       
       
       <categories>
@@ -11772,33 +11813,25 @@
       
         <tags>
             
-            <tag> 人员招募 </tag>
+            <tag> 分析说明 </tag>
             
-            <tag> 需求 </tag>
+            <tag> 微型面试 </tag>
             
-            <tag> 职业生涯 </tag>
+            <tag> 面试者 </tag>
             
-            <tag> “社会人”假设 </tag>
+            <tag> 一视同仁 </tag>
             
-            <tag> 工作设计 </tag>
+            <tag> 面试 </tag>
             
-            <tag> 人力资源 </tag>
+            <tag> 准备工作 </tag>
             
-            <tag> 预测 </tag>
+            <tag> 成绩 </tag>
             
-            <tag> 过程 </tag>
+            <tag> 焦点 </tag>
             
-            <tag> 早期 </tag>
+            <tag> 先入为主 </tag>
             
-            <tag> 管理措施 </tag>
-            
-            <tag> 观点 </tag>
-            
-            <tag> 实用性 </tag>
-            
-            <tag> 效果评估 </tag>
-            
-            <tag> 匹配原则 </tag>
+            <tag> 互动 </tag>
             
         </tags>
       
@@ -11844,6 +11877,57 @@
             <tag> 原则 </tag>
             
             <tag> 心理因素 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>人力资源管理（一）自考通简答题1</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3bf0c43d/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3bf0c43d/</url>
+      
+        <content type="html"><![CDATA[<h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="三、简答题"><a href="#三、简答题" class="headerlink" title="三、简答题"></a>三、简答题</h2><p><strong>31.简述“社会人”假设理论的主要观点和管理措施。(P50~51)</strong></p><p>答:(1). 主要观点:</p><p>   ①. 人类工作的主要动机是社会需要而不是经济需要。</p><p>   ②. 现代工业机械化程度越高，分工越细，会使工作本身变得越单调、越枯燥。因此，人们只能从社会关系上去寻求意义。</p><p>   ③. 人受非正式组织的社会影响比受正式组织的经济诱惑影响更大。</p><p>   ④. 工作积极性取决于管理者对下属需求的满足程度。</p><span id="more"></span><p>  (2). 管理措施:</p><p>   ①. 管理人员在注重完成任务的同时，也要关注人,重视满足人的社会需要,培养员工的归属感。</p><p>   ②. 在实行奖励时，提倡集体奖励制度。</p><p>   ③. 重视非正式组织的作用。</p><p><strong>32.简述工作设计的原则。(P114)</strong></p><p>答:</p><p>  (1). 因事设岗原则。<br>  (2). 系统性原则。<br>  (3). 实用性原则。<br>  (4). 简单化原则。<br>  (5). 匹配原则。</p><p><strong>33.简述人力资源需求预测的具体步骤。(P129)</strong></p><p>答:人力资源需求预测分为现实人力资源需求预测、未来增加人力资源需求预测和未来流失人力资源需求预测,其具体步骤如下:</p><p>  (1). 根据工作分析的结果来确定工作职位编制和人员配置。</p><p>  (2). 进行人力资源盘点，统计出人员的数量(缺编、超编)和质量是否符合工作规范的要求。</p><p>  (3). 与部门管理者讨论上述统计结论，修正统计结论。</p><p>  (4). 确定统计结论为现实人力资源需求。</p><p>  (5). 统计预测期内退休的人员信息。</p><p>  (6). 根据历史数据对未来可能发生的离职情况进行预测。</p><p>  (7). 将上面两个步骤的统计和预测结果进行比较汇总，确定未来可能流失的人力资源。</p><p>  (8). 根据企业发展规划(如引进新产品)确定各部门的工作量。</p><p>  (9). 根据工作量的增长情况确定各部门还需要增加的工作及人员数量，并进行汇总统计。</p><p>  (10). 确定该统计结论为未来增加的人力资源需求。</p><p>  (11). 将现实人力资源需求、未来流失的人力资源需求和未来增加的人力资源需求进行汇总,可预测得到企业整体人力资源需求。</p><p><strong>34.简述人员招募的过程。(P150)</strong></p><p>答:人员招募包括三个步骤:</p><p>  (1). 制定招募计划。</p><p>  (2). 实施招募计划。</p><p>  (3). 招募效果评估。</p><p><strong>35.简述职业生涯早期员工的心理特征。(P300)</strong></p><p>答: </p><p>  (1). 进取心强，具有积极向上、争强好胜的心态。</p><p>  (2). 职业竞争力不断增强，具有做出一番轰轰烈烈事业的心理准备。</p><p>  (3). 开始组建家庭，逐步学习调适家庭和工作的关系。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 人员招募 </tag>
+            
+            <tag> 需求 </tag>
+            
+            <tag> 职业生涯 </tag>
+            
+            <tag> 人力资源 </tag>
+            
+            <tag> “社会人”假设 </tag>
+            
+            <tag> 工作设计 </tag>
+            
+            <tag> 预测 </tag>
+            
+            <tag> 过程 </tag>
+            
+            <tag> 早期 </tag>
+            
+            <tag> 管理措施 </tag>
+            
+            <tag> 观点 </tag>
+            
+            <tag> 实用性 </tag>
+            
+            <tag> 效果评估 </tag>
+            
+            <tag> 匹配原则 </tag>
             
         </tags>
       
@@ -11940,49 +12024,6 @@
             <tag> 思维方式 </tag>
             
             <tag> 显著特征 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>人力资源管理（一）自考通分析说明题1</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d850f6a5/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d850f6a5/</url>
-      
-        <content type="html"><![CDATA[<h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="五、分析说明题"><a href="#五、分析说明题" class="headerlink" title="五、分析说明题"></a>五、分析说明题</h2><p>37.背景资料：</p><p>美国最年轻的医学院——弗吉尼亚理工大学卡里赖恩医学院推行了全新的招生政策。引起热议的焦点是，卡里赖恩医学院并不是严格按照成绩、标准化考试分数，以及一场面试的表现对申请者进行评估，而是让他们参加9轮简短面试，“评估他们的反应速度和团队协作意愿”。该流程的专业名称叫M.M.I.，即多轮微型面试，《纽约时报》称之为“速配型招生”，即在9场8分钟的对话中，面试官会设置一个道德困境，要求申请者现场做出决定，甚至对医疗保健政策发表看法，其目的是考察申请者是怎样的人，而不是他们有多聪明。</p><span id="more"></span><p><strong>问题:<br>　　　根据自己所了解的面试的相关内容，对医学院的多轮微型面试提出自己的建议。(P163~166)</strong></p><p>答:</p><p>(1). 面试是主试者通过与应聘者直接交谈或者置应聘者于某种特定情景中进行观察。从而对其适应职位要求的某些能力、素质和资格条件进行测评的一种方法。</p><p>(2). 面试的步骤一般包括准备、接触、了解背景、询问有关工作问题。向应聘者提供某些信息、结束面试、面试评价等。</p><p>(3). 面试技巧:</p><p>  ①. 面试提问技巧，即面试者要清楚提问的目的，准备好提问提纲，尤其要采用他人能够理解的方式来提问，以避免理解困难。在提问时，一般须遵从先易后难、循序渐进的原则。另外，需注意提问的方式。</p><p>  ②. 面试评价技巧。面试结束时应给应聘者提问的机会，整理好面试记录表。需要注意的是，面试评价要从面试的目的出发，评价项目尽量数量化、可操作化。</p><p>(4). 提高面试效果的对策有:</p><p>  ①. 做好面试前的准备工作;</p><p>  ②. 紧紧围绕面试的目的提问;</p><p>  ③. 对每一个应试者一视同仁，如面试时间的长短和提问的难度应保持一致，不能前紧后松;</p><p>  ④. 营造和谐的气氛;</p><p>  ⑤. 保持良好的互动;</p><p>  ⑥. 防止先入为主;</p><p>  ⑦. 注意非语言行为;</p><p>  ⑧. 防止“与我相似”的心理因素;</p><p>  ⑨. 避免暗示;</p><p>  ⑩. 尽可能采用小组面试。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 分析说明 </tag>
-            
-            <tag> 微型面试 </tag>
-            
-            <tag> 面试者 </tag>
-            
-            <tag> 一视同仁 </tag>
-            
-            <tag> 面试 </tag>
-            
-            <tag> 准备工作 </tag>
-            
-            <tag> 成绩 </tag>
-            
-            <tag> 焦点 </tag>
-            
-            <tag> 先入为主 </tag>
-            
-            <tag> 互动 </tag>
             
         </tags>
       
@@ -12439,41 +12480,6 @@
     
     
     <entry>
-      <title>今天又睡了一天</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a3e356ee/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a3e356ee/</url>
-      
-        <content type="html"><![CDATA[<p>连续两天在外面玩，玩累了今天是直接不想起，然后就这样睡了一天。这几天什么也没有做就花了300多块钱，搞得我都不敢去市区了，去贴了个手机钢化膜，就花了49还那个优惠券也用不了。</p><span id="more"></span><p>结果是贴完晚上回来发现打字都不灵敏了，打个字边上那里点了半天都没有反应，最后不贴了，直接扯掉了还舒服点，我这手机是曲面屏的，贴什么钢化膜都没有用。</p><p>昨天也不知道脑子是发热还是怎么了，小米售后服务那美女问我是贴水凝膜还是钢化膜，说水凝膜是免费的，我真是一冲动就说要贴钢化膜。现在想起来才知道后悔，日啊49块钱就这样没有了。</p><p>还有昨天吃个饭也是一顿饭，就一个套餐饭45块也没有了，还不好吃，在镇上晚上吃了个差不多一样的都才16，去市区就是坑啊，再也不敢去了。本来都没有钱还浪费钱，罪大了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 外面玩 </tag>
-            
-            <tag> 市区 </tag>
-            
-            <tag> 曲面屏 </tag>
-            
-            <tag> 小米售后 </tag>
-            
-            <tag> 水凝膜 </tag>
-            
-            <tag> 吃个饭 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>今天又是没有做完一章新的题</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2adc4b25/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2adc4b25/</url>
@@ -12501,6 +12507,41 @@
             <tag> 坚持更新 </tag>
             
             <tag> 精彩 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>今天又睡了一天</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a3e356ee/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a3e356ee/</url>
+      
+        <content type="html"><![CDATA[<p>连续两天在外面玩，玩累了今天是直接不想起，然后就这样睡了一天。这几天什么也没有做就花了300多块钱，搞得我都不敢去市区了，去贴了个手机钢化膜，就花了49还那个优惠券也用不了。</p><span id="more"></span><p>结果是贴完晚上回来发现打字都不灵敏了，打个字边上那里点了半天都没有反应，最后不贴了，直接扯掉了还舒服点，我这手机是曲面屏的，贴什么钢化膜都没有用。</p><p>昨天也不知道脑子是发热还是怎么了，小米售后服务那美女问我是贴水凝膜还是钢化膜，说水凝膜是免费的，我真是一冲动就说要贴钢化膜。现在想起来才知道后悔，日啊49块钱就这样没有了。</p><p>还有昨天吃个饭也是一顿饭，就一个套餐饭45块也没有了，还不好吃，在镇上晚上吃了个差不多一样的都才16，去市区就是坑啊，再也不敢去了。本来都没有钱还浪费钱，罪大了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 外面玩 </tag>
+            
+            <tag> 市区 </tag>
+            
+            <tag> 曲面屏 </tag>
+            
+            <tag> 小米售后 </tag>
+            
+            <tag> 水凝膜 </tag>
+            
+            <tag> 吃个饭 </tag>
             
         </tags>
       
@@ -12798,6 +12839,47 @@
     
     
     <entry>
+      <title>今天有时间更新，继续写文吧</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/485e03b9/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/485e03b9/</url>
+      
+        <content type="html"><![CDATA[<p>换了个环境我以为不能及时更文了，但还是有很多时间的，换了个环境花费的钱真的像流水一样，一下买这样买那样的，也许过几天上班了可能会很累，不管怎样兵来将挡，水来土掩，做到随遇而安就好。</p><span id="more"></span><p>有时候真的想得太多反而不好，还是自然点就行了，也没有是什么过不去的坎，人生在世总是需要很多次改变，只有这样才能体会到人生其实也是精彩的。</p><p>每天坚持都写文对于我来说现在已经成为一个习惯了，现在什么新闻我也很少看了，打开手机看得最多的就是简书了，只要打开简书，就会想到今天的文章还没有写，真的现在的感觉就是如果每天不在简书上发一篇文章都会感觉难受。</p><p>现在的日更也有五十多天了，我希望我可以坚持下去，因为每天在手机上写一篇文章其实不难，每天都把它当成一个自己要完成的任务，这样也到还觉得成了一种乐趣。现在的我好像已经快把简书当成一个日记本了，每天写写自己的心情故事、人生感悟真是再好不过了。</p><p>现在的我也可能每天也不再要求自己一定要写多少字了，有时候一篇小短文也有小短文的精彩，有时候可能写得多了，也可能让一篇文章失去了中心。</p><p>每天都写好我自己就行，有的时候我可能不会去在乎写得好与不好，对于我来说能写出来就已经是好的了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 更新 </tag>
+            
+            <tag> 坚持 </tag>
+            
+            <tag> 文章 </tag>
+            
+            <tag> 写文 </tag>
+            
+            <tag> 简书 </tag>
+            
+            <tag> 自然点 </tag>
+            
+            <tag> 日记本 </tag>
+            
+            <tag> 随遇而安 </tag>
+            
+            <tag> 一种乐趣 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>今天看了新闻，说是不能给大学生贷款了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/7c0c4235/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/7c0c4235/</url>
@@ -12833,47 +12915,6 @@
             <tag> 价值产生 </tag>
             
             <tag> 借鸡生蛋 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>今天有时间更新，继续写文吧</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/485e03b9/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/485e03b9/</url>
-      
-        <content type="html"><![CDATA[<p>换了个环境我以为不能及时更文了，但还是有很多时间的，换了个环境花费的钱真的像流水一样，一下买这样买那样的，也许过几天上班了可能会很累，不管怎样兵来将挡，水来土掩，做到随遇而安就好。</p><span id="more"></span><p>有时候真的想得太多反而不好，还是自然点就行了，也没有是什么过不去的坎，人生在世总是需要很多次改变，只有这样才能体会到人生其实也是精彩的。</p><p>每天坚持都写文对于我来说现在已经成为一个习惯了，现在什么新闻我也很少看了，打开手机看得最多的就是简书了，只要打开简书，就会想到今天的文章还没有写，真的现在的感觉就是如果每天不在简书上发一篇文章都会感觉难受。</p><p>现在的日更也有五十多天了，我希望我可以坚持下去，因为每天在手机上写一篇文章其实不难，每天都把它当成一个自己要完成的任务，这样也到还觉得成了一种乐趣。现在的我好像已经快把简书当成一个日记本了，每天写写自己的心情故事、人生感悟真是再好不过了。</p><p>现在的我也可能每天也不再要求自己一定要写多少字了，有时候一篇小短文也有小短文的精彩，有时候可能写得多了，也可能让一篇文章失去了中心。</p><p>每天都写好我自己就行，有的时候我可能不会去在乎写得好与不好，对于我来说能写出来就已经是好的了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 更新 </tag>
-            
-            <tag> 坚持 </tag>
-            
-            <tag> 文章 </tag>
-            
-            <tag> 写文 </tag>
-            
-            <tag> 简书 </tag>
-            
-            <tag> 自然点 </tag>
-            
-            <tag> 日记本 </tag>
-            
-            <tag> 随遇而安 </tag>
-            
-            <tag> 一种乐趣 </tag>
             
         </tags>
       
@@ -13299,6 +13340,53 @@
     
     
     <entry>
+      <title>关于想做有收益的自媒体，可是没电脑做不了，有没有更好的方法？</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/85c33271/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/85c33271/</url>
+      
+        <content type="html"><![CDATA[<p>对于这个问题的答案是肯定的也是可以的，就先拿头条来举例吧，今日头条是可以通过手机端来发表头条号的文章的，只要在发文时插入头条广告，有阅读量自然是会有收益的，前提是你要先把头条号在浏览器端开通，这个应该不是太难，随便找个网吧上哈网一下子就搞定的。</p><span id="more"></span><p>如果这都不能其实还有另外的一个方法，那就是用手机浏览器来开通，虽然操作起来没有电脑那么流畅，但这也是没有办法中的办法。具体做法就是打开浏览器然后把手机浏览器设置为电脑模式，手机开启旋转横屏，用搜索引擎搜索头条号，在第一条的如果没有广告就是头条号的官网，用你头条的账号登录，登录上以后选择自己要注册的类型。</p><p>这里个人一般都是选择个人自媒体这一项，其他的也不用去看，选择好以后填写账号名称，如果不想改就和头条上自己的用户昵称一样就可以。</p><p>实名认证、身份认证做完以后，你这个头条号就算注册完成了，后面就是等待通过审核了，这个等待的过程有可能是几天就通过了，那恭喜你头条号注册成功，也有可能因为种种原因没有办法通过，这一切都必须要做好心理准备，“不以物喜，不以己悲”,要的就是以平常心来对待，看看官方发来没有通过的信息是什么原因，找出自己不能通过的因素是那些，修改后再次申请重新再战。</p><p>通过以后就可以在头条手机端正大光明的发文了，而且是可以插入头条广告的，我以前就看到过是可以的，具体收益能得到多少，那就看个人的写作能力和执行力了。</p><p>以上就是我对没有电脑如何做有收益的自媒体的回答，以上只是一些简要的方法论和一些简单的步骤，具体成功与否还要看个人实践再实践，只有不断的实践才能出真知。</p><p>当然也还有其他平台的也可以，由于文章的篇幅有限，我怕写多了大家看着也累，所以就写怎么多吧，其他的可以关注我的主页，有机会在给大家介绍，看完关注我以后就去实践下吧，毕竟实践才能出真知，我再怎么写一千道一万，你不去实践那也是一片枉然。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 答案 </tag>
+            
+            <tag> 收益 </tag>
+            
+            <tag> 自媒体 </tag>
+            
+            <tag> 没电脑 </tag>
+            
+            <tag> 更好的方法 </tag>
+            
+            <tag> 浏览器端 </tag>
+            
+            <tag> 流畅 </tag>
+            
+            <tag> 头条号 </tag>
+            
+            <tag> 账号名称 </tag>
+            
+            <tag> 写作能力 </tag>
+            
+            <tag> 执行力 </tag>
+            
+            <tag> 一片枉然 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于我的微信公众号和我知道其他自媒体号的历程</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/1b3da9bf/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/1b3da9bf/</url>
@@ -13329,6 +13417,8 @@
             
             <tag> 微信公众号 </tag>
             
+            <tag> 头条号 </tag>
+            
             <tag> 自媒体号 </tag>
             
             <tag> 历程 </tag>
@@ -13344,8 +13434,6 @@
             <tag> 核心 </tag>
             
             <tag> 冰山 </tag>
-            
-            <tag> 头条号 </tag>
             
             <tag> 大鱼号 </tag>
             
@@ -13380,53 +13468,6 @@
             <tag> 阅读 </tag>
             
             <tag> 群发分享 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>关于想做有收益的自媒体，可是没电脑做不了，有没有更好的方法？</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/85c33271/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/85c33271/</url>
-      
-        <content type="html"><![CDATA[<p>对于这个问题的答案是肯定的也是可以的，就先拿头条来举例吧，今日头条是可以通过手机端来发表头条号的文章的，只要在发文时插入头条广告，有阅读量自然是会有收益的，前提是你要先把头条号在浏览器端开通，这个应该不是太难，随便找个网吧上哈网一下子就搞定的。</p><span id="more"></span><p>如果这都不能其实还有另外的一个方法，那就是用手机浏览器来开通，虽然操作起来没有电脑那么流畅，但这也是没有办法中的办法。具体做法就是打开浏览器然后把手机浏览器设置为电脑模式，手机开启旋转横屏，用搜索引擎搜索头条号，在第一条的如果没有广告就是头条号的官网，用你头条的账号登录，登录上以后选择自己要注册的类型。</p><p>这里个人一般都是选择个人自媒体这一项，其他的也不用去看，选择好以后填写账号名称，如果不想改就和头条上自己的用户昵称一样就可以。</p><p>实名认证、身份认证做完以后，你这个头条号就算注册完成了，后面就是等待通过审核了，这个等待的过程有可能是几天就通过了，那恭喜你头条号注册成功，也有可能因为种种原因没有办法通过，这一切都必须要做好心理准备，“不以物喜，不以己悲”,要的就是以平常心来对待，看看官方发来没有通过的信息是什么原因，找出自己不能通过的因素是那些，修改后再次申请重新再战。</p><p>通过以后就可以在头条手机端正大光明的发文了，而且是可以插入头条广告的，我以前就看到过是可以的，具体收益能得到多少，那就看个人的写作能力和执行力了。</p><p>以上就是我对没有电脑如何做有收益的自媒体的回答，以上只是一些简要的方法论和一些简单的步骤，具体成功与否还要看个人实践再实践，只有不断的实践才能出真知。</p><p>当然也还有其他平台的也可以，由于文章的篇幅有限，我怕写多了大家看着也累，所以就写怎么多吧，其他的可以关注我的主页，有机会在给大家介绍，看完关注我以后就去实践下吧，毕竟实践才能出真知，我再怎么写一千道一万，你不去实践那也是一片枉然。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 答案 </tag>
-            
-            <tag> 收益 </tag>
-            
-            <tag> 自媒体 </tag>
-            
-            <tag> 头条号 </tag>
-            
-            <tag> 没电脑 </tag>
-            
-            <tag> 更好的方法 </tag>
-            
-            <tag> 浏览器端 </tag>
-            
-            <tag> 流畅 </tag>
-            
-            <tag> 账号名称 </tag>
-            
-            <tag> 写作能力 </tag>
-            
-            <tag> 执行力 </tag>
-            
-            <tag> 一片枉然 </tag>
             
         </tags>
       
@@ -13669,9 +13710,9 @@
             
             <tag> 世界 </tag>
             
-            <tag> 写作 </tag>
-            
             <tag> 心情 </tag>
+            
+            <tag> 写作 </tag>
             
             <tag> 幸福 </tag>
             
@@ -13692,47 +13733,6 @@
             <tag> 感动 </tag>
             
             <tag> 难能可贵 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>写公众号粉丝越来越少了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4733806/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4733806/</url>
-      
-        <content type="html"><![CDATA[<p>昨天晚上去公众号发文章，看到现在又增加一个新功能了，就是专辑，挨着页面模板那里。专辑和页面模板不一样，这个不能添加到菜单，只是发文章的时候选中它就会出现在文章的上面。</p><span id="more"></span><p>搞这么多功能其实就是为了增加阅读量，但是阅读量多也没有什么用，要粉丝够了才能上广告，那才能有收益。</p><p>可是我这个号几年了，还是那点粉丝，不增加到也没有什么奇怪的，关键是居然还减少了，减少就减少吧，反正这个不是自己能控制的，就当成是自己一个发声的窗口就可以了，有没有粉丝不重要，反正不能想着靠这个来赚钱。</p><p>现在我写在简书的文章除了发公众号，还发到我自己的网站和微博头条文章，也就只能发这几处，本身感觉自己都写得不太好，发的平台多了感觉就是浪费精力。</p><p>还好我的网站现在是开通了谷歌广告，只要有人点击上面的广告那我也会有广告费的，就是提现有点难，要满100美元才可以。我都不希望能得到提现了，网站就是做来自己玩的。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 阅读量 </tag>
-            
-            <tag> 网站 </tag>
-            
-            <tag> 头条文章 </tag>
-            
-            <tag> 公众号 </tag>
-            
-            <tag> 新功能 </tag>
-            
-            <tag> 专辑 </tag>
-            
-            <tag> 页面模板 </tag>
-            
-            <tag> 菜单 </tag>
-            
-            <tag> 粉丝 </tag>
             
         </tags>
       
@@ -13778,6 +13778,94 @@
             <tag> 新书 </tag>
             
             <tag> 费点时间 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>写作日更365天了，第一次达到这个境界</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/42e92f40/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/42e92f40/</url>
+      
+        <content type="html"><![CDATA[<p>从去年开始到昨天我终于更新到365天了，这个标签是永久性的，就算以后停更了它也是依然存在的，365天其实也是挺不容易的了，好多时候是都有想要放弃不写了的打算，但是一咬紧牙关又是自然的坚持过来了。</p><span id="more"></span><p>当然这一路走过来的365天也收获很多东西，包括写作上的一些技巧，以前总是认为写作是一件高大上的事，其实并不是这样的，写作其实就是用自己的语言来讲述自己生活中的故事，千万不要想得太难，越想得太难，越想得高大上，好多东西写出来就感觉有点虚无缥缈找不到逻辑了。</p><p>写作这条路自然是没有什么技巧的，全靠自己多写，很多人想到自己能够写到如何如何的水平，但是没有开始去写，一切都只不过是在原地踏步而已。</p><p>千万不要想得太多，结果写得太少，甚至不愿意去写，总感觉自己写得不行，总感觉别人写的才是真正的好作品，自己一直以为是自叹不如，其实根本都不是自己想的这样，每个人写的东西都有自己的风格，羡慕别人的还不如拿出自己的真材实料来更有价值。</p><p>坚持写自己的风格就好了，就算是没有人欣赏对自己来说也是没有什么损失的，不仅是对自己没有什么损失，写到一定程度对自己的写作水平的提高是有很大帮助的，千万不要认为写得不好就不写了，写得好与坏都得坚持写才是最好的出路。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 坚持 </tag>
+            
+            <tag> 写作日更 </tag>
+            
+            <tag> 365天 </tag>
+            
+            <tag> 第一次 </tag>
+            
+            <tag> 境界 </tag>
+            
+            <tag> 高大上 </tag>
+            
+            <tag> 原地踏步 </tag>
+            
+            <tag> 羡慕别人 </tag>
+            
+            <tag> 真材实料 </tag>
+            
+            <tag> 自叹不如 </tag>
+            
+            <tag> 逻辑 </tag>
+            
+            <tag> 风格 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>写公众号粉丝越来越少了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4733806/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4733806/</url>
+      
+        <content type="html"><![CDATA[<p>昨天晚上去公众号发文章，看到现在又增加一个新功能了，就是专辑，挨着页面模板那里。专辑和页面模板不一样，这个不能添加到菜单，只是发文章的时候选中它就会出现在文章的上面。</p><span id="more"></span><p>搞这么多功能其实就是为了增加阅读量，但是阅读量多也没有什么用，要粉丝够了才能上广告，那才能有收益。</p><p>可是我这个号几年了，还是那点粉丝，不增加到也没有什么奇怪的，关键是居然还减少了，减少就减少吧，反正这个不是自己能控制的，就当成是自己一个发声的窗口就可以了，有没有粉丝不重要，反正不能想着靠这个来赚钱。</p><p>现在我写在简书的文章除了发公众号，还发到我自己的网站和微博头条文章，也就只能发这几处，本身感觉自己都写得不太好，发的平台多了感觉就是浪费精力。</p><p>还好我的网站现在是开通了谷歌广告，只要有人点击上面的广告那我也会有广告费的，就是提现有点难，要满100美元才可以。我都不希望能得到提现了，网站就是做来自己玩的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 阅读量 </tag>
+            
+            <tag> 网站 </tag>
+            
+            <tag> 头条文章 </tag>
+            
+            <tag> 公众号 </tag>
+            
+            <tag> 新功能 </tag>
+            
+            <tag> 专辑 </tag>
+            
+            <tag> 页面模板 </tag>
+            
+            <tag> 菜单 </tag>
+            
+            <tag> 粉丝 </tag>
             
         </tags>
       
@@ -13864,53 +13952,6 @@
     
     
     <entry>
-      <title>写作日更365天了，第一次达到这个境界</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/42e92f40/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/42e92f40/</url>
-      
-        <content type="html"><![CDATA[<p>从去年开始到昨天我终于更新到365天了，这个标签是永久性的，就算以后停更了它也是依然存在的，365天其实也是挺不容易的了，好多时候是都有想要放弃不写了的打算，但是一咬紧牙关又是自然的坚持过来了。</p><span id="more"></span><p>当然这一路走过来的365天也收获很多东西，包括写作上的一些技巧，以前总是认为写作是一件高大上的事，其实并不是这样的，写作其实就是用自己的语言来讲述自己生活中的故事，千万不要想得太难，越想得太难，越想得高大上，好多东西写出来就感觉有点虚无缥缈找不到逻辑了。</p><p>写作这条路自然是没有什么技巧的，全靠自己多写，很多人想到自己能够写到如何如何的水平，但是没有开始去写，一切都只不过是在原地踏步而已。</p><p>千万不要想得太多，结果写得太少，甚至不愿意去写，总感觉自己写得不行，总感觉别人写的才是真正的好作品，自己一直以为是自叹不如，其实根本都不是自己想的这样，每个人写的东西都有自己的风格，羡慕别人的还不如拿出自己的真材实料来更有价值。</p><p>坚持写自己的风格就好了，就算是没有人欣赏对自己来说也是没有什么损失的，不仅是对自己没有什么损失，写到一定程度对自己的写作水平的提高是有很大帮助的，千万不要认为写得不好就不写了，写得好与坏都得坚持写才是最好的出路。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 坚持 </tag>
-            
-            <tag> 写作日更 </tag>
-            
-            <tag> 365天 </tag>
-            
-            <tag> 第一次 </tag>
-            
-            <tag> 境界 </tag>
-            
-            <tag> 高大上 </tag>
-            
-            <tag> 原地踏步 </tag>
-            
-            <tag> 羡慕别人 </tag>
-            
-            <tag> 真材实料 </tag>
-            
-            <tag> 自叹不如 </tag>
-            
-            <tag> 逻辑 </tag>
-            
-            <tag> 风格 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>几年不写的百家号，发了一篇文章居然有收入</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9d1f6c45/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9d1f6c45/</url>
@@ -13946,47 +13987,6 @@
             <tag> 商品订单 </tag>
             
             <tag> 偶尔 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>利用Hexo和Github搭建属于自己完全免费的网站</title>
-      <link href="/Hexo/a5fd999c/"/>
-      <url>/Hexo/a5fd999c/</url>
-      
-        <content type="html"><![CDATA[<h1 id="一、先在电脑本地实现"><a href="#一、先在电脑本地实现" class="headerlink" title="一、先在电脑本地实现"></a>一、先在电脑本地实现</h1><p>安装Hexo之前需要下载安装：<br>• <a href="http://nodejs.org/" target="_blank" rel="noopener nofollow"><strong>Node.js</strong></a><br>• <a href="http://git-scm.com/" target="_blank" rel="noopener nofollow"><strong>Git</strong></a></p><p>如果您的电脑中已经安装上述必备程序，那么恭喜您！接下来只需要在Git Bash中使用 npm 即可完成 Hexo 的安装。</p><span id="more"></span><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-<span class="keyword">cli</span></span><br></pre></td></tr></table></figure><p>如果没有安装这是<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener nofollow"><strong>Hexo</strong></a>的官网安装教程，这两个程序安装很简单，就不多说了。</p><h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-<span class="keyword">cli</span></span><br></pre></td></tr></table></figure><p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。我这里在D盘新建blog夹。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">hexo init /d/blog</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cd</span> /d/blog</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm install</span></span><br></pre></td></tr></table></figure><h2 id="本地调试"><a href="#本地调试" class="headerlink" title="本地调试"></a>本地调试</h2><p>目前为止，已经搭建好自己的Hexo博客了，但是只能在本机上查看。执行以下命令</p><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo clean</span><br><span class="line"><span class="variable">$ </span>hexo g </span><br><span class="line"><span class="variable">$ </span>hexo s</span><br></pre></td></tr></table></figure><p>然后在浏览器中输入 localhost:4000 就可以看到自己的博客了。</p><p>但是只能在本地查看，如果想让别人也能访问，那么就需要部署到Github上面，下面我们就部署上去。</p><h1 id="二、上传Github"><a href="#二、上传Github" class="headerlink" title="二、上传Github"></a>二、上传Github</h1><p>注册<a href="https://github.com/" target="_blank" rel="noopener nofollow"><strong>Github</strong></a>账户</p><p>前往Github网站，注册一个新用户。注意用户名不要用大写，后面的二级域名要用到，大写的会出问题，用邮箱注册的一定前往邮箱去验证邮件。要不然之后可能会有小问题。</p><h2 id="创建一个新的repository"><a href="#创建一个新的repository" class="headerlink" title="创建一个新的repository"></a>创建一个新的repository</h2><p>在自己的Github主页右下角,创建一个新的repository。比如我的Github用户名为gitzhaoyang，那么我创建的repository的名字应该是 gitzhaoyang.github.io</p><p><strong>这里严重注意:</strong></p><p>一定要以你的Github用户名.github.io创建，创建的类型是必须公开的，不然后面的网页功能不能使用。假如我没有用gitzhaoyang.github.io而是用了mungo.github.io，那么当我浏览器访问博客的时候会出现404错误。这里并不是没有部署成功，而是把它部署在了这里:</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http:<span class="regexp">//gi</span>tzhaoyang.github.io/mungo.github.io</span><br></pre></td></tr></table></figure><p>所以，如果想直接gitzhaoyang.github.io访问，那么就需要和用户名保持一致。题主在这里吃了不小的苦头，最后给Github客服发邮件才知道原因。</p><h2 id="将本地的文件部署（上传）到Github账户中"><a href="#将本地的文件部署（上传）到Github账户中" class="headerlink" title="将本地的文件部署（上传）到Github账户中"></a>将本地的文件部署（上传）到Github账户中</h2><p>安装 hexo-deployer-git。</p><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git <span class="comment">--save</span></span><br></pre></td></tr></table></figure><p>编辑本地Hexo目录下文件_comfig.yml，在最后添加如下代码（在你修改时，把 gitzhaoyang 要替换成你自己的用户名）</p><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">deploy:</span> </span><br><span class="line"><span class="symbol">type:</span> git </span><br><span class="line"><span class="symbol">repository:</span> http:<span class="comment">//github.com/Gitzhaoyang/gitzhaoyang.github.io.git </span></span><br><span class="line"><span class="symbol">branch:</span> master</span><br></pre></td></tr></table></figure><p>.yml文件对格式规范要求很严格，type: repository: branch: 前面有两个空格，冒号后面都有一个空格，不然会提示错误。</p><p>配置文件完成以后就可以部署到Github了</p><p>生成站点文件并推送至远程库。执行</p><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean <span class="meta">&amp;&amp; hexo deploy</span></span><br></pre></td></tr></table></figure><p>命令。前者清除站点文件，后者重新生成站点文件并将之推送到指定的库分支。</p><p>上传完成后就可以通过gitzhaoyang.github.io看到自己的网站了。</p><h1 id="三、申请免费域名"><a href="#三、申请免费域名" class="headerlink" title="三、申请免费域名"></a>三、申请免费域名</h1><p>免费的域名可以到<a href="https://my.freenom.com/" target="_blank" rel="noopener nofollow"><strong>freenom</strong></a>这个网站去注册，注册也是很简单的，先用自己的邮箱注册这个网站，然后再选择自己想要的域名就可以了，这个网站有很多后缀的域名是可以免费使用一年的，比如我的用的是<a href="https://airibi.cf/" target="_blank" rel="noopener"><strong>airibi.cf</strong></a>就是可以直接使用一年的。</p><h1 id="四、域名解析"><a href="#四、域名解析" class="headerlink" title="四、域名解析"></a>四、域名解析</h1><p>域名注册好了以后可以通过<a href="https://www.dnspod.cn/" target="_blank" rel="noopener nofollow"><strong>dnspod</strong></a>这个网站来解析到自己GitHub的网站上，这个网站是属于腾讯的云服务，所以直接用QQ登录就可以了，进入后台以后点击域名解析，再点击添加域名然后里面就会出现两条默认的NS记录，将这两条默认的NS记录复制到刚刚注册域名的<a href="https://my.freenom.com/" target="_blank" rel="noopener nofollow"><strong>freenom</strong></a>这个网站的域名管理那里，找到自己的域名，在解析那里选择DNS记录，把复制过来的两条NS记录添加到这里,刚申请的域名就和这个DNS解析网站连在一起了。</p><p>Ping出你Github网站的二级域名的IP地址，一定要用你ping出的IP地址，因为原来的二级域名就是支持https的，用其他的IP地址可能会解析错误或者用不了https。</p><p>Ping出二级域名的IP地址后在<a href="https://www.dnspod.cn/" target="_blank" rel="noopener nofollow"><strong>dnspod</strong></a>这个网站上添加两条A记录，一条是带www的一条是不带的，记录值都是你ping出来的IP地址，以后想要通过网站SEO验证比如谷歌站长平台，也同样可以在这里添加TXT记录就可以。</p><p>解析完成后，在Github你的仓库后台添加你的域名，如果强制使用https那里还不能打勾，那就需要在等几分钟，说明解析还没有完成，解析完成后那里就可以打勾强制使用https了，并且是带有证书的，到这里域名解析完成可以用你的域名来访问你的网站了。</p><h1 id="五、添加CNAME文件"><a href="#五、添加CNAME文件" class="headerlink" title="五、添加CNAME文件"></a>五、添加CNAME文件</h1><p>在本地网站目录source文件夹里添加CNAME文件，这个CNAME文件在你添加域名的时候就会自动添加到你Github的网站根目录里，但是为方便可以把它克隆或者下载下来放到source文件夹里，或者自己在这个文件下自己创建这个文件，里面放上你的域名也是可以的，这样做每次更新网站，这个文件就不会被覆盖了，也不用每次添加域名就能访问了。</p><p>到这里免费的网站就已经搭建完成了，后面就是安装主题和修改配置文件了，这里的内容很细也很分散，我有机会再写另外的一篇。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Github </tag>
-            
-            <tag> Hexo </tag>
-            
-            <tag> 网站 </tag>
-            
-            <tag> 搭建 </tag>
-            
-            <tag> 完全免费 </tag>
-            
-            <tag> 上传 </tag>
-            
-            <tag> 免费域名 </tag>
-            
-            <tag> 域名解析 </tag>
-            
-            <tag> CNAME文件 </tag>
             
         </tags>
       
@@ -14048,6 +14048,47 @@
             <tag> 感染力 </tag>
             
             <tag> 烂剧 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>利用Hexo和Github搭建属于自己完全免费的网站</title>
+      <link href="/Hexo/a5fd999c/"/>
+      <url>/Hexo/a5fd999c/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、先在电脑本地实现"><a href="#一、先在电脑本地实现" class="headerlink" title="一、先在电脑本地实现"></a>一、先在电脑本地实现</h1><p>安装Hexo之前需要下载安装：<br>• <a href="http://nodejs.org/" target="_blank" rel="noopener nofollow"><strong>Node.js</strong></a><br>• <a href="http://git-scm.com/" target="_blank" rel="noopener nofollow"><strong>Git</strong></a></p><p>如果您的电脑中已经安装上述必备程序，那么恭喜您！接下来只需要在Git Bash中使用 npm 即可完成 Hexo 的安装。</p><span id="more"></span><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-<span class="keyword">cli</span></span><br></pre></td></tr></table></figure><p>如果没有安装这是<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener nofollow"><strong>Hexo</strong></a>的官网安装教程，这两个程序安装很简单，就不多说了。</p><h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-<span class="keyword">cli</span></span><br></pre></td></tr></table></figure><p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。我这里在D盘新建blog夹。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">hexo init /d/blog</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cd</span> /d/blog</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm install</span></span><br></pre></td></tr></table></figure><h2 id="本地调试"><a href="#本地调试" class="headerlink" title="本地调试"></a>本地调试</h2><p>目前为止，已经搭建好自己的Hexo博客了，但是只能在本机上查看。执行以下命令</p><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo clean</span><br><span class="line"><span class="variable">$ </span>hexo g </span><br><span class="line"><span class="variable">$ </span>hexo s</span><br></pre></td></tr></table></figure><p>然后在浏览器中输入 localhost:4000 就可以看到自己的博客了。</p><p>但是只能在本地查看，如果想让别人也能访问，那么就需要部署到Github上面，下面我们就部署上去。</p><h1 id="二、上传Github"><a href="#二、上传Github" class="headerlink" title="二、上传Github"></a>二、上传Github</h1><p>注册<a href="https://github.com/" target="_blank" rel="noopener nofollow"><strong>Github</strong></a>账户</p><p>前往Github网站，注册一个新用户。注意用户名不要用大写，后面的二级域名要用到，大写的会出问题，用邮箱注册的一定前往邮箱去验证邮件。要不然之后可能会有小问题。</p><h2 id="创建一个新的repository"><a href="#创建一个新的repository" class="headerlink" title="创建一个新的repository"></a>创建一个新的repository</h2><p>在自己的Github主页右下角,创建一个新的repository。比如我的Github用户名为gitzhaoyang，那么我创建的repository的名字应该是 gitzhaoyang.github.io</p><p><strong>这里严重注意:</strong></p><p>一定要以你的Github用户名.github.io创建，创建的类型是必须公开的，不然后面的网页功能不能使用。假如我没有用gitzhaoyang.github.io而是用了mungo.github.io，那么当我浏览器访问博客的时候会出现404错误。这里并不是没有部署成功，而是把它部署在了这里:</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http:<span class="regexp">//gi</span>tzhaoyang.github.io/mungo.github.io</span><br></pre></td></tr></table></figure><p>所以，如果想直接gitzhaoyang.github.io访问，那么就需要和用户名保持一致。题主在这里吃了不小的苦头，最后给Github客服发邮件才知道原因。</p><h2 id="将本地的文件部署（上传）到Github账户中"><a href="#将本地的文件部署（上传）到Github账户中" class="headerlink" title="将本地的文件部署（上传）到Github账户中"></a>将本地的文件部署（上传）到Github账户中</h2><p>安装 hexo-deployer-git。</p><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git <span class="comment">--save</span></span><br></pre></td></tr></table></figure><p>编辑本地Hexo目录下文件_comfig.yml，在最后添加如下代码（在你修改时，把 gitzhaoyang 要替换成你自己的用户名）</p><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">deploy:</span> </span><br><span class="line"><span class="symbol">type:</span> git </span><br><span class="line"><span class="symbol">repository:</span> http:<span class="comment">//github.com/Gitzhaoyang/gitzhaoyang.github.io.git </span></span><br><span class="line"><span class="symbol">branch:</span> master</span><br></pre></td></tr></table></figure><p>.yml文件对格式规范要求很严格，type: repository: branch: 前面有两个空格，冒号后面都有一个空格，不然会提示错误。</p><p>配置文件完成以后就可以部署到Github了</p><p>生成站点文件并推送至远程库。执行</p><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean <span class="meta">&amp;&amp; hexo deploy</span></span><br></pre></td></tr></table></figure><p>命令。前者清除站点文件，后者重新生成站点文件并将之推送到指定的库分支。</p><p>上传完成后就可以通过gitzhaoyang.github.io看到自己的网站了。</p><h1 id="三、申请免费域名"><a href="#三、申请免费域名" class="headerlink" title="三、申请免费域名"></a>三、申请免费域名</h1><p>免费的域名可以到<a href="https://my.freenom.com/" target="_blank" rel="noopener nofollow"><strong>freenom</strong></a>这个网站去注册，注册也是很简单的，先用自己的邮箱注册这个网站，然后再选择自己想要的域名就可以了，这个网站有很多后缀的域名是可以免费使用一年的，比如我的用的是<a href="https://airibi.cf/" target="_blank" rel="noopener"><strong>airibi.cf</strong></a>就是可以直接使用一年的。</p><h1 id="四、域名解析"><a href="#四、域名解析" class="headerlink" title="四、域名解析"></a>四、域名解析</h1><p>域名注册好了以后可以通过<a href="https://www.dnspod.cn/" target="_blank" rel="noopener nofollow"><strong>dnspod</strong></a>这个网站来解析到自己GitHub的网站上，这个网站是属于腾讯的云服务，所以直接用QQ登录就可以了，进入后台以后点击域名解析，再点击添加域名然后里面就会出现两条默认的NS记录，将这两条默认的NS记录复制到刚刚注册域名的<a href="https://my.freenom.com/" target="_blank" rel="noopener nofollow"><strong>freenom</strong></a>这个网站的域名管理那里，找到自己的域名，在解析那里选择DNS记录，把复制过来的两条NS记录添加到这里,刚申请的域名就和这个DNS解析网站连在一起了。</p><p>Ping出你Github网站的二级域名的IP地址，一定要用你ping出的IP地址，因为原来的二级域名就是支持https的，用其他的IP地址可能会解析错误或者用不了https。</p><p>Ping出二级域名的IP地址后在<a href="https://www.dnspod.cn/" target="_blank" rel="noopener nofollow"><strong>dnspod</strong></a>这个网站上添加两条A记录，一条是带www的一条是不带的，记录值都是你ping出来的IP地址，以后想要通过网站SEO验证比如谷歌站长平台，也同样可以在这里添加TXT记录就可以。</p><p>解析完成后，在Github你的仓库后台添加你的域名，如果强制使用https那里还不能打勾，那就需要在等几分钟，说明解析还没有完成，解析完成后那里就可以打勾强制使用https了，并且是带有证书的，到这里域名解析完成可以用你的域名来访问你的网站了。</p><h1 id="五、添加CNAME文件"><a href="#五、添加CNAME文件" class="headerlink" title="五、添加CNAME文件"></a>五、添加CNAME文件</h1><p>在本地网站目录source文件夹里添加CNAME文件，这个CNAME文件在你添加域名的时候就会自动添加到你Github的网站根目录里，但是为方便可以把它克隆或者下载下来放到source文件夹里，或者自己在这个文件下自己创建这个文件，里面放上你的域名也是可以的，这样做每次更新网站，这个文件就不会被覆盖了，也不用每次添加域名就能访问了。</p><p>到这里免费的网站就已经搭建完成了，后面就是安装主题和修改配置文件了，这里的内容很细也很分散，我有机会再写另外的一篇。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Github </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 网站 </tag>
+            
+            <tag> 搭建 </tag>
+            
+            <tag> 完全免费 </tag>
+            
+            <tag> 上传 </tag>
+            
+            <tag> 免费域名 </tag>
+            
+            <tag> 域名解析 </tag>
+            
+            <tag> CNAME文件 </tag>
             
         </tags>
       
@@ -14121,11 +14162,11 @@
       
         <tags>
             
-            <tag> 赚钱 </tag>
-            
             <tag> 安卓模拟器 </tag>
             
             <tag> 手机游戏 </tag>
+            
+            <tag> 赚钱 </tag>
             
             <tag> 蓝叠4 </tag>
             
@@ -14662,6 +14703,53 @@
     
     
     <entry>
+      <title>听说有人在宜家拍污视频了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/af318849/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/af318849/</url>
+      
+        <content type="html"><![CDATA[<p>每次看到这样的新闻，我只能说这些人就是666,也不知道真假，新闻传得漫天飞舞，就是没有看到视频，都没有证据证明呢。</p><span id="more"></span><p>上次看到这种新闻还是几年前的优衣库了，也不记得是多少年前了忘了。其实拍这种视频也没有什么奇怪的，这些不都是人类的本质吗，只不过是有些人喜欢追求刺激罢了。只要是不曝光出来谁又知道呢，曝光出来的人才是变态的吧。</p><p>这种事情不是每天都在发生的吗，毕竟性是人类的基本生理需要啊，人是动物，是动物必然就会有动物的本性。记得亚里士多德在《政治学》中说人类是社交的动物，说白了男女社交的纽带不就是基于性吗。</p><p>性是人类的本能，而不是受自己控制需不需的问题，就像狮子老虎需要繁衍后代一样，是大自然赋予的一种本能。</p><p>这些东西其实在有些直播平台也每天都有时不时地上演，那有什么奇怪的，这本身就是一种生活方式而已，成年人的世界不需要大惊小怪，每个人都有每个人的生活方式，有必要去干预吗。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 新闻 </tag>
+            
+            <tag> 宜家 </tag>
+            
+            <tag> 污视频 </tag>
+            
+            <tag> 优衣库 </tag>
+            
+            <tag> 奇怪 </tag>
+            
+            <tag> 曝光 </tag>
+            
+            <tag> 变态 </tag>
+            
+            <tag> 生理需要 </tag>
+            
+            <tag> 性 </tag>
+            
+            <tag> 直播平台 </tag>
+            
+            <tag> 成年人 </tag>
+            
+            <tag> 大惊小怪 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>听雪楼中的几大利器让听雪楼成为了武林霸主</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/995dad82/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/995dad82/</url>
@@ -14729,53 +14817,6 @@
             <tag> 石明烟 </tag>
             
             <tag> 拜月教 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>听说有人在宜家拍污视频了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/af318849/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/af318849/</url>
-      
-        <content type="html"><![CDATA[<p>每次看到这样的新闻，我只能说这些人就是666,也不知道真假，新闻传得漫天飞舞，就是没有看到视频，都没有证据证明呢。</p><span id="more"></span><p>上次看到这种新闻还是几年前的优衣库了，也不记得是多少年前了忘了。其实拍这种视频也没有什么奇怪的，这些不都是人类的本质吗，只不过是有些人喜欢追求刺激罢了。只要是不曝光出来谁又知道呢，曝光出来的人才是变态的吧。</p><p>这种事情不是每天都在发生的吗，毕竟性是人类的基本生理需要啊，人是动物，是动物必然就会有动物的本性。记得亚里士多德在《政治学》中说人类是社交的动物，说白了男女社交的纽带不就是基于性吗。</p><p>性是人类的本能，而不是受自己控制需不需的问题，就像狮子老虎需要繁衍后代一样，是大自然赋予的一种本能。</p><p>这些东西其实在有些直播平台也每天都有时不时地上演，那有什么奇怪的，这本身就是一种生活方式而已，成年人的世界不需要大惊小怪，每个人都有每个人的生活方式，有必要去干预吗。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 新闻 </tag>
-            
-            <tag> 宜家 </tag>
-            
-            <tag> 污视频 </tag>
-            
-            <tag> 优衣库 </tag>
-            
-            <tag> 奇怪 </tag>
-            
-            <tag> 曝光 </tag>
-            
-            <tag> 变态 </tag>
-            
-            <tag> 生理需要 </tag>
-            
-            <tag> 性 </tag>
-            
-            <tag> 直播平台 </tag>
-            
-            <tag> 成年人 </tag>
-            
-            <tag> 大惊小怪 </tag>
             
         </tags>
       
@@ -15228,61 +15269,6 @@
     
     
     <entry>
-      <title>在贝壳小岛卖出150贝，赚了9块钱</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/302d33ef/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/302d33ef/</url>
-      
-        <content type="html"><![CDATA[<p>这是我第一次用这个平台卖贝，以前都是转换成FTN，但是FTN却不知道怎么变现，现在也不知道怎么转换FTN了，就在网上搜了一下，原来是有一个叫贝壳小岛这个平台可以交易贝。</p><span id="more"></span><p>第一次对这个平台不怎么熟悉，就去别人挂单收的那里卖，价格是才0.059，但是第一单买的人没有付款，过了20多分钟还没有付款，联系简信他说付款了，到底付款有没有，系统肯定是有提示的，付款了我微信要收到钱才行啊，估计是看我是新手，想骗我贝，还以为我不懂就确认收款了。</p><p>这里提醒第一次卖贝的，除非是微信已经收到钱了，否则千万不要点击确认收款，骗子是真的很多，有的拍下就故意不付款，真的付款了系统是会提示确认的，看微信真的收到钱了再点确认收款。</p><p>对方不付款我肯定是取消交易了，取消以后是可以把没有卖出去的贝赎回来的，上面显示多少就赎回多少，加上手续费一起的，我卖150贝，那手续费就是2个，加在一起就是152个。</p><p>赎回以后就可以重新再卖了，第二次我就直接自己发布挂单卖了，而且这样价格还高一点，我看前面的都是0.06，我也发布成0.06一个，比前面的那个别人收的价格高。</p><p>才发布了一下子就有人拍了，但是又是不付款，估计又是一个想骗贝的，真的是不想把这些人的简书上的名字曝光。</p><p>后面又过了20多分钟，估计是他那里取消了，然后就又被人秒拍了，因为这时的价格已经涨到0.061了，而我的价格还没有改还是0.06，秒拍而且一下就收到款了，因为上面没有比我价格更便宜的了，买到真的就是秒赚，这次微信收到钱了，我也点确认收款了。</p><p>虽然卖得便宜了，但是无所谓了，这东西一个时候一个价，当我写完这篇文章的时候，收的人价格已经涨到0.06了，挂单卖的还是0.061，这说明马上收马上卖都是有钱赚的，还有说不定晚上又会涨价，或者明天继续涨价，但是我在乎的是当下，穷到连饭都吃不起，谁还管以后的事。</p><p>很多人可能还不知道怎么卖贝，这里就把卖贝的链接发出来了，我也是找了很久才找到，这个可以说是在简书上写文章变现最快捷的方式，当然想囤贝赚钱的也可以去上面买，毕竟价格都是在上涨，买了只赚不亏。卖贝平台：<span class="exturl" data-url="aHR0cHM6Ly93d3cuYmVpa2Vpc2xhbmQuY29tL2luZGV4Lmh0bWwjLz9yZWY9NDczMjkzZjQxOWNiNDQ2MWE2M2IyYjZhOWVhOTRjNGM=" title="贝壳小岛">贝壳小岛<i class="fa fa-external-link-alt"></i></span></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 简书 </tag>
-            
-            <tag> 手续费 </tag>
-            
-            <tag> 微信 </tag>
-            
-            <tag> 简信 </tag>
-            
-            <tag> 贝壳小岛 </tag>
-            
-            <tag> 150贝 </tag>
-            
-            <tag> 9块钱 </tag>
-            
-            <tag> 平台卖贝 </tag>
-            
-            <tag> 转换成FTN </tag>
-            
-            <tag> 变现 </tag>
-            
-            <tag> 付款 </tag>
-            
-            <tag> 取消交易 </tag>
-            
-            <tag> 发布挂单 </tag>
-            
-            <tag> 故意不付款 </tag>
-            
-            <tag> 想骗贝 </tag>
-            
-            <tag> 有钱赚 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>在迷你主机虚拟机上安装黑苹果系统，体验一下Mac mini的感觉</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29c02f2/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29c02f2/</url>
@@ -15334,6 +15320,61 @@
             <tag> darwin1012 </tag>
             
             <tag> VMware Tools </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>在贝壳小岛卖出150贝，赚了9块钱</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/302d33ef/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/302d33ef/</url>
+      
+        <content type="html"><![CDATA[<p>这是我第一次用这个平台卖贝，以前都是转换成FTN，但是FTN却不知道怎么变现，现在也不知道怎么转换FTN了，就在网上搜了一下，原来是有一个叫贝壳小岛这个平台可以交易贝。</p><span id="more"></span><p>第一次对这个平台不怎么熟悉，就去别人挂单收的那里卖，价格是才0.059，但是第一单买的人没有付款，过了20多分钟还没有付款，联系简信他说付款了，到底付款有没有，系统肯定是有提示的，付款了我微信要收到钱才行啊，估计是看我是新手，想骗我贝，还以为我不懂就确认收款了。</p><p>这里提醒第一次卖贝的，除非是微信已经收到钱了，否则千万不要点击确认收款，骗子是真的很多，有的拍下就故意不付款，真的付款了系统是会提示确认的，看微信真的收到钱了再点确认收款。</p><p>对方不付款我肯定是取消交易了，取消以后是可以把没有卖出去的贝赎回来的，上面显示多少就赎回多少，加上手续费一起的，我卖150贝，那手续费就是2个，加在一起就是152个。</p><p>赎回以后就可以重新再卖了，第二次我就直接自己发布挂单卖了，而且这样价格还高一点，我看前面的都是0.06，我也发布成0.06一个，比前面的那个别人收的价格高。</p><p>才发布了一下子就有人拍了，但是又是不付款，估计又是一个想骗贝的，真的是不想把这些人的简书上的名字曝光。</p><p>后面又过了20多分钟，估计是他那里取消了，然后就又被人秒拍了，因为这时的价格已经涨到0.061了，而我的价格还没有改还是0.06，秒拍而且一下就收到款了，因为上面没有比我价格更便宜的了，买到真的就是秒赚，这次微信收到钱了，我也点确认收款了。</p><p>虽然卖得便宜了，但是无所谓了，这东西一个时候一个价，当我写完这篇文章的时候，收的人价格已经涨到0.06了，挂单卖的还是0.061，这说明马上收马上卖都是有钱赚的，还有说不定晚上又会涨价，或者明天继续涨价，但是我在乎的是当下，穷到连饭都吃不起，谁还管以后的事。</p><p>很多人可能还不知道怎么卖贝，这里就把卖贝的链接发出来了，我也是找了很久才找到，这个可以说是在简书上写文章变现最快捷的方式，当然想囤贝赚钱的也可以去上面买，毕竟价格都是在上涨，买了只赚不亏。卖贝平台：<span class="exturl" data-url="aHR0cHM6Ly93d3cuYmVpa2Vpc2xhbmQuY29tL2luZGV4Lmh0bWwjLz9yZWY9NDczMjkzZjQxOWNiNDQ2MWE2M2IyYjZhOWVhOTRjNGM=" title="贝壳小岛">贝壳小岛<i class="fa fa-external-link-alt"></i></span></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 简书 </tag>
+            
+            <tag> 手续费 </tag>
+            
+            <tag> 微信 </tag>
+            
+            <tag> 简信 </tag>
+            
+            <tag> 贝壳小岛 </tag>
+            
+            <tag> 150贝 </tag>
+            
+            <tag> 9块钱 </tag>
+            
+            <tag> 平台卖贝 </tag>
+            
+            <tag> 转换成FTN </tag>
+            
+            <tag> 变现 </tag>
+            
+            <tag> 付款 </tag>
+            
+            <tag> 取消交易 </tag>
+            
+            <tag> 发布挂单 </tag>
+            
+            <tag> 故意不付款 </tag>
+            
+            <tag> 想骗贝 </tag>
+            
+            <tag> 有钱赚 </tag>
             
         </tags>
       
@@ -15927,9 +15968,9 @@
             
             <tag> 快手 </tag>
             
-            <tag> 赚钱 </tag>
-            
             <tag> 直播 </tag>
+            
+            <tag> 赚钱 </tag>
             
             <tag> 理论上 </tag>
             
@@ -16093,6 +16134,45 @@
     
     
     <entry>
+      <title>小米研发出了隔空充电技术，再也不怕没有充电线了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/690f7b38/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/690f7b38/</url>
+      
+        <content type="html"><![CDATA[<p>这个可以说是一个真正的黑科技，很久以前很多人都想到过不用手机数据线也能给手机充电，这样的技术以前估计是只能在科幻片里面才看得到，但是现在已经被小米研发成功提前到来了。</p><span id="more"></span><p>以前的无线充电其实不是真正意义上的无线充电，因为那种是充电底座连着线的，而把手机放在充电底座上的充电方式，现在的隔空充电手机不用放在充电底座上就可以实现充电了，可以说是真的方便了很多了。</p><p>技术难度比前面的无线充电是难了很多，这在充电技术上具有全新的里程碑意义，以后只要有这个充电桩的地方，不用带手机数据线也能充电了，只要这个充电桩足够多的话，那手机可以一直不断电了，因为走到哪里都可以随时无线充电，相当于手机就一直都是满电的，充电就像是手机连了WiFi一样简单了。</p><p>小米的充电技术一直以来都是走在手机行业的前端，80瓦无线快充是小米首先发布的，这次更厉害了，直接隔空就可以充电，国内外真的还没有第二家拥有这个发明，小米研发实力和核心技术还是值得肯定的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 小米 </tag>
+            
+            <tag> 隔空充电 </tag>
+            
+            <tag> 充电线 </tag>
+            
+            <tag> 无线充电 </tag>
+            
+            <tag> 充电底座 </tag>
+            
+            <tag> 充电技术 </tag>
+            
+            <tag> 研发实力 </tag>
+            
+            <tag> 核心技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>小米出的这个MIUI+的功能很好用</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/77a713ef/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/77a713ef/</url>
@@ -16130,45 +16210,6 @@
             <tag> 投屏软件 </tag>
             
             <tag> 台式机 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>小米研发出了隔空充电技术，再也不怕没有充电线了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/690f7b38/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/690f7b38/</url>
-      
-        <content type="html"><![CDATA[<p>这个可以说是一个真正的黑科技，很久以前很多人都想到过不用手机数据线也能给手机充电，这样的技术以前估计是只能在科幻片里面才看得到，但是现在已经被小米研发成功提前到来了。</p><span id="more"></span><p>以前的无线充电其实不是真正意义上的无线充电，因为那种是充电底座连着线的，而把手机放在充电底座上的充电方式，现在的隔空充电手机不用放在充电底座上就可以实现充电了，可以说是真的方便了很多了。</p><p>技术难度比前面的无线充电是难了很多，这在充电技术上具有全新的里程碑意义，以后只要有这个充电桩的地方，不用带手机数据线也能充电了，只要这个充电桩足够多的话，那手机可以一直不断电了，因为走到哪里都可以随时无线充电，相当于手机就一直都是满电的，充电就像是手机连了WiFi一样简单了。</p><p>小米的充电技术一直以来都是走在手机行业的前端，80瓦无线快充是小米首先发布的，这次更厉害了，直接隔空就可以充电，国内外真的还没有第二家拥有这个发明，小米研发实力和核心技术还是值得肯定的。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 小米 </tag>
-            
-            <tag> 隔空充电 </tag>
-            
-            <tag> 充电线 </tag>
-            
-            <tag> 无线充电 </tag>
-            
-            <tag> 充电底座 </tag>
-            
-            <tag> 充电技术 </tag>
-            
-            <tag> 研发实力 </tag>
-            
-            <tag> 核心技术 </tag>
             
         </tags>
       
@@ -16347,6 +16388,49 @@
     
     
     <entry>
+      <title>弄了下快手直播，结果没有人看，还遇到骗子了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/adcbe78b/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/adcbe78b/</url>
+      
+        <content type="html"><![CDATA[<p>我今天用快手直播了一下游戏直播，结果总共才有13个人看过，而不是有13个人一起在看，经常看的人都是零，这还不是最惨的，最惨的是居然有骗子，才直播一会我手机就收到了两条验证码。</p><span id="more"></span><p>这个套路其实我早就知道了，所以开游戏直播我肯定不会用手机开的了，如果用手机开那他肯定就会盗我的账号，因为验证码可以在手机屏幕上看到，但是我用的是平板电脑直播游戏，所以就算他知道我手机号了，也看不到我验证码，因为验证码是发到手机上，我直播的是平板电脑的画面。</p><p>估计骗子遇到我这样的也没有办法了，看了半天直播画面上就是没有验证码，骗子估计都会疯掉。不过还是要注意的，如果我不是预先在快手上看到这种套路，那我直接用手机直播游戏可能就会中骗子的招了。</p><p>好像已经是有人已经被这样骗过了，骗子就是用别人的手机号和验证码去登陆，然后开始骗钱，在快手铁定是有人用手机直接直播游戏被骗过，不然也不会有那个案例，所以做游戏直播还是要小心，千万不能用插手机卡的手机直播，那样真的很危险，虽然骗子骗不了我，那是因为我提前知道了这个套路，但是大多数不知道的还是会被骗的。</p><p>所以做游戏直播还是最好用平板电脑或者没有插手机卡的手机，这样才能保证自己钱财安全，要不支付宝微信银行卡上的钱一下没有了那都不知道怎么回事，只要知道手机号和验证码很多平台都是可以登录的，所以还是要千万小心才是。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 套路 </tag>
+            
+            <tag> 平板电脑 </tag>
+            
+            <tag> 快手直播 </tag>
+            
+            <tag> 遇到骗子 </tag>
+            
+            <tag> 游戏直播 </tag>
+            
+            <tag> 验证码 </tag>
+            
+            <tag> 手机卡 </tag>
+            
+            <tag> 钱财安全 </tag>
+            
+            <tag> 登录 </tag>
+            
+            <tag> 千万小心 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>当读完一本书时才会感觉有成就感</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/92bcb8ff/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/92bcb8ff/</url>
@@ -16392,49 +16476,6 @@
             <tag> 受累 </tag>
             
             <tag> 表达出来 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>弄了下快手直播，结果没有人看，还遇到骗子了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/adcbe78b/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/adcbe78b/</url>
-      
-        <content type="html"><![CDATA[<p>我今天用快手直播了一下游戏直播，结果总共才有13个人看过，而不是有13个人一起在看，经常看的人都是零，这还不是最惨的，最惨的是居然有骗子，才直播一会我手机就收到了两条验证码。</p><span id="more"></span><p>这个套路其实我早就知道了，所以开游戏直播我肯定不会用手机开的了，如果用手机开那他肯定就会盗我的账号，因为验证码可以在手机屏幕上看到，但是我用的是平板电脑直播游戏，所以就算他知道我手机号了，也看不到我验证码，因为验证码是发到手机上，我直播的是平板电脑的画面。</p><p>估计骗子遇到我这样的也没有办法了，看了半天直播画面上就是没有验证码，骗子估计都会疯掉。不过还是要注意的，如果我不是预先在快手上看到这种套路，那我直接用手机直播游戏可能就会中骗子的招了。</p><p>好像已经是有人已经被这样骗过了，骗子就是用别人的手机号和验证码去登陆，然后开始骗钱，在快手铁定是有人用手机直接直播游戏被骗过，不然也不会有那个案例，所以做游戏直播还是要小心，千万不能用插手机卡的手机直播，那样真的很危险，虽然骗子骗不了我，那是因为我提前知道了这个套路，但是大多数不知道的还是会被骗的。</p><p>所以做游戏直播还是最好用平板电脑或者没有插手机卡的手机，这样才能保证自己钱财安全，要不支付宝微信银行卡上的钱一下没有了那都不知道怎么回事，只要知道手机号和验证码很多平台都是可以登录的，所以还是要千万小心才是。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 套路 </tag>
-            
-            <tag> 平板电脑 </tag>
-            
-            <tag> 快手直播 </tag>
-            
-            <tag> 遇到骗子 </tag>
-            
-            <tag> 游戏直播 </tag>
-            
-            <tag> 验证码 </tag>
-            
-            <tag> 手机卡 </tag>
-            
-            <tag> 钱财安全 </tag>
-            
-            <tag> 登录 </tag>
-            
-            <tag> 千万小心 </tag>
             
         </tags>
       
@@ -16696,9 +16737,9 @@
             
             <tag> 手机 </tag>
             
-            <tag> 赚钱 </tag>
-            
             <tag> 平板电脑 </tag>
+            
+            <tag> 赚钱 </tag>
             
             <tag> 快手直播 </tag>
             
@@ -17380,71 +17421,6 @@
     
     
     <entry>
-      <title>我那些年的高中记忆</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/8e20c410/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/8e20c410/</url>
-      
-        <content type="html"><![CDATA[<p>因看到简书发来的简信，说是可以写一篇关于学生时代记忆的文章参赛有奖拿，于是我便随意的写下了这篇文章，写得不好地方请勿见怪。</p><span id="more"></span><p>我上高中那年是2006年的一个夏天，因为初中学习很差，复读了一年初三才重新上了一个农村中学的高中，感觉真的高中三年没有学到什么东西，混日子混了三年，真的是可以这么说一点都不夸张。时间过得真的很快，三年间就匆匆过去了，有的时候很想留住那些时光，但那时的我们又希望它过得快一点，想着以前和现在那本来就是一对矛盾体。</p><p>那些年有很多美好的记忆，有时候想起来还到觉得有点可笑，记得那时候第一二年是住在学校的宿舍，也就是高一和高二的那两年，时间久了可能是真的记得不太清了吧，好像高三上个学期也都还是住在学校宿舍的，最后一个学期才搬出去自己租房子住了。我为什么要搬出去自己住了记得当时的理由好像很简单，就是想好好学习了，因为快到高考了。但是其实一点用都没有，每天放学就只想躺在床上睡觉。</p><p>上高中的时候感觉每天都很困，也不知道是为什么，有好多的时候，听着那老师在上面讲课，听着听着就突然的睡着了，可能是每晚都睡得不好的缘故吧。住在学校宿舍的时候每天放学最爱做的事就是去河边看别人钓鱼，因为我们学校就是在一条河边，那条河一到春天和秋天我都感觉很美，春天河里面有很多刚出生的小鱼，有的有大拇指那么大，因为天气暖和全都游到了水面上来，看着就想用手去抓，可是还没有靠近它们半步，它们又突的一下游回到水底下去了。</p><p>那条河里不仅小鱼很多，其实也有大的，记得有一次有个人就在那条河里刚好是我们学校对面那里，他钓到了一条七八斤重的，这其实能钓这么大的，就已经算大的了，因为很少有人能钓到这么大的。</p><p>也就是因为一放学就去看别人钓鱼的缘故吧，好像记得就是上高二那年的春天，我遇到了我一辈子都忘不了的人，那个女孩是让我第一次心动的人，因为她太漂亮了，那时候我想说我喜欢她，可是我这么也说不出口，我只能傻傻的看着她就那样慢慢地走着离开了我的视线，那可能真的就是我的初恋了。从我读书到出来社会了，还真的没有哪一个女的能让我那么心动过。</p><p>我复读初三的时候我的同桌就是个女孩，可是我从来就没有那种让我心动的感觉过，出来社会了我交的女朋友我说的喜欢她们，其实都是嘴上说说的喜欢而已，因为她们都没有让我真的心动过，这无关漂不漂亮的问题，而是没有让我发自内心痴迷的感觉。</p><p>可是这种心动对来说没有结果，我就只见过她那一次，也不知道她姓啥名谁，到底家住何处，她是不是在我们学校上学的，所有的这些我都不清楚，可她就是那种让我第一眼就迷上的女人。记得那天好像是我们学校的那个镇赶集的日子，记得那时候那里还是个乡后来才改成了镇的，我想她应该是来赶集的吧，又或许人家都已经结婚了，可是谁又知道呢。</p><p>从那以后我都一直在思索这个问题，只是这是一个永远没有答案的问题，从那以后我是真的再想见到她一次，只是从那以后我再也没有见过她，直到我高三毕业离开那所学校之后都再也没有见到她，如果老天能让我再见到她一次，那怕就一次那我愿意减寿几年那也没有问题。可是再也没有，真的让我相信了一转身就是一辈子这句话。</p><p>现在记得当年这些事，有后悔也有悔恨，有怪自己不努力，也有怪自己当时没有勇气，可是这就是自己曾经经历过的一段青春记忆，想忘记它，可是自己又时常会想起，想要改变它，可是它已经成为过去式，我们无法回到过去，对于那已经定型了的记忆我们自然是无法改变。曾经那些让我迷恋的人，我怎么也忘不掉，这不知道是一种折磨还是一种精神慰藉，反正她就在那记忆中的深处，自己想不想她都会时常在记忆之中浮现。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 情感美文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 文章 </tag>
-            
-            <tag> 夏天 </tag>
-            
-            <tag> 简书 </tag>
-            
-            <tag> 喜欢 </tag>
-            
-            <tag> 睡觉 </tag>
-            
-            <tag> 结婚 </tag>
-            
-            <tag> 秋天 </tag>
-            
-            <tag> 春天 </tag>
-            
-            <tag> 那些年 </tag>
-            
-            <tag> 高中记忆 </tag>
-            
-            <tag> 初中 </tag>
-            
-            <tag> 那些时光 </tag>
-            
-            <tag> 高一 </tag>
-            
-            <tag> 高二 </tag>
-            
-            <tag> 那两年 </tag>
-            
-            <tag> 小鱼 </tag>
-            
-            <tag> 水底 </tag>
-            
-            <tag> 钓鱼 </tag>
-            
-            <tag> 社会 </tag>
-            
-            <tag> 高三毕业 </tag>
-            
-            <tag> 浮现 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>我身边那些寂寞出轨的女人</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/3ac2f83a/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/3ac2f83a/</url>
@@ -17512,6 +17488,71 @@
             <tag> 漂亮 </tag>
             
             <tag> 女诗人 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我那些年的高中记忆</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/8e20c410/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/8e20c410/</url>
+      
+        <content type="html"><![CDATA[<p>因看到简书发来的简信，说是可以写一篇关于学生时代记忆的文章参赛有奖拿，于是我便随意的写下了这篇文章，写得不好地方请勿见怪。</p><span id="more"></span><p>我上高中那年是2006年的一个夏天，因为初中学习很差，复读了一年初三才重新上了一个农村中学的高中，感觉真的高中三年没有学到什么东西，混日子混了三年，真的是可以这么说一点都不夸张。时间过得真的很快，三年间就匆匆过去了，有的时候很想留住那些时光，但那时的我们又希望它过得快一点，想着以前和现在那本来就是一对矛盾体。</p><p>那些年有很多美好的记忆，有时候想起来还到觉得有点可笑，记得那时候第一二年是住在学校的宿舍，也就是高一和高二的那两年，时间久了可能是真的记得不太清了吧，好像高三上个学期也都还是住在学校宿舍的，最后一个学期才搬出去自己租房子住了。我为什么要搬出去自己住了记得当时的理由好像很简单，就是想好好学习了，因为快到高考了。但是其实一点用都没有，每天放学就只想躺在床上睡觉。</p><p>上高中的时候感觉每天都很困，也不知道是为什么，有好多的时候，听着那老师在上面讲课，听着听着就突然的睡着了，可能是每晚都睡得不好的缘故吧。住在学校宿舍的时候每天放学最爱做的事就是去河边看别人钓鱼，因为我们学校就是在一条河边，那条河一到春天和秋天我都感觉很美，春天河里面有很多刚出生的小鱼，有的有大拇指那么大，因为天气暖和全都游到了水面上来，看着就想用手去抓，可是还没有靠近它们半步，它们又突的一下游回到水底下去了。</p><p>那条河里不仅小鱼很多，其实也有大的，记得有一次有个人就在那条河里刚好是我们学校对面那里，他钓到了一条七八斤重的，这其实能钓这么大的，就已经算大的了，因为很少有人能钓到这么大的。</p><p>也就是因为一放学就去看别人钓鱼的缘故吧，好像记得就是上高二那年的春天，我遇到了我一辈子都忘不了的人，那个女孩是让我第一次心动的人，因为她太漂亮了，那时候我想说我喜欢她，可是我这么也说不出口，我只能傻傻的看着她就那样慢慢地走着离开了我的视线，那可能真的就是我的初恋了。从我读书到出来社会了，还真的没有哪一个女的能让我那么心动过。</p><p>我复读初三的时候我的同桌就是个女孩，可是我从来就没有那种让我心动的感觉过，出来社会了我交的女朋友我说的喜欢她们，其实都是嘴上说说的喜欢而已，因为她们都没有让我真的心动过，这无关漂不漂亮的问题，而是没有让我发自内心痴迷的感觉。</p><p>可是这种心动对来说没有结果，我就只见过她那一次，也不知道她姓啥名谁，到底家住何处，她是不是在我们学校上学的，所有的这些我都不清楚，可她就是那种让我第一眼就迷上的女人。记得那天好像是我们学校的那个镇赶集的日子，记得那时候那里还是个乡后来才改成了镇的，我想她应该是来赶集的吧，又或许人家都已经结婚了，可是谁又知道呢。</p><p>从那以后我都一直在思索这个问题，只是这是一个永远没有答案的问题，从那以后我是真的再想见到她一次，只是从那以后我再也没有见过她，直到我高三毕业离开那所学校之后都再也没有见到她，如果老天能让我再见到她一次，那怕就一次那我愿意减寿几年那也没有问题。可是再也没有，真的让我相信了一转身就是一辈子这句话。</p><p>现在记得当年这些事，有后悔也有悔恨，有怪自己不努力，也有怪自己当时没有勇气，可是这就是自己曾经经历过的一段青春记忆，想忘记它，可是自己又时常会想起，想要改变它，可是它已经成为过去式，我们无法回到过去，对于那已经定型了的记忆我们自然是无法改变。曾经那些让我迷恋的人，我怎么也忘不掉，这不知道是一种折磨还是一种精神慰藉，反正她就在那记忆中的深处，自己想不想她都会时常在记忆之中浮现。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 文章 </tag>
+            
+            <tag> 夏天 </tag>
+            
+            <tag> 简书 </tag>
+            
+            <tag> 喜欢 </tag>
+            
+            <tag> 睡觉 </tag>
+            
+            <tag> 结婚 </tag>
+            
+            <tag> 秋天 </tag>
+            
+            <tag> 春天 </tag>
+            
+            <tag> 那些年 </tag>
+            
+            <tag> 高中记忆 </tag>
+            
+            <tag> 初中 </tag>
+            
+            <tag> 那些时光 </tag>
+            
+            <tag> 高一 </tag>
+            
+            <tag> 高二 </tag>
+            
+            <tag> 那两年 </tag>
+            
+            <tag> 小鱼 </tag>
+            
+            <tag> 水底 </tag>
+            
+            <tag> 钓鱼 </tag>
+            
+            <tag> 社会 </tag>
+            
+            <tag> 高三毕业 </tag>
+            
+            <tag> 浮现 </tag>
             
         </tags>
       
@@ -17737,55 +17778,6 @@
     
     
     <entry>
-      <title>按照别人的要求写稿我也不会写了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c96915ea/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c96915ea/</url>
-      
-        <content type="html"><![CDATA[<p>我是会写文章，但是只会写我熟悉或者感兴趣的，要让我去写的别的我也不会，因为我都不了解让我怎么去写，今天在boos直聘上有个人让我写篇《大秦帝国之纵横》第一集试稿，我一头雾水啊，因为这个电视剧我都没有去看过，这是2012年的电视剧了。</p><span id="more"></span><p>现在做短视频剪辑的是没有题材了吗，又把多年前的老电视剧翻出来再啃一篇，但是只要把解说稿配上音好像是真的有人看的，也是难为这些人了，自己不会写只好找人写了，但是其实我也不会写因为我没有写过这样的文章，我把这个电视剧第一集从头到尾看了一篇我还是不知道这个到底要怎么写才行。</p><p>可能后面我还是会去试着写一下，写一篇发过去试一下，如果她说不行那就是在骗稿了，想让别人帮她写又不想给钱的人现在毕竟是真的很多啊，一想到这样我就不想给她写了，因为本来自己就不怎么会写这个类型的，绞劲脑汁去想怎么写了，还没有钱，感觉也是得不偿失，但是有些事无论是真是假也得去试下才行吧。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 电视剧 </tag>
-            
-            <tag> 写文章 </tag>
-            
-            <tag> 感兴趣 </tag>
-            
-            <tag> 要求 </tag>
-            
-            <tag> 写稿 </tag>
-            
-            <tag> 熟悉 </tag>
-            
-            <tag> boos直聘 </tag>
-            
-            <tag> 大秦帝国 </tag>
-            
-            <tag> 纵横 </tag>
-            
-            <tag> 一头雾水 </tag>
-            
-            <tag> 解说稿 </tag>
-            
-            <tag> 骗稿 </tag>
-            
-            <tag> 绞劲脑汁 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>抖音上居然有很多人在割韭菜</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d2401c67/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d2401c67/</url>
@@ -17831,6 +17823,55 @@
             <tag> 狮子老虎 </tag>
             
             <tag> 干涉 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>按照别人的要求写稿我也不会写了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c96915ea/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c96915ea/</url>
+      
+        <content type="html"><![CDATA[<p>我是会写文章，但是只会写我熟悉或者感兴趣的，要让我去写的别的我也不会，因为我都不了解让我怎么去写，今天在boos直聘上有个人让我写篇《大秦帝国之纵横》第一集试稿，我一头雾水啊，因为这个电视剧我都没有去看过，这是2012年的电视剧了。</p><span id="more"></span><p>现在做短视频剪辑的是没有题材了吗，又把多年前的老电视剧翻出来再啃一篇，但是只要把解说稿配上音好像是真的有人看的，也是难为这些人了，自己不会写只好找人写了，但是其实我也不会写因为我没有写过这样的文章，我把这个电视剧第一集从头到尾看了一篇我还是不知道这个到底要怎么写才行。</p><p>可能后面我还是会去试着写一下，写一篇发过去试一下，如果她说不行那就是在骗稿了，想让别人帮她写又不想给钱的人现在毕竟是真的很多啊，一想到这样我就不想给她写了，因为本来自己就不怎么会写这个类型的，绞劲脑汁去想怎么写了，还没有钱，感觉也是得不偿失，但是有些事无论是真是假也得去试下才行吧。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电视剧 </tag>
+            
+            <tag> 写文章 </tag>
+            
+            <tag> 感兴趣 </tag>
+            
+            <tag> 要求 </tag>
+            
+            <tag> 写稿 </tag>
+            
+            <tag> 熟悉 </tag>
+            
+            <tag> boos直聘 </tag>
+            
+            <tag> 大秦帝国 </tag>
+            
+            <tag> 纵横 </tag>
+            
+            <tag> 一头雾水 </tag>
+            
+            <tag> 解说稿 </tag>
+            
+            <tag> 骗稿 </tag>
+            
+            <tag> 绞劲脑汁 </tag>
             
         </tags>
       
@@ -18176,8 +18217,6 @@
             
             <tag> 基地 </tag>
             
-            <tag> 赚钱 </tag>
-            
             <tag> 房租 </tag>
             
             <tag> 小时工 </tag>
@@ -18187,6 +18226,8 @@
             <tag> 练习写作 </tag>
             
             <tag> 故事 </tag>
+            
+            <tag> 赚钱 </tag>
             
             <tag> 虚无缥缈 </tag>
             
@@ -18563,51 +18604,6 @@
     
     
     <entry>
-      <title>昨天我把自己的网站同步到Gitee了</title>
-      <link href="/Hexo/ceca9b33/"/>
-      <url>/Hexo/ceca9b33/</url>
-      
-        <content type="html"><![CDATA[<p>之前就有看到过别人说可以把Hexo搭建的网站同步到Github和Gitee两个平台，说是Gitee在国内的访问速度比较快，但是一直都没有去做过，这段时间有空去码云把以前的账号重新登陆了，还开通了免费的企业版。</p><span id="more"></span><p>免费的企业版比个人版好的就是空间的域名能够自定义的比个人版要好点，个人版好的都被人抢完了。</p><p>我用自己注册的域名来做这个空间域名感觉还是很不错的，因为很简短才四个字母，这些都是越短越好记。</p><p>Gitee不好的就是自定义域名要钱，还有每次更新都要去点一次那个更新按钮，不过我也没有多余的域名，就先用着给的空间域名吧，这种空间域名其实也是可以被搜索引擎收录的，我用必应搜了下很多用这种域名的只要内容好也被收录了，但是百度就没有收录的。</p><p>免费的也不需要那么多了，反正就当个备用好了，要是真的想搞谷歌广告那些，还是用Github自己买个域名来绑定会比较好，二级域名可能弄不了谷歌广告，我以前记得我用免费的域名都不行，还是自己买了个域名来换了才审核通过了。</p><p>速度的话电脑上访问感觉没有快多少，手机浏览器上感觉会快一点。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Github </tag>
-            
-            <tag> Hexo </tag>
-            
-            <tag> gitee </tag>
-            
-            <tag> 免费 </tag>
-            
-            <tag> 浏览器 </tag>
-            
-            <tag> 网站 </tag>
-            
-            <tag> 搜索引擎 </tag>
-            
-            <tag> 企业版 </tag>
-            
-            <tag> 空间域名 </tag>
-            
-            <tag> 谷歌广告 </tag>
-            
-            <tag> 审核 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>昨晚下了一晚上的雨，雨声一直响睡不着</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c36b9d6b/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c36b9d6b/</url>
@@ -18657,6 +18653,49 @@
     
     
     <entry>
+      <title>昨晚断电一下子，来电后电脑开不了机</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c983425/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c983425/</url>
+      
+        <content type="html"><![CDATA[<p>昨晚我正在用电脑写文章，突然一下子断电了，文章没有来得及保存了，用Word写文章只会5分钟自动保存一次，所以就只保存了前5分钟写的内容，电脑开机以后又重新写后面的。</p><span id="more"></span><p>来电以后电脑就开不了机了，我还以为是烧坏了，把螺丝下开，把盖子打开，按了开机键风扇也不转，怎么按都没有反应，电源插头重新插了也没有反应。</p><p>后面才看到是硬盘盒没有开，虚惊一场，这主板的自检能力真强，一样配件没有开，它怎么都不会开机，我把硬盘盒的开关按下之后，然后再按电脑的开机键风扇也转了，也可以正常开机了。</p><p>正常开机以后就没有什么问题，然后又长按了下让它关机，因为还得把盖子装回去，装回去了再重新开机，要不然碰到正在运行的电脑风扇就不好了，装回去后开机一切正常，只是文章没有完全保存，所以又得重新写后面。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电脑 </tag>
+            
+            <tag> Word </tag>
+            
+            <tag> 断电 </tag>
+            
+            <tag> 写文章 </tag>
+            
+            <tag> 开不了机 </tag>
+            
+            <tag> 保存 </tag>
+            
+            <tag> 烧坏了 </tag>
+            
+            <tag> 电源插头 </tag>
+            
+            <tag> 正常开机 </tag>
+            
+            <tag> 重新写 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>昨晚喝酒了，以为今天考试过不了，结果还是过了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/59f9dff9/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/59f9dff9/</url>
@@ -18696,41 +18735,43 @@
     
     
     <entry>
-      <title>昨晚断电一下子，来电后电脑开不了机</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c983425/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c983425/</url>
+      <title>昨天我把自己的网站同步到Gitee了</title>
+      <link href="/Hexo/ceca9b33/"/>
+      <url>/Hexo/ceca9b33/</url>
       
-        <content type="html"><![CDATA[<p>昨晚我正在用电脑写文章，突然一下子断电了，文章没有来得及保存了，用Word写文章只会5分钟自动保存一次，所以就只保存了前5分钟写的内容，电脑开机以后又重新写后面的。</p><span id="more"></span><p>来电以后电脑就开不了机了，我还以为是烧坏了，把螺丝下开，把盖子打开，按了开机键风扇也不转，怎么按都没有反应，电源插头重新插了也没有反应。</p><p>后面才看到是硬盘盒没有开，虚惊一场，这主板的自检能力真强，一样配件没有开，它怎么都不会开机，我把硬盘盒的开关按下之后，然后再按电脑的开机键风扇也转了，也可以正常开机了。</p><p>正常开机以后就没有什么问题，然后又长按了下让它关机，因为还得把盖子装回去，装回去了再重新开机，要不然碰到正在运行的电脑风扇就不好了，装回去后开机一切正常，只是文章没有完全保存，所以又得重新写后面。</p>]]></content>
+        <content type="html"><![CDATA[<p>之前就有看到过别人说可以把Hexo搭建的网站同步到Github和Gitee两个平台，说是Gitee在国内的访问速度比较快，但是一直都没有去做过，这段时间有空去码云把以前的账号重新登陆了，还开通了免费的企业版。</p><span id="more"></span><p>免费的企业版比个人版好的就是空间的域名能够自定义的比个人版要好点，个人版好的都被人抢完了。</p><p>我用自己注册的域名来做这个空间域名感觉还是很不错的，因为很简短才四个字母，这些都是越短越好记。</p><p>Gitee不好的就是自定义域名要钱，还有每次更新都要去点一次那个更新按钮，不过我也没有多余的域名，就先用着给的空间域名吧，这种空间域名其实也是可以被搜索引擎收录的，我用必应搜了下很多用这种域名的只要内容好也被收录了，但是百度就没有收录的。</p><p>免费的也不需要那么多了，反正就当个备用好了，要是真的想搞谷歌广告那些，还是用Github自己买个域名来绑定会比较好，二级域名可能弄不了谷歌广告，我以前记得我用免费的域名都不行，还是自己买了个域名来换了才审核通过了。</p><p>速度的话电脑上访问感觉没有快多少，手机浏览器上感觉会快一点。</p>]]></content>
       
       
       <categories>
           
-          <category> 日常记录 </category>
+          <category> Hexo </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 电脑 </tag>
+            <tag> Github </tag>
             
-            <tag> Word </tag>
+            <tag> Hexo </tag>
             
-            <tag> 断电 </tag>
+            <tag> gitee </tag>
             
-            <tag> 写文章 </tag>
+            <tag> 免费 </tag>
             
-            <tag> 开不了机 </tag>
+            <tag> 浏览器 </tag>
             
-            <tag> 保存 </tag>
+            <tag> 网站 </tag>
             
-            <tag> 烧坏了 </tag>
+            <tag> 搜索引擎 </tag>
             
-            <tag> 电源插头 </tag>
+            <tag> 企业版 </tag>
             
-            <tag> 正常开机 </tag>
+            <tag> 空间域名 </tag>
             
-            <tag> 重新写 </tag>
+            <tag> 谷歌广告 </tag>
+            
+            <tag> 审核 </tag>
             
         </tags>
       
@@ -19133,11 +19174,11 @@
             
             <tag> 平台 </tag>
             
-            <tag> 赚钱 </tag>
-            
             <tag> 网站 </tag>
             
             <tag> 写文章 </tag>
+            
+            <tag> 赚钱 </tag>
             
             <tag> 权力 </tag>
             
@@ -19511,49 +19552,6 @@
     
     
     <entry>
-      <title>王者荣耀更新了，终于可以上90帧了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/75c6061/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/75c6061/</url>
-      
-        <content type="html"><![CDATA[<p>我的手机其实早都可以支持90帧的游戏的了，只是之前一直都没有能支持90帧的手游，这下还是感觉比60帧流畅了很多，打排位连续赢了5盘，感觉还是90帧的玩着比较爽啊，打排位赢的机率都大了很多。</p><span id="more"></span><p>但是目前只有几款手机支持，我的机型是小米10自然是可以的，小米10pro和小米11目前都是可以的，具体还有哪些手机支持自己可以体验一下就知道了，只要在设置里可以超高帧率的都是可以的，用管低帧率跳到高帧率可能会感觉没有什么变化，但是从高到低那就是感觉不流畅了，这是我用了高帧率的手机再去用低帧率的手机发现的，所以现在要玩游戏一般都是买刷新率的手机比较好。</p><p>王者荣耀这个游戏我也是很久没有玩了，以前都打到钻石段位了，今天一打开看排位又掉到铂金去了，打了几盘又到钻石了，其实这个只要手机和网速好还是挺好打的，后面的几盘我的网速很不稳定，其中的有一盘一直都延时在100多以上，有时候又卡红到两百多，拖动人物都感觉有点卡，但是帧率没有变化，就是延时太高了很难打，别人出技能打我了，我要差不多一两秒才看到，所以真的没法打。</p><p>也不知道为什么那一小段时间延时为什么会那么高，过了那一会又感觉好一点了，能保持在45延时左右，这样还可以，一直要是保持在这个绿色范围内就感觉好打一点。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 流畅 </tag>
-            
-            <tag> 王者荣耀 </tag>
-            
-            <tag> 小米10 </tag>
-            
-            <tag> 90帧 </tag>
-            
-            <tag> 60帧 </tag>
-            
-            <tag> 打排位 </tag>
-            
-            <tag> 钻石 </tag>
-            
-            <tag> 低帧率 </tag>
-            
-            <tag> 出技能 </tag>
-            
-            <tag> 45延时 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>犹豫了很久还是决定自离了</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/9970728b/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/9970728b/</url>
@@ -19627,6 +19625,90 @@
     
     
     <entry>
+      <title>狗狗币又涨价了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6873df90/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6873df90/</url>
+      
+        <content type="html"><![CDATA[<p>从2块多涨到3块多只用了几天时间，距离上次我说的挖狗狗币到现在不过就过去了几天时间，这涨幅速度真的很快啊，果然是真的买到就是躺赚啊。</p><span id="more"></span><p>而且现在的挖掘难度也不是很大，多挖点放着真的是只赚不亏啊，这个可是比玩比特币容易很多了，因为进入门槛确实很低。</p><p>价格在上涨，而且挖掘容易，这样的还不去行动，那就真的会错失良机了，不去自己挖买也是赚啊，从2块多涨到3块多才用几天时间，这个可是买股票基金什么要赚钱很多了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 赚钱 </tag>
+            
+            <tag> 涨价 </tag>
+            
+            <tag> 狗狗币 </tag>
+            
+            <tag> 2块多 </tag>
+            
+            <tag> 3块多 </tag>
+            
+            <tag> 几天时间 </tag>
+            
+            <tag> 躺赚 </tag>
+            
+            <tag> 挖掘难度 </tag>
+            
+            <tag> 错失良机 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>王者荣耀更新了，终于可以上90帧了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/75c6061/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/75c6061/</url>
+      
+        <content type="html"><![CDATA[<p>我的手机其实早都可以支持90帧的游戏的了，只是之前一直都没有能支持90帧的手游，这下还是感觉比60帧流畅了很多，打排位连续赢了5盘，感觉还是90帧的玩着比较爽啊，打排位赢的机率都大了很多。</p><span id="more"></span><p>但是目前只有几款手机支持，我的机型是小米10自然是可以的，小米10pro和小米11目前都是可以的，具体还有哪些手机支持自己可以体验一下就知道了，只要在设置里可以超高帧率的都是可以的，用管低帧率跳到高帧率可能会感觉没有什么变化，但是从高到低那就是感觉不流畅了，这是我用了高帧率的手机再去用低帧率的手机发现的，所以现在要玩游戏一般都是买刷新率的手机比较好。</p><p>王者荣耀这个游戏我也是很久没有玩了，以前都打到钻石段位了，今天一打开看排位又掉到铂金去了，打了几盘又到钻石了，其实这个只要手机和网速好还是挺好打的，后面的几盘我的网速很不稳定，其中的有一盘一直都延时在100多以上，有时候又卡红到两百多，拖动人物都感觉有点卡，但是帧率没有变化，就是延时太高了很难打，别人出技能打我了，我要差不多一两秒才看到，所以真的没法打。</p><p>也不知道为什么那一小段时间延时为什么会那么高，过了那一会又感觉好一点了，能保持在45延时左右，这样还可以，一直要是保持在这个绿色范围内就感觉好打一点。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 流畅 </tag>
+            
+            <tag> 王者荣耀 </tag>
+            
+            <tag> 小米10 </tag>
+            
+            <tag> 90帧 </tag>
+            
+            <tag> 60帧 </tag>
+            
+            <tag> 打排位 </tag>
+            
+            <tag> 钻石 </tag>
+            
+            <tag> 低帧率 </tag>
+            
+            <tag> 出技能 </tag>
+            
+            <tag> 45延时 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>现在买5G手机值得吗</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f0363146/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f0363146/</url>
@@ -19666,47 +19748,6 @@
             <tag> 小米移动 </tag>
             
             <tag> 被淘汰 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>狗狗币又涨价了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6873df90/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6873df90/</url>
-      
-        <content type="html"><![CDATA[<p>从2块多涨到3块多只用了几天时间，距离上次我说的挖狗狗币到现在不过就过去了几天时间，这涨幅速度真的很快啊，果然是真的买到就是躺赚啊。</p><span id="more"></span><p>而且现在的挖掘难度也不是很大，多挖点放着真的是只赚不亏啊，这个可是比玩比特币容易很多了，因为进入门槛确实很低。</p><p>价格在上涨，而且挖掘容易，这样的还不去行动，那就真的会错失良机了，不去自己挖买也是赚啊，从2块多涨到3块多才用几天时间，这个可是买股票基金什么要赚钱很多了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 赚钱 </tag>
-            
-            <tag> 涨价 </tag>
-            
-            <tag> 狗狗币 </tag>
-            
-            <tag> 2块多 </tag>
-            
-            <tag> 3块多 </tag>
-            
-            <tag> 几天时间 </tag>
-            
-            <tag> 躺赚 </tag>
-            
-            <tag> 挖掘难度 </tag>
-            
-            <tag> 错失良机 </tag>
             
         </tags>
       
@@ -19813,11 +19854,11 @@
             
             <tag> 考试 </tag>
             
-            <tag> Linux </tag>
-            
             <tag> 苹果手机 </tag>
             
             <tag> 虚拟机 </tag>
+            
+            <tag> Linux </tag>
             
             <tag> ubuntu </tag>
             
@@ -19948,6 +19989,47 @@
     
     
     <entry>
+      <title>用腾讯手游助手这个刷快手是终于不闪退了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2b996869/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2b996869/</url>
+      
+        <content type="html"><![CDATA[<p>找了很多模拟器，就这个比较稳定一点，其他的用来刷快手要么是卡，要么就直接闪退，最烦的就是闪退了，记得用那个凤凰系统，一直可以循环不停的闪退，直到要拼手速把那个软件卸载了才可以。</p><span id="more"></span><p>腾讯手游助手这个用快手是不闪退，快手极速版还是会偶尔闪退的，但就是不能用自动点击器自动刷，这个有点不好，什么都可以自动化的今天，用手动是真的很花时间。</p><p>也没有找到什么其他方法，用按键精灵录制脚本也不行，不知道还有没有什么办法可以实现自动，用这个微信是很稳了，一点都不闪退，比蓝叠那个用微信好很多，蓝叠是用微信经常闪退，但是有些软件要用微信登录就登录不了，提示说没有安装微信，明明微信就已经打开了，还说没有安装微信，也不知道用什么办法才可以。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 刷快手 </tag>
+            
+            <tag> 闪退 </tag>
+            
+            <tag> 腾讯手游助手 </tag>
+            
+            <tag> 不闪退 </tag>
+            
+            <tag> 比较稳定 </tag>
+            
+            <tag> 拼手速 </tag>
+            
+            <tag> 快手极速版 </tag>
+            
+            <tag> 按键精灵 </tag>
+            
+            <tag> 蓝叠 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>用自动点击软件刷抖音极速版赚钱</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a8e10de5/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a8e10de5/</url>
@@ -19997,47 +20079,6 @@
     
     
     <entry>
-      <title>用腾讯手游助手这个刷快手是终于不闪退了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2b996869/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2b996869/</url>
-      
-        <content type="html"><![CDATA[<p>找了很多模拟器，就这个比较稳定一点，其他的用来刷快手要么是卡，要么就直接闪退，最烦的就是闪退了，记得用那个凤凰系统，一直可以循环不停的闪退，直到要拼手速把那个软件卸载了才可以。</p><span id="more"></span><p>腾讯手游助手这个用快手是不闪退，快手极速版还是会偶尔闪退的，但就是不能用自动点击器自动刷，这个有点不好，什么都可以自动化的今天，用手动是真的很花时间。</p><p>也没有找到什么其他方法，用按键精灵录制脚本也不行，不知道还有没有什么办法可以实现自动，用这个微信是很稳了，一点都不闪退，比蓝叠那个用微信好很多，蓝叠是用微信经常闪退，但是有些软件要用微信登录就登录不了，提示说没有安装微信，明明微信就已经打开了，还说没有安装微信，也不知道用什么办法才可以。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 刷快手 </tag>
-            
-            <tag> 闪退 </tag>
-            
-            <tag> 腾讯手游助手 </tag>
-            
-            <tag> 不闪退 </tag>
-            
-            <tag> 比较稳定 </tag>
-            
-            <tag> 拼手速 </tag>
-            
-            <tag> 快手极速版 </tag>
-            
-            <tag> 按键精灵 </tag>
-            
-            <tag> 蓝叠 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>用自动点击软件刷短视频还可以给自己涨粉</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5eaac7b5/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5eaac7b5/</url>
@@ -20064,9 +20105,9 @@
             
             <tag> 抖音极速版 </tag>
             
-            <tag> 模拟滑动 </tag>
-            
             <tag> 快手极速版 </tag>
+            
+            <tag> 模拟滑动 </tag>
             
             <tag> 涨粉 </tag>
             
@@ -21447,9 +21488,9 @@
             
             <tag> 微博 </tag>
             
-            <tag> 赚钱 </tag>
-            
             <tag> 省钱 </tag>
+            
+            <tag> 赚钱 </tag>
             
             <tag> 淘宝联盟 </tag>
             
@@ -22003,6 +22044,37 @@
     
     
     <entry>
+      <title>表格练习</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/65046362/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/65046362/</url>
+      
+        <content type="html"><![CDATA[<p>在中国大学MOOC学习《网页设计基础》第四章表格标记的一些日常记录，作用就是使自己更加深刻理解HTML中表格的插入。</p><span id="more"></span><p>源代码</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>table-1<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>1-1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>1-2<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>2-1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>2-2<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>效果</p><html><head><title>table-1</title></head><body><table><tr><td>1-1</td><td>1-2</td></tr><tr><td>2-1</td><td>2-2</td></tr></table></body></html><p>源代码</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>table-1<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">border</span>=<span class="string">&quot;1&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">caption</span>&gt;</span>table-2<span class="tag">&lt;/<span class="name">caption</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>head1<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>head2<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>1-1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>1-2<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>2-1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>2-2<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><p>效果</p><html><head><title>table-1</title></head><body><table border="1"><caption>table-2</caption><tr><th>head1</th><th>head2</th></tr><tr><td>1-1</td><td>1-2</td></tr><tr><td>2-1</td><td>2-2</td></tr></table></body></html><p>源代码</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">border</span>=<span class="string">&quot;1&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>姓名<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;<span class="name">th</span> <span class="attr">colspan</span>=<span class="string">&quot;2&quot;</span>&gt;</span>电话<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>Bill Gates<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>555 77 854<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>555 77 855<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">border</span>=<span class="string">&quot;1&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>姓名<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>Bill Gates<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">th</span> <span class="attr">rowspan</span>=<span class="string">&quot;2&quot;</span>&gt;</span>电话<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>555 77 854<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>555 77 855<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><p>效果</p><html><body><table border="1"><tr><th>姓名</th><th colspan="2">电话</th></tr><tr><td>Bill Gates</td><td>555 77 854</td><td>555 77 855</td></tr></table><table border="1"><tr><th>姓名</th><td>Bill Gates</td></tr><tr><th rowspan="2">电话</th><td>555 77 854</td></tr><tr><td>555 77 855</td></tr></table></body></html>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 练习 </tag>
+            
+            <tag> 表格 </tag>
+            
+            <tag> 网页设计 </tag>
+            
+            <tag> html </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>装了一台电脑还是只觉得玩网页小游戏比较香</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6673a22f/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6673a22f/</url>
@@ -22052,6 +22124,47 @@
     
     
     <entry>
+      <title>装备没有人秒回收了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a636e618/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a636e618/</url>
+      
+        <content type="html"><![CDATA[<p>达叔走了，装备秒回收是他这几年代言最火的一个游戏广告，他走了我传奇游戏里的装备谁来回收呢，听说他得的是癌症走的，这年头的人最怕的就是得癌症了，有钱也治不了，明星也不例外。</p><span id="more"></span><p>以前是看过他和周星驰合演的很多电影，这几年对他印象最深刻的就是装备秒回收这个游戏广告了，零零后可能没有看过他演的电影，但是一定看过他代言的游戏广告，其实他的电影也很不错的，都是很多小时候的快乐的回忆。</p><p>新闻上说的是过年后才检查出得的癌症，到现在也才多少天啊，这病情进展也太快了，癌症这病真的是只要得了都会离死不远了，癌细胞真的扩散很快。</p><p>才进ICU一天不到人就走了，真的是病来如山倒，病走如抽丝，这话是说得真的一点都没有错了，他的电影会成为永远的经典，他代言的游戏广告是看不到了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 装备 </tag>
+            
+            <tag> 秒回收 </tag>
+            
+            <tag> 代言 </tag>
+            
+            <tag> 传奇游戏 </tag>
+            
+            <tag> 明星 </tag>
+            
+            <tag> 游戏广告 </tag>
+            
+            <tag> 小时候 </tag>
+            
+            <tag> 癌症 </tag>
+            
+            <tag> 病来如山倒 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>装机失败的那些事</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/69c2eb21/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/69c2eb21/</url>
@@ -22091,37 +22204,6 @@
             <tag> 防呆 </tag>
             
             <tag> 型号 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>表格练习</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/65046362/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/65046362/</url>
-      
-        <content type="html"><![CDATA[<p>在中国大学MOOC学习《网页设计基础》第四章表格标记的一些日常记录，作用就是使自己更加深刻理解HTML中表格的插入。</p><span id="more"></span><p>源代码</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>table-1<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>1-1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>1-2<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>2-1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>2-2<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>效果</p><html><head><title>table-1</title></head><body><table><tr><td>1-1</td><td>1-2</td></tr><tr><td>2-1</td><td>2-2</td></tr></table></body></html><p>源代码</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>table-1<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">border</span>=<span class="string">&quot;1&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">caption</span>&gt;</span>table-2<span class="tag">&lt;/<span class="name">caption</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>head1<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>head2<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>1-1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>1-2<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>2-1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>2-2<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><p>效果</p><html><head><title>table-1</title></head><body><table border="1"><caption>table-2</caption><tr><th>head1</th><th>head2</th></tr><tr><td>1-1</td><td>1-2</td></tr><tr><td>2-1</td><td>2-2</td></tr></table></body></html><p>源代码</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">border</span>=<span class="string">&quot;1&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>姓名<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;<span class="name">th</span> <span class="attr">colspan</span>=<span class="string">&quot;2&quot;</span>&gt;</span>电话<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>Bill Gates<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>555 77 854<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>555 77 855<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">border</span>=<span class="string">&quot;1&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>姓名<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>Bill Gates<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">th</span> <span class="attr">rowspan</span>=<span class="string">&quot;2&quot;</span>&gt;</span>电话<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>555 77 854<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>555 77 855<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><p>效果</p><html><body><table border="1"><tr><th>姓名</th><th colspan="2">电话</th></tr><tr><td>Bill Gates</td><td>555 77 854</td><td>555 77 855</td></tr></table><table border="1"><tr><th>姓名</th><td>Bill Gates</td></tr><tr><th rowspan="2">电话</th><td>555 77 854</td></tr><tr><td>555 77 855</td></tr></table></body></html>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 练习 </tag>
-            
-            <tag> 表格 </tag>
-            
-            <tag> 网页设计 </tag>
-            
-            <tag> html </tag>
             
         </tags>
       
@@ -22224,47 +22306,6 @@
             <tag> 梦醒了 </tag>
             
             <tag> 天亮了 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>装备没有人秒回收了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a636e618/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a636e618/</url>
-      
-        <content type="html"><![CDATA[<p>达叔走了，装备秒回收是他这几年代言最火的一个游戏广告，他走了我传奇游戏里的装备谁来回收呢，听说他得的是癌症走的，这年头的人最怕的就是得癌症了，有钱也治不了，明星也不例外。</p><span id="more"></span><p>以前是看过他和周星驰合演的很多电影，这几年对他印象最深刻的就是装备秒回收这个游戏广告了，零零后可能没有看过他演的电影，但是一定看过他代言的游戏广告，其实他的电影也很不错的，都是很多小时候的快乐的回忆。</p><p>新闻上说的是过年后才检查出得的癌症，到现在也才多少天啊，这病情进展也太快了，癌症这病真的是只要得了都会离死不远了，癌细胞真的扩散很快。</p><p>才进ICU一天不到人就走了，真的是病来如山倒，病走如抽丝，这话是说得真的一点都没有错了，他的电影会成为永远的经典，他代言的游戏广告是看不到了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 装备 </tag>
-            
-            <tag> 秒回收 </tag>
-            
-            <tag> 代言 </tag>
-            
-            <tag> 传奇游戏 </tag>
-            
-            <tag> 明星 </tag>
-            
-            <tag> 游戏广告 </tag>
-            
-            <tag> 小时候 </tag>
-            
-            <tag> 癌症 </tag>
-            
-            <tag> 病来如山倒 </tag>
             
         </tags>
       
@@ -22790,6 +22831,45 @@
     
     
     <entry>
+      <title>读《围炉夜话》其十一有感</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/7192143c/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/7192143c/</url>
+      
+        <content type="html"><![CDATA[<p>如今的社会风气变得拜金奢侈荒淫，并且还在变本加厉毫无底线地进行着，必须要有更多懂得古朴之风的人，才能改善当下的奢靡风气。</p><span id="more"></span><p>奢侈荒淫会使一个人失去刚毅之心，放在一个国家来看，如果人人都这样，必会成为衰亡的祸根，自然会兵戈相见，天下大乱，人要做到无欲则刚，人人都行正道归途，那国家自然才能昌盛和强大，不好的风气不仅毁人更是毁人心志。</p><p>如果每个人的心态都已经到了丧失廉耻的地步，那离道德本质的消亡也自然不远了，人人都希望有一个道德高尚的圣人来改变这一切，那他的功绩自然可以与日月同齐。</p><p>人人其实都有廉耻之心，但是我们不仅要做到自律，更还要有胸怀天下为己任之心，要以自己的所言所行去感化、去唤醒人的良知，做这样的事，比治病救人还要功劳更大。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 围炉夜话 </tag>
+            
+            <tag> 社会风气 </tag>
+            
+            <tag> 拜金奢侈 </tag>
+            
+            <tag> 毫无底线 </tag>
+            
+            <tag> 古朴之风 </tag>
+            
+            <tag> 强大 </tag>
+            
+            <tag> 廉耻 </tag>
+            
+            <tag> 良知 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>读《围炉夜话》其十有感</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4ecdab72/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4ecdab72/</url>
@@ -22837,45 +22917,6 @@
             <tag> 培养 </tag>
             
             <tag> 事业 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>读《围炉夜话》其十一有感</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/7192143c/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/7192143c/</url>
-      
-        <content type="html"><![CDATA[<p>如今的社会风气变得拜金奢侈荒淫，并且还在变本加厉毫无底线地进行着，必须要有更多懂得古朴之风的人，才能改善当下的奢靡风气。</p><span id="more"></span><p>奢侈荒淫会使一个人失去刚毅之心，放在一个国家来看，如果人人都这样，必会成为衰亡的祸根，自然会兵戈相见，天下大乱，人要做到无欲则刚，人人都行正道归途，那国家自然才能昌盛和强大，不好的风气不仅毁人更是毁人心志。</p><p>如果每个人的心态都已经到了丧失廉耻的地步，那离道德本质的消亡也自然不远了，人人都希望有一个道德高尚的圣人来改变这一切，那他的功绩自然可以与日月同齐。</p><p>人人其实都有廉耻之心，但是我们不仅要做到自律，更还要有胸怀天下为己任之心，要以自己的所言所行去感化、去唤醒人的良知，做这样的事，比治病救人还要功劳更大。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 围炉夜话 </tag>
-            
-            <tag> 社会风气 </tag>
-            
-            <tag> 拜金奢侈 </tag>
-            
-            <tag> 毫无底线 </tag>
-            
-            <tag> 古朴之风 </tag>
-            
-            <tag> 强大 </tag>
-            
-            <tag> 廉耻 </tag>
-            
-            <tag> 良知 </tag>
             
         </tags>
       
@@ -23295,6 +23336,63 @@
     
     
     <entry>
+      <title>那些在QQ上求赞的女人是什么心态</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/77b8b612/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/77b8b612/</url>
+      
+        <content type="html"><![CDATA[<p>本来是不想写这个题目的，但是今天突然看到一个女的发信息给我说要我赞她十次她就回赞我一次，我当时就想笑了，我是缺她那一次赞吗，再说也不公平啊，我赞她十次她也应该赞我十次才对，现在的社会应该是男女公平才对啊，为什么她认为她是女人，我就多赞她几下，要让我多付出一点。</p><span id="more"></span><p>虽然我的QQ个人主页上也是有三千多赞了，但我是真的不在乎别人赞不赞我的问题，如果是我写来发在平台上的文章赞得越多，那我肯定是高兴的，因为这样我文章就可以成为热文可以被更多的人看到，但是QQ个人主页那里赞得再多，也是没有什么用的，赞得再多别人如果不打开你自己的主页谁又会看到。</p><p>我赞别人也是无聊的时候顺手点一下而已，但是真的没有要发消息去让别人来赞我的意思，不知道那些喜欢让别人给她点赞的人原因是什么，反正我看不懂，难道是赞得越多自己就可以成为网红吗。我记得还在QQ空间上看到有人卖刷赞，说多少钱刷多少赞，这就有点让我想笑了，就这么个赞真的有必要花钱去刷吗？</p><p>点开那个女人的QQ上的主页我特意留意了她的年龄上面写着五十了，这个年龄的女人对于这些应该不看得那么重了才对，这不是都是小孩子玩意吗，对于她是怎么加我的或者是我怎么加她的这里我就不清楚了，也不想去回忆，也不做过多的讨论。QQ上一直都是年轻人比较多，因为不像微信一样要用手机号才能注册。那为什么一个五十多岁的女人还要要求别人赞她，是虚荣心在作祟吗？还是真的太无聊？这一切都好像就是个未解之谜，我也不知道答案到底是什么。</p><p>说到QQ上的赞这个功能也有好多年了，记得几年前还有身边的朋友去淘宝上买赞，那时候我就不以为然，认为这个东西是一点卵用都没有，怎么还要花钱去买，是钱多没有地方花了吗？但是这是人家的消费自由我也没有必要去反对什么，我也不需要去劝说人家要怎么怎么样，那还真的还没有什么必要，我自己感觉不值得，人家自己认为值得那就行了，每个人的价值观都是千差万别的，不一定都要符合自己思维的才是对的，就是因为个体差异的不同才会有这世界的多姿多彩。</p><p>要说那些在QQ上求赞的女人是什么心态我真的不清楚，因为我对于自己认为没有价值的东西我就很少去研究，我这样写出来我也只是写下我对这些事的感受，因为我的想法不能代表她的看法，我也不是她，也不是她肚子里的蛔虫，怎么可能知道她们所想的、她们心态是怎样的。虽然人在某些时刻确实是可以换位思考的，但我不想，换到她的位置来想我也想不到什么合适的答案，我能想到的还是我自己的想法，所以我写出来的也是这样。</p><p>对于我来说我真的不想去研究一些对自己没有价值的东西，特别是这些无聊的，既然人家喜欢别人对她的点赞，那我点了就是，我点这个东西我可能点的时候都是不计其数的，直到点到不能点为止就不点了，这个说起来真的有点无聊，和小孩子玩的游戏一样了。反正我点了就是了，她给不给我点赞也无所谓，我真的对这种无价值无意义的东西不会去在乎，我这样写下来就是写下自己的感受，完全没有其他别的意思。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 答案 </tag>
+            
+            <tag> 题目 </tag>
+            
+            <tag> 淘宝 </tag>
+            
+            <tag> QQ </tag>
+            
+            <tag> 个人主页 </tag>
+            
+            <tag> 网红 </tag>
+            
+            <tag> 点赞 </tag>
+            
+            <tag> 女人 </tag>
+            
+            <tag> 求赞 </tag>
+            
+            <tag> 心态 </tag>
+            
+            <tag> 回赞 </tag>
+            
+            <tag> 男女公平 </tag>
+            
+            <tag> QQ空间 </tag>
+            
+            <tag> 年龄 </tag>
+            
+            <tag> 年轻人 </tag>
+            
+            <tag> 虚荣心 </tag>
+            
+            <tag> 多姿多彩 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>迷你电脑主机的好处</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5c1dd71a/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5c1dd71a/</url>
@@ -23362,11 +23460,11 @@
     
     
     <entry>
-      <title>那些在QQ上求赞的女人是什么心态</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/77b8b612/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/77b8b612/</url>
+      <title>那些鼓吹自己月入上万的人教你做自媒体，你以为他真的很赚钱，他是在砸自己的饭碗吗？</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/50ba3b1c/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/50ba3b1c/</url>
       
-        <content type="html"><![CDATA[<p>本来是不想写这个题目的，但是今天突然看到一个女的发信息给我说要我赞她十次她就回赞我一次，我当时就想笑了，我是缺她那一次赞吗，再说也不公平啊，我赞她十次她也应该赞我十次才对，现在的社会应该是男女公平才对啊，为什么她认为她是女人，我就多赞她几下，要让我多付出一点。</p><span id="more"></span><p>虽然我的QQ个人主页上也是有三千多赞了，但我是真的不在乎别人赞不赞我的问题，如果是我写来发在平台上的文章赞得越多，那我肯定是高兴的，因为这样我文章就可以成为热文可以被更多的人看到，但是QQ个人主页那里赞得再多，也是没有什么用的，赞得再多别人如果不打开你自己的主页谁又会看到。</p><p>我赞别人也是无聊的时候顺手点一下而已，但是真的没有要发消息去让别人来赞我的意思，不知道那些喜欢让别人给她点赞的人原因是什么，反正我看不懂，难道是赞得越多自己就可以成为网红吗。我记得还在QQ空间上看到有人卖刷赞，说多少钱刷多少赞，这就有点让我想笑了，就这么个赞真的有必要花钱去刷吗？</p><p>点开那个女人的QQ上的主页我特意留意了她的年龄上面写着五十了，这个年龄的女人对于这些应该不看得那么重了才对，这不是都是小孩子玩意吗，对于她是怎么加我的或者是我怎么加她的这里我就不清楚了，也不想去回忆，也不做过多的讨论。QQ上一直都是年轻人比较多，因为不像微信一样要用手机号才能注册。那为什么一个五十多岁的女人还要要求别人赞她，是虚荣心在作祟吗？还是真的太无聊？这一切都好像就是个未解之谜，我也不知道答案到底是什么。</p><p>说到QQ上的赞这个功能也有好多年了，记得几年前还有身边的朋友去淘宝上买赞，那时候我就不以为然，认为这个东西是一点卵用都没有，怎么还要花钱去买，是钱多没有地方花了吗？但是这是人家的消费自由我也没有必要去反对什么，我也不需要去劝说人家要怎么怎么样，那还真的还没有什么必要，我自己感觉不值得，人家自己认为值得那就行了，每个人的价值观都是千差万别的，不一定都要符合自己思维的才是对的，就是因为个体差异的不同才会有这世界的多姿多彩。</p><p>要说那些在QQ上求赞的女人是什么心态我真的不清楚，因为我对于自己认为没有价值的东西我就很少去研究，我这样写出来我也只是写下我对这些事的感受，因为我的想法不能代表她的看法，我也不是她，也不是她肚子里的蛔虫，怎么可能知道她们所想的、她们心态是怎样的。虽然人在某些时刻确实是可以换位思考的，但我不想，换到她的位置来想我也想不到什么合适的答案，我能想到的还是我自己的想法，所以我写出来的也是这样。</p><p>对于我来说我真的不想去研究一些对自己没有价值的东西，特别是这些无聊的，既然人家喜欢别人对她的点赞，那我点了就是，我点这个东西我可能点的时候都是不计其数的，直到点到不能点为止就不点了，这个说起来真的有点无聊，和小孩子玩的游戏一样了。反正我点了就是了，她给不给我点赞也无所谓，我真的对这种无价值无意义的东西不会去在乎，我这样写下来就是写下自己的感受，完全没有其他别的意思。</p>]]></content>
+        <content type="html"><![CDATA[<p>你以为他是真心教你吗，他是为了他自己赚钱的，赚谁的钱，当然是赚你口袋里的钱了，功利主义者很多，所以收智商税的几率还是很大的，他宣传他可以月入上万，当然他也可以，只是他赚的钱是从你这里拿过去的，你不仅没有赚钱，你自己还变成负的了。</p><span id="more"></span><p>以前就有个故事，很多人去淘金，但赚钱的是卖淘金工具的人。货币本来就是在流动过程中产生价值的，但是从你这里流到他那里的时候是没有产生价值的，他能做的就是尽量忽悠你赶紧把钱拿出来给他，其实这和抢劫没有什么区别，只是换了一个形式。</p><p>说到饭碗他根本就没有饭碗，他的饭碗里装的就是你口袋里的钱，真正做得好的，谁会说自己月入上万，还把秘诀教给你，你想多了吧，你看街上做生意的人，人家生意很好，你去问他有什么秘诀，人家会给你说吗，用钱买到的根本就不是秘诀，只是人家觉得对自己已经无用的东西，有用的谁会拿出来。</p><p>你与其花那些冤枉钱去让别人月入上万，你还不如安安静静的去微信读书上免费读一本关于自媒体的书。这样花冤枉钱的问题也不仅局限于自媒体这一个行业，在很多的培训机构中也用到了同样的方法，他们能从你口袋里赚到钱的思维方式，无非就是利用了你急功近利的心理。</p><p>你想速成、想赚大钱，他刚好利用了你这个弱点，他刚好吹他可以让你做到，他这一枪打得很好，刚好击中了你的痛点，你的兴奋点。如果你自己真的是有个脑子的人，我相信你是能够看得出来的，这世上根本就没有什么速成还可以赚大钱的方法，如果真的有这么好的事，那国家还提倡工匠精神干嘛，那不是在白白浪费人的青春、浪费人的精力吗。</p><p>所有能在一个行业赚钱的不过是术业有专攻，问道有先后罢了，先进入的人虽然游戏规则还不是很清晰，但到后面有肉吃这是肯定的，后面进去的虽然游戏规则是很明确了，但是汤已经没有了，早被别人喝干了。</p><p>人和人之间的见识和才能，有时候是真的没有可比性的，你自己感觉会的，自己觉得很简单的事别人不一定会，也不一定了解，你自己不会的，也不要觉得别人也不会，这就是为什么以前还在新闻里看到一个博士还被诈骗分子网络诈骗的原因，那骗子的学历难道会比她高吗，不见得。这就是术业有专攻的原因，人的时间都是一样的，但你花费在某一件事上的时间多了，另外的一件事花费的时间必然会减少，鱼和熊掌是不可兼得的。</p>]]></content>
       
       
       <categories>
@@ -23378,39 +23476,33 @@
       
         <tags>
             
-            <tag> 答案 </tag>
+            <tag> 自媒体 </tag>
             
-            <tag> 题目 </tag>
+            <tag> 微信读书 </tag>
             
-            <tag> 淘宝 </tag>
+            <tag> 赚钱 </tag>
             
-            <tag> QQ </tag>
+            <tag> 急功近利 </tag>
             
-            <tag> 个人主页 </tag>
+            <tag> 月入上万 </tag>
             
-            <tag> 网红 </tag>
+            <tag> 饭碗 </tag>
             
-            <tag> 点赞 </tag>
+            <tag> 真心 </tag>
             
-            <tag> 女人 </tag>
+            <tag> 智商税 </tag>
             
-            <tag> 求赞 </tag>
+            <tag> 淘金 </tag>
             
-            <tag> 心态 </tag>
+            <tag> 秘诀 </tag>
             
-            <tag> 回赞 </tag>
+            <tag> 赚大钱 </tag>
             
-            <tag> 男女公平 </tag>
+            <tag> 速成 </tag>
             
-            <tag> QQ空间 </tag>
+            <tag> 专攻 </tag>
             
-            <tag> 年龄 </tag>
-            
-            <tag> 年轻人 </tag>
-            
-            <tag> 虚荣心 </tag>
-            
-            <tag> 多姿多彩 </tag>
+            <tag> 鱼和熊掌 </tag>
             
         </tags>
       
@@ -23470,57 +23562,6 @@
             <tag> 微表情 </tag>
             
             <tag> 做饭 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>那些鼓吹自己月入上万的人教你做自媒体，你以为他真的很赚钱，他是在砸自己的饭碗吗？</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/50ba3b1c/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/50ba3b1c/</url>
-      
-        <content type="html"><![CDATA[<p>你以为他是真心教你吗，他是为了他自己赚钱的，赚谁的钱，当然是赚你口袋里的钱了，功利主义者很多，所以收智商税的几率还是很大的，他宣传他可以月入上万，当然他也可以，只是他赚的钱是从你这里拿过去的，你不仅没有赚钱，你自己还变成负的了。</p><span id="more"></span><p>以前就有个故事，很多人去淘金，但赚钱的是卖淘金工具的人。货币本来就是在流动过程中产生价值的，但是从你这里流到他那里的时候是没有产生价值的，他能做的就是尽量忽悠你赶紧把钱拿出来给他，其实这和抢劫没有什么区别，只是换了一个形式。</p><p>说到饭碗他根本就没有饭碗，他的饭碗里装的就是你口袋里的钱，真正做得好的，谁会说自己月入上万，还把秘诀教给你，你想多了吧，你看街上做生意的人，人家生意很好，你去问他有什么秘诀，人家会给你说吗，用钱买到的根本就不是秘诀，只是人家觉得对自己已经无用的东西，有用的谁会拿出来。</p><p>你与其花那些冤枉钱去让别人月入上万，你还不如安安静静的去微信读书上免费读一本关于自媒体的书。这样花冤枉钱的问题也不仅局限于自媒体这一个行业，在很多的培训机构中也用到了同样的方法，他们能从你口袋里赚到钱的思维方式，无非就是利用了你急功近利的心理。</p><p>你想速成、想赚大钱，他刚好利用了你这个弱点，他刚好吹他可以让你做到，他这一枪打得很好，刚好击中了你的痛点，你的兴奋点。如果你自己真的是有个脑子的人，我相信你是能够看得出来的，这世上根本就没有什么速成还可以赚大钱的方法，如果真的有这么好的事，那国家还提倡工匠精神干嘛，那不是在白白浪费人的青春、浪费人的精力吗。</p><p>所有能在一个行业赚钱的不过是术业有专攻，问道有先后罢了，先进入的人虽然游戏规则还不是很清晰，但到后面有肉吃这是肯定的，后面进去的虽然游戏规则是很明确了，但是汤已经没有了，早被别人喝干了。</p><p>人和人之间的见识和才能，有时候是真的没有可比性的，你自己感觉会的，自己觉得很简单的事别人不一定会，也不一定了解，你自己不会的，也不要觉得别人也不会，这就是为什么以前还在新闻里看到一个博士还被诈骗分子网络诈骗的原因，那骗子的学历难道会比她高吗，不见得。这就是术业有专攻的原因，人的时间都是一样的，但你花费在某一件事上的时间多了，另外的一件事花费的时间必然会减少，鱼和熊掌是不可兼得的。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 情感美文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 赚钱 </tag>
-            
-            <tag> 自媒体 </tag>
-            
-            <tag> 微信读书 </tag>
-            
-            <tag> 急功近利 </tag>
-            
-            <tag> 月入上万 </tag>
-            
-            <tag> 饭碗 </tag>
-            
-            <tag> 真心 </tag>
-            
-            <tag> 智商税 </tag>
-            
-            <tag> 淘金 </tag>
-            
-            <tag> 秘诀 </tag>
-            
-            <tag> 赚大钱 </tag>
-            
-            <tag> 速成 </tag>
-            
-            <tag> 专攻 </tag>
-            
-            <tag> 鱼和熊掌 </tag>
             
         </tags>
       
