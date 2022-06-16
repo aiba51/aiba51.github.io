@@ -501,7 +501,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">Symbols count in article: </span>
-      <span>957</span>
+      <span>948</span>
     </span>
     <span class="post-meta-item" title="Reading time">
       <span class="post-meta-item-icon">
@@ -523,22 +523,22 @@
 <span id="more"></span>
 
 <p>手机向右滑动屏幕可以看到下载链接，复制要下载版本的链接在终端下载。</p>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">wget https:<span class="regexp">//</span>download.oracle.com<span class="regexp">/java/</span><span class="number">18</span><span class="regexp">/latest/</span>jdk-<span class="number">18</span>_linux-aarch64_bin.tar.gz</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https:<span class="regexp">//</span>download.oracle.com<span class="regexp">/java/</span><span class="number">18</span><span class="regexp">/latest/</span>jdk-<span class="number">18</span>_linux-aarch64_bin.tar.gz</span><br></pre></td></tr></table></figure>
 
 <p>查看</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span></span><br></pre></td></tr></table></figure>
 
 <p>解压缩</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf jdk-<span class="number">18</span>_linux-aarch64_bin<span class="selector-class">.tar</span><span class="selector-class">.gz</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">tar</span> -zxvf jdk-<span class="number">18</span>_linux-aarch64_bin.tar.gz</span><br></pre></td></tr></table></figure>
 
 <p>复制解压出来的文件到<code>/etc/opt/</code>，我这里解压出来的是<code>jdk-18.0.1.1</code>。</p>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cp -r jdk-<span class="number">18.0</span>.<span class="number">1.1</span> <span class="regexp">/etc/</span>opt/</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp -r jdk-<span class="number">18.0</span>.<span class="number">1.1</span> <span class="regexp">/etc/</span>opt/</span><br></pre></td></tr></table></figure>
 
 <p>同样复制到<code>/usr/bin/</code></p>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cp -r jdk-<span class="number">18.0</span>.<span class="number">1.1</span> <span class="regexp">/usr/</span>bin</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp -r jdk-<span class="number">18.0</span>.<span class="number">1.1</span> <span class="regexp">/usr/</span>bin</span><br></pre></td></tr></table></figure>
 
 <p>切换到<code>/etc/opt/</code>目录</p>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd <span class="regexp">/etc/</span>opt/</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd <span class="regexp">/etc/</span>opt/</span><br></pre></td></tr></table></figure>
 
 <p>安装并注册，依次执行如下，<code>jdk-18.0.1.1</code>就是前面解压出来的文件名，记得替换。</p>
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update-alternatives --install <span class="regexp">/usr/</span>bin<span class="regexp">/java java /</span>opt<span class="regexp">/jdk-18.0.1.1/</span>bin/java <span class="number">1</span> </span><br></pre></td></tr></table></figure>
@@ -547,13 +547,13 @@
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update-alternatives --set javac <span class="regexp">/etc/</span>opt<span class="regexp">/jdk-18.0.1.1/</span>bin/javac</span><br></pre></td></tr></table></figure>
 
 <p>查看版本信息，验证是否安装成功。</p>
-<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">java -<span class="built_in">version</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -<span class="built_in">version</span></span><br></pre></td></tr></table></figure>
 
 <p>出现以下信息，表示安装成功。</p>
-<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">java</span> version <span class="string">&quot;18.0.1.1&quot;</span> <span class="number">2022</span>-<span class="number">04</span>-<span class="number">22</span></span><br><span class="line"><span class="attribute">Java</span>(TM) SE Runtime Environment (build <span class="number">18.0.1.1</span>+<span class="number">2</span>-<span class="number">6</span>)</span><br><span class="line"><span class="attribute">Java</span> HotSpot(TM) <span class="number">64</span>-Bit Server VM (build <span class="number">18.0.1.1</span>+<span class="number">2</span>-<span class="number">6</span>, mixed mode, sharing)</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">java</span> version <span class="string">&quot;18.0.1.1&quot;</span> <span class="number">2022</span>-<span class="number">04</span>-<span class="number">22</span></span><br><span class="line"><span class="attribute">Java</span>(TM) SE Runtime Environment (build <span class="number">18.0.1.1</span>+<span class="number">2</span>-<span class="number">6</span>)</span><br><span class="line"><span class="attribute">Java</span> HotSpot(TM) <span class="number">64</span>-Bit Server VM (build <span class="number">18.0.1.1</span>+<span class="number">2</span>-<span class="number">6</span>, mixed mode, sharing)</span><br></pre></td></tr></table></figure>
 
 <p>安装成功后，<code>home</code>目录下的压缩包可以删除。</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rm</span> <span class="operator">-f</span> jdk<span class="literal">-18_linux-aarch64_bin</span>.tar.gz</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rm</span> <span class="operator">-f</span> jdk<span class="literal">-18_linux-aarch64_bin</span>.tar.gz</span><br></pre></td></tr></table></figure>
 
     </div>
 
