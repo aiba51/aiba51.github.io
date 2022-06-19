@@ -501,7 +501,7 @@
         <i class="far fa-file-word"></i>
       </span>
       <span class="post-meta-item-text">Symbols count in article: </span>
-      <span>948</span>
+      <span>956</span>
     </span>
     <span class="post-meta-item" title="Reading time">
       <span class="post-meta-item-icon">
@@ -541,8 +541,8 @@
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd <span class="regexp">/etc/</span>opt/</span><br></pre></td></tr></table></figure>
 
 <p>安装并注册，依次执行如下，<code>jdk-18.0.1.1</code>就是前面解压出来的文件名，记得替换。</p>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update-alternatives --install <span class="regexp">/usr/</span>bin<span class="regexp">/java java /</span>opt<span class="regexp">/jdk-18.0.1.1/</span>bin/java <span class="number">1</span> </span><br></pre></td></tr></table></figure>
-<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update-alternatives --install <span class="regexp">/usr/</span>bin<span class="regexp">/javac javac /</span>opt<span class="regexp">/jdk-18.0.1.1/</span>bin/javac <span class="number">1</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update-alternatives --install <span class="regexp">/usr/</span>bin<span class="regexp">/java java /</span>etc<span class="regexp">/opt/</span>jdk-<span class="number">18.0</span>.<span class="number">1.1</span><span class="regexp">/bin/</span>java <span class="number">1</span> </span><br></pre></td></tr></table></figure>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update-alternatives --install <span class="regexp">/usr/</span>bin<span class="regexp">/javac javac /</span>etc<span class="regexp">/opt/</span>jdk-<span class="number">18.0</span>.<span class="number">1.1</span><span class="regexp">/bin/</span>javac <span class="number">1</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update-alternatives --set java <span class="regexp">/etc/</span>opt<span class="regexp">/jdk-18.0.1.1/</span>bin/java</span><br></pre></td></tr></table></figure>
 <figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update-alternatives --set javac <span class="regexp">/etc/</span>opt<span class="regexp">/jdk-18.0.1.1/</span>bin/javac</span><br></pre></td></tr></table></figure>
 

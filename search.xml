@@ -8,7 +8,7 @@
       <link href="/Kali/3ce20e4f/"/>
       <url>/Kali/3ce20e4f/</url>
       
-        <content type="html"><![CDATA[<p>下载时注意选择版本，移动端是arm64。<br>官网下载第址∶<br><code>https://www.oracle.com/java/technologies/downloads/#java18</code></p><span id="more"></span><p>手机向右滑动屏幕可以看到下载链接，复制要下载版本的链接在终端下载。</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https:<span class="regexp">//</span>download.oracle.com<span class="regexp">/java/</span><span class="number">18</span><span class="regexp">/latest/</span>jdk-<span class="number">18</span>_linux-aarch64_bin.tar.gz</span><br></pre></td></tr></table></figure><p>查看</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span></span><br></pre></td></tr></table></figure><p>解压缩</p><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">tar</span> -zxvf jdk-<span class="number">18</span>_linux-aarch64_bin.tar.gz</span><br></pre></td></tr></table></figure><p>复制解压出来的文件到<code>/etc/opt/</code>，我这里解压出来的是<code>jdk-18.0.1.1</code>。</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp -r jdk-<span class="number">18.0</span>.<span class="number">1.1</span> <span class="regexp">/etc/</span>opt/</span><br></pre></td></tr></table></figure><p>同样复制到<code>/usr/bin/</code></p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp -r jdk-<span class="number">18.0</span>.<span class="number">1.1</span> <span class="regexp">/usr/</span>bin</span><br></pre></td></tr></table></figure><p>切换到<code>/etc/opt/</code>目录</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd <span class="regexp">/etc/</span>opt/</span><br></pre></td></tr></table></figure><p>安装并注册，依次执行如下，<code>jdk-18.0.1.1</code>就是前面解压出来的文件名，记得替换。</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update-alternatives --install <span class="regexp">/usr/</span>bin<span class="regexp">/java java /</span>opt<span class="regexp">/jdk-18.0.1.1/</span>bin/java <span class="number">1</span> </span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update-alternatives --install <span class="regexp">/usr/</span>bin<span class="regexp">/javac javac /</span>opt<span class="regexp">/jdk-18.0.1.1/</span>bin/javac <span class="number">1</span></span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update-alternatives --set java <span class="regexp">/etc/</span>opt<span class="regexp">/jdk-18.0.1.1/</span>bin/java</span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update-alternatives --set javac <span class="regexp">/etc/</span>opt<span class="regexp">/jdk-18.0.1.1/</span>bin/javac</span><br></pre></td></tr></table></figure><p>查看版本信息，验证是否安装成功。</p><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -<span class="built_in">version</span></span><br></pre></td></tr></table></figure><p>出现以下信息，表示安装成功。</p><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">java</span> version <span class="string">&quot;18.0.1.1&quot;</span> <span class="number">2022</span>-<span class="number">04</span>-<span class="number">22</span></span><br><span class="line"><span class="attribute">Java</span>(TM) SE Runtime Environment (build <span class="number">18.0.1.1</span>+<span class="number">2</span>-<span class="number">6</span>)</span><br><span class="line"><span class="attribute">Java</span> HotSpot(TM) <span class="number">64</span>-Bit Server VM (build <span class="number">18.0.1.1</span>+<span class="number">2</span>-<span class="number">6</span>, mixed mode, sharing)</span><br></pre></td></tr></table></figure><p>安装成功后，<code>home</code>目录下的压缩包可以删除。</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rm</span> <span class="operator">-f</span> jdk<span class="literal">-18_linux-aarch64_bin</span>.tar.gz</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<p>下载时注意选择版本，移动端是arm64。<br>官网下载第址∶<br><code>https://www.oracle.com/java/technologies/downloads/#java18</code></p><span id="more"></span><p>手机向右滑动屏幕可以看到下载链接，复制要下载版本的链接在终端下载。</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https:<span class="regexp">//</span>download.oracle.com<span class="regexp">/java/</span><span class="number">18</span><span class="regexp">/latest/</span>jdk-<span class="number">18</span>_linux-aarch64_bin.tar.gz</span><br></pre></td></tr></table></figure><p>查看</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span></span><br></pre></td></tr></table></figure><p>解压缩</p><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">tar</span> -zxvf jdk-<span class="number">18</span>_linux-aarch64_bin.tar.gz</span><br></pre></td></tr></table></figure><p>复制解压出来的文件到<code>/etc/opt/</code>，我这里解压出来的是<code>jdk-18.0.1.1</code>。</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp -r jdk-<span class="number">18.0</span>.<span class="number">1.1</span> <span class="regexp">/etc/</span>opt/</span><br></pre></td></tr></table></figure><p>同样复制到<code>/usr/bin/</code></p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp -r jdk-<span class="number">18.0</span>.<span class="number">1.1</span> <span class="regexp">/usr/</span>bin</span><br></pre></td></tr></table></figure><p>切换到<code>/etc/opt/</code>目录</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd <span class="regexp">/etc/</span>opt/</span><br></pre></td></tr></table></figure><p>安装并注册，依次执行如下，<code>jdk-18.0.1.1</code>就是前面解压出来的文件名，记得替换。</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update-alternatives --install <span class="regexp">/usr/</span>bin<span class="regexp">/java java /</span>etc<span class="regexp">/opt/</span>jdk-<span class="number">18.0</span>.<span class="number">1.1</span><span class="regexp">/bin/</span>java <span class="number">1</span> </span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update-alternatives --install <span class="regexp">/usr/</span>bin<span class="regexp">/javac javac /</span>etc<span class="regexp">/opt/</span>jdk-<span class="number">18.0</span>.<span class="number">1.1</span><span class="regexp">/bin/</span>javac <span class="number">1</span></span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update-alternatives --set java <span class="regexp">/etc/</span>opt<span class="regexp">/jdk-18.0.1.1/</span>bin/java</span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">update-alternatives --set javac <span class="regexp">/etc/</span>opt<span class="regexp">/jdk-18.0.1.1/</span>bin/javac</span><br></pre></td></tr></table></figure><p>查看版本信息，验证是否安装成功。</p><figure class="highlight applescript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -<span class="built_in">version</span></span><br></pre></td></tr></table></figure><p>出现以下信息，表示安装成功。</p><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">java</span> version <span class="string">&quot;18.0.1.1&quot;</span> <span class="number">2022</span>-<span class="number">04</span>-<span class="number">22</span></span><br><span class="line"><span class="attribute">Java</span>(TM) SE Runtime Environment (build <span class="number">18.0.1.1</span>+<span class="number">2</span>-<span class="number">6</span>)</span><br><span class="line"><span class="attribute">Java</span> HotSpot(TM) <span class="number">64</span>-Bit Server VM (build <span class="number">18.0.1.1</span>+<span class="number">2</span>-<span class="number">6</span>, mixed mode, sharing)</span><br></pre></td></tr></table></figure><p>安装成功后，<code>home</code>目录下的压缩包可以删除。</p><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">rm</span> <span class="operator">-f</span> jdk<span class="literal">-18_linux-aarch64_bin</span>.tar.gz</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -186,9 +186,9 @@
             
             <tag> 文章 </tag>
             
-            <tag> 配置文件 </tag>
-            
             <tag> 数据文件夹 </tag>
+            
+            <tag> 配置文件 </tag>
             
             <tag> 网站 </tag>
             
@@ -944,9 +944,9 @@
             
             <tag> 思想 </tag>
             
-            <tag> 睡不着 </tag>
-            
             <tag> 看书 </tag>
+            
+            <tag> 睡不着 </tag>
             
             <tag> 弱点 </tag>
             
@@ -4547,9 +4547,9 @@
       
         <tags>
             
-            <tag> 坚持 </tag>
-            
             <tag> 习惯 </tag>
+            
+            <tag> 坚持 </tag>
             
             <tag> 写文 </tag>
             
@@ -5812,8 +5812,6 @@
             
             <tag> 浏览器 </tag>
             
-            <tag> 刷牙洗脸 </tag>
-            
             <tag> 头痛老病 </tag>
             
             <tag> 珀金一 </tag>
@@ -5821,6 +5819,8 @@
             <tag> 青椒 </tag>
             
             <tag> 蚊香 </tag>
+            
+            <tag> 刷牙洗脸 </tag>
             
         </tags>
       
@@ -6801,9 +6801,9 @@
             
             <tag> 玩手机 </tag>
             
-            <tag> 凉水澡 </tag>
-            
             <tag> 刷牙洗脸 </tag>
+            
+            <tag> 凉水澡 </tag>
             
             <tag> 麻烦 </tag>
             
@@ -9432,8 +9432,6 @@
             
             <tag> Hexo </tag>
             
-            <tag> next主题 </tag>
-            
             <tag> 模板文件 </tag>
             
             <tag> 自动 </tag>
@@ -9441,6 +9439,8 @@
             <tag> 添加标题 </tag>
             
             <tag> 日期 </tag>
+            
+            <tag> next主题 </tag>
             
             <tag> 安装 </tag>
             
@@ -9850,6 +9850,55 @@
     
     
     <entry>
+      <title>520只不过是平平常常的一天</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/2bae8fe6/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/2bae8fe6/</url>
+      
+        <content type="html"><![CDATA[<p>每年都要被虐几次，这种事其实习惯就好了，热闹是别人的，自己只想安安静静的做个美男子这就对了。心无杂念，伤害自然少三分，欲念有多大，伤害就有多深。</p><span id="more"></span><p>明镜亦非台，本来无一物，何处惹尘埃。热闹是你们的，你们快活就好，我反正无所谓。你们热闹与我无关，我不喜亦不悲。</p><p>红尘浪漫之事，不过是过往云烟，转眼即忘，倒不如求得一方安宁心境活得自在。曾经多少人在我岁月之中走过，如今又有几人能将我留存在记忆之中。终究留下的不过是遗憾，失去的都成为永恒。</p><p>年年岁岁又今朝，今朝昨日何不同，不同过往，不同境遇，不同的想法，不一样的自己。</p><p>两耳不闻窗外事，一心只读圣贤书。我的快乐只倘佯于这文字之中，人间有爱，有快乐，这人间太美，我又何似在人间。</p><p>太多流年岁月看似很美，这美好之中却是渗透着淡淡的忧伤。好多风花雪月的事我不会用词表达，其实我只是在乱写。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 520 </tag>
+            
+            <tag> 平平常常 </tag>
+            
+            <tag> 被虐 </tag>
+            
+            <tag> 习惯 </tag>
+            
+            <tag> 热闹 </tag>
+            
+            <tag> 安安静静 </tag>
+            
+            <tag> 美男子 </tag>
+            
+            <tag> 伤害 </tag>
+            
+            <tag> 惹尘埃 </tag>
+            
+            <tag> 红尘 </tag>
+            
+            <tag> 境遇 </tag>
+            
+            <tag> 流年岁月 </tag>
+            
+            <tag> 风花雪月 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Gitalk这个评论插件突然就用不了</title>
       <link href="/Hexo/38aa4c08/"/>
       <url>/Hexo/38aa4c08/</url>
@@ -9909,101 +9958,15 @@
             
             <tag> Hexo </tag>
             
-            <tag> 主题配置 </tag>
-            
             <tag> next主题 </tag>
+            
+            <tag> 主题配置 </tag>
             
             <tag> 代替主题 </tag>
             
             <tag> 代码 </tag>
             
             <tag> 主题文件 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hexo在数据文件夹中添加CNZZ统计</title>
-      <link href="/Hexo/7b6e1cf9/"/>
-      <url>/Hexo/7b6e1cf9/</url>
-      
-        <content type="html"><![CDATA[<p>首先在source文件夹下新建一个_data文件夹，打开主题配置文件或者备用主题配置文件，我用的是备用主题配置文件，搜索找到custom_file_path，这里下面是自定义数据文件路径，把第六个footer前面的注释符#去掉，可以看到路径上有个_data文件夹下面还要有个footer.njk文件才可以。</p><span id="more"></span><p>复制footer.njk这个文件名，在刚才新建的_data文件夹下新建一个文本文件，把名字改成footer.njk,到这里这个文件就建好了。</p><p>复制友盟的cnzz统计代码放到这个footer.njk这个文件里面就可以了，我这里用的工具是notepad++,用这个工具打开footer.njk自己新建的这个文件，把复制的代码粘贴到里面，然后把主题配置文件的cnzz_siteid这里设置成true,注意冒号后面有个空格，保存主题配置文件这样就可以了，用其他工具打开也可以，但是我一直用的这个，感觉很简洁。这样是真的简单很多，不用去修改主题文件。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-            <tag> 数据文件 </tag>
-            
-            <tag> CNZZ </tag>
-            
-            <tag> 路径 </tag>
-            
-            <tag> 统计代码 </tag>
-            
-            <tag> 配置文件 </tag>
-            
-            <tag> footer </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>520只不过是平平常常的一天</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/2bae8fe6/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/2bae8fe6/</url>
-      
-        <content type="html"><![CDATA[<p>每年都要被虐几次，这种事其实习惯就好了，热闹是别人的，自己只想安安静静的做个美男子这就对了。心无杂念，伤害自然少三分，欲念有多大，伤害就有多深。</p><span id="more"></span><p>明镜亦非台，本来无一物，何处惹尘埃。热闹是你们的，你们快活就好，我反正无所谓。你们热闹与我无关，我不喜亦不悲。</p><p>红尘浪漫之事，不过是过往云烟，转眼即忘，倒不如求得一方安宁心境活得自在。曾经多少人在我岁月之中走过，如今又有几人能将我留存在记忆之中。终究留下的不过是遗憾，失去的都成为永恒。</p><p>年年岁岁又今朝，今朝昨日何不同，不同过往，不同境遇，不同的想法，不一样的自己。</p><p>两耳不闻窗外事，一心只读圣贤书。我的快乐只倘佯于这文字之中，人间有爱，有快乐，这人间太美，我又何似在人间。</p><p>太多流年岁月看似很美，这美好之中却是渗透着淡淡的忧伤。好多风花雪月的事我不会用词表达，其实我只是在乱写。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 情感美文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 520 </tag>
-            
-            <tag> 平平常常 </tag>
-            
-            <tag> 被虐 </tag>
-            
-            <tag> 习惯 </tag>
-            
-            <tag> 热闹 </tag>
-            
-            <tag> 安安静静 </tag>
-            
-            <tag> 美男子 </tag>
-            
-            <tag> 伤害 </tag>
-            
-            <tag> 惹尘埃 </tag>
-            
-            <tag> 红尘 </tag>
-            
-            <tag> 境遇 </tag>
-            
-            <tag> 流年岁月 </tag>
-            
-            <tag> 风花雪月 </tag>
             
         </tags>
       
@@ -10047,6 +10010,43 @@
             <tag> 二级域名 </tag>
             
             <tag> 收录 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo在数据文件夹中添加CNZZ统计</title>
+      <link href="/Hexo/7b6e1cf9/"/>
+      <url>/Hexo/7b6e1cf9/</url>
+      
+        <content type="html"><![CDATA[<p>首先在source文件夹下新建一个_data文件夹，打开主题配置文件或者备用主题配置文件，我用的是备用主题配置文件，搜索找到custom_file_path，这里下面是自定义数据文件路径，把第六个footer前面的注释符#去掉，可以看到路径上有个_data文件夹下面还要有个footer.njk文件才可以。</p><span id="more"></span><p>复制footer.njk这个文件名，在刚才新建的_data文件夹下新建一个文本文件，把名字改成footer.njk,到这里这个文件就建好了。</p><p>复制友盟的cnzz统计代码放到这个footer.njk这个文件里面就可以了，我这里用的工具是notepad++,用这个工具打开footer.njk自己新建的这个文件，把复制的代码粘贴到里面，然后把主题配置文件的cnzz_siteid这里设置成true,注意冒号后面有个空格，保存主题配置文件这样就可以了，用其他工具打开也可以，但是我一直用的这个，感觉很简洁。这样是真的简单很多，不用去修改主题文件。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 数据文件 </tag>
+            
+            <tag> CNZZ </tag>
+            
+            <tag> 路径 </tag>
+            
+            <tag> 统计代码 </tag>
+            
+            <tag> 配置文件 </tag>
+            
+            <tag> footer </tag>
             
         </tags>
       
@@ -10143,6 +10143,65 @@
     
     
     <entry>
+      <title>Hexo推送失败的问题解决</title>
+      <link href="/Hexo/5cc57a7a/"/>
+      <url>/Hexo/5cc57a7a/</url>
+      
+        <content type="html"><![CDATA[<p>错误失败的问题就如以下：</p><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Unlink of file &#x27;.git/objects/pack/pack</span><br><span class="line">-<span class="number">2334</span>b<span class="number">7896</span>f1a646c<span class="number">0137</span>9d<span class="number">3725</span>4fad<span class="number">0944</span>xxxxxxxx</span><br><span class="line">idx&#x27; failed. Should I try again? (y/n)</span><br></pre></td></tr></table></figure><span id="more"></span><p>一直按y也是没有用一直重复，网上的各种方法都试过了，但是都没有用，包括重新去Git官网重新下载安装Git，问题还是没有得到解决，这个问题也是苦恼了我一个晚上，但是踏破铁鞋无觅处，得来全不费工夫，我首先就是想到查看<code>.deploy_git</code>这个文件夹的属性，因为这个文件夹每次<code>hexo d</code>它都会更新一次，这一不看属性不知道一看吓了我一跳，TM的居然占了4G多的硬盘空间，话说我这一个小博客哪来这么多的文件，这简直就是一个巨无霸了。</p><p>后面又在网上查找了一下看到说这个文件夹是可以删除的，那当然是毫不犹豫的删掉它了，再每次<code>hexo d</code>它都会重新更新一次干嘛不删掉呢，删掉之后我重新用一键编译推送命令<code>hexo clean &amp;&amp; hexo deploy</code>更新推送，这一次居然问题解决了，只是时间比平时用得多了一点。</p><p>再次打开Git刚创建的这个文件夹看了下属性，这次终于不是我被它吓一跳了，而是感到很惊喜，这一次居然只占用300多M的硬盘空间了，真后悔早知道直接把它删了重新更新就可以解决问题，还走那么多弯路，但是不能保证长期有用，估计推送次数多了，它也还会重新变成巨无霸，所以如果以后遇到同样的问题还是得删，这个应该是Git设计有问题，为了追求每次推送的速度，所以每次都是往这个文件夹里增加文件，而不是每次用新的覆盖旧的，长此以往这个文件夹就会变得越来越大，到最后大到不能再继续写入就推送失败了。这个和QQ文件夹一个原理，QQ文件夹当里面文件大一定程度，那QQ发语音都会发不了，所以这个QQ文件就需要经常的删除，这个Git也是这个原理。</p><p>推送到Github成功以后自然要在浏览器上打开网站看下有没有什么不妥的地方，这也是给我的第二个惊喜的地方，之前打开网站一直很慢还以为是Github的访问速度问题，现在看来还真的不是了，这次打开可以用秒速来形容，真的比以往的打开速度非比寻常的快，没有想到删除这个文件夹带来的还有意外惊喜，看来以后还是要经常删一下才行啊。</p><p>仔细想一想还真的是觉得不可思议，先前那么4G多的巨无霸全部推送到Github那网站速度能快才怪了，一下加载4G多的文件网速再怎么快都会感觉慢了，相当于一下子下载一个4K的电影，用迅雷下载最快也要7到8分钟才行啊，到这里这一次Hexo网站更新遇到的问题就完美的解决了，还有意外收获感觉很值得记录一下，也对以后自己和别人有帮助。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Github </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> Git </tag>
+            
+            <tag> 推送失败 </tag>
+            
+            <tag> 问题解决 </tag>
+            
+            <tag> 错误 </tag>
+            
+            <tag> 按y </tag>
+            
+            <tag> 一直重复 </tag>
+            
+            <tag> Unlink of file </tag>
+            
+            <tag> idx </tag>
+            
+            <tag> .deploy_git </tag>
+            
+            <tag> hexo d </tag>
+            
+            <tag> hexo clean &amp;&amp; hexo deploy </tag>
+            
+            <tag> 更新推送 </tag>
+            
+            <tag> QQ文件夹 </tag>
+            
+            <tag> 惊喜 </tag>
+            
+            <tag> 迅雷下载 </tag>
+            
+            <tag> 巨无霸 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo搭建网站之用MarkdownPad2发文排版</title>
       <link href="/Hexo/70a3aa22/"/>
       <url>/Hexo/70a3aa22/</url>
@@ -10210,9 +10269,9 @@
             
             <tag> Hexo </tag>
             
-            <tag> 配置文件 </tag>
-            
             <tag> gitee </tag>
+            
+            <tag> 配置文件 </tag>
             
             <tag> 推送 </tag>
             
@@ -10318,11 +10377,11 @@
     
     
     <entry>
-      <title>Hexo推送失败的问题解决</title>
-      <link href="/Hexo/5cc57a7a/"/>
-      <url>/Hexo/5cc57a7a/</url>
+      <title>Hello World</title>
+      <link href="/Hexo/4a17b156/"/>
+      <url>/Hexo/4a17b156/</url>
       
-        <content type="html"><![CDATA[<p>错误失败的问题就如以下：</p><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Unlink of file &#x27;.git/objects/pack/pack</span><br><span class="line">-<span class="number">2334</span>b<span class="number">7896</span>f1a646c<span class="number">0137</span>9d<span class="number">3725</span>4fad<span class="number">0944</span>xxxxxxxx</span><br><span class="line">idx&#x27; failed. Should I try again? (y/n)</span><br></pre></td></tr></table></figure><span id="more"></span><p>一直按y也是没有用一直重复，网上的各种方法都试过了，但是都没有用，包括重新去Git官网重新下载安装Git，问题还是没有得到解决，这个问题也是苦恼了我一个晚上，但是踏破铁鞋无觅处，得来全不费工夫，我首先就是想到查看<code>.deploy_git</code>这个文件夹的属性，因为这个文件夹每次<code>hexo d</code>它都会更新一次，这一不看属性不知道一看吓了我一跳，TM的居然占了4G多的硬盘空间，话说我这一个小博客哪来这么多的文件，这简直就是一个巨无霸了。</p><p>后面又在网上查找了一下看到说这个文件夹是可以删除的，那当然是毫不犹豫的删掉它了，再每次<code>hexo d</code>它都会重新更新一次干嘛不删掉呢，删掉之后我重新用一键编译推送命令<code>hexo clean &amp;&amp; hexo deploy</code>更新推送，这一次居然问题解决了，只是时间比平时用得多了一点。</p><p>再次打开Git刚创建的这个文件夹看了下属性，这次终于不是我被它吓一跳了，而是感到很惊喜，这一次居然只占用300多M的硬盘空间了，真后悔早知道直接把它删了重新更新就可以解决问题，还走那么多弯路，但是不能保证长期有用，估计推送次数多了，它也还会重新变成巨无霸，所以如果以后遇到同样的问题还是得删，这个应该是Git设计有问题，为了追求每次推送的速度，所以每次都是往这个文件夹里增加文件，而不是每次用新的覆盖旧的，长此以往这个文件夹就会变得越来越大，到最后大到不能再继续写入就推送失败了。这个和QQ文件夹一个原理，QQ文件夹当里面文件大一定程度，那QQ发语音都会发不了，所以这个QQ文件就需要经常的删除，这个Git也是这个原理。</p><p>推送到Github成功以后自然要在浏览器上打开网站看下有没有什么不妥的地方，这也是给我的第二个惊喜的地方，之前打开网站一直很慢还以为是Github的访问速度问题，现在看来还真的不是了，这次打开可以用秒速来形容，真的比以往的打开速度非比寻常的快，没有想到删除这个文件夹带来的还有意外惊喜，看来以后还是要经常删一下才行啊。</p><p>仔细想一想还真的是觉得不可思议，先前那么4G多的巨无霸全部推送到Github那网站速度能快才怪了，一下加载4G多的文件网速再怎么快都会感觉慢了，相当于一下子下载一个4K的电影，用迅雷下载最快也要7到8分钟才行啊，到这里这一次Hexo网站更新遇到的问题就完美的解决了，还有意外收获感觉很值得记录一下，也对以后自己和别人有帮助。</p>]]></content>
+        <content type="html"><![CDATA[<p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo<i class="fa fa-external-link-alt"></i></span>! This is your very first post. Check <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv">documentation<i class="fa fa-external-link-alt"></i></span> for more info. If you get any problems when using Hexo, you can find the answer in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=">troubleshooting<i class="fa fa-external-link-alt"></i></span> or you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==">GitHub<i class="fa fa-external-link-alt"></i></span>.</p><span id="more"></span><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s">Writing<i class="fa fa-external-link-alt"></i></span></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=">Server<i class="fa fa-external-link-alt"></i></span></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s">Generating<i class="fa fa-external-link-alt"></i></span></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZGVwbG95bWVudC5odG1s">Deployment<i class="fa fa-external-link-alt"></i></span></p>]]></content>
       
       
       <categories>
@@ -10334,41 +10393,13 @@
       
         <tags>
             
-            <tag> Github </tag>
+            <tag> 文章 </tag>
             
-            <tag> Hexo </tag>
+            <tag> 你好 </tag>
             
-            <tag> Git </tag>
+            <tag> 世界 </tag>
             
-            <tag> 推送失败 </tag>
-            
-            <tag> 问题解决 </tag>
-            
-            <tag> 错误 </tag>
-            
-            <tag> 按y </tag>
-            
-            <tag> 一直重复 </tag>
-            
-            <tag> Unlink of file </tag>
-            
-            <tag> idx </tag>
-            
-            <tag> .deploy_git </tag>
-            
-            <tag> hexo d </tag>
-            
-            <tag> hexo clean &amp;&amp; hexo deploy </tag>
-            
-            <tag> 更新推送 </tag>
-            
-            <tag> QQ文件夹 </tag>
-            
-            <tag> 惊喜 </tag>
-            
-            <tag> 迅雷下载 </tag>
-            
-            <tag> 巨无霸 </tag>
+            <tag> 第一篇 </tag>
             
         </tags>
       
@@ -10420,37 +10451,6 @@
             <tag> 小背包 </tag>
             
             <tag> 处理器 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/Hexo/4a17b156/"/>
-      <url>/Hexo/4a17b156/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo<i class="fa fa-external-link-alt"></i></span>! This is your very first post. Check <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv">documentation<i class="fa fa-external-link-alt"></i></span> for more info. If you get any problems when using Hexo, you can find the answer in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=">troubleshooting<i class="fa fa-external-link-alt"></i></span> or you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==">GitHub<i class="fa fa-external-link-alt"></i></span>.</p><span id="more"></span><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s">Writing<i class="fa fa-external-link-alt"></i></span></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=">Server<i class="fa fa-external-link-alt"></i></span></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s">Generating<i class="fa fa-external-link-alt"></i></span></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZGVwbG95bWVudC5odG1s">Deployment<i class="fa fa-external-link-alt"></i></span></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 文章 </tag>
-            
-            <tag> 你好 </tag>
-            
-            <tag> 世界 </tag>
-            
-            <tag> 第一篇 </tag>
             
         </tags>
       
@@ -11840,51 +11840,6 @@
     
     
     <entry>
-      <title>人力资源管理（一）自考通案例分析题1</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ec01e93e/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ec01e93e/</url>
-      
-        <content type="html"><![CDATA[<h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="六、案例分析题"><a href="#六、案例分析题" class="headerlink" title="六、案例分析题"></a>六、案例分析题</h2><p><strong>38.案例:</strong></p><p>某家专业咨询公司给一家民营企业做咨询，咨询内容侧重于薪酬设计。通过了解，目前公司的中层及以下员工的薪酬在本地区本行业内处于中等偏上水平，高管的薪酬水平与同行业持平。公司的福利也很好，五险一金、过节费、通讯费、交通补贴等都有。由于企业尚处于创业期，企业给出这样的薪资待遇，员工们都很满意。老板对所有的高管实行了股权激励，不管是一起打江山的元老，还是刚外聘的高管，一视同仁，老板将自己的股权拿出来，无偿赠予。对中层管理者及一般员工,老板也计划实行股权激励，正在让下面的人制订方案。</p><span id="more"></span><p>通过此次咨询，该公司希望通过岗位评价帮助企业建立一套完整的薪酬体系，以规范现有薪酬管理。现在员工的薪酬可能不会被动及,因为今年年初刚普调了一级工资。</p><p>通过谈及这次薪酬设计的总要求，老板要求这次的薪酬要大调整，他要求公司高层的薪酬要在本行业内处于领先位置，中层及以下员工的薪酬要与行业内前三名的平均值相当。向第一名看齐!</p><p>这个企业正处于需大量投入资金且利润几乎还没有的创业阶段，下面的员工对目前企业的现状非常清楚，对公司给出的薪酬已非常满意。薪酬若再次调高，公司的人工成本会猛增很多。老板说:“我就是要让我的员工成为行业内的骄做。我要的是高薪酬、高绩效。”</p><p><strong>问题:</strong><br>  (1)制定合理薪酬水平需要考虑哪些因素?</p><p>  (2)结合该公司老板对新酬设计的要求，你认为合理的薪酬设计应遵循哪些原则?</p><p>38.(1)制定合理薪酬水平需要考虑哪些因素? (P265~266)</p><p>   答:影响企业薪酬水平的因素可分为宏观因素和微观因素。宏观因素主要有：劳动生产率水平、积累消费水平、政府政策法规的调节、劳动力市场供求状况和物价变动。微观因素主要有:企业经营效益、企业薪酬策略及价值观、企业的规模和发展阶段、员工异质性、劳资双方的谈判和心理因素。</p><p>   (2)结合该公司老板对薪酬设计的要求，您认为合理的薪酬设计应遵循哪些原则?(P273-275)</p><p>   答:合理科学的薪酬设计需要遵循公平性、竞争性、激励性、经济性、合法性和战略性原则。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 薪酬水平 </tag>
-            
-            <tag> 案例分析 </tag>
-            
-            <tag> 民营企业 </tag>
-            
-            <tag> 创业期 </tag>
-            
-            <tag> 投入资金 </tag>
-            
-            <tag> 新酬设计 </tag>
-            
-            <tag> 宏观 </tag>
-            
-            <tag> 微观 </tag>
-            
-            <tag> 遵循 </tag>
-            
-            <tag> 原则 </tag>
-            
-            <tag> 心理因素 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>人力资源管理（一）自考通简答题1</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3bf0c43d/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3bf0c43d/</url>
@@ -11928,6 +11883,51 @@
             <tag> 效果评估 </tag>
             
             <tag> 匹配原则 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>人力资源管理（一）自考通案例分析题1</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ec01e93e/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ec01e93e/</url>
+      
+        <content type="html"><![CDATA[<h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="六、案例分析题"><a href="#六、案例分析题" class="headerlink" title="六、案例分析题"></a>六、案例分析题</h2><p><strong>38.案例:</strong></p><p>某家专业咨询公司给一家民营企业做咨询，咨询内容侧重于薪酬设计。通过了解，目前公司的中层及以下员工的薪酬在本地区本行业内处于中等偏上水平，高管的薪酬水平与同行业持平。公司的福利也很好，五险一金、过节费、通讯费、交通补贴等都有。由于企业尚处于创业期，企业给出这样的薪资待遇，员工们都很满意。老板对所有的高管实行了股权激励，不管是一起打江山的元老，还是刚外聘的高管，一视同仁，老板将自己的股权拿出来，无偿赠予。对中层管理者及一般员工,老板也计划实行股权激励，正在让下面的人制订方案。</p><span id="more"></span><p>通过此次咨询，该公司希望通过岗位评价帮助企业建立一套完整的薪酬体系，以规范现有薪酬管理。现在员工的薪酬可能不会被动及,因为今年年初刚普调了一级工资。</p><p>通过谈及这次薪酬设计的总要求，老板要求这次的薪酬要大调整，他要求公司高层的薪酬要在本行业内处于领先位置，中层及以下员工的薪酬要与行业内前三名的平均值相当。向第一名看齐!</p><p>这个企业正处于需大量投入资金且利润几乎还没有的创业阶段，下面的员工对目前企业的现状非常清楚，对公司给出的薪酬已非常满意。薪酬若再次调高，公司的人工成本会猛增很多。老板说:“我就是要让我的员工成为行业内的骄做。我要的是高薪酬、高绩效。”</p><p><strong>问题:</strong><br>  (1)制定合理薪酬水平需要考虑哪些因素?</p><p>  (2)结合该公司老板对新酬设计的要求，你认为合理的薪酬设计应遵循哪些原则?</p><p>38.(1)制定合理薪酬水平需要考虑哪些因素? (P265~266)</p><p>   答:影响企业薪酬水平的因素可分为宏观因素和微观因素。宏观因素主要有：劳动生产率水平、积累消费水平、政府政策法规的调节、劳动力市场供求状况和物价变动。微观因素主要有:企业经营效益、企业薪酬策略及价值观、企业的规模和发展阶段、员工异质性、劳资双方的谈判和心理因素。</p><p>   (2)结合该公司老板对薪酬设计的要求，您认为合理的薪酬设计应遵循哪些原则?(P273-275)</p><p>   答:合理科学的薪酬设计需要遵循公平性、竞争性、激励性、经济性、合法性和战略性原则。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 薪酬水平 </tag>
+            
+            <tag> 案例分析 </tag>
+            
+            <tag> 民营企业 </tag>
+            
+            <tag> 创业期 </tag>
+            
+            <tag> 投入资金 </tag>
+            
+            <tag> 新酬设计 </tag>
+            
+            <tag> 宏观 </tag>
+            
+            <tag> 微观 </tag>
+            
+            <tag> 遵循 </tag>
+            
+            <tag> 原则 </tag>
+            
+            <tag> 心理因素 </tag>
             
         </tags>
       
@@ -12515,41 +12515,6 @@
     
     
     <entry>
-      <title>今天又睡了一天</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a3e356ee/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a3e356ee/</url>
-      
-        <content type="html"><![CDATA[<p>连续两天在外面玩，玩累了今天是直接不想起，然后就这样睡了一天。这几天什么也没有做就花了300多块钱，搞得我都不敢去市区了，去贴了个手机钢化膜，就花了49还那个优惠券也用不了。</p><span id="more"></span><p>结果是贴完晚上回来发现打字都不灵敏了，打个字边上那里点了半天都没有反应，最后不贴了，直接扯掉了还舒服点，我这手机是曲面屏的，贴什么钢化膜都没有用。</p><p>昨天也不知道脑子是发热还是怎么了，小米售后服务那美女问我是贴水凝膜还是钢化膜，说水凝膜是免费的，我真是一冲动就说要贴钢化膜。现在想起来才知道后悔，日啊49块钱就这样没有了。</p><p>还有昨天吃个饭也是一顿饭，就一个套餐饭45块也没有了，还不好吃，在镇上晚上吃了个差不多一样的都才16，去市区就是坑啊，再也不敢去了。本来都没有钱还浪费钱，罪大了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 外面玩 </tag>
-            
-            <tag> 市区 </tag>
-            
-            <tag> 曲面屏 </tag>
-            
-            <tag> 小米售后 </tag>
-            
-            <tag> 水凝膜 </tag>
-            
-            <tag> 吃个饭 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>今天天气很热，到晚上就下雨了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/683954e9/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/683954e9/</url>
@@ -12661,6 +12626,41 @@
             <tag> 消耗不完 </tag>
             
             <tag> 活跃起来 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>今天又睡了一天</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a3e356ee/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a3e356ee/</url>
+      
+        <content type="html"><![CDATA[<p>连续两天在外面玩，玩累了今天是直接不想起，然后就这样睡了一天。这几天什么也没有做就花了300多块钱，搞得我都不敢去市区了，去贴了个手机钢化膜，就花了49还那个优惠券也用不了。</p><span id="more"></span><p>结果是贴完晚上回来发现打字都不灵敏了，打个字边上那里点了半天都没有反应，最后不贴了，直接扯掉了还舒服点，我这手机是曲面屏的，贴什么钢化膜都没有用。</p><p>昨天也不知道脑子是发热还是怎么了，小米售后服务那美女问我是贴水凝膜还是钢化膜，说水凝膜是免费的，我真是一冲动就说要贴钢化膜。现在想起来才知道后悔，日啊49块钱就这样没有了。</p><p>还有昨天吃个饭也是一顿饭，就一个套餐饭45块也没有了，还不好吃，在镇上晚上吃了个差不多一样的都才16，去市区就是坑啊，再也不敢去了。本来都没有钱还浪费钱，罪大了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 外面玩 </tag>
+            
+            <tag> 市区 </tag>
+            
+            <tag> 曲面屏 </tag>
+            
+            <tag> 小米售后 </tag>
+            
+            <tag> 水凝膜 </tag>
+            
+            <tag> 吃个饭 </tag>
             
         </tags>
       
@@ -13340,53 +13340,6 @@
     
     
     <entry>
-      <title>关于想做有收益的自媒体，可是没电脑做不了，有没有更好的方法？</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/85c33271/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/85c33271/</url>
-      
-        <content type="html"><![CDATA[<p>对于这个问题的答案是肯定的也是可以的，就先拿头条来举例吧，今日头条是可以通过手机端来发表头条号的文章的，只要在发文时插入头条广告，有阅读量自然是会有收益的，前提是你要先把头条号在浏览器端开通，这个应该不是太难，随便找个网吧上哈网一下子就搞定的。</p><span id="more"></span><p>如果这都不能其实还有另外的一个方法，那就是用手机浏览器来开通，虽然操作起来没有电脑那么流畅，但这也是没有办法中的办法。具体做法就是打开浏览器然后把手机浏览器设置为电脑模式，手机开启旋转横屏，用搜索引擎搜索头条号，在第一条的如果没有广告就是头条号的官网，用你头条的账号登录，登录上以后选择自己要注册的类型。</p><p>这里个人一般都是选择个人自媒体这一项，其他的也不用去看，选择好以后填写账号名称，如果不想改就和头条上自己的用户昵称一样就可以。</p><p>实名认证、身份认证做完以后，你这个头条号就算注册完成了，后面就是等待通过审核了，这个等待的过程有可能是几天就通过了，那恭喜你头条号注册成功，也有可能因为种种原因没有办法通过，这一切都必须要做好心理准备，“不以物喜，不以己悲”,要的就是以平常心来对待，看看官方发来没有通过的信息是什么原因，找出自己不能通过的因素是那些，修改后再次申请重新再战。</p><p>通过以后就可以在头条手机端正大光明的发文了，而且是可以插入头条广告的，我以前就看到过是可以的，具体收益能得到多少，那就看个人的写作能力和执行力了。</p><p>以上就是我对没有电脑如何做有收益的自媒体的回答，以上只是一些简要的方法论和一些简单的步骤，具体成功与否还要看个人实践再实践，只有不断的实践才能出真知。</p><p>当然也还有其他平台的也可以，由于文章的篇幅有限，我怕写多了大家看着也累，所以就写怎么多吧，其他的可以关注我的主页，有机会在给大家介绍，看完关注我以后就去实践下吧，毕竟实践才能出真知，我再怎么写一千道一万，你不去实践那也是一片枉然。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 答案 </tag>
-            
-            <tag> 收益 </tag>
-            
-            <tag> 自媒体 </tag>
-            
-            <tag> 没电脑 </tag>
-            
-            <tag> 更好的方法 </tag>
-            
-            <tag> 浏览器端 </tag>
-            
-            <tag> 流畅 </tag>
-            
-            <tag> 头条号 </tag>
-            
-            <tag> 账号名称 </tag>
-            
-            <tag> 写作能力 </tag>
-            
-            <tag> 执行力 </tag>
-            
-            <tag> 一片枉然 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>关于我的微信公众号和我知道其他自媒体号的历程</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/1b3da9bf/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/1b3da9bf/</url>
@@ -13417,8 +13370,6 @@
             
             <tag> 微信公众号 </tag>
             
-            <tag> 头条号 </tag>
-            
             <tag> 自媒体号 </tag>
             
             <tag> 历程 </tag>
@@ -13434,6 +13385,8 @@
             <tag> 核心 </tag>
             
             <tag> 冰山 </tag>
+            
+            <tag> 头条号 </tag>
             
             <tag> 大鱼号 </tag>
             
@@ -13468,6 +13421,53 @@
             <tag> 阅读 </tag>
             
             <tag> 群发分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于想做有收益的自媒体，可是没电脑做不了，有没有更好的方法？</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/85c33271/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/85c33271/</url>
+      
+        <content type="html"><![CDATA[<p>对于这个问题的答案是肯定的也是可以的，就先拿头条来举例吧，今日头条是可以通过手机端来发表头条号的文章的，只要在发文时插入头条广告，有阅读量自然是会有收益的，前提是你要先把头条号在浏览器端开通，这个应该不是太难，随便找个网吧上哈网一下子就搞定的。</p><span id="more"></span><p>如果这都不能其实还有另外的一个方法，那就是用手机浏览器来开通，虽然操作起来没有电脑那么流畅，但这也是没有办法中的办法。具体做法就是打开浏览器然后把手机浏览器设置为电脑模式，手机开启旋转横屏，用搜索引擎搜索头条号，在第一条的如果没有广告就是头条号的官网，用你头条的账号登录，登录上以后选择自己要注册的类型。</p><p>这里个人一般都是选择个人自媒体这一项，其他的也不用去看，选择好以后填写账号名称，如果不想改就和头条上自己的用户昵称一样就可以。</p><p>实名认证、身份认证做完以后，你这个头条号就算注册完成了，后面就是等待通过审核了，这个等待的过程有可能是几天就通过了，那恭喜你头条号注册成功，也有可能因为种种原因没有办法通过，这一切都必须要做好心理准备，“不以物喜，不以己悲”,要的就是以平常心来对待，看看官方发来没有通过的信息是什么原因，找出自己不能通过的因素是那些，修改后再次申请重新再战。</p><p>通过以后就可以在头条手机端正大光明的发文了，而且是可以插入头条广告的，我以前就看到过是可以的，具体收益能得到多少，那就看个人的写作能力和执行力了。</p><p>以上就是我对没有电脑如何做有收益的自媒体的回答，以上只是一些简要的方法论和一些简单的步骤，具体成功与否还要看个人实践再实践，只有不断的实践才能出真知。</p><p>当然也还有其他平台的也可以，由于文章的篇幅有限，我怕写多了大家看着也累，所以就写怎么多吧，其他的可以关注我的主页，有机会在给大家介绍，看完关注我以后就去实践下吧，毕竟实践才能出真知，我再怎么写一千道一万，你不去实践那也是一片枉然。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 答案 </tag>
+            
+            <tag> 收益 </tag>
+            
+            <tag> 自媒体 </tag>
+            
+            <tag> 头条号 </tag>
+            
+            <tag> 没电脑 </tag>
+            
+            <tag> 更好的方法 </tag>
+            
+            <tag> 浏览器端 </tag>
+            
+            <tag> 流畅 </tag>
+            
+            <tag> 账号名称 </tag>
+            
+            <tag> 写作能力 </tag>
+            
+            <tag> 执行力 </tag>
+            
+            <tag> 一片枉然 </tag>
             
         </tags>
       
@@ -15340,9 +15340,9 @@
       
         <tags>
             
-            <tag> 代码 </tag>
-            
             <tag> 安装 </tag>
+            
+            <tag> 代码 </tag>
             
             <tag> 迅雷下载 </tag>
             
@@ -16179,45 +16179,6 @@
     
     
     <entry>
-      <title>小米研发出了隔空充电技术，再也不怕没有充电线了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/690f7b38/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/690f7b38/</url>
-      
-        <content type="html"><![CDATA[<p>这个可以说是一个真正的黑科技，很久以前很多人都想到过不用手机数据线也能给手机充电，这样的技术以前估计是只能在科幻片里面才看得到，但是现在已经被小米研发成功提前到来了。</p><span id="more"></span><p>以前的无线充电其实不是真正意义上的无线充电，因为那种是充电底座连着线的，而把手机放在充电底座上的充电方式，现在的隔空充电手机不用放在充电底座上就可以实现充电了，可以说是真的方便了很多了。</p><p>技术难度比前面的无线充电是难了很多，这在充电技术上具有全新的里程碑意义，以后只要有这个充电桩的地方，不用带手机数据线也能充电了，只要这个充电桩足够多的话，那手机可以一直不断电了，因为走到哪里都可以随时无线充电，相当于手机就一直都是满电的，充电就像是手机连了WiFi一样简单了。</p><p>小米的充电技术一直以来都是走在手机行业的前端，80瓦无线快充是小米首先发布的，这次更厉害了，直接隔空就可以充电，国内外真的还没有第二家拥有这个发明，小米研发实力和核心技术还是值得肯定的。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 小米 </tag>
-            
-            <tag> 隔空充电 </tag>
-            
-            <tag> 充电线 </tag>
-            
-            <tag> 无线充电 </tag>
-            
-            <tag> 充电底座 </tag>
-            
-            <tag> 充电技术 </tag>
-            
-            <tag> 研发实力 </tag>
-            
-            <tag> 核心技术 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>小说今天一章写不完了，还是来一篇日更好了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c7fd72d/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c7fd72d/</url>
@@ -16609,6 +16570,45 @@
             <tag> 进度 </tag>
             
             <tag> 完成 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>小米研发出了隔空充电技术，再也不怕没有充电线了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/690f7b38/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/690f7b38/</url>
+      
+        <content type="html"><![CDATA[<p>这个可以说是一个真正的黑科技，很久以前很多人都想到过不用手机数据线也能给手机充电，这样的技术以前估计是只能在科幻片里面才看得到，但是现在已经被小米研发成功提前到来了。</p><span id="more"></span><p>以前的无线充电其实不是真正意义上的无线充电，因为那种是充电底座连着线的，而把手机放在充电底座上的充电方式，现在的隔空充电手机不用放在充电底座上就可以实现充电了，可以说是真的方便了很多了。</p><p>技术难度比前面的无线充电是难了很多，这在充电技术上具有全新的里程碑意义，以后只要有这个充电桩的地方，不用带手机数据线也能充电了，只要这个充电桩足够多的话，那手机可以一直不断电了，因为走到哪里都可以随时无线充电，相当于手机就一直都是满电的，充电就像是手机连了WiFi一样简单了。</p><p>小米的充电技术一直以来都是走在手机行业的前端，80瓦无线快充是小米首先发布的，这次更厉害了，直接隔空就可以充电，国内外真的还没有第二家拥有这个发明，小米研发实力和核心技术还是值得肯定的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 小米 </tag>
+            
+            <tag> 隔空充电 </tag>
+            
+            <tag> 充电线 </tag>
+            
+            <tag> 无线充电 </tag>
+            
+            <tag> 充电底座 </tag>
+            
+            <tag> 充电技术 </tag>
+            
+            <tag> 研发实力 </tag>
+            
+            <tag> 核心技术 </tag>
             
         </tags>
       
@@ -17737,47 +17737,6 @@
     
     
     <entry>
-      <title>把Word换了一个版本结果打不开了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3b95d261/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3b95d261/</url>
-      
-        <content type="html"><![CDATA[<p>之前用的是Office2021的预览版，但是激活过期了，然后就想到卸载了换个2019版本的试一下，这试一下就害我连写文章的工具都没有了，第一次安装了不是批量版的激活不了，后面又卸载了换了一个批量版的安装，这个倒是自动就激活了，但是期限也只是可以用60天，60天后又会过期。</p><span id="more"></span><p>而且一打开就闪退，终于是打开一次了，但是一看界面和2021那个预览版的一比实在看着很晃眼，这个周围都是黑色的，就是中间编辑区那一块是白色，实在真的看着不舒服，2021的那个是全黑的，写文章看着一点都不刺眼，这个实在用不惯了，等下还是卸载了重新换回那个版本。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Office2021 </tag>
-            
-            <tag> Word </tag>
-            
-            <tag> 卸载 </tag>
-            
-            <tag> 黑色 </tag>
-            
-            <tag> 版本 </tag>
-            
-            <tag> 打不开 </tag>
-            
-            <tag> 2019版 </tag>
-            
-            <tag> 批量版 </tag>
-            
-            <tag> 用不惯 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>抖音上居然有很多人在割韭菜</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d2401c67/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d2401c67/</url>
@@ -17823,6 +17782,47 @@
             <tag> 狮子老虎 </tag>
             
             <tag> 干涉 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>把Word换了一个版本结果打不开了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3b95d261/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3b95d261/</url>
+      
+        <content type="html"><![CDATA[<p>之前用的是Office2021的预览版，但是激活过期了，然后就想到卸载了换个2019版本的试一下，这试一下就害我连写文章的工具都没有了，第一次安装了不是批量版的激活不了，后面又卸载了换了一个批量版的安装，这个倒是自动就激活了，但是期限也只是可以用60天，60天后又会过期。</p><span id="more"></span><p>而且一打开就闪退，终于是打开一次了，但是一看界面和2021那个预览版的一比实在看着很晃眼，这个周围都是黑色的，就是中间编辑区那一块是白色，实在真的看着不舒服，2021的那个是全黑的，写文章看着一点都不刺眼，这个实在用不惯了，等下还是卸载了重新换回那个版本。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Office2021 </tag>
+            
+            <tag> Word </tag>
+            
+            <tag> 卸载 </tag>
+            
+            <tag> 黑色 </tag>
+            
+            <tag> 版本 </tag>
+            
+            <tag> 打不开 </tag>
+            
+            <tag> 2019版 </tag>
+            
+            <tag> 批量版 </tag>
+            
+            <tag> 用不惯 </tag>
             
         </tags>
       
@@ -18097,49 +18097,6 @@
     
     
     <entry>
-      <title>无聊的一天又过了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/bf06132/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/bf06132/</url>
-      
-        <content type="html"><![CDATA[<p>昨天去招聘人力中介那边说要去填入职表，结果又说不用填，下午就坐公交回来了。</p><span id="more"></span><p>今天什么什么都没有做躺在床上看了两部去年的电影，刷了下微博，一天就这样过了，还过得很快，感觉真的是无所事事的一天。</p><p>这个初夏闷热又烦躁，还带着淡淡的忧伤，去年这个时候也是这样，今年也是这样。有时候经历太多了，曾经的目标早已不见了踪影。</p><p>好多时候都是想得太多，结果做得太少，有些事有开始但是却没有了结尾，到中途就会感觉心有余力不足了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 微博 </tag>
-            
-            <tag> 电影 </tag>
-            
-            <tag> 招聘 </tag>
-            
-            <tag> 无聊 </tag>
-            
-            <tag> 人力 </tag>
-            
-            <tag> 入职表 </tag>
-            
-            <tag> 无所事事 </tag>
-            
-            <tag> 想得太多 </tag>
-            
-            <tag> 做得太少 </tag>
-            
-            <tag> 结尾 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>无论买菜和买水果，超市的都比菜场要便宜很多</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/686f809/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/686f809/</url>
@@ -18185,6 +18142,49 @@
             <tag> 成功学 </tag>
             
             <tag> 价格透明 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>无聊的一天又过了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/bf06132/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/bf06132/</url>
+      
+        <content type="html"><![CDATA[<p>昨天去招聘人力中介那边说要去填入职表，结果又说不用填，下午就坐公交回来了。</p><span id="more"></span><p>今天什么什么都没有做躺在床上看了两部去年的电影，刷了下微博，一天就这样过了，还过得很快，感觉真的是无所事事的一天。</p><p>这个初夏闷热又烦躁，还带着淡淡的忧伤，去年这个时候也是这样，今年也是这样。有时候经历太多了，曾经的目标早已不见了踪影。</p><p>好多时候都是想得太多，结果做得太少，有些事有开始但是却没有了结尾，到中途就会感觉心有余力不足了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 微博 </tag>
+            
+            <tag> 电影 </tag>
+            
+            <tag> 招聘 </tag>
+            
+            <tag> 无聊 </tag>
+            
+            <tag> 人力 </tag>
+            
+            <tag> 入职表 </tag>
+            
+            <tag> 无所事事 </tag>
+            
+            <tag> 想得太多 </tag>
+            
+            <tag> 做得太少 </tag>
+            
+            <tag> 结尾 </tag>
             
         </tags>
       
@@ -19152,41 +19152,6 @@
     
     
     <entry>
-      <title>本来不想写的还是写下吧</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5fedbe30/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5fedbe30/</url>
-      
-        <content type="html"><![CDATA[<p>真的很烦，休息了这么多天了，公司突然要我星期一去上晚班了，又在微信群里看到一个中介招聘的发招聘信息，一个小时20元，是做绿化环保的，我还是挺想去的，就是这边还没有辞工，早知道上个月就辞工了，现在辞工估计也没有那么快批了，更何况都要我去上班了。</p><span id="more"></span><p>是真的太烦了，不想去原来的这个公司上班了，上个月就上了9天班今天发工资才发1300多块钱，估计这个月也是只有这么多了，真的还不如辞工换个工作了，可是有机会辞工的时候别人又不招人，没有机会辞工时候又有很多人在招了。</p><p>是真的烦了，不知道是辞工了等机会还是接着去以前的公司上班。都说是机会不等人，可是人也很难等机会啊，况且换个地方也不知道是好是坏，有时候人的选择就是这样的茅盾，真的不知道该怎么样去做。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 不想写 </tag>
-            
-            <tag> 辞工 </tag>
-            
-            <tag> 上晚班 </tag>
-            
-            <tag> 绿化环保 </tag>
-            
-            <tag> 公司 </tag>
-            
-            <tag> 烦 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>有的文章平台发不了，还是要发到自己的网站才行</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/eaeba784/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/eaeba784/</url>
@@ -19232,11 +19197,11 @@
     
     
     <entry>
-      <title>每天不知道做什么心里很难受</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/935d3622/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/935d3622/</url>
+      <title>本来不想写的还是写下吧</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5fedbe30/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5fedbe30/</url>
       
-        <content type="html"><![CDATA[<p>现在每天感觉就是在混日子，做什么都没有兴趣，好像只有对女人还有点兴趣了，每天醒来都是拿着手机去社交软件上找女人聊天，可是女人对我不感兴趣，好像女人都只对钱感兴趣。</p><span id="more"></span><p>而且女人喜欢听假话，越表现得越真实女人越不喜欢，老实的男人真的没有市场了，女人喜欢的就是你说的话要符合她们的心理预期。</p><p>好多女的只要我说自己是在厂里上班就立马把我删了，我要是说我在互联网公司上班做程序员立马就有兴趣和我聊了。这样的感觉说实在我很难受，因为骗别人不难受，但是骗自己最难受。</p><p>看着陌陌上那些女的越看越难受，一个个的眼里只看到钱这个字，索性直接关了，还是来简书这里写文章比较快乐。有时候独善其身，一个人思考问题，更能提升自己的人生境界。</p>]]></content>
+        <content type="html"><![CDATA[<p>真的很烦，休息了这么多天了，公司突然要我星期一去上晚班了，又在微信群里看到一个中介招聘的发招聘信息，一个小时20元，是做绿化环保的，我还是挺想去的，就是这边还没有辞工，早知道上个月就辞工了，现在辞工估计也没有那么快批了，更何况都要我去上班了。</p><span id="more"></span><p>是真的太烦了，不想去原来的这个公司上班了，上个月就上了9天班今天发工资才发1300多块钱，估计这个月也是只有这么多了，真的还不如辞工换个工作了，可是有机会辞工的时候别人又不招人，没有机会辞工时候又有很多人在招了。</p><p>是真的烦了，不知道是辞工了等机会还是接着去以前的公司上班。都说是机会不等人，可是人也很难等机会啊，况且换个地方也不知道是好是坏，有时候人的选择就是这样的茅盾，真的不知道该怎么样去做。</p>]]></content>
       
       
       <categories>
@@ -19248,21 +19213,17 @@
       
         <tags>
             
-            <tag> 兴趣 </tag>
+            <tag> 不想写 </tag>
             
-            <tag> 心理预期 </tag>
+            <tag> 辞工 </tag>
             
-            <tag> 独善其身 </tag>
+            <tag> 上晚班 </tag>
             
-            <tag> 难受 </tag>
+            <tag> 绿化环保 </tag>
             
-            <tag> 做什么 </tag>
+            <tag> 公司 </tag>
             
-            <tag> 女人 </tag>
-            
-            <tag> 混日子 </tag>
-            
-            <tag> 老实 </tag>
+            <tag> 烦 </tag>
             
         </tags>
       
@@ -19350,6 +19311,45 @@
             <tag> 银铃 </tag>
             
             <tag> 春意 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>每天不知道做什么心里很难受</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/935d3622/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/935d3622/</url>
+      
+        <content type="html"><![CDATA[<p>现在每天感觉就是在混日子，做什么都没有兴趣，好像只有对女人还有点兴趣了，每天醒来都是拿着手机去社交软件上找女人聊天，可是女人对我不感兴趣，好像女人都只对钱感兴趣。</p><span id="more"></span><p>而且女人喜欢听假话，越表现得越真实女人越不喜欢，老实的男人真的没有市场了，女人喜欢的就是你说的话要符合她们的心理预期。</p><p>好多女的只要我说自己是在厂里上班就立马把我删了，我要是说我在互联网公司上班做程序员立马就有兴趣和我聊了。这样的感觉说实在我很难受，因为骗别人不难受，但是骗自己最难受。</p><p>看着陌陌上那些女的越看越难受，一个个的眼里只看到钱这个字，索性直接关了，还是来简书这里写文章比较快乐。有时候独善其身，一个人思考问题，更能提升自己的人生境界。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 兴趣 </tag>
+            
+            <tag> 心理预期 </tag>
+            
+            <tag> 独善其身 </tag>
+            
+            <tag> 难受 </tag>
+            
+            <tag> 做什么 </tag>
+            
+            <tag> 女人 </tag>
+            
+            <tag> 混日子 </tag>
+            
+            <tag> 老实 </tag>
             
         </tags>
       
@@ -19552,6 +19552,79 @@
     
     
     <entry>
+      <title>犹豫了很久还是决定自离了</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/9970728b/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/9970728b/</url>
+      
+        <content type="html"><![CDATA[<p>连续不让上班一个月对这个厂已经没有好感了，真的特别受不了那些领导趾高气昂的装逼样，有些领导上面的领导让他怎么做他就怎么做，完全不顾员工利益。</p><span id="more"></span><p>遇到麻烦了推脱责任很厉害，甩锅给下面的普通员工甩得很顺手，说白了这种领导就不敢承担责任，没有担当。</p><p>我本来是可以正常辞工的，但我想没有必要了，上个月的工资已经发了，这个月没有上过一天班，根本就没有工资。这公司的做法一般控制员工自离的手段就是说自离没有工资。其实这也是违法的，懂点劳动法的都知道上了班不给工资就是违法的，如果有自离的员工认真起来把他告到法院他也得乖乖支付，不要忘了我们中国现在是法治社会，没有任何公司能和国家法律对抗，这是绝对不可能的事。</p><p>既然我这个月都没有上过一天班，那正常辞职和自离完全没有什么区别，反正就是没有工资还怕什么呢？正常辞职还要去看那些领导嘴脸向他求着要一张辞工单。我想既然我都没有任何损失，干嘛还要去求别人，还要让别人把自己当成一个笑话。</p><p>我天生很少去求人家做什么，只有你敬我一尺，我还你一丈，人与人之间应该都是相互的，不要认为自己是领导员工就得欠你的。</p><p>最烦的就是四月份的时候，那天星期五是晚班，早上下班时候已经是星期六了，说是让我星期一去考试，我以为是晚上去考试，因为上晚班都是上夜班之前就提前去考试。可是没有想到星期一那天培训的突然让我早上去培训，我一晚上没有睡觉，突然早上让我去培训这根本就不可能。</p><p>真的我也是醉了，作为领导你传达信息就不能说清楚点吗，说星期一早上培训就行了，干嘛要说是考试，说得模棱两可的，让人听得不清不楚。</p><p>那天正好我支气管炎发了，有点咳嗽就没有去，然后就去医院开了病假单请了两天假。星期三去上晚班快到下班就说是我的责任，真的是甩锅王，还在那里说了我半天。过去了的事真的不想多说，说多了回忆起来都是泪，在厂里做个普工既受累还受气，只能说早点离开这些人会活得舒服点。</p><p>最气人的就是感觉自己被区别对待了，别人不仅可以正常上班还有班加，我就这样连续休息了一个月，无论如何这样的事实都无法接受。</p><p>星期五那天还让我这个星期一晚上去上班，无头无尾的突然叫我去上班，分明就是想套牢我了，一个月让去上几天班，想换工作也不可能了，所以想都不要想了。所以还是决定自离了，这换工作也自由点。</p><p>自离自然是要把自己的损失降到最小，就算饭卡里还有十多块钱也要把它刷完，自从前几天决定要自离了，我就去里面饭堂吃早餐和晚餐，中餐去吃不方便，进去出来都要登记，中餐是免费的，和我要刷完饭卡里的钱这个不搭嘎。</p><p>正好今天是星期一早上去吃了早餐，外面还有饭堂的卖面包鸡腿那些，索性就买了个鸡腿和粽子刚好把它刷完了，因为不刷完自离了就退不了，毕竟是自己充进去的钱。那饭堂外面卖东西阿姨还说我饭卡里没有钱了，我说没有就没有了，她说没有还要充，我懒得理她直接把鸡腿和粽子放到包里就走了。</p><p>说到自离这里最大的缺点可能就是会被他拉入黑名单了，不过无所谓了我也不进这厂了，黑名单就黑名单了，反正这种日资厂在中国也待不久了，日本政府已经决定要把他迁回日本了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 培训 </tag>
+            
+            <tag> 免费 </tag>
+            
+            <tag> 考试 </tag>
+            
+            <tag> 很久 </tag>
+            
+            <tag> 犹豫 </tag>
+            
+            <tag> 自离 </tag>
+            
+            <tag> 好感 </tag>
+            
+            <tag> 趾高气昂 </tag>
+            
+            <tag> 推脱责任 </tag>
+            
+            <tag> 甩锅 </tag>
+            
+            <tag> 很顺手 </tag>
+            
+            <tag> 承担责任 </tag>
+            
+            <tag> 担当 </tag>
+            
+            <tag> 不给工资 </tag>
+            
+            <tag> 违法 </tag>
+            
+            <tag> 法治社会 </tag>
+            
+            <tag> 国家法律 </tag>
+            
+            <tag> 正常辞职 </tag>
+            
+            <tag> 一个笑话 </tag>
+            
+            <tag> 相互 </tag>
+            
+            <tag> 清楚 </tag>
+            
+            <tag> 不清不楚 </tag>
+            
+            <tag> 受气 </tag>
+            
+            <tag> 区别对待 </tag>
+            
+            <tag> 黑名单 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>狗狗币又涨价了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6873df90/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6873df90/</url>
@@ -19683,79 +19756,6 @@
     
     
     <entry>
-      <title>犹豫了很久还是决定自离了</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/9970728b/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/9970728b/</url>
-      
-        <content type="html"><![CDATA[<p>连续不让上班一个月对这个厂已经没有好感了，真的特别受不了那些领导趾高气昂的装逼样，有些领导上面的领导让他怎么做他就怎么做，完全不顾员工利益。</p><span id="more"></span><p>遇到麻烦了推脱责任很厉害，甩锅给下面的普通员工甩得很顺手，说白了这种领导就不敢承担责任，没有担当。</p><p>我本来是可以正常辞工的，但我想没有必要了，上个月的工资已经发了，这个月没有上过一天班，根本就没有工资。这公司的做法一般控制员工自离的手段就是说自离没有工资。其实这也是违法的，懂点劳动法的都知道上了班不给工资就是违法的，如果有自离的员工认真起来把他告到法院他也得乖乖支付，不要忘了我们中国现在是法治社会，没有任何公司能和国家法律对抗，这是绝对不可能的事。</p><p>既然我这个月都没有上过一天班，那正常辞职和自离完全没有什么区别，反正就是没有工资还怕什么呢？正常辞职还要去看那些领导嘴脸向他求着要一张辞工单。我想既然我都没有任何损失，干嘛还要去求别人，还要让别人把自己当成一个笑话。</p><p>我天生很少去求人家做什么，只有你敬我一尺，我还你一丈，人与人之间应该都是相互的，不要认为自己是领导员工就得欠你的。</p><p>最烦的就是四月份的时候，那天星期五是晚班，早上下班时候已经是星期六了，说是让我星期一去考试，我以为是晚上去考试，因为上晚班都是上夜班之前就提前去考试。可是没有想到星期一那天培训的突然让我早上去培训，我一晚上没有睡觉，突然早上让我去培训这根本就不可能。</p><p>真的我也是醉了，作为领导你传达信息就不能说清楚点吗，说星期一早上培训就行了，干嘛要说是考试，说得模棱两可的，让人听得不清不楚。</p><p>那天正好我支气管炎发了，有点咳嗽就没有去，然后就去医院开了病假单请了两天假。星期三去上晚班快到下班就说是我的责任，真的是甩锅王，还在那里说了我半天。过去了的事真的不想多说，说多了回忆起来都是泪，在厂里做个普工既受累还受气，只能说早点离开这些人会活得舒服点。</p><p>最气人的就是感觉自己被区别对待了，别人不仅可以正常上班还有班加，我就这样连续休息了一个月，无论如何这样的事实都无法接受。</p><p>星期五那天还让我这个星期一晚上去上班，无头无尾的突然叫我去上班，分明就是想套牢我了，一个月让去上几天班，想换工作也不可能了，所以想都不要想了。所以还是决定自离了，这换工作也自由点。</p><p>自离自然是要把自己的损失降到最小，就算饭卡里还有十多块钱也要把它刷完，自从前几天决定要自离了，我就去里面饭堂吃早餐和晚餐，中餐去吃不方便，进去出来都要登记，中餐是免费的，和我要刷完饭卡里的钱这个不搭嘎。</p><p>正好今天是星期一早上去吃了早餐，外面还有饭堂的卖面包鸡腿那些，索性就买了个鸡腿和粽子刚好把它刷完了，因为不刷完自离了就退不了，毕竟是自己充进去的钱。那饭堂外面卖东西阿姨还说我饭卡里没有钱了，我说没有就没有了，她说没有还要充，我懒得理她直接把鸡腿和粽子放到包里就走了。</p><p>说到自离这里最大的缺点可能就是会被他拉入黑名单了，不过无所谓了我也不进这厂了，黑名单就黑名单了，反正这种日资厂在中国也待不久了，日本政府已经决定要把他迁回日本了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 情感美文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 培训 </tag>
-            
-            <tag> 免费 </tag>
-            
-            <tag> 考试 </tag>
-            
-            <tag> 很久 </tag>
-            
-            <tag> 犹豫 </tag>
-            
-            <tag> 自离 </tag>
-            
-            <tag> 好感 </tag>
-            
-            <tag> 趾高气昂 </tag>
-            
-            <tag> 推脱责任 </tag>
-            
-            <tag> 甩锅 </tag>
-            
-            <tag> 很顺手 </tag>
-            
-            <tag> 承担责任 </tag>
-            
-            <tag> 担当 </tag>
-            
-            <tag> 不给工资 </tag>
-            
-            <tag> 违法 </tag>
-            
-            <tag> 法治社会 </tag>
-            
-            <tag> 国家法律 </tag>
-            
-            <tag> 正常辞职 </tag>
-            
-            <tag> 一个笑话 </tag>
-            
-            <tag> 相互 </tag>
-            
-            <tag> 清楚 </tag>
-            
-            <tag> 不清不楚 </tag>
-            
-            <tag> 受气 </tag>
-            
-            <tag> 区别对待 </tag>
-            
-            <tag> 黑名单 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>现在好多游戏为什么都不能用模拟器玩了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/cbbe486/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/cbbe486/</url>
@@ -19783,6 +19783,49 @@
             <tag> 内存空间 </tag>
             
             <tag> 缺点 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>用CPU挖狗狗币，一晚上挖了100多个</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f8464a66/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f8464a66/</url>
+      
+        <content type="html"><![CDATA[<p>用CPU挖狗狗币算力居然是显卡的1000倍，别人用显卡挖的速度单位是MH，我用CPU挖的速度是H，而1H&#x3D;1000MH，就是我用CPU挖一个小时的产量用显卡要挖1000个小时才可以完成。</p><span id="more"></span><p>其实从理论上来看也是这样的，因为显卡处理的是图形数据，对于游戏这些需要和图形打交道的显卡就很强，而挖矿软件压根就不需要图形数据，要处理的其实是算法，就是计算机每秒的计算速度要快，这个当然就是CPU的强项了。</p><p>按照当前狗狗币市价是两块多人民币一个，一晚上挖100多个就是两百多块钱了，就连很多矿老板都后悔买显卡了，因为显卡的算力只是CPU的一千分之一，而耗电量却是CPU的5倍。</p><p>我用的CPU挖的电脑总的才是150瓦的，挖一个晚上10小时也最多用1.5度电，但是如果用的显卡挖就不一样了，显卡一晚上最少要8度电，而挖出的产量却极低，随着狗狗币价格的上涨，CPU毫无疑问的会出现一波缺货潮，因为CPU对于挖狗狗币，性能实在是很强。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 性能 </tag>
+            
+            <tag> CPU </tag>
+            
+            <tag> 狗狗币 </tag>
+            
+            <tag> 100多个 </tag>
+            
+            <tag> 算力 </tag>
+            
+            <tag> 1H=1000MH </tag>
+            
+            <tag> 显卡处理 </tag>
+            
+            <tag> 计算速度 </tag>
+            
+            <tag> 矿老板 </tag>
+            
+            <tag> 缺货潮 </tag>
             
         </tags>
       
@@ -19889,49 +19932,6 @@
     
     
     <entry>
-      <title>用CPU挖狗狗币，一晚上挖了100多个</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f8464a66/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f8464a66/</url>
-      
-        <content type="html"><![CDATA[<p>用CPU挖狗狗币算力居然是显卡的1000倍，别人用显卡挖的速度单位是MH，我用CPU挖的速度是H，而1H&#x3D;1000MH，就是我用CPU挖一个小时的产量用显卡要挖1000个小时才可以完成。</p><span id="more"></span><p>其实从理论上来看也是这样的，因为显卡处理的是图形数据，对于游戏这些需要和图形打交道的显卡就很强，而挖矿软件压根就不需要图形数据，要处理的其实是算法，就是计算机每秒的计算速度要快，这个当然就是CPU的强项了。</p><p>按照当前狗狗币市价是两块多人民币一个，一晚上挖100多个就是两百多块钱了，就连很多矿老板都后悔买显卡了，因为显卡的算力只是CPU的一千分之一，而耗电量却是CPU的5倍。</p><p>我用的CPU挖的电脑总的才是150瓦的，挖一个晚上10小时也最多用1.5度电，但是如果用的显卡挖就不一样了，显卡一晚上最少要8度电，而挖出的产量却极低，随着狗狗币价格的上涨，CPU毫无疑问的会出现一波缺货潮，因为CPU对于挖狗狗币，性能实在是很强。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 性能 </tag>
-            
-            <tag> CPU </tag>
-            
-            <tag> 狗狗币 </tag>
-            
-            <tag> 100多个 </tag>
-            
-            <tag> 算力 </tag>
-            
-            <tag> 1H=1000MH </tag>
-            
-            <tag> 显卡处理 </tag>
-            
-            <tag> 计算速度 </tag>
-            
-            <tag> 矿老板 </tag>
-            
-            <tag> 缺货潮 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>用的联通卡无端地被订购附加产品，扣我一个月9块钱话费</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1f186519/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1f186519/</url>
@@ -20030,55 +20030,6 @@
     
     
     <entry>
-      <title>用自动点击软件刷抖音极速版赚钱</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a8e10de5/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a8e10de5/</url>
-      
-        <content type="html"><![CDATA[<p>自动点击软件的功能如果会玩还是很强大的，可以做到完全解放双手，不用一直盯着屏幕，手机放在一边让它自动刷，自己就可以去做其他事了。</p><span id="more"></span><p>自动点击软件它不仅可以点击，同时也是可以模拟滑动的，和自己用手操作没有什么区别，滑动其实都是其次的，主要的是要用好自动点击功能，自动点击功能可以点关注，点赞，点评论。</p><p>现在的短视频软件都是有一排表情的，直接设置用表情评论，评论完了又设置一个点击返回，设置延迟时间，时间走完以后，它又可以重新开始下一轮。</p><p>但是要注意的是如果加了点赞评论，那遇到直播的时候就不适用了，因为遇到直播就无法做完一整套流程了，所以最好的方法就是只刷自己关注了的，然后就不用加点关注这里。</p><p>虽然还不是很智能，但是比自己直接用手点舒服多了，一直盯着手机屏幕也伤眼睛，有的短视频也真的没法看，还伤智商。</p><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">邀请码【<span class="number">8236848271</span>】 </span><br><span class="line"><span class="selector-attr">[红包]</span>下载【抖音极速版】 </span><br><span class="line"><span class="selector-attr">[红包]</span>填我邀请码【<span class="number">8236848271</span>】</span><br><span class="line"><span class="selector-attr">[红包]</span>新用户当天可领<span class="number">5</span>元大额现金红包</span><br><span class="line"><span class="selector-attr">[红包]</span>红包可直接提现</span><br><span class="line"><span class="selector-attr">[红包]</span>复制此消息可自动填码</span><br><span class="line">(红包<span class="number">48</span>小时内有效)</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 短视频 </tag>
-            
-            <tag> 软件 </tag>
-            
-            <tag> 赚钱 </tag>
-            
-            <tag> 自动点击 </tag>
-            
-            <tag> 智能 </tag>
-            
-            <tag> 刷抖音 </tag>
-            
-            <tag> 极速版 </tag>
-            
-            <tag> 自动刷 </tag>
-            
-            <tag> 解放双手 </tag>
-            
-            <tag> 模拟滑动 </tag>
-            
-            <tag> 下一轮 </tag>
-            
-            <tag> 点赞评论 </tag>
-            
-            <tag> 伤眼睛 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>用自动点击软件刷短视频还可以给自己涨粉</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5eaac7b5/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5eaac7b5/</url>
@@ -20107,8 +20058,6 @@
             
             <tag> 快手极速版 </tag>
             
-            <tag> 模拟滑动 </tag>
-            
             <tag> 涨粉 </tag>
             
             <tag> 手工操作 </tag>
@@ -20116,6 +20065,8 @@
             <tag> 账号活跃 </tag>
             
             <tag> 推荐作品 </tag>
+            
+            <tag> 模拟滑动 </tag>
             
             <tag> 挂机刷 </tag>
             
@@ -20157,6 +20108,55 @@
             <tag> 自动赚钱 </tag>
             
             <tag> 自动点击器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>用自动点击软件刷抖音极速版赚钱</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a8e10de5/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a8e10de5/</url>
+      
+        <content type="html"><![CDATA[<p>自动点击软件的功能如果会玩还是很强大的，可以做到完全解放双手，不用一直盯着屏幕，手机放在一边让它自动刷，自己就可以去做其他事了。</p><span id="more"></span><p>自动点击软件它不仅可以点击，同时也是可以模拟滑动的，和自己用手操作没有什么区别，滑动其实都是其次的，主要的是要用好自动点击功能，自动点击功能可以点关注，点赞，点评论。</p><p>现在的短视频软件都是有一排表情的，直接设置用表情评论，评论完了又设置一个点击返回，设置延迟时间，时间走完以后，它又可以重新开始下一轮。</p><p>但是要注意的是如果加了点赞评论，那遇到直播的时候就不适用了，因为遇到直播就无法做完一整套流程了，所以最好的方法就是只刷自己关注了的，然后就不用加点关注这里。</p><p>虽然还不是很智能，但是比自己直接用手点舒服多了，一直盯着手机屏幕也伤眼睛，有的短视频也真的没法看，还伤智商。</p><figure class="highlight scss"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">邀请码【<span class="number">8236848271</span>】 </span><br><span class="line"><span class="selector-attr">[红包]</span>下载【抖音极速版】 </span><br><span class="line"><span class="selector-attr">[红包]</span>填我邀请码【<span class="number">8236848271</span>】</span><br><span class="line"><span class="selector-attr">[红包]</span>新用户当天可领<span class="number">5</span>元大额现金红包</span><br><span class="line"><span class="selector-attr">[红包]</span>红包可直接提现</span><br><span class="line"><span class="selector-attr">[红包]</span>复制此消息可自动填码</span><br><span class="line">(红包<span class="number">48</span>小时内有效)</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 短视频 </tag>
+            
+            <tag> 软件 </tag>
+            
+            <tag> 赚钱 </tag>
+            
+            <tag> 自动点击 </tag>
+            
+            <tag> 智能 </tag>
+            
+            <tag> 模拟滑动 </tag>
+            
+            <tag> 刷抖音 </tag>
+            
+            <tag> 极速版 </tag>
+            
+            <tag> 自动刷 </tag>
+            
+            <tag> 解放双手 </tag>
+            
+            <tag> 下一轮 </tag>
+            
+            <tag> 点赞评论 </tag>
+            
+            <tag> 伤眼睛 </tag>
             
         </tags>
       
@@ -20553,6 +20553,43 @@
     
     
     <entry>
+      <title>看了一部电影《信条》</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b6f5940e/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b6f5940e/</url>
+      
+        <content type="html"><![CDATA[<p>这个电影虽然是去年的了，但是一直要付费才可以看，现在终于是可以免费看了，正好我今天刚好用的腾讯电脑管家的安全金币兑换了一个三天和一个七天的腾讯视频会员，就去上去看了一下电影，突然就发觉以前要钱才可以看的电影，现在就只需要会员就可以看了。</p><span id="more"></span><p>但是信条这个电影里面用到的时间逆向是真的感觉很复杂，有点看不懂的感觉，感觉是没有什么科学原理的东西，就和我们很多看过的电视剧一样的，就是那种穿越而已，从现在穿越到过去的感觉。</p><p>这个真要用什么科学技术来解释可能真的是解释不了的，可能科学技术可以解释，可以说现在很多科学技术都是从科幻电影之中获得的，比如AI，这个以前是认为不可能实现的，但是现在都是实现了，至于让时间逆向能用科学的方法来实现，还要期待于以后的科学技术的发展。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电影 </tag>
+            
+            <tag> 安全金币 </tag>
+            
+            <tag> 信条 </tag>
+            
+            <tag> 电脑管家 </tag>
+            
+            <tag> 很复杂 </tag>
+            
+            <tag> 科学技术 </tag>
+            
+            <tag> 时间逆向 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>看了一部老电影《东京审判》</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e5808a07/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e5808a07/</url>
@@ -20812,43 +20849,6 @@
             <tag> 两三百字 </tag>
             
             <tag> 孰能生巧 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>看了一部电影《信条》</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b6f5940e/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b6f5940e/</url>
-      
-        <content type="html"><![CDATA[<p>这个电影虽然是去年的了，但是一直要付费才可以看，现在终于是可以免费看了，正好我今天刚好用的腾讯电脑管家的安全金币兑换了一个三天和一个七天的腾讯视频会员，就去上去看了一下电影，突然就发觉以前要钱才可以看的电影，现在就只需要会员就可以看了。</p><span id="more"></span><p>但是信条这个电影里面用到的时间逆向是真的感觉很复杂，有点看不懂的感觉，感觉是没有什么科学原理的东西，就和我们很多看过的电视剧一样的，就是那种穿越而已，从现在穿越到过去的感觉。</p><p>这个真要用什么科学技术来解释可能真的是解释不了的，可能科学技术可以解释，可以说现在很多科学技术都是从科幻电影之中获得的，比如AI，这个以前是认为不可能实现的，但是现在都是实现了，至于让时间逆向能用科学的方法来实现，还要期待于以后的科学技术的发展。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 电影 </tag>
-            
-            <tag> 安全金币 </tag>
-            
-            <tag> 信条 </tag>
-            
-            <tag> 电脑管家 </tag>
-            
-            <tag> 很复杂 </tag>
-            
-            <tag> 科学技术 </tag>
-            
-            <tag> 时间逆向 </tag>
             
         </tags>
       
@@ -21537,9 +21537,9 @@
             
             <tag> next主题 </tag>
             
-            <tag> CNZZ </tag>
-            
             <tag> gitee </tag>
+            
+            <tag> CNZZ </tag>
             
             <tag> 网站 </tag>
             
@@ -22165,53 +22165,6 @@
     
     
     <entry>
-      <title>记一次潜入抖音点赞诈骗群</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e03c5d7/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e03c5d7/</url>
-      
-        <content type="html"><![CDATA[<p>经常都会在QQ群里面看到，抖音点赞一元一单，一单一结这样的广告，真的有这么好的事吗，完全没有可能，但是我想试一下看他到底是怎么诈骗的，随所以我也按他的步奏来进行。</p><span id="more"></span><p>刚开始是让加一个企业微信，现在开始玩得高档了，连企业微信号都有了，估计是买来的，不然别人一举报他还是会完蛋。进了这个企业微信以后好像还有一个群，然后就一个群管理员一直在里面发消息，让还没有领到工作任务的私聊他。</p><p>私聊他以后他还是会给尝到一点甜头的，让去关注一个抖音账号，然后截图给他，他就给结算0.3元，这里确实他会0.3元，目的就是取得我的信任，但是不是直接转账的，是要用我的赞赏码才可以，好吧，只要有钱给我用什么都可以，于是就发了我的赞赏码给他，不一会0.3元就到账了。</p><p>然后就说要做后面的接单任务，就要把他给的那条消息和图片发8个群和微信朋友圈，好吧，这里我也是照做就是了，反正还没有到我交钱的那一步，他这个目的就是帮他骗到更多的人。</p><p>发完了截图给他，然后又让下载一个IS语音的软件，真正骗钱的他是在这个软件上进行的，下载了这个软件就让改昵称，什么某某人推荐加我自己的微信昵称，改好以后又发截图给他，还有把加好友那里改成拒绝加好友，果然都是套路。</p><p>反正我也是按照他的来，然后就进了那个语音聊天软件的公会群里面了，然后就是在里面上课，讲的也是一些简单又重复的东西，重要的是最后，最后就是要钱了，说要做任务就要激活账号什么的，到这里我就知道这是骗人的了，要交199块钱，我果断不理他了，于是这次潜入就到尾声画上了一个完美的句号了。</p><p>最后说明一点只要自己不贪心，不交钱给他，那他也骗不了什么，怕的就是有的人相信他这里交钱给他激活账号就可以做任务什么的，那就真的被他骗了，其实他哪有什么任务给你做，目的就是骗这个199块钱。</p><p>看着确实不容易被骗的，但是有的人确实容易在这里被骗了，在那个公会群里面我感觉至少有两三个人被骗了，因为骗子的语音一直开着，后面还听到得了多少钱要分之类的，还好我一开始就不相信他，所以他也骗不了我什么，下面是骗子微信群的截图和骗子要钱的截图。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e03c5d7/1.jpg"></p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e03c5d7/2.jpg"></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 抖音 </tag>
-            
-            <tag> 点赞 </tag>
-            
-            <tag> 截图 </tag>
-            
-            <tag> 潜入 </tag>
-            
-            <tag> 咋骗群 </tag>
-            
-            <tag> QQ群 </tag>
-            
-            <tag> 广告 </tag>
-            
-            <tag> 群管理员 </tag>
-            
-            <tag> 赞赏码 </tag>
-            
-            <tag> 激活账号 </tag>
-            
-            <tag> 接单任务 </tag>
-            
-            <tag> 任务 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>装机失败的那些事</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/69c2eb21/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/69c2eb21/</url>
@@ -22259,11 +22212,11 @@
     
     
     <entry>
-      <title>记录自己真实的梦境:我昨晚做了两个梦，后面一个让我感到很害怕</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/</url>
+      <title>记一次潜入抖音点赞诈骗群</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e03c5d7/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e03c5d7/</url>
       
-        <content type="html"><![CDATA[<p>昨晚做了两个梦，第一个是梦到两个自己从未见过的女孩，梦到自己突然回到了高中时期，梦里两个女孩是和我同班的，而且离我家不是太远，一个感觉很真实，而另外一个我感觉很模糊。</p><span id="more"></span><p>真实的这个每天放学后，我都要跟着她后面走很长一段路，直到快要走到她家对面，我只能远远的看着她，我离她家对面的中间是一条河沟，看着不远，其实实际距离是非常的远，因为我站在她家对面，中间的河沟是一个U弧形的，要从我这边走下去，然后又从她家那边走上去，这种地方我现实中是见到过的，不知道为何会出现在我的梦里，而是且时间地点也是错误的。我只能远远的在对面看着她消失在我的视野里，但是我却就是不敢跟她表白，说我喜欢她。</p><p>第二个梦是梦到自己去一个厂里上班，也不知自己怎么就没有衣服穿了，别人就随便给了我一件，我也不看是不是女人穿的，自己就胡乱穿在身上了，后来遇到厂里一个上了年纪的女人，说我身上穿的那件衣服，是一个已经逝去的女人穿的，还告诉我那个女人的名字叫邓红，说她已经病逝一年多了。我他妈顿时就是毛骨悚然，在梦中我都感到害怕了，我怎么就穿着死去女人的衣服，难怪那衣服上还有女人的味道，我顿时就被吓惊醒了，这太恐怖了。</p>]]></content>
+        <content type="html"><![CDATA[<p>经常都会在QQ群里面看到，抖音点赞一元一单，一单一结这样的广告，真的有这么好的事吗，完全没有可能，但是我想试一下看他到底是怎么诈骗的，随所以我也按他的步奏来进行。</p><span id="more"></span><p>刚开始是让加一个企业微信，现在开始玩得高档了，连企业微信号都有了，估计是买来的，不然别人一举报他还是会完蛋。进了这个企业微信以后好像还有一个群，然后就一个群管理员一直在里面发消息，让还没有领到工作任务的私聊他。</p><p>私聊他以后他还是会给尝到一点甜头的，让去关注一个抖音账号，然后截图给他，他就给结算0.3元，这里确实他会0.3元，目的就是取得我的信任，但是不是直接转账的，是要用我的赞赏码才可以，好吧，只要有钱给我用什么都可以，于是就发了我的赞赏码给他，不一会0.3元就到账了。</p><p>然后就说要做后面的接单任务，就要把他给的那条消息和图片发8个群和微信朋友圈，好吧，这里我也是照做就是了，反正还没有到我交钱的那一步，他这个目的就是帮他骗到更多的人。</p><p>发完了截图给他，然后又让下载一个IS语音的软件，真正骗钱的他是在这个软件上进行的，下载了这个软件就让改昵称，什么某某人推荐加我自己的微信昵称，改好以后又发截图给他，还有把加好友那里改成拒绝加好友，果然都是套路。</p><p>反正我也是按照他的来，然后就进了那个语音聊天软件的公会群里面了，然后就是在里面上课，讲的也是一些简单又重复的东西，重要的是最后，最后就是要钱了，说要做任务就要激活账号什么的，到这里我就知道这是骗人的了，要交199块钱，我果断不理他了，于是这次潜入就到尾声画上了一个完美的句号了。</p><p>最后说明一点只要自己不贪心，不交钱给他，那他也骗不了什么，怕的就是有的人相信他这里交钱给他激活账号就可以做任务什么的，那就真的被他骗了，其实他哪有什么任务给你做，目的就是骗这个199块钱。</p><p>看着确实不容易被骗的，但是有的人确实容易在这里被骗了，在那个公会群里面我感觉至少有两三个人被骗了，因为骗子的语音一直开着，后面还听到得了多少钱要分之类的，还好我一开始就不相信他，所以他也骗不了我什么，下面是骗子微信群的截图和骗子要钱的截图。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e03c5d7/1.jpg"></p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e03c5d7/2.jpg"></p>]]></content>
       
       
       <categories>
@@ -22275,21 +22228,29 @@
       
         <tags>
             
-            <tag> 厂里上班 </tag>
+            <tag> 抖音 </tag>
             
-            <tag> 衣服 </tag>
+            <tag> 点赞 </tag>
             
-            <tag> 真实 </tag>
+            <tag> 截图 </tag>
             
-            <tag> 两个梦 </tag>
+            <tag> 潜入 </tag>
             
-            <tag> 同班 </tag>
+            <tag> 咋骗群 </tag>
             
-            <tag> 河沟 </tag>
+            <tag> QQ群 </tag>
             
-            <tag> 吓惊醒了 </tag>
+            <tag> 广告 </tag>
             
-            <tag> 太恐怖了 </tag>
+            <tag> 群管理员 </tag>
+            
+            <tag> 赞赏码 </tag>
+            
+            <tag> 激活账号 </tag>
+            
+            <tag> 接单任务 </tag>
+            
+            <tag> 任务 </tag>
             
         </tags>
       
@@ -22353,6 +22314,45 @@
     
     
     <entry>
+      <title>记录自己真实的梦境:我昨晚做了两个梦，后面一个让我感到很害怕</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/</url>
+      
+        <content type="html"><![CDATA[<p>昨晚做了两个梦，第一个是梦到两个自己从未见过的女孩，梦到自己突然回到了高中时期，梦里两个女孩是和我同班的，而且离我家不是太远，一个感觉很真实，而另外一个我感觉很模糊。</p><span id="more"></span><p>真实的这个每天放学后，我都要跟着她后面走很长一段路，直到快要走到她家对面，我只能远远的看着她，我离她家对面的中间是一条河沟，看着不远，其实实际距离是非常的远，因为我站在她家对面，中间的河沟是一个U弧形的，要从我这边走下去，然后又从她家那边走上去，这种地方我现实中是见到过的，不知道为何会出现在我的梦里，而是且时间地点也是错误的。我只能远远的在对面看着她消失在我的视野里，但是我却就是不敢跟她表白，说我喜欢她。</p><p>第二个梦是梦到自己去一个厂里上班，也不知自己怎么就没有衣服穿了，别人就随便给了我一件，我也不看是不是女人穿的，自己就胡乱穿在身上了，后来遇到厂里一个上了年纪的女人，说我身上穿的那件衣服，是一个已经逝去的女人穿的，还告诉我那个女人的名字叫邓红，说她已经病逝一年多了。我他妈顿时就是毛骨悚然，在梦中我都感到害怕了，我怎么就穿着死去女人的衣服，难怪那衣服上还有女人的味道，我顿时就被吓惊醒了，这太恐怖了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 厂里上班 </tag>
+            
+            <tag> 衣服 </tag>
+            
+            <tag> 真实 </tag>
+            
+            <tag> 两个梦 </tag>
+            
+            <tag> 同班 </tag>
+            
+            <tag> 河沟 </tag>
+            
+            <tag> 吓惊醒了 </tag>
+            
+            <tag> 太恐怖了 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>试用一款清僵尸粉的软件</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/992367e2/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/992367e2/</url>
@@ -22386,6 +22386,43 @@
             <tag> 酷V群发器 </tag>
             
             <tag> 群发 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>说是不用排队的，结果人很多</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2fad63c5/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2fad63c5/</url>
+      
+        <content type="html"><![CDATA[<p>今天去打疫苗，那个大喇叭里面说的是不用排队的，结果去了人很多，我去的时候就已经排了四排了，后面那个公交车还在一车一车的拉人过来，还好我是骑电动车去的，要是等公交车不知道要等多久。</p><span id="more"></span><p>坐公交车是去的时候要等，来的时候也是要等，再说了那么多人去卫生院，肯定是要等的时间比平时长了。自己骑电动车去就快了，十多分钟就到了。</p><p>除了要在外面排队很长时间之外，进去了还是很快的，一会就打好了，打好了还要在里面观察半个小时，到了那个医师写在单上的时间就可以走了。</p><p>感觉除了打的时候痛一点外，手感觉有点麻木之外，好像也没有什么副作用，打了还是要继续戴口罩的，因为还是不能保证百分百的有效。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 结果 </tag>
+            
+            <tag> 骑电动车 </tag>
+            
+            <tag> 打疫苗 </tag>
+            
+            <tag> 不用排队 </tag>
+            
+            <tag> 观察 </tag>
+            
+            <tag> 戴口罩 </tag>
+            
+            <tag> 坐公交车 </tag>
             
         </tags>
       
@@ -22584,6 +22621,61 @@
     
     
     <entry>
+      <title>读《围炉夜话》其二有感</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b7698495/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b7698495/</url>
+      
+        <content type="html"><![CDATA[<p>学习不能没有朋友，独学而无友是学习中的大忌，与朋友之间的交流自然是要互相之间取长补短，学习自己不知道的知识，把自己了解的知识展露出来，让朋友之间互相学习才能一起进步。</p><span id="more"></span><p>我们要学习别人知道的知识，首先自然是先要了解自己的长处和短处，只有自己了解自己之后才能更有效率去很好地吸收别人的长处，学习知识自然就是为弥补信息差所带来的困惑。</p><p>读圣贤之书对自己的修为大有帮助，圣贤们留下的书本身就是通过不断实践才得出来的经验总结和理论，方法论总该是要与现实结合那才能叫方法，不能去实践的那终究还是只能停留在纸上面的理论。</p><p>圣贤之书不但要读而且还要多读，读得多了都还不能就代表自身的修为可以，还得亲自身体力行去证明去实践，那样才能学得好理解得够透彻，懂得真理再用它来指导自己的言行，那样才可以明明白白地说自己真的读过了一点书。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 朋友 </tag>
+            
+            <tag> 学习 </tag>
+            
+            <tag> 方法 </tag>
+            
+            <tag> 理论 </tag>
+            
+            <tag> 围炉夜话 </tag>
+            
+            <tag> 其二 </tag>
+            
+            <tag> 独学 </tag>
+            
+            <tag> 大忌 </tag>
+            
+            <tag> 交流自然 </tag>
+            
+            <tag> 知识展露 </tag>
+            
+            <tag> 信息差 </tag>
+            
+            <tag> 圣贤之书 </tag>
+            
+            <tag> 修为 </tag>
+            
+            <tag> 经验总结 </tag>
+            
+            <tag> 透彻 </tag>
+            
+            <tag> 明明白白 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>读《围炉夜话》其五有感</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e358563c/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e358563c/</url>
@@ -22639,64 +22731,11 @@
     
     
     <entry>
-      <title>读《围炉夜话》其八有感</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f6e5d615/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f6e5d615/</url>
+      <title>读《围炉夜话》其六有感</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9535e32f/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9535e32f/</url>
       
-        <content type="html"><![CDATA[<p>教育小孩应该要态度严厉，宠爱和太过于溺爱对小孩都是没有好处的，只有严厉的教育才能锻炼出小孩子的独立性，毕竟如今的社会是复杂多变的，那种长大后，依然还是巨婴的人是很难在社会上生存的，严厉的教育可以培养出孩子的独立性和自信心。</p><span id="more"></span><p>对小孩太过于溺爱那样反而是害了他自己，对于小孩子想要什么都千依百顺地去满足，那样一旦他长大后得不到自己想要的就会走入犯罪的深渊，所以有小孩的父母当要引以为戒。</p><p>然而对待小人我们要以一种尊敬的心态去对待他们，他们虽然有不好的地方，但是从他们身上还是有我们值得去学习的，如果老是用一种奇特的眼光去看待他们那是要不得的，我们要想引他们向善，就得先让他们觉得我们对他们没有恶意。</p><p>只有他们觉得我们是对他们是好的，那样他们才能走向善的一面，只有种下的是善的种子结出来的才是善果，如果我们自己都没有善意，那小人他们怎么又会被我们感化呢，如果我们对他人没有善意，那种下的种子，结出来的自然也还是恶果。</p><p>想要引人向善，我们自己的言行就首先得是善的，我们要对恶人行善，那样这个世界才会结出来更多的善果，我们对待小人要有一种敬畏之心，才能用我们的行动，我们的善来唤醒他们沉睡的良知，要多怀敬畏之心，才能让他人走向正途。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 围炉夜话 </tag>
-            
-            <tag> 教育小孩 </tag>
-            
-            <tag> 态度严厉 </tag>
-            
-            <tag> 宠爱 </tag>
-            
-            <tag> 溺爱 </tag>
-            
-            <tag> 独立性 </tag>
-            
-            <tag> 复杂多变 </tag>
-            
-            <tag> 自信心 </tag>
-            
-            <tag> 犯罪 </tag>
-            
-            <tag> 引以为戒 </tag>
-            
-            <tag> 对待小人 </tag>
-            
-            <tag> 奇特 </tag>
-            
-            <tag> 善果 </tag>
-            
-            <tag> 敬畏之心 </tag>
-            
-            <tag> 正途 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>读《围炉夜话》其二有感</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b7698495/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b7698495/</url>
-      
-        <content type="html"><![CDATA[<p>学习不能没有朋友，独学而无友是学习中的大忌，与朋友之间的交流自然是要互相之间取长补短，学习自己不知道的知识，把自己了解的知识展露出来，让朋友之间互相学习才能一起进步。</p><span id="more"></span><p>我们要学习别人知道的知识，首先自然是先要了解自己的长处和短处，只有自己了解自己之后才能更有效率去很好地吸收别人的长处，学习知识自然就是为弥补信息差所带来的困惑。</p><p>读圣贤之书对自己的修为大有帮助，圣贤们留下的书本身就是通过不断实践才得出来的经验总结和理论，方法论总该是要与现实结合那才能叫方法，不能去实践的那终究还是只能停留在纸上面的理论。</p><p>圣贤之书不但要读而且还要多读，读得多了都还不能就代表自身的修为可以，还得亲自身体力行去证明去实践，那样才能学得好理解得够透彻，懂得真理再用它来指导自己的言行，那样才可以明明白白地说自己真的读过了一点书。</p>]]></content>
+        <content type="html"><![CDATA[<p>诚信是一个人安身处世最基本的原则，没有诚信的人会失去别人的信任，狼来了的故事就曾告诉过我们，消费别人的诚信是会有一定限度的，当别人被你忽悠了几次之后，试想别人又还会怎么去相信你呢？</p><span id="more"></span><p>没有诚信的人自然是很难取得别人的信任的，没有信任的人别人又怎么会和自己有来往呢，人与人之间的交流很难离开这个信字，只有你讲诚信了，别人才会相信你，你也才可以去接纳别人。</p><p>做人不可能没有诚信二字，如果这个世界人人都不讲诚信了，那这个社会岂不是乱套了吗，人与人之间缺乏信任也不可能有真正的交流，国与国之间没有信任，签署的什么公约之类的都会成为一张废纸，战争因为缺乏诚信自然也随时都会发生。</p><p>有时候宽恕他人的过错，就是宽恕自己，做人不可能因为他人的一点小过错就要去追着不放，该放下的时候就得放下，放下了才能让自己解脱，也让他人好过。</p><p>海能纳百川，做人就是要有博大的胸襟那样才可能成事，做大事者不拘小节说的也正是这个道理，把精力都浪费在小事上了，怎么还可能有多余的精力去做大事呢。</p><p>人人都可能会犯错，但是我们无论如何也得要学会去宽恕别人做过的错事，只有学会宽恕他人我们才能让他人接纳自己，自己也不用整日活在指责他人的过错之中，别人也不用整日的活在悔罪之中。</p>]]></content>
       
       
       <categories>
@@ -22708,37 +22747,29 @@
       
         <tags>
             
-            <tag> 朋友 </tag>
+            <tag> 世界 </tag>
             
-            <tag> 学习 </tag>
-            
-            <tag> 方法 </tag>
-            
-            <tag> 理论 </tag>
+            <tag> 原则 </tag>
             
             <tag> 围炉夜话 </tag>
             
-            <tag> 其二 </tag>
+            <tag> 诚信 </tag>
             
-            <tag> 独学 </tag>
+            <tag> 信任 </tag>
             
-            <tag> 大忌 </tag>
+            <tag> 狼来了 </tag>
             
-            <tag> 交流自然 </tag>
+            <tag> 限度 </tag>
             
-            <tag> 知识展露 </tag>
+            <tag> 忽悠 </tag>
             
-            <tag> 信息差 </tag>
+            <tag> 接纳 </tag>
             
-            <tag> 圣贤之书 </tag>
+            <tag> 小过错 </tag>
             
-            <tag> 修为 </tag>
+            <tag> 胸襟 </tag>
             
-            <tag> 经验总结 </tag>
-            
-            <tag> 透彻 </tag>
-            
-            <tag> 明明白白 </tag>
+            <tag> 宽恕他人 </tag>
             
         </tags>
       
@@ -22947,11 +22978,11 @@
     
     
     <entry>
-      <title>读《围炉夜话》其六有感</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9535e32f/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9535e32f/</url>
+      <title>读《围炉夜话》其八有感</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f6e5d615/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f6e5d615/</url>
       
-        <content type="html"><![CDATA[<p>诚信是一个人安身处世最基本的原则，没有诚信的人会失去别人的信任，狼来了的故事就曾告诉过我们，消费别人的诚信是会有一定限度的，当别人被你忽悠了几次之后，试想别人又还会怎么去相信你呢？</p><span id="more"></span><p>没有诚信的人自然是很难取得别人的信任的，没有信任的人别人又怎么会和自己有来往呢，人与人之间的交流很难离开这个信字，只有你讲诚信了，别人才会相信你，你也才可以去接纳别人。</p><p>做人不可能没有诚信二字，如果这个世界人人都不讲诚信了，那这个社会岂不是乱套了吗，人与人之间缺乏信任也不可能有真正的交流，国与国之间没有信任，签署的什么公约之类的都会成为一张废纸，战争因为缺乏诚信自然也随时都会发生。</p><p>有时候宽恕他人的过错，就是宽恕自己，做人不可能因为他人的一点小过错就要去追着不放，该放下的时候就得放下，放下了才能让自己解脱，也让他人好过。</p><p>海能纳百川，做人就是要有博大的胸襟那样才可能成事，做大事者不拘小节说的也正是这个道理，把精力都浪费在小事上了，怎么还可能有多余的精力去做大事呢。</p><p>人人都可能会犯错，但是我们无论如何也得要学会去宽恕别人做过的错事，只有学会宽恕他人我们才能让他人接纳自己，自己也不用整日活在指责他人的过错之中，别人也不用整日的活在悔罪之中。</p>]]></content>
+        <content type="html"><![CDATA[<p>教育小孩应该要态度严厉，宠爱和太过于溺爱对小孩都是没有好处的，只有严厉的教育才能锻炼出小孩子的独立性，毕竟如今的社会是复杂多变的，那种长大后，依然还是巨婴的人是很难在社会上生存的，严厉的教育可以培养出孩子的独立性和自信心。</p><span id="more"></span><p>对小孩太过于溺爱那样反而是害了他自己，对于小孩子想要什么都千依百顺地去满足，那样一旦他长大后得不到自己想要的就会走入犯罪的深渊，所以有小孩的父母当要引以为戒。</p><p>然而对待小人我们要以一种尊敬的心态去对待他们，他们虽然有不好的地方，但是从他们身上还是有我们值得去学习的，如果老是用一种奇特的眼光去看待他们那是要不得的，我们要想引他们向善，就得先让他们觉得我们对他们没有恶意。</p><p>只有他们觉得我们是对他们是好的，那样他们才能走向善的一面，只有种下的是善的种子结出来的才是善果，如果我们自己都没有善意，那小人他们怎么又会被我们感化呢，如果我们对他人没有善意，那种下的种子，结出来的自然也还是恶果。</p><p>想要引人向善，我们自己的言行就首先得是善的，我们要对恶人行善，那样这个世界才会结出来更多的善果，我们对待小人要有一种敬畏之心，才能用我们的行动，我们的善来唤醒他们沉睡的良知，要多怀敬畏之心，才能让他人走向正途。</p>]]></content>
       
       
       <categories>
@@ -22963,29 +22994,35 @@
       
         <tags>
             
-            <tag> 世界 </tag>
-            
-            <tag> 原则 </tag>
-            
             <tag> 围炉夜话 </tag>
             
-            <tag> 诚信 </tag>
+            <tag> 教育小孩 </tag>
             
-            <tag> 信任 </tag>
+            <tag> 态度严厉 </tag>
             
-            <tag> 狼来了 </tag>
+            <tag> 宠爱 </tag>
             
-            <tag> 限度 </tag>
+            <tag> 溺爱 </tag>
             
-            <tag> 忽悠 </tag>
+            <tag> 独立性 </tag>
             
-            <tag> 接纳 </tag>
+            <tag> 复杂多变 </tag>
             
-            <tag> 小过错 </tag>
+            <tag> 自信心 </tag>
             
-            <tag> 胸襟 </tag>
+            <tag> 犯罪 </tag>
             
-            <tag> 宽恕他人 </tag>
+            <tag> 引以为戒 </tag>
+            
+            <tag> 对待小人 </tag>
+            
+            <tag> 奇特 </tag>
+            
+            <tag> 善果 </tag>
+            
+            <tag> 敬畏之心 </tag>
+            
+            <tag> 正途 </tag>
             
         </tags>
       
@@ -23043,41 +23080,6 @@
     
     
     <entry>
-      <title>软文写作5元一篇会有人写吗</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3cc415ee/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3cc415ee/</url>
-      
-        <content type="html"><![CDATA[<p>昨天看到网上有招写作软文的，其实就是在百度广告经常看到的那种加盟什么奶茶店创业哪些，他没有发哪个格式来之前我还以为可以试着写一下，一看那个格式和说明，我就知道没有戏了。</p><span id="more"></span><p>虽然他说的是仿写，但是又说每一句都必须和在网上找来的不一样，这还是仿写，直接就是重新写了，我一看我就知道我写不出来，关键是写这么一篇才给5块钱。</p><p>花这么功夫才给5块钱，谁愿意写啊，而且交稿了估计还得他说了算，他说不合格那不给钱也是有可能的，所以还是不要轻易相信这种事，写完了发给他了估计就是白忙活一场。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 软文写作 </tag>
-            
-            <tag> 百度广告 </tag>
-            
-            <tag> 没有戏 </tag>
-            
-            <tag> 仿写 </tag>
-            
-            <tag> 交稿 </tag>
-            
-            <tag> 不给钱 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>赌王去世，他的家产如何分割？</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/35e8dbf5/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/35e8dbf5/</url>
@@ -23125,48 +23127,11 @@
     
     
     <entry>
-      <title>说是不用排队的，结果人很多</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2fad63c5/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2fad63c5/</url>
+      <title>软文写作5元一篇会有人写吗</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3cc415ee/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3cc415ee/</url>
       
-        <content type="html"><![CDATA[<p>今天去打疫苗，那个大喇叭里面说的是不用排队的，结果去了人很多，我去的时候就已经排了四排了，后面那个公交车还在一车一车的拉人过来，还好我是骑电动车去的，要是等公交车不知道要等多久。</p><span id="more"></span><p>坐公交车是去的时候要等，来的时候也是要等，再说了那么多人去卫生院，肯定是要等的时间比平时长了。自己骑电动车去就快了，十多分钟就到了。</p><p>除了要在外面排队很长时间之外，进去了还是很快的，一会就打好了，打好了还要在里面观察半个小时，到了那个医师写在单上的时间就可以走了。</p><p>感觉除了打的时候痛一点外，手感觉有点麻木之外，好像也没有什么副作用，打了还是要继续戴口罩的，因为还是不能保证百分百的有效。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 结果 </tag>
-            
-            <tag> 骑电动车 </tag>
-            
-            <tag> 打疫苗 </tag>
-            
-            <tag> 不用排队 </tag>
-            
-            <tag> 观察 </tag>
-            
-            <tag> 戴口罩 </tag>
-            
-            <tag> 坐公交车 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>还是把虚拟机里的黑苹果系统删掉了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5f331bc2/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5f331bc2/</url>
-      
-        <content type="html"><![CDATA[<p>本来是想用来安装一个软件到iPad上结果发现不行，分明还有20多G的硬盘空间。</p><span id="more"></span><p>但是就是安装不了Xcode，提示硬盘空间不足，那好吧根本的目的都达不到，想着这系统也没有什么用，又卡还占硬盘空间，所以干脆就删掉好了。</p><p>还好只是安装在虚拟机上想卸载就卸载了，要是安装在电脑上还不好卸载，那卸载可能就比较麻烦了。</p><p>虚拟机就是有这点好处，装在里面的系统不想用就直接删掉就可以了，真的还是感觉非常方便。</p>]]></content>
+        <content type="html"><![CDATA[<p>昨天看到网上有招写作软文的，其实就是在百度广告经常看到的那种加盟什么奶茶店创业哪些，他没有发哪个格式来之前我还以为可以试着写一下，一看那个格式和说明，我就知道没有戏了。</p><span id="more"></span><p>虽然他说的是仿写，但是又说每一句都必须和在网上找来的不一样，这还是仿写，直接就是重新写了，我一看我就知道我写不出来，关键是写这么一篇才给5块钱。</p><p>花这么功夫才给5块钱，谁愿意写啊，而且交稿了估计还得他说了算，他说不合格那不给钱也是有可能的，所以还是不要轻易相信这种事，写完了发给他了估计就是白忙活一场。</p>]]></content>
       
       
       <categories>
@@ -23178,19 +23143,17 @@
       
         <tags>
             
-            <tag> 安装 </tag>
+            <tag> 软文写作 </tag>
             
-            <tag> iPad </tag>
+            <tag> 百度广告 </tag>
             
-            <tag> 麻烦 </tag>
+            <tag> 没有戏 </tag>
             
-            <tag> 卸载 </tag>
+            <tag> 仿写 </tag>
             
-            <tag> 虚拟机 </tag>
+            <tag> 交稿 </tag>
             
-            <tag> 硬盘空间 </tag>
-            
-            <tag> 黑苹果 </tag>
+            <tag> 不给钱 </tag>
             
         </tags>
       
@@ -23228,6 +23191,43 @@
             <tag> 明天 </tag>
             
             <tag> 拖延症 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>还是把虚拟机里的黑苹果系统删掉了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5f331bc2/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5f331bc2/</url>
+      
+        <content type="html"><![CDATA[<p>本来是想用来安装一个软件到iPad上结果发现不行，分明还有20多G的硬盘空间。</p><span id="more"></span><p>但是就是安装不了Xcode，提示硬盘空间不足，那好吧根本的目的都达不到，想着这系统也没有什么用，又卡还占硬盘空间，所以干脆就删掉好了。</p><p>还好只是安装在虚拟机上想卸载就卸载了，要是安装在电脑上还不好卸载，那卸载可能就比较麻烦了。</p><p>虚拟机就是有这点好处，装在里面的系统不想用就直接删掉就可以了，真的还是感觉非常方便。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 安装 </tag>
+            
+            <tag> iPad </tag>
+            
+            <tag> 麻烦 </tag>
+            
+            <tag> 卸载 </tag>
+            
+            <tag> 虚拟机 </tag>
+            
+            <tag> 硬盘空间 </tag>
+            
+            <tag> 黑苹果 </tag>
             
         </tags>
       
