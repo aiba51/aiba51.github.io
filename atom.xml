@@ -6,7 +6,7 @@
   <link href="https://aixz.xyz/atom.xml" rel="self"/>
   
   <link href="https://aixz.xyz/"/>
-  <updated>2022-06-16T01:37:40.000Z</updated>
+  <updated>2022-12-25T16:22:36.191Z</updated>
   <id>https://aixz.xyz/</id>
   
   <author>
@@ -15,6 +15,76 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>网站终于弄好了，插入的本地图片也可以正常打开了</title>
+    <link href="https://aixz.xyz/Hexo/b44413f4/"/>
+    <id>https://aixz.xyz/Hexo/b44413f4/</id>
+    <published>2022-12-25T16:22:36.191Z</published>
+    <updated>2022-12-25T16:22:36.191Z</updated>
+    
+    <content type="html"><![CDATA[<p>昨晚上弄了一晚上，把以前写的带图片的一些文章重新编辑了一下，图片不显示的原因是要安装hexo-asset-image插件，然后再打开网站配置文件-config.yml中的post_asset_folder这里设置成true。</p><span id="more"></span><p>这样设置后如果之前就有文章带有图片的，就重新编译就可以显示图片了，没有的就新建一篇文章，然后它会自动新建一个和文章名字同名的文件夹，把图片放到这个文件夹里面，通过用Makedown语法<code>![](图片名.格式)</code>这样就可以直接引用了，可以说还是非常方便的。</p><p>昨晚还发现了一个以前没有发现的新功能，数据文件夹，这个功能是从Hexo3.0开始就已经有的。只是我之前用的一直是旧版本的，所以一直都没有去使用这个功能，这个功能在主题Next8.2的配置文件中可以直接开启，在source下新建一个文件夹_date，在这个数据文件夹里面在新建要开启的文件，我用到的是head.njk这个文件，所以就只新建这个文件就可以了。</p><p>有了这个文件就可以很方便的放谷歌广告代码了，直接把谷歌广告代码放到这个文件里面就可以，再也不用大刀阔斧地去改主题文件了，那样改错了也麻烦。只要是需要放在<head></head>中的代码都可以放在里面就可以，可以说是真的很方便，不会写代码也轻松建网站了，比起要放到某个文件夹下的某个文件一大堆代码中是真方便很多。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;昨晚上弄了一晚上，把以前写的带图片的一些文章重新编辑了一下，图片不显示的原因是要安装hexo-asset-image插件，然后再打开网站配置文件-config.yml中的post_asset_folder这里设置成true。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Hexo" scheme="https://aixz.xyz/categories/Hexo/"/>
+    
+    
+    <category term="文章" scheme="https://aixz.xyz/tags/%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="配置文件" scheme="https://aixz.xyz/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
+    
+    <category term="数据文件夹" scheme="https://aixz.xyz/tags/%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6%E5%A4%B9/"/>
+    
+    <category term="网站" scheme="https://aixz.xyz/tags/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="新功能" scheme="https://aixz.xyz/tags/%E6%96%B0%E5%8A%9F%E8%83%BD/"/>
+    
+    <category term="谷歌广告" scheme="https://aixz.xyz/tags/%E8%B0%B7%E6%AD%8C%E5%B9%BF%E5%91%8A/"/>
+    
+    <category term="本地图片" scheme="https://aixz.xyz/tags/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/"/>
+    
+    <category term="显示图片" scheme="https://aixz.xyz/tags/%E6%98%BE%E7%A4%BA%E5%9B%BE%E7%89%87/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>在虚拟机VMware Workstation Pro 17上安装MacOS系统</title>
+    <link href="https://aixz.xyz/MacOS13/c85838e7/"/>
+    <id>https://aixz.xyz/MacOS13/c85838e7/</id>
+    <published>2022-12-24T23:00:54.000Z</published>
+    <updated>2022-12-24T23:00:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="安装要做的事项："><a href="#安装要做的事项：" class="headerlink" title="安装要做的事项："></a>安装要做的事项：</h2><p>1.一个8G以上的U盘</p><p>2.在电脑上预先安装VMware Workstation Pro 17虚拟机。</p><p>3.下载<span class="exturl" data-url="aHR0cHM6Ly9uZXh0Lml0ZWxseW91LmNuL09yaWdpbmFsL0luZGV4I2NicD1Qcm9kdWN0P0lEPTQ2MGEwNDcwLWMyNGQtZWExMS1iZDJlLWIwMjVhYTI4MzUxZA==" title="MacOS镜像下载">MacOS镜像<i class="fa fa-external-link-alt"></i></span>到电脑，注意这里下载下来的镜像是.dmg格式的。</p><span id="more"></span><p>4.使用<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL0RyRG9uay91bmxvY2tlci9yZWxlYXNlcw==" title="nulocker下载">unlocker<i class="fa fa-external-link-alt"></i></span>软件解锁虚拟机，软件在Github上可以下载。解压后运行目录下的&#x2F;windows&#x2F;unlock.exe，在虚拟机中就可以找到安装MacOS选项。</p><p>5.制作U盘启动盘，推荐用<span class="exturl" data-url="aHR0cHM6Ly93d3cuYmFsZW5hLmlvL2V0Y2hlci8=" title="balenaEtcher下载">balenaEtcher<i class="fa fa-external-link-alt"></i></span>，简单方便关键免费。安装好balenaEtcher后，先找到下载的镜像文件，再选择U盘，最后点完成，闪存到U盘成功后会有闪存成功的提示。</p><p>6.新建虚拟机，这里和安装其他系统没有区别。</p><p>7.修改创建的虚拟机中后缀为.vmx的文件，在最后面添加如下代码：</p><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">smc.version</span> = <span class="string">&quot;0&quot;</span></span><br><span class="line"><span class="attr">cpuid.0.eax</span> = <span class="string">&quot;0000:0000:0000:0000:0000:0000:0000:1011&quot;</span></span><br><span class="line"><span class="attr">cpuid.0.ebx</span> = <span class="string">&quot;0111:0101:0110:1110:0110:0101:0100:0111&quot;</span></span><br><span class="line"><span class="attr">cpuid.0.ecx</span> = <span class="string">&quot;0110:1100:0110:0101:0111:0100:0110:1110&quot;</span></span><br><span class="line"><span class="attr">cpuid.0.edx</span> = <span class="string">&quot;0100:1001:0110:0101:0110:1110:0110:1001&quot;</span></span><br><span class="line"><span class="attr">cpuid.1.eax</span> = <span class="string">&quot;0000:0000:0000:0001:0000:0110:0111:0001&quot;</span></span><br><span class="line"><span class="attr">cpuid.1.ebx</span> = <span class="string">&quot;0000:0010:0000:0001:0000:1000:0000:0000&quot;</span></span><br><span class="line"><span class="attr">cpuid.1.ecx</span> = <span class="string">&quot;1000:0010:1001:1000:0010:0010:0000:0011&quot;</span></span><br><span class="line"><span class="attr">cpuid.1.edx</span> = <span class="string">&quot;0000:0111:1000:1011:1111:1011:1111:1111&quot;</span></span><br><span class="line"><span class="attr">smbios.reflectHost</span> = <span class="string">&quot;TRUE&quot;</span></span><br><span class="line"><span class="attr">hw.model</span> = <span class="string">&quot;MacBookPro14,3&quot;</span></span><br><span class="line"><span class="attr">board-id</span> = <span class="string">&quot;Mac-551B86E5744E2388&quot;</span></span><br></pre></td></tr></table></figure><p>8.启动刚创建的虚拟机，在虚拟机右下角找到U盘的图标，断开与主机的连接让U盘连接到虚拟机。然后出现白苹果和下面一个白条，说明它已经自动开始安装了。</p><p>9.抹盘，前面创建的虚拟磁盘还是没有初始化的，所以在安装前需要抹掉，这里可以看到两个盘，一个是U盘，另一个是之前创建的内部虚拟磁盘，选择之前创建的内部虚拟磁盘并且抹掉，名字自定义，其他两项不变。</p><p>10.抹盘完成以后关掉对话框，回到安装界面选择，安装MacOS继续。</p><p>11.会重启到白苹果界面，安装很漫长，直到安装完成。</p><p>12.安装完成后再安装VMware Tools，安装完这个就可以完美的体验黑苹果了。</p>]]></content>
+    
+    
+    <summary type="html">&lt;h2 id=&quot;安装要做的事项：&quot;&gt;&lt;a href=&quot;#安装要做的事项：&quot; class=&quot;headerlink&quot; title=&quot;安装要做的事项：&quot;&gt;&lt;/a&gt;安装要做的事项：&lt;/h2&gt;&lt;p&gt;1.一个8G以上的U盘&lt;/p&gt;
+&lt;p&gt;2.在电脑上预先安装VMware Workstation Pro 17虚拟机。&lt;/p&gt;
+&lt;p&gt;3.下载&lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly9uZXh0Lml0ZWxseW91LmNuL09yaWdpbmFsL0luZGV4I2NicD1Qcm9kdWN0P0lEPTQ2MGEwNDcwLWMyNGQtZWExMS1iZDJlLWIwMjVhYTI4MzUxZA==&quot; title=&quot;MacOS镜像下载&quot;&gt;MacOS镜像&lt;i class=&quot;fa fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;到电脑，注意这里下载下来的镜像是.dmg格式的。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="MacOS13" scheme="https://aixz.xyz/categories/MacOS13/"/>
+    
+    
+    <category term="Github" scheme="https://aixz.xyz/tags/Github/"/>
+    
+    <category term="虚拟机" scheme="https://aixz.xyz/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/"/>
+    
+    <category term="U盘" scheme="https://aixz.xyz/tags/U%E7%9B%98/"/>
+    
+    <category term="MacOS" scheme="https://aixz.xyz/tags/MacOS/"/>
+    
+    <category term="VMware" scheme="https://aixz.xyz/tags/VMware/"/>
+    
+    <category term="unlocker" scheme="https://aixz.xyz/tags/unlocker/"/>
+    
+    <category term="balenaEtcher" scheme="https://aixz.xyz/tags/balenaEtcher/"/>
+    
+  </entry>
   
   <entry>
     <title>在移动端kali安装Java环境</title>
@@ -161,41 +231,6 @@
     <category term="瘦身" scheme="https://aixz.xyz/tags/%E7%98%A6%E8%BA%AB/"/>
     
     <category term="锁屏" scheme="https://aixz.xyz/tags/%E9%94%81%E5%B1%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>网站终于弄好了，插入的本地图片也可以正常打开了</title>
-    <link href="https://aixz.xyz/Hexo/b44413f4/"/>
-    <id>https://aixz.xyz/Hexo/b44413f4/</id>
-    <published>2022-05-15T07:32:08.619Z</published>
-    <updated>2022-05-15T07:32:08.619Z</updated>
-    
-    <content type="html"><![CDATA[<p>昨晚上弄了一晚上，把以前写的带图片的一些文章重新编辑了一下，图片不显示的原因是要安装hexo-asset-image插件，然后再打开网站配置文件-config.yml中的post_asset_folder这里设置成true。</p><span id="more"></span><p>这样设置后如果之前就有文章带有图片的，就重新编译就可以显示图片了，没有的就新建一篇文章，然后它会自动新建一个和文章名字同名的文件夹，把图片放到这个文件夹里面，通过用Makedown语法<code>![](图片名.格式)</code>这样就可以直接引用了，可以说还是非常方便的。</p><p>昨晚还发现了一个以前没有发现的新功能，数据文件夹，这个功能是从Hexo3.0开始就已经有的。只是我之前用的一直是旧版本的，所以一直都没有去使用这个功能，这个功能在主题Next8.2的配置文件中可以直接开启，在source下新建一个文件夹_date，在这个数据文件夹里面在新建要开启的文件，我用到的是head.njk这个文件，所以就只新建这个文件就可以了。</p><p>有了这个文件就可以很方便的放谷歌广告代码了，直接把谷歌广告代码放到这个文件里面就可以，再也不用大刀阔斧地去改主题文件了，那样改错了也麻烦。只要是需要放在<head></head>中的代码都可以放在里面就可以，可以说是真的很方便，不会写代码也轻松建网站了，比起要放到某个文件夹下的某个文件一大堆代码中是真方便很多。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;昨晚上弄了一晚上，把以前写的带图片的一些文章重新编辑了一下，图片不显示的原因是要安装hexo-asset-image插件，然后再打开网站配置文件-config.yml中的post_asset_folder这里设置成true。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Hexo" scheme="https://aixz.xyz/categories/Hexo/"/>
-    
-    
-    <category term="文章" scheme="https://aixz.xyz/tags/%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="数据文件夹" scheme="https://aixz.xyz/tags/%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6%E5%A4%B9/"/>
-    
-    <category term="配置文件" scheme="https://aixz.xyz/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
-    
-    <category term="网站" scheme="https://aixz.xyz/tags/%E7%BD%91%E7%AB%99/"/>
-    
-    <category term="新功能" scheme="https://aixz.xyz/tags/%E6%96%B0%E5%8A%9F%E8%83%BD/"/>
-    
-    <category term="谷歌广告" scheme="https://aixz.xyz/tags/%E8%B0%B7%E6%AD%8C%E5%B9%BF%E5%91%8A/"/>
-    
-    <category term="本地图片" scheme="https://aixz.xyz/tags/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/"/>
-    
-    <category term="显示图片" scheme="https://aixz.xyz/tags/%E6%98%BE%E7%A4%BA%E5%9B%BE%E7%89%87/"/>
     
   </entry>
   
@@ -899,9 +934,9 @@
     
     <category term="思想" scheme="https://aixz.xyz/tags/%E6%80%9D%E6%83%B3/"/>
     
-    <category term="看书" scheme="https://aixz.xyz/tags/%E7%9C%8B%E4%B9%A6/"/>
-    
     <category term="睡不着" scheme="https://aixz.xyz/tags/%E7%9D%A1%E4%B8%8D%E7%9D%80/"/>
+    
+    <category term="看书" scheme="https://aixz.xyz/tags/%E7%9C%8B%E4%B9%A6/"/>
     
     <category term="弱点" scheme="https://aixz.xyz/tags/%E5%BC%B1%E7%82%B9/"/>
     
@@ -938,53 +973,6 @@
     <category term="精神财富" scheme="https://aixz.xyz/tags/%E7%B2%BE%E7%A5%9E%E8%B4%A2%E5%AF%8C/"/>
     
     <category term="眼界" scheme="https://aixz.xyz/tags/%E7%9C%BC%E7%95%8C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>人生没有越不过去的坎，只要坚持了都能实现</title>
-    <link href="https://aixz.xyz/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/f2347624/"/>
-    <id>https://aixz.xyz/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/f2347624/</id>
-    <published>2022-05-11T16:12:25.000Z</published>
-    <updated>2022-05-11T16:12:25.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/f2347624/%E5%9B%BE%E7%89%871.jpg"></p><span id="more"></span><p>人生中我们经常要遇到很多看似难以越过的坎，我们每当遇到这些困难时，我们总是喜欢去逃避，我们害怕现实的努力得不到回报，我们也不相信自己的努力会得到什么结果，就这样我们犹豫不决，最终我们就真的失败了。其实我们只要找到人生正确的方向，那这一切都将是迎刃而解，就是因为我们始终在担心我们会失败，所以最终都是失败的结局。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/f2347624/%E5%9B%BE%E7%89%872.jpg"></p><p>只要一开始就相信自己会成功，那你不成功也获得了失败的经验，那你下一次就绝对是成功的，这人生中一道道难过的坎，那都是要我们一个一步脚印走上去的，纵然这道坎没有跨过去，但是下一次用上这一次失败的经验，我们就能跨过去了，成功不就是一次次的失败经验累加起来的吗，只要你不怕失败，永远坚信自己，不要让自己灰心，那成功就只离你一步之遥。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/f2347624/%E5%9B%BE%E7%89%873.jpg"></p><p>失败后给自己最好的安慰就是给自己最大的鼓励，要始终相信我们不怕失败，那我们就一定能获得成功，拥有自信的力量才能使自己更加强大起来，在失败的道路上，在追梦的路途中，我们就不会感到无助，我们拥有强大的自信力，这自信的力量助推我们朝着梦想的方向前进。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/f2347624/%E5%9B%BE%E7%89%874.jpg"></p><p>我们要做让自己成功的追梦人，我们不要做承认自己失败的放弃之人，我们精神力量始终在指引着我们向着梦想的方向前进，追梦的路上我们其实并不孤独，因为我们拥有自信的力量一直陪伴在我们左右。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/f2347624/%E5%9B%BE%E7%89%875.jpg"></p><p>要始终相信自己，没有哪一道坎是自己不能跨过去的，因为没有什么能难倒自己的，只要我们朝着一个方向用力，向着一个方向努力，那我们就不会害怕这过不去的坎，只有自己不抛弃自己，那我们才能够有尊严的活着，因为梦想始终就在我们的正前方。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/f2347624/%E5%9B%BE%E7%89%876.jpg"></p><p>不做一个自负的人，追梦才能成为最大的赢家，我们坚持着，我们不放弃不抛弃，我们离成功就走进了一步，失败的阻力便又减小了一分，因为我们有梦想，所以都在勇敢的去拼搏，也只有拼搏才能成就我们未来的梦想，我们拥有梦想，我们才不怕失败的去尝试，如此我们才获得了成功的快乐。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/f2347624/%E5%9B%BE%E7%89%877.jpg"></p><p>追自己的梦，做自己想做的，人生中没有什么越不过去的坎，只要你坚持了，那些越不过去的坎，都将会成为你脚下走过的路，只要你不放弃，那就没有什么能把自己难倒的，因为在追梦的路上，我们没有放弃自己，所以我们收获了成功的喜悦之情。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/f2347624/%E5%9B%BE%E7%89%878.jpg"></p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img data-src=&quot;/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/f2347624/%E5%9B%BE%E7%89%871.jpg&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="情感美文" scheme="https://aixz.xyz/categories/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/"/>
-    
-    
-    <category term="坚持" scheme="https://aixz.xyz/tags/%E5%9D%9A%E6%8C%81/"/>
-    
-    <category term="结局" scheme="https://aixz.xyz/tags/%E7%BB%93%E5%B1%80/"/>
-    
-    <category term="梦想" scheme="https://aixz.xyz/tags/%E6%A2%A6%E6%83%B3/"/>
-    
-    <category term="人生" scheme="https://aixz.xyz/tags/%E4%BA%BA%E7%94%9F/"/>
-    
-    <category term="喜悦" scheme="https://aixz.xyz/tags/%E5%96%9C%E6%82%A6/"/>
-    
-    <category term="逃避" scheme="https://aixz.xyz/tags/%E9%80%83%E9%81%BF/"/>
-    
-    <category term="犹豫不决" scheme="https://aixz.xyz/tags/%E7%8A%B9%E8%B1%AB%E4%B8%8D%E5%86%B3/"/>
-    
-    <category term="成功" scheme="https://aixz.xyz/tags/%E6%88%90%E5%8A%9F/"/>
-    
-    <category term="坚信自己" scheme="https://aixz.xyz/tags/%E5%9D%9A%E4%BF%A1%E8%87%AA%E5%B7%B1/"/>
-    
-    <category term="鼓励" scheme="https://aixz.xyz/tags/%E9%BC%93%E5%8A%B1/"/>
-    
-    <category term="追梦人" scheme="https://aixz.xyz/tags/%E8%BF%BD%E6%A2%A6%E4%BA%BA/"/>
-    
-    <category term="正前方" scheme="https://aixz.xyz/tags/%E6%AD%A3%E5%89%8D%E6%96%B9/"/>
-    
-    <category term="赢家" scheme="https://aixz.xyz/tags/%E8%B5%A2%E5%AE%B6/"/>
-    
-    <category term="去尝试" scheme="https://aixz.xyz/tags/%E5%8E%BB%E5%B0%9D%E8%AF%95/"/>
     
   </entry>
   
