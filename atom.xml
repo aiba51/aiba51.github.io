@@ -6,7 +6,7 @@
   <link href="https://aixz.xyz/atom.xml" rel="self"/>
   
   <link href="https://aixz.xyz/"/>
-  <updated>2022-12-25T16:22:36.191Z</updated>
+  <updated>2022-12-25T17:53:33.000Z</updated>
   <id>https://aixz.xyz/</id>
   
   <author>
@@ -17,37 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>网站终于弄好了，插入的本地图片也可以正常打开了</title>
-    <link href="https://aixz.xyz/Hexo/b44413f4/"/>
-    <id>https://aixz.xyz/Hexo/b44413f4/</id>
-    <published>2022-12-25T16:22:36.191Z</published>
-    <updated>2022-12-25T16:22:36.191Z</updated>
+    <title>安装Kali从BIOS启动</title>
+    <link href="https://aixz.xyz/Kali/c74c12b6/"/>
+    <id>https://aixz.xyz/Kali/c74c12b6/</id>
+    <published>2022-12-25T17:53:33.000Z</published>
+    <updated>2022-12-25T17:53:33.000Z</updated>
     
-    <content type="html"><![CDATA[<p>昨晚上弄了一晚上，把以前写的带图片的一些文章重新编辑了一下，图片不显示的原因是要安装hexo-asset-image插件，然后再打开网站配置文件-config.yml中的post_asset_folder这里设置成true。</p><span id="more"></span><p>这样设置后如果之前就有文章带有图片的，就重新编译就可以显示图片了，没有的就新建一篇文章，然后它会自动新建一个和文章名字同名的文件夹，把图片放到这个文件夹里面，通过用Makedown语法<code>![](图片名.格式)</code>这样就可以直接引用了，可以说还是非常方便的。</p><p>昨晚还发现了一个以前没有发现的新功能，数据文件夹，这个功能是从Hexo3.0开始就已经有的。只是我之前用的一直是旧版本的，所以一直都没有去使用这个功能，这个功能在主题Next8.2的配置文件中可以直接开启，在source下新建一个文件夹_date，在这个数据文件夹里面在新建要开启的文件，我用到的是head.njk这个文件，所以就只新建这个文件就可以了。</p><p>有了这个文件就可以很方便的放谷歌广告代码了，直接把谷歌广告代码放到这个文件里面就可以，再也不用大刀阔斧地去改主题文件了，那样改错了也麻烦。只要是需要放在<head></head>中的代码都可以放在里面就可以，可以说是真的很方便，不会写代码也轻松建网站了，比起要放到某个文件夹下的某个文件一大堆代码中是真方便很多。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;昨晚上弄了一晚上，把以前写的带图片的一些文章重新编辑了一下，图片不显示的原因是要安装hexo-asset-image插件，然后再打开网站配置文件-config.yml中的post_asset_folder这里设置成true。&lt;/p&gt;</summary>
+    <content type="html"><![CDATA[<h2 id="安装前的准备"><a href="#安装前的准备" class="headerlink" title="安装前的准备"></a>安装前的准备</h2><p>8G以上的U盘和电脑一台。<br>从硬盘压缩出一个大约30G的分区。<br>打开Kali官网下载安装程序映像<br><span class="exturl" data-url="aHR0cHM6Ly93d3cua2FsaS5vcmcvZ2V0LWthbGkvI2thbGktaW5zdGFsbGVyLWltYWdlcw==" title="Kali下载">获取卡利|Kali Linux<i class="fa fa-external-link-alt"></i></span></p><span id="more"></span><p>这里双系统有两种安装形式，一种是创建引导方式的，一种是不创建引导方式，直接从BIOS启动，我这里选择直接从BIOS启动的，以便以后更新win11的时候重启比较方便。</p><p>下载好安装程序映像后就是写入U盘，官方推荐两个工具，<span class="exturl" data-url="aHR0cHM6Ly93d3cuYmFsZW5hLmlvL2V0Y2hlci8=" title="Etcher下载">Etcher<i class="fa fa-external-link-alt"></i></span>和<span class="exturl" data-url="aHR0cHM6Ly9ydWZ1cy5pZS8=" title="Rufus下载">Rufus<i class="fa fa-external-link-alt"></i></span>，这里我使用Etcher，这个工具界面比较简洁，用起来也很简单。</p><p><img data-src="/Kali/undefined/1.png"></p><p>这里选择Kali安装映像和要写入的U盘点击Flash!，就开始写入U盘了，写入完成会有提示，就可以使用U盘从BIOS启动了，如果失败就要格式化U盘重新再写入一次，最好是把电脑管家等杀毒软件先关掉。</p><p><span class="exturl" data-url="aHR0cHM6Ly93d3cua2FsaS5vcmcvZG9jcy91c2IvbGl2ZS11c2ItaW5zdGFsbC13aXRoLXdpbmRvd3Mv" title="创建U盘启动盘">在Windows上创建可启动的Kali USB驱动器<i class="fa fa-external-link-alt"></i></span>，这里官方给出了参考。</p><h2 id="安装注意事项"><a href="#安装注意事项" class="headerlink" title="安装注意事项"></a>安装注意事项</h2><p>选择硬盘分区时选择手动，选择压缩出来的硬盘分区，选择删除该分区，选择自动分区，选择第一个，把所有系统文件放在一个分区中。</p>]]></content>
     
     
+    <summary type="html">&lt;h2 id=&quot;安装前的准备&quot;&gt;&lt;a href=&quot;#安装前的准备&quot; class=&quot;headerlink&quot; title=&quot;安装前的准备&quot;&gt;&lt;/a&gt;安装前的准备&lt;/h2&gt;&lt;p&gt;8G以上的U盘和电脑一台。&lt;br&gt;从硬盘压缩出一个大约30G的分区。&lt;br&gt;打开Kali官网下载安装程序映像&lt;br&gt;&lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly93d3cua2FsaS5vcmcvZ2V0LWthbGkvI2thbGktaW5zdGFsbGVyLWltYWdlcw==&quot; title=&quot;Kali下载&quot;&gt;获取卡利|Kali Linux&lt;i class=&quot;fa fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;</summary>
     
-    <category term="Hexo" scheme="https://aixz.xyz/categories/Hexo/"/>
     
     
-    <category term="文章" scheme="https://aixz.xyz/tags/%E6%96%87%E7%AB%A0/"/>
+    <category term="Kali" scheme="https://aixz.xyz/categories/Kali/"/>
     
-    <category term="配置文件" scheme="https://aixz.xyz/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
     
-    <category term="数据文件夹" scheme="https://aixz.xyz/tags/%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6%E5%A4%B9/"/>
+    <category term="电脑" scheme="https://aixz.xyz/tags/%E7%94%B5%E8%84%91/"/>
     
-    <category term="网站" scheme="https://aixz.xyz/tags/%E7%BD%91%E7%AB%99/"/>
+    <category term="映像" scheme="https://aixz.xyz/tags/%E6%98%A0%E5%83%8F/"/>
     
-    <category term="新功能" scheme="https://aixz.xyz/tags/%E6%96%B0%E5%8A%9F%E8%83%BD/"/>
+    <category term="U盘" scheme="https://aixz.xyz/tags/U%E7%9B%98/"/>
     
-    <category term="谷歌广告" scheme="https://aixz.xyz/tags/%E8%B0%B7%E6%AD%8C%E5%B9%BF%E5%91%8A/"/>
+    <category term="Kali" scheme="https://aixz.xyz/tags/Kali/"/>
     
-    <category term="本地图片" scheme="https://aixz.xyz/tags/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/"/>
+    <category term="BIOS" scheme="https://aixz.xyz/tags/BIOS/"/>
     
-    <category term="显示图片" scheme="https://aixz.xyz/tags/%E6%98%BE%E7%A4%BA%E5%9B%BE%E7%89%87/"/>
+    <category term="Etcher" scheme="https://aixz.xyz/tags/Etcher/"/>
+    
+    <category term="Rufus" scheme="https://aixz.xyz/tags/Rufus/"/>
+    
+    <category term="Flash" scheme="https://aixz.xyz/tags/Flash/"/>
+    
+    <category term="硬盘分区" scheme="https://aixz.xyz/tags/%E7%A1%AC%E7%9B%98%E5%88%86%E5%8C%BA/"/>
     
   </entry>
   
@@ -83,6 +85,41 @@
     <category term="unlocker" scheme="https://aixz.xyz/tags/unlocker/"/>
     
     <category term="balenaEtcher" scheme="https://aixz.xyz/tags/balenaEtcher/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>网站终于弄好了，插入的本地图片也可以正常打开了</title>
+    <link href="https://aixz.xyz/Hexo/b44413f4/"/>
+    <id>https://aixz.xyz/Hexo/b44413f4/</id>
+    <published>2022-12-24T23:00:54.000Z</published>
+    <updated>2022-12-24T23:00:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>昨晚上弄了一晚上，把以前写的带图片的一些文章重新编辑了一下，图片不显示的原因是要安装hexo-asset-image插件，然后再打开网站配置文件-config.yml中的post_asset_folder这里设置成true。</p><span id="more"></span><p>这样设置后如果之前就有文章带有图片的，就重新编译就可以显示图片了，没有的就新建一篇文章，然后它会自动新建一个和文章名字同名的文件夹，把图片放到这个文件夹里面，通过用Makedown语法<code>![](图片名.格式)</code>这样就可以直接引用了，可以说还是非常方便的。</p><p>昨晚还发现了一个以前没有发现的新功能，数据文件夹，这个功能是从Hexo3.0开始就已经有的。只是我之前用的一直是旧版本的，所以一直都没有去使用这个功能，这个功能在主题Next8.2的配置文件中可以直接开启，在source下新建一个文件夹_date，在这个数据文件夹里面在新建要开启的文件，我用到的是head.njk这个文件，所以就只新建这个文件就可以了。</p><p>有了这个文件就可以很方便的放谷歌广告代码了，直接把谷歌广告代码放到这个文件里面就可以，再也不用大刀阔斧地去改主题文件了，那样改错了也麻烦。只要是需要放在<head></head>中的代码都可以放在里面就可以，可以说是真的很方便，不会写代码也轻松建网站了，比起要放到某个文件夹下的某个文件一大堆代码中是真方便很多。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;昨晚上弄了一晚上，把以前写的带图片的一些文章重新编辑了一下，图片不显示的原因是要安装hexo-asset-image插件，然后再打开网站配置文件-config.yml中的post_asset_folder这里设置成true。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Hexo" scheme="https://aixz.xyz/categories/Hexo/"/>
+    
+    
+    <category term="文章" scheme="https://aixz.xyz/tags/%E6%96%87%E7%AB%A0/"/>
+    
+    <category term="配置文件" scheme="https://aixz.xyz/tags/%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/"/>
+    
+    <category term="数据文件夹" scheme="https://aixz.xyz/tags/%E6%95%B0%E6%8D%AE%E6%96%87%E4%BB%B6%E5%A4%B9/"/>
+    
+    <category term="网站" scheme="https://aixz.xyz/tags/%E7%BD%91%E7%AB%99/"/>
+    
+    <category term="新功能" scheme="https://aixz.xyz/tags/%E6%96%B0%E5%8A%9F%E8%83%BD/"/>
+    
+    <category term="谷歌广告" scheme="https://aixz.xyz/tags/%E8%B0%B7%E6%AD%8C%E5%B9%BF%E5%91%8A/"/>
+    
+    <category term="本地图片" scheme="https://aixz.xyz/tags/%E6%9C%AC%E5%9C%B0%E5%9B%BE%E7%89%87/"/>
+    
+    <category term="显示图片" scheme="https://aixz.xyz/tags/%E6%98%BE%E7%A4%BA%E5%9B%BE%E7%89%87/"/>
     
   </entry>
   
@@ -255,9 +292,9 @@
     <category term="Ubuntu" scheme="https://aixz.xyz/categories/Ubuntu/"/>
     
     
-    <category term="用户名" scheme="https://aixz.xyz/tags/%E7%94%A8%E6%88%B7%E5%90%8D/"/>
-    
     <category term="密码" scheme="https://aixz.xyz/tags/%E5%AF%86%E7%A0%81/"/>
+    
+    <category term="用户名" scheme="https://aixz.xyz/tags/%E7%94%A8%E6%88%B7%E5%90%8D/"/>
     
     <category term="ubuntu" scheme="https://aixz.xyz/tags/ubuntu/"/>
     
@@ -877,9 +914,9 @@
     
     <category term="乐趣" scheme="https://aixz.xyz/tags/%E4%B9%90%E8%B6%A3/"/>
     
-    <category term="创造力" scheme="https://aixz.xyz/tags/%E5%88%9B%E9%80%A0%E5%8A%9B/"/>
-    
     <category term="题目" scheme="https://aixz.xyz/tags/%E9%A2%98%E7%9B%AE/"/>
+    
+    <category term="创造力" scheme="https://aixz.xyz/tags/%E5%88%9B%E9%80%A0%E5%8A%9B/"/>
     
     <category term="岁月" scheme="https://aixz.xyz/tags/%E5%B2%81%E6%9C%88/"/>
     
@@ -912,67 +949,6 @@
     <category term="安慰" scheme="https://aixz.xyz/tags/%E5%AE%89%E6%85%B0/"/>
     
     <category term="当下现实" scheme="https://aixz.xyz/tags/%E5%BD%93%E4%B8%8B%E7%8E%B0%E5%AE%9E/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>睡不着的夜晚，看本书是最好的入眠方式</title>
-    <link href="https://aixz.xyz/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/a2fd0eaa/"/>
-    <id>https://aixz.xyz/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/a2fd0eaa/</id>
-    <published>2022-05-12T08:52:07.000Z</published>
-    <updated>2022-05-12T08:52:07.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/a2fd0eaa/%E5%9B%BE%E7%89%871.jpg"></p><span id="more"></span><p>我们有时候感觉压力太大，就会导致睡不着，这时候其实我们不用去数羊，那是一种太古老的入眠方式，我们可以拿起一本书，看着书中的文字其实我们就会有困意了，也可以拿着手机用读书软件看一下电子书，这效果都是很好的入眠方式。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/a2fd0eaa/%E5%9B%BE%E7%89%872.jpg"></p><p>我也经常是在睡不着心烦意乱的时候就看下电子书，结果看了没有多久就感觉困了，倒下就能够睡着，这就成了我一个最好的催眠方式。这同时也是一举三得的，既收获了知识，也是培养了自己的阅读兴趣，还能让自己更快的睡着，排除了心中的烦闷。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/a2fd0eaa/%E5%9B%BE%E7%89%873.jpg"></p><p>当你感到无聊又不知道该干什么的时候就看书吧，看一本自己喜欢的书，在书中你就会忘了自我，沉迷于文字间，书中的文字可以在你的大脑中构建出一副美好的画面。当你什么都不想做的时候也看本自己喜欢的书吧，也许你就能从书中获得了灵感，也许是某一段文字就让你想起了你将要去做的那件毫无头绪的事，于是对于这件事你就找到了破解的方向。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/a2fd0eaa/%E5%9B%BE%E7%89%874.jpg"></p><p>读书可以改变我们的思想，读古人的书我们可以了解到古人的生活与我们今天有何不同，古人的那些想法和做人的道理我们也是可以用于我们的生活之中的。要把看书当成一种爱好，在自我闲暇时看下书，我们就会收获更多的乐趣，爱看书并一定是书中就有黄金屋，看书只是自己积累知识最好的途径，没有什么比看书获得的知识是最纯粹的了，书籍是人类进步的阶梯，当你阅读量越多时，你的知识水平自然得到了升华。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/a2fd0eaa/%E5%9B%BE%E7%89%875.jpg"></p><p>当你从书中获得越多的知识时，你自然会对世界产生了不同面的理解，你与他人的关系也会变得更和谐，书中的知识改变了你的心灵，当你阅读得越多，你自然就会站在他人角度去思考问题。最好的心理学家也不是就能控制他人，他只是让自己走进了别人思维，只有走进了他人那一面去思考问题，它才知道了别人的弱点，这自然是有好的和坏的一面，好的一面就如很多心理医生一样可以用来治愈他人受伤的心灵，坏的一面自然是可以用来击败他人。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/a2fd0eaa/%E5%9B%BE%E7%89%876.jpg"></p><p>当你睡不着的时候就静静的看书，默默的阅读吧，它不但可以让你获得知识，还能治愈你受伤的心灵，同时也为你开阔了眼界更多地了解他人，看书与财富的多少无关，但它带给你的是无价的精神财富。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/a2fd0eaa/%E5%9B%BE%E7%89%877.jpg"></p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img data-src=&quot;/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/a2fd0eaa/%E5%9B%BE%E7%89%871.jpg&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="情感美文" scheme="https://aixz.xyz/categories/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/"/>
-    
-    
-    <category term="思想" scheme="https://aixz.xyz/tags/%E6%80%9D%E6%83%B3/"/>
-    
-    <category term="睡不着" scheme="https://aixz.xyz/tags/%E7%9D%A1%E4%B8%8D%E7%9D%80/"/>
-    
-    <category term="看书" scheme="https://aixz.xyz/tags/%E7%9C%8B%E4%B9%A6/"/>
-    
-    <category term="弱点" scheme="https://aixz.xyz/tags/%E5%BC%B1%E7%82%B9/"/>
-    
-    <category term="阅读" scheme="https://aixz.xyz/tags/%E9%98%85%E8%AF%BB/"/>
-    
-    <category term="画面" scheme="https://aixz.xyz/tags/%E7%94%BB%E9%9D%A2/"/>
-    
-    <category term="破解" scheme="https://aixz.xyz/tags/%E7%A0%B4%E8%A7%A3/"/>
-    
-    <category term="爱好" scheme="https://aixz.xyz/tags/%E7%88%B1%E5%A5%BD/"/>
-    
-    <category term="电子书" scheme="https://aixz.xyz/tags/%E7%94%B5%E5%AD%90%E4%B9%A6/"/>
-    
-    <category term="入眠方式" scheme="https://aixz.xyz/tags/%E5%85%A5%E7%9C%A0%E6%96%B9%E5%BC%8F/"/>
-    
-    <category term="压力太大" scheme="https://aixz.xyz/tags/%E5%8E%8B%E5%8A%9B%E5%A4%AA%E5%A4%A7/"/>
-    
-    <category term="困意" scheme="https://aixz.xyz/tags/%E5%9B%B0%E6%84%8F/"/>
-    
-    <category term="催眠" scheme="https://aixz.xyz/tags/%E5%82%AC%E7%9C%A0/"/>
-    
-    <category term="烦闷" scheme="https://aixz.xyz/tags/%E7%83%A6%E9%97%B7/"/>
-    
-    <category term="毫无头绪" scheme="https://aixz.xyz/tags/%E6%AF%AB%E6%97%A0%E5%A4%B4%E7%BB%AA/"/>
-    
-    <category term="途径" scheme="https://aixz.xyz/tags/%E9%80%94%E5%BE%84/"/>
-    
-    <category term="阶梯" scheme="https://aixz.xyz/tags/%E9%98%B6%E6%A2%AF/"/>
-    
-    <category term="思考问题" scheme="https://aixz.xyz/tags/%E6%80%9D%E8%80%83%E9%97%AE%E9%A2%98/"/>
-    
-    <category term="治愈" scheme="https://aixz.xyz/tags/%E6%B2%BB%E6%84%88/"/>
-    
-    <category term="精神财富" scheme="https://aixz.xyz/tags/%E7%B2%BE%E7%A5%9E%E8%B4%A2%E5%AF%8C/"/>
-    
-    <category term="眼界" scheme="https://aixz.xyz/tags/%E7%9C%BC%E7%95%8C/"/>
     
   </entry>
   
