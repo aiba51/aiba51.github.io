@@ -6,7 +6,7 @@
   <link href="https://aixz.xyz/atom.xml" rel="self"/>
   
   <link href="https://aixz.xyz/"/>
-  <updated>2022-12-25T17:53:33.000Z</updated>
+  <updated>2022-12-30T09:39:10.000Z</updated>
   <id>https://aixz.xyz/</id>
   
   <author>
@@ -17,13 +17,46 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>今日读《先妣事略》甚为感怀</title>
+    <link href="https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/89f29777/"/>
+    <id>https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/89f29777/</id>
+    <published>2022-12-30T09:39:10.000Z</published>
+    <updated>2022-12-30T09:39:10.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>今日二零二二年十二月三十日，眼看这一年就要终了，然而新冠病毒却是在大面积的感染，我也是在前几天不小心染上了，今天总算是好点了，但是还是有点咳嗽很难受，喉咙吞咽还是有点痛不怎么舒服。最难熬的还是发烧的第一晚和第二个晚上，直接是无法入睡的。睡时都是糊涂的状态，大脑里面是一片混乱。</p><span id="more"></span><p>近些日子在网上看到很多人的亲人因为这个病毒去世，因未及己身，所以只觉病毒又恐惧了几分，但当今日读了震川先生这篇《先妣事略》之后，自然也生出了许多伤感的成分，看到这些文字，无不让我想到了很多发生于自己身上的某些情景来。</p><p>书中所记，周氏一家因疫直接死了三十人，最后就只有两人幸存，如今读此文字，书里书外又何不是同一境况。先生叙说其母何时嫁入他家，叙其母如何去世，叙其母如何勤俭持家，及订身后事姐弟两人的婚事。诸事虽已茫然，然而读之无不让人感同身受，皆有潸然泪下之感。</p><p>只要一想到这些，泪水就开始在眼里打转了，情不自禁地就会滴落下来。此情此景读此文，真的会让人无比感怀煽情，每一字一句都会让人深陷其境，想那些于近日失去亲人的人又是何其难受了。然而人间纵然是有情的，病毒也还是无情的，它会无情的带走很多无辜人的生命，会让很多无辜的人受其疾所困而身难受。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;今日二零二二年十二月三十日，眼看这一年就要终了，然而新冠病毒却是在大面积的感染，我也是在前几天不小心染上了，今天总算是好点了，但是还是有点咳嗽很难受，喉咙吞咽还是有点痛不怎么舒服。最难熬的还是发烧的第一晚和第二个晚上，直接是无法入睡的。睡时都是糊涂的状态，大脑里面是一片混乱。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="日常记录" scheme="https://aixz.xyz/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
+    
+    
+    <category term="喉咙" scheme="https://aixz.xyz/tags/%E5%96%89%E5%92%99/"/>
+    
+    <category term="先妣事略" scheme="https://aixz.xyz/tags/%E5%85%88%E5%A6%A3%E4%BA%8B%E7%95%A5/"/>
+    
+    <category term="感怀" scheme="https://aixz.xyz/tags/%E6%84%9F%E6%80%80/"/>
+    
+    <category term="新冠病毒" scheme="https://aixz.xyz/tags/%E6%96%B0%E5%86%A0%E7%97%85%E6%AF%92/"/>
+    
+    <category term="咳嗽" scheme="https://aixz.xyz/tags/%E5%92%B3%E5%97%BD/"/>
+    
+    <category term="煽情" scheme="https://aixz.xyz/tags/%E7%85%BD%E6%83%85/"/>
+    
+    <category term="震川先生" scheme="https://aixz.xyz/tags/%E9%9C%87%E5%B7%9D%E5%85%88%E7%94%9F/"/>
+    
+  </entry>
+  
+  <entry>
     <title>安装Kali从BIOS启动</title>
     <link href="https://aixz.xyz/Kali/c74c12b6/"/>
     <id>https://aixz.xyz/Kali/c74c12b6/</id>
     <published>2022-12-25T17:53:33.000Z</published>
     <updated>2022-12-25T17:53:33.000Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="安装前的准备"><a href="#安装前的准备" class="headerlink" title="安装前的准备"></a>安装前的准备</h2><p>8G以上的U盘和电脑一台。<br>从硬盘压缩出一个大约30G的分区。<br>打开Kali官网下载安装程序映像<br><span class="exturl" data-url="aHR0cHM6Ly93d3cua2FsaS5vcmcvZ2V0LWthbGkvI2thbGktaW5zdGFsbGVyLWltYWdlcw==" title="Kali下载">获取卡利|Kali Linux<i class="fa fa-external-link-alt"></i></span></p><span id="more"></span><p>这里双系统有两种安装形式，一种是创建引导方式的，一种是不创建引导方式，直接从BIOS启动，我这里选择直接从BIOS启动的，以便以后更新win11的时候重启比较方便。</p><p>下载好安装程序映像后就是写入U盘，官方推荐两个工具，<span class="exturl" data-url="aHR0cHM6Ly93d3cuYmFsZW5hLmlvL2V0Y2hlci8=" title="Etcher下载">Etcher<i class="fa fa-external-link-alt"></i></span>和<span class="exturl" data-url="aHR0cHM6Ly9ydWZ1cy5pZS8=" title="Rufus下载">Rufus<i class="fa fa-external-link-alt"></i></span>，这里我使用Etcher，这个工具界面比较简洁，用起来也很简单。</p><p><img data-src="/Kali/undefined/1.png"></p><p>这里选择Kali安装映像和要写入的U盘点击Flash!，就开始写入U盘了，写入完成会有提示，就可以使用U盘从BIOS启动了，如果失败就要格式化U盘重新再写入一次，最好是把电脑管家等杀毒软件先关掉。</p><p><span class="exturl" data-url="aHR0cHM6Ly93d3cua2FsaS5vcmcvZG9jcy91c2IvbGl2ZS11c2ItaW5zdGFsbC13aXRoLXdpbmRvd3Mv" title="创建U盘启动盘">在Windows上创建可启动的Kali USB驱动器<i class="fa fa-external-link-alt"></i></span>，这里官方给出了参考。</p><h2 id="安装注意事项"><a href="#安装注意事项" class="headerlink" title="安装注意事项"></a>安装注意事项</h2><p>选择硬盘分区时选择手动，选择压缩出来的硬盘分区，选择删除该分区，选择自动分区，选择第一个，把所有系统文件放在一个分区中。</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="安装前的准备"><a href="#安装前的准备" class="headerlink" title="安装前的准备"></a>安装前的准备</h2><p>8G以上的U盘和电脑一台。<br>从硬盘压缩出一个大约30G的分区。<br>打开Kali官网下载安装程序映像<br><span class="exturl" data-url="aHR0cHM6Ly93d3cua2FsaS5vcmcvZ2V0LWthbGkvI2thbGktaW5zdGFsbGVyLWltYWdlcw==" title="Kali下载">获取卡利|Kali Linux<i class="fa fa-external-link-alt"></i></span></p><span id="more"></span><p>这里双系统有两种安装形式，一种是创建引导方式的，一种是不创建引导方式，直接从BIOS启动，我这里选择直接从BIOS启动的，以便以后更新win11的时候重启比较方便。</p><p>下载好安装程序映像后就是写入U盘，官方推荐两个工具，<span class="exturl" data-url="aHR0cHM6Ly93d3cuYmFsZW5hLmlvL2V0Y2hlci8=" title="Etcher下载">Etcher<i class="fa fa-external-link-alt"></i></span>和<span class="exturl" data-url="aHR0cHM6Ly9ydWZ1cy5pZS8=" title="Rufus下载">Rufus<i class="fa fa-external-link-alt"></i></span>，这里我使用Etcher，这个工具界面比较简洁，用起来也很简单。</p><p><img data-src="/Kali/c74c12b6/1.png"></p><p>这里选择Kali安装映像和要写入的U盘点击Flash!，就开始写入U盘了，写入完成会有提示，就可以使用U盘从BIOS启动了，如果失败就要格式化U盘重新再写入一次，最好是把电脑管家等杀毒软件先关掉。</p><p><span class="exturl" data-url="aHR0cHM6Ly93d3cua2FsaS5vcmcvZG9jcy91c2IvbGl2ZS11c2ItaW5zdGFsbC13aXRoLXdpbmRvd3Mv" title="创建U盘启动盘">在Windows上创建可启动的Kali USB驱动器<i class="fa fa-external-link-alt"></i></span>，这里官方给出了参考。</p><h2 id="安装注意事项"><a href="#安装注意事项" class="headerlink" title="安装注意事项"></a>安装注意事项</h2><p>选择硬盘分区时选择手动，选择压缩出来的硬盘分区，选择删除该分区，选择自动分区，选择第一个，把所有系统文件放在一个分区中。</p>]]></content>
     
     
     <summary type="html">&lt;h2 id=&quot;安装前的准备&quot;&gt;&lt;a href=&quot;#安装前的准备&quot; class=&quot;headerlink&quot; title=&quot;安装前的准备&quot;&gt;&lt;/a&gt;安装前的准备&lt;/h2&gt;&lt;p&gt;8G以上的U盘和电脑一台。&lt;br&gt;从硬盘压缩出一个大约30G的分区。&lt;br&gt;打开Kali官网下载安装程序映像&lt;br&gt;&lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly93d3cua2FsaS5vcmcvZ2V0LWthbGkvI2thbGktaW5zdGFsbGVyLWltYWdlcw==&quot; title=&quot;Kali下载&quot;&gt;获取卡利|Kali Linux&lt;i class=&quot;fa fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;</summary>
@@ -292,9 +325,9 @@
     <category term="Ubuntu" scheme="https://aixz.xyz/categories/Ubuntu/"/>
     
     
-    <category term="密码" scheme="https://aixz.xyz/tags/%E5%AF%86%E7%A0%81/"/>
-    
     <category term="用户名" scheme="https://aixz.xyz/tags/%E7%94%A8%E6%88%B7%E5%90%8D/"/>
+    
+    <category term="密码" scheme="https://aixz.xyz/tags/%E5%AF%86%E7%A0%81/"/>
     
     <category term="ubuntu" scheme="https://aixz.xyz/tags/ubuntu/"/>
     
@@ -892,63 +925,6 @@
     <category term="一片美好" scheme="https://aixz.xyz/tags/%E4%B8%80%E7%89%87%E7%BE%8E%E5%A5%BD/"/>
     
     <category term="岁月匆匆" scheme="https://aixz.xyz/tags/%E5%B2%81%E6%9C%88%E5%8C%86%E5%8C%86/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>那些年，那些岁月，那些往事</title>
-    <link href="https://aixz.xyz/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/861f42c0/"/>
-    <id>https://aixz.xyz/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/861f42c0/</id>
-    <published>2022-05-12T09:06:26.000Z</published>
-    <updated>2022-05-12T09:06:26.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/861f42c0/%E5%9B%BE%E7%89%871.jpg"></p><span id="more"></span><p>记得上小学时老师让写作文，我一个割草的题目硬是写了几次，而且每一次都写得不一样，我也不知道为什么每次写都会有新的感受，那种感觉就是很奇妙，就像每天都吃饭一样，但每天吃饭的感觉又都不一样，我真的感谢小时候的我居然会有那样的创造力，现在每天写一篇文章都会感觉脑子不够用，思维已经退化了，没有小时候活跃了。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/861f42c0/%E5%9B%BE%E7%89%872.jpg"></p><p>小时候走在放学回家的路上感觉总算在学校这一天又轻松度过了，看看路边的小草，看看天空飞翔的鸟儿，那时候总感觉这外面的世界很美好，其实，那时候也没有离开过家乡，自然这些都成了不切实际的幻想了。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/861f42c0/%E5%9B%BE%E7%89%873.jpg"></p><p>每到放假的时候我们都喜欢玩弹珠，有的时候输得太多就直接输哭了，现在想想其实也是太可笑了，现在那里又还有小时候的那种乐趣呢，人的年龄越大这孤独感也在增加了。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/861f42c0/%E5%9B%BE%E7%89%874.jpg"></p><p>那些年我们喜欢用写过的作业本撕下来折纸飞机，那时候的我们没有见到过真正的飞机，总感觉飞机离我们很遥远，它就像鸟儿在天上一样的飞着，我们看着它只像一只鸟，与我们的纸飞机差不多的大小，想想那时候还真的是天真可笑啊。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/861f42c0/%E5%9B%BE%E7%89%875.jpg"></p><p>冬天放学回家的路上寂寥了许多，地里的庄稼收了，田里面一片荒芜，鸟儿也看不到那么多了，夏天绿油油的小草已经枯黄死亡，树的树叶也掉落完了，感觉四处都没有了生机，走在放学回家的乡间小路上，有时候想着能有点什么新奇的事发生，那样就不会这样感到无聊了。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/861f42c0/%E5%9B%BE%E7%89%876.jpg"></p><p>冬天走在放学回家的路上就会闻到家家户户在熏腊肉的油烟味，木材的味道合着猪油发出来的香味，闻着闻着也会感觉饿了。还记得小时候上山砍柴熏腊肉的情景，那时候总认为砍的柴大小无所谓，后来才发现要那种砍树后留下的那种粗壮的柴用来熏腊肉才是最好的，曾经的这份快乐匆匆就溜走了。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/861f42c0/%E5%9B%BE%E7%89%877.jpg"></p><p>小时候最喜欢的就是放假了，因为放假就不用去学校上学了，连星期六和星期天放两天那都是感觉很爽的了，更何况节假日和寒暑假呢。每个学期只要一上学就在开始倒数着放假的日子了，秋天倒数着离放寒假的日子还有多少天，春天倒数着离放暑假的日子还有多少个星期，想想那时候有这些期待那还真的是很快乐。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/861f42c0/%E5%9B%BE%E7%89%878.jpg"></p><p>那些童年记忆里的时光其实是很美好的，但这些美好时光我们只能存放在记忆里的某个角落了，时不时的拿出来晒下，也算是对当下现实生活的安慰了。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/861f42c0/%E5%9B%BE%E7%89%879.jpg"></p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img data-src=&quot;/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/861f42c0/%E5%9B%BE%E7%89%871.jpg&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="情感美文" scheme="https://aixz.xyz/categories/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/"/>
-    
-    
-    <category term="乐趣" scheme="https://aixz.xyz/tags/%E4%B9%90%E8%B6%A3/"/>
-    
-    <category term="题目" scheme="https://aixz.xyz/tags/%E9%A2%98%E7%9B%AE/"/>
-    
-    <category term="创造力" scheme="https://aixz.xyz/tags/%E5%88%9B%E9%80%A0%E5%8A%9B/"/>
-    
-    <category term="岁月" scheme="https://aixz.xyz/tags/%E5%B2%81%E6%9C%88/"/>
-    
-    <category term="期待" scheme="https://aixz.xyz/tags/%E6%9C%9F%E5%BE%85/"/>
-    
-    <category term="家乡" scheme="https://aixz.xyz/tags/%E5%AE%B6%E4%B9%A1/"/>
-    
-    <category term="往事" scheme="https://aixz.xyz/tags/%E5%BE%80%E4%BA%8B/"/>
-    
-    <category term="那些年" scheme="https://aixz.xyz/tags/%E9%82%A3%E4%BA%9B%E5%B9%B4/"/>
-    
-    <category term="遥远" scheme="https://aixz.xyz/tags/%E9%81%A5%E8%BF%9C/"/>
-    
-    <category term="割草" scheme="https://aixz.xyz/tags/%E5%89%B2%E8%8D%89/"/>
-    
-    <category term="不切实际" scheme="https://aixz.xyz/tags/%E4%B8%8D%E5%88%87%E5%AE%9E%E9%99%85/"/>
-    
-    <category term="纸飞机" scheme="https://aixz.xyz/tags/%E7%BA%B8%E9%A3%9E%E6%9C%BA/"/>
-    
-    <category term="寂寥" scheme="https://aixz.xyz/tags/%E5%AF%82%E5%AF%A5/"/>
-    
-    <category term="新奇" scheme="https://aixz.xyz/tags/%E6%96%B0%E5%A5%87/"/>
-    
-    <category term="熏腊肉" scheme="https://aixz.xyz/tags/%E7%86%8F%E8%85%8A%E8%82%89/"/>
-    
-    <category term="寒暑假" scheme="https://aixz.xyz/tags/%E5%AF%92%E6%9A%91%E5%81%87/"/>
-    
-    <category term="童年记忆" scheme="https://aixz.xyz/tags/%E7%AB%A5%E5%B9%B4%E8%AE%B0%E5%BF%86/"/>
-    
-    <category term="安慰" scheme="https://aixz.xyz/tags/%E5%AE%89%E6%85%B0/"/>
-    
-    <category term="当下现实" scheme="https://aixz.xyz/tags/%E5%BD%93%E4%B8%8B%E7%8E%B0%E5%AE%9E/"/>
     
   </entry>
   
