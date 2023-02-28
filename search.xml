@@ -4,6 +4,199 @@
   
     
     <entry>
+      <title>Kali实体机安装步骤</title>
+      <link href="/Kali/6b888a23/"/>
+      <url>/Kali/6b888a23/</url>
+      
+        <content type="html"><![CDATA[<p><img data-src="/Kali/6b888a23/kali.png"></p><span id="more"></span><p>1.插入启动U盘，开机按<code>F12</code>进入<code>BIOS</code>界面，选择第4项<code>USB HDD：General UDisk</code>，按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/1.jpg"></p><p>2.选择第1项<code>Graphical install</code>，按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/2.jpg"></p><p>3.语言选择，选择<code>中文（简体）</code>，按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/3.jpg"></p><p>4.选择地区，选择<code>中国</code>，按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/4.jpg"></p><p>5.选择键盘，选择<code>汉语</code>，按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/5.jpg"></p><p>6.配置网络，我这里选择<code>有线网</code>，按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/6.jpg"></p><p>7.输入主机名，这里自己命名，输好以后按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/7.jpg"></p><p>8.<code>域名</code>，这里可以留空，直接按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/8.jpg"></p><p>9.设置用户名，自己命名，输好以后按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/9.jpg"></p><p>10.这步只是确定输入的用户名，如果是大写的会变成小写，直接按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/10.jpg"></p><p>11.设置用户密码，这里设置了要记住密码，后面登录要用到，设置好以后按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/11.jpg"></p><p>12.选择磁盘分区，我这台电脑有两块磁盘，我是用一整块磁盘来安装<code>Kali</code>，所以这里我选择第一项<code>向导-使用整个磁盘</code>，选好以后按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/12.jpg"></p><p>13.选择<code>磁盘分区</code>，这里选择要安装<code>Kali</code>的磁盘，注意这里所选的磁盘数据会被全部清空，这里不能选择U盘，看容量大小来选择，我这里选择第1项。</p><p><img data-src="/Kali/6b888a23/13.jpg"></p><p>14.这里选择放置系统文件的分区，这里推荐选择第1项<code>将所有文件放在同一个分区中（推荐新手使用）</code>，我这里选择第1项，选好以后按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/14.jpg"></p><p>15.这里可以看到所选的那块硬盘有两个分区，因为里面还有之前安装的系统，这里还没有被格式化，分别为1个主分区和1个逻辑分区，这里直接按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/15.jpg"></p><p>16.这里做最后的确认，选择<code>是</code>，所选的磁盘分区将被格式化，我这里选择<code>是</code>，选好以后按<code>ENTER</code>键进入下一步，等待安装过程。</p><p><img data-src="/Kali/6b888a23/16.jpg"><br><img data-src="/Kali/6b888a23/17.jpg"></p><p>17.基本系统安装进度走完以后，进入选择安装软件包，这里要<code>全部选择</code>，我这里被坑了很多次，如果按默认的安装好以后没有<code>蓝牙驱动</code>，所以这里要<code>全选</code>。选好以后按<code>ENTER</code>键进入下一步。等待安装进度条，我这里共有3140个文件需要安装，耐心等待就行。</p><p><img data-src="/Kali/6b888a23/18.jpg"><br><img data-src="/Kali/6b888a23/19.jpg"></p><p>18.设定<code>gdm3</code>，这里选择默认的第1项就行，按<code>ENTER</code>键进入下一步。又是继续安装走进度条，耐心等待就行。</p><p><img data-src="/Kali/6b888a23/20.jpg"><br><img data-src="/Kali/6b888a23/21.jpg"></p><p>19.安装<code>GRUB引导器</code>，因为我电脑要安装两个系统，所以这里选择<code>是</code>，选择好以后按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/22.jpg"></p><p>20.这里选择安装系统的那个硬盘，选择其他的是进不了系统的，因为我的系统安装在第1个硬盘上，所以我这里选择第一个，选择好以后按<code>ENTER</code>键进入下一步，进入安装进度条。</p><p><img data-src="/Kali/6b888a23/23.jpg"><br><img data-src="/Kali/6b888a23/24.jpg"></p><p>21.结束安装进程，这里默认选择<code>是</code>，选好以后按<code>ENTER</code>键进入下一步，等待安装完成。</p><p><img data-src="/Kali/6b888a23/25.jpg"></p><p>22.安装完成，这里可以取出安装U盘了，然后点击继续电脑重启。</p><p><img data-src="/Kali/6b888a23/26.jpg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Kali </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Kali </tag>
+            
+            <tag> 实体机 </tag>
+            
+            <tag> 安装步骤 </tag>
+            
+            <tag> 启动U盘 </tag>
+            
+            <tag> F12 </tag>
+            
+            <tag> BIOS </tag>
+            
+            <tag> ENTER </tag>
+            
+            <tag> 用户密码 </tag>
+            
+            <tag> 磁盘分区 </tag>
+            
+            <tag> 新手 </tag>
+            
+            <tag> 格式化 </tag>
+            
+            <tag> GRUB引导器 </tag>
+            
+            <tag> 蓝牙驱动 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>vim安装markdown插件</title>
+      <link href="/vim/85cf1172/"/>
+      <url>/vim/85cf1172/</url>
+      
+        <content type="html"><![CDATA[<h1 id="vim安装markdown步骤："><a href="#vim安装markdown步骤：" class="headerlink" title="vim安装markdown步骤："></a>vim安装markdown步骤：</h1><h2 id="1-安装vundle管理插件"><a href="#1-安装vundle管理插件" class="headerlink" title="1.安装vundle管理插件"></a>1.安装vundle管理插件</h2><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:<span class="regexp">//gi</span>thub.com<span class="regexp">/VundleVim/</span>Vundle.vim.git ~<span class="regexp">/.vim/</span>bundle/Vundle.vim</span><br></pre></td></tr></table></figure><p>默认安装在<code>/.vim/bundle/vundle</code>下</p><span id="more"></span><h2 id="2-配置vundle插件"><a href="#2-配置vundle插件" class="headerlink" title="2.配置vundle插件"></a>2.配置vundle插件</h2><p>先用</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span> -a</span><br></pre></td></tr></table></figure><p>首先查看&#x2F;home&#x2F;用户名&#x2F;下有没有<code>.vimrc</code>文件</p><p>如果没有就从&#x2F;etc&#x2F;vim&#x2F;目录下复制一个vimrc到&#x2F;home&#x2F;用户名&#x2F;下</p><p>并改名为<code>.vimrc</code></p><p>在终端通过vim打开<code>~/.vimrc</code>文件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.vimrc</span><br></pre></td></tr></table></figure><p>也可以直接在目录中打开（快捷键ctrl+H显示隐藏文件）。<br>将以下加在<code>.vimrc</code>文件中，加入之后保存之后就可以使用vundle了。</p><h3 id="添加的配置信息（样例）"><a href="#添加的配置信息（样例）" class="headerlink" title="添加的配置信息（样例）"></a>添加的配置信息（样例）</h3><p>注：以后安装新插件就直接编辑<code>.vimrc</code>，添加plugin就行了，在这里我们添加的plugin只是例子，你可以不安装这些插件，换上自己需要安装的插件。</p><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&quot; vundle配置 </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">set</span> nocompatible              <span class="comment">&quot; 去除VI一致性,必须要添加</span></span><br><span class="line"><span class="keyword">filetype</span> off                  <span class="comment">&quot; 必须要添加</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 设置包括vundle和初始化相关的runtime path</span></span><br><span class="line"><span class="keyword">set</span> rtp+=~/.<span class="keyword">vim</span>/bundle/Vundle.<span class="keyword">vim</span></span><br><span class="line"><span class="keyword">call</span> vundle#begin()</span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 安装插件位置</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 另一种选择, 指定一个vundle安装插件的路径</span></span><br><span class="line"><span class="comment">&quot;call vundle#begin(&#x27;~/some/path/here&#x27;)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 让vundle管理插件版本,必须</span></span><br><span class="line">Plugin <span class="string">&#x27;VundleVim/Vundle.vim&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 以下范例用来支持不同格式的插件安装.</span></span><br><span class="line"><span class="comment">&quot; 请将安装插件的命令放在vundle#begin和vundle#end之间.</span></span><br><span class="line"><span class="comment">&quot; Github上的插件</span></span><br><span class="line"><span class="comment">&quot; 格式为 Plugin &#x27;用户名/插件仓库名&#x27;</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;tpope/vim-fugitive&#x27;</span></span><br><span class="line"><span class="comment">&quot; 来自 http://vim-scripts.org/vim/scripts.html 的插件</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;插件名称&#x27; 实际上是 Plugin &#x27;vim-scripts/插件仓库名&#x27; 只是此处的用户名可以省略</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;L9&#x27;</span></span><br><span class="line"><span class="comment">&quot; 由Git支持但不再github上的插件仓库 Plugin &#x27;git clone 后面的地址&#x27;</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;git://git.wincent.com/command-t.git&#x27;</span></span><br><span class="line"><span class="comment">&quot; 本地的Git仓库(例如自己的插件) Plugin &#x27;file:///+本地插件仓库绝对路径&#x27;</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;file:///home/gmarik/path/to/plugin&#x27;</span></span><br><span class="line"><span class="comment">&quot; 插件在仓库的子目录中.</span></span><br><span class="line"><span class="comment">&quot; 正确指定路径用以设置runtimepath. 以下范例插件在sparkup/vim目录下</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;rstacruz/sparkup&#x27;, &#123;&#x27;rtp&#x27;: &#x27;vim/&#x27;&#125;</span></span><br><span class="line"><span class="comment">&quot; 安装L9，如果已经安装过这个插件，可利用以下格式避免命名冲突</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;ascenator/L9&#x27;, &#123;&#x27;name&#x27;: &#x27;newL9&#x27;&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 你的所有插件需要在下面这行之前</span></span><br><span class="line"><span class="keyword">call</span> vundle#end()            <span class="comment">&quot; 必须</span></span><br><span class="line"><span class="keyword">filetype</span> plugin <span class="built_in">indent</span> <span class="keyword">on</span>    <span class="comment">&quot; 必须 加载vim自带和插件相应的语法和文件类型相关脚本</span></span><br><span class="line"><span class="comment">&quot; 忽视插件改变缩进,可以使用以下替代:</span></span><br><span class="line"><span class="comment">&quot;filetype plugin on</span></span><br><span class="line"><span class="comment">&quot;</span></span><br><span class="line"><span class="comment">&quot; 常用的命令</span></span><br><span class="line"><span class="comment">&quot; :PluginList       - 列出所有已配置的插件</span></span><br><span class="line"><span class="comment">&quot; :PluginInstall   - 安装插件,追加 `!` 用以更新或使用 :PluginUpdate</span></span><br><span class="line"><span class="comment">&quot; :PluginSearch foo - 搜索 foo ; 追加 `!` 清除本地缓存</span></span><br><span class="line"><span class="comment">&quot; :PluginClean      - 清除未使用插件,需要确认; 追加 `!` 自动批准移除未使用插件</span></span><br><span class="line"><span class="comment">&quot;</span></span><br><span class="line"><span class="comment">&quot; 查阅 :h vundle 获取更多细节和wiki以及FAQ</span></span><br><span class="line"><span class="comment">&quot; 将你自己对非插件片段放在这行之后</span></span><br></pre></td></tr></table></figure><h2 id="3-安装vim-instant-markdown插件"><a href="#3-安装vim-instant-markdown插件" class="headerlink" title="3.安装vim-instant-markdown插件"></a>3.安装vim-instant-markdown插件</h2><p>在<code>.vimrc</code>中vundle配置<code>vundle#begin</code>和<code>vundle#end</code>之间加入以下命令</p><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">Plugin</span> <span class="string">&#x27;suan/vim-instant-markdown&#x27;</span></span><br></pre></td></tr></table></figure><p>位置在vundle配置中有备注说明</p><p>:wq保存之后运行vim</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">vim</span></span><br></pre></td></tr></table></figure><p>在vim里运行安装命令</p><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">:PluginInstall</span></span><br></pre></td></tr></table></figure><p>这里vim里面安装markdown就已经安装完成了</p><h3 id="移除不需要的插件"><a href="#移除不需要的插件" class="headerlink" title="移除不需要的插件"></a>移除不需要的插件</h3><ol><li>编辑.vimrc文件移除的你要移除的插件所对应的plugin那一行。</li><li>保存退出当前的vim</li><li>重新打开vim，输入命令BundleClean。</li></ol><h3 id="其他常用命令"><a href="#其他常用命令" class="headerlink" title="其他常用命令"></a>其他常用命令</h3><p>可以在vim里用这个命令列出所有已安装的插件</p><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">:BundleList</span></span><br></pre></td></tr></table></figure><p>更新插件</p><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">:BundleUpdate</span></span><br></pre></td></tr></table></figure><p>查找插件</p><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">:BundleSearch</span></span><br></pre></td></tr></table></figure><p>这个markdown插件安装以后会在浏览器开一个本地网页作为预览</p><p>也可以安装其他的插件方法都一样</p><p>我这篇文章就是<code>vim-instant-markdown</code>这个插件写的</p><p>只要对markdown语法和vim熟悉，和其他markdown编辑器没有什么区别</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> vim </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> vim </tag>
+            
+            <tag> markdown </tag>
+            
+            <tag> 插件 </tag>
+            
+            <tag> vundle插件 </tag>
+            
+            <tag> vimrc </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>沉没成本——一双沾了泥水的新鞋</title>
+      <link href="/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/287816a9/"/>
+      <url>/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/287816a9/</url>
+      
+        <content type="html"><![CDATA[<p>在经济学上有个名词叫沉没成本，意思就是这个成本已经不存在了，想要怎么去挽回都已经变得不现实了，这意思和破罐子破摔那意思还是有很大区别的。而沉没成本的意思是不要过多的去重视已不存在的事物，停止不前永远只是停留在原地不动。浪费的时间和金钱还会更多，向前看去才是正确的做法。</p><span id="more"></span><p>轿夫的故事里他爱护自己的新鞋，这是人之常情，因为这双鞋可能是他努力赚钱才买来的。人人也都是这样，凡是新的东西都会觉得倍加珍贵。所以轿夫他肯定是要挑着没有泥水的路走。但是路很多的地方它就全是泥水啊，总不能不走着过去吧，更何况还抬着轿子呢，里面还坐着雇主呢。</p><p>那里面的人他才不管轿夫穿的新鞋还是旧鞋，他只是要催着轿夫赶快走，他只是想快点到自己想去的目的地，他也不管轿夫脚下走的路是水泥坑还是平坦干燥的。</p><p>轿夫的新鞋沾了泥水了，那心里自然也是不高兴的，可是那有什么办法呢，脏了就脏了吧，还得抬着轿子往前走啊，不然这趟活完不成又拿什么养家糊口呢。</p><p>那官员去和下属说了这件事也没有什么让人醒悟的道理，因为只要是一双新鞋早晚都要碰上泥水啊，只不过是有个时间先后顺序而已。估计那些下属听了也是一脸不解，这说的什么啊，到底是要表达什么呢？</p><p>对于轿夫来说他其实才是明智的，因为他的做法符合经济学规律，一双新鞋虽然在没有碰泥水的时候是要好好珍惜一下的。但一旦都碰到一脚的泥水了，那还去顾及它干什么呢？更何况这脚下的环境他也不容易啊，脏一小块和全脏了那有什么区别呢，过于在乎已经无法挽回的损失，还耽误事呢。等一下要是把轿上的送去晚了，那肯定是一通被骂不说，可能还连累了工友呢。</p><p>所以说鞋子脏了就脏了吧，就算前面的依然还全是水泥地，全是泥和水混在一起，那又如何，还不是一样要坦荡的走过去。人生不亦是如此吗？刚开始时自己所珍惜的，后来由于环境的变化渐渐的不存在了，又何必再耿耿于怀，难不成都要回到过去再寻找一番不成。</p><p>沉没的成本有很多，而不只这双沾泥水的新鞋子，如果一味还去在乎，还去想着，还去放不下，那失去的也会更多，这是一种得不偿失的做法，有时候该放弃时就得放弃，该遗忘时还就得遗忘。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 作文练习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 得不偿失 </tag>
+            
+            <tag> 沉没成本 </tag>
+            
+            <tag> 泥水 </tag>
+            
+            <tag> 新鞋 </tag>
+            
+            <tag> 破罐子 </tag>
+            
+            <tag> 轿夫 </tag>
+            
+            <tag> 下属 </tag>
+            
+            <tag> 耽误事 </tag>
+            
+            <tag> 环境 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>轿夫的新鞋</title>
+      <link href="/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/e7090870/"/>
+      <url>/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/e7090870/</url>
+      
+        <content type="html"><![CDATA[<h1 id="作文题："><a href="#作文题：" class="headerlink" title="作文题："></a>作文题：</h1><p>古代有个官员对下属们讲了一件事：昨天雨后乘轿进城，轿夫穿的是双新鞋。开始，他小心地挑着干净地面落脚，后来一不小心踩进泥水里，于是便不再顾及新鞋。一个下属听后说：“终生不敢忘。”结合上面的材料，自拟题目，写一篇不少于800字的文章，文体不限，诗歌除外。</p><span id="more"></span><p>昨天雨后，天气阴沉沉的，路上泥泞不堪。有个官员要乘轿进城办事，他叫来了两个轿夫。他一眼就看出来，这两个轿夫都是穷苦人家出身，衣服破烂不堪，但是他们的脚上却都穿着双新鞋。</p><p>官员心想：“这两个人一定是刚刚买了新鞋，想要保护好它们。”于是他对他们说：“今天路上很脏，你们要小心点走，别把新鞋弄脏了。”</p><p>轿夫们听了官员的话，都点点头表示答应。然后他们抬起轿子就往城里走。</p><p>开始的时候，轿夫们都很小心地挑着干净地面落脚，尽量避开泥水和石头。但是路上实在太难走了，有时候一个不小心就会踩到一个坑里或者被一个车辙绊倒。</p><p>其中一个轿夫就遇到了这样的情况。他正走着呢，突然一只脚陷进了一个深深的水坑里。他感觉到冷冰冰的泥水浸透了他的新鞋和袜子，顺着腿流到裤子上。</p><p>他心里非常难过和生气。他想：“我的新鞋啊！我省吃俭用才买来的！现在全毁了！”</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 作文练习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 新鞋 </tag>
+            
+            <tag> 轿夫 </tag>
+            
+            <tag> 官员 </tag>
+            
+            <tag> 干净地面 </tag>
+            
+            <tag> 袜子 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>兴趣，让学习更有趣</title>
+      <link href="/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/926594c9/"/>
+      <url>/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/926594c9/</url>
+      
+        <content type="html"><![CDATA[<p>学习是人生的一项重要的任务，也是一种不断的探索和成长的过程。但是，学习并不总是一件轻松和愉快的事情，有时候，我们会遇到一些困难和挫折，有时候，我们会感到一些压力和烦恼，有时候，我们会对一些课程或者知识感到无趣和厌倦。这些情况，都会影响我们的学习效果和学习兴趣，甚至会让我们对学习失去信心和热情。</p><span id="more"></span><p>那么，我们该如何解决这些问题，让学习变得更有趣呢？我认为，兴趣是一个关键的因素，它可以让我们在学习中找到乐趣，激发我们的动力，提高我们的效率，创造我们的成功。</p><p>孔子说：“知之者不如好之者，好之者不如乐之者。”这句话告诉我们，兴趣是学习的源泉，只有对知识有兴趣，才能更好地去了解它，只有对知识有热爱，才能更好地去掌握它，只有对知识有乐趣，才能更好地去运用它。兴趣可以让我们在学习中感到快乐和满足，兴趣可以让我们在学习中克服困难和挑战，兴趣可以让我们在学习中发现新奇和美好。</p><p>爱因斯坦说：“兴趣是最好的老师。”这句话告诉我们，兴趣是学习的导师，它可以引导我们去发现知识的奥秘，它可以启发我们去创造知识的价值，它可以激励我们去追求知识的境界。兴趣可以让我们在学习中不断地提问和思考，兴趣可以让我们在学习中不断地探索和实践，兴趣可以让我们在学习中不断地进步和创新。</p><p>兴趣产生热爱，兴趣产生动力，兴趣创造愉悦，兴趣创造成功。我们应该珍惜和培养我们的学习兴趣，让它成为我们学习的伙伴和动力，让它成为我们学习的乐趣和目标，让它成为我们学习的源泉和导师。只有这样，我们才能在学习中享受知识的魅力，体验学习的乐趣，实现学习的成功。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 作文练习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 乐趣 </tag>
+            
+            <tag> 学习 </tag>
+            
+            <tag> 兴趣 </tag>
+            
+            <tag> 作文 </tag>
+            
+            <tag> 信心 </tag>
+            
+            <tag> 源泉 </tag>
+            
+            <tag> 境界 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>做感兴趣的事</title>
       <link href="/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/b04d1c7a/"/>
       <url>/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/b04d1c7a/</url>
@@ -78,7 +271,7 @@
       <link href="/Kali/c74c12b6/"/>
       <url>/Kali/c74c12b6/</url>
       
-        <content type="html"><![CDATA[<h2 id="安装前的准备"><a href="#安装前的准备" class="headerlink" title="安装前的准备"></a>安装前的准备</h2><p>8G以上的U盘和电脑一台。<br>从硬盘压缩出一个大约30G的分区。<br>打开Kali官网下载安装程序映像<br><span class="exturl" data-url="aHR0cHM6Ly93d3cua2FsaS5vcmcvZ2V0LWthbGkvI2thbGktaW5zdGFsbGVyLWltYWdlcw==" title="Kali下载">获取卡利|Kali Linux<i class="fa fa-external-link-alt"></i></span></p><span id="more"></span><p>这里双系统有两种安装形式，一种是创建引导方式的，一种是不创建引导方式，直接从BIOS启动，我这里选择直接从BIOS启动的，以便以后更新win11的时候重启比较方便。</p><p>下载好安装程序映像后就是写入U盘，官方推荐两个工具，<span class="exturl" data-url="aHR0cHM6Ly93d3cuYmFsZW5hLmlvL2V0Y2hlci8=" title="Etcher下载">Etcher<i class="fa fa-external-link-alt"></i></span>和<span class="exturl" data-url="aHR0cHM6Ly9ydWZ1cy5pZS8=" title="Rufus下载">Rufus<i class="fa fa-external-link-alt"></i></span>，这里我使用Etcher，这个工具界面比较简洁，用起来也很简单。</p><p><img data-src="/Kali/c74c12b6/1.png"></p><p>这里选择Kali安装映像和要写入的U盘点击Flash!，就开始写入U盘了，写入完成会有提示，就可以使用U盘从BIOS启动了，如果失败就要格式化U盘重新再写入一次，最好是把电脑管家等杀毒软件先关掉。</p><p><span class="exturl" data-url="aHR0cHM6Ly93d3cua2FsaS5vcmcvZG9jcy91c2IvbGl2ZS11c2ItaW5zdGFsbC13aXRoLXdpbmRvd3Mv" title="创建U盘启动盘">在Windows上创建可启动的Kali USB驱动器<i class="fa fa-external-link-alt"></i></span>，这里官方给出了参考。</p><h2 id="安装注意事项"><a href="#安装注意事项" class="headerlink" title="安装注意事项"></a>安装注意事项</h2><p>选择硬盘分区时选择手动，选择压缩出来的硬盘分区，选择删除该分区，选择自动分区，选择第一个，把所有系统文件放在一个分区中。</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="安装前的准备"><a href="#安装前的准备" class="headerlink" title="安装前的准备"></a>安装前的准备</h2><p>8G以上的U盘和电脑一台。<br>从硬盘压缩出一个大约30G的分区。<br>打开Kali官网下载安装程序映像<br><span class="exturl" data-url="aHR0cHM6Ly93d3cua2FsaS5vcmcvZ2V0LWthbGkvI2thbGktaW5zdGFsbGVyLWltYWdlcw==" title="Kali下载">获取卡利|Kali Linux<i class="fa fa-external-link-alt"></i></span></p><span id="more"></span><p>这里双系统有两种安装形式，一种是创建引导方式的，一种是不创建引导方式，直接从BIOS启动，我这里选择直接从BIOS启动的，以便以后更新win11的时候重启比较方便。</p><p>下载好安装程序映像后就是写入U盘，官方推荐两个工具，<span class="exturl" data-url="aHR0cHM6Ly93d3cuYmFsZW5hLmlvL2V0Y2hlci8=" title="Etcher下载">Etcher<i class="fa fa-external-link-alt"></i></span>和<span class="exturl" data-url="aHR0cHM6Ly9ydWZ1cy5pZS8=" title="Rufus下载">Rufus<i class="fa fa-external-link-alt"></i></span>，这里我使用Etcher，这个工具界面比较简洁，用起来也很简单。</p><p><img data-src="/Kali/c74c12b6/1.png"></p><p>这里选择Kali安装映像和要写入的U盘点击Flash!，就开始写入U盘了，写入完成会有提示，就可以使用U盘从BIOS启动了，如果失败就要格式化U盘重新再写入一次，最好是把电脑管家等杀毒软件先关掉。</p><p><span class="exturl" data-url="aHR0cHM6Ly93d3cua2FsaS5vcmcvZG9jcy91c2IvbGl2ZS11c2ItaW5zdGFsbC13aXRoLXdpbmRvd3Mv" title="创建U盘启动盘">在Windows上创建可启动的Kali USB驱动器<i class="fa fa-external-link-alt"></i></span>，这里官方给出了参考。</p><h2 id="正式安装"><a href="#正式安装" class="headerlink" title="正式安装"></a>正式安装</h2><p>1.插入U盘重启到BIOS界面</p><p>2.选择第一项图形化安装</p><p>3.选择语言中文简体</p><p>4.选择地理位置</p><p>5.选择键盘布局</p><p>6.网络：设置主机名</p><p>7.设置用户账户和密码</p><p>8.设置时区</p><p>9.磁盘：安装程序现在将探测您的磁盘并为您提供各种选择，具体取决于设置。在我们的指南中，我们使用的是干净的磁盘，因此我们有四个选项可供选择。我们将选择引导 - 整个磁盘，因为这是 Kali Linux 的单次启动安装，所以我们不希望安装任何其他操作系统，所以我们很乐意擦除磁盘。</p><p>10.选择要分区的磁盘</p><p>11.根据您的需要，您可以选择将所有文件保存在单个分区中（默认分区），或者为一个或多个顶级目录设置单独的分区。<br>如果您不确定想要哪个，则需要“一个分区中的所有文件”。</p><p>12.接下来，您将有最后一次机会在安装程序进行不可逆的更改之前查看磁盘配置。单击“继续”后，安装程序将开始工作，并且您将几乎完成安装。</p><p>13.Kali Linux 使用中央存储库来分发应用程序。您需要根据需要输入任何适当的代理信息。</p><p>14.接下来，您可以选择要安装的软件包。在这里要全部勾选上，不然后面蓝牙无法使用。</p><p>15.启动信息：接下来确认安装 GRUB 引导加载程序。</p><p>16.选择要在其中安装 GRUB 引导加载程序的硬盘驱动器（默认情况下，它不会选择任何驱动器）。</p><p>17.重新启动：最后，单击“继续”以重新启动到新的 Kali Linux 安装中。</p><h2 id="安装注意事项"><a href="#安装注意事项" class="headerlink" title="安装注意事项"></a>安装注意事项</h2><p>选择硬盘分区时选择手动，选择压缩出来的硬盘分区，选择删除该分区，选择自动分区，选择第一个，把所有系统文件放在一个分区中。</p>]]></content>
       
       
       <categories>
@@ -92,13 +285,13 @@
             
             <tag> 电脑 </tag>
             
-            <tag> 映像 </tag>
-            
-            <tag> U盘 </tag>
-            
             <tag> Kali </tag>
             
             <tag> BIOS </tag>
+            
+            <tag> 映像 </tag>
+            
+            <tag> U盘 </tag>
             
             <tag> Etcher </tag>
             
@@ -477,9 +670,9 @@
             
             <tag> next主题 </tag>
             
-            <tag> 日历云 </tag>
-            
             <tag> 插件 </tag>
+            
+            <tag> 日历云 </tag>
             
             <tag> 主题 </tag>
             
@@ -1576,6 +1769,8 @@
             
             <tag> 人类 </tag>
             
+            <tag> 环境 </tag>
+            
             <tag> 蟑潮 </tag>
             
             <tag> 蟑螂 </tag>
@@ -1587,8 +1782,6 @@
             <tag> 程序 </tag>
             
             <tag> 温度 </tag>
-            
-            <tag> 环境 </tag>
             
         </tags>
       
@@ -1912,11 +2105,11 @@
             
             <tag> 坚持 </tag>
             
-            <tag> 遗憾 </tag>
-            
             <tag> 时光 </tag>
             
             <tag> 计划 </tag>
+            
+            <tag> 遗憾 </tag>
             
             <tag> 潮流 </tag>
             
@@ -5323,9 +5516,9 @@
             
             <tag> 文章 </tag>
             
-            <tag> 问题 </tag>
-            
             <tag> 原因 </tag>
+            
+            <tag> 问题 </tag>
             
             <tag> 被锁了 </tag>
             
@@ -9287,9 +9480,9 @@
       
         <tags>
             
-            <tag> 网页 </tag>
-            
             <tag> 打不开 </tag>
+            
+            <tag> 网页 </tag>
             
             <tag> 网速太慢 </tag>
             
@@ -10203,65 +10396,6 @@
     
     
     <entry>
-      <title>Hexo推送失败的问题解决</title>
-      <link href="/Hexo/5cc57a7a/"/>
-      <url>/Hexo/5cc57a7a/</url>
-      
-        <content type="html"><![CDATA[<p>错误失败的问题就如以下：</p><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Unlink of file &#x27;.git/objects/pack/pack</span><br><span class="line">-<span class="number">2334</span>b<span class="number">7896</span>f1a646c<span class="number">0137</span>9d<span class="number">3725</span>4fad<span class="number">0944</span>xxxxxxxx</span><br><span class="line">idx&#x27; failed. Should I try again? (y/n)</span><br></pre></td></tr></table></figure><span id="more"></span><p>一直按y也是没有用一直重复，网上的各种方法都试过了，但是都没有用，包括重新去Git官网重新下载安装Git，问题还是没有得到解决，这个问题也是苦恼了我一个晚上，但是踏破铁鞋无觅处，得来全不费工夫，我首先就是想到查看<code>.deploy_git</code>这个文件夹的属性，因为这个文件夹每次<code>hexo d</code>它都会更新一次，这一不看属性不知道一看吓了我一跳，TM的居然占了4G多的硬盘空间，话说我这一个小博客哪来这么多的文件，这简直就是一个巨无霸了。</p><p>后面又在网上查找了一下看到说这个文件夹是可以删除的，那当然是毫不犹豫的删掉它了，再每次<code>hexo d</code>它都会重新更新一次干嘛不删掉呢，删掉之后我重新用一键编译推送命令<code>hexo clean &amp;&amp; hexo deploy</code>更新推送，这一次居然问题解决了，只是时间比平时用得多了一点。</p><p>再次打开Git刚创建的这个文件夹看了下属性，这次终于不是我被它吓一跳了，而是感到很惊喜，这一次居然只占用300多M的硬盘空间了，真后悔早知道直接把它删了重新更新就可以解决问题，还走那么多弯路，但是不能保证长期有用，估计推送次数多了，它也还会重新变成巨无霸，所以如果以后遇到同样的问题还是得删，这个应该是Git设计有问题，为了追求每次推送的速度，所以每次都是往这个文件夹里增加文件，而不是每次用新的覆盖旧的，长此以往这个文件夹就会变得越来越大，到最后大到不能再继续写入就推送失败了。这个和QQ文件夹一个原理，QQ文件夹当里面文件大一定程度，那QQ发语音都会发不了，所以这个QQ文件就需要经常的删除，这个Git也是这个原理。</p><p>推送到Github成功以后自然要在浏览器上打开网站看下有没有什么不妥的地方，这也是给我的第二个惊喜的地方，之前打开网站一直很慢还以为是Github的访问速度问题，现在看来还真的不是了，这次打开可以用秒速来形容，真的比以往的打开速度非比寻常的快，没有想到删除这个文件夹带来的还有意外惊喜，看来以后还是要经常删一下才行啊。</p><p>仔细想一想还真的是觉得不可思议，先前那么4G多的巨无霸全部推送到Github那网站速度能快才怪了，一下加载4G多的文件网速再怎么快都会感觉慢了，相当于一下子下载一个4K的电影，用迅雷下载最快也要7到8分钟才行啊，到这里这一次Hexo网站更新遇到的问题就完美的解决了，还有意外收获感觉很值得记录一下，也对以后自己和别人有帮助。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Github </tag>
-            
-            <tag> Hexo </tag>
-            
-            <tag> 推送失败 </tag>
-            
-            <tag> 问题解决 </tag>
-            
-            <tag> 错误 </tag>
-            
-            <tag> 按y </tag>
-            
-            <tag> 一直重复 </tag>
-            
-            <tag> Unlink of file </tag>
-            
-            <tag> idx </tag>
-            
-            <tag> .deploy_git </tag>
-            
-            <tag> hexo d </tag>
-            
-            <tag> hexo clean &amp;&amp; hexo deploy </tag>
-            
-            <tag> 更新推送 </tag>
-            
-            <tag> Git </tag>
-            
-            <tag> QQ文件夹 </tag>
-            
-            <tag> 惊喜 </tag>
-            
-            <tag> 迅雷下载 </tag>
-            
-            <tag> 巨无霸 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hexo换电脑更新，能推送上去了才算迁移成功</title>
       <link href="/Hexo/3e845146/"/>
       <url>/Hexo/3e845146/</url>
@@ -10329,8 +10463,6 @@
             
             <tag> 路径 </tag>
             
-            <tag> Git </tag>
-            
             <tag> 迁移 </tag>
             
             <tag> 换电脑 </tag>
@@ -10341,6 +10473,8 @@
             
             <tag> 安装Node.js </tag>
             
+            <tag> Git </tag>
+            
             <tag> 效果 </tag>
             
         </tags>
@@ -10350,11 +10484,11 @@
     
     
     <entry>
-      <title>Hexo网站配置多个SSH-Key一起推送多个远程仓库</title>
-      <link href="/Hexo/727937ad/"/>
-      <url>/Hexo/727937ad/</url>
+      <title>Hexo推送失败的问题解决</title>
+      <link href="/Hexo/5cc57a7a/"/>
+      <url>/Hexo/5cc57a7a/</url>
       
-        <content type="html"><![CDATA[<p>我要用<code>SSH</code>密钥这种链接推送其实不是因为它方便，当然也其实很方便，只是要在不设置<code>Git</code>密码的情况下，设置<code>Git</code>密码就要每次都输密码才能推送，所以我后面设置都是留空，这样我一键推送以后就可以去做其他事了。</p><span id="more"></span><p>之前用https这个链接其实也很方便的，至于有的人说每次都要输入密码才可以，我是第一次输入过后面的推送都是不用的，因为现在的<code>win10</code>系统是可以在本地账号里面保存凭据的，有了凭据肯定是不用每次都输密码了。</p><p>所以我要换成<code>SSH</code>这种链接的推送方式不是方便和不方便的问题了，问题是<code>Github</code>不能通过<code>https</code>这种加密链接推送了，几天之前<code>Github</code>就发邮件给我说这种推送方法不能用了，当时也还没有觉得有多大的问题，后面有一天是真的就推送不了，连用了几次一键推送都是失败的，于是就下定决心在昨天把它换了。</p><p>换个推送链接说起来和做起来真的不太难，可是关键的问题是换了之后出问题了，<code>Github</code>倒是能推送上去了，但是<code>Gitee</code>这个平台的仓库就推送不上去了，当时也不知道什么原因，就想着把<code>Gitee</code>这个链接在站点配置文件里注释一下，只保留Github这个单独推送，果然单独推送确实是可以的，那么问题就只在<code>Gitee</code>这一边了。当然其实我也可以用<code>Gitee</code>这里依然保持用<code>https</code>推送，因为那样也是可以的，只是我强迫症犯了，我做事喜欢保持整齐划一，要换自然要两个都换了才行。</p><p>在网上查了一下都没有找到什么答案，最后还是去看了<code>Gitee</code>上面的帮助文档，在文档里面搜了一下关于公钥配置的问题，突然看到可以配置多个<code>SSH-Key</code>的方法：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span>. 一个Gitee</span><br><span class="line"><span class="selector-tag">b</span>. 一个Github</span><br></pre></td></tr></table></figure><p><strong>解决方法：</strong></p><p>1.生成一个<code>Gitee</code>用的<code>SSH-Key</code></p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&#x27;xxxxx@company.com&#x27;</span> -f ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之前的版本</span></span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;xxxxx@company.com&quot;</span> -f ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之后的版本</span></span><br></pre></td></tr></table></figure><p>2.生成一个<code>Github</code>用的<code>SSH-Key</code></p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&#x27;xxxxx@qq.com&#x27;</span> -f ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之前的版本</span></span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;xxxxx@qq.com&quot;</span> -f ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之后的版本</span></span><br></pre></td></tr></table></figure><p>3.在<code> ~/.ssh</code> 目录下新建一个<code>config</code>文件，添加如下内容（其中<code>Host</code>和<code>HostName</code>填写<code>git</code>服务器的域名，<code>IdentityFile</code>指定私钥的路径）。这里的<code>config</code>文件怎么创建刚开始我也是搞不懂，其实也不难，就是找到<code>~/.ssh</code>这个文件夹目录，在它里面新建一个文本文档，然后把这个文本文档的名字和后缀改成<code>config</code>，这样就创建好了这个<code>config</code>文件，然后用<code>notepad++</code>打开添加如下内容后保存。</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># gitee</span></span><br><span class="line">Host gitee.com</span><br><span class="line">HostName gitee.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment"># github</span></span><br><span class="line">Host github.com</span><br><span class="line">HostName github.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br></pre></td></tr></table></figure><p>4.添加私钥,分别按顺序输入下面的代码</p><figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ssh-agent bash</span><br><span class="line">ssh-add ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line">ssh-add ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br></pre></td></tr></table></figure><p>注意：电脑重置系统以后就算密钥还在，这几个指令也必须按顺序添加。</p><p>5.把公钥添加到远程服务器Gitee和Github<br>到这里两个平台的<code>SSH-Key</code>就配置完成了，把两个不同平台的公钥分别添加到各自的平台，用<code>notepad++</code>分别打开<code>gitee_id_rsa.pub</code>和<code>github_id_rsa.pub</code>，打开后复制到添加公钥的地方就可以。</p><p>6.用ssh命令分别测试</p><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">ssh</span> -T git<span class="variable">@gitee</span>.com</span><br><span class="line">ssh -T git<span class="variable">@github</span>.com</span><br></pre></td></tr></table></figure><p>以gitee为例，成功的话会返回下图内容<br><img data-src="/Hexo/727937ad/1.png"></p><p>7.设置推送的配置信息</p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config <span class="attr">--global</span> user<span class="selector-class">.name</span> <span class="string">&quot;yourname&quot;</span></span><br><span class="line">git config <span class="attr">--global</span> user<span class="selector-class">.email</span> <span class="string">&quot;youremail&quot;</span></span><br></pre></td></tr></table></figure><p>这里要注意<code>Gitee</code>的公钥必须要添加到个人公钥才可以，具体不能推送的问题应该也不是要配置多个<code>SSH</code>密钥的这个问题，这个报错的问题是我后面才发现的，那就是我把电脑上创建的公钥放到部署公钥那里去了，发现这个问题是因为配置了两个密钥还是不能推送，后面一看原因就是在这里，因为部署公钥只能下载不能写入，就是这个公钥只能从这里部署到其他服务器上去，而不能用这个公钥从<code>Git</code>推送写入到仓库里面。</p><p>后面才发现后面有一行如下图的小字：<br><img data-src="/Hexo/727937ad/2.png"><br>说是要添加个人公钥才能对仓库进行写操作，到这里总算搞清楚问题所在了，那就先把添加到部署公钥这个删了，点了那个蓝色一行小字，跳转过去添加个人公钥，从本地电脑<code>notepad++</code>上打开的公钥直接复制过去添加确定输入密码就可以了。</p><p>重新使用一键编译和推送，然后发现正常推送了，也不需要输入密码的操作了，是的第一次就不需要，这个确实要比<code>https</code>这种方便很多了，只要一键推送了后面的事都可以不用管了，只要它不推送失败，都没有什么问题，打开网站只要刷新一下就更新了。</p>]]></content>
+        <content type="html"><![CDATA[<p>错误失败的问题就如以下：</p><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Unlink of file &#x27;.git/objects/pack/pack</span><br><span class="line">-<span class="number">2334</span>b<span class="number">7896</span>f1a646c<span class="number">0137</span>9d<span class="number">3725</span>4fad<span class="number">0944</span>xxxxxxxx</span><br><span class="line">idx&#x27; failed. Should I try again? (y/n)</span><br></pre></td></tr></table></figure><span id="more"></span><p>一直按y也是没有用一直重复，网上的各种方法都试过了，但是都没有用，包括重新去Git官网重新下载安装Git，问题还是没有得到解决，这个问题也是苦恼了我一个晚上，但是踏破铁鞋无觅处，得来全不费工夫，我首先就是想到查看<code>.deploy_git</code>这个文件夹的属性，因为这个文件夹每次<code>hexo d</code>它都会更新一次，这一不看属性不知道一看吓了我一跳，TM的居然占了4G多的硬盘空间，话说我这一个小博客哪来这么多的文件，这简直就是一个巨无霸了。</p><p>后面又在网上查找了一下看到说这个文件夹是可以删除的，那当然是毫不犹豫的删掉它了，再每次<code>hexo d</code>它都会重新更新一次干嘛不删掉呢，删掉之后我重新用一键编译推送命令<code>hexo clean &amp;&amp; hexo deploy</code>更新推送，这一次居然问题解决了，只是时间比平时用得多了一点。</p><p>再次打开Git刚创建的这个文件夹看了下属性，这次终于不是我被它吓一跳了，而是感到很惊喜，这一次居然只占用300多M的硬盘空间了，真后悔早知道直接把它删了重新更新就可以解决问题，还走那么多弯路，但是不能保证长期有用，估计推送次数多了，它也还会重新变成巨无霸，所以如果以后遇到同样的问题还是得删，这个应该是Git设计有问题，为了追求每次推送的速度，所以每次都是往这个文件夹里增加文件，而不是每次用新的覆盖旧的，长此以往这个文件夹就会变得越来越大，到最后大到不能再继续写入就推送失败了。这个和QQ文件夹一个原理，QQ文件夹当里面文件大一定程度，那QQ发语音都会发不了，所以这个QQ文件就需要经常的删除，这个Git也是这个原理。</p><p>推送到Github成功以后自然要在浏览器上打开网站看下有没有什么不妥的地方，这也是给我的第二个惊喜的地方，之前打开网站一直很慢还以为是Github的访问速度问题，现在看来还真的不是了，这次打开可以用秒速来形容，真的比以往的打开速度非比寻常的快，没有想到删除这个文件夹带来的还有意外惊喜，看来以后还是要经常删一下才行啊。</p><p>仔细想一想还真的是觉得不可思议，先前那么4G多的巨无霸全部推送到Github那网站速度能快才怪了，一下加载4G多的文件网速再怎么快都会感觉慢了，相当于一下子下载一个4K的电影，用迅雷下载最快也要7到8分钟才行啊，到这里这一次Hexo网站更新遇到的问题就完美的解决了，还有意外收获感觉很值得记录一下，也对以后自己和别人有帮助。</p>]]></content>
       
       
       <categories>
@@ -10366,43 +10500,41 @@
       
         <tags>
             
-            <tag> 更新 </tag>
-            
             <tag> Github </tag>
             
             <tag> Hexo </tag>
             
-            <tag> 配置文件 </tag>
-            
-            <tag> gitee </tag>
-            
             <tag> Git </tag>
             
-            <tag> 推送 </tag>
+            <tag> 推送失败 </tag>
             
-            <tag> win10 </tag>
+            <tag> 问题解决 </tag>
             
-            <tag> 网站配置 </tag>
+            <tag> 错误 </tag>
             
-            <tag> SSH-Key </tag>
+            <tag> 按y </tag>
             
-            <tag> 远程仓库 </tag>
+            <tag> 一直重复 </tag>
             
-            <tag> SSH </tag>
+            <tag> Unlink of file </tag>
             
-            <tag> 密码 </tag>
+            <tag> idx </tag>
             
-            <tag> https </tag>
+            <tag> .deploy_git </tag>
             
-            <tag> 注释 </tag>
+            <tag> hexo d </tag>
             
-            <tag> 强迫症 </tag>
+            <tag> hexo clean &amp;&amp; hexo deploy </tag>
             
-            <tag> 答案 </tag>
+            <tag> 更新推送 </tag>
             
-            <tag> 公钥配置 </tag>
+            <tag> QQ文件夹 </tag>
             
-            <tag> config </tag>
+            <tag> 惊喜 </tag>
+            
+            <tag> 迅雷下载 </tag>
+            
+            <tag> 巨无霸 </tag>
             
         </tags>
       
@@ -10448,6 +10580,67 @@
             <tag> 文章封面图 </tag>
             
             <tag> 文章模板 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo网站配置多个SSH-Key一起推送多个远程仓库</title>
+      <link href="/Hexo/727937ad/"/>
+      <url>/Hexo/727937ad/</url>
+      
+        <content type="html"><![CDATA[<p>我要用<code>SSH</code>密钥这种链接推送其实不是因为它方便，当然也其实很方便，只是要在不设置<code>Git</code>密码的情况下，设置<code>Git</code>密码就要每次都输密码才能推送，所以我后面设置都是留空，这样我一键推送以后就可以去做其他事了。</p><span id="more"></span><p>之前用https这个链接其实也很方便的，至于有的人说每次都要输入密码才可以，我是第一次输入过后面的推送都是不用的，因为现在的<code>win10</code>系统是可以在本地账号里面保存凭据的，有了凭据肯定是不用每次都输密码了。</p><p>所以我要换成<code>SSH</code>这种链接的推送方式不是方便和不方便的问题了，问题是<code>Github</code>不能通过<code>https</code>这种加密链接推送了，几天之前<code>Github</code>就发邮件给我说这种推送方法不能用了，当时也还没有觉得有多大的问题，后面有一天是真的就推送不了，连用了几次一键推送都是失败的，于是就下定决心在昨天把它换了。</p><p>换个推送链接说起来和做起来真的不太难，可是关键的问题是换了之后出问题了，<code>Github</code>倒是能推送上去了，但是<code>Gitee</code>这个平台的仓库就推送不上去了，当时也不知道什么原因，就想着把<code>Gitee</code>这个链接在站点配置文件里注释一下，只保留Github这个单独推送，果然单独推送确实是可以的，那么问题就只在<code>Gitee</code>这一边了。当然其实我也可以用<code>Gitee</code>这里依然保持用<code>https</code>推送，因为那样也是可以的，只是我强迫症犯了，我做事喜欢保持整齐划一，要换自然要两个都换了才行。</p><p>在网上查了一下都没有找到什么答案，最后还是去看了<code>Gitee</code>上面的帮助文档，在文档里面搜了一下关于公钥配置的问题，突然看到可以配置多个<code>SSH-Key</code>的方法：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span>. 一个Gitee</span><br><span class="line"><span class="selector-tag">b</span>. 一个Github</span><br></pre></td></tr></table></figure><p><strong>解决方法：</strong></p><p>1.生成一个<code>Gitee</code>用的<code>SSH-Key</code></p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&#x27;xxxxx@company.com&#x27;</span> -f ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之前的版本</span></span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;xxxxx@company.com&quot;</span> -f ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之后的版本</span></span><br></pre></td></tr></table></figure><p>2.生成一个<code>Github</code>用的<code>SSH-Key</code></p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&#x27;xxxxx@qq.com&#x27;</span> -f ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之前的版本</span></span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;xxxxx@qq.com&quot;</span> -f ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之后的版本</span></span><br></pre></td></tr></table></figure><p>3.在<code> ~/.ssh</code> 目录下新建一个<code>config</code>文件，添加如下内容（其中<code>Host</code>和<code>HostName</code>填写<code>git</code>服务器的域名，<code>IdentityFile</code>指定私钥的路径）。这里的<code>config</code>文件怎么创建刚开始我也是搞不懂，其实也不难，就是找到<code>~/.ssh</code>这个文件夹目录，在它里面新建一个文本文档，然后把这个文本文档的名字和后缀改成<code>config</code>，这样就创建好了这个<code>config</code>文件，然后用<code>notepad++</code>打开添加如下内容后保存。</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># gitee</span></span><br><span class="line">Host gitee.com</span><br><span class="line">HostName gitee.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment"># github</span></span><br><span class="line">Host github.com</span><br><span class="line">HostName github.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br></pre></td></tr></table></figure><p>4.添加私钥,分别按顺序输入下面的代码</p><figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ssh-agent bash</span><br><span class="line">ssh-add ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line">ssh-add ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br></pre></td></tr></table></figure><p>注意：电脑重置系统以后就算密钥还在，这几个指令也必须按顺序添加。</p><p>5.把公钥添加到远程服务器Gitee和Github<br>到这里两个平台的<code>SSH-Key</code>就配置完成了，把两个不同平台的公钥分别添加到各自的平台，用<code>notepad++</code>分别打开<code>gitee_id_rsa.pub</code>和<code>github_id_rsa.pub</code>，打开后复制到添加公钥的地方就可以。</p><p>6.用ssh命令分别测试</p><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">ssh</span> -T git<span class="variable">@gitee</span>.com</span><br><span class="line">ssh -T git<span class="variable">@github</span>.com</span><br></pre></td></tr></table></figure><p>以gitee为例，成功的话会返回下图内容<br><img data-src="/Hexo/727937ad/1.png"></p><p>7.设置推送的配置信息</p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config <span class="attr">--global</span> user<span class="selector-class">.name</span> <span class="string">&quot;yourname&quot;</span></span><br><span class="line">git config <span class="attr">--global</span> user<span class="selector-class">.email</span> <span class="string">&quot;youremail&quot;</span></span><br></pre></td></tr></table></figure><p>这里要注意<code>Gitee</code>的公钥必须要添加到个人公钥才可以，具体不能推送的问题应该也不是要配置多个<code>SSH</code>密钥的这个问题，这个报错的问题是我后面才发现的，那就是我把电脑上创建的公钥放到部署公钥那里去了，发现这个问题是因为配置了两个密钥还是不能推送，后面一看原因就是在这里，因为部署公钥只能下载不能写入，就是这个公钥只能从这里部署到其他服务器上去，而不能用这个公钥从<code>Git</code>推送写入到仓库里面。</p><p>后面才发现后面有一行如下图的小字：<br><img data-src="/Hexo/727937ad/2.png"><br>说是要添加个人公钥才能对仓库进行写操作，到这里总算搞清楚问题所在了，那就先把添加到部署公钥这个删了，点了那个蓝色一行小字，跳转过去添加个人公钥，从本地电脑<code>notepad++</code>上打开的公钥直接复制过去添加确定输入密码就可以了。</p><p>重新使用一键编译和推送，然后发现正常推送了，也不需要输入密码的操作了，是的第一次就不需要，这个确实要比<code>https</code>这种方便很多了，只要一键推送了后面的事都可以不用管了，只要它不推送失败，都没有什么问题，打开网站只要刷新一下就更新了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 更新 </tag>
+            
+            <tag> Github </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 配置文件 </tag>
+            
+            <tag> gitee </tag>
+            
+            <tag> 推送 </tag>
+            
+            <tag> win10 </tag>
+            
+            <tag> Git </tag>
+            
+            <tag> 网站配置 </tag>
+            
+            <tag> SSH-Key </tag>
+            
+            <tag> 远程仓库 </tag>
+            
+            <tag> SSH </tag>
+            
+            <tag> 密码 </tag>
+            
+            <tag> https </tag>
+            
+            <tag> 注释 </tag>
+            
+            <tag> 强迫症 </tag>
+            
+            <tag> 答案 </tag>
+            
+            <tag> 公钥配置 </tag>
+            
+            <tag> config </tag>
             
         </tags>
       
@@ -10676,6 +10869,53 @@
     
     
     <entry>
+      <title>《白发》全集终于看完了，虽然不是我要的结局但还算完美</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/404bf18a/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/404bf18a/</url>
+      
+        <content type="html"><![CDATA[<p>对于这部剧我是看了很久才看完，也许是更新太慢了所以才看那么久才看完，星期二到星期四每天更新两集，也就是说一个星期只更新六集，追了一个多月也才终于把它看完。</p><span id="more"></span><p>最后的结局相信很多人不用看都已经猜到了，容齐用自己的血为容乐解了天命之毒，容齐为了心爱之人用自己的生命成全了容乐的幸福，他对容乐的这份爱无私而伟大，容乐记起了一切曾经的过往，对容齐从前的恨意也烟消云散荡然无存。</p><p>容乐对容齐的爱及她对容齐的愧疚之情使她久久不愿离开西启。在西启守望已逝去的容齐五年之后，她终究又重新回到了她当年去和亲的地方，只是这一次她归来不再是和亲公主的身份，在城门外迎接她的不再是当年那个对她冷嘲热讽的陈王，而这次是宗政无忧。</p><p>不久之后，宗政无忧成了北临皇帝她自然地也成了北临皇后，她回想起以前的种种过往，在自己记忆中存在的那些人，她觉得自己是幸运的，从前的那些事，从前的那些人都已成为了过去，而当宗政无忧牵着她的手走向皇宫大殿的那一刻，她想的是永远和宗政无忧一直走下去。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 白发 </tag>
+            
+            <tag> 容齐 </tag>
+            
+            <tag> 天命之毒 </tag>
+            
+            <tag> 宗政无忧 </tag>
+            
+            <tag> 全集 </tag>
+            
+            <tag> 结局 </tag>
+            
+            <tag> 完美 </tag>
+            
+            <tag> 容乐 </tag>
+            
+            <tag> 烟消云散 </tag>
+            
+            <tag> 北临皇帝 </tag>
+            
+            <tag> 北临皇后 </tag>
+            
+            <tag> 皇宫大殿 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>《红楼梦》晴雯之死</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/215f096a/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/215f096a/</url>
@@ -10727,53 +10967,6 @@
             <tag> 贾府 </tag>
             
             <tag> 掏空 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>《白发》全集终于看完了，虽然不是我要的结局但还算完美</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/404bf18a/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/404bf18a/</url>
-      
-        <content type="html"><![CDATA[<p>对于这部剧我是看了很久才看完，也许是更新太慢了所以才看那么久才看完，星期二到星期四每天更新两集，也就是说一个星期只更新六集，追了一个多月也才终于把它看完。</p><span id="more"></span><p>最后的结局相信很多人不用看都已经猜到了，容齐用自己的血为容乐解了天命之毒，容齐为了心爱之人用自己的生命成全了容乐的幸福，他对容乐的这份爱无私而伟大，容乐记起了一切曾经的过往，对容齐从前的恨意也烟消云散荡然无存。</p><p>容乐对容齐的爱及她对容齐的愧疚之情使她久久不愿离开西启。在西启守望已逝去的容齐五年之后，她终究又重新回到了她当年去和亲的地方，只是这一次她归来不再是和亲公主的身份，在城门外迎接她的不再是当年那个对她冷嘲热讽的陈王，而这次是宗政无忧。</p><p>不久之后，宗政无忧成了北临皇帝她自然地也成了北临皇后，她回想起以前的种种过往，在自己记忆中存在的那些人，她觉得自己是幸运的，从前的那些事，从前的那些人都已成为了过去，而当宗政无忧牵着她的手走向皇宫大殿的那一刻，她想的是永远和宗政无忧一直走下去。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 情感美文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 白发 </tag>
-            
-            <tag> 容齐 </tag>
-            
-            <tag> 天命之毒 </tag>
-            
-            <tag> 宗政无忧 </tag>
-            
-            <tag> 全集 </tag>
-            
-            <tag> 结局 </tag>
-            
-            <tag> 完美 </tag>
-            
-            <tag> 容乐 </tag>
-            
-            <tag> 烟消云散 </tag>
-            
-            <tag> 北临皇帝 </tag>
-            
-            <tag> 北临皇后 </tag>
-            
-            <tag> 皇宫大殿 </tag>
             
         </tags>
       
@@ -11318,55 +11511,6 @@
             <tag> 微笑 </tag>
             
             <tag> 身后 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>为什么分手后的情侣比离婚后的夫妻更难忘记对方？</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/b89c6fe2/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/b89c6fe2/</url>
-      
-        <content type="html"><![CDATA[<p>在生活中经常可以看到很多的夫妻离婚后再见面就和陌生人一样，对自己和对方的爱可以忘得一点都不剩，而分手后的情侣，多年再见面后还是那么深情地注视着对方，也许这份深厚的感情已经不再是爱，而是因爱而生恨，就是爱得有多深恨得就会有多深。分手后的情侣就算是带着对对方的恨意，那也是还在触动着两个人的心灵。</p><span id="more"></span><p>相比之下，离婚后的夫妻，多年再见面后就已经形同陌路，都说一日夫妻百日恩，两人相处的时间越长早已超越一日的恩情，可是感情的深厚却比不上相爱后分手的情侣，是不是相处的时间越长以后感情就会越来越淡呢？</p><p>相处的时间越长之后是对对方会更加的了解，了解得越多之后，对方的缺点和优点，自己就会清清楚楚，也就没有了继续探索的欲望了，就像喝着白开水不加茶叶也不加糖，这样过着的时日越多感情自然也就会变得平淡无奇了。</p><p>离婚后的夫妻感情比不上分手后的情侣的原因除了相处的时间越长感情越淡之外，也许，还可能是分手后的情侣还有一些未完成之事，因为没有完成所以就会一直记挂在心里，直到终于有一天完成之后，这块心里的石头才会落下，自然也才会觉得心安。</p><p>一段感情从开始到结束，并不是从恋爱到离婚，而是从恋爱到结婚，婚姻才是爱情的终点，也是爱情胜利的目的地。结婚后爱情自然就变成了亲情，从结婚到离婚后两人有的只是亲情，自然比上爱情的离开时那样刻骨铭心。</p><p>这就是未完成之事，一份完整的爱情应该是从恋爱到结婚，这才是有始有终的，有完美的开始和完整的结束，这样分手后自然也才不会有遗憾，因为这件事已经做完了，这页已经翻过去了，只有这样也才不会一直心心念念地一直记挂在心里的位置。</p><p>这也就是为什么离婚后的夫妻没有分手后的情侣那么伤感的原因了吧，离婚后的夫妻他们已经走完了他们该要走的路程，他们完成了自己该完成的事，离婚后自然也不再那样心心念念地记挂着对方，因为他们没有未完成之事，自然也没有不能放下和忘记对方的事，而分手后的情侣就不一样了，他们之间还有未完成之事，而这未完成之事就是心里的一个结，要解开这个心结，解铃还需系铃人。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 情感美文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 欲望 </tag>
-            
-            <tag> 分手后 </tag>
-            
-            <tag> 情侣 </tag>
-            
-            <tag> 离婚后 </tag>
-            
-            <tag> 陌生人 </tag>
-            
-            <tag> 形同陌路 </tag>
-            
-            <tag> 觉得心安 </tag>
-            
-            <tag> 刻骨铭心 </tag>
-            
-            <tag> 恋爱 </tag>
-            
-            <tag> 亲情 </tag>
-            
-            <tag> 遗憾 </tag>
-            
-            <tag> 心心念念 </tag>
-            
-            <tag> 系铃人 </tag>
             
         </tags>
       
@@ -11945,49 +12089,6 @@
     
     
     <entry>
-      <title>人力资源管理（一）自考通分析说明题1</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d850f6a5/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d850f6a5/</url>
-      
-        <content type="html"><![CDATA[<h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="五、分析说明题"><a href="#五、分析说明题" class="headerlink" title="五、分析说明题"></a>五、分析说明题</h2><p>37.背景资料：</p><p>美国最年轻的医学院——弗吉尼亚理工大学卡里赖恩医学院推行了全新的招生政策。引起热议的焦点是，卡里赖恩医学院并不是严格按照成绩、标准化考试分数，以及一场面试的表现对申请者进行评估，而是让他们参加9轮简短面试，“评估他们的反应速度和团队协作意愿”。该流程的专业名称叫M.M.I.，即多轮微型面试，《纽约时报》称之为“速配型招生”，即在9场8分钟的对话中，面试官会设置一个道德困境，要求申请者现场做出决定，甚至对医疗保健政策发表看法，其目的是考察申请者是怎样的人，而不是他们有多聪明。</p><span id="more"></span><p><strong>问题:<br>　　　根据自己所了解的面试的相关内容，对医学院的多轮微型面试提出自己的建议。(P163~166)</strong></p><p>答:</p><p>(1). 面试是主试者通过与应聘者直接交谈或者置应聘者于某种特定情景中进行观察。从而对其适应职位要求的某些能力、素质和资格条件进行测评的一种方法。</p><p>(2). 面试的步骤一般包括准备、接触、了解背景、询问有关工作问题。向应聘者提供某些信息、结束面试、面试评价等。</p><p>(3). 面试技巧:</p><p>  ①. 面试提问技巧，即面试者要清楚提问的目的，准备好提问提纲，尤其要采用他人能够理解的方式来提问，以避免理解困难。在提问时，一般须遵从先易后难、循序渐进的原则。另外，需注意提问的方式。</p><p>  ②. 面试评价技巧。面试结束时应给应聘者提问的机会，整理好面试记录表。需要注意的是，面试评价要从面试的目的出发，评价项目尽量数量化、可操作化。</p><p>(4). 提高面试效果的对策有:</p><p>  ①. 做好面试前的准备工作;</p><p>  ②. 紧紧围绕面试的目的提问;</p><p>  ③. 对每一个应试者一视同仁，如面试时间的长短和提问的难度应保持一致，不能前紧后松;</p><p>  ④. 营造和谐的气氛;</p><p>  ⑤. 保持良好的互动;</p><p>  ⑥. 防止先入为主;</p><p>  ⑦. 注意非语言行为;</p><p>  ⑧. 防止“与我相似”的心理因素;</p><p>  ⑨. 避免暗示;</p><p>  ⑩. 尽可能采用小组面试。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 分析说明 </tag>
-            
-            <tag> 微型面试 </tag>
-            
-            <tag> 面试者 </tag>
-            
-            <tag> 一视同仁 </tag>
-            
-            <tag> 面试 </tag>
-            
-            <tag> 准备工作 </tag>
-            
-            <tag> 成绩 </tag>
-            
-            <tag> 焦点 </tag>
-            
-            <tag> 先入为主 </tag>
-            
-            <tag> 互动 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>人力资源管理（一）自考通案例分析题1</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ec01e93e/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ec01e93e/</url>
@@ -12084,11 +12185,11 @@
     
     
     <entry>
-      <title>人力资源管理（一）自考通论述题1</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/52e18ab8/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/52e18ab8/</url>
+      <title>人力资源管理（一）自考通分析说明题1</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d850f6a5/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d850f6a5/</url>
       
-        <content type="html"><![CDATA[<h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="四、论述题"><a href="#四、论述题" class="headerlink" title="四、论述题"></a>四、论述题</h2><p><strong>36.如何进行绩效反馈面谈? (P239-240)</strong></p><p>答:绩效反馈有正式的绩效反馈和非正式的绩效反馈，以及口头绩效反馈和书面绩效反馈等不同形式。其中在绩效考核之后所进行的绩效反馈面谈是一种重要和有效的绩效反馈形式。</p><span id="more"></span><p>(1). 绩效反馈面谈的准备。为了有效地进行绩效反馈面谈。在面谈之前管理者和员工双方都要进行充分的准备。这种面谈前的准备包括:面谈时间、面谈场所和面谈所需资料的准备。</p><p>(2). 应注意的问题有:</p><p>  ①. 确定好面谈目的;<br>  ②. 面谈内容要具体;<br>  ③. 肯定员工的优点与进步;<br>  ④. 尽量减少批评;<br>  ⑤. 鼓励员工积极参与面谈过程;<br>  ⑥. 避免冲突与对抗;<br>  ⑦. 重点放在问题的解决上;<br>  ⑧. 制定具体的绩效改善目标。</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="五、分析说明题"><a href="#五、分析说明题" class="headerlink" title="五、分析说明题"></a>五、分析说明题</h2><p>37.背景资料：</p><p>美国最年轻的医学院——弗吉尼亚理工大学卡里赖恩医学院推行了全新的招生政策。引起热议的焦点是，卡里赖恩医学院并不是严格按照成绩、标准化考试分数，以及一场面试的表现对申请者进行评估，而是让他们参加9轮简短面试，“评估他们的反应速度和团队协作意愿”。该流程的专业名称叫M.M.I.，即多轮微型面试，《纽约时报》称之为“速配型招生”，即在9场8分钟的对话中，面试官会设置一个道德困境，要求申请者现场做出决定，甚至对医疗保健政策发表看法，其目的是考察申请者是怎样的人，而不是他们有多聪明。</p><span id="more"></span><p><strong>问题:<br>　　　根据自己所了解的面试的相关内容，对医学院的多轮微型面试提出自己的建议。(P163~166)</strong></p><p>答:</p><p>(1). 面试是主试者通过与应聘者直接交谈或者置应聘者于某种特定情景中进行观察。从而对其适应职位要求的某些能力、素质和资格条件进行测评的一种方法。</p><p>(2). 面试的步骤一般包括准备、接触、了解背景、询问有关工作问题。向应聘者提供某些信息、结束面试、面试评价等。</p><p>(3). 面试技巧:</p><p>  ①. 面试提问技巧，即面试者要清楚提问的目的，准备好提问提纲，尤其要采用他人能够理解的方式来提问，以避免理解困难。在提问时，一般须遵从先易后难、循序渐进的原则。另外，需注意提问的方式。</p><p>  ②. 面试评价技巧。面试结束时应给应聘者提问的机会，整理好面试记录表。需要注意的是，面试评价要从面试的目的出发，评价项目尽量数量化、可操作化。</p><p>(4). 提高面试效果的对策有:</p><p>  ①. 做好面试前的准备工作;</p><p>  ②. 紧紧围绕面试的目的提问;</p><p>  ③. 对每一个应试者一视同仁，如面试时间的长短和提问的难度应保持一致，不能前紧后松;</p><p>  ④. 营造和谐的气氛;</p><p>  ⑤. 保持良好的互动;</p><p>  ⑥. 防止先入为主;</p><p>  ⑦. 注意非语言行为;</p><p>  ⑧. 防止“与我相似”的心理因素;</p><p>  ⑨. 避免暗示;</p><p>  ⑩. 尽可能采用小组面试。</p>]]></content>
       
       
       <categories>
@@ -12100,17 +12201,72 @@
       
         <tags>
             
-            <tag> 绩效反馈 </tag>
+            <tag> 分析说明 </tag>
             
-            <tag> 面谈 </tag>
+            <tag> 微型面试 </tag>
             
-            <tag> 资料 </tag>
+            <tag> 面试者 </tag>
             
-            <tag> 问题 </tag>
+            <tag> 一视同仁 </tag>
             
-            <tag> 正式 </tag>
+            <tag> 面试 </tag>
             
-            <tag> 考核 </tag>
+            <tag> 准备工作 </tag>
+            
+            <tag> 成绩 </tag>
+            
+            <tag> 焦点 </tag>
+            
+            <tag> 先入为主 </tag>
+            
+            <tag> 互动 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>人力资源管理(一)自考通错题集2</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ffb90031/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ffb90031/</url>
+      
+        <content type="html"><![CDATA[<h1 id="全真模拟演练-一"><a href="#全真模拟演练-一" class="headerlink" title="全真模拟演练(一)"></a>全真模拟演练(一)</h1><h2 id="二、多项选择题"><a href="#二、多项选择题" class="headerlink" title="二、多项选择题"></a>二、多项选择题</h2><p><strong>26.针对“自动人”假设的管理措施，以下说法正确的是 (DE)</strong></p><p>A．管理工作的重点是完成任务，提高劳动生产率</p><p>B．采用胡罗卜加大棒的管理方法，效率高的重奖，消极怠工的重罚</p><p>C．管理者因人、因事、因其不同情况，灵活采用不同的管理方法</p><p>D．管理职能的改变，主要是减少和消除员工在自我实现过程中的困难和障碍</p><p>E．管理重点的改变，把重点转移到为员工创造适宜的工作环境、工作条件上，使劳动者在这种适宜的环境中能够充分地发挥自己的潜能</p><span id="more"></span><p>解析：DE(P50-51)本题主要考查的知识点是“自动人”假设的管理措施。选项A、B是“经济人”假设的管理措施，选项C是“复杂人”假设的管理措施。</p><p><strong>27.以下属于人力资源规划的原则的是(ABC)</strong></p><p>A．目标性原则</p><p>B．系统性原则</p><p>C．适应性原则</p><p>D．匹配性原则</p><p>E．简单化原则</p><p>解析：ABC(P127)制定人力资源规划的基本原则如下。</p><p>(1)．目标性原则</p><p>(2)．系统性原则</p><p>(3)．适应性原则</p><p>(4)．协调性原则</p><p>(5)．科学预测原则</p><p>(6)．动态性原则</p><p>(7)．开放性原则</p><p>(8)．共同发展原则</p><p>其中包含的答案只有ABC。</p><p><strong>29.人力资源规划的目标包括(ABDE)</strong></p><p>A．配合组织发展的需要</p><p>B．规划人力发展</p><p>C．保证组织利益最大化</p><p>D．促使人力资源的合理利用</p><p>E．用人成本合理化</p><p>解析：ABDE(P128)本题主要考查的知识点是人力资源规划的目标。选项C的说法本身不正确。人力资源规划的目标包括以下四个方面的内容：</p><p>(1)．配合组织发展的需要</p><p>(2)．规划人力发展</p><p>(3)．促使人力资源的合理运用</p><p>(4)．用人成本合理化</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 人力资源 </tag>
+            
+            <tag> 自动人 </tag>
+            
+            <tag> 经济人 </tag>
+            
+            <tag> 复杂人 </tag>
+            
+            <tag> 规划 </tag>
+            
+            <tag> 基本原则 </tag>
+            
+            <tag> 系统性 </tag>
+            
+            <tag> 目标性 </tag>
+            
+            <tag> 适应性 </tag>
+            
+            <tag> 匹配性 </tag>
+            
+            <tag> 简单化 </tag>
+            
+            <tag> 合理化 </tag>
             
         </tags>
       
@@ -12172,53 +12328,6 @@
             <tag> 思维方式 </tag>
             
             <tag> 显著特征 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>人力资源管理(一)自考通错题集2</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ffb90031/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ffb90031/</url>
-      
-        <content type="html"><![CDATA[<h1 id="全真模拟演练-一"><a href="#全真模拟演练-一" class="headerlink" title="全真模拟演练(一)"></a>全真模拟演练(一)</h1><h2 id="二、多项选择题"><a href="#二、多项选择题" class="headerlink" title="二、多项选择题"></a>二、多项选择题</h2><p><strong>26.针对“自动人”假设的管理措施，以下说法正确的是 (DE)</strong></p><p>A．管理工作的重点是完成任务，提高劳动生产率</p><p>B．采用胡罗卜加大棒的管理方法，效率高的重奖，消极怠工的重罚</p><p>C．管理者因人、因事、因其不同情况，灵活采用不同的管理方法</p><p>D．管理职能的改变，主要是减少和消除员工在自我实现过程中的困难和障碍</p><p>E．管理重点的改变，把重点转移到为员工创造适宜的工作环境、工作条件上，使劳动者在这种适宜的环境中能够充分地发挥自己的潜能</p><span id="more"></span><p>解析：DE(P50-51)本题主要考查的知识点是“自动人”假设的管理措施。选项A、B是“经济人”假设的管理措施，选项C是“复杂人”假设的管理措施。</p><p><strong>27.以下属于人力资源规划的原则的是(ABC)</strong></p><p>A．目标性原则</p><p>B．系统性原则</p><p>C．适应性原则</p><p>D．匹配性原则</p><p>E．简单化原则</p><p>解析：ABC(P127)制定人力资源规划的基本原则如下。</p><p>(1)．目标性原则</p><p>(2)．系统性原则</p><p>(3)．适应性原则</p><p>(4)．协调性原则</p><p>(5)．科学预测原则</p><p>(6)．动态性原则</p><p>(7)．开放性原则</p><p>(8)．共同发展原则</p><p>其中包含的答案只有ABC。</p><p><strong>29.人力资源规划的目标包括(ABDE)</strong></p><p>A．配合组织发展的需要</p><p>B．规划人力发展</p><p>C．保证组织利益最大化</p><p>D．促使人力资源的合理利用</p><p>E．用人成本合理化</p><p>解析：ABDE(P128)本题主要考查的知识点是人力资源规划的目标。选项C的说法本身不正确。人力资源规划的目标包括以下四个方面的内容：</p><p>(1)．配合组织发展的需要</p><p>(2)．规划人力发展</p><p>(3)．促使人力资源的合理运用</p><p>(4)．用人成本合理化</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 人力资源 </tag>
-            
-            <tag> 自动人 </tag>
-            
-            <tag> 经济人 </tag>
-            
-            <tag> 复杂人 </tag>
-            
-            <tag> 规划 </tag>
-            
-            <tag> 基本原则 </tag>
-            
-            <tag> 系统性 </tag>
-            
-            <tag> 目标性 </tag>
-            
-            <tag> 适应性 </tag>
-            
-            <tag> 匹配性 </tag>
-            
-            <tag> 简单化 </tag>
-            
-            <tag> 合理化 </tag>
             
         </tags>
       
@@ -12460,11 +12569,11 @@
     
     
     <entry>
-      <title>今天厂里面盘点，放假休息，我又坐公交回去基地</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8cd7043f/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8cd7043f/</url>
+      <title>今天去玩了，外面风景很不错</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/70ef1bc2/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/70ef1bc2/</url>
       
-        <content type="html"><![CDATA[<p>今天我这里的天气是下雨，天快黑的时候还有很大的台风，我三点过就从基地回来了，幸好回来得早，来晚了公交车都很难赶上。我才上车坐了几个站，上车的人就越来越多了，外面还下着大雨，公交车里面一下子就很挤了。</p><span id="more"></span><p>我刚从基地出来，在一个小巷子走了没有多远就把我带着的那把雨伞吹断了，可以感觉到那时候的台风都已经很大了，到了晚上更加增强了，只听到窗外呼呼的叫。台风和一般风真的不一样，特别是那声音叫起来太恐怖了。</p><p>我这次还是计划得可以的，来得早点还是好点，来晚了台风也大了，估计连公交车都不跑了。现在外面就只听到窗子响和台风过境的呼呼声。现在都不敢开窗，最好不要，开了就是作死的节奏，关好关紧门窗才是上策。</p><p>我在广东这边已经经历过三次大的台风了，每年的七八月份都会有强台风，好像我记得只有一五年和一六年没有，后面的这三年都连续有，特别是一七年是最大的一次。</p><p>今天我下车的时候外面就正下着大雨，我在车上的时候是把伞放到包里了，下车时候没有及时从包里拿出来，下了车才从包里拿出来，被雨淋得是真的很惨，路上的积水也深，都快没过鞋跟了，走了一段路到宿舍鞋子里面都有水了。</p>]]></content>
+        <content type="html"><![CDATA[<p>早上吃了点饺子就出去了，等公交车大概等了半个小时，然后是转了三路公交车才到的这个景点。</p><span id="more"></span><p>这个景点虽然不是什么很有名的景点，但是有座山，也算是珠海最高的山了吧，登山感觉还是挺不错的。</p><p>山上可以看到珠海香洲城区的全部，有一览众山小的感觉，能看到整个城区的全貌。</p>]]></content>
       
       
       <categories>
@@ -12478,29 +12587,15 @@
             
             <tag> 公交车 </tag>
             
-            <tag> 基地 </tag>
+            <tag> 风景 </tag>
             
-            <tag> 厂里面 </tag>
+            <tag> 珠海 </tag>
             
-            <tag> 盘点 </tag>
+            <tag> 早上 </tag>
             
-            <tag> 放假休息 </tag>
+            <tag> 饺子 </tag>
             
-            <tag> 坐公交 </tag>
-            
-            <tag> 天气 </tag>
-            
-            <tag> 台风 </tag>
-            
-            <tag> 窗子响 </tag>
-            
-            <tag> 台风过境 </tag>
-            
-            <tag> 关紧门窗 </tag>
-            
-            <tag> 被雨淋 </tag>
-            
-            <tag> 宿舍鞋子 </tag>
+            <tag> 城区 </tag>
             
         </tags>
       
@@ -12554,11 +12649,11 @@
     
     
     <entry>
-      <title>今天去玩了，外面风景很不错</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/70ef1bc2/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/70ef1bc2/</url>
+      <title>今天厂里面盘点，放假休息，我又坐公交回去基地</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8cd7043f/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8cd7043f/</url>
       
-        <content type="html"><![CDATA[<p>早上吃了点饺子就出去了，等公交车大概等了半个小时，然后是转了三路公交车才到的这个景点。</p><span id="more"></span><p>这个景点虽然不是什么很有名的景点，但是有座山，也算是珠海最高的山了吧，登山感觉还是挺不错的。</p><p>山上可以看到珠海香洲城区的全部，有一览众山小的感觉，能看到整个城区的全貌。</p>]]></content>
+        <content type="html"><![CDATA[<p>今天我这里的天气是下雨，天快黑的时候还有很大的台风，我三点过就从基地回来了，幸好回来得早，来晚了公交车都很难赶上。我才上车坐了几个站，上车的人就越来越多了，外面还下着大雨，公交车里面一下子就很挤了。</p><span id="more"></span><p>我刚从基地出来，在一个小巷子走了没有多远就把我带着的那把雨伞吹断了，可以感觉到那时候的台风都已经很大了，到了晚上更加增强了，只听到窗外呼呼的叫。台风和一般风真的不一样，特别是那声音叫起来太恐怖了。</p><p>我这次还是计划得可以的，来得早点还是好点，来晚了台风也大了，估计连公交车都不跑了。现在外面就只听到窗子响和台风过境的呼呼声。现在都不敢开窗，最好不要，开了就是作死的节奏，关好关紧门窗才是上策。</p><p>我在广东这边已经经历过三次大的台风了，每年的七八月份都会有强台风，好像我记得只有一五年和一六年没有，后面的这三年都连续有，特别是一七年是最大的一次。</p><p>今天我下车的时候外面就正下着大雨，我在车上的时候是把伞放到包里了，下车时候没有及时从包里拿出来，下了车才从包里拿出来，被雨淋得是真的很惨，路上的积水也深，都快没过鞋跟了，走了一段路到宿舍鞋子里面都有水了。</p>]]></content>
       
       
       <categories>
@@ -12572,15 +12667,29 @@
             
             <tag> 公交车 </tag>
             
-            <tag> 风景 </tag>
+            <tag> 基地 </tag>
             
-            <tag> 珠海 </tag>
+            <tag> 厂里面 </tag>
             
-            <tag> 早上 </tag>
+            <tag> 盘点 </tag>
             
-            <tag> 饺子 </tag>
+            <tag> 放假休息 </tag>
             
-            <tag> 城区 </tag>
+            <tag> 坐公交 </tag>
+            
+            <tag> 天气 </tag>
+            
+            <tag> 台风 </tag>
+            
+            <tag> 窗子响 </tag>
+            
+            <tag> 台风过境 </tag>
+            
+            <tag> 关紧门窗 </tag>
+            
+            <tag> 被雨淋 </tag>
+            
+            <tag> 宿舍鞋子 </tag>
             
         </tags>
       
@@ -12776,47 +12885,6 @@
     
     
     <entry>
-      <title>今天好像感冒了，喉咙有点痛</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/69de0a1c/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/69de0a1c/</url>
-      
-        <content type="html"><![CDATA[<p>其实从昨天开始就感觉喉咙有点不舒服了，以前两年多都没有感冒了，在人多的地方待的时间长了就容易感冒，还真的是这样的，特别是像教室这种不怎么通风的地方。</p><span id="more"></span><p>之前我一个人住，每天差不多只吃一顿饭，也是两年多没有吃过一粒药，现在每天吃三餐，还倒转要吃药了，说明饭吃多了其实也不好，因为体内有多余的蛋白质了就容易滋养病菌。</p><p>因为这几天是在厂里面培训，人多的地方加上现在吃一天三餐，这样容易得感冒几率是真很大。以前一天吃一餐虽然晚上饿得睡不着，但不会得感冒，有时候有些东西有好也有坏。</p><p>养生最好的方法就是少吃，少吃就会少生病，现在好多得糖尿病都是吃出来的，如果不是为了要上班我现在宁愿每天只吃一顿都行，吃多了除了自己身体消耗不完以外，病菌也活跃起来了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 培训 </tag>
-            
-            <tag> 不舒服 </tag>
-            
-            <tag> 感冒了 </tag>
-            
-            <tag> 喉咙 </tag>
-            
-            <tag> 通风 </tag>
-            
-            <tag> 一顿饭 </tag>
-            
-            <tag> 三餐 </tag>
-            
-            <tag> 消耗不完 </tag>
-            
-            <tag> 活跃起来 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>今天把钻差不多全部转成贝了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/cdef3309/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/cdef3309/</url>
@@ -12909,11 +12977,11 @@
     
     
     <entry>
-      <title>今天更新不了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1bd3ffdf/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1bd3ffdf/</url>
+      <title>今天好像感冒了，喉咙有点痛</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/69de0a1c/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/69de0a1c/</url>
       
-        <content type="html"><![CDATA[<p>断更了，忘记写了，都快睡着了，拿起手机才知道今天还没有写，唉也是无法了。事一多就容易忘记了，没有事的时候也没有记得写。</p><span id="more"></span><p>等记得的时候都快忘了，也不知道写什么了，只能随便写写了，每天都记得的今天就突然忘了，记性不好了，只能随便写写了。</p>]]></content>
+        <content type="html"><![CDATA[<p>其实从昨天开始就感觉喉咙有点不舒服了，以前两年多都没有感冒了，在人多的地方待的时间长了就容易感冒，还真的是这样的，特别是像教室这种不怎么通风的地方。</p><span id="more"></span><p>之前我一个人住，每天差不多只吃一顿饭，也是两年多没有吃过一粒药，现在每天吃三餐，还倒转要吃药了，说明饭吃多了其实也不好，因为体内有多余的蛋白质了就容易滋养病菌。</p><p>因为这几天是在厂里面培训，人多的地方加上现在吃一天三餐，这样容易得感冒几率是真很大。以前一天吃一餐虽然晚上饿得睡不着，但不会得感冒，有时候有些东西有好也有坏。</p><p>养生最好的方法就是少吃，少吃就会少生病，现在好多得糖尿病都是吃出来的，如果不是为了要上班我现在宁愿每天只吃一顿都行，吃多了除了自己身体消耗不完以外，病菌也活跃起来了。</p>]]></content>
       
       
       <categories>
@@ -12925,21 +12993,62 @@
       
         <tags>
             
-            <tag> 更新 </tag>
+            <tag> 培训 </tag>
             
-            <tag> 容易忘记 </tag>
+            <tag> 不舒服 </tag>
             
-            <tag> 今天 </tag>
+            <tag> 感冒了 </tag>
             
-            <tag> 断更 </tag>
+            <tag> 喉咙 </tag>
             
-            <tag> 睡着了 </tag>
+            <tag> 通风 </tag>
             
-            <tag> 没有写 </tag>
+            <tag> 一顿饭 </tag>
             
-            <tag> 随便写写 </tag>
+            <tag> 三餐 </tag>
             
-            <tag> 记性不好 </tag>
+            <tag> 消耗不完 </tag>
+            
+            <tag> 活跃起来 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>今天是除夕，去菜场买菜去晚了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dd80ab00/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dd80ab00/</url>
+      
+        <content type="html"><![CDATA[<p>我下午三点钟去的买肉的都没有了，只剩两个卖菜的了，没有其他选择了就只好买了些豌豆角了，然后又去那下面一点的一个超市买了一点肉，青椒也还有的就买点肉来炒豌豆角好了，过年了去超市买东西的人还挺多，付款的时候还都得排队了，不过超市里的肉比市场的要贵了不少，因为我是骑着电动车去的所以也不用什么购物袋了，那样还得花几毛钱。</p><span id="more"></span><p>回来后把家里的垃圾全丢了，还把地上用拖耙弄一下，新年里就该得有一个新气象啊，什么都焕然一新才好啊，弄好了也是接着忙了，因为都已经快5点钟了，所以也是到做饭吃的时候了。</p><p>过了大概半个小时左右，饭做好了我菜也炒好了，然后就是一个人自己吃饭了，吃完饭就是看春晚了，用的以前买的电视盒子看，刚开始用的那个蜂蜜直播看的，清晰度很差，后面我退出了，又用酷喵看了，还是这个比较高清，有1080P的选项，4K的不知道在哪里看，用的1080P的显示器看1080的感觉也很清晰了，现在就是用平板电脑边看春晚边写文了，因为要用显示器看春晚，所以就不能用电脑写了，还好有智能盒子不然还不知道怎么看春晚了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 超市 </tag>
+            
+            <tag> 买菜 </tag>
+            
+            <tag> 除夕 </tag>
+            
+            <tag> 菜场 </tag>
+            
+            <tag> 豌豆角 </tag>
+            
+            <tag> 直播 </tag>
+            
+            <tag> 春晚 </tag>
+            
+            <tag> 酷喵 </tag>
             
         </tags>
       
@@ -12989,11 +13098,11 @@
     
     
     <entry>
-      <title>今天是除夕，去菜场买菜去晚了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dd80ab00/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dd80ab00/</url>
+      <title>今天更新不了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1bd3ffdf/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1bd3ffdf/</url>
       
-        <content type="html"><![CDATA[<p>我下午三点钟去的买肉的都没有了，只剩两个卖菜的了，没有其他选择了就只好买了些豌豆角了，然后又去那下面一点的一个超市买了一点肉，青椒也还有的就买点肉来炒豌豆角好了，过年了去超市买东西的人还挺多，付款的时候还都得排队了，不过超市里的肉比市场的要贵了不少，因为我是骑着电动车去的所以也不用什么购物袋了，那样还得花几毛钱。</p><span id="more"></span><p>回来后把家里的垃圾全丢了，还把地上用拖耙弄一下，新年里就该得有一个新气象啊，什么都焕然一新才好啊，弄好了也是接着忙了，因为都已经快5点钟了，所以也是到做饭吃的时候了。</p><p>过了大概半个小时左右，饭做好了我菜也炒好了，然后就是一个人自己吃饭了，吃完饭就是看春晚了，用的以前买的电视盒子看，刚开始用的那个蜂蜜直播看的，清晰度很差，后面我退出了，又用酷喵看了，还是这个比较高清，有1080P的选项，4K的不知道在哪里看，用的1080P的显示器看1080的感觉也很清晰了，现在就是用平板电脑边看春晚边写文了，因为要用显示器看春晚，所以就不能用电脑写了，还好有智能盒子不然还不知道怎么看春晚了。</p>]]></content>
+        <content type="html"><![CDATA[<p>断更了，忘记写了，都快睡着了，拿起手机才知道今天还没有写，唉也是无法了。事一多就容易忘记了，没有事的时候也没有记得写。</p><span id="more"></span><p>等记得的时候都快忘了，也不知道写什么了，只能随便写写了，每天都记得的今天就突然忘了，记性不好了，只能随便写写了。</p>]]></content>
       
       
       <categories>
@@ -13005,21 +13114,21 @@
       
         <tags>
             
-            <tag> 超市 </tag>
+            <tag> 更新 </tag>
             
-            <tag> 买菜 </tag>
+            <tag> 容易忘记 </tag>
             
-            <tag> 除夕 </tag>
+            <tag> 今天 </tag>
             
-            <tag> 菜场 </tag>
+            <tag> 断更 </tag>
             
-            <tag> 豌豆角 </tag>
+            <tag> 睡着了 </tag>
             
-            <tag> 直播 </tag>
+            <tag> 没有写 </tag>
             
-            <tag> 春晚 </tag>
+            <tag> 随便写写 </tag>
             
-            <tag> 酷喵 </tag>
+            <tag> 记性不好 </tag>
             
         </tags>
       
@@ -13216,6 +13325,41 @@
     
     
     <entry>
+      <title>今天还可以做了很多题，明天继续努力</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5317c220/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5317c220/</url>
+      
+        <content type="html"><![CDATA[<p>把昨天没有做完的主观题今天是把他抄写完了一遍了，做完了昨天的今天又重开始了一章新的了，新的做完前面的选择题了，这一章的选择题比上一章要多很多。</p><span id="more"></span><p>特别是单选题上一章才20多道，这一章居然有50多道，真的是把我吓坏了，还好今天是把单选题和多选题都做完了，还把后面的简答题也抄了5道题。</p><p>感觉今天的状态是要比昨天好一点，昨天是一章题都没有完成，今天就是相当于完成一章了吧，明天要把这一章做完再做一章新的，那样跟上进度才会没有问题了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 很多题 </tag>
+            
+            <tag> 继续努力 </tag>
+            
+            <tag> 主观题 </tag>
+            
+            <tag> 选择题 </tag>
+            
+            <tag> 单选题 </tag>
+            
+            <tag> 进度 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>今天记得更新，昨天搞忘记了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9ebd585d/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9ebd585d/</url>
@@ -13257,11 +13401,11 @@
     
     
     <entry>
-      <title>今天还可以做了很多题，明天继续努力</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5317c220/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5317c220/</url>
+      <title>做小时工住的宿舍真的垃圾</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b598be07/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b598be07/</url>
       
-        <content type="html"><![CDATA[<p>把昨天没有做完的主观题今天是把他抄写完了一遍了，做完了昨天的今天又重开始了一章新的了，新的做完前面的选择题了，这一章的选择题比上一章要多很多。</p><span id="more"></span><p>特别是单选题上一章才20多道，这一章居然有50多道，真的是把我吓坏了，还好今天是把单选题和多选题都做完了，还把后面的简答题也抄了5道题。</p><p>感觉今天的状态是要比昨天好一点，昨天是一章题都没有完成，今天就是相当于完成一章了吧，明天要把这一章做完再做一章新的，那样跟上进度才会没有问题了。</p>]]></content>
+        <content type="html"><![CDATA[<p>一开始来的时候住的还可以，前几天突然要让我搬到垃圾宿舍去，下铺是住满人的，上铺那床摇摇晃晃的根本就不能做人，就这样还要每个月扣150元，不得不说是真的太坑。</p><span id="more"></span><p>明天决定自己去租房子住了，要我搬到那里根本就不能住，搬来搬去也麻烦，宁愿多出点钱住得舒服点都行了，不然还怎么上班，连睡觉都没有一个过得去地方，这活怕就是真的没有法干了。</p>]]></content>
       
       
       <categories>
@@ -13273,17 +13417,21 @@
       
         <tags>
             
-            <tag> 很多题 </tag>
+            <tag> 睡觉 </tag>
             
-            <tag> 继续努力 </tag>
+            <tag> 租房子 </tag>
             
-            <tag> 主观题 </tag>
+            <tag> 宿舍 </tag>
             
-            <tag> 选择题 </tag>
+            <tag> 小时工 </tag>
             
-            <tag> 单选题 </tag>
+            <tag> 垃圾 </tag>
             
-            <tag> 进度 </tag>
+            <tag> 突然 </tag>
+            
+            <tag> 摇摇晃晃 </tag>
+            
+            <tag> 搬来搬去 </tag>
             
         </tags>
       
@@ -13331,45 +13479,6 @@
             <tag> 制作准考证 </tag>
             
             <tag> 邀请函 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>做小时工住的宿舍真的垃圾</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b598be07/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b598be07/</url>
-      
-        <content type="html"><![CDATA[<p>一开始来的时候住的还可以，前几天突然要让我搬到垃圾宿舍去，下铺是住满人的，上铺那床摇摇晃晃的根本就不能做人，就这样还要每个月扣150元，不得不说是真的太坑。</p><span id="more"></span><p>明天决定自己去租房子住了，要我搬到那里根本就不能住，搬来搬去也麻烦，宁愿多出点钱住得舒服点都行了，不然还怎么上班，连睡觉都没有一个过得去地方，这活怕就是真的没有法干了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 睡觉 </tag>
-            
-            <tag> 租房子 </tag>
-            
-            <tag> 宿舍 </tag>
-            
-            <tag> 小时工 </tag>
-            
-            <tag> 垃圾 </tag>
-            
-            <tag> 突然 </tag>
-            
-            <tag> 摇摇晃晃 </tag>
-            
-            <tag> 搬来搬去 </tag>
             
         </tags>
       
@@ -13449,6 +13558,8 @@
             
             <tag> 电脑 </tag>
             
+            <tag> 安装步骤 </tag>
+            
             <tag> Word </tag>
             
             <tag> 微信公众号 </tag>
@@ -13478,55 +13589,6 @@
             <tag> 网站 </tag>
             
             <tag> UC浏览器 </tag>
-            
-            <tag> 安装步骤 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>关于想做有收益的自媒体，可是没电脑做不了，有没有更好的方法？</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/85c33271/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/85c33271/</url>
-      
-        <content type="html"><![CDATA[<p>对于这个问题的答案是肯定的也是可以的，就先拿头条来举例吧，今日头条是可以通过手机端来发表头条号的文章的，只要在发文时插入头条广告，有阅读量自然是会有收益的，前提是你要先把头条号在浏览器端开通，这个应该不是太难，随便找个网吧上哈网一下子就搞定的。</p><span id="more"></span><p>如果这都不能其实还有另外的一个方法，那就是用手机浏览器来开通，虽然操作起来没有电脑那么流畅，但这也是没有办法中的办法。具体做法就是打开浏览器然后把手机浏览器设置为电脑模式，手机开启旋转横屏，用搜索引擎搜索头条号，在第一条的如果没有广告就是头条号的官网，用你头条的账号登录，登录上以后选择自己要注册的类型。</p><p>这里个人一般都是选择个人自媒体这一项，其他的也不用去看，选择好以后填写账号名称，如果不想改就和头条上自己的用户昵称一样就可以。</p><p>实名认证、身份认证做完以后，你这个头条号就算注册完成了，后面就是等待通过审核了，这个等待的过程有可能是几天就通过了，那恭喜你头条号注册成功，也有可能因为种种原因没有办法通过，这一切都必须要做好心理准备，“不以物喜，不以己悲”,要的就是以平常心来对待，看看官方发来没有通过的信息是什么原因，找出自己不能通过的因素是那些，修改后再次申请重新再战。</p><p>通过以后就可以在头条手机端正大光明的发文了，而且是可以插入头条广告的，我以前就看到过是可以的，具体收益能得到多少，那就看个人的写作能力和执行力了。</p><p>以上就是我对没有电脑如何做有收益的自媒体的回答，以上只是一些简要的方法论和一些简单的步骤，具体成功与否还要看个人实践再实践，只有不断的实践才能出真知。</p><p>当然也还有其他平台的也可以，由于文章的篇幅有限，我怕写多了大家看着也累，所以就写怎么多吧，其他的可以关注我的主页，有机会在给大家介绍，看完关注我以后就去实践下吧，毕竟实践才能出真知，我再怎么写一千道一万，你不去实践那也是一片枉然。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 答案 </tag>
-            
-            <tag> 收益 </tag>
-            
-            <tag> 自媒体 </tag>
-            
-            <tag> 没电脑 </tag>
-            
-            <tag> 更好的方法 </tag>
-            
-            <tag> 浏览器端 </tag>
-            
-            <tag> 流畅 </tag>
-            
-            <tag> 头条号 </tag>
-            
-            <tag> 账号名称 </tag>
-            
-            <tag> 写作能力 </tag>
-            
-            <tag> 执行力 </tag>
-            
-            <tag> 一片枉然 </tag>
             
         </tags>
       
@@ -13565,8 +13627,6 @@
             
             <tag> 微信公众号 </tag>
             
-            <tag> 头条号 </tag>
-            
             <tag> 自媒体号 </tag>
             
             <tag> 历程 </tag>
@@ -13582,6 +13642,8 @@
             <tag> 核心 </tag>
             
             <tag> 冰山 </tag>
+            
+            <tag> 头条号 </tag>
             
             <tag> 大鱼号 </tag>
             
@@ -13907,13 +13969,13 @@
             
             <tag> 坚持 </tag>
             
+            <tag> 境界 </tag>
+            
             <tag> 写作日更 </tag>
             
             <tag> 365天 </tag>
             
             <tag> 第一次 </tag>
-            
-            <tag> 境界 </tag>
             
             <tag> 高大上 </tag>
             
@@ -14100,6 +14162,55 @@
     
     
     <entry>
+      <title>为什么分手后的情侣比离婚后的夫妻更难忘记对方？</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/b89c6fe2/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/b89c6fe2/</url>
+      
+        <content type="html"><![CDATA[<p>在生活中经常可以看到很多的夫妻离婚后再见面就和陌生人一样，对自己和对方的爱可以忘得一点都不剩，而分手后的情侣，多年再见面后还是那么深情地注视着对方，也许这份深厚的感情已经不再是爱，而是因爱而生恨，就是爱得有多深恨得就会有多深。分手后的情侣就算是带着对对方的恨意，那也是还在触动着两个人的心灵。</p><span id="more"></span><p>相比之下，离婚后的夫妻，多年再见面后就已经形同陌路，都说一日夫妻百日恩，两人相处的时间越长早已超越一日的恩情，可是感情的深厚却比不上相爱后分手的情侣，是不是相处的时间越长以后感情就会越来越淡呢？</p><p>相处的时间越长之后是对对方会更加的了解，了解得越多之后，对方的缺点和优点，自己就会清清楚楚，也就没有了继续探索的欲望了，就像喝着白开水不加茶叶也不加糖，这样过着的时日越多感情自然也就会变得平淡无奇了。</p><p>离婚后的夫妻感情比不上分手后的情侣的原因除了相处的时间越长感情越淡之外，也许，还可能是分手后的情侣还有一些未完成之事，因为没有完成所以就会一直记挂在心里，直到终于有一天完成之后，这块心里的石头才会落下，自然也才会觉得心安。</p><p>一段感情从开始到结束，并不是从恋爱到离婚，而是从恋爱到结婚，婚姻才是爱情的终点，也是爱情胜利的目的地。结婚后爱情自然就变成了亲情，从结婚到离婚后两人有的只是亲情，自然比上爱情的离开时那样刻骨铭心。</p><p>这就是未完成之事，一份完整的爱情应该是从恋爱到结婚，这才是有始有终的，有完美的开始和完整的结束，这样分手后自然也才不会有遗憾，因为这件事已经做完了，这页已经翻过去了，只有这样也才不会一直心心念念地一直记挂在心里的位置。</p><p>这也就是为什么离婚后的夫妻没有分手后的情侣那么伤感的原因了吧，离婚后的夫妻他们已经走完了他们该要走的路程，他们完成了自己该完成的事，离婚后自然也不再那样心心念念地记挂着对方，因为他们没有未完成之事，自然也没有不能放下和忘记对方的事，而分手后的情侣就不一样了，他们之间还有未完成之事，而这未完成之事就是心里的一个结，要解开这个心结，解铃还需系铃人。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 欲望 </tag>
+            
+            <tag> 分手后 </tag>
+            
+            <tag> 情侣 </tag>
+            
+            <tag> 离婚后 </tag>
+            
+            <tag> 陌生人 </tag>
+            
+            <tag> 形同陌路 </tag>
+            
+            <tag> 觉得心安 </tag>
+            
+            <tag> 刻骨铭心 </tag>
+            
+            <tag> 恋爱 </tag>
+            
+            <tag> 亲情 </tag>
+            
+            <tag> 遗憾 </tag>
+            
+            <tag> 心心念念 </tag>
+            
+            <tag> 系铃人 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>几年不写的百家号，发了一篇文章居然有收入</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9d1f6c45/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9d1f6c45/</url>
@@ -14135,6 +14246,53 @@
             <tag> 商品订单 </tag>
             
             <tag> 偶尔 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于想做有收益的自媒体，可是没电脑做不了，有没有更好的方法？</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/85c33271/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/85c33271/</url>
+      
+        <content type="html"><![CDATA[<p>对于这个问题的答案是肯定的也是可以的，就先拿头条来举例吧，今日头条是可以通过手机端来发表头条号的文章的，只要在发文时插入头条广告，有阅读量自然是会有收益的，前提是你要先把头条号在浏览器端开通，这个应该不是太难，随便找个网吧上哈网一下子就搞定的。</p><span id="more"></span><p>如果这都不能其实还有另外的一个方法，那就是用手机浏览器来开通，虽然操作起来没有电脑那么流畅，但这也是没有办法中的办法。具体做法就是打开浏览器然后把手机浏览器设置为电脑模式，手机开启旋转横屏，用搜索引擎搜索头条号，在第一条的如果没有广告就是头条号的官网，用你头条的账号登录，登录上以后选择自己要注册的类型。</p><p>这里个人一般都是选择个人自媒体这一项，其他的也不用去看，选择好以后填写账号名称，如果不想改就和头条上自己的用户昵称一样就可以。</p><p>实名认证、身份认证做完以后，你这个头条号就算注册完成了，后面就是等待通过审核了，这个等待的过程有可能是几天就通过了，那恭喜你头条号注册成功，也有可能因为种种原因没有办法通过，这一切都必须要做好心理准备，“不以物喜，不以己悲”,要的就是以平常心来对待，看看官方发来没有通过的信息是什么原因，找出自己不能通过的因素是那些，修改后再次申请重新再战。</p><p>通过以后就可以在头条手机端正大光明的发文了，而且是可以插入头条广告的，我以前就看到过是可以的，具体收益能得到多少，那就看个人的写作能力和执行力了。</p><p>以上就是我对没有电脑如何做有收益的自媒体的回答，以上只是一些简要的方法论和一些简单的步骤，具体成功与否还要看个人实践再实践，只有不断的实践才能出真知。</p><p>当然也还有其他平台的也可以，由于文章的篇幅有限，我怕写多了大家看着也累，所以就写怎么多吧，其他的可以关注我的主页，有机会在给大家介绍，看完关注我以后就去实践下吧，毕竟实践才能出真知，我再怎么写一千道一万，你不去实践那也是一片枉然。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 答案 </tag>
+            
+            <tag> 收益 </tag>
+            
+            <tag> 自媒体 </tag>
+            
+            <tag> 头条号 </tag>
+            
+            <tag> 没电脑 </tag>
+            
+            <tag> 更好的方法 </tag>
+            
+            <tag> 浏览器端 </tag>
+            
+            <tag> 流畅 </tag>
+            
+            <tag> 账号名称 </tag>
+            
+            <tag> 写作能力 </tag>
+            
+            <tag> 执行力 </tag>
+            
+            <tag> 一片枉然 </tag>
             
         </tags>
       
@@ -14204,47 +14362,6 @@
     
     
     <entry>
-      <title>利用Hexo和Github搭建属于自己完全免费的网站</title>
-      <link href="/Hexo/a5fd999c/"/>
-      <url>/Hexo/a5fd999c/</url>
-      
-        <content type="html"><![CDATA[<h1 id="一、先在电脑本地实现"><a href="#一、先在电脑本地实现" class="headerlink" title="一、先在电脑本地实现"></a>一、先在电脑本地实现</h1><p>安装Hexo之前需要下载安装：<br>• <a href="http://nodejs.org/" target="_blank" rel="noopener nofollow"><strong>Node.js</strong></a><br>• <a href="http://git-scm.com/" target="_blank" rel="noopener nofollow"><strong>Git</strong></a></p><p>如果您的电脑中已经安装上述必备程序，那么恭喜您！接下来只需要在Git Bash中使用 npm 即可完成 Hexo 的安装。</p><span id="more"></span><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-<span class="keyword">cli</span></span><br></pre></td></tr></table></figure><p>如果没有安装这是<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener nofollow"><strong>Hexo</strong></a>的官网安装教程，这两个程序安装很简单，就不多说了。</p><h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-<span class="keyword">cli</span></span><br></pre></td></tr></table></figure><p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。我这里在D盘新建blog夹。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">hexo init /d/blog</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cd</span> /d/blog</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm install</span></span><br></pre></td></tr></table></figure><h2 id="本地调试"><a href="#本地调试" class="headerlink" title="本地调试"></a>本地调试</h2><p>目前为止，已经搭建好自己的Hexo博客了，但是只能在本机上查看。执行以下命令</p><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo clean</span><br><span class="line"><span class="variable">$ </span>hexo g </span><br><span class="line"><span class="variable">$ </span>hexo s</span><br></pre></td></tr></table></figure><p>然后在浏览器中输入 localhost:4000 就可以看到自己的博客了。</p><p>但是只能在本地查看，如果想让别人也能访问，那么就需要部署到Github上面，下面我们就部署上去。</p><h1 id="二、上传Github"><a href="#二、上传Github" class="headerlink" title="二、上传Github"></a>二、上传Github</h1><p>注册<a href="https://github.com/" target="_blank" rel="noopener nofollow"><strong>Github</strong></a>账户</p><p>前往Github网站，注册一个新用户。注意用户名不要用大写，后面的二级域名要用到，大写的会出问题，用邮箱注册的一定前往邮箱去验证邮件。要不然之后可能会有小问题。</p><h2 id="创建一个新的repository"><a href="#创建一个新的repository" class="headerlink" title="创建一个新的repository"></a>创建一个新的repository</h2><p>在自己的Github主页右下角,创建一个新的repository。比如我的Github用户名为gitzhaoyang，那么我创建的repository的名字应该是 gitzhaoyang.github.io</p><p><strong>这里严重注意:</strong></p><p>一定要以你的Github用户名.github.io创建，创建的类型是必须公开的，不然后面的网页功能不能使用。假如我没有用gitzhaoyang.github.io而是用了mungo.github.io，那么当我浏览器访问博客的时候会出现404错误。这里并不是没有部署成功，而是把它部署在了这里:</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http:<span class="regexp">//gi</span>tzhaoyang.github.io/mungo.github.io</span><br></pre></td></tr></table></figure><p>所以，如果想直接gitzhaoyang.github.io访问，那么就需要和用户名保持一致。题主在这里吃了不小的苦头，最后给Github客服发邮件才知道原因。</p><h2 id="将本地的文件部署（上传）到Github账户中"><a href="#将本地的文件部署（上传）到Github账户中" class="headerlink" title="将本地的文件部署（上传）到Github账户中"></a>将本地的文件部署（上传）到Github账户中</h2><p>安装 hexo-deployer-git。</p><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git <span class="comment">--save</span></span><br></pre></td></tr></table></figure><p>编辑本地Hexo目录下文件_comfig.yml，在最后添加如下代码（在你修改时，把 gitzhaoyang 要替换成你自己的用户名）</p><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">deploy:</span> </span><br><span class="line"><span class="symbol">type:</span> git </span><br><span class="line"><span class="symbol">repository:</span> http:<span class="comment">//github.com/Gitzhaoyang/gitzhaoyang.github.io.git </span></span><br><span class="line"><span class="symbol">branch:</span> master</span><br></pre></td></tr></table></figure><p>.yml文件对格式规范要求很严格，type: repository: branch: 前面有两个空格，冒号后面都有一个空格，不然会提示错误。</p><p>配置文件完成以后就可以部署到Github了</p><p>生成站点文件并推送至远程库。执行</p><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean <span class="meta">&amp;&amp; hexo deploy</span></span><br></pre></td></tr></table></figure><p>命令。前者清除站点文件，后者重新生成站点文件并将之推送到指定的库分支。</p><p>上传完成后就可以通过gitzhaoyang.github.io看到自己的网站了。</p><h1 id="三、申请免费域名"><a href="#三、申请免费域名" class="headerlink" title="三、申请免费域名"></a>三、申请免费域名</h1><p>免费的域名可以到<a href="https://my.freenom.com/" target="_blank" rel="noopener nofollow"><strong>freenom</strong></a>这个网站去注册，注册也是很简单的，先用自己的邮箱注册这个网站，然后再选择自己想要的域名就可以了，这个网站有很多后缀的域名是可以免费使用一年的，比如我的用的是<a href="https://airibi.cf/" target="_blank" rel="noopener"><strong>airibi.cf</strong></a>就是可以直接使用一年的。</p><h1 id="四、域名解析"><a href="#四、域名解析" class="headerlink" title="四、域名解析"></a>四、域名解析</h1><p>域名注册好了以后可以通过<a href="https://www.dnspod.cn/" target="_blank" rel="noopener nofollow"><strong>dnspod</strong></a>这个网站来解析到自己GitHub的网站上，这个网站是属于腾讯的云服务，所以直接用QQ登录就可以了，进入后台以后点击域名解析，再点击添加域名然后里面就会出现两条默认的NS记录，将这两条默认的NS记录复制到刚刚注册域名的<a href="https://my.freenom.com/" target="_blank" rel="noopener nofollow"><strong>freenom</strong></a>这个网站的域名管理那里，找到自己的域名，在解析那里选择DNS记录，把复制过来的两条NS记录添加到这里,刚申请的域名就和这个DNS解析网站连在一起了。</p><p>Ping出你Github网站的二级域名的IP地址，一定要用你ping出的IP地址，因为原来的二级域名就是支持https的，用其他的IP地址可能会解析错误或者用不了https。</p><p>Ping出二级域名的IP地址后在<a href="https://www.dnspod.cn/" target="_blank" rel="noopener nofollow"><strong>dnspod</strong></a>这个网站上添加两条A记录，一条是带www的一条是不带的，记录值都是你ping出来的IP地址，以后想要通过网站SEO验证比如谷歌站长平台，也同样可以在这里添加TXT记录就可以。</p><p>解析完成后，在Github你的仓库后台添加你的域名，如果强制使用https那里还不能打勾，那就需要在等几分钟，说明解析还没有完成，解析完成后那里就可以打勾强制使用https了，并且是带有证书的，到这里域名解析完成可以用你的域名来访问你的网站了。</p><h1 id="五、添加CNAME文件"><a href="#五、添加CNAME文件" class="headerlink" title="五、添加CNAME文件"></a>五、添加CNAME文件</h1><p>在本地网站目录source文件夹里添加CNAME文件，这个CNAME文件在你添加域名的时候就会自动添加到你Github的网站根目录里，但是为方便可以把它克隆或者下载下来放到source文件夹里，或者自己在这个文件下自己创建这个文件，里面放上你的域名也是可以的，这样做每次更新网站，这个文件就不会被覆盖了，也不用每次添加域名就能访问了。</p><p>到这里免费的网站就已经搭建完成了，后面就是安装主题和修改配置文件了，这里的内容很细也很分散，我有机会再写另外的一篇。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Github </tag>
-            
-            <tag> Hexo </tag>
-            
-            <tag> 网站 </tag>
-            
-            <tag> 搭建 </tag>
-            
-            <tag> 完全免费 </tag>
-            
-            <tag> 上传 </tag>
-            
-            <tag> 免费域名 </tag>
-            
-            <tag> 域名解析 </tag>
-            
-            <tag> CNAME文件 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>利用微博，微店，和自己的网站来做搜索引擎优化</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5736d4b4/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5736d4b4/</url>
@@ -14294,6 +14411,39 @@
     
     
     <entry>
+      <title>利用电脑上的安卓模拟器来玩手机游戏赚钱</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/866b8bf1/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/866b8bf1/</url>
+      
+        <content type="html"><![CDATA[<p>玩手机游戏可以赚钱这我已经是尝试过了的，但手机的内存毕竟是比较有限的，所以我就想到用电脑的安卓模拟器来玩，电脑上都是几百G的硬盘比起手机上来说那是大了很多了。</p><span id="more"></span><p>这里我安装的是蓝叠模拟器，这个模拟器的兼容性比较好，大多数的安卓应用都是支持的，并且现在蓝叠4已经是用到安卓7的内核了，比起一般模拟器是要流畅了很多，这个最新版本的要在蓝叠的官网上才能下载到，我昨天用腾讯电脑管家下载的不是最新的，后面我又把它卸载了，重新在他官网上下载了最新版本的，之前那个是蓝叠3，后面下载的这个才是最新的蓝叠4。</p><p>模拟器安装好后还要在上面安装一个安卓软件手游赚，可以用电脑在浏览器他的官网下载，下载的时候直接选择用蓝叠打开就可以直接安装到模拟器上了。</p><p>这个软件他上面玩个游戏十多分钟就可以赚0.5元，满10元就可以提现到支付宝和微信，比起写文章还是要好很多，文章赚0.5元在头条上需要5000的阅读量，有时候花了一两个小时写一篇一两千字的文章，说不定阅读量都才只有几百个。</p><p>就先写这么多吧，我会把这上面的链接放在下面。</p><p><a href="https://www.bluestacks.cn" target="_blank" rel="noopener nofollow"><strong>蓝叠官网</strong></a></p><p><a href="http://www.shouyouzhuan.net/?ts=760987" target="_blank" rel="noopener nofollow"><strong>手游赚官网</strong></a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 赚钱 </tag>
+            
+            <tag> 安卓模拟器 </tag>
+            
+            <tag> 手机游戏 </tag>
+            
+            <tag> 蓝叠4 </tag>
+            
+            <tag> 手游赚 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>利用腾讯相册管家和图片来制作抖音和微视等短视频</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b96cead/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b96cead/</url>
@@ -14327,39 +14477,6 @@
             <tag> 拍视频 </tag>
             
             <tag> 手机相册 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>利用电脑上的安卓模拟器来玩手机游戏赚钱</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/866b8bf1/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/866b8bf1/</url>
-      
-        <content type="html"><![CDATA[<p>玩手机游戏可以赚钱这我已经是尝试过了的，但手机的内存毕竟是比较有限的，所以我就想到用电脑的安卓模拟器来玩，电脑上都是几百G的硬盘比起手机上来说那是大了很多了。</p><span id="more"></span><p>这里我安装的是蓝叠模拟器，这个模拟器的兼容性比较好，大多数的安卓应用都是支持的，并且现在蓝叠4已经是用到安卓7的内核了，比起一般模拟器是要流畅了很多，这个最新版本的要在蓝叠的官网上才能下载到，我昨天用腾讯电脑管家下载的不是最新的，后面我又把它卸载了，重新在他官网上下载了最新版本的，之前那个是蓝叠3，后面下载的这个才是最新的蓝叠4。</p><p>模拟器安装好后还要在上面安装一个安卓软件手游赚，可以用电脑在浏览器他的官网下载，下载的时候直接选择用蓝叠打开就可以直接安装到模拟器上了。</p><p>这个软件他上面玩个游戏十多分钟就可以赚0.5元，满10元就可以提现到支付宝和微信，比起写文章还是要好很多，文章赚0.5元在头条上需要5000的阅读量，有时候花了一两个小时写一篇一两千字的文章，说不定阅读量都才只有几百个。</p><p>就先写这么多吧，我会把这上面的链接放在下面。</p><p><a href="https://www.bluestacks.cn" target="_blank" rel="noopener nofollow"><strong>蓝叠官网</strong></a></p><p><a href="http://www.shouyouzhuan.net/?ts=760987" target="_blank" rel="noopener nofollow"><strong>手游赚官网</strong></a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 赚钱 </tag>
-            
-            <tag> 安卓模拟器 </tag>
-            
-            <tag> 手机游戏 </tag>
-            
-            <tag> 蓝叠4 </tag>
-            
-            <tag> 手游赚 </tag>
             
         </tags>
       
@@ -14511,6 +14628,43 @@
     
     
     <entry>
+      <title>去年办的澳门通行证快过期了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f2d44d2/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f2d44d2/</url>
+      
+        <content type="html"><![CDATA[<p>今天突然在网上看到澳门回归21周年了，去年是20周年，还搞了一个很隆重的烟花表演，我也在去年澳门回归20周年过后的几天去办的澳门同行证，想着是今年五一的时候去澳门玩一下的，可是谁知道后面发生了疫情，一直到现在。</p><span id="more"></span><p>现在去好像也还要做核酸检测才可以过去，想着去办证的钱也是白白浪费了，因为做核酸检测又还得花钱，去澳门玩有得花钱，所以还不如不去了。</p><p>又都是这疫情闹的把去年的好多计划都给改变了，去年还看过一本写中国经济2020年的书，作者写这边书的时候还是2019年那时候应该还没有发生疫情，估计连他也没有想到的是，他的预测根本不符合今年的经济形式了，疫情对经济各方面的影响都是巨大的，没有人能提前预测到。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 澳门 </tag>
+            
+            <tag> 通行证 </tag>
+            
+            <tag> 21周年 </tag>
+            
+            <tag> 白白浪费 </tag>
+            
+            <tag> 核酸检测 </tag>
+            
+            <tag> 中国经济 </tag>
+            
+            <tag> 疫情 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>原来想挖狗狗币的人真的很多啊</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dbd37ddf/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dbd37ddf/</url>
@@ -14552,66 +14706,39 @@
     
     
     <entry>
-      <title>去年办的澳门通行证快过期了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f2d44d2/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f2d44d2/</url>
+      <title>利用Hexo和Github搭建属于自己完全免费的网站</title>
+      <link href="/Hexo/a5fd999c/"/>
+      <url>/Hexo/a5fd999c/</url>
       
-        <content type="html"><![CDATA[<p>今天突然在网上看到澳门回归21周年了，去年是20周年，还搞了一个很隆重的烟花表演，我也在去年澳门回归20周年过后的几天去办的澳门同行证，想着是今年五一的时候去澳门玩一下的，可是谁知道后面发生了疫情，一直到现在。</p><span id="more"></span><p>现在去好像也还要做核酸检测才可以过去，想着去办证的钱也是白白浪费了，因为做核酸检测又还得花钱，去澳门玩有得花钱，所以还不如不去了。</p><p>又都是这疫情闹的把去年的好多计划都给改变了，去年还看过一本写中国经济2020年的书，作者写这边书的时候还是2019年那时候应该还没有发生疫情，估计连他也没有想到的是，他的预测根本不符合今年的经济形式了，疫情对经济各方面的影响都是巨大的，没有人能提前预测到。</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="一、先在电脑本地实现"><a href="#一、先在电脑本地实现" class="headerlink" title="一、先在电脑本地实现"></a>一、先在电脑本地实现</h1><p>安装Hexo之前需要下载安装：<br>• <a href="http://nodejs.org/" target="_blank" rel="noopener nofollow"><strong>Node.js</strong></a><br>• <a href="http://git-scm.com/" target="_blank" rel="noopener nofollow"><strong>Git</strong></a></p><p>如果您的电脑中已经安装上述必备程序，那么恭喜您！接下来只需要在Git Bash中使用 npm 即可完成 Hexo 的安装。</p><span id="more"></span><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-<span class="keyword">cli</span></span><br></pre></td></tr></table></figure><p>如果没有安装这是<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener nofollow"><strong>Hexo</strong></a>的官网安装教程，这两个程序安装很简单，就不多说了。</p><h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-<span class="keyword">cli</span></span><br></pre></td></tr></table></figure><p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。我这里在D盘新建blog夹。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">hexo init /d/blog</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cd</span> /d/blog</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm install</span></span><br></pre></td></tr></table></figure><h2 id="本地调试"><a href="#本地调试" class="headerlink" title="本地调试"></a>本地调试</h2><p>目前为止，已经搭建好自己的Hexo博客了，但是只能在本机上查看。执行以下命令</p><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo clean</span><br><span class="line"><span class="variable">$ </span>hexo g </span><br><span class="line"><span class="variable">$ </span>hexo s</span><br></pre></td></tr></table></figure><p>然后在浏览器中输入 localhost:4000 就可以看到自己的博客了。</p><p>但是只能在本地查看，如果想让别人也能访问，那么就需要部署到Github上面，下面我们就部署上去。</p><h1 id="二、上传Github"><a href="#二、上传Github" class="headerlink" title="二、上传Github"></a>二、上传Github</h1><p>注册<a href="https://github.com/" target="_blank" rel="noopener nofollow"><strong>Github</strong></a>账户</p><p>前往Github网站，注册一个新用户。注意用户名不要用大写，后面的二级域名要用到，大写的会出问题，用邮箱注册的一定前往邮箱去验证邮件。要不然之后可能会有小问题。</p><h2 id="创建一个新的repository"><a href="#创建一个新的repository" class="headerlink" title="创建一个新的repository"></a>创建一个新的repository</h2><p>在自己的Github主页右下角,创建一个新的repository。比如我的Github用户名为gitzhaoyang，那么我创建的repository的名字应该是 gitzhaoyang.github.io</p><p><strong>这里严重注意:</strong></p><p>一定要以你的Github用户名.github.io创建，创建的类型是必须公开的，不然后面的网页功能不能使用。假如我没有用gitzhaoyang.github.io而是用了mungo.github.io，那么当我浏览器访问博客的时候会出现404错误。这里并不是没有部署成功，而是把它部署在了这里:</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http:<span class="regexp">//gi</span>tzhaoyang.github.io/mungo.github.io</span><br></pre></td></tr></table></figure><p>所以，如果想直接gitzhaoyang.github.io访问，那么就需要和用户名保持一致。题主在这里吃了不小的苦头，最后给Github客服发邮件才知道原因。</p><h2 id="将本地的文件部署（上传）到Github账户中"><a href="#将本地的文件部署（上传）到Github账户中" class="headerlink" title="将本地的文件部署（上传）到Github账户中"></a>将本地的文件部署（上传）到Github账户中</h2><p>安装 hexo-deployer-git。</p><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git <span class="comment">--save</span></span><br></pre></td></tr></table></figure><p>编辑本地Hexo目录下文件_comfig.yml，在最后添加如下代码（在你修改时，把 gitzhaoyang 要替换成你自己的用户名）</p><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">deploy:</span> </span><br><span class="line"><span class="symbol">type:</span> git </span><br><span class="line"><span class="symbol">repository:</span> http:<span class="comment">//github.com/Gitzhaoyang/gitzhaoyang.github.io.git </span></span><br><span class="line"><span class="symbol">branch:</span> master</span><br></pre></td></tr></table></figure><p>.yml文件对格式规范要求很严格，type: repository: branch: 前面有两个空格，冒号后面都有一个空格，不然会提示错误。</p><p>配置文件完成以后就可以部署到Github了</p><p>生成站点文件并推送至远程库。执行</p><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean <span class="meta">&amp;&amp; hexo deploy</span></span><br></pre></td></tr></table></figure><p>命令。前者清除站点文件，后者重新生成站点文件并将之推送到指定的库分支。</p><p>上传完成后就可以通过gitzhaoyang.github.io看到自己的网站了。</p><h1 id="三、申请免费域名"><a href="#三、申请免费域名" class="headerlink" title="三、申请免费域名"></a>三、申请免费域名</h1><p>免费的域名可以到<a href="https://my.freenom.com/" target="_blank" rel="noopener nofollow"><strong>freenom</strong></a>这个网站去注册，注册也是很简单的，先用自己的邮箱注册这个网站，然后再选择自己想要的域名就可以了，这个网站有很多后缀的域名是可以免费使用一年的，比如我的用的是<a href="https://airibi.cf/" target="_blank" rel="noopener"><strong>airibi.cf</strong></a>就是可以直接使用一年的。</p><h1 id="四、域名解析"><a href="#四、域名解析" class="headerlink" title="四、域名解析"></a>四、域名解析</h1><p>域名注册好了以后可以通过<a href="https://www.dnspod.cn/" target="_blank" rel="noopener nofollow"><strong>dnspod</strong></a>这个网站来解析到自己GitHub的网站上，这个网站是属于腾讯的云服务，所以直接用QQ登录就可以了，进入后台以后点击域名解析，再点击添加域名然后里面就会出现两条默认的NS记录，将这两条默认的NS记录复制到刚刚注册域名的<a href="https://my.freenom.com/" target="_blank" rel="noopener nofollow"><strong>freenom</strong></a>这个网站的域名管理那里，找到自己的域名，在解析那里选择DNS记录，把复制过来的两条NS记录添加到这里,刚申请的域名就和这个DNS解析网站连在一起了。</p><p>Ping出你Github网站的二级域名的IP地址，一定要用你ping出的IP地址，因为原来的二级域名就是支持https的，用其他的IP地址可能会解析错误或者用不了https。</p><p>Ping出二级域名的IP地址后在<a href="https://www.dnspod.cn/" target="_blank" rel="noopener nofollow"><strong>dnspod</strong></a>这个网站上添加两条A记录，一条是带www的一条是不带的，记录值都是你ping出来的IP地址，以后想要通过网站SEO验证比如谷歌站长平台，也同样可以在这里添加TXT记录就可以。</p><p>解析完成后，在Github你的仓库后台添加你的域名，如果强制使用https那里还不能打勾，那就需要在等几分钟，说明解析还没有完成，解析完成后那里就可以打勾强制使用https了，并且是带有证书的，到这里域名解析完成可以用你的域名来访问你的网站了。</p><h1 id="五、添加CNAME文件"><a href="#五、添加CNAME文件" class="headerlink" title="五、添加CNAME文件"></a>五、添加CNAME文件</h1><p>在本地网站目录source文件夹里添加CNAME文件，这个CNAME文件在你添加域名的时候就会自动添加到你Github的网站根目录里，但是为方便可以把它克隆或者下载下来放到source文件夹里，或者自己在这个文件下自己创建这个文件，里面放上你的域名也是可以的，这样做每次更新网站，这个文件就不会被覆盖了，也不用每次添加域名就能访问了。</p><p>到这里免费的网站就已经搭建完成了，后面就是安装主题和修改配置文件了，这里的内容很细也很分散，我有机会再写另外的一篇。</p>]]></content>
       
       
       <categories>
           
-          <category> 日常记录 </category>
+          <category> Hexo </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 澳门 </tag>
+            <tag> Github </tag>
             
-            <tag> 通行证 </tag>
+            <tag> Hexo </tag>
             
-            <tag> 21周年 </tag>
+            <tag> 网站 </tag>
             
-            <tag> 白白浪费 </tag>
+            <tag> 搭建 </tag>
             
-            <tag> 核酸检测 </tag>
+            <tag> 完全免费 </tag>
             
-            <tag> 中国经济 </tag>
+            <tag> 上传 </tag>
             
-            <tag> 疫情 </tag>
+            <tag> 免费域名 </tag>
             
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>又不知道该写什么了，开始犯难了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/31ccc028/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/31ccc028/</url>
-      
-        <content type="html"><![CDATA[<p>写着写着就不知道该写些什么了，每到这个时候就会感觉开始犯难了，既然是不知道要想着写什么，那就不用想了，直接打字写就是了，反正想半天也是什么都想不出来，只又边写着边想才能写出来。</p><span id="more"></span><p>如果是一直只停留在一开始要写什么的思维里面，那肯定是什么都写不出来的，写东西只有动笔了才有进一步的思维，一直想但是一直都不知道写什么永远只会停留在第一步，就是想的这个阶段。</p><p>想的东西只有写在纸上，把它写出来才算是有点眉目，如果是只想但是没有动笔写，那怎么感觉都想不出什么东西。在写的过程中自然就会把想的东西慢慢理通顺了，在不知道写什么的时候直接动笔顺便写就是最好的方法。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
+            <tag> 域名解析 </tag>
             
-            <tag> 写什么 </tag>
-            
-            <tag> 自然 </tag>
-            
-            <tag> 犯难 </tag>
-            
-            <tag> 打字 </tag>
+            <tag> CNAME文件 </tag>
             
         </tags>
       
@@ -14653,6 +14780,37 @@
             <tag> 下班 </tag>
             
             <tag> 工衣 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>又不知道该写什么了，开始犯难了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/31ccc028/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/31ccc028/</url>
+      
+        <content type="html"><![CDATA[<p>写着写着就不知道该写些什么了，每到这个时候就会感觉开始犯难了，既然是不知道要想着写什么，那就不用想了，直接打字写就是了，反正想半天也是什么都想不出来，只又边写着边想才能写出来。</p><span id="more"></span><p>如果是一直只停留在一开始要写什么的思维里面，那肯定是什么都写不出来的，写东西只有动笔了才有进一步的思维，一直想但是一直都不知道写什么永远只会停留在第一步，就是想的这个阶段。</p><p>想的东西只有写在纸上，把它写出来才算是有点眉目，如果是只想但是没有动笔写，那怎么感觉都想不出什么东西。在写的过程中自然就会把想的东西慢慢理通顺了，在不知道写什么的时候直接动笔顺便写就是最好的方法。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 写什么 </tag>
+            
+            <tag> 自然 </tag>
+            
+            <tag> 犯难 </tag>
+            
+            <tag> 打字 </tag>
             
         </tags>
       
@@ -15010,6 +15168,41 @@
     
     
     <entry>
+      <title>人力资源管理（一）自考通论述题1</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/52e18ab8/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/52e18ab8/</url>
+      
+        <content type="html"><![CDATA[<h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="四、论述题"><a href="#四、论述题" class="headerlink" title="四、论述题"></a>四、论述题</h2><p><strong>36.如何进行绩效反馈面谈? (P239-240)</strong></p><p>答:绩效反馈有正式的绩效反馈和非正式的绩效反馈，以及口头绩效反馈和书面绩效反馈等不同形式。其中在绩效考核之后所进行的绩效反馈面谈是一种重要和有效的绩效反馈形式。</p><span id="more"></span><p>(1). 绩效反馈面谈的准备。为了有效地进行绩效反馈面谈。在面谈之前管理者和员工双方都要进行充分的准备。这种面谈前的准备包括:面谈时间、面谈场所和面谈所需资料的准备。</p><p>(2). 应注意的问题有:</p><p>  ①. 确定好面谈目的;<br>  ②. 面谈内容要具体;<br>  ③. 肯定员工的优点与进步;<br>  ④. 尽量减少批评;<br>  ⑤. 鼓励员工积极参与面谈过程;<br>  ⑥. 避免冲突与对抗;<br>  ⑦. 重点放在问题的解决上;<br>  ⑧. 制定具体的绩效改善目标。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 问题 </tag>
+            
+            <tag> 绩效反馈 </tag>
+            
+            <tag> 面谈 </tag>
+            
+            <tag> 资料 </tag>
+            
+            <tag> 正式 </tag>
+            
+            <tag> 考核 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>在win10的虚拟机上安装的黑苹果，分辨率却只有720P</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/497bf4b/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/497bf4b/</url>
@@ -15028,6 +15221,8 @@
             
             <tag> win10 </tag>
             
+            <tag> 格式化 </tag>
+            
             <tag> 1080P </tag>
             
             <tag> 虚拟机 </tag>
@@ -15038,7 +15233,46 @@
             
             <tag> 苹果 </tag>
             
-            <tag> 格式化 </tag>
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>在模拟器上用自动点击软件刷短视频</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Infinity/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Infinity/</url>
+      
+        <content type="html"><![CDATA[<p>在模拟器上自动刷短视频确实是可以的，也有一款这样的自动点击软件，但是短视频软件一更新了就容易闪退，模拟器的适配做得不行，上面的应用商店的软件都是几年前的，如果不闪退都是可以用新版的短视频软件的。</p><span id="more"></span><p>当然只用旧版的也是可以的，只是旧版的没有那么多新功能了，旧版都没有红包挂件，看别人直播也看不了，提示要更新了才可以，所以想用模拟器来刷短视频赚钱有点不可能啊，主要的是模拟器的软件适配太落后了，在上面安装新版的软件根本就用不了。</p><p>而很多软件是要必须更新了才可以用的，我用蓝蝶这个模拟器试过新版的快手极速版是不闪退的，但是新版的支付宝用不了，微信没有试过，毕竟我也没有那么多微信号，所以就没有试，一个账号是只能绑定一个微信。所以只能用到支付宝了，但是却在登录那里黑屏了。</p><p>用逍遥模拟器直接是闪退，无论是游戏还是短视频软件，只要一更新了都闪退，目前就试过这两款模拟器，有时间再试下其他的，看有没有更好用的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 直播 </tag>
+            
+            <tag> 支付宝 </tag>
+            
+            <tag> 微信 </tag>
+            
+            <tag> 模拟器 </tag>
+            
+            <tag> 自动点击 </tag>
+            
+            <tag> 刷短视频 </tag>
+            
+            <tag> 容易闪退 </tag>
+            
+            <tag> 旧版 </tag>
+            
+            <tag> 红包挂件 </tag>
             
         </tags>
       
@@ -15082,47 +15316,6 @@
             <tag> U盘 </tag>
             
             <tag> 镜像 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>在模拟器上用自动点击软件刷短视频</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Infinity/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Infinity/</url>
-      
-        <content type="html"><![CDATA[<p>在模拟器上自动刷短视频确实是可以的，也有一款这样的自动点击软件，但是短视频软件一更新了就容易闪退，模拟器的适配做得不行，上面的应用商店的软件都是几年前的，如果不闪退都是可以用新版的短视频软件的。</p><span id="more"></span><p>当然只用旧版的也是可以的，只是旧版的没有那么多新功能了，旧版都没有红包挂件，看别人直播也看不了，提示要更新了才可以，所以想用模拟器来刷短视频赚钱有点不可能啊，主要的是模拟器的软件适配太落后了，在上面安装新版的软件根本就用不了。</p><p>而很多软件是要必须更新了才可以用的，我用蓝蝶这个模拟器试过新版的快手极速版是不闪退的，但是新版的支付宝用不了，微信没有试过，毕竟我也没有那么多微信号，所以就没有试，一个账号是只能绑定一个微信。所以只能用到支付宝了，但是却在登录那里黑屏了。</p><p>用逍遥模拟器直接是闪退，无论是游戏还是短视频软件，只要一更新了都闪退，目前就试过这两款模拟器，有时间再试下其他的，看有没有更好用的。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 直播 </tag>
-            
-            <tag> 支付宝 </tag>
-            
-            <tag> 微信 </tag>
-            
-            <tag> 模拟器 </tag>
-            
-            <tag> 自动点击 </tag>
-            
-            <tag> 刷短视频 </tag>
-            
-            <tag> 容易闪退 </tag>
-            
-            <tag> 旧版 </tag>
-            
-            <tag> 红包挂件 </tag>
             
         </tags>
       
@@ -16926,6 +17119,8 @@
             
             <tag> 写文章 </tag>
             
+            <tag> 源泉 </tag>
+            
             <tag> 丰富 </tag>
             
             <tag> 白发皇妃 </tag>
@@ -16957,8 +17152,6 @@
             <tag> 靓丽 </tag>
             
             <tag> 黯然失色 </tag>
-            
-            <tag> 源泉 </tag>
             
             <tag> 文笔优美 </tag>
             
@@ -17758,49 +17951,6 @@
     
     
     <entry>
-      <title>手机突然连不上WiFi，原来是第一个路由器的原因</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b72f4066/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b72f4066/</url>
-      
-        <content type="html"><![CDATA[<p>我的路由器是中继另外一个路由器的，但是前一秒还在刷贴吧，是可以连着WiFi上网的，后一秒就突然的不行了，WiFi突然的就断开了。</p><span id="more"></span><p>说来也是奇怪我的移动WiFi手机突然间也连不上了，手机连WiFi那设置那里就一直在不停换着连，不停的跳动一个都连不上。</p><p>但是我的另外一个手机确是可以连到我自己的那个中继路由器的，我当时也真的觉得很奇怪，要连不上应该是一个都连不上才对啊，并且这个手机是几年前的了，有时候连这个WiFi6信号的时候都经常断开。</p><p>一直也找不出是什么原因，因为我登录到第一个路由器的管理后台看着也是正常的，但是我的我的小米10手机就是怎么也连不上这个WiFi。</p><p>后来试着把第一个路由器在网页后台管理界面重启以后试着连了以下发现可以了，我觉得应该这第一个路由器长时间没有重启导致的故障。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> WiFi </tag>
-            
-            <tag> 路由器 </tag>
-            
-            <tag> 中继 </tag>
-            
-            <tag> 手机 </tag>
-            
-            <tag> 管理界面 </tag>
-            
-            <tag> 断开 </tag>
-            
-            <tag> 重启 </tag>
-            
-            <tag> 故障 </tag>
-            
-            <tag> 网页 </tag>
-            
-            <tag> 后台 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>找不到写的了，随便更新一篇算了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/396a0ad4/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/396a0ad4/</url>
@@ -17979,11 +18129,11 @@
     
     
     <entry>
-      <title>按照别人的要求写稿我也不会写了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c96915ea/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c96915ea/</url>
+      <title>手机突然连不上WiFi，原来是第一个路由器的原因</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b72f4066/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b72f4066/</url>
       
-        <content type="html"><![CDATA[<p>我是会写文章，但是只会写我熟悉或者感兴趣的，要让我去写的别的我也不会，因为我都不了解让我怎么去写，今天在boos直聘上有个人让我写篇《大秦帝国之纵横》第一集试稿，我一头雾水啊，因为这个电视剧我都没有去看过，这是2012年的电视剧了。</p><span id="more"></span><p>现在做短视频剪辑的是没有题材了吗，又把多年前的老电视剧翻出来再啃一篇，但是只要把解说稿配上音好像是真的有人看的，也是难为这些人了，自己不会写只好找人写了，但是其实我也不会写因为我没有写过这样的文章，我把这个电视剧第一集从头到尾看了一篇我还是不知道这个到底要怎么写才行。</p><p>可能后面我还是会去试着写一下，写一篇发过去试一下，如果她说不行那就是在骗稿了，想让别人帮她写又不想给钱的人现在毕竟是真的很多啊，一想到这样我就不想给她写了，因为本来自己就不怎么会写这个类型的，绞劲脑汁去想怎么写了，还没有钱，感觉也是得不偿失，但是有些事无论是真是假也得去试下才行吧。</p>]]></content>
+        <content type="html"><![CDATA[<p>我的路由器是中继另外一个路由器的，但是前一秒还在刷贴吧，是可以连着WiFi上网的，后一秒就突然的不行了，WiFi突然的就断开了。</p><span id="more"></span><p>说来也是奇怪我的移动WiFi手机突然间也连不上了，手机连WiFi那设置那里就一直在不停换着连，不停的跳动一个都连不上。</p><p>但是我的另外一个手机确是可以连到我自己的那个中继路由器的，我当时也真的觉得很奇怪，要连不上应该是一个都连不上才对啊，并且这个手机是几年前的了，有时候连这个WiFi6信号的时候都经常断开。</p><p>一直也找不出是什么原因，因为我登录到第一个路由器的管理后台看着也是正常的，但是我的我的小米10手机就是怎么也连不上这个WiFi。</p><p>后来试着把第一个路由器在网页后台管理界面重启以后试着连了以下发现可以了，我觉得应该这第一个路由器长时间没有重启导致的故障。</p>]]></content>
       
       
       <categories>
@@ -17995,31 +18145,25 @@
       
         <tags>
             
-            <tag> 电视剧 </tag>
+            <tag> WiFi </tag>
             
-            <tag> 写文章 </tag>
+            <tag> 路由器 </tag>
             
-            <tag> 感兴趣 </tag>
+            <tag> 中继 </tag>
             
-            <tag> 要求 </tag>
+            <tag> 手机 </tag>
             
-            <tag> 写稿 </tag>
+            <tag> 管理界面 </tag>
             
-            <tag> 熟悉 </tag>
+            <tag> 断开 </tag>
             
-            <tag> boos直聘 </tag>
+            <tag> 重启 </tag>
             
-            <tag> 大秦帝国 </tag>
+            <tag> 故障 </tag>
             
-            <tag> 纵横 </tag>
+            <tag> 网页 </tag>
             
-            <tag> 一头雾水 </tag>
-            
-            <tag> 解说稿 </tag>
-            
-            <tag> 骗稿 </tag>
-            
-            <tag> 绞劲脑汁 </tag>
+            <tag> 后台 </tag>
             
         </tags>
       
@@ -18083,45 +18227,6 @@
     
     
     <entry>
-      <title>挖狗狗币教程是终于写好了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/fb28f637/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/fb28f637/</url>
-      
-        <content type="html"><![CDATA[<p>教程其实也不难，就是用到的截图要几张，因为我写得比较详细，所以是差不多每一步都截图并且标注说明了，所以弄起来就比较费时间一点。</p><span id="more"></span><p>但是其实做起来就真的很简单了，因为就只用到两个网站，还有安装两个软件就可以了，但是为了能让更多的人看懂我还是把每一步都做到详细的写出来，并且是用的图文并茂的形式，让人一看就一目了然。</p><p>教程是有了，但是还是需要自己去实践摸索的，不实践看了再多还是不会，可能教程也不是很全面，但是小细节的东西真的不难的，就和安装一个软件一样没有什么区别，这个也就是安装两个软件然后设置一下就可以了，教程地址就放在下面了，平台上不发了，发在我的博客网站上了，这是教程地址：<a href="https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6d36d897/%22%E6%8C%96%E7%8B%97%E7%8B%97%E5%B8%81%E6%95%99%E7%A8%8B%22">挖狗狗币教程</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-            <tag> 挖狗狗币 </tag>
-            
-            <tag> 截图 </tag>
-            
-            <tag> 两个网站 </tag>
-            
-            <tag> 一目了然 </tag>
-            
-            <tag> 实践摸索 </tag>
-            
-            <tag> 博客网站 </tag>
-            
-            <tag> 教程地址 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>接着昨天写回基地的事</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/886586d8/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/886586d8/</url>
@@ -18159,6 +18264,94 @@
             <tag> 土豆炒肉片 </tag>
             
             <tag> 锅碗 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>按照别人的要求写稿我也不会写了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c96915ea/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c96915ea/</url>
+      
+        <content type="html"><![CDATA[<p>我是会写文章，但是只会写我熟悉或者感兴趣的，要让我去写的别的我也不会，因为我都不了解让我怎么去写，今天在boos直聘上有个人让我写篇《大秦帝国之纵横》第一集试稿，我一头雾水啊，因为这个电视剧我都没有去看过，这是2012年的电视剧了。</p><span id="more"></span><p>现在做短视频剪辑的是没有题材了吗，又把多年前的老电视剧翻出来再啃一篇，但是只要把解说稿配上音好像是真的有人看的，也是难为这些人了，自己不会写只好找人写了，但是其实我也不会写因为我没有写过这样的文章，我把这个电视剧第一集从头到尾看了一篇我还是不知道这个到底要怎么写才行。</p><p>可能后面我还是会去试着写一下，写一篇发过去试一下，如果她说不行那就是在骗稿了，想让别人帮她写又不想给钱的人现在毕竟是真的很多啊，一想到这样我就不想给她写了，因为本来自己就不怎么会写这个类型的，绞劲脑汁去想怎么写了，还没有钱，感觉也是得不偿失，但是有些事无论是真是假也得去试下才行吧。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电视剧 </tag>
+            
+            <tag> 写文章 </tag>
+            
+            <tag> 感兴趣 </tag>
+            
+            <tag> 要求 </tag>
+            
+            <tag> 写稿 </tag>
+            
+            <tag> 熟悉 </tag>
+            
+            <tag> boos直聘 </tag>
+            
+            <tag> 大秦帝国 </tag>
+            
+            <tag> 纵横 </tag>
+            
+            <tag> 一头雾水 </tag>
+            
+            <tag> 解说稿 </tag>
+            
+            <tag> 骗稿 </tag>
+            
+            <tag> 绞劲脑汁 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>挖狗狗币教程是终于写好了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/fb28f637/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/fb28f637/</url>
+      
+        <content type="html"><![CDATA[<p>教程其实也不难，就是用到的截图要几张，因为我写得比较详细，所以是差不多每一步都截图并且标注说明了，所以弄起来就比较费时间一点。</p><span id="more"></span><p>但是其实做起来就真的很简单了，因为就只用到两个网站，还有安装两个软件就可以了，但是为了能让更多的人看懂我还是把每一步都做到详细的写出来，并且是用的图文并茂的形式，让人一看就一目了然。</p><p>教程是有了，但是还是需要自己去实践摸索的，不实践看了再多还是不会，可能教程也不是很全面，但是小细节的东西真的不难的，就和安装一个软件一样没有什么区别，这个也就是安装两个软件然后设置一下就可以了，教程地址就放在下面了，平台上不发了，发在我的博客网站上了，这是教程地址：<a href="https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6d36d897/%22%E6%8C%96%E7%8B%97%E7%8B%97%E5%B8%81%E6%95%99%E7%A8%8B%22">挖狗狗币教程</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> 挖狗狗币 </tag>
+            
+            <tag> 截图 </tag>
+            
+            <tag> 两个网站 </tag>
+            
+            <tag> 一目了然 </tag>
+            
+            <tag> 实践摸索 </tag>
+            
+            <tag> 博客网站 </tag>
+            
+            <tag> 教程地址 </tag>
             
         </tags>
       
@@ -18341,6 +18534,45 @@
     
     
     <entry>
+      <title>明天要去打疫苗了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/fa93fc42/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/fa93fc42/</url>
+      
+        <content type="html"><![CDATA[<p>最近村委会的大喇叭一直都在宣传这个事，但是由于之前用的是广东话，我也听不懂她说的是什么，等到今天换成一个男的用普通话宣传，那个女的还是用广东话，用普通话说了我才听懂说的是什么东西。</p><span id="more"></span><p>意思就是要尽快去镇卫生院打疫苗，要在18号之前全部打完，租房的租客就要去房东那里拿预约单，拿了预约单去就不用排队了直接打。</p><p>只要不要排队应该还是很快的吧，我是写的明天去，明天我还是骑电动车去打了吧，反正都要打，早打了好点，前几天是因为要考试一直都没有时间去，现在有时间了，打了也好找个厂上班。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 考试 </tag>
+            
+            <tag> 明天 </tag>
+            
+            <tag> 打疫苗 </tag>
+            
+            <tag> 村委会 </tag>
+            
+            <tag> 大喇叭 </tag>
+            
+            <tag> 广东话 </tag>
+            
+            <tag> 普通话 </tag>
+            
+            <tag> 排队 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>明天要去其他地方上班，可能日更计划不能更新了</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/5261a1a7/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/5261a1a7/</url>
@@ -18390,45 +18622,6 @@
             <tag> 空想 </tag>
             
             <tag> 真情难求 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>明天要去打疫苗了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/fa93fc42/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/fa93fc42/</url>
-      
-        <content type="html"><![CDATA[<p>最近村委会的大喇叭一直都在宣传这个事，但是由于之前用的是广东话，我也听不懂她说的是什么，等到今天换成一个男的用普通话宣传，那个女的还是用广东话，用普通话说了我才听懂说的是什么东西。</p><span id="more"></span><p>意思就是要尽快去镇卫生院打疫苗，要在18号之前全部打完，租房的租客就要去房东那里拿预约单，拿了预约单去就不用排队了直接打。</p><p>只要不要排队应该还是很快的吧，我是写的明天去，明天我还是骑电动车去打了吧，反正都要打，早打了好点，前几天是因为要考试一直都没有时间去，现在有时间了，打了也好找个厂上班。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 考试 </tag>
-            
-            <tag> 明天 </tag>
-            
-            <tag> 打疫苗 </tag>
-            
-            <tag> 村委会 </tag>
-            
-            <tag> 大喇叭 </tag>
-            
-            <tag> 广东话 </tag>
-            
-            <tag> 普通话 </tag>
-            
-            <tag> 排队 </tag>
             
         </tags>
       
@@ -18534,49 +18727,6 @@
             <tag> 袅袅 </tag>
             
             <tag> 人世间 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>春天虽然到了，但却不知路在何方</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c977f3e7/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c977f3e7/</url>
-      
-        <content type="html"><![CDATA[<p>一年的春节过完了，春天也到了，本是一个充满朝气蓬勃的季节，但却让我感到很迷茫，我不知道我的路该如何走下去了，突然间我发现我什么都不会了，而且还正在与这个时代脱轨了。</p><span id="more"></span><p>曾经有很多时候我认为自己很厉害，认为自己的想法是独一无二的，但是现在回想起来却不是这样了，以前走过的那些路现在都不想去再回想，也不想重复的去走，那样会真的感觉太累，整个心灵都觉得疲惫不堪。</p><p>当下的我感觉眼神里面已经了无希望，每天的活着就是如同行尸走肉一般了，我眼前没有路可走，我后退的方向好像路也是被堵死了，我每天都活在这种无形的压力之中，我不知道我为什么活着，因为我已经是找不到活着的理由了。</p><p>这春天的季节风景很美，但是我的眼里满是迷茫，我也感觉不出美的存在，每当要写一篇文章的时候，我居然不知道要写什么，那就只能写一下自己的感受了，我不知都写些什么，就像我每天都不知道自己活着在干嘛一样了。</p><p>有的时候也曾想过要努力的改变当下的处境，又有时候想要通过自杀了来了解与这世界上的一切，但是还是什么都没有发生，我还是这样一如既往屈辱的活着，我想我还是活着好一点吧，活着虽然很痛苦，但是死亡也要很大的勇气，虽然我这样的活着有一天也会死去，但是那样的一切都交给时间好了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 心灵 </tag>
-            
-            <tag> 痛苦 </tag>
-            
-            <tag> 春天 </tag>
-            
-            <tag> 重复 </tag>
-            
-            <tag> 路在何方 </tag>
-            
-            <tag> 曾经 </tag>
-            
-            <tag> 回想 </tag>
-            
-            <tag> 疲惫不堪 </tag>
-            
-            <tag> 迷茫 </tag>
-            
-            <tag> 屈辱 </tag>
             
         </tags>
       
@@ -18752,6 +18902,49 @@
     
     
     <entry>
+      <title>春天虽然到了，但却不知路在何方</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c977f3e7/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c977f3e7/</url>
+      
+        <content type="html"><![CDATA[<p>一年的春节过完了，春天也到了，本是一个充满朝气蓬勃的季节，但却让我感到很迷茫，我不知道我的路该如何走下去了，突然间我发现我什么都不会了，而且还正在与这个时代脱轨了。</p><span id="more"></span><p>曾经有很多时候我认为自己很厉害，认为自己的想法是独一无二的，但是现在回想起来却不是这样了，以前走过的那些路现在都不想去再回想，也不想重复的去走，那样会真的感觉太累，整个心灵都觉得疲惫不堪。</p><p>当下的我感觉眼神里面已经了无希望，每天的活着就是如同行尸走肉一般了，我眼前没有路可走，我后退的方向好像路也是被堵死了，我每天都活在这种无形的压力之中，我不知道我为什么活着，因为我已经是找不到活着的理由了。</p><p>这春天的季节风景很美，但是我的眼里满是迷茫，我也感觉不出美的存在，每当要写一篇文章的时候，我居然不知道要写什么，那就只能写一下自己的感受了，我不知都写些什么，就像我每天都不知道自己活着在干嘛一样了。</p><p>有的时候也曾想过要努力的改变当下的处境，又有时候想要通过自杀了来了解与这世界上的一切，但是还是什么都没有发生，我还是这样一如既往屈辱的活着，我想我还是活着好一点吧，活着虽然很痛苦，但是死亡也要很大的勇气，虽然我这样的活着有一天也会死去，但是那样的一切都交给时间好了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 心灵 </tag>
+            
+            <tag> 痛苦 </tag>
+            
+            <tag> 春天 </tag>
+            
+            <tag> 重复 </tag>
+            
+            <tag> 路在何方 </tag>
+            
+            <tag> 曾经 </tag>
+            
+            <tag> 回想 </tag>
+            
+            <tag> 疲惫不堪 </tag>
+            
+            <tag> 迷茫 </tag>
+            
+            <tag> 屈辱 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>昨天我把自己的网站同步到Gitee了</title>
       <link href="/Hexo/ceca9b33/"/>
       <url>/Hexo/ceca9b33/</url>
@@ -18789,6 +18982,45 @@
             <tag> 谷歌广告 </tag>
             
             <tag> 审核 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>昨晚喝酒了，以为今天考试过不了，结果还是过了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/59f9dff9/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/59f9dff9/</url>
+      
+        <content type="html"><![CDATA[<p>昨天晚上坐公交车回来后，在下公交车的站台路边超市买了一瓶酒，还有一个酒杯和一包麻辣鱼，总共花了17块钱。其实想喝酒的原因可能是去镇上逛了一圈什么也没有买到心情有点失落，再加上身体也感觉有点累了，所以就想喝杯酒来解解乏。</p><span id="more"></span><p>酒确实是个好东西喝了就一觉睡到早上闹钟响了，但也有不好的就是容易伤记忆，也许昨天记得的东西，今天晚上喝了点酒明天就会不记得了。</p><p>但是还好，今天考试的东西本来就不是很难，只要七十分就可以通过了，所以只要多看几遍昨天记的笔记一般都是可以通过的。我也是有些忘记了的，当考试的时候就怎么也记不起来，但是也不是要求满分，所以就算有些记不起来也是能通过的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 考试 </tag>
+            
+            <tag> 超市 </tag>
+            
+            <tag> 昨天晚上 </tag>
+            
+            <tag> 想喝酒 </tag>
+            
+            <tag> 解乏 </tag>
+            
+            <tag> 闹钟响了 </tag>
+            
+            <tag> 要求满分 </tag>
+            
+            <tag> 能通过 </tag>
             
         </tags>
       
@@ -18881,45 +19113,6 @@
             <tag> 正常开机 </tag>
             
             <tag> 重新写 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>昨晚喝酒了，以为今天考试过不了，结果还是过了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/59f9dff9/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/59f9dff9/</url>
-      
-        <content type="html"><![CDATA[<p>昨天晚上坐公交车回来后，在下公交车的站台路边超市买了一瓶酒，还有一个酒杯和一包麻辣鱼，总共花了17块钱。其实想喝酒的原因可能是去镇上逛了一圈什么也没有买到心情有点失落，再加上身体也感觉有点累了，所以就想喝杯酒来解解乏。</p><span id="more"></span><p>酒确实是个好东西喝了就一觉睡到早上闹钟响了，但也有不好的就是容易伤记忆，也许昨天记得的东西，今天晚上喝了点酒明天就会不记得了。</p><p>但是还好，今天考试的东西本来就不是很难，只要七十分就可以通过了，所以只要多看几遍昨天记的笔记一般都是可以通过的。我也是有些忘记了的，当考试的时候就怎么也记不起来，但是也不是要求满分，所以就算有些记不起来也是能通过的。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 考试 </tag>
-            
-            <tag> 超市 </tag>
-            
-            <tag> 昨天晚上 </tag>
-            
-            <tag> 想喝酒 </tag>
-            
-            <tag> 解乏 </tag>
-            
-            <tag> 闹钟响了 </tag>
-            
-            <tag> 要求满分 </tag>
-            
-            <tag> 能通过 </tag>
             
         </tags>
       
@@ -19318,8 +19511,6 @@
             
             <tag> 文章 </tag>
             
-            <tag> 问题 </tag>
-            
             <tag> 平台 </tag>
             
             <tag> 赚钱 </tag>
@@ -19327,6 +19518,8 @@
             <tag> 网站 </tag>
             
             <tag> 写文章 </tag>
+            
+            <tag> 问题 </tag>
             
             <tag> 权力 </tag>
             
@@ -20033,53 +20226,6 @@
     
     
     <entry>
-      <title>用手机玩手游英雄联盟</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9d0802bd/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9d0802bd/</url>
-      
-        <content type="html"><![CDATA[<p>这个游戏也已经出来很久了，之前一直没有怎么玩，刚出来的时候没有中文版的，到12月的时候才出来了台服的终于是中文了，就算是繁体中文界面看起来也一目了然了，之前全是英文，那个看起来就是一头雾水，只是现在免费加速器只能用biubiu加速器了，12月的时候还可以用迅游，现在迅游要会员才可以了。</p><span id="more"></span><p>这个台服的之前是用迅游加速器下载的，但是后来好像更新了，用biubiu这个加速器根本更新不了，一加载更新就跳到手机自带的应用商店，但是手机自带的应用商店里根本没有这个游戏，不用加速器直接更新也不行，跳转到谷歌应用商店，提示不支持此地区下载，用了很多方法都不行，后面还是回到迅游加速器这里，终于在这里完美的解决了问题，这里虽然不能加速了，但是更新游戏还是可以的，而且下载的速度很快。</p><p>安卓的手机如果不能从这个加速器下载手游版的英雄联盟，那就真的没有地方可以下了，苹果手机感觉换个区就可以下载了，这个游戏感觉还是挺好玩的，和PC端的英雄人物也是一摸一样。</p><p>更新能进游戏了登录这里也是差点登录不上去，一直提示此区域的账号无法登录，后面重新登录了几次是终于可以了，应该网速太慢了延迟太高导致的，这个只要注册了一个拳头的账号其他的平台也是通用的，苹果和安卓都可以用同一个账号登录，关键是游戏数据是完全同步的，而不像王者荣耀那样换个手机系统又要重新开始，这个游戏不存在，直接登录游戏就可以，想用苹果设备玩就用苹果，想用安卓就用安卓，上面获得的游戏数据一点都不影响。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 应用商店 </tag>
-            
-            <tag> 手机 </tag>
-            
-            <tag> 安卓 </tag>
-            
-            <tag> 苹果 </tag>
-            
-            <tag> 手游 </tag>
-            
-            <tag> 王者荣耀 </tag>
-            
-            <tag> 重新开始 </tag>
-            
-            <tag> 英雄联盟 </tag>
-            
-            <tag> 台服 </tag>
-            
-            <tag> 繁体中文 </tag>
-            
-            <tag> 不支持 </tag>
-            
-            <tag> 加速器 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>用的联通卡无端地被订购附加产品，扣我一个月9块钱话费</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1f186519/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1f186519/</url>
@@ -20129,6 +20275,53 @@
             <tag> 没有用过 </tag>
             
             <tag> 工信部投诉 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>用手机玩手游英雄联盟</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9d0802bd/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9d0802bd/</url>
+      
+        <content type="html"><![CDATA[<p>这个游戏也已经出来很久了，之前一直没有怎么玩，刚出来的时候没有中文版的，到12月的时候才出来了台服的终于是中文了，就算是繁体中文界面看起来也一目了然了，之前全是英文，那个看起来就是一头雾水，只是现在免费加速器只能用biubiu加速器了，12月的时候还可以用迅游，现在迅游要会员才可以了。</p><span id="more"></span><p>这个台服的之前是用迅游加速器下载的，但是后来好像更新了，用biubiu这个加速器根本更新不了，一加载更新就跳到手机自带的应用商店，但是手机自带的应用商店里根本没有这个游戏，不用加速器直接更新也不行，跳转到谷歌应用商店，提示不支持此地区下载，用了很多方法都不行，后面还是回到迅游加速器这里，终于在这里完美的解决了问题，这里虽然不能加速了，但是更新游戏还是可以的，而且下载的速度很快。</p><p>安卓的手机如果不能从这个加速器下载手游版的英雄联盟，那就真的没有地方可以下了，苹果手机感觉换个区就可以下载了，这个游戏感觉还是挺好玩的，和PC端的英雄人物也是一摸一样。</p><p>更新能进游戏了登录这里也是差点登录不上去，一直提示此区域的账号无法登录，后面重新登录了几次是终于可以了，应该网速太慢了延迟太高导致的，这个只要注册了一个拳头的账号其他的平台也是通用的，苹果和安卓都可以用同一个账号登录，关键是游戏数据是完全同步的，而不像王者荣耀那样换个手机系统又要重新开始，这个游戏不存在，直接登录游戏就可以，想用苹果设备玩就用苹果，想用安卓就用安卓，上面获得的游戏数据一点都不影响。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 应用商店 </tag>
+            
+            <tag> 手机 </tag>
+            
+            <tag> 安卓 </tag>
+            
+            <tag> 苹果 </tag>
+            
+            <tag> 手游 </tag>
+            
+            <tag> 王者荣耀 </tag>
+            
+            <tag> 重新开始 </tag>
+            
+            <tag> 英雄联盟 </tag>
+            
+            <tag> 台服 </tag>
+            
+            <tag> 繁体中文 </tag>
+            
+            <tag> 不支持 </tag>
+            
+            <tag> 加速器 </tag>
             
         </tags>
       
@@ -21832,9 +22025,9 @@
             
             <tag> 表达 </tag>
             
-            <tag> 曾经 </tag>
-            
             <tag> 花海 </tag>
+            
+            <tag> 曾经 </tag>
             
             <tag> 自己 </tag>
             
@@ -21853,6 +22046,59 @@
             <tag> 一瞬 </tag>
             
             <tag> 纸间 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>自己感觉难过的时候喝点酒是真的很有用</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/898c8f14/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/898c8f14/</url>
+      
+        <content type="html"><![CDATA[<p>以前我记得我曾经就写过一篇关于自己感到孤独时候就喝点酒的文章，其实现在再写这一篇关于喝酒的文章，我只想说喝酒对一个人心情低落时真的很有用，二两酒下肚后那些让自己感到难过的事仿佛一切都烟消云散了，酒可以让人的心情感到开心，让自己的思路开阔了，让那些自己感到难过的事都消失得无影无踪了，在自己思维开阔的时候就会感觉那些就是不值得自己一提的小事，也是不值得自己挂在心上的什么重要的事。</p><span id="more"></span><p>不喝酒的时候感觉就是心里面有很多的结怎么也解不开，但自己喝酒后感觉那些都不是什么重要的了，喝酒后自己就不会再去想那些带给自己不开心的事，自己也会感觉轻松了很多，至少我个人感觉是这样的。有些人说喝酒后什么都不记得了，我只能说喝酒也是有个度的让自己开心就可以了，非要喝到让自己的胃受不了吐出来，这样喝就真的没有意思了，这样的喝酒方式我是不赞成的，因为我有时喝多了我也是会喝吐，但绝对不会像有些人说的那样喝到了不记人事的那一步，虽然喝到吐了，但大脑还是清晰的就是胃受不了，对于有些人说喝了不记人事但没有吐过，这样的我是还真的没有的感受过。</p><p>对于在自己没有喝酒前那些怎么样如何想的，在自己喝酒后就真的觉得那些想法真的很不重要了，也许是压抑太久喝了点酒一切都可以看得很开阔了。那些让自己难过的事在酒后真的感觉是不值得自己去想去伤脑筋的。喝酒后自己的情绪也不会再那样低落了，突然才觉得那些事真的对自己不重要，人活在这个世上最主要就是活得对自己开心就好，人生短短数十年，何必要为一些让自己不开心的小事烦扰呢，在生命中除了自己的生死之外，那其他的都是小事，那些事只要自己能够放下，自己反而会快乐很多，生命短暂真的没有必要去为每一件小事都纠缠不清。</p><p>自己活好自己，自己活得开心才是最重要的，也不管他人怎样去评论自己，当他人评论指责自己的时候可以做到不听不闻，这就是一个提升了自己的境界了。他人对于自我的指指点点只不过是他把他自己的不满发泄到我的身上罢了，当看到这种人时其实也可以感觉到他自己也是不幸的，因为只有自己感觉自己不如人的时候才会对他人指指点点，如果想法相同的人又怎么会这样呢。有些人有时候心里很难受他自己只是想找个出气的地方罢了，对于这种人做到不理会就是了。自己的意志如果都不能掌握在自己的手里，那自己的情绪一直被他人带着走，这样的活着又有什么意思呢，开心的做自己就好，何必理会他人那么多是非。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 喝点酒 </tag>
+            
+            <tag> 小事 </tag>
+            
+            <tag> 感觉难过 </tag>
+            
+            <tag> 很有用 </tag>
+            
+            <tag> 孤独时候 </tag>
+            
+            <tag> 心情低落 </tag>
+            
+            <tag> 无影无踪 </tag>
+            
+            <tag> 解不开 </tag>
+            
+            <tag> 吐出来 </tag>
+            
+            <tag> 胃受不了 </tag>
+            
+            <tag> 感受过 </tag>
+            
+            <tag> 快乐很多 </tag>
+            
+            <tag> 纠缠不清 </tag>
+            
+            <tag> 不满 </tag>
+            
+            <tag> 是非 </tag>
             
         </tags>
       
@@ -21908,59 +22154,6 @@
             <tag> 100帧 </tag>
             
             <tag> USB3.0 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>自己感觉难过的时候喝点酒是真的很有用</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/898c8f14/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/898c8f14/</url>
-      
-        <content type="html"><![CDATA[<p>以前我记得我曾经就写过一篇关于自己感到孤独时候就喝点酒的文章，其实现在再写这一篇关于喝酒的文章，我只想说喝酒对一个人心情低落时真的很有用，二两酒下肚后那些让自己感到难过的事仿佛一切都烟消云散了，酒可以让人的心情感到开心，让自己的思路开阔了，让那些自己感到难过的事都消失得无影无踪了，在自己思维开阔的时候就会感觉那些就是不值得自己一提的小事，也是不值得自己挂在心上的什么重要的事。</p><span id="more"></span><p>不喝酒的时候感觉就是心里面有很多的结怎么也解不开，但自己喝酒后感觉那些都不是什么重要的了，喝酒后自己就不会再去想那些带给自己不开心的事，自己也会感觉轻松了很多，至少我个人感觉是这样的。有些人说喝酒后什么都不记得了，我只能说喝酒也是有个度的让自己开心就可以了，非要喝到让自己的胃受不了吐出来，这样喝就真的没有意思了，这样的喝酒方式我是不赞成的，因为我有时喝多了我也是会喝吐，但绝对不会像有些人说的那样喝到了不记人事的那一步，虽然喝到吐了，但大脑还是清晰的就是胃受不了，对于有些人说喝了不记人事但没有吐过，这样的我是还真的没有的感受过。</p><p>对于在自己没有喝酒前那些怎么样如何想的，在自己喝酒后就真的觉得那些想法真的很不重要了，也许是压抑太久喝了点酒一切都可以看得很开阔了。那些让自己难过的事在酒后真的感觉是不值得自己去想去伤脑筋的。喝酒后自己的情绪也不会再那样低落了，突然才觉得那些事真的对自己不重要，人活在这个世上最主要就是活得对自己开心就好，人生短短数十年，何必要为一些让自己不开心的小事烦扰呢，在生命中除了自己的生死之外，那其他的都是小事，那些事只要自己能够放下，自己反而会快乐很多，生命短暂真的没有必要去为每一件小事都纠缠不清。</p><p>自己活好自己，自己活得开心才是最重要的，也不管他人怎样去评论自己，当他人评论指责自己的时候可以做到不听不闻，这就是一个提升了自己的境界了。他人对于自我的指指点点只不过是他把他自己的不满发泄到我的身上罢了，当看到这种人时其实也可以感觉到他自己也是不幸的，因为只有自己感觉自己不如人的时候才会对他人指指点点，如果想法相同的人又怎么会这样呢。有些人有时候心里很难受他自己只是想找个出气的地方罢了，对于这种人做到不理会就是了。自己的意志如果都不能掌握在自己的手里，那自己的情绪一直被他人带着走，这样的活着又有什么意思呢，开心的做自己就好，何必理会他人那么多是非。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 情感美文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 喝点酒 </tag>
-            
-            <tag> 小事 </tag>
-            
-            <tag> 感觉难过 </tag>
-            
-            <tag> 很有用 </tag>
-            
-            <tag> 孤独时候 </tag>
-            
-            <tag> 心情低落 </tag>
-            
-            <tag> 无影无踪 </tag>
-            
-            <tag> 解不开 </tag>
-            
-            <tag> 吐出来 </tag>
-            
-            <tag> 胃受不了 </tag>
-            
-            <tag> 感受过 </tag>
-            
-            <tag> 快乐很多 </tag>
-            
-            <tag> 纠缠不清 </tag>
-            
-            <tag> 不满 </tag>
-            
-            <tag> 是非 </tag>
             
         </tags>
       
@@ -22579,57 +22772,6 @@
     
     
     <entry>
-      <title>读《围炉夜话》其三有感</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a774ac4f/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a774ac4f/</url>
-      
-        <content type="html"><![CDATA[<p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a774ac4f/%E5%9B%B4%E7%82%89%E5%A4%9C%E8%AF%9D.jpg"></p><span id="more"></span><blockquote><p>原文：贫无可奈惟求俭，拙亦何妨只要勤。</p></blockquote><p>当没有其他更好的方法来改变自己贫穷状况的时候，节俭就是唯一最好的方法。金钱上面的贫穷自己一时难以改变，但是精神方面却是可以的，面对自身的状况要以一种安贫乐道的心态去坦然处之，急功近利的想法对自身没有益处，这种思维如果想得太过火了，最终还有可能将自己带入不归的歧途。</p><blockquote><p>穷则独善其身，达则兼济天下。</p></blockquote><p>无论是贫穷或者富贵，都应当要有自己的不同处世之道。人在贫困之中久了自然是可以苦其心志，多读书和学习知识丰富自身的修为，成为精神层面的富有者，这境界难道不是富人所要追求的吗？</p><p>平心静气没有烦恼，当自己富有之时，金钱没有必要看得太重了，因为欲望的深渊永远都是一个无底洞，一个人精神层面的贫穷永远也不可能用金钱来弥补，金钱它带给人的终究是一种物质，和自己所要追求修为的最高境界它是没有必然联系的。</p><p>乐善好施多帮助有需要的人，比用更多的金钱来填补自己的空虚精神世界更有价值。人为什么而活，虽然一直以来都是人们所不停探求的答案，也是一直没有找到确切的答案，但是却有一个否定的答案，那就是不单为了金钱而活着。</p><p>中国古代被称为商圣的第一人范蠡曾几度散尽家财，而又几度忽而所得，他会赚钱，而他又会用赚来的钱去帮助有需要的人，他能赚钱但他却没有独揽天下财富的野心，所以他自然可以成为圣人，他的品行修为是比那些终身为金钱所奴役的人要高出了许多。</p><p>聪明与否对一个人的修为真的不是很大，勤能补拙这话说得是很有道理的，世上的聪明人有很多但是成功了又有多少呢，很多人自认为自己有多聪明，殊不知山外还有山，人外还有人，比自己高明的人世上还有很多，有的时候太自以为是，就是聪明反被聪明误，保持低调而平和的心态，不断去上下探索未知的世界，只有这样的人才能成为真正的聪明人、圣人。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 欲望 </tag>
-            
-            <tag> 独善其身 </tag>
-            
-            <tag> 围炉夜话 </tag>
-            
-            <tag> 贫穷状况 </tag>
-            
-            <tag> 节俭 </tag>
-            
-            <tag> 急功近利 </tag>
-            
-            <tag> 兼济天下 </tag>
-            
-            <tag> 富贵 </tag>
-            
-            <tag> 苦其心志 </tag>
-            
-            <tag> 深渊 </tag>
-            
-            <tag> 金钱 </tag>
-            
-            <tag> 几度 </tag>
-            
-            <tag> 勤能补拙 </tag>
-            
-            <tag> 高明 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>读《公共关系学》一书</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a0005d8f/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a0005d8f/</url>
@@ -22679,6 +22821,104 @@
     
     
     <entry>
+      <title>读《围炉夜话》其七有感</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/304f301/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/304f301/</url>
+      
+        <content type="html"><![CDATA[<p>人人都想要自己的口才极佳，都希望自己能言善变，这是好事有时候也是坏事，好事就是可以为自己赢得更多的关注，坏事就是有时候可以为自己引来杀身之祸。</p><span id="more"></span><p>七国时候的苏秦身挂六国相印，在诸侯国之间穿梭游说，可以说是红极一时，但是谁也没有想到就是因为太能说而招来杀身之祸，有的时候不是什么话都能说的，说话的前提得是先为自己保命。</p><p>说错一句话命都没有了，那这句话还值得去说吗，话多言失其实也是这样的，能言善变也要学会收敛，学会低调才是啊，不管什么东西一但到了极限，那都是会物极必反的，说话同样也是这个道理，以为自己口才好什么都说出来，殊不知得罪了多少人自己都还不知道呢。</p><p>人人都想要拥有很多的财富，但是因为财富太多而丧命的人却也有很多，追求财富让自己过上更好的生活本身是没有错的，但是一味地只想着增加自己的财富，用的手段却是为人所不耻的，那这样的财富再多对自身其实是没有好处只有坏处的，人为财死，鸟为食亡说的也正是这样。</p><p>做人不能太过于只贪恋财富，是人来支配金钱，而不是金钱来驱使人类，一旦对财富追求到了一种走火入魔的地步，那就是什么违法犯罪的事都能够做得出来。要想不被金钱卷入毁灭的深渊，有时候就得用平常之心去对待，不能太过于执迷。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 关注 </tag>
+            
+            <tag> 围炉夜话 </tag>
+            
+            <tag> 人人 </tag>
+            
+            <tag> 口才极佳 </tag>
+            
+            <tag> 苏秦 </tag>
+            
+            <tag> 六国相印 </tag>
+            
+            <tag> 穿梭游说 </tag>
+            
+            <tag> 财富 </tag>
+            
+            <tag> 丧命 </tag>
+            
+            <tag> 金钱 </tag>
+            
+            <tag> 平常之心 </tag>
+            
+            <tag> 执迷 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>读《围炉夜话》其三有感</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a774ac4f/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a774ac4f/</url>
+      
+        <content type="html"><![CDATA[<p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a774ac4f/%E5%9B%B4%E7%82%89%E5%A4%9C%E8%AF%9D.jpg"></p><span id="more"></span><blockquote><p>原文：贫无可奈惟求俭，拙亦何妨只要勤。</p></blockquote><p>当没有其他更好的方法来改变自己贫穷状况的时候，节俭就是唯一最好的方法。金钱上面的贫穷自己一时难以改变，但是精神方面却是可以的，面对自身的状况要以一种安贫乐道的心态去坦然处之，急功近利的想法对自身没有益处，这种思维如果想得太过火了，最终还有可能将自己带入不归的歧途。</p><blockquote><p>穷则独善其身，达则兼济天下。</p></blockquote><p>无论是贫穷或者富贵，都应当要有自己的不同处世之道。人在贫困之中久了自然是可以苦其心志，多读书和学习知识丰富自身的修为，成为精神层面的富有者，这境界难道不是富人所要追求的吗？</p><p>平心静气没有烦恼，当自己富有之时，金钱没有必要看得太重了，因为欲望的深渊永远都是一个无底洞，一个人精神层面的贫穷永远也不可能用金钱来弥补，金钱它带给人的终究是一种物质，和自己所要追求修为的最高境界它是没有必然联系的。</p><p>乐善好施多帮助有需要的人，比用更多的金钱来填补自己的空虚精神世界更有价值。人为什么而活，虽然一直以来都是人们所不停探求的答案，也是一直没有找到确切的答案，但是却有一个否定的答案，那就是不单为了金钱而活着。</p><p>中国古代被称为商圣的第一人范蠡曾几度散尽家财，而又几度忽而所得，他会赚钱，而他又会用赚来的钱去帮助有需要的人，他能赚钱但他却没有独揽天下财富的野心，所以他自然可以成为圣人，他的品行修为是比那些终身为金钱所奴役的人要高出了许多。</p><p>聪明与否对一个人的修为真的不是很大，勤能补拙这话说得是很有道理的，世上的聪明人有很多但是成功了又有多少呢，很多人自认为自己有多聪明，殊不知山外还有山，人外还有人，比自己高明的人世上还有很多，有的时候太自以为是，就是聪明反被聪明误，保持低调而平和的心态，不断去上下探索未知的世界，只有这样的人才能成为真正的聪明人、圣人。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 欲望 </tag>
+            
+            <tag> 独善其身 </tag>
+            
+            <tag> 围炉夜话 </tag>
+            
+            <tag> 金钱 </tag>
+            
+            <tag> 贫穷状况 </tag>
+            
+            <tag> 节俭 </tag>
+            
+            <tag> 急功近利 </tag>
+            
+            <tag> 兼济天下 </tag>
+            
+            <tag> 富贵 </tag>
+            
+            <tag> 苦其心志 </tag>
+            
+            <tag> 深渊 </tag>
+            
+            <tag> 几度 </tag>
+            
+            <tag> 勤能补拙 </tag>
+            
+            <tag> 高明 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>读《围炉夜话》其九有感</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f84f140c/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f84f140c/</url>
@@ -22714,61 +22954,6 @@
             <tag> 公事 </tag>
             
             <tag> 赏罚分明 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>读《围炉夜话》其五有感</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e358563c/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e358563c/</url>
-      
-        <content type="html"><![CDATA[<p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e358563c/%E5%9B%B4%E7%82%89%E5%A4%9C%E8%AF%9D.jpg"></p><span id="more"></span><p>“处事要代人作想，读书须切己用功。”</p><p>为人处世要多站在他人的角度来思考问题，有很多时候自己想得认为是对的，但是站在他人的角度来看待同样的问题，却是有不一样的感受，很多问题都是需要转换思维，用不同的多个角度才能看得透。</p><p>看问题的角度不同所得出来的差异是很大的，自己很多认为自己做得对的事情，其实在他人看来和自己的想法却是天壤之别，看待问题不能只局限于自己的知识层面，要从多方面地去深刻了解之后，那样才能有发言权，也才能对一个问题作出客观的评价。</p><p>有时候说的很多话，自己说的时候虽然是没有什么感觉，但是说者无意听者有心，别人听了感受就不会像自己说得那样轻易的一笔带过，我们说出的每一句话都会经过别人思考和加工，别人的想法里得出来的结论肯定是和我们自己想的不一样了。</p><p>要想跳出我们自己的思维局限，我们还得要多多的去读书，只有书读得多了，那样思维才能更加开阔，看问题的方法也会更加的全面，读书自然是必须要用功才行的，书从简单的文字变成自己脑海里面的知识，要经过自己不断的去感受和领悟，领悟透了知识才会真正的属于自己，如果读了没有给自己带来一点感悟，那书籍还是只属于纸上的文字。</p><p>读书吸收知识的过程没有不辛苦就可以达到的，但是苦尽甘来，自己学得的知识和思维方式，却是真正属于自己的，装在自己的脑海里，别人拿不走，我们却可以享用它给我们带来的价值。</p><p>学习不一样的思维方式，最好的方法就是从书中去领悟，除此之外再无其他可以，他人口中说出来的言语，万不及书中的文字带给人真切，文字可以给人很多去想象的空间，不同的人读同一本书，所读之人所处的心境不一样，得出的结论也是不同的，同一本书，读出不同的世界。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 天壤之别 </tag>
-            
-            <tag> 感受 </tag>
-            
-            <tag> 思考问题 </tag>
-            
-            <tag> 开阔 </tag>
-            
-            <tag> 处事 </tag>
-            
-            <tag> 代人作想 </tag>
-            
-            <tag> 读书 </tag>
-            
-            <tag> 切己用功 </tag>
-            
-            <tag> 角度 </tag>
-            
-            <tag> 差异 </tag>
-            
-            <tag> 听者有心 </tag>
-            
-            <tag> 思维局限 </tag>
-            
-            <tag> 吸收知识 </tag>
-            
-            <tag> 脑海里 </tag>
-            
-            <tag> 言语 </tag>
-            
-            <tag> 同一本书 </tag>
             
         </tags>
       
@@ -22832,11 +23017,11 @@
     
     
     <entry>
-      <title>读《围炉夜话》其七有感</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/304f301/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/304f301/</url>
+      <title>读《围炉夜话》其五有感</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e358563c/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e358563c/</url>
       
-        <content type="html"><![CDATA[<p>人人都想要自己的口才极佳，都希望自己能言善变，这是好事有时候也是坏事，好事就是可以为自己赢得更多的关注，坏事就是有时候可以为自己引来杀身之祸。</p><span id="more"></span><p>七国时候的苏秦身挂六国相印，在诸侯国之间穿梭游说，可以说是红极一时，但是谁也没有想到就是因为太能说而招来杀身之祸，有的时候不是什么话都能说的，说话的前提得是先为自己保命。</p><p>说错一句话命都没有了，那这句话还值得去说吗，话多言失其实也是这样的，能言善变也要学会收敛，学会低调才是啊，不管什么东西一但到了极限，那都是会物极必反的，说话同样也是这个道理，以为自己口才好什么都说出来，殊不知得罪了多少人自己都还不知道呢。</p><p>人人都想要拥有很多的财富，但是因为财富太多而丧命的人却也有很多，追求财富让自己过上更好的生活本身是没有错的，但是一味地只想着增加自己的财富，用的手段却是为人所不耻的，那这样的财富再多对自身其实是没有好处只有坏处的，人为财死，鸟为食亡说的也正是这样。</p><p>做人不能太过于只贪恋财富，是人来支配金钱，而不是金钱来驱使人类，一旦对财富追求到了一种走火入魔的地步，那就是什么违法犯罪的事都能够做得出来。要想不被金钱卷入毁灭的深渊，有时候就得用平常之心去对待，不能太过于执迷。</p>]]></content>
+        <content type="html"><![CDATA[<p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e358563c/%E5%9B%B4%E7%82%89%E5%A4%9C%E8%AF%9D.jpg"></p><span id="more"></span><p>“处事要代人作想，读书须切己用功。”</p><p>为人处世要多站在他人的角度来思考问题，有很多时候自己想得认为是对的，但是站在他人的角度来看待同样的问题，却是有不一样的感受，很多问题都是需要转换思维，用不同的多个角度才能看得透。</p><p>看问题的角度不同所得出来的差异是很大的，自己很多认为自己做得对的事情，其实在他人看来和自己的想法却是天壤之别，看待问题不能只局限于自己的知识层面，要从多方面地去深刻了解之后，那样才能有发言权，也才能对一个问题作出客观的评价。</p><p>有时候说的很多话，自己说的时候虽然是没有什么感觉，但是说者无意听者有心，别人听了感受就不会像自己说得那样轻易的一笔带过，我们说出的每一句话都会经过别人思考和加工，别人的想法里得出来的结论肯定是和我们自己想的不一样了。</p><p>要想跳出我们自己的思维局限，我们还得要多多的去读书，只有书读得多了，那样思维才能更加开阔，看问题的方法也会更加的全面，读书自然是必须要用功才行的，书从简单的文字变成自己脑海里面的知识，要经过自己不断的去感受和领悟，领悟透了知识才会真正的属于自己，如果读了没有给自己带来一点感悟，那书籍还是只属于纸上的文字。</p><p>读书吸收知识的过程没有不辛苦就可以达到的，但是苦尽甘来，自己学得的知识和思维方式，却是真正属于自己的，装在自己的脑海里，别人拿不走，我们却可以享用它给我们带来的价值。</p><p>学习不一样的思维方式，最好的方法就是从书中去领悟，除此之外再无其他可以，他人口中说出来的言语，万不及书中的文字带给人真切，文字可以给人很多去想象的空间，不同的人读同一本书，所读之人所处的心境不一样，得出的结论也是不同的，同一本书，读出不同的世界。</p>]]></content>
       
       
       <categories>
@@ -22848,29 +23033,37 @@
       
         <tags>
             
-            <tag> 关注 </tag>
+            <tag> 天壤之别 </tag>
             
-            <tag> 围炉夜话 </tag>
+            <tag> 感受 </tag>
             
-            <tag> 金钱 </tag>
+            <tag> 思考问题 </tag>
             
-            <tag> 人人 </tag>
+            <tag> 开阔 </tag>
             
-            <tag> 口才极佳 </tag>
+            <tag> 处事 </tag>
             
-            <tag> 苏秦 </tag>
+            <tag> 代人作想 </tag>
             
-            <tag> 六国相印 </tag>
+            <tag> 读书 </tag>
             
-            <tag> 穿梭游说 </tag>
+            <tag> 切己用功 </tag>
             
-            <tag> 财富 </tag>
+            <tag> 角度 </tag>
             
-            <tag> 丧命 </tag>
+            <tag> 差异 </tag>
             
-            <tag> 平常之心 </tag>
+            <tag> 听者有心 </tag>
             
-            <tag> 执迷 </tag>
+            <tag> 思维局限 </tag>
+            
+            <tag> 吸收知识 </tag>
+            
+            <tag> 脑海里 </tag>
+            
+            <tag> 言语 </tag>
+            
+            <tag> 同一本书 </tag>
             
         </tags>
       
@@ -22932,53 +23125,6 @@
     
     
     <entry>
-      <title>读《围炉夜话》其六有感</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9535e32f/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9535e32f/</url>
-      
-        <content type="html"><![CDATA[<p>诚信是一个人安身处世最基本的原则，没有诚信的人会失去别人的信任，狼来了的故事就曾告诉过我们，消费别人的诚信是会有一定限度的，当别人被你忽悠了几次之后，试想别人又还会怎么去相信你呢？</p><span id="more"></span><p>没有诚信的人自然是很难取得别人的信任的，没有信任的人别人又怎么会和自己有来往呢，人与人之间的交流很难离开这个信字，只有你讲诚信了，别人才会相信你，你也才可以去接纳别人。</p><p>做人不可能没有诚信二字，如果这个世界人人都不讲诚信了，那这个社会岂不是乱套了吗，人与人之间缺乏信任也不可能有真正的交流，国与国之间没有信任，签署的什么公约之类的都会成为一张废纸，战争因为缺乏诚信自然也随时都会发生。</p><p>有时候宽恕他人的过错，就是宽恕自己，做人不可能因为他人的一点小过错就要去追着不放，该放下的时候就得放下，放下了才能让自己解脱，也让他人好过。</p><p>海能纳百川，做人就是要有博大的胸襟那样才可能成事，做大事者不拘小节说的也正是这个道理，把精力都浪费在小事上了，怎么还可能有多余的精力去做大事呢。</p><p>人人都可能会犯错，但是我们无论如何也得要学会去宽恕别人做过的错事，只有学会宽恕他人我们才能让他人接纳自己，自己也不用整日活在指责他人的过错之中，别人也不用整日的活在悔罪之中。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 世界 </tag>
-            
-            <tag> 原则 </tag>
-            
-            <tag> 围炉夜话 </tag>
-            
-            <tag> 诚信 </tag>
-            
-            <tag> 信任 </tag>
-            
-            <tag> 狼来了 </tag>
-            
-            <tag> 限度 </tag>
-            
-            <tag> 忽悠 </tag>
-            
-            <tag> 接纳 </tag>
-            
-            <tag> 小过错 </tag>
-            
-            <tag> 胸襟 </tag>
-            
-            <tag> 宽恕他人 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>读《围炉夜话》其十一有感</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/7192143c/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/7192143c/</url>
@@ -23018,11 +23164,11 @@
     
     
     <entry>
-      <title>读《围炉夜话》其十有感</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4ecdab72/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4ecdab72/</url>
+      <title>读《围炉夜话》其六有感</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9535e32f/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9535e32f/</url>
       
-        <content type="html"><![CDATA[<p>本来不属于自己的名利，但是自己却通过不正当的手段去得到了，开始时是觉得自己的运气好，但是以后也可能会因为这件事而惹祸上身。</p><span id="more"></span><p>塞翁失马未必就是一件坏事，但是马后面不仅回来了，还带了一群马回来，这也未必就是一件好事，福祸所倚，祸福所伏，说的也正是这个道理。</p><p>一个人穷困潦倒到了极点，还能咬紧牙关继续坚持活着，这样的人是最有能耐的，当苦难过去之后，顺境必然会到来，苦难可以磨练一个人的性格，先苦后甜的幸福不属于这样的人，哪还会属于谁呢？</p><p>人的聪明才智，最主要在于忠信二字，做一个不忠不信的人就算怎么有才智，那也是无用之才，忠信二字都没有的无用之才，也很难为他人创造价值，自然也无法实现自己的人生价值。</p><p>自己的聪明才智应该是要表现在忠信二字上，而不是用灵活机变的心思来代替，只有把最基本的做到了，才能往最深层次的去扩展。</p><p>读书人好坏不单就是看成绩考了多少分，还要看品行，品行才是最重要的，品行不好的人，成绩再怎么好，这样的人培养出来了对社会也没有什么用处。</p><p>读书人该做的就是：“为天地立心，为生民立命，为往圣继绝学，为万世开太平。”要以德为本，并且身体力行地去做，并不是认为自己成绩好就能轻易做到的，要以自己的本心，心无杂念地不断去摸索，最终才能做出成功的事业。</p>]]></content>
+        <content type="html"><![CDATA[<p>诚信是一个人安身处世最基本的原则，没有诚信的人会失去别人的信任，狼来了的故事就曾告诉过我们，消费别人的诚信是会有一定限度的，当别人被你忽悠了几次之后，试想别人又还会怎么去相信你呢？</p><span id="more"></span><p>没有诚信的人自然是很难取得别人的信任的，没有信任的人别人又怎么会和自己有来往呢，人与人之间的交流很难离开这个信字，只有你讲诚信了，别人才会相信你，你也才可以去接纳别人。</p><p>做人不可能没有诚信二字，如果这个世界人人都不讲诚信了，那这个社会岂不是乱套了吗，人与人之间缺乏信任也不可能有真正的交流，国与国之间没有信任，签署的什么公约之类的都会成为一张废纸，战争因为缺乏诚信自然也随时都会发生。</p><p>有时候宽恕他人的过错，就是宽恕自己，做人不可能因为他人的一点小过错就要去追着不放，该放下的时候就得放下，放下了才能让自己解脱，也让他人好过。</p><p>海能纳百川，做人就是要有博大的胸襟那样才可能成事，做大事者不拘小节说的也正是这个道理，把精力都浪费在小事上了，怎么还可能有多余的精力去做大事呢。</p><p>人人都可能会犯错，但是我们无论如何也得要学会去宽恕别人做过的错事，只有学会宽恕他人我们才能让他人接纳自己，自己也不用整日活在指责他人的过错之中，别人也不用整日的活在悔罪之中。</p>]]></content>
       
       
       <categories>
@@ -23034,37 +23180,29 @@
       
         <tags>
             
-            <tag> 成绩 </tag>
+            <tag> 世界 </tag>
             
-            <tag> 摸索 </tag>
+            <tag> 原则 </tag>
             
             <tag> 围炉夜话 </tag>
             
-            <tag> 名利 </tag>
+            <tag> 诚信 </tag>
             
-            <tag> 不正当 </tag>
+            <tag> 信任 </tag>
             
-            <tag> 运气好 </tag>
+            <tag> 狼来了 </tag>
             
-            <tag> 惹祸上身 </tag>
+            <tag> 限度 </tag>
             
-            <tag> 福祸所倚 </tag>
+            <tag> 忽悠 </tag>
             
-            <tag> 祸福所伏 </tag>
+            <tag> 接纳 </tag>
             
-            <tag> 穷困潦倒 </tag>
+            <tag> 小过错 </tag>
             
-            <tag> 磨练 </tag>
+            <tag> 胸襟 </tag>
             
-            <tag> 忠信二字 </tag>
-            
-            <tag> 聪明才智 </tag>
-            
-            <tag> 读书人 </tag>
-            
-            <tag> 培养 </tag>
-            
-            <tag> 事业 </tag>
+            <tag> 宽恕他人 </tag>
             
         </tags>
       
@@ -23171,6 +23309,61 @@
             <tag> 外祖父 </tag>
             
             <tag> 继承权 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>读《围炉夜话》其十有感</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4ecdab72/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4ecdab72/</url>
+      
+        <content type="html"><![CDATA[<p>本来不属于自己的名利，但是自己却通过不正当的手段去得到了，开始时是觉得自己的运气好，但是以后也可能会因为这件事而惹祸上身。</p><span id="more"></span><p>塞翁失马未必就是一件坏事，但是马后面不仅回来了，还带了一群马回来，这也未必就是一件好事，福祸所倚，祸福所伏，说的也正是这个道理。</p><p>一个人穷困潦倒到了极点，还能咬紧牙关继续坚持活着，这样的人是最有能耐的，当苦难过去之后，顺境必然会到来，苦难可以磨练一个人的性格，先苦后甜的幸福不属于这样的人，哪还会属于谁呢？</p><p>人的聪明才智，最主要在于忠信二字，做一个不忠不信的人就算怎么有才智，那也是无用之才，忠信二字都没有的无用之才，也很难为他人创造价值，自然也无法实现自己的人生价值。</p><p>自己的聪明才智应该是要表现在忠信二字上，而不是用灵活机变的心思来代替，只有把最基本的做到了，才能往最深层次的去扩展。</p><p>读书人好坏不单就是看成绩考了多少分，还要看品行，品行才是最重要的，品行不好的人，成绩再怎么好，这样的人培养出来了对社会也没有什么用处。</p><p>读书人该做的就是：“为天地立心，为生民立命，为往圣继绝学，为万世开太平。”要以德为本，并且身体力行地去做，并不是认为自己成绩好就能轻易做到的，要以自己的本心，心无杂念地不断去摸索，最终才能做出成功的事业。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 成绩 </tag>
+            
+            <tag> 摸索 </tag>
+            
+            <tag> 围炉夜话 </tag>
+            
+            <tag> 名利 </tag>
+            
+            <tag> 不正当 </tag>
+            
+            <tag> 运气好 </tag>
+            
+            <tag> 惹祸上身 </tag>
+            
+            <tag> 福祸所倚 </tag>
+            
+            <tag> 祸福所伏 </tag>
+            
+            <tag> 穷困潦倒 </tag>
+            
+            <tag> 磨练 </tag>
+            
+            <tag> 忠信二字 </tag>
+            
+            <tag> 聪明才智 </tag>
+            
+            <tag> 读书人 </tag>
+            
+            <tag> 培养 </tag>
+            
+            <tag> 事业 </tag>
             
         </tags>
       

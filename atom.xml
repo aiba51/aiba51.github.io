@@ -6,7 +6,7 @@
   <link href="https://aixz.xyz/atom.xml" rel="self"/>
   
   <link href="https://aixz.xyz/"/>
-  <updated>2023-02-05T10:40:04.000Z</updated>
+  <updated>2023-02-28T11:22:04.000Z</updated>
   <id>https://aixz.xyz/</id>
   
   <author>
@@ -15,6 +15,180 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Kali实体机安装步骤</title>
+    <link href="https://aixz.xyz/Kali/6b888a23/"/>
+    <id>https://aixz.xyz/Kali/6b888a23/</id>
+    <published>2023-02-28T11:22:04.000Z</published>
+    <updated>2023-02-28T11:22:04.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img data-src="/Kali/6b888a23/kali.png"></p><span id="more"></span><p>1.插入启动U盘，开机按<code>F12</code>进入<code>BIOS</code>界面，选择第4项<code>USB HDD：General UDisk</code>，按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/1.jpg"></p><p>2.选择第1项<code>Graphical install</code>，按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/2.jpg"></p><p>3.语言选择，选择<code>中文（简体）</code>，按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/3.jpg"></p><p>4.选择地区，选择<code>中国</code>，按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/4.jpg"></p><p>5.选择键盘，选择<code>汉语</code>，按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/5.jpg"></p><p>6.配置网络，我这里选择<code>有线网</code>，按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/6.jpg"></p><p>7.输入主机名，这里自己命名，输好以后按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/7.jpg"></p><p>8.<code>域名</code>，这里可以留空，直接按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/8.jpg"></p><p>9.设置用户名，自己命名，输好以后按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/9.jpg"></p><p>10.这步只是确定输入的用户名，如果是大写的会变成小写，直接按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/10.jpg"></p><p>11.设置用户密码，这里设置了要记住密码，后面登录要用到，设置好以后按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/11.jpg"></p><p>12.选择磁盘分区，我这台电脑有两块磁盘，我是用一整块磁盘来安装<code>Kali</code>，所以这里我选择第一项<code>向导-使用整个磁盘</code>，选好以后按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/12.jpg"></p><p>13.选择<code>磁盘分区</code>，这里选择要安装<code>Kali</code>的磁盘，注意这里所选的磁盘数据会被全部清空，这里不能选择U盘，看容量大小来选择，我这里选择第1项。</p><p><img data-src="/Kali/6b888a23/13.jpg"></p><p>14.这里选择放置系统文件的分区，这里推荐选择第1项<code>将所有文件放在同一个分区中（推荐新手使用）</code>，我这里选择第1项，选好以后按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/14.jpg"></p><p>15.这里可以看到所选的那块硬盘有两个分区，因为里面还有之前安装的系统，这里还没有被格式化，分别为1个主分区和1个逻辑分区，这里直接按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/15.jpg"></p><p>16.这里做最后的确认，选择<code>是</code>，所选的磁盘分区将被格式化，我这里选择<code>是</code>，选好以后按<code>ENTER</code>键进入下一步，等待安装过程。</p><p><img data-src="/Kali/6b888a23/16.jpg"><br><img data-src="/Kali/6b888a23/17.jpg"></p><p>17.基本系统安装进度走完以后，进入选择安装软件包，这里要<code>全部选择</code>，我这里被坑了很多次，如果按默认的安装好以后没有<code>蓝牙驱动</code>，所以这里要<code>全选</code>。选好以后按<code>ENTER</code>键进入下一步。等待安装进度条，我这里共有3140个文件需要安装，耐心等待就行。</p><p><img data-src="/Kali/6b888a23/18.jpg"><br><img data-src="/Kali/6b888a23/19.jpg"></p><p>18.设定<code>gdm3</code>，这里选择默认的第1项就行，按<code>ENTER</code>键进入下一步。又是继续安装走进度条，耐心等待就行。</p><p><img data-src="/Kali/6b888a23/20.jpg"><br><img data-src="/Kali/6b888a23/21.jpg"></p><p>19.安装<code>GRUB引导器</code>，因为我电脑要安装两个系统，所以这里选择<code>是</code>，选择好以后按<code>ENTER</code>键进入下一步。</p><p><img data-src="/Kali/6b888a23/22.jpg"></p><p>20.这里选择安装系统的那个硬盘，选择其他的是进不了系统的，因为我的系统安装在第1个硬盘上，所以我这里选择第一个，选择好以后按<code>ENTER</code>键进入下一步，进入安装进度条。</p><p><img data-src="/Kali/6b888a23/23.jpg"><br><img data-src="/Kali/6b888a23/24.jpg"></p><p>21.结束安装进程，这里默认选择<code>是</code>，选好以后按<code>ENTER</code>键进入下一步，等待安装完成。</p><p><img data-src="/Kali/6b888a23/25.jpg"></p><p>22.安装完成，这里可以取出安装U盘了，然后点击继续电脑重启。</p><p><img data-src="/Kali/6b888a23/26.jpg"></p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img data-src=&quot;/Kali/6b888a23/kali.png&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Kali" scheme="https://aixz.xyz/categories/Kali/"/>
+    
+    
+    <category term="Kali" scheme="https://aixz.xyz/tags/Kali/"/>
+    
+    <category term="实体机" scheme="https://aixz.xyz/tags/%E5%AE%9E%E4%BD%93%E6%9C%BA/"/>
+    
+    <category term="安装步骤" scheme="https://aixz.xyz/tags/%E5%AE%89%E8%A3%85%E6%AD%A5%E9%AA%A4/"/>
+    
+    <category term="启动U盘" scheme="https://aixz.xyz/tags/%E5%90%AF%E5%8A%A8U%E7%9B%98/"/>
+    
+    <category term="F12" scheme="https://aixz.xyz/tags/F12/"/>
+    
+    <category term="BIOS" scheme="https://aixz.xyz/tags/BIOS/"/>
+    
+    <category term="ENTER" scheme="https://aixz.xyz/tags/ENTER/"/>
+    
+    <category term="用户密码" scheme="https://aixz.xyz/tags/%E7%94%A8%E6%88%B7%E5%AF%86%E7%A0%81/"/>
+    
+    <category term="磁盘分区" scheme="https://aixz.xyz/tags/%E7%A3%81%E7%9B%98%E5%88%86%E5%8C%BA/"/>
+    
+    <category term="新手" scheme="https://aixz.xyz/tags/%E6%96%B0%E6%89%8B/"/>
+    
+    <category term="格式化" scheme="https://aixz.xyz/tags/%E6%A0%BC%E5%BC%8F%E5%8C%96/"/>
+    
+    <category term="GRUB引导器" scheme="https://aixz.xyz/tags/GRUB%E5%BC%95%E5%AF%BC%E5%99%A8/"/>
+    
+    <category term="蓝牙驱动" scheme="https://aixz.xyz/tags/%E8%93%9D%E7%89%99%E9%A9%B1%E5%8A%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>vim安装markdown插件</title>
+    <link href="https://aixz.xyz/vim/85cf1172/"/>
+    <id>https://aixz.xyz/vim/85cf1172/</id>
+    <published>2023-02-28T11:12:24.000Z</published>
+    <updated>2023-02-28T11:12:24.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="vim安装markdown步骤："><a href="#vim安装markdown步骤：" class="headerlink" title="vim安装markdown步骤："></a>vim安装markdown步骤：</h1><h2 id="1-安装vundle管理插件"><a href="#1-安装vundle管理插件" class="headerlink" title="1.安装vundle管理插件"></a>1.安装vundle管理插件</h2><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:<span class="regexp">//gi</span>thub.com<span class="regexp">/VundleVim/</span>Vundle.vim.git ~<span class="regexp">/.vim/</span>bundle/Vundle.vim</span><br></pre></td></tr></table></figure><p>默认安装在<code>/.vim/bundle/vundle</code>下</p><span id="more"></span><h2 id="2-配置vundle插件"><a href="#2-配置vundle插件" class="headerlink" title="2.配置vundle插件"></a>2.配置vundle插件</h2><p>先用</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span> -a</span><br></pre></td></tr></table></figure><p>首先查看&#x2F;home&#x2F;用户名&#x2F;下有没有<code>.vimrc</code>文件</p><p>如果没有就从&#x2F;etc&#x2F;vim&#x2F;目录下复制一个vimrc到&#x2F;home&#x2F;用户名&#x2F;下</p><p>并改名为<code>.vimrc</code></p><p>在终端通过vim打开<code>~/.vimrc</code>文件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.vimrc</span><br></pre></td></tr></table></figure><p>也可以直接在目录中打开（快捷键ctrl+H显示隐藏文件）。<br>将以下加在<code>.vimrc</code>文件中，加入之后保存之后就可以使用vundle了。</p><h3 id="添加的配置信息（样例）"><a href="#添加的配置信息（样例）" class="headerlink" title="添加的配置信息（样例）"></a>添加的配置信息（样例）</h3><p>注：以后安装新插件就直接编辑<code>.vimrc</code>，添加plugin就行了，在这里我们添加的plugin只是例子，你可以不安装这些插件，换上自己需要安装的插件。</p><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&quot; vundle配置 </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">set</span> nocompatible              <span class="comment">&quot; 去除VI一致性,必须要添加</span></span><br><span class="line"><span class="keyword">filetype</span> off                  <span class="comment">&quot; 必须要添加</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 设置包括vundle和初始化相关的runtime path</span></span><br><span class="line"><span class="keyword">set</span> rtp+=~/.<span class="keyword">vim</span>/bundle/Vundle.<span class="keyword">vim</span></span><br><span class="line"><span class="keyword">call</span> vundle#begin()</span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 安装插件位置</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 另一种选择, 指定一个vundle安装插件的路径</span></span><br><span class="line"><span class="comment">&quot;call vundle#begin(&#x27;~/some/path/here&#x27;)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 让vundle管理插件版本,必须</span></span><br><span class="line">Plugin <span class="string">&#x27;VundleVim/Vundle.vim&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 以下范例用来支持不同格式的插件安装.</span></span><br><span class="line"><span class="comment">&quot; 请将安装插件的命令放在vundle#begin和vundle#end之间.</span></span><br><span class="line"><span class="comment">&quot; Github上的插件</span></span><br><span class="line"><span class="comment">&quot; 格式为 Plugin &#x27;用户名/插件仓库名&#x27;</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;tpope/vim-fugitive&#x27;</span></span><br><span class="line"><span class="comment">&quot; 来自 http://vim-scripts.org/vim/scripts.html 的插件</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;插件名称&#x27; 实际上是 Plugin &#x27;vim-scripts/插件仓库名&#x27; 只是此处的用户名可以省略</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;L9&#x27;</span></span><br><span class="line"><span class="comment">&quot; 由Git支持但不再github上的插件仓库 Plugin &#x27;git clone 后面的地址&#x27;</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;git://git.wincent.com/command-t.git&#x27;</span></span><br><span class="line"><span class="comment">&quot; 本地的Git仓库(例如自己的插件) Plugin &#x27;file:///+本地插件仓库绝对路径&#x27;</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;file:///home/gmarik/path/to/plugin&#x27;</span></span><br><span class="line"><span class="comment">&quot; 插件在仓库的子目录中.</span></span><br><span class="line"><span class="comment">&quot; 正确指定路径用以设置runtimepath. 以下范例插件在sparkup/vim目录下</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;rstacruz/sparkup&#x27;, &#123;&#x27;rtp&#x27;: &#x27;vim/&#x27;&#125;</span></span><br><span class="line"><span class="comment">&quot; 安装L9，如果已经安装过这个插件，可利用以下格式避免命名冲突</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;ascenator/L9&#x27;, &#123;&#x27;name&#x27;: &#x27;newL9&#x27;&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 你的所有插件需要在下面这行之前</span></span><br><span class="line"><span class="keyword">call</span> vundle#end()            <span class="comment">&quot; 必须</span></span><br><span class="line"><span class="keyword">filetype</span> plugin <span class="built_in">indent</span> <span class="keyword">on</span>    <span class="comment">&quot; 必须 加载vim自带和插件相应的语法和文件类型相关脚本</span></span><br><span class="line"><span class="comment">&quot; 忽视插件改变缩进,可以使用以下替代:</span></span><br><span class="line"><span class="comment">&quot;filetype plugin on</span></span><br><span class="line"><span class="comment">&quot;</span></span><br><span class="line"><span class="comment">&quot; 常用的命令</span></span><br><span class="line"><span class="comment">&quot; :PluginList       - 列出所有已配置的插件</span></span><br><span class="line"><span class="comment">&quot; :PluginInstall   - 安装插件,追加 `!` 用以更新或使用 :PluginUpdate</span></span><br><span class="line"><span class="comment">&quot; :PluginSearch foo - 搜索 foo ; 追加 `!` 清除本地缓存</span></span><br><span class="line"><span class="comment">&quot; :PluginClean      - 清除未使用插件,需要确认; 追加 `!` 自动批准移除未使用插件</span></span><br><span class="line"><span class="comment">&quot;</span></span><br><span class="line"><span class="comment">&quot; 查阅 :h vundle 获取更多细节和wiki以及FAQ</span></span><br><span class="line"><span class="comment">&quot; 将你自己对非插件片段放在这行之后</span></span><br></pre></td></tr></table></figure><h2 id="3-安装vim-instant-markdown插件"><a href="#3-安装vim-instant-markdown插件" class="headerlink" title="3.安装vim-instant-markdown插件"></a>3.安装vim-instant-markdown插件</h2><p>在<code>.vimrc</code>中vundle配置<code>vundle#begin</code>和<code>vundle#end</code>之间加入以下命令</p><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">Plugin</span> <span class="string">&#x27;suan/vim-instant-markdown&#x27;</span></span><br></pre></td></tr></table></figure><p>位置在vundle配置中有备注说明</p><p>:wq保存之后运行vim</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">vim</span></span><br></pre></td></tr></table></figure><p>在vim里运行安装命令</p><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">:PluginInstall</span></span><br></pre></td></tr></table></figure><p>这里vim里面安装markdown就已经安装完成了</p><h3 id="移除不需要的插件"><a href="#移除不需要的插件" class="headerlink" title="移除不需要的插件"></a>移除不需要的插件</h3><ol><li>编辑.vimrc文件移除的你要移除的插件所对应的plugin那一行。</li><li>保存退出当前的vim</li><li>重新打开vim，输入命令BundleClean。</li></ol><h3 id="其他常用命令"><a href="#其他常用命令" class="headerlink" title="其他常用命令"></a>其他常用命令</h3><p>可以在vim里用这个命令列出所有已安装的插件</p><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">:BundleList</span></span><br></pre></td></tr></table></figure><p>更新插件</p><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">:BundleUpdate</span></span><br></pre></td></tr></table></figure><p>查找插件</p><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">:BundleSearch</span></span><br></pre></td></tr></table></figure><p>这个markdown插件安装以后会在浏览器开一个本地网页作为预览</p><p>也可以安装其他的插件方法都一样</p><p>我这篇文章就是<code>vim-instant-markdown</code>这个插件写的</p><p>只要对markdown语法和vim熟悉，和其他markdown编辑器没有什么区别</p>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;vim安装markdown步骤：&quot;&gt;&lt;a href=&quot;#vim安装markdown步骤：&quot; class=&quot;headerlink&quot; title=&quot;vim安装markdown步骤：&quot;&gt;&lt;/a&gt;vim安装markdown步骤：&lt;/h1&gt;&lt;h2 id=&quot;1-安装vundle管理插件&quot;&gt;&lt;a href=&quot;#1-安装vundle管理插件&quot; class=&quot;headerlink&quot; title=&quot;1.安装vundle管理插件&quot;&gt;&lt;/a&gt;1.安装vundle管理插件&lt;/h2&gt;&lt;figure class=&quot;highlight awk&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;git clone https:&lt;span class=&quot;regexp&quot;&gt;//gi&lt;/span&gt;thub.com&lt;span class=&quot;regexp&quot;&gt;/VundleVim/&lt;/span&gt;Vundle.vim.git ~&lt;span class=&quot;regexp&quot;&gt;/.vim/&lt;/span&gt;bundle/Vundle.vim&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;p&gt;默认安装在&lt;code&gt;/.vim/bundle/vundle&lt;/code&gt;下&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="vim" scheme="https://aixz.xyz/categories/vim/"/>
+    
+    
+    <category term="vim" scheme="https://aixz.xyz/tags/vim/"/>
+    
+    <category term="markdown" scheme="https://aixz.xyz/tags/markdown/"/>
+    
+    <category term="插件" scheme="https://aixz.xyz/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+    <category term="vundle插件" scheme="https://aixz.xyz/tags/vundle%E6%8F%92%E4%BB%B6/"/>
+    
+    <category term="vimrc" scheme="https://aixz.xyz/tags/vimrc/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>沉没成本——一双沾了泥水的新鞋</title>
+    <link href="https://aixz.xyz/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/287816a9/"/>
+    <id>https://aixz.xyz/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/287816a9/</id>
+    <published>2023-02-23T16:22:27.000Z</published>
+    <updated>2023-02-23T16:22:27.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>在经济学上有个名词叫沉没成本，意思就是这个成本已经不存在了，想要怎么去挽回都已经变得不现实了，这意思和破罐子破摔那意思还是有很大区别的。而沉没成本的意思是不要过多的去重视已不存在的事物，停止不前永远只是停留在原地不动。浪费的时间和金钱还会更多，向前看去才是正确的做法。</p><span id="more"></span><p>轿夫的故事里他爱护自己的新鞋，这是人之常情，因为这双鞋可能是他努力赚钱才买来的。人人也都是这样，凡是新的东西都会觉得倍加珍贵。所以轿夫他肯定是要挑着没有泥水的路走。但是路很多的地方它就全是泥水啊，总不能不走着过去吧，更何况还抬着轿子呢，里面还坐着雇主呢。</p><p>那里面的人他才不管轿夫穿的新鞋还是旧鞋，他只是要催着轿夫赶快走，他只是想快点到自己想去的目的地，他也不管轿夫脚下走的路是水泥坑还是平坦干燥的。</p><p>轿夫的新鞋沾了泥水了，那心里自然也是不高兴的，可是那有什么办法呢，脏了就脏了吧，还得抬着轿子往前走啊，不然这趟活完不成又拿什么养家糊口呢。</p><p>那官员去和下属说了这件事也没有什么让人醒悟的道理，因为只要是一双新鞋早晚都要碰上泥水啊，只不过是有个时间先后顺序而已。估计那些下属听了也是一脸不解，这说的什么啊，到底是要表达什么呢？</p><p>对于轿夫来说他其实才是明智的，因为他的做法符合经济学规律，一双新鞋虽然在没有碰泥水的时候是要好好珍惜一下的。但一旦都碰到一脚的泥水了，那还去顾及它干什么呢？更何况这脚下的环境他也不容易啊，脏一小块和全脏了那有什么区别呢，过于在乎已经无法挽回的损失，还耽误事呢。等一下要是把轿上的送去晚了，那肯定是一通被骂不说，可能还连累了工友呢。</p><p>所以说鞋子脏了就脏了吧，就算前面的依然还全是水泥地，全是泥和水混在一起，那又如何，还不是一样要坦荡的走过去。人生不亦是如此吗？刚开始时自己所珍惜的，后来由于环境的变化渐渐的不存在了，又何必再耿耿于怀，难不成都要回到过去再寻找一番不成。</p><p>沉没的成本有很多，而不只这双沾泥水的新鞋子，如果一味还去在乎，还去想着，还去放不下，那失去的也会更多，这是一种得不偿失的做法，有时候该放弃时就得放弃，该遗忘时还就得遗忘。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;在经济学上有个名词叫沉没成本，意思就是这个成本已经不存在了，想要怎么去挽回都已经变得不现实了，这意思和破罐子破摔那意思还是有很大区别的。而沉没成本的意思是不要过多的去重视已不存在的事物，停止不前永远只是停留在原地不动。浪费的时间和金钱还会更多，向前看去才是正确的做法。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="作文练习" scheme="https://aixz.xyz/categories/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/"/>
+    
+    
+    <category term="得不偿失" scheme="https://aixz.xyz/tags/%E5%BE%97%E4%B8%8D%E5%81%BF%E5%A4%B1/"/>
+    
+    <category term="沉没成本" scheme="https://aixz.xyz/tags/%E6%B2%89%E6%B2%A1%E6%88%90%E6%9C%AC/"/>
+    
+    <category term="泥水" scheme="https://aixz.xyz/tags/%E6%B3%A5%E6%B0%B4/"/>
+    
+    <category term="新鞋" scheme="https://aixz.xyz/tags/%E6%96%B0%E9%9E%8B/"/>
+    
+    <category term="破罐子" scheme="https://aixz.xyz/tags/%E7%A0%B4%E7%BD%90%E5%AD%90/"/>
+    
+    <category term="轿夫" scheme="https://aixz.xyz/tags/%E8%BD%BF%E5%A4%AB/"/>
+    
+    <category term="下属" scheme="https://aixz.xyz/tags/%E4%B8%8B%E5%B1%9E/"/>
+    
+    <category term="耽误事" scheme="https://aixz.xyz/tags/%E8%80%BD%E8%AF%AF%E4%BA%8B/"/>
+    
+    <category term="环境" scheme="https://aixz.xyz/tags/%E7%8E%AF%E5%A2%83/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>轿夫的新鞋</title>
+    <link href="https://aixz.xyz/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/e7090870/"/>
+    <id>https://aixz.xyz/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/e7090870/</id>
+    <published>2023-02-23T16:16:57.000Z</published>
+    <updated>2023-02-23T16:16:57.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="作文题："><a href="#作文题：" class="headerlink" title="作文题："></a>作文题：</h1><p>古代有个官员对下属们讲了一件事：昨天雨后乘轿进城，轿夫穿的是双新鞋。开始，他小心地挑着干净地面落脚，后来一不小心踩进泥水里，于是便不再顾及新鞋。一个下属听后说：“终生不敢忘。”结合上面的材料，自拟题目，写一篇不少于800字的文章，文体不限，诗歌除外。</p><span id="more"></span><p>昨天雨后，天气阴沉沉的，路上泥泞不堪。有个官员要乘轿进城办事，他叫来了两个轿夫。他一眼就看出来，这两个轿夫都是穷苦人家出身，衣服破烂不堪，但是他们的脚上却都穿着双新鞋。</p><p>官员心想：“这两个人一定是刚刚买了新鞋，想要保护好它们。”于是他对他们说：“今天路上很脏，你们要小心点走，别把新鞋弄脏了。”</p><p>轿夫们听了官员的话，都点点头表示答应。然后他们抬起轿子就往城里走。</p><p>开始的时候，轿夫们都很小心地挑着干净地面落脚，尽量避开泥水和石头。但是路上实在太难走了，有时候一个不小心就会踩到一个坑里或者被一个车辙绊倒。</p><p>其中一个轿夫就遇到了这样的情况。他正走着呢，突然一只脚陷进了一个深深的水坑里。他感觉到冷冰冰的泥水浸透了他的新鞋和袜子，顺着腿流到裤子上。</p><p>他心里非常难过和生气。他想：“我的新鞋啊！我省吃俭用才买来的！现在全毁了！”</p>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;作文题：&quot;&gt;&lt;a href=&quot;#作文题：&quot; class=&quot;headerlink&quot; title=&quot;作文题：&quot;&gt;&lt;/a&gt;作文题：&lt;/h1&gt;&lt;p&gt;古代有个官员对下属们讲了一件事：昨天雨后乘轿进城，轿夫穿的是双新鞋。开始，他小心地挑着干净地面落脚，后来一不小心踩进泥水里，于是便不再顾及新鞋。一个下属听后说：“终生不敢忘。”结合上面的材料，自拟题目，写一篇不少于800字的文章，文体不限，诗歌除外。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="作文练习" scheme="https://aixz.xyz/categories/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/"/>
+    
+    
+    <category term="新鞋" scheme="https://aixz.xyz/tags/%E6%96%B0%E9%9E%8B/"/>
+    
+    <category term="轿夫" scheme="https://aixz.xyz/tags/%E8%BD%BF%E5%A4%AB/"/>
+    
+    <category term="官员" scheme="https://aixz.xyz/tags/%E5%AE%98%E5%91%98/"/>
+    
+    <category term="干净地面" scheme="https://aixz.xyz/tags/%E5%B9%B2%E5%87%80%E5%9C%B0%E9%9D%A2/"/>
+    
+    <category term="袜子" scheme="https://aixz.xyz/tags/%E8%A2%9C%E5%AD%90/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>兴趣，让学习更有趣</title>
+    <link href="https://aixz.xyz/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/926594c9/"/>
+    <id>https://aixz.xyz/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/926594c9/</id>
+    <published>2023-02-23T15:41:32.000Z</published>
+    <updated>2023-02-23T15:41:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>学习是人生的一项重要的任务，也是一种不断的探索和成长的过程。但是，学习并不总是一件轻松和愉快的事情，有时候，我们会遇到一些困难和挫折，有时候，我们会感到一些压力和烦恼，有时候，我们会对一些课程或者知识感到无趣和厌倦。这些情况，都会影响我们的学习效果和学习兴趣，甚至会让我们对学习失去信心和热情。</p><span id="more"></span><p>那么，我们该如何解决这些问题，让学习变得更有趣呢？我认为，兴趣是一个关键的因素，它可以让我们在学习中找到乐趣，激发我们的动力，提高我们的效率，创造我们的成功。</p><p>孔子说：“知之者不如好之者，好之者不如乐之者。”这句话告诉我们，兴趣是学习的源泉，只有对知识有兴趣，才能更好地去了解它，只有对知识有热爱，才能更好地去掌握它，只有对知识有乐趣，才能更好地去运用它。兴趣可以让我们在学习中感到快乐和满足，兴趣可以让我们在学习中克服困难和挑战，兴趣可以让我们在学习中发现新奇和美好。</p><p>爱因斯坦说：“兴趣是最好的老师。”这句话告诉我们，兴趣是学习的导师，它可以引导我们去发现知识的奥秘，它可以启发我们去创造知识的价值，它可以激励我们去追求知识的境界。兴趣可以让我们在学习中不断地提问和思考，兴趣可以让我们在学习中不断地探索和实践，兴趣可以让我们在学习中不断地进步和创新。</p><p>兴趣产生热爱，兴趣产生动力，兴趣创造愉悦，兴趣创造成功。我们应该珍惜和培养我们的学习兴趣，让它成为我们学习的伙伴和动力，让它成为我们学习的乐趣和目标，让它成为我们学习的源泉和导师。只有这样，我们才能在学习中享受知识的魅力，体验学习的乐趣，实现学习的成功。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;学习是人生的一项重要的任务，也是一种不断的探索和成长的过程。但是，学习并不总是一件轻松和愉快的事情，有时候，我们会遇到一些困难和挫折，有时候，我们会感到一些压力和烦恼，有时候，我们会对一些课程或者知识感到无趣和厌倦。这些情况，都会影响我们的学习效果和学习兴趣，甚至会让我们对学习失去信心和热情。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="作文练习" scheme="https://aixz.xyz/categories/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/"/>
+    
+    
+    <category term="乐趣" scheme="https://aixz.xyz/tags/%E4%B9%90%E8%B6%A3/"/>
+    
+    <category term="学习" scheme="https://aixz.xyz/tags/%E5%AD%A6%E4%B9%A0/"/>
+    
+    <category term="兴趣" scheme="https://aixz.xyz/tags/%E5%85%B4%E8%B6%A3/"/>
+    
+    <category term="作文" scheme="https://aixz.xyz/tags/%E4%BD%9C%E6%96%87/"/>
+    
+    <category term="信心" scheme="https://aixz.xyz/tags/%E4%BF%A1%E5%BF%83/"/>
+    
+    <category term="源泉" scheme="https://aixz.xyz/tags/%E6%BA%90%E6%B3%89/"/>
+    
+    <category term="境界" scheme="https://aixz.xyz/tags/%E5%A2%83%E7%95%8C/"/>
+    
+  </entry>
   
   <entry>
     <title>做感兴趣的事</title>
@@ -88,7 +262,7 @@
     <published>2022-12-25T17:53:33.000Z</published>
     <updated>2022-12-25T17:53:33.000Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="安装前的准备"><a href="#安装前的准备" class="headerlink" title="安装前的准备"></a>安装前的准备</h2><p>8G以上的U盘和电脑一台。<br>从硬盘压缩出一个大约30G的分区。<br>打开Kali官网下载安装程序映像<br><span class="exturl" data-url="aHR0cHM6Ly93d3cua2FsaS5vcmcvZ2V0LWthbGkvI2thbGktaW5zdGFsbGVyLWltYWdlcw==" title="Kali下载">获取卡利|Kali Linux<i class="fa fa-external-link-alt"></i></span></p><span id="more"></span><p>这里双系统有两种安装形式，一种是创建引导方式的，一种是不创建引导方式，直接从BIOS启动，我这里选择直接从BIOS启动的，以便以后更新win11的时候重启比较方便。</p><p>下载好安装程序映像后就是写入U盘，官方推荐两个工具，<span class="exturl" data-url="aHR0cHM6Ly93d3cuYmFsZW5hLmlvL2V0Y2hlci8=" title="Etcher下载">Etcher<i class="fa fa-external-link-alt"></i></span>和<span class="exturl" data-url="aHR0cHM6Ly9ydWZ1cy5pZS8=" title="Rufus下载">Rufus<i class="fa fa-external-link-alt"></i></span>，这里我使用Etcher，这个工具界面比较简洁，用起来也很简单。</p><p><img data-src="/Kali/c74c12b6/1.png"></p><p>这里选择Kali安装映像和要写入的U盘点击Flash!，就开始写入U盘了，写入完成会有提示，就可以使用U盘从BIOS启动了，如果失败就要格式化U盘重新再写入一次，最好是把电脑管家等杀毒软件先关掉。</p><p><span class="exturl" data-url="aHR0cHM6Ly93d3cua2FsaS5vcmcvZG9jcy91c2IvbGl2ZS11c2ItaW5zdGFsbC13aXRoLXdpbmRvd3Mv" title="创建U盘启动盘">在Windows上创建可启动的Kali USB驱动器<i class="fa fa-external-link-alt"></i></span>，这里官方给出了参考。</p><h2 id="安装注意事项"><a href="#安装注意事项" class="headerlink" title="安装注意事项"></a>安装注意事项</h2><p>选择硬盘分区时选择手动，选择压缩出来的硬盘分区，选择删除该分区，选择自动分区，选择第一个，把所有系统文件放在一个分区中。</p>]]></content>
+    <content type="html"><![CDATA[<h2 id="安装前的准备"><a href="#安装前的准备" class="headerlink" title="安装前的准备"></a>安装前的准备</h2><p>8G以上的U盘和电脑一台。<br>从硬盘压缩出一个大约30G的分区。<br>打开Kali官网下载安装程序映像<br><span class="exturl" data-url="aHR0cHM6Ly93d3cua2FsaS5vcmcvZ2V0LWthbGkvI2thbGktaW5zdGFsbGVyLWltYWdlcw==" title="Kali下载">获取卡利|Kali Linux<i class="fa fa-external-link-alt"></i></span></p><span id="more"></span><p>这里双系统有两种安装形式，一种是创建引导方式的，一种是不创建引导方式，直接从BIOS启动，我这里选择直接从BIOS启动的，以便以后更新win11的时候重启比较方便。</p><p>下载好安装程序映像后就是写入U盘，官方推荐两个工具，<span class="exturl" data-url="aHR0cHM6Ly93d3cuYmFsZW5hLmlvL2V0Y2hlci8=" title="Etcher下载">Etcher<i class="fa fa-external-link-alt"></i></span>和<span class="exturl" data-url="aHR0cHM6Ly9ydWZ1cy5pZS8=" title="Rufus下载">Rufus<i class="fa fa-external-link-alt"></i></span>，这里我使用Etcher，这个工具界面比较简洁，用起来也很简单。</p><p><img data-src="/Kali/c74c12b6/1.png"></p><p>这里选择Kali安装映像和要写入的U盘点击Flash!，就开始写入U盘了，写入完成会有提示，就可以使用U盘从BIOS启动了，如果失败就要格式化U盘重新再写入一次，最好是把电脑管家等杀毒软件先关掉。</p><p><span class="exturl" data-url="aHR0cHM6Ly93d3cua2FsaS5vcmcvZG9jcy91c2IvbGl2ZS11c2ItaW5zdGFsbC13aXRoLXdpbmRvd3Mv" title="创建U盘启动盘">在Windows上创建可启动的Kali USB驱动器<i class="fa fa-external-link-alt"></i></span>，这里官方给出了参考。</p><h2 id="正式安装"><a href="#正式安装" class="headerlink" title="正式安装"></a>正式安装</h2><p>1.插入U盘重启到BIOS界面</p><p>2.选择第一项图形化安装</p><p>3.选择语言中文简体</p><p>4.选择地理位置</p><p>5.选择键盘布局</p><p>6.网络：设置主机名</p><p>7.设置用户账户和密码</p><p>8.设置时区</p><p>9.磁盘：安装程序现在将探测您的磁盘并为您提供各种选择，具体取决于设置。在我们的指南中，我们使用的是干净的磁盘，因此我们有四个选项可供选择。我们将选择引导 - 整个磁盘，因为这是 Kali Linux 的单次启动安装，所以我们不希望安装任何其他操作系统，所以我们很乐意擦除磁盘。</p><p>10.选择要分区的磁盘</p><p>11.根据您的需要，您可以选择将所有文件保存在单个分区中（默认分区），或者为一个或多个顶级目录设置单独的分区。<br>如果您不确定想要哪个，则需要“一个分区中的所有文件”。</p><p>12.接下来，您将有最后一次机会在安装程序进行不可逆的更改之前查看磁盘配置。单击“继续”后，安装程序将开始工作，并且您将几乎完成安装。</p><p>13.Kali Linux 使用中央存储库来分发应用程序。您需要根据需要输入任何适当的代理信息。</p><p>14.接下来，您可以选择要安装的软件包。在这里要全部勾选上，不然后面蓝牙无法使用。</p><p>15.启动信息：接下来确认安装 GRUB 引导加载程序。</p><p>16.选择要在其中安装 GRUB 引导加载程序的硬盘驱动器（默认情况下，它不会选择任何驱动器）。</p><p>17.重新启动：最后，单击“继续”以重新启动到新的 Kali Linux 安装中。</p><h2 id="安装注意事项"><a href="#安装注意事项" class="headerlink" title="安装注意事项"></a>安装注意事项</h2><p>选择硬盘分区时选择手动，选择压缩出来的硬盘分区，选择删除该分区，选择自动分区，选择第一个，把所有系统文件放在一个分区中。</p>]]></content>
     
     
     <summary type="html">&lt;h2 id=&quot;安装前的准备&quot;&gt;&lt;a href=&quot;#安装前的准备&quot; class=&quot;headerlink&quot; title=&quot;安装前的准备&quot;&gt;&lt;/a&gt;安装前的准备&lt;/h2&gt;&lt;p&gt;8G以上的U盘和电脑一台。&lt;br&gt;从硬盘压缩出一个大约30G的分区。&lt;br&gt;打开Kali官网下载安装程序映像&lt;br&gt;&lt;span class=&quot;exturl&quot; data-url=&quot;aHR0cHM6Ly93d3cua2FsaS5vcmcvZ2V0LWthbGkvI2thbGktaW5zdGFsbGVyLWltYWdlcw==&quot; title=&quot;Kali下载&quot;&gt;获取卡利|Kali Linux&lt;i class=&quot;fa fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/span&gt;&lt;/p&gt;</summary>
@@ -100,13 +274,13 @@
     
     <category term="电脑" scheme="https://aixz.xyz/tags/%E7%94%B5%E8%84%91/"/>
     
-    <category term="映像" scheme="https://aixz.xyz/tags/%E6%98%A0%E5%83%8F/"/>
-    
-    <category term="U盘" scheme="https://aixz.xyz/tags/U%E7%9B%98/"/>
-    
     <category term="Kali" scheme="https://aixz.xyz/tags/Kali/"/>
     
     <category term="BIOS" scheme="https://aixz.xyz/tags/BIOS/"/>
+    
+    <category term="映像" scheme="https://aixz.xyz/tags/%E6%98%A0%E5%83%8F/"/>
+    
+    <category term="U盘" scheme="https://aixz.xyz/tags/U%E7%9B%98/"/>
     
     <category term="Etcher" scheme="https://aixz.xyz/tags/Etcher/"/>
     
@@ -465,9 +639,9 @@
     
     <category term="next主题" scheme="https://aixz.xyz/tags/next%E4%B8%BB%E9%A2%98/"/>
     
-    <category term="日历云" scheme="https://aixz.xyz/tags/%E6%97%A5%E5%8E%86%E4%BA%91/"/>
-    
     <category term="插件" scheme="https://aixz.xyz/tags/%E6%8F%92%E4%BB%B6/"/>
+    
+    <category term="日历云" scheme="https://aixz.xyz/tags/%E6%97%A5%E5%8E%86%E4%BA%91/"/>
     
     <category term="主题" scheme="https://aixz.xyz/tags/%E4%B8%BB%E9%A2%98/"/>
     
@@ -619,299 +793,6 @@
     <category term="工业废气" scheme="https://aixz.xyz/tags/%E5%B7%A5%E4%B8%9A%E5%BA%9F%E6%B0%94/"/>
     
     <category term="鸟儿" scheme="https://aixz.xyz/tags/%E9%B8%9F%E5%84%BF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>如何在《明日之后》的秋日森林中存活下来</title>
-    <link href="https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/415c3ec1/"/>
-    <id>https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/415c3ec1/</id>
-    <published>2022-05-13T16:43:11.000Z</published>
-    <updated>2022-05-13T16:43:11.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/415c3ec1/%E5%9B%BE%E7%89%871.jpg"></p><span id="more"></span><p>小伙伴们应该都知道，网易出版的《明日之后》是一个当下最火的生存类手游，我们在玩这个游戏刚开始的时候很容易被里面的生化人打死，其中一个就是去开发区的路上这里的生化人也是非常厉害的，这时候我们还没有什么好的武器，这关只能一直向前跑，遇到最后最厉害的那个生化人我们就用双手快速点击手机屏幕，也就是用双手将生化人推开，然后不要命的向前跑，过了这关就到开发区了，门口有个生化人，只要你不靠近他就没有事，它不会主动过来打你，做一把弓和一些箭把他直接射杀就可以了。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/415c3ec1/%E5%9B%BE%E7%89%872.jpg"></p><p>我们现在来说下本文要探讨的重点吧，那就是游戏中的秋日森林，去之前除了武器和装备，把其他的东西都放在柜子里，那样可以带回采集的更多资源，秋日森林不仅地名很美，里面的风景也很好，差不多也是和现实中秋天森林的景象一样，树叶有黄的也有红的，但要白天才能看到，晚上最好去绿色的安全屋和撤离点那个塔顶上面，晚上生化人出现被生化的打死的几率是很大的。因为这时候我们还没有枪，这塔上面是看风景的绝佳好处。这塔上面有个快递员，坐直升机回来之前，所有采集到的背包里的资源都必须通过快递员邮寄回来，小伙伴们不用担心会被邮寄丢了或者找不到，回家了所有邮寄的资源都在门口的邮箱里，自己领取就是了。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/415c3ec1/%E5%9B%BE%E7%89%873.jpg"></p><p>想要在秋日森林里长时间生存，晚上天黑就必须去这两个地方，也就是绿色安全屋和撤离点的塔顶上，而且要在地图上标注，那样可以在生化人到来之前到达这两个地方，如果路上或者山上遇到动物或生化人那就跑吧，因为前期的装备和武器都很差，我们都打不过这些，被生化人和野兽咬死那也是挺不划算的，包里的东西也会掉。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/415c3ec1/%E5%9B%BE%E7%89%874.jpg"></p><p>在秋日森林里资源是很丰富的，我们在秋日森林里就是要多采集资源少打怪，特别要多采集麻，因为麻是制作绷带的资源，而绷带恢复血量是挺好的恢复物品，浆果不用采集太多，饿了够吃就可以，菜叶也可以采集点，主要是用来烹饪其他食品，剩下就是要按任务要求多砍树和采集石头了。如果没有需要采集蘑菇的任务，那下雨天也尽量少出去，因为下雨天生化人和也兽出没的几率很大，不幸遇上被它们攻击也是挺惨的，所以下雨天气最好待在安全屋和塔顶，等雨过后再出去采集资源，那样就会比较安全。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/415c3ec1/%E5%9B%BE%E7%89%875.jpg"></p><p>反正在秋日森林里生存，安全就是最重要的了，少掉血，多采集资源就是了，白天可以去塔上面看看风景那也挺有意思的，小伙伴们有什么好的想法和建议那也可以在下方留言交流。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/415c3ec1/%E5%9B%BE%E7%89%876.jpg"></p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img data-src=&quot;/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/415c3ec1/%E5%9B%BE%E7%89%871.jpg&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="日常记录" scheme="https://aixz.xyz/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="快递员" scheme="https://aixz.xyz/tags/%E5%BF%AB%E9%80%92%E5%91%98/"/>
-    
-    <category term="风景" scheme="https://aixz.xyz/tags/%E9%A3%8E%E6%99%AF/"/>
-    
-    <category term="手机屏幕" scheme="https://aixz.xyz/tags/%E6%89%8B%E6%9C%BA%E5%B1%8F%E5%B9%95/"/>
-    
-    <category term="明日之后" scheme="https://aixz.xyz/tags/%E6%98%8E%E6%97%A5%E4%B9%8B%E5%90%8E/"/>
-    
-    <category term="秋日森林" scheme="https://aixz.xyz/tags/%E7%A7%8B%E6%97%A5%E6%A3%AE%E6%9E%97/"/>
-    
-    <category term="生化人" scheme="https://aixz.xyz/tags/%E7%94%9F%E5%8C%96%E4%BA%BA/"/>
-    
-    <category term="开发区" scheme="https://aixz.xyz/tags/%E5%BC%80%E5%8F%91%E5%8C%BA/"/>
-    
-    <category term="武器" scheme="https://aixz.xyz/tags/%E6%AD%A6%E5%99%A8/"/>
-    
-    <category term="装备" scheme="https://aixz.xyz/tags/%E8%A3%85%E5%A4%87/"/>
-    
-    <category term="资源" scheme="https://aixz.xyz/tags/%E8%B5%84%E6%BA%90/"/>
-    
-    <category term="打怪" scheme="https://aixz.xyz/tags/%E6%89%93%E6%80%AA/"/>
-    
-    <category term="蘑菇" scheme="https://aixz.xyz/tags/%E8%98%91%E8%8F%87/"/>
-    
-    <category term="留言交流" scheme="https://aixz.xyz/tags/%E7%95%99%E8%A8%80%E4%BA%A4%E6%B5%81/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>2018年最后的夜晚你怎样度过，12月31日我的过年回家路</title>
-    <link href="https://aixz.xyz/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/"/>
-    <id>https://aixz.xyz/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/</id>
-    <published>2022-05-12T10:23:07.000Z</published>
-    <updated>2022-05-12T10:23:07.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>记得四年前那年我从江苏打工回家的路上刚好遇上了跨年夜，那年是在火车上度过的，元旦的前一天我在上海玩了一上午，因为我买的是那天下午的六点钟的火车票，那年还是二零一四年，还没有从上海到贵州的高铁，我是提前一天从昆山坐的高铁到了上海，在上海南站不远处的一家旅馆住了一个晚上，第二天下午，也就是十二月三十一日下午六点才是我要坐火车离开上海的时间，所以早上起来就去上海玩了一下，一直玩到下午三点多才回的旅馆，去了上海外滩在那里玩了估计大概有两个小时吧，用手机拍了些照片然后就匆匆忙忙的坐公交车回旅馆了。</p><span id="more"></span><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/%E5%9B%BE%E7%89%871.jpg"></p><p>早上出去时，我给那旅馆的老板交代了，说我要出去玩一下，可能要到下午两点才回来，然后那老板说加十块钱，然后就把退房的时间延长到了下午的两点钟，但我到达旅馆时早已超过了两点钟了，已经是下午的三点了，但老板人还是挺不错的，她也没有要我加钱。拿了行旅包出了旅馆，我就直接去上海南站了。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/%E5%9B%BE%E7%89%872.jpg"></p><p>到了上海南站时那里的人已经是很多了，那时已经进入春运期间了，就像今年将要走完的这二零一八年一样，春运来得早回家过年的人也很多，在自动售票机那里也已经是排成长长的队伍了，我要去那里取票也只能是慢慢的等着排队了，那年12306的火车票已经是可以用手机买票了，我的火车票就是在手机上购买的，所以得先去把票取了才能进站。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/%E5%9B%BE%E7%89%873.jpg"></p><p>等了没有多久就轮到我了，大概也就等了十多分钟吧，我无聊时用手机看了下新闻，无意中感觉前面排队的人也动得很快，售票机这里大多都是来直接就取票的，他们也是像我一样在网上或手机上就已经支付把火车票买了，所以直接来自动售票机这里刷身份证取就快了很多。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/%E5%9B%BE%E7%89%874.jpg"></p><p>取到票以后我就直接进站了，虽然说离开车时间也还有两个多小时，但在上海南站这外面也没有啥好玩的了，所以说还是去候车大厅等着吧，候车大厅里面还要暖和一点呢，那时候上海的冬天也像今年一样是很冷的了。梧桐叶零散的飘落着，掉了满条路都是黄黄的树叶，那些树叶走上去轻轻一踩就碎了。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/%E5%9B%BE%E7%89%875.jpg"></p><p>检了票通过安检以后我就直接进到候车大厅里了，两个多小时说长也不算长，但说短也不算太短，这时候我人也饿了，只能把行李包放下去买一个泡面来吃了，从早上吃了点早餐就出去玩的了，已经过了好几个小时了，而且还到处走来走去的玩，说不饿的话那肯定是在骗自己了，那候车大厅里面还有没有其他吃的，已经过去那么些年了，我也是记得不太清楚了，我们出门打工的人也没有多少钱去消费，所以最简单的就只能在候车大厅小卖部那里买一个泡面来泡着吃下，也好解决下饥饿了。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/%E5%9B%BE%E7%89%876.jpg"></p><p>泡面买回来后我就去打开水那里撕掉了外包装膜、撕开调料包把调料包全都倒在面块上面，然后往泡面筒里面打上开水、盖上面筒上面的纸盖，然后就回到放行李那里等着吃泡面了，冬天这泡面拿在手里那还是感觉暖暖的。大约过了十多分钟，泡面泡好了，揭开纸盖拿着勺子就直接开始吃了起来，揭开纸盖一缕香香的味道，估计我是饿得太久了吧，要不平时也没有感觉吃泡面有这么好吃啊。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/%E5%9B%BE%E7%89%877.jpg"></p><p>过了十多分钟后我终于把泡面吃完了，连汤都喝完了，我想我是饿得太久了，吃完泡面以后我就去垃圾桶那里丢掉了泡面的空盒子了，又回到放行李这里的座位上，又继续等待着吧，回到座位上我拿出了手机看了下时间，又看了候车区前面的大屏幕上我要坐的那辆车的发车时间，和手机上的时间对了一下看着还有一个小时，这时候我又去候车大厅里小买部那里买了一瓶矿泉水，边喝边簌了下口，这泡面的味道吃在嘴里实在太浓了，喝点水簌下感觉舒服很多了。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/%E5%9B%BE%E7%89%878.jpg"></p><p>回到我放行李包旁边的座位上坐下以后，我就拿着手机开始看新闻了，不知不觉中半个小时就过去了，这时候坐在我身边的人已经开始拿起行李准备检票了，我看看手机上的时间提前三十分钟检票确实也是到检票时间了，我也拿起行李站到人群的后面开始排队了，这时我把手机放进口袋了，我看着窗外天已经是完全的黑了，上海的天气还是黑得比较早。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/%E5%9B%BE%E7%89%879.jpg"></p><p>又过了几分钟，这时广播里面喊道开始检票了，排在我前面的人也开始在动了，检票员在一个个的检完票就放过去，检得也很快，我是排在队伍中间的，一下子我就走到检票员这里了，检完票以后我也从那个铁门走过去了，下了一道长长的楼梯就看到火车已经来了停在下面等着我们上车了，人也实在太多了，楼梯上也都挤满了人。其间，有个女孩子不知道是终于看到火车太激动了，还是给饿晕了，下楼梯时拿着行李就摔倒在地上了，我赶紧过去扶了她起来，她说了声谢谢又继续往前冲了，感觉人人都是害怕火车开走了赶不上的样子，每个人都赶得很匆忙。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/%E5%9B%BE%E7%89%8710.jpg"></p><p>在那么多人群中我也是终于挤上火车找到自己的座位了，车上的人全都挤在车厢边上的过道上，都还在拿着自己的火车票找自己的座位，人也太多了，还好我买的是卧铺座，这一节卧铺车厢，人还是要稍微少一点，没有感觉那么挤，不过这一次回家过年我感觉也是身心疲惫了。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/%E5%9B%BE%E7%89%8711.jpg"></p><p>躺在铺位上没有多久火车就开动了，从上海坐火车到贵州要四十多个小时，这是那种普快的火车比不上现在高铁的速度，幸好我买的是卧铺票，睡一觉火车也走了几百公里了。我在卧铺上躺着玩了下手机，就在不知不觉中就睡着了，也许是白天玩得太累了的缘故吧，很快就迷迷糊糊睡着了，睡后不久也就进入梦乡了，还在梦着白天在上海外滩玩的那些事，见到过的那些人，就这样梦着梦着一觉睡到第二天清晨醒来了，火车还在继续开动着，也不知道昨晚停了多少个站了，因为我昨晚睡得很沉至于火车在哪个站停了多久那我也是不清楚的。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/%E5%9B%BE%E7%89%8712.jpg"></p><p>我刚醒过来就拿着手机在看新闻了，这火车都还要开一天才能到贵州，想想也还是玩下手机解解闷。这天已经是元旦了，是二零一五年元月了，昨晚就是跨年夜，我这才想起我坐这列火车坐了两年了，旁边铺位的人也是早早醒来了，有的在拿着手机看新闻，有的坐在车厢过道那里给手机充电，那里有两个插座，正好可以给手机充电。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/%E5%9B%BE%E7%89%8713.jpg"></p><p>这二零一四年就在我坐着的这列火车上走过了，突然旁边有人看着手机上的新闻说昨晚上海外滩那里踩死人了，我刚开始也不相信，就打开手机看了新闻，终于才知道是真的发生了，难怪昨晚我就一直梦到那里呢，看新闻说是人太多了造成互相踩踏，有几个女的因为太廋小在楼梯那里摔倒被涌过来的人群给踩死了，这也太恐怖了吧，我还感到幸好昨天晚上没有在那里，白天下午我就撤了，我也是被幸运之神眷顾了。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/%E5%9B%BE%E7%89%8714.jpg"></p><p>火车继续的向前走着，我这次回家的路就这样在火车卧铺上躺着睡了几十个小时，横跨了两个年头，到了第三天也就是二零一五年一月二日凌晨三点钟才终于到了贵州六盘水，从这里到家就不远了。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/46b0bbda/%E5%9B%BE%E7%89%8715.jpg"></p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;记得四年前那年我从江苏打工回家的路上刚好遇上了跨年夜，那年是在火车上度过的，元旦的前一天我在上海玩了一上午，因为我买的是那天下午的六点钟的火车票，那年还是二零一四年，还没有从上海到贵州的高铁，我是提前一天从昆山坐的高铁到了上海，在上海南站不远处的一家旅馆住了一个晚上，第二天下午，也就是十二月三十一日下午六点才是我要坐火车离开上海的时间，所以早上起来就去上海玩了一下，一直玩到下午三点多才回的旅馆，去了上海外滩在那里玩了估计大概有两个小时吧，用手机拍了些照片然后就匆匆忙忙的坐公交车回旅馆了。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="情感美文" scheme="https://aixz.xyz/categories/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/"/>
-    
-    
-    <category term="夜晚" scheme="https://aixz.xyz/tags/%E5%A4%9C%E6%99%9A/"/>
-    
-    <category term="回家路" scheme="https://aixz.xyz/tags/%E5%9B%9E%E5%AE%B6%E8%B7%AF/"/>
-    
-    <category term="跨年夜" scheme="https://aixz.xyz/tags/%E8%B7%A8%E5%B9%B4%E5%A4%9C/"/>
-    
-    <category term="高铁" scheme="https://aixz.xyz/tags/%E9%AB%98%E9%93%81/"/>
-    
-    <category term="上海" scheme="https://aixz.xyz/tags/%E4%B8%8A%E6%B5%B7/"/>
-    
-    <category term="旅馆" scheme="https://aixz.xyz/tags/%E6%97%85%E9%A6%86/"/>
-    
-    <category term="公交车" scheme="https://aixz.xyz/tags/%E5%85%AC%E4%BA%A4%E8%BD%A6/"/>
-    
-    <category term="上海南站" scheme="https://aixz.xyz/tags/%E4%B8%8A%E6%B5%B7%E5%8D%97%E7%AB%99/"/>
-    
-    <category term="12306" scheme="https://aixz.xyz/tags/12306/"/>
-    
-    <category term="售票机" scheme="https://aixz.xyz/tags/%E5%94%AE%E7%A5%A8%E6%9C%BA/"/>
-    
-    <category term="刷身份证" scheme="https://aixz.xyz/tags/%E5%88%B7%E8%BA%AB%E4%BB%BD%E8%AF%81/"/>
-    
-    <category term="梧桐叶" scheme="https://aixz.xyz/tags/%E6%A2%A7%E6%A1%90%E5%8F%B6/"/>
-    
-    <category term="候车大厅" scheme="https://aixz.xyz/tags/%E5%80%99%E8%BD%A6%E5%A4%A7%E5%8E%85/"/>
-    
-    <category term="消费" scheme="https://aixz.xyz/tags/%E6%B6%88%E8%B4%B9/"/>
-    
-    <category term="泡面" scheme="https://aixz.xyz/tags/%E6%B3%A1%E9%9D%A2/"/>
-    
-    <category term="大屏幕" scheme="https://aixz.xyz/tags/%E5%A4%A7%E5%B1%8F%E5%B9%95/"/>
-    
-    <category term="检票" scheme="https://aixz.xyz/tags/%E6%A3%80%E7%A5%A8/"/>
-    
-    <category term="卧铺车厢" scheme="https://aixz.xyz/tags/%E5%8D%A7%E9%93%BA%E8%BD%A6%E5%8E%A2/"/>
-    
-    <category term="上海外滩" scheme="https://aixz.xyz/tags/%E4%B8%8A%E6%B5%B7%E5%A4%96%E6%BB%A9/"/>
-    
-    <category term="解闷" scheme="https://aixz.xyz/tags/%E8%A7%A3%E9%97%B7/"/>
-    
-    <category term="看新闻" scheme="https://aixz.xyz/tags/%E7%9C%8B%E6%96%B0%E9%97%BB/"/>
-    
-    <category term="横跨" scheme="https://aixz.xyz/tags/%E6%A8%AA%E8%B7%A8/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>元旦过后，新年上班的第一天，发生了这些事，让人很难过</title>
-    <link href="https://aixz.xyz/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/fa2bea6f/"/>
-    <id>https://aixz.xyz/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/fa2bea6f/</id>
-    <published>2022-05-12T10:00:29.000Z</published>
-    <updated>2022-05-12T10:00:29.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img data-src="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/fa2bea6f/%E5%9B%BE%E7%89%871.jpg"></p><span id="more"></span><h2 id="一、以今怀旧"><a href="#一、以今怀旧" class="headerlink" title="一、以今怀旧"></a>一、以今怀旧</h2><p>我所在的这家公司是一家在中国的美资企业，这是其在中国其中的一家分公司，这家公司位于中国南方，在世界排名也是世界500强企业，我在这家公司只是一个最普通的操作员，其实不管他是不是世界500强企业与我都没有多大关系，我只担心的是我这个月的工资会不会被少发了，我只担心今天我在的这条线会不会又要加产量，我只担心的是到晚上下班的时候我做的产品能不能达到公司的产量要求，如果达不到产量的话，下班开会时我会不会被领班骂得不像人样。</p><p>其实我以前也做过领班，因为压力太大，还有很多员工也不服从我的管理，后来就跟主管说了申请去做普通员工了。做了普通员工后虽然没有要去管人的那么多琐碎事了，但活是干得比以前多了，还比以前累了很多，想想也是那年太年轻了吧没有社会经验，要不现在怎么还会被一个比我到公司晚的小领班骂得不像人样受这份罪呢。</p><p>那年是零九年，全球金融危机刚过去一年，制造业开始从这场全球金融危机中复苏，但是找工作的人很多，工厂要招的人却很少，那时候连一个普工的工作岗位也是很难找的，正好又遇上了大学生的毕业季，那天夏天南方的天气很热，但却挡不住人们为求得一份工作让自己能生活下去的那份热情。那时我刚刚从南方的某一所大学大专刚刚毕业，贷款读书的几年里我让家里欠下了无数的债，所以也想毕业后尽快找到一份工作好帮家里面把债务还清。</p><p>那日是一个夏日的早晨，虽然此时还只是五月份，但南方夏日的早晨已经是非常的炎热了，我来到这家公司工厂的门口，看到门口摆放着一个招工牌，上面写着招工人，年龄十八到三十五，已经有很多找工作的人在那里围观了，我挤过人群进去看了一下，每个月底薪一千元，加班费另算，平日加班1.5倍，周六日2倍，节假日3倍，虽然有节假日三倍，但那时的节假日没有现在多，所以估计能拿3倍工资的一年之中也就几天，上面也还写着提供免费吃住，有提供免费的吃住对于刚从学校出来的我还是太重要了，我当时想了想好像在我上学的这一座南方城市，这样的待遇已经是很不错了，所以我当时就报名了，填了很多表，包括两份合同，全部填完后就交给了那个负责招聘的管理人员了。看得出这位负责招聘的管理人员还是一位美女，年龄也刚好是二十七八岁的样子，穿着黑色高跟鞋，穿着红色到膝盖的裙子，上面穿着白色的女式西服衬衣，染着紫红色的头发，眼影打得很漂亮，看着显起来眼睛大大的，坐在一张上面是白色面板的架子桌前，头上面撑着大大的遮阳伞，看上去是真的很清凉，我在外面被太阳晒得太久了，头上都流汗了，到这伞下来交资料感受到的是一股清凉的感觉。我后来入了这个厂才知道她是人力资源部的，这和我们这一部门区别还真大啊，我们都要穿工装，他们却不用，他们那里还是挺爽啊。</p><p>交完资料后第二天就是去培训了，培训完以后下午三点就是开始考试了，那时候还是用纸质的试卷考试的，考过六十分的就可以留下，没有考过的就直接淘汰，原来那么多找工作的都可以直接填表，是在这里可以淘汰一批人；我很容易就考了八十多分，这三年的大学还是没有白读啊，虽然只拿了个大专学历，但是水平还是有的。后来上班后这几年，认识的这个公司的人也越来越多了，听人力资源部的朋友说现在已经不用纸质试卷考试了，改用手机考试了，说是这样节约了成本了，而且通过率也高了，现在都是百分百的通过。</p><p>入职才三个月过后，也就是试用期过后，我因为有大专学历的缘故，而且学的专业也是管理类的，所以就被上面的经理提升为领班了，其实这时候我对厂里的产品生产流程都还不是很熟悉，但我想着我既然学的是管理学的专业，那管理这几十个人对于我来说应该不难，把我学的那些现代管理学、管理心理学这些用上应该是没有问题的。一年过后我才知道我错了，这里面的管理和管理学根本就没有关系，大学里学的那些书本知识到这里完全发挥不了任何作用，这里面的管理那完全就是指令式的，就是我命令你做什么怎么做你就得服从，这本身就是奴隶式的管理，这都是二十一世纪民主社会了，有谁还愿意这样被管着，这一套在军队上那还可以，军队上是一个有着强执行力的地方，但在社会上是行不通的，人力资源管理里面也说到并不是所有人都是经济人假设，社会人假设那还是占大多数的。</p><p><img data-src="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/fa2bea6f/%E5%9B%BE%E7%89%872.jpg"></p><h2 id="二、现实生活的不易"><a href="#二、现实生活的不易" class="headerlink" title="二、现实生活的不易"></a>二、现实生活的不易</h2><p>我就这样做了一年领班后向主管申请去做普通员工了，因为这种管理方式并不是我追求的人性化管理的方式，后来经理就从其他部门调来了一个领班替换我了。这个领班干了差不多一年吧就辞工了，这个领班是个男的，管理方式也还算温和，从没有骂过我们线上的人，他说”都是出来打工的，谁也不要为难谁，你们只要配合我的工作我也不会对你们特别严厉”。就这样我们线上的人就跟他共事了一年。一年以后，他自己存了点钱，他跟他媳妇也是在这个厂做了十多年了，所以夫妻俩就回家去创业了，一来可以照顾小孩和他们的父母，二来在这个厂里面做久了也感觉厌倦没意思了，就这样他辞工回家了。</p><p>在我辞去领班的半年后，也就是这个回家创业的这个领班做了半年的时候，人力资源部给我们线分来了一个女孩，因为我们线要做的产品换了人手不够，这个女孩不是很漂亮，眼角和脸上很多雀斑，年龄也很小，刚入厂的时候才刚好十八周岁。她刚来的时候什么都不会，我们领班就让我带她学习，因为我做过一年领班的缘故，我把这条线每个岗位标准的操作手法和操作技巧全都教给她了。半年后，我们领班辞职，经理要我推荐我们线上的一个人做领班，当时我觉得她还可以所以我就推荐她了，我们这条线上当时就她年龄是最小的，我觉得她还是有前途的，其他的全都是老油条了，在这条线上做的时间都比我长了五六年，他们也不打算做什么领班了，因为他们学历都不高最高就是初中毕业，自然也就没有什么管理方法了，他们就只想着能安稳的上下班，每月不差一分的领取自己的工资就行了，可能是年龄大了都想图个安稳吧。</p><p><img data-src="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/fa2bea6f/%E5%9B%BE%E7%89%873.jpg"></p><h2 id="三、看错人后果自己很惨"><a href="#三、看错人后果自己很惨" class="headerlink" title="三、看错人后果自己很惨"></a>三、看错人后果自己很惨</h2><p>这个女孩做了领班后，我算是把她教出师了，可我就惨了，不对，不只是我，而是我们这一条线的人都被她整惨了。</p><p>那是一年后的事了，此时她十九岁，跟另外一条线的一个男孩谈恋爱了，然后就请假回她们老家结婚了，这段时间经理让我做半个月代理领班，等她婚假结束后，她回来继续做领班。短短的半个月就这样过去了，她回来后人就变了，对我们变得严厉了，而且每天上下班开会都要指着我们线上的人骂一顿才能解气，产量达不到，产品有质量问题，那我们就更是被骂得狗血淋头。女孩结了婚变成女人，这变化也太大了吧，整个人性格都变了。不过时间长了也习惯了，大家都是只要求个安稳，能安安稳稳的领工资，被她骂几句也不算什么了，就这样七年过去了，到了今年的元旦，这个公司虽然一直都在亏损，但因为它是大集团公司中的一个分公司，所以只要它一直有订单，集团公司也是不会让它倒闭的。</p><p>今年的元旦我们厂放假是星期六上了星期一也就是三十一号的班，然后从星期天放假到二号上班，星期天我们一条线上的人全都每人出一百块钱去聚餐了，吃的是牛肉火锅，我们这条线共24个人分成了三桌，钱全都交在领班那里她去安排了，火锅本来也是挺好吃的，酒也够喝，但是很多还没有下锅的菜，还有好几盘没有动过的牛肉，本来是可以退掉的，她却让饭店的人给她打包带回去了，每桌都有，我们当时就很火了，平时被她骂就算了，我们自己出钱来聚餐这点蝇头小利都还要被她剥削，钱花了多少也只有她自己清楚，估计是我们整条线的人都有气没法出吧，结果今天就有六个人自离了，有两个是星期五那天辞工期就到了，这下我们这条线一共走了八个人了，走掉了三分之一了，今天我都不做事了到处在打鱼闲逛着，因为这样做下去也没有啥意思了，我也做到过年请假回家过完年就不回来了。</p><p><img data-src="/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/fa2bea6f/%E5%9B%BE%E7%89%874.jpg"></p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img data-src=&quot;/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/fa2bea6f/%E5%9B%BE%E7%89%871.jpg&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="小说故事" scheme="https://aixz.xyz/categories/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/"/>
-    
-    
-    <category term="夏天" scheme="https://aixz.xyz/tags/%E5%A4%8F%E5%A4%A9/"/>
-    
-    <category term="人力资源" scheme="https://aixz.xyz/tags/%E4%BA%BA%E5%8A%9B%E8%B5%84%E6%BA%90/"/>
-    
-    <category term="产量" scheme="https://aixz.xyz/tags/%E4%BA%A7%E9%87%8F/"/>
-    
-    <category term="结婚" scheme="https://aixz.xyz/tags/%E7%BB%93%E5%A9%9A/"/>
-    
-    <category term="元旦过后" scheme="https://aixz.xyz/tags/%E5%85%83%E6%97%A6%E8%BF%87%E5%90%8E/"/>
-    
-    <category term="新年" scheme="https://aixz.xyz/tags/%E6%96%B0%E5%B9%B4/"/>
-    
-    <category term="以今怀旧" scheme="https://aixz.xyz/tags/%E4%BB%A5%E4%BB%8A%E6%80%80%E6%97%A7/"/>
-    
-    <category term="美资企业" scheme="https://aixz.xyz/tags/%E7%BE%8E%E8%B5%84%E4%BC%81%E4%B8%9A/"/>
-    
-    <category term="世界500强" scheme="https://aixz.xyz/tags/%E4%B8%96%E7%95%8C500%E5%BC%BA/"/>
-    
-    <category term="领班" scheme="https://aixz.xyz/tags/%E9%A2%86%E7%8F%AD/"/>
-    
-    <category term="制造业" scheme="https://aixz.xyz/tags/%E5%88%B6%E9%80%A0%E4%B8%9A/"/>
-    
-    <category term="债务" scheme="https://aixz.xyz/tags/%E5%80%BA%E5%8A%A1/"/>
-    
-    <category term="招工牌" scheme="https://aixz.xyz/tags/%E6%8B%9B%E5%B7%A5%E7%89%8C/"/>
-    
-    <category term="免费吃住" scheme="https://aixz.xyz/tags/%E5%85%8D%E8%B4%B9%E5%90%83%E4%BD%8F/"/>
-    
-    <category term="南方城市" scheme="https://aixz.xyz/tags/%E5%8D%97%E6%96%B9%E5%9F%8E%E5%B8%82/"/>
-    
-    <category term="遮阳伞" scheme="https://aixz.xyz/tags/%E9%81%AE%E9%98%B3%E4%BC%9E/"/>
-    
-    <category term="试卷" scheme="https://aixz.xyz/tags/%E8%AF%95%E5%8D%B7/"/>
-    
-    <category term="大专学历" scheme="https://aixz.xyz/tags/%E5%A4%A7%E4%B8%93%E5%AD%A6%E5%8E%86/"/>
-    
-    <category term="生产流程" scheme="https://aixz.xyz/tags/%E7%94%9F%E4%BA%A7%E6%B5%81%E7%A8%8B/"/>
-    
-    <category term="奴隶式" scheme="https://aixz.xyz/tags/%E5%A5%B4%E9%9A%B6%E5%BC%8F/"/>
-    
-    <category term="社会人假设" scheme="https://aixz.xyz/tags/%E7%A4%BE%E4%BC%9A%E4%BA%BA%E5%81%87%E8%AE%BE/"/>
-    
-    <category term="现实生活" scheme="https://aixz.xyz/tags/%E7%8E%B0%E5%AE%9E%E7%94%9F%E6%B4%BB/"/>
-    
-    <category term="创业" scheme="https://aixz.xyz/tags/%E5%88%9B%E4%B8%9A/"/>
-    
-    <category term="辞工" scheme="https://aixz.xyz/tags/%E8%BE%9E%E5%B7%A5/"/>
-    
-    <category term="雀斑" scheme="https://aixz.xyz/tags/%E9%9B%80%E6%96%91/"/>
-    
-    <category term="图个安稳" scheme="https://aixz.xyz/tags/%E5%9B%BE%E4%B8%AA%E5%AE%89%E7%A8%B3/"/>
-    
-    <category term="看错人" scheme="https://aixz.xyz/tags/%E7%9C%8B%E9%94%99%E4%BA%BA/"/>
-    
-    <category term="倒闭" scheme="https://aixz.xyz/tags/%E5%80%92%E9%97%AD/"/>
-    
-    <category term="牛肉火锅" scheme="https://aixz.xyz/tags/%E7%89%9B%E8%82%89%E7%81%AB%E9%94%85/"/>
-    
-    <category term="剥削" scheme="https://aixz.xyz/tags/%E5%89%A5%E5%89%8A/"/>
-    
-    <category term="打鱼闲逛" scheme="https://aixz.xyz/tags/%E6%89%93%E9%B1%BC%E9%97%B2%E9%80%9B/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>从做自媒体这段时间摸索出来的经验，到如何写自媒体文章的认识</title>
-    <link href="https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/90e5c133/"/>
-    <id>https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/90e5c133/</id>
-    <published>2022-05-12T09:51:00.000Z</published>
-    <updated>2022-05-12T09:51:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/90e5c133/%E5%9B%BE%E7%89%871.jpg"></p><span id="more"></span><p>如今的中国社会还是以低学历人群为大多数，并且现代人的浮躁之心比以往历史上都更加强烈，往往都是看着碗里的想着锅里的，人的贪婪之心是无穷的，再加上一个人时间被碎片化分割了，能专心去看完一本书，一篇文章的怕是已经很少了，各个自媒体平台都是在抢用户的时间，各个自媒体创作者也是这样，看谁的标题写得好，谁的颜值高。可是人只有两只眼睛，导致的后果就像皇宫里面的妃子争宠一样轮翻上演这个剧本。</p><p>如今的几秒钟的小视频为何这么火，就是因为洞察了人性浮躁追新求异的一面，填补了用户碎片化的空闲需求，所以现在写文章已经不能写太长了，太长给用户的感觉就是感觉太累看不完，因为这不是看电子书小说，那个看不完不想看了就加书签，文章这个是看不完就直接跳过了，这些都是我走过的弯路值得和大家分享。</p><p>我认为800字左右的文章体是当下最好的，这就是为什么中高考的作文都是以800字为基准点，因为这样的文章短小精悍，不到5分钟就可以看完，用户自然是喜欢看的，那些太高深太长的大多数人是不会接受的。</p><p>所以写文章要站在大多数人的角度来看问题，写他们喜欢的，写他们喜闻乐见的，那这样你还会担心没有推荐量和阅读量吗，现在平台推荐机制就是喜欢阅读的人越多，推荐量就越多，就是这样反反复复逐渐倍增的，所以总结出来就是四个字短小精悍，这就是我要说的重点。</p><p>那是不是说越短越好呢，并不是这样的，短了一件事你根本表述不清楚，就像一个故事一样只讲了开头，没有结尾，给人的感觉就像是开车看着远处是有路的到近前一看路却没有了，不免让人意尤未绝，和吃饭吃到一半被喊去做事一样的。</p><p>都说万事开头难，其实这写文章也是一样，就像我们刚开始说话时一样，刚开始只会一些简单语句，后来越说越通顺，有的还能涛涛不绝，文章也是如此，这是一门对文字组织能力的应用，当然每天坚持写800字的短文其实并不难，只要坚持七天你就能对文字应用自如。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/90e5c133/%E5%9B%BE%E7%89%872.jpg"></p><p>好了就写这么多吧，一不小心都快900字了，觉得有用的各位看官就收藏吧，感觉没有用的就当我是胡说八道好了。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/90e5c133/%E5%9B%BE%E7%89%873.jpg"></p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img data-src=&quot;/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/90e5c133/%E5%9B%BE%E7%89%871.jpg&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="日常记录" scheme="https://aixz.xyz/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="文章" scheme="https://aixz.xyz/tags/%E6%96%87%E7%AB%A0/"/>
-    
-    <category term="创作者" scheme="https://aixz.xyz/tags/%E5%88%9B%E4%BD%9C%E8%80%85/"/>
-    
-    <category term="自媒体" scheme="https://aixz.xyz/tags/%E8%87%AA%E5%AA%92%E4%BD%93/"/>
-    
-    <category term="摸索" scheme="https://aixz.xyz/tags/%E6%91%B8%E7%B4%A2/"/>
-    
-    <category term="妃子争宠" scheme="https://aixz.xyz/tags/%E5%A6%83%E5%AD%90%E4%BA%89%E5%AE%A0/"/>
-    
-    <category term="碎片化" scheme="https://aixz.xyz/tags/%E7%A2%8E%E7%89%87%E5%8C%96/"/>
-    
-    <category term="人性浮躁" scheme="https://aixz.xyz/tags/%E4%BA%BA%E6%80%A7%E6%B5%AE%E8%BA%81/"/>
-    
-    <category term="书签" scheme="https://aixz.xyz/tags/%E4%B9%A6%E7%AD%BE/"/>
-    
-    <category term="短小精悍" scheme="https://aixz.xyz/tags/%E7%9F%AD%E5%B0%8F%E7%B2%BE%E6%82%8D/"/>
-    
-    <category term="阅读量" scheme="https://aixz.xyz/tags/%E9%98%85%E8%AF%BB%E9%87%8F/"/>
-    
-    <category term="万事开头难" scheme="https://aixz.xyz/tags/%E4%B8%87%E4%BA%8B%E5%BC%80%E5%A4%B4%E9%9A%BE/"/>
-    
-    <category term="坚持七天" scheme="https://aixz.xyz/tags/%E5%9D%9A%E6%8C%81%E4%B8%83%E5%A4%A9/"/>
-    
-    <category term="收藏" scheme="https://aixz.xyz/tags/%E6%94%B6%E8%97%8F/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>有关冬天里的那些爱情故事，从古至今都有</title>
-    <link href="https://aixz.xyz/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/8992025d/"/>
-    <id>https://aixz.xyz/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/8992025d/</id>
-    <published>2022-05-12T09:36:47.000Z</published>
-    <updated>2022-05-12T09:36:47.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/8992025d/%E5%9B%BE%E7%89%871.jpg"></p><span id="more"></span><p>自从齐秦的一首《大约在冬季》，唱响了一曲发生在冬天的无数爱情故事，“你问我何时归，我想大约在冬季”，一个在家乡思恋着自己的女孩，等待着在外漂泊的归人的归期，在那些情长纸短的年代，一封情书在等待中就是一月，你回我往则就是一季，爱情的甜蜜时光就在那些书信字里行间生根发芽，此情默默的耕耘，此信默默见证着爱情岁月的深深依恋。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/8992025d/%E5%9B%BE%E7%89%872.jpg"></p><p>爱情里的等待就是最好的誓言，只有值得等待的人才真正是需要自己去深爱和付出，时间等得越久便是这份爱越真诚，曾许下的若言，一年归来便是你我的佳期，你在守望中等待，我便思念中怀望。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/8992025d/%E5%9B%BE%E7%89%873.jpg"></p><p>这冬天是寒冷的，但心中有爱，这份爱便暖了自己，虽是异地的恋情，但是此生我心中有你，你心中有我，这份情便是两无猜疑，我们书信的字里行间，胜过我牵你的手给你的拥抱还要暖心。这份情是我们经历三世的缘分才结今世的果，所以值得你我倍加珍惜。你问我何时归，我便在信中回了大约在冬季。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/8992025d/%E5%9B%BE%E7%89%874.jpg"></p><p>一曲《凤求凰》成就了司马相如与卓文君一段美好姻缘，在爱情里爱上对的人便是知音，确认过眼神便是一生的追随，忽视世俗的眼光，两两心心相印，相敬如宾，笙箫合奏，便是成了一段历史佳缘，为了爱情追求幸福，雪夜私奔便是成了一段爱情的佳话，当垆卖酒两双相对饮，此情便随了酒越陈越香。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/8992025d/%E5%9B%BE%E7%89%875.jpg"></p><p>夜空飞舞的雪花，地上的白雪皑皑，这洁白的雪便是映衬我们纯洁的爱情，荣华富贵不过是过往云烟，能得相识相知相爱之人此生陪伴，才是此生无憾之事。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/8992025d/%E5%9B%BE%E7%89%876.jpg"></p><p>纵然时光岁月老去，你我已是白头，两只仍然紧紧相携的手还是不离亦不弃。回望过去纵是万千辛苦，也不悔那雪夜私奔逃走的一晚，那些风花雪月的故事是你我共同书写的传奇。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/8992025d/%E5%9B%BE%E7%89%877.jpg"></p><p>身在深闺的你，如在笼子的鸟儿，随我后你的笑容便是这一季满园的桃花。世间难得便是这平常的坚守，我给你的没有荣华和富贵，但你说那是世俗之物，那些才不是你眼里的追求，你只愿与我这一生平淡相守，便了却了此生再无他求之愿。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/8992025d/%E5%9B%BE%E7%89%878.jpg"></p><p>一过数年与你相守岁月便是短暂了，闲来无事双双对饮小酌一杯，便是你我交心畅谈话那年的美好时光，你为我弹奏的还是那年那曲《凤求凰》，这注定又是一个夜空飘雪的夜晚。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/8992025d/%E5%9B%BE%E7%89%879.jpg"></p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;img data-src=&quot;/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/8992025d/%E5%9B%BE%E7%89%871.jpg&quot;&gt;&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="情感美文" scheme="https://aixz.xyz/categories/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/"/>
-    
-    
-    <category term="风花雪月" scheme="https://aixz.xyz/tags/%E9%A3%8E%E8%8A%B1%E9%9B%AA%E6%9C%88/"/>
-    
-    <category term="美好时光" scheme="https://aixz.xyz/tags/%E7%BE%8E%E5%A5%BD%E6%97%B6%E5%85%89/"/>
-    
-    <category term="寒冷" scheme="https://aixz.xyz/tags/%E5%AF%92%E5%86%B7/"/>
-    
-    <category term="冬季" scheme="https://aixz.xyz/tags/%E5%86%AC%E5%AD%A3/"/>
-    
-    <category term="冬天里" scheme="https://aixz.xyz/tags/%E5%86%AC%E5%A4%A9%E9%87%8C/"/>
-    
-    <category term="爱情故事" scheme="https://aixz.xyz/tags/%E7%88%B1%E6%83%85%E6%95%85%E4%BA%8B/"/>
-    
-    <category term="从古至今" scheme="https://aixz.xyz/tags/%E4%BB%8E%E5%8F%A4%E8%87%B3%E4%BB%8A/"/>
-    
-    <category term="漂泊" scheme="https://aixz.xyz/tags/%E6%BC%82%E6%B3%8A/"/>
-    
-    <category term="深深依恋" scheme="https://aixz.xyz/tags/%E6%B7%B1%E6%B7%B1%E4%BE%9D%E6%81%8B/"/>
-    
-    <category term="誓言" scheme="https://aixz.xyz/tags/%E8%AA%93%E8%A8%80/"/>
-    
-    <category term="佳期" scheme="https://aixz.xyz/tags/%E4%BD%B3%E6%9C%9F/"/>
-    
-    <category term="缘分" scheme="https://aixz.xyz/tags/%E7%BC%98%E5%88%86/"/>
-    
-    <category term="凤求凰" scheme="https://aixz.xyz/tags/%E5%87%A4%E6%B1%82%E5%87%B0/"/>
-    
-    <category term="笙箫合奏" scheme="https://aixz.xyz/tags/%E7%AC%99%E7%AE%AB%E5%90%88%E5%A5%8F/"/>
-    
-    <category term="越陈越香" scheme="https://aixz.xyz/tags/%E8%B6%8A%E9%99%88%E8%B6%8A%E9%A6%99/"/>
-    
-    <category term="雪花" scheme="https://aixz.xyz/tags/%E9%9B%AA%E8%8A%B1/"/>
-    
-    <category term="无憾之事" scheme="https://aixz.xyz/tags/%E6%97%A0%E6%86%BE%E4%B9%8B%E4%BA%8B/"/>
-    
-    <category term="雪夜私奔" scheme="https://aixz.xyz/tags/%E9%9B%AA%E5%A4%9C%E7%A7%81%E5%A5%94/"/>
-    
-    <category term="荣华" scheme="https://aixz.xyz/tags/%E8%8D%A3%E5%8D%8E/"/>
-    
-    <category term="夜空飘雪" scheme="https://aixz.xyz/tags/%E5%A4%9C%E7%A9%BA%E9%A3%98%E9%9B%AA/"/>
     
   </entry>
   
