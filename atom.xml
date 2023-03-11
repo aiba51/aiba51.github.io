@@ -6,7 +6,7 @@
   <link href="https://aixz.xyz/atom.xml" rel="self"/>
   
   <link href="https://aixz.xyz/"/>
-  <updated>2023-02-28T11:22:04.000Z</updated>
+  <updated>2023-03-11T04:31:32.000Z</updated>
   <id>https://aixz.xyz/</id>
   
   <author>
@@ -15,6 +15,105 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>从Github克隆仓库到Gitee</title>
+    <link href="https://aixz.xyz/Git/aa52116d/"/>
+    <id>https://aixz.xyz/Git/aa52116d/</id>
+    <published>2023-03-11T04:31:32.000Z</published>
+    <updated>2023-03-11T04:31:32.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="从Github克隆仓库到Gitee"><a href="#从Github克隆仓库到Gitee" class="headerlink" title="从Github克隆仓库到Gitee"></a>从Github克隆仓库到Gitee</h1><p>由于有些国外项目在Github上没有root过的手机从termux无法直接克隆，所以只有先克隆到电脑上，再从电脑推送到Gitee仓库，那样termux就可以直接从Gitee克隆了。</p><span id="more"></span><h3 id="1-先在电脑的文件管理中新建一个以项目命名的文件夹。"><a href="#1-先在电脑的文件管理中新建一个以项目命名的文件夹。" class="headerlink" title="1.先在电脑的文件管理中新建一个以项目命名的文件夹。"></a>1.先在电脑的文件管理中新建一个以项目命名的文件夹。</h3><h3 id="2-利用克隆命令，将要克隆的项目克隆到创建的文件夹里面。"><a href="#2-利用克隆命令，将要克隆的项目克隆到创建的文件夹里面。" class="headerlink" title="2.利用克隆命令，将要克隆的项目克隆到创建的文件夹里面。"></a>2.利用克隆命令，将要克隆的项目克隆到创建的文件夹里面。</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:<span class="regexp">//gi</span>thub.com<span class="regexp">/xxx/</span>xxx.git <span class="regexp">/xxx/</span>新建的文件夹xxx</span><br></pre></td></tr></table></figure><h3 id="3-在Gitee新建一个仓库，仓库名就是新的文件夹的名字。"><a href="#3-在Gitee新建一个仓库，仓库名就是新的文件夹的名字。" class="headerlink" title="3.在Gitee新建一个仓库，仓库名就是新的文件夹的名字。"></a>3.在Gitee新建一个仓库，仓库名就是新的文件夹的名字。</h3><p>没有秘钥可以创建一个，利用ssh,不用每次输密码。<br>可以按如下命令来生成 <code>sshkey</code>:</p><figure class="highlight excel"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -<span class="built_in">t</span> <span class="symbol">ed25519</span> -C <span class="string">&quot;xxxxx@xxxxx.com&quot;</span></span><br></pre></td></tr></table></figure><p>按照提示完成三次回车，即可生成 <code>ssh key</code>。通过查看 <code>~/.ssh/id_ed25519.pub</code> 文件内容，获取到你的 <code>public key</code></p><figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat ~<span class="regexp">/.ssh/i</span>d_ed25519.pub</span><br></pre></td></tr></table></figure><p>复制生成后的 ssh key，通过仓库主页 「管理」-&gt;「部署公钥管理」-&gt;「添加部署公钥」 ，添加生成的 public key 添加到仓库中。</p><p>添加后，在终端（Terminal）中输入</p><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">ssh</span> -T git<span class="variable">@gitee</span>.com</span><br></pre></td></tr></table></figure><p>首次使用需要确认并添加主机到本机SSH可信列表。若返回 </p><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi XXX! You<span class="symbol">&#x27;ve</span> successfully authenticated, but Gitee.com does <span class="keyword">not</span> provide shell <span class="keyword">access</span>. </span><br></pre></td></tr></table></figure><p>以上内容，则证明添加成功。</p><h3 id="4-删掉克隆下来的隐藏文件夹-git。"><a href="#4-删掉克隆下来的隐藏文件夹-git。" class="headerlink" title="4.删掉克隆下来的隐藏文件夹.git。"></a>4.删掉克隆下来的隐藏文件夹<code>.git</code>。</h3><h3 id="5-利用shell终端切换到新建的目录下，使用git-init命令初始化新建的文件夹。"><a href="#5-利用shell终端切换到新建的目录下，使用git-init命令初始化新建的文件夹。" class="headerlink" title="5.利用shell终端切换到新建的目录下，使用git init命令初始化新建的文件夹。"></a>5.利用shell终端切换到新建的目录下，使用<code>git init</code>命令初始化新建的文件夹。</h3><h3 id="6-把文件添加到缓存区里面去，使用git-add-命令【注意不能忘记小数点“-”，代表所有文件】"><a href="#6-把文件添加到缓存区里面去，使用git-add-命令【注意不能忘记小数点“-”，代表所有文件】" class="headerlink" title="6.把文件添加到缓存区里面去，使用git add .命令【注意不能忘记小数点“.”，代表所有文件】"></a>6.把文件添加到缓存区里面去，使用<code>git add .</code>命令【注意不能忘记小数点“.”，代表所有文件】</h3><h3 id="7-填写提交信息，使用-git-commit-m-39-本次提交的备注-39-命令"><a href="#7-填写提交信息，使用-git-commit-m-39-本次提交的备注-39-命令" class="headerlink" title="7.填写提交信息，使用 git commit -m &#39;本次提交的备注&#39; 命令"></a>7.填写提交信息，使用 <code>git commit -m &#39;本次提交的备注&#39;</code> 命令</h3><p>###8.将本地仓库与远程仓库绑定，使用 <code>git remote add origin</code> 刚刚创的远程仓库地址。</p><p>例如： </p><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote <span class="keyword">add</span><span class="language-bash"> origin git@gitee.com:xxxx/termux-install.git</span></span><br></pre></td></tr></table></figure><h3 id="9-使用命令"><a href="#9-使用命令" class="headerlink" title="9.使用命令"></a>9.使用命令</h3><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin <span class="literal">master</span></span><br></pre></td></tr></table></figure><p>在这一步如果显示错误的话，就使用 </p><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull origin <span class="keyword">master</span> <span class="title">--allow-unrelated-histories</span></span><br></pre></td></tr></table></figure><p>命令强制合并<br>这里如果显示有冲突的文件，需要使用</p><figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">add</span> xxx</span><br></pre></td></tr></table></figure><p>单独添加<br>然后重新再做第7步，再使用强制合并命令进行合并。</p><h3 id="10-把本地库的内容推送到远程，使用命令"><a href="#10-把本地库的内容推送到远程，使用命令" class="headerlink" title="10.把本地库的内容推送到远程，使用命令"></a>10.把本地库的内容推送到远程，使用命令</h3><figure class="highlight maxima"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">push</span> -u <span class="built_in">origin</span> master</span><br></pre></td></tr></table></figure><p>推送成功后就能在Gitee网页端看到了。</p>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;从Github克隆仓库到Gitee&quot;&gt;&lt;a href=&quot;#从Github克隆仓库到Gitee&quot; class=&quot;headerlink&quot; title=&quot;从Github克隆仓库到Gitee&quot;&gt;&lt;/a&gt;从Github克隆仓库到Gitee&lt;/h1&gt;&lt;p&gt;由于有些国外项目在Github上没有root过的手机从termux无法直接克隆，所以只有先克隆到电脑上，再从电脑推送到Gitee仓库，那样termux就可以直接从Gitee克隆了。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Git" scheme="https://aixz.xyz/categories/Git/"/>
+    
+    
+    <category term="Github" scheme="https://aixz.xyz/tags/Github/"/>
+    
+    <category term="Gitee" scheme="https://aixz.xyz/tags/Gitee/"/>
+    
+    <category term="termux" scheme="https://aixz.xyz/tags/termux/"/>
+    
+    <category term="ssh" scheme="https://aixz.xyz/tags/ssh/"/>
+    
+    <category term="强制合并" scheme="https://aixz.xyz/tags/%E5%BC%BA%E5%88%B6%E5%90%88%E5%B9%B6/"/>
+    
+    <category term="远程" scheme="https://aixz.xyz/tags/%E8%BF%9C%E7%A8%8B/"/>
+    
+    <category term="克隆" scheme="https://aixz.xyz/tags/%E5%85%8B%E9%9A%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Termux shell界面美化教程</title>
+    <link href="https://aixz.xyz/Termux/ad000d0/"/>
+    <id>https://aixz.xyz/Termux/ad000d0/</id>
+    <published>2023-03-11T04:27:23.000Z</published>
+    <updated>2023-03-11T04:27:23.000Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Termux-shell界面美化教程"><a href="#Termux-shell界面美化教程" class="headerlink" title="Termux shell界面美化教程"></a>Termux shell界面美化教程</h1><h2 id="1-颜色和字体美化"><a href="#1-颜色和字体美化" class="headerlink" title="1.颜色和字体美化"></a>1.颜色和字体美化</h2><p>该脚本主要使用了 zsh 来替代 bash 作为默认 shell，并且支持色彩和字体样式，同时也激活了外置存储，可以直接访问 SD 卡下的目录。主题默认为 agnoster，颜色样式默认为 Tango，字体默认为 Ubuntu。</p><span id="more"></span><h3 id="脚本克隆和安装"><a href="#脚本克隆和安装" class="headerlink" title="脚本克隆和安装"></a>脚本克隆和安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://gitee.com/aiba51/termux-install.git</span><br><span class="line"><span class="built_in">cd</span> termux-install</span><br><span class="line"><span class="built_in">chmod</span> +x termux-install.sh</span><br><span class="line">./termux-install.sh</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>安装完成重启<code>termux</code>就可以了</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">exit</span></span><br></pre></td></tr></table></figure><h3 id="设置色彩样式："><a href="#设置色彩样式：" class="headerlink" title="设置色彩样式："></a>设置色彩样式：</h3><p>输入 <code>chcolor</code> 命令更换色彩样式，或者执行 <code>~/.termux/colors.sh</code> 命令</p><h3 id="设置字体"><a href="#设置字体" class="headerlink" title="设置字体:"></a>设置字体:</h3><p>运行 <code>chfont</code> 命令更换字体，或者执行 <code>~/.termux/fonts.sh</code> 命令</p><h2 id="2-zsh-主题配色"><a href="#2-zsh-主题配色" class="headerlink" title="2.zsh 主题配色"></a>2.zsh 主题配色</h2><p>编辑家目录下的.zshrc 配置文件</p><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim <span class="string">.zshrc</span></span><br></pre></td></tr></table></figure><p>第一行可以看到，默认的主题是 <code>agnoster</code> 主题。</p><p>在<code>.oh-my-zsh/themes</code> 目录下放着 <code>oh-my-zsh</code> 所有的主题配置文件，只要将默认的 <code>agnoster</code> 更换为其他的主题文件名即可。</p><p><code>random</code>主题每打开一个会话配色主题都是随机的。</p><h2 id="3-自动补全命令插件autosuggestions安装"><a href="#3-自动补全命令插件autosuggestions安装" class="headerlink" title="3.自动补全命令插件autosuggestions安装"></a>3.自动补全命令插件<code>autosuggestions</code>安装</h2><h3 id="拷贝到-plugins-目录下"><a href="#拷贝到-plugins-目录下" class="headerlink" title="拷贝到 plugins 目录下"></a>拷贝到 plugins 目录下</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:<span class="regexp">//gi</span>tee.com<span class="regexp">/aiba51/</span>zsh-autosuggestions.git <span class="variable">$ZSH_CUSTOM</span><span class="regexp">/plugins/</span>zsh-autosuggestions</span><br></pre></td></tr></table></figure><p>在 <code>~/.zshrc</code> 中配置：</p><figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">plugins</span><span class="operator">=</span>(git zsh-autosuggestions)</span><br></pre></td></tr></table></figure><p>输入 <code>zsh</code> 命令生效配置：</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">zsh</span></span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;h1 id=&quot;Termux-shell界面美化教程&quot;&gt;&lt;a href=&quot;#Termux-shell界面美化教程&quot; class=&quot;headerlink&quot; title=&quot;Termux shell界面美化教程&quot;&gt;&lt;/a&gt;Termux shell界面美化教程&lt;/h1&gt;&lt;h2 id=&quot;1-颜色和字体美化&quot;&gt;&lt;a href=&quot;#1-颜色和字体美化&quot; class=&quot;headerlink&quot; title=&quot;1.颜色和字体美化&quot;&gt;&lt;/a&gt;1.颜色和字体美化&lt;/h2&gt;&lt;p&gt;该脚本主要使用了 zsh 来替代 bash 作为默认 shell，并且支持色彩和字体样式，同时也激活了外置存储，可以直接访问 SD 卡下的目录。主题默认为 agnoster，颜色样式默认为 Tango，字体默认为 Ubuntu。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Termux" scheme="https://aixz.xyz/categories/Termux/"/>
+    
+    
+    <category term="Termux" scheme="https://aixz.xyz/tags/Termux/"/>
+    
+    <category term="shell" scheme="https://aixz.xyz/tags/shell/"/>
+    
+    <category term="界面美化" scheme="https://aixz.xyz/tags/%E7%95%8C%E9%9D%A2%E7%BE%8E%E5%8C%96/"/>
+    
+    <category term="zsh" scheme="https://aixz.xyz/tags/zsh/"/>
+    
+    <category term="bash" scheme="https://aixz.xyz/tags/bash/"/>
+    
+    <category term="Ubuntu" scheme="https://aixz.xyz/tags/Ubuntu/"/>
+    
+    <category term="自动补全" scheme="https://aixz.xyz/tags/%E8%87%AA%E5%8A%A8%E8%A1%A5%E5%85%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>让兴趣成为学习的动力</title>
+    <link href="https://aixz.xyz/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/53b59f91/"/>
+    <id>https://aixz.xyz/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/53b59f91/</id>
+    <published>2023-02-28T14:48:41.000Z</published>
+    <updated>2023-02-28T14:48:41.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>兴趣是最好的老师。我曾经因为对动物标本的浓厚兴趣，在我读高中时，花了整整一年时间学习画画。</p><span id="more"></span><p>从第一次接触动物标本，到拿起画笔描摹它的形状、纹理，到后来能够独立创作，在这过程中，我经历了无数次的失败与成功。但最后，我还是凭借着对动物标本浓厚的兴趣和对绘画艺术执着追求的精神，走完了这段艰辛而又有趣的绘画历程。我之所以能在绘画道路上取得成功，是因为我对动物标本浓厚的兴趣让我找到了创作它们最原始的动力：让自己在绘画中得到心灵上的满足和愉悦。</p><p>爱因斯坦说过：“兴趣是最好的老师。”所以我们在学习中要找到自己最感兴趣、最愿意学、最擅长学的科目，并为之付出努力。就像有位哲人说：“只有对一件事感兴趣，才会有干劲和毅力去做好它。”所以我们在学习中要培养自己对一门学科的浓厚兴趣，找到学习动力，并努力钻研其中的奥妙。</p><p>我喜欢研究动植物标本，它是我从小就有的爱好。以前为了学习植物学、动物学等多门学科，我曾去过许多地方写生。那时我就喜欢观察那些栩栩如生、形态各异的动植物标本，它们仿佛是我创作绘画艺术作品的灵感来源。</p><p>当我对大自然赐予我们最天然、最真实而又最生动可爱的动植物标本充满了浓厚兴趣时，当我亲手描绘出它们真实、自然又栩栩如生、惟妙惟肖时，当我认真观察它们时所表现出对它们那种不离不弃、执着追求精神时……那时我就会觉得自己仿佛变成了一个真正喜欢植物学、博物学这类知识和研究方法、并对它们产生浓厚兴趣的人。</p><p>在学习中培养兴趣让我们不仅收获了学习成果，更让我们对学习充满了乐趣。而兴趣也将成为学习动力和源泉，让我们在学习中不断前进，不断创新。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;兴趣是最好的老师。我曾经因为对动物标本的浓厚兴趣，在我读高中时，花了整整一年时间学习画画。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="作文练习" scheme="https://aixz.xyz/categories/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/"/>
+    
+    
+    <category term="兴趣" scheme="https://aixz.xyz/tags/%E5%85%B4%E8%B6%A3/"/>
+    
+    <category term="动力" scheme="https://aixz.xyz/tags/%E5%8A%A8%E5%8A%9B/"/>
+    
+    <category term="高中" scheme="https://aixz.xyz/tags/%E9%AB%98%E4%B8%AD/"/>
+    
+    <category term="动物标本" scheme="https://aixz.xyz/tags/%E5%8A%A8%E7%89%A9%E6%A0%87%E6%9C%AC/"/>
+    
+    <category term="学科" scheme="https://aixz.xyz/tags/%E5%AD%A6%E7%A7%91/"/>
+    
+    <category term="植物学" scheme="https://aixz.xyz/tags/%E6%A4%8D%E7%89%A9%E5%AD%A6/"/>
+    
+    <category term="研究方法" scheme="https://aixz.xyz/tags/%E7%A0%94%E7%A9%B6%E6%96%B9%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>Kali实体机安装步骤</title>
@@ -465,6 +564,8 @@
     
     <category term="shell" scheme="https://aixz.xyz/tags/shell/"/>
     
+    <category term="bash" scheme="https://aixz.xyz/tags/bash/"/>
+    
     <category term="脚本" scheme="https://aixz.xyz/tags/%E8%84%9A%E6%9C%AC/"/>
     
     <category term="script" scheme="https://aixz.xyz/tags/script/"/>
@@ -472,8 +573,6 @@
     <category term="目录" scheme="https://aixz.xyz/tags/%E7%9B%AE%E5%BD%95/"/>
     
     <category term="文件" scheme="https://aixz.xyz/tags/%E6%96%87%E4%BB%B6/"/>
-    
-    <category term="bash" scheme="https://aixz.xyz/tags/bash/"/>
     
     <category term="Linux" scheme="https://aixz.xyz/tags/Linux/"/>
     
@@ -646,153 +745,6 @@
     <category term="主题" scheme="https://aixz.xyz/tags/%E4%B8%BB%E9%A2%98/"/>
     
     <category term="配置" scheme="https://aixz.xyz/tags/%E9%85%8D%E7%BD%AE/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>总是做一些奇奇怪怪的梦</title>
-    <link href="https://aixz.xyz/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/5496ea38/"/>
-    <id>https://aixz.xyz/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/5496ea38/</id>
-    <published>2022-05-14T08:17:06.000Z</published>
-    <updated>2022-05-14T08:17:06.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>快到早上的时候突然梦到在家里面，还是像平常一样去到山上玩，却发现山上修了很多条路，不是那种小路，而是都可以过车的那种公路，虽然不是很宽，但是和乡村公路的宽度也是差不多了，但是看着都还只是用挖机刚挖好的泥巴路，上面既没有铺上石块，更没有铺上水泥。</p><span id="more"></span><p>其中的一座山上还修了一条更宽也更陡的，那座山其实就很陡，那条路还是正在修的，我看着是一些村里的老人在哪里修，不知道为什么是从下面修上去，而不是从山顶上公路那里修下来，虽然看上去是刚修的，而且只是修了一小段，但是路面看着却是压得很紧实，像是用压路机压过一遍的。</p><p>我正从那条小路上往回家走时，却发现我后面有一个人跟在我后面，像是那时候天色已经黑了点，又像是太阳落山后的傍晚。那人跟在后面我着实是认不出他是谁来了，只是不过一会，却听得他去和上面那些村里修路的老人在那里说话了，那是我才听出他的声音来，原来他不就是我叔吗，我只听得他说:“这路修得又长又宽”，那修路的老人说:“现在修得还不是很长，也就三十多个平方吧”，还对我叔说了:“你那辆车都有14个平方，现在修的比你那辆车长不了多少”，我是突然觉得很奇怪了，我叔他那里来的车，他是三轮车什么的都不敢碰的人。</p><p>这一幕完了之后好像是迷迷糊糊的又进入下一个梦境，好像是从山上修路那里我就走回家了，具体怎么到家里梦里面似乎是没有说明，回家后发现也有几个村里的老人在我家里，看了下手机是说我有一个快递，好像是家里的电视坏了，没有拿去修，就我从网上买的零件来换，但是第一个快递收到了，第二个还没有，今天在手机上看到的就是第二个的快递信息。</p><p>第一个配件我换上去之后发现电视可以看了，原来是只坏了一个配件，顿时我就觉得第二个买的是多余的了，但是我给我爸说要去乡里面拿快递，我说那一个是买了多余的了，我爸他问我:“才换了一个就修好了吗”，我说是的，现在可以看了，就是多买了一个而已，我爸说:“多买了就放着，以后可以用，那个配件是都已经坏了换过一次的”。我突然间觉得这电视为什么老是容易坏了，是不是天气太潮湿了，而我又经常不在家，他们又没有经常打开来看下的缘故。</p><p>正当这时候，我手机突然响了，但是却找不到它在哪里，奇怪才刚刚在上面看快递信息的，或许是修电视那会儿我不知道放到哪里去了。我突然找着一个像计算器的东西，那上面看着像是菜鸟裹裹发来的信息，又看着像是打来的电话，只看着那小小的屏幕上有几个数字，像是取件码，但是又不停地在闪动着，其间还夹杂着震动的效果。</p><p>我正仔细看时，却发现是我刚要去拿的那个快递信息，这时候只听得门外的车路上有人喊着:“快递要不要，不要自己去街上拿也要一块钱”，我肯定是要的啊，但却不知道这是坑啊，我也不清楚为什么快递一下都变这么快了，刚刚还在乡里，这一下就跑到我家门口来了。</p><p>我在屋里面急忙回答道:要，要，我怕那快递突然间就飞过去了一样，我也急忙地出门去看了，看着外面是还下着小雨，像是某个冬天的早晨，路面是湿滑的，就算是水泥路面，上面还是集了一层厚厚的泥和水。那个送快递的是个女的，骑着一辆两轮的电动车，这天气骑这种车是真的受罪啊。只看到她那辆两轮电动车中间放脚的地方放着一个铁箱子，那箱子明显是用红漆刷过的，但是上面却已经是锈迹斑斑，仿佛是已经有一些年代感了。</p><p>那个铁箱子估计就是她装快递的箱子了，但是她这个箱子只能送小件的快递，大件的估计她也无招了，只能放弃不送了，但是按我后面才知道的价格，她送小件那是更划算了。我走过去看着她，我说拿快递，她没有问我要什么取件码，我拿着那个像计算器一样的东西，或许是天空还下着毛毛细雨的缘故，上面的字时隐时现，用手擦一下上面的水珠又有字，一会又没有。</p><p>幸好我是拿着我爸给的10块钱去的，具体这10块钱这么到我手里的，梦境里面好像没有说明啊；去到她电动车傍边，她说:“拿快递是要钱的”，于是我给了她那张10块的钱，但是我却没有看到我的快递在哪里，她找了我1块钱，我寻思着这也太坑了吧，拿一个快递就要9块钱，我自己去街上拿也就1块钱而已。</p><p>但是快递她放哪里了，我却也不清楚，只听得他说放在后面路边我家门口了，害我在那里又是找了半天，我看着路边的土坡上挖了很多那种小坎，我起初以为这是她用来给我放快递的，我还看着一个又黑又大的水杯，稳稳地放在那土坎上，杯底已经沾满了黄泥，里面好像是还泡着半壶茶，那么大的水杯我是很少见的，也不知道是什么人放在那里干嘛的。</p><p>我四处找了下还是没有找到我的那个快递，梦里那个急啊，突然间自己清醒了一点，才发觉原来这只是一个奇怪的梦。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;快到早上的时候突然梦到在家里面，还是像平常一样去到山上玩，却发现山上修了很多条路，不是那种小路，而是都可以过车的那种公路，虽然不是很宽，但是和乡村公路的宽度也是差不多了，但是看着都还只是用挖机刚挖好的泥巴路，上面既没有铺上石块，更没有铺上水泥。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="小说故事" scheme="https://aixz.xyz/categories/%E5%B0%8F%E8%AF%B4%E6%95%85%E4%BA%8B/"/>
-    
-    
-    <category term="梦境" scheme="https://aixz.xyz/tags/%E6%A2%A6%E5%A2%83/"/>
-    
-    <category term="电动车" scheme="https://aixz.xyz/tags/%E7%94%B5%E5%8A%A8%E8%BD%A6/"/>
-    
-    <category term="奇奇怪怪" scheme="https://aixz.xyz/tags/%E5%A5%87%E5%A5%87%E6%80%AA%E6%80%AA/"/>
-    
-    <category term="水泥" scheme="https://aixz.xyz/tags/%E6%B0%B4%E6%B3%A5/"/>
-    
-    <category term="快递信息" scheme="https://aixz.xyz/tags/%E5%BF%AB%E9%80%92%E4%BF%A1%E6%81%AF/"/>
-    
-    <category term="电视" scheme="https://aixz.xyz/tags/%E7%94%B5%E8%A7%86/"/>
-    
-    <category term="潮湿" scheme="https://aixz.xyz/tags/%E6%BD%AE%E6%B9%BF/"/>
-    
-    <category term="冬天" scheme="https://aixz.xyz/tags/%E5%86%AC%E5%A4%A9/"/>
-    
-    <category term="取件码" scheme="https://aixz.xyz/tags/%E5%8F%96%E4%BB%B6%E7%A0%81/"/>
-    
-    <category term="土坡" scheme="https://aixz.xyz/tags/%E5%9C%9F%E5%9D%A1/"/>
-    
-    <category term="水杯" scheme="https://aixz.xyz/tags/%E6%B0%B4%E6%9D%AF/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>我第一次坐高铁，是在那年的春运之后</title>
-    <link href="https://aixz.xyz/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/e74259e2/"/>
-    <id>https://aixz.xyz/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/e74259e2/</id>
-    <published>2022-05-13T17:06:00.000Z</published>
-    <updated>2022-05-13T17:06:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>我记得我第一次坐高铁是在二零一五年的春运过后，那时好像是三月份，好像是已经过了农历正月十五了，因为早的时候票全被抢光了，只有过了正月十五我才买到的高铁票，那一年是贵广高铁刚刚开通，就是贵阳到广州的，比起以前的普快列车是快了很多，因为坐票我没有买到，所以我买了站票，但动车上的站票也比普通火车要舒服很多，没有普通火车那么挤，车厢里面也是很干净的，我直接找了本书就坐上去了，每一节车厢的座位后面都有一些空间，所以我就拿了本书坐到那里去了。</p><span id="more"></span><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/e74259e2/%E5%9B%BE%E7%89%871.jpg"></p><p>感觉还是挺舒服的，因为第一次坐高铁，比以前坐的普通火车那是舒服很多倍，车上的乘务员小姐姐也长得很漂亮，就像空姐一样。有一节车厢是用餐车厢，在那里可以买到盒饭吃，还是热着的，挺不错，那时候高铁上的盒饭还是10元一盒的，现在都好像涨价了，那时候10元一盒的吃起来都感觉很好吃的。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/e74259e2/%E5%9B%BE%E7%89%872.jpg"></p><p>我是从贵阳北站坐的高铁出发去广州的，我前一天就从家里坐车去了贵阳，因为前一天不到贵阳的话第二天肯定是赶不上高铁的，因为高铁的开车时间是下午两点，我家那里坐车到贵阳最快也要六个小时才能到达，所以只能头天坐车去贵阳，在贵阳住一晚上，然后第二天去坐高铁了。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/e74259e2/%E5%9B%BE%E7%89%873.jpg"></p><p>那年贵阳北站也是刚启用没有多久，里面都还不是很完善，公交站台这些都还没有，我头天坐车到了金阳汽车站那里，就在附近找了个旅馆住下了，第二天早上才去的贵阳北站那里，我坐公交车过去的，但只能到北站附近的公交站，由于是刚刚启用的，百度地图上面都还没有正确标出贵阳北站的位置，所以我也找了很久才找到，到了那里取了车票以后，我就直接过安检检票进站了。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/e74259e2/%E5%9B%BE%E7%89%874.jpg"></p><p>贵阳北站这里的候车大厅很宽，每两列车分在一个候车区，每个候车区都是好几排椅子，坐车乘客全都坐在那里等车，进去得早的就有座位在那里坐着等，去得晚的没有座位了，就只能是站着了，候车大厅里有免费的无线网，可以连接着用手机上网，这总算不是太无聊，拿着手机看下新闻，时间很快也就过去了。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/e74259e2/%E5%9B%BE%E7%89%875.jpg"></p><p>等到下午1点40分的时候就开始检票上车了，检票口分成了两排来检，红色票的用人工检，蓝色的就直接过闸机检就可以了，虽然排着长长的队伍，但由于这样检票的速度很快，几乎没有十分钟就检完了，检完票之后就是直接坐着电梯下楼去上车了，车已经停在下面的轨道上了，看着外观还是很好看的和谐号列车。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/e74259e2/%E5%9B%BE%E7%89%876.jpg"></p><p>上车后不久就开车了，感觉在动车车厢里非常的平稳，一点也不像普通火车那样颠簸，发出来的噪音也很小。速度刚开始是慢慢的走，后来就变得很快了，有时可以达到300的速度，比普通火车那是快了好几倍呢。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/e74259e2/%E5%9B%BE%E7%89%877.jpg"></p><p>我记得期间调换了下车头，调了一下座位的方向，先前我是坐在车厢座椅后面的，这下成了前面了，我又得拿着书走到另一面去坐了，就这样坐着有时候无聊也会犯困了，由于地形的原因隧道比较多，所以手机信号也是时有时无的，玩手机这就没法玩了，因为网络不好玩起来也没有意思。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/e74259e2/%E5%9B%BE%E7%89%878.jpg"></p><p>就这样犯困的迷迷糊糊睡了一下几个小时就过去了，从贵阳北站到广州南站是四个小时多点，等我醒来时候车已经快到广州了，过了几分钟后，已经开始减慢速度了，广播里面已经在提醒“广州南站就要到了，请所有乘客收拾好自己的行李物品准备下车”，好多乘客也已经把行李从行李架上面拿下来了，有些乘客已经站起来，准备向车门走过去了，终于车停了，全部乘客也都在下车了，我也跟着拿着我自己的行李走下车了，这就是我人生中第一次乘坐高铁的经历。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/e74259e2/%E5%9B%BE%E7%89%879.jpg"></p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;我记得我第一次坐高铁是在二零一五年的春运过后，那时好像是三月份，好像是已经过了农历正月十五了，因为早的时候票全被抢光了，只有过了正月十五我才买到的高铁票，那一年是贵广高铁刚刚开通，就是贵阳到广州的，比起以前的普快列车是快了很多，因为坐票我没有买到，所以我买了站票，但动车上的站票也比普通火车要舒服很多，没有普通火车那么挤，车厢里面也是很干净的，我直接找了本书就坐上去了，每一节车厢的座位后面都有一些空间，所以我就拿了本书坐到那里去了。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="情感美文" scheme="https://aixz.xyz/categories/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/"/>
-    
-    
-    <category term="高铁" scheme="https://aixz.xyz/tags/%E9%AB%98%E9%93%81/"/>
-    
-    <category term="候车大厅" scheme="https://aixz.xyz/tags/%E5%80%99%E8%BD%A6%E5%A4%A7%E5%8E%85/"/>
-    
-    <category term="新闻" scheme="https://aixz.xyz/tags/%E6%96%B0%E9%97%BB/"/>
-    
-    <category term="春运" scheme="https://aixz.xyz/tags/%E6%98%A5%E8%BF%90/"/>
-    
-    <category term="贵广高铁" scheme="https://aixz.xyz/tags/%E8%B4%B5%E5%B9%BF%E9%AB%98%E9%93%81/"/>
-    
-    <category term="车厢" scheme="https://aixz.xyz/tags/%E8%BD%A6%E5%8E%A2/"/>
-    
-    <category term="乘务员" scheme="https://aixz.xyz/tags/%E4%B9%98%E5%8A%A1%E5%91%98/"/>
-    
-    <category term="涨价" scheme="https://aixz.xyz/tags/%E6%B6%A8%E4%BB%B7/"/>
-    
-    <category term="贵阳北站" scheme="https://aixz.xyz/tags/%E8%B4%B5%E9%98%B3%E5%8C%97%E7%AB%99/"/>
-    
-    <category term="公交站" scheme="https://aixz.xyz/tags/%E5%85%AC%E4%BA%A4%E7%AB%99/"/>
-    
-    <category term="手机上网" scheme="https://aixz.xyz/tags/%E6%89%8B%E6%9C%BA%E4%B8%8A%E7%BD%91/"/>
-    
-    <category term="开始检票" scheme="https://aixz.xyz/tags/%E5%BC%80%E5%A7%8B%E6%A3%80%E7%A5%A8/"/>
-    
-    <category term="轨道" scheme="https://aixz.xyz/tags/%E8%BD%A8%E9%81%93/"/>
-    
-    <category term="和谐号" scheme="https://aixz.xyz/tags/%E5%92%8C%E8%B0%90%E5%8F%B7/"/>
-    
-    <category term="普通火车" scheme="https://aixz.xyz/tags/%E6%99%AE%E9%80%9A%E7%81%AB%E8%BD%A6/"/>
-    
-    <category term="犯困" scheme="https://aixz.xyz/tags/%E7%8A%AF%E5%9B%B0/"/>
-    
-    <category term="网络不好" scheme="https://aixz.xyz/tags/%E7%BD%91%E7%BB%9C%E4%B8%8D%E5%A5%BD/"/>
-    
-    <category term="减慢速度" scheme="https://aixz.xyz/tags/%E5%87%8F%E6%85%A2%E9%80%9F%E5%BA%A6/"/>
-    
-    <category term="行李架" scheme="https://aixz.xyz/tags/%E8%A1%8C%E6%9D%8E%E6%9E%B6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>与山为伴，与水为邻，保护环境人人有责</title>
-    <link href="https://aixz.xyz/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/3237a214/"/>
-    <id>https://aixz.xyz/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/3237a214/</id>
-    <published>2022-05-13T16:55:36.000Z</published>
-    <updated>2022-05-13T16:55:36.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>有山有水，山清水秀，才是美好的家园，每天呼吸着新鲜的空气，比去氧吧吸氧那是还要好上几倍不止的，看着一片翠绿的青山，那心情自然也是百般舒畅。万物与生俱来，和谐共生和睦共处，一荣俱荣，一衰俱衰，若没有美好的自然环境，人类恐将再难寻一片乐土生存，”山气日夕佳，飞鸟相与还”这是一片多么美好的山中之景，但若人类只一厢向自然求取，不懂得珍惜，不懂得如何去保护，此景又将还能存在多久，与山水为邻居，保护好自然环境，保护好我们的家园。</p><span id="more"></span><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/3237a214/%E5%9B%BE%E7%89%871.jpg"></p><p>一直以来中国人就有保护自然环境的传统，孟子在《寡人之于国也》里面说：”斧斤以时入山林，材木不可胜用也。”就是表明了，不要向自然过多的求取。中国神话传说里面也有神山、神树、神水之说，以前总认为这是一种封建迷信思想，在自然环境急需保护的今天看来，这完全不是什么迷信思想，只是一种以保护自然为出发点的思想观念，目的就是让人对自然有敬畏之心，不去刻意破坏自然环境的要求，以破坏自然就要受到上天惩罚来要求人们。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/3237a214/%E5%9B%BE%E7%89%872.jpg"></p><p>在文明社会的今天，人们再也不认为还有什么鬼神之说，然今日之自然保护仍要继续，不可废弛，现在以生态文明建设对自然保护作了客观的表达，现在的事实是如果人类还一直向自然不知满足的求取，那必将遭受大自然所带来的灾难，正如”当你举起屠刀那一刻，你必将死于屠刀之下”与此意甚是相同之理；人类社会今天所遭受的自然灾害比比皆是，不必列举，光每年电视新闻和网络新闻所报道那是数不甚数，此多自然灾害皆是人为或间接人为所致，正如砍伐树木过多，夏季暴雨将遭洪涝灾害和泥石流灾害，而这些都对人类社会生活、社会生产、人的生命财产、水土流失、农业发展造成了难以估量的损失。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/3237a214/%E5%9B%BE%E7%89%873.jpg"></p><p>如不为将可不为，若不是人类严重砍伐森林在先、若不是人类工业生产对大气环境污染在先、若不是人类生活生产垃圾废水乱排乱放，那又怎么会发生洪涝灾害、泥石流灾害、雾霾灾害、水体重金属超标；先污染后治理，只要金山银山，放弃了绿水青山；这样造成的后果是非常严重的，有些自然的东西，破坏了就无法修复，就算修复了也不再是原来的样子，花费在治理修复上的财力物力，恐怕是超过了当初破坏所得的经济效益，这就是得不偿失之举，早知今日又何必当初。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/3237a214/%E5%9B%BE%E7%89%874.jpg"></p><p>我愿以山为伴，以水为邻，每天呼吸着每棵树散发出来的氧气，闻着早晨每朵花甜美的芬香，听着早晨鸟儿的歌声，喝着一瓢山间流出的溪水，我愿看到这人间处处是青山、处处是绿水、处处是鸟语花香、随处可见的蓝天白云，我想这才是生命的真正意义，这才是人生长寿的秘诀。我厌恶失去颜色的天空，我厌恶黑黑的没有生机发着恶臭的河流，我不想闻着工业废气的味道。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/3237a214/%E5%9B%BE%E7%89%875.jpg"></p><p>我愿以山为伴，以水为邻，像一只鸟儿一样在森林中随处可以在树上歇息无忧无虑地生活着。</p><p><img data-src="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/3237a214/%E5%9B%BE%E7%89%876.jpg"></p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;有山有水，山清水秀，才是美好的家园，每天呼吸着新鲜的空气，比去氧吧吸氧那是还要好上几倍不止的，看着一片翠绿的青山，那心情自然也是百般舒畅。万物与生俱来，和谐共生和睦共处，一荣俱荣，一衰俱衰，若没有美好的自然环境，人类恐将再难寻一片乐土生存，”山气日夕佳，飞鸟相与还”这是一片多么美好的山中之景，但若人类只一厢向自然求取，不懂得珍惜，不懂得如何去保护，此景又将还能存在多久，与山水为邻居，保护好自然环境，保护好我们的家园。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="情感美文" scheme="https://aixz.xyz/categories/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/"/>
-    
-    
-    <category term="与山为伴" scheme="https://aixz.xyz/tags/%E4%B8%8E%E5%B1%B1%E4%B8%BA%E4%BC%B4/"/>
-    
-    <category term="与水为邻" scheme="https://aixz.xyz/tags/%E4%B8%8E%E6%B0%B4%E4%B8%BA%E9%82%BB/"/>
-    
-    <category term="人人有责" scheme="https://aixz.xyz/tags/%E4%BA%BA%E4%BA%BA%E6%9C%89%E8%B4%A3/"/>
-    
-    <category term="家园" scheme="https://aixz.xyz/tags/%E5%AE%B6%E5%9B%AD/"/>
-    
-    <category term="和谐共生" scheme="https://aixz.xyz/tags/%E5%92%8C%E8%B0%90%E5%85%B1%E7%94%9F/"/>
-    
-    <category term="迷信思想" scheme="https://aixz.xyz/tags/%E8%BF%B7%E4%BF%A1%E6%80%9D%E6%83%B3/"/>
-    
-    <category term="上天惩罚" scheme="https://aixz.xyz/tags/%E4%B8%8A%E5%A4%A9%E6%83%A9%E7%BD%9A/"/>
-    
-    <category term="屠刀" scheme="https://aixz.xyz/tags/%E5%B1%A0%E5%88%80/"/>
-    
-    <category term="砍伐树木" scheme="https://aixz.xyz/tags/%E7%A0%8D%E4%BC%90%E6%A0%91%E6%9C%A8/"/>
-    
-    <category term="森林" scheme="https://aixz.xyz/tags/%E6%A3%AE%E6%9E%97/"/>
-    
-    <category term="修复" scheme="https://aixz.xyz/tags/%E4%BF%AE%E5%A4%8D/"/>
-    
-    <category term="得不偿失" scheme="https://aixz.xyz/tags/%E5%BE%97%E4%B8%8D%E5%81%BF%E5%A4%B1/"/>
-    
-    <category term="蓝天白云" scheme="https://aixz.xyz/tags/%E8%93%9D%E5%A4%A9%E7%99%BD%E4%BA%91/"/>
-    
-    <category term="工业废气" scheme="https://aixz.xyz/tags/%E5%B7%A5%E4%B8%9A%E5%BA%9F%E6%B0%94/"/>
-    
-    <category term="鸟儿" scheme="https://aixz.xyz/tags/%E9%B8%9F%E5%84%BF/"/>
     
   </entry>
   
