@@ -45,7 +45,7 @@
       <link href="/Termux/ad000d0/"/>
       <url>/Termux/ad000d0/</url>
       
-        <content type="html"><![CDATA[<h1 id="Termux-shell界面美化教程"><a href="#Termux-shell界面美化教程" class="headerlink" title="Termux shell界面美化教程"></a>Termux shell界面美化教程</h1><h2 id="1-颜色和字体美化"><a href="#1-颜色和字体美化" class="headerlink" title="1.颜色和字体美化"></a>1.颜色和字体美化</h2><p>该脚本主要使用了 zsh 来替代 bash 作为默认 shell，并且支持色彩和字体样式，同时也激活了外置存储，可以直接访问 SD 卡下的目录。主题默认为 agnoster，颜色样式默认为 Tango，字体默认为 Ubuntu。</p><span id="more"></span><h3 id="脚本克隆和安装"><a href="#脚本克隆和安装" class="headerlink" title="脚本克隆和安装"></a>脚本克隆和安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://gitee.com/aiba51/termux-install.git</span><br><span class="line"><span class="built_in">cd</span> termux-install</span><br><span class="line"><span class="built_in">chmod</span> +x termux-install.sh</span><br><span class="line">./termux-install.sh</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>安装完成重启<code>termux</code>就可以了</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">exit</span></span><br></pre></td></tr></table></figure><h3 id="设置色彩样式："><a href="#设置色彩样式：" class="headerlink" title="设置色彩样式："></a>设置色彩样式：</h3><p>输入 <code>chcolor</code> 命令更换色彩样式，或者执行 <code>~/.termux/colors.sh</code> 命令</p><h3 id="设置字体"><a href="#设置字体" class="headerlink" title="设置字体:"></a>设置字体:</h3><p>运行 <code>chfont</code> 命令更换字体，或者执行 <code>~/.termux/fonts.sh</code> 命令</p><h2 id="2-zsh-主题配色"><a href="#2-zsh-主题配色" class="headerlink" title="2.zsh 主题配色"></a>2.zsh 主题配色</h2><p>编辑家目录下的.zshrc 配置文件</p><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim <span class="string">.zshrc</span></span><br></pre></td></tr></table></figure><p>第一行可以看到，默认的主题是 <code>agnoster</code> 主题。</p><p>在<code>.oh-my-zsh/themes</code> 目录下放着 <code>oh-my-zsh</code> 所有的主题配置文件，只要将默认的 <code>agnoster</code> 更换为其他的主题文件名即可。</p><p><code>random</code>主题每打开一个会话配色主题都是随机的。</p><h2 id="3-自动补全命令插件autosuggestions安装"><a href="#3-自动补全命令插件autosuggestions安装" class="headerlink" title="3.自动补全命令插件autosuggestions安装"></a>3.自动补全命令插件<code>autosuggestions</code>安装</h2><h3 id="拷贝到-plugins-目录下"><a href="#拷贝到-plugins-目录下" class="headerlink" title="拷贝到 plugins 目录下"></a>拷贝到 plugins 目录下</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:<span class="regexp">//gi</span>tee.com<span class="regexp">/aiba51/</span>zsh-autosuggestions.git <span class="variable">$ZSH_CUSTOM</span><span class="regexp">/plugins/</span>zsh-autosuggestions</span><br></pre></td></tr></table></figure><p>在 <code>~/.zshrc</code> 中配置：</p><figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">plugins</span><span class="operator">=</span>(git zsh-autosuggestions)</span><br></pre></td></tr></table></figure><p>输入 <code>zsh</code> 命令生效配置：</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">zsh</span></span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<h1 id="Termux-shell界面美化教程"><a href="#Termux-shell界面美化教程" class="headerlink" title="Termux shell界面美化教程"></a>Termux shell界面美化教程</h1><h2 id="1-颜色和字体美化"><a href="#1-颜色和字体美化" class="headerlink" title="1.颜色和字体美化"></a>1.颜色和字体美化</h2><p>该脚本主要使用了 zsh 来替代 bash 作为默认 shell，并且支持色彩和字体样式，同时也激活了外置存储，可以直接访问 SD 卡下的目录。主题默认为 agnoster，颜色样式默认为 Tango，字体默认为 Ubuntu。</p><span id="more"></span><h3 id="脚本克隆和安装"><a href="#脚本克隆和安装" class="headerlink" title="脚本克隆和安装"></a>脚本克隆和安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://gitee.com/aiba51/termux-install.git</span><br><span class="line"><span class="built_in">cd</span> termux-install</span><br><span class="line"><span class="built_in">chmod</span> +x termux-install.sh</span><br><span class="line">./termux-install.sh \n</span><br></pre></td></tr></table></figure><p>安装完成重启<code>termux</code>就可以了</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">exit</span></span><br></pre></td></tr></table></figure><h3 id="设置色彩样式："><a href="#设置色彩样式：" class="headerlink" title="设置色彩样式："></a>设置色彩样式：</h3><p>输入 <code>chcolor</code> 命令更换色彩样式，或者执行 <code>~/.termux/colors.sh</code> 命令</p><h3 id="设置字体"><a href="#设置字体" class="headerlink" title="设置字体:"></a>设置字体:</h3><p>运行 <code>chfont</code> 命令更换字体，或者执行 <code>~/.termux/fonts.sh</code> 命令</p><h2 id="2-zsh-主题配色"><a href="#2-zsh-主题配色" class="headerlink" title="2.zsh 主题配色"></a>2.zsh 主题配色</h2><p>编辑家目录下的.zshrc 配置文件</p><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim <span class="string">.zshrc</span></span><br></pre></td></tr></table></figure><p>第一行可以看到，默认的主题是 <code>agnoster</code> 主题。</p><p>在<code>.oh-my-zsh/themes</code> 目录下放着 <code>oh-my-zsh</code> 所有的主题配置文件，只要将默认的 <code>agnoster</code> 更换为其他的主题文件名即可。</p><p><code>random</code>主题每打开一个会话配色主题都是随机的。</p><h2 id="3-自动补全命令插件autosuggestions安装"><a href="#3-自动补全命令插件autosuggestions安装" class="headerlink" title="3.自动补全命令插件autosuggestions安装"></a>3.自动补全命令插件<code>autosuggestions</code>安装</h2><h3 id="拷贝到-plugins-目录下"><a href="#拷贝到-plugins-目录下" class="headerlink" title="拷贝到 plugins 目录下"></a>拷贝到 plugins 目录下</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:<span class="regexp">//gi</span>tee.com<span class="regexp">/aiba51/</span>zsh-autosuggestions.git <span class="variable">$ZSH_CUSTOM</span><span class="regexp">/plugins/</span>zsh-autosuggestions</span><br></pre></td></tr></table></figure><p>在 <code>~/.zshrc</code> 中配置：</p><figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">plugins</span><span class="operator">=</span>(git zsh-autosuggestions)</span><br></pre></td></tr></table></figure><p>输入 <code>zsh</code> 命令生效配置：</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">zsh</span></span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -1020,6 +1020,8 @@
       
         <tags>
             
+            <tag> 泡面 </tag>
+            
             <tag> 夜晚 </tag>
             
             <tag> 回家路 </tag>
@@ -1047,8 +1049,6 @@
             <tag> 候车大厅 </tag>
             
             <tag> 消费 </tag>
-            
-            <tag> 泡面 </tag>
             
             <tag> 大屏幕 </tag>
             
@@ -2269,9 +2269,9 @@
             
             <tag> 成绩 </tag>
             
-            <tag> 考试 </tag>
-            
             <tag> 手机 </tag>
+            
+            <tag> 考试 </tag>
             
             <tag> 复习 </tag>
             
@@ -6841,6 +6841,8 @@
             
             <tag> 无聊 </tag>
             
+            <tag> 俯卧撑 </tag>
+            
             <tag> 记录生活 </tag>
             
             <tag> 准时 </tag>
@@ -6848,8 +6850,6 @@
             <tag> 焊烟头 </tag>
             
             <tag> 卷腹 </tag>
-            
-            <tag> 俯卧撑 </tag>
             
         </tags>
       
@@ -7290,13 +7290,13 @@
             
             <tag> 原因 </tag>
             
-            <tag> 俯卧撑 </tag>
-            
             <tag> 不重要 </tag>
             
             <tag> 锻炼身体 </tag>
             
             <tag> 增加财富 </tag>
+            
+            <tag> 俯卧撑 </tag>
             
             <tag> 短期 </tag>
             
@@ -9072,13 +9072,13 @@
       
         <tags>
             
-            <tag> 泡面 </tag>
-            
             <tag> 2020 </tag>
             
             <tag> 一开年 </tag>
             
             <tag> 委托 </tag>
+            
+            <tag> 泡面 </tag>
             
             <tag> 感染病毒 </tag>
             
@@ -10525,9 +10525,9 @@
             
             <tag> Github </tag>
             
-            <tag> Hexo </tag>
-            
             <tag> 电脑 </tag>
+            
+            <tag> Hexo </tag>
             
             <tag> gitee </tag>
             
@@ -10829,6 +10829,37 @@
     
     
     <entry>
+      <title>Hello World</title>
+      <link href="/Hexo/4a17b156/"/>
+      <url>/Hexo/4a17b156/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo<i class="fa fa-external-link-alt"></i></span>! This is your very first post. Check <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv">documentation<i class="fa fa-external-link-alt"></i></span> for more info. If you get any problems when using Hexo, you can find the answer in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=">troubleshooting<i class="fa fa-external-link-alt"></i></span> or you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==">GitHub<i class="fa fa-external-link-alt"></i></span>.</p><span id="more"></span><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s">Writing<i class="fa fa-external-link-alt"></i></span></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=">Server<i class="fa fa-external-link-alt"></i></span></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s">Generating<i class="fa fa-external-link-alt"></i></span></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZGVwbG95bWVudC5odG1s">Deployment<i class="fa fa-external-link-alt"></i></span></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 文章 </tag>
+            
+            <tag> 你好 </tag>
+            
+            <tag> 世界 </tag>
+            
+            <tag> 第一篇 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>mini主机的性能和比笔记本电脑比起来还是要强上不少</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a3573799/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a3573799/</url>
@@ -10872,37 +10903,6 @@
             <tag> 小背包 </tag>
             
             <tag> 处理器 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/Hexo/4a17b156/"/>
-      <url>/Hexo/4a17b156/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo<i class="fa fa-external-link-alt"></i></span>! This is your very first post. Check <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv">documentation<i class="fa fa-external-link-alt"></i></span> for more info. If you get any problems when using Hexo, you can find the answer in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=">troubleshooting<i class="fa fa-external-link-alt"></i></span> or you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==">GitHub<i class="fa fa-external-link-alt"></i></span>.</p><span id="more"></span><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s">Writing<i class="fa fa-external-link-alt"></i></span></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=">Server<i class="fa fa-external-link-alt"></i></span></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s">Generating<i class="fa fa-external-link-alt"></i></span></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZGVwbG95bWVudC5odG1s">Deployment<i class="fa fa-external-link-alt"></i></span></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 文章 </tag>
-            
-            <tag> 你好 </tag>
-            
-            <tag> 世界 </tag>
-            
-            <tag> 第一篇 </tag>
             
         </tags>
       
@@ -12059,6 +12059,63 @@
     
     
     <entry>
+      <title>人力资源管理（一）一考通案例分析题2</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2fdc7711/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2fdc7711/</url>
+      
+        <content type="html"><![CDATA[<h2 id="六、案例分析题"><a href="#六、案例分析题" class="headerlink" title="六、案例分析题"></a>六、案例分析题</h2><p><strong>38.福克斯波罗公司的“金香蕉奖”</strong></p><p>美国福克斯波罗是一家专门生产精密仪器设备等高技术产品的公司。创业初期，在技术改造上遇到了棘手的问题,若不及时解决就会影响企业生存。一天晚上，正当公司总裁为此冥思苦想时,一位技术专家突然闯进办公室,兴致勃勃地阐述了他的解决办法。</p><span id="more"></span><p>总裁听罢,觉得其构思确实非同一般,便想立即给予嘉奖。他在抽屉中翻找了好一阵，最后拿着一件东西躬身递给技术专家说:“这个给你!”这东西非金非银，而仅仅是一只普通的香蕉!这是他当时所能找到的唯一奖品了。而技术专家也很感动，因为这表示他的研究成果已得到了总裁的认可。从此以后，该公司设立了“金香蕉奖”,对攻克重大技术难题的技术专家授予一只纯金制香蕉形别针。</p><p><strong>问题:</strong></p><p>(1).请回答激励的作用有哪些?(2P72)</p><p>(2).结合激励的方法,谈谈“金香蕉奖”的启示。(2P91,93)</p><p><strong>38.[答案]</strong></p><p>(1).激励的作用主要表现在三个方面:</p><p>  ①. 吸引并留住优秀人才。</p><p>  ②. 提升员工素质,开发员工潜能,提高工作业绩。</p><p>  ③. 营造良好的竞争环境,形成良好的组织文化。(2P72)</p><p>(2).启示:</p><p>  ①. 激励方法分为物质激励和精神激励。</p><p>  ②. 精神激励与物质激励相结合才能达到最佳效果。</p><p>  ③. 真诚而及时的激励比香蕉本身的价值要大得多。(2P91，93)</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 福克斯 </tag>
+            
+            <tag> 波罗 </tag>
+            
+            <tag> 精密仪器 </tag>
+            
+            <tag> 设备 </tag>
+            
+            <tag> 香蕉 </tag>
+            
+            <tag> 金香蕉奖 </tag>
+            
+            <tag> 激励 </tag>
+            
+            <tag> 作用 </tag>
+            
+            <tag> 方法 </tag>
+            
+            <tag> 优秀人才 </tag>
+            
+            <tag> 员工素质 </tag>
+            
+            <tag> 竞争环境 </tag>
+            
+            <tag> 组织文化 </tag>
+            
+            <tag> 物质激励 </tag>
+            
+            <tag> 精神激励 </tag>
+            
+            <tag> 最佳效果 </tag>
+            
+            <tag> 真诚 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>人力资源管理（一）一考通简答题1</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/422c79b9/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/422c79b9/</url>
@@ -12531,63 +12588,6 @@
     
     
     <entry>
-      <title>人力资源管理（一）一考通案例分析题2</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2fdc7711/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2fdc7711/</url>
-      
-        <content type="html"><![CDATA[<h2 id="六、案例分析题"><a href="#六、案例分析题" class="headerlink" title="六、案例分析题"></a>六、案例分析题</h2><p><strong>38.福克斯波罗公司的“金香蕉奖”</strong></p><p>美国福克斯波罗是一家专门生产精密仪器设备等高技术产品的公司。创业初期，在技术改造上遇到了棘手的问题,若不及时解决就会影响企业生存。一天晚上，正当公司总裁为此冥思苦想时,一位技术专家突然闯进办公室,兴致勃勃地阐述了他的解决办法。</p><span id="more"></span><p>总裁听罢,觉得其构思确实非同一般,便想立即给予嘉奖。他在抽屉中翻找了好一阵，最后拿着一件东西躬身递给技术专家说:“这个给你!”这东西非金非银，而仅仅是一只普通的香蕉!这是他当时所能找到的唯一奖品了。而技术专家也很感动，因为这表示他的研究成果已得到了总裁的认可。从此以后，该公司设立了“金香蕉奖”,对攻克重大技术难题的技术专家授予一只纯金制香蕉形别针。</p><p><strong>问题:</strong></p><p>(1).请回答激励的作用有哪些?(2P72)</p><p>(2).结合激励的方法,谈谈“金香蕉奖”的启示。(2P91,93)</p><p><strong>38.[答案]</strong></p><p>(1).激励的作用主要表现在三个方面:</p><p>  ①. 吸引并留住优秀人才。</p><p>  ②. 提升员工素质,开发员工潜能,提高工作业绩。</p><p>  ③. 营造良好的竞争环境,形成良好的组织文化。(2P72)</p><p>(2).启示:</p><p>  ①. 激励方法分为物质激励和精神激励。</p><p>  ②. 精神激励与物质激励相结合才能达到最佳效果。</p><p>  ③. 真诚而及时的激励比香蕉本身的价值要大得多。(2P91，93)</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 福克斯 </tag>
-            
-            <tag> 波罗 </tag>
-            
-            <tag> 精密仪器 </tag>
-            
-            <tag> 设备 </tag>
-            
-            <tag> 香蕉 </tag>
-            
-            <tag> 金香蕉奖 </tag>
-            
-            <tag> 激励 </tag>
-            
-            <tag> 作用 </tag>
-            
-            <tag> 方法 </tag>
-            
-            <tag> 优秀人才 </tag>
-            
-            <tag> 员工素质 </tag>
-            
-            <tag> 竞争环境 </tag>
-            
-            <tag> 组织文化 </tag>
-            
-            <tag> 物质激励 </tag>
-            
-            <tag> 精神激励 </tag>
-            
-            <tag> 最佳效果 </tag>
-            
-            <tag> 真诚 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>今天也是一章题都没有做完，最后一章了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/be5f616a/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/be5f616a/</url>
@@ -12643,9 +12643,9 @@
       
         <tags>
             
-            <tag> 今天 </tag>
-            
             <tag> 手机 </tag>
+            
+            <tag> 今天 </tag>
             
             <tag> 没有 </tag>
             
@@ -13859,9 +13859,9 @@
             
             <tag> 喜欢 </tag>
             
-            <tag> 成就感 </tag>
-            
             <tag> 推广 </tag>
+            
+            <tag> 成就感 </tag>
             
             <tag> 收益 </tag>
             
@@ -15371,9 +15371,9 @@
             
             <tag> 虚拟机 </tag>
             
-            <tag> 黑苹果 </tag>
-            
             <tag> ubuntu </tag>
+            
+            <tag> 黑苹果 </tag>
             
             <tag> 系统 </tag>
             
@@ -16537,6 +16537,55 @@
     
     
     <entry>
+      <title>小米11是一款高颜值高性能的真香机</title>
+      <link href="/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/8c836d33/"/>
+      <url>/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/8c836d33/</url>
+      
+        <content type="html"><![CDATA[<p>小米11在昨晚上发布了，颜值是真的比小米10好了不少，尤其是后面摄像头这里，比小米10好看很多，而且摄像头也更大了，颜值也提升了，拍照效果也得到了极大的提升。</p><span id="more"></span><p>价格还是和小米10发布的时候一样的也是3999，之前说是不配充电器，但是套餐版配了氮化镓充电器，而且价格和标准版的不配充电器是一样的，这样的定价应该也是有点冲突了，因为这样可能就没有人去买标准版不带充电器的了，毕竟消费者都是考虑有利于自己的一方面去选择的，最终还是达不到环保的目的，应是配充电器的比不配充电器的贵个50，那样才能真的即达到环保的目的，也让消费者觉得有实惠的选择，毕竟单买这个充电器好像都是要149，只能说小米的定价很厚道的了，买到基本上等于赚到。</p><p>这次小米11颜值和性能都是无敌的存在，目前还没有那一款手机性能有小米11强的，首发了高通骁龙888处理器，算是目前最强的手机处理器了。在颜值方面这次的做得更薄，而且充电速度比上一代的小米10更快了，达到了55瓦的有线闪充和50瓦的无线闪充，上一代的小米10充电速度我都感觉很快了，而这一次充电速度更快。</p><p>颜色是有六种颜色，黑色、白色、蓝色，素皮玻璃的卡其、烟紫和雷军签名版，雷军签名版的价格和12+256的价格是一样的，定价可谓是真的厚道。</p><p>屏幕分辨率达到了2K屏，网络方面做到了支持WiFi6增强版，并且也发布了WiFi6增强版路由器AX6000，很多人还没有用到WiFi6的处理器，然而WiFi6e都已经发布了，这说明小米的研发技术已经站到了技术前沿的制高点。</p><p>总的来说目前这款手机各方面都做到了安卓手机前所未有的高度，并且目前这款手机系统和硬件都比苹果手机好，要认清一个事实就是现在的安卓系统早已经不比苹果系统差了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 互联网科技 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 小米11 </tag>
+            
+            <tag> 高颜值 </tag>
+            
+            <tag> 高性能 </tag>
+            
+            <tag> 真香机 </tag>
+            
+            <tag> 小米10 </tag>
+            
+            <tag> 充电器 </tag>
+            
+            <tag> 氮化镓 </tag>
+            
+            <tag> 无敌 </tag>
+            
+            <tag> 素皮玻璃 </tag>
+            
+            <tag> 烟紫 </tag>
+            
+            <tag> 卡其 </tag>
+            
+            <tag> 雷军签名版 </tag>
+            
+            <tag> 研发技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>小米出的这个MIUI+的功能很好用</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/77a713ef/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/77a713ef/</url>
@@ -16750,55 +16799,6 @@
     
     
     <entry>
-      <title>小米11是一款高颜值高性能的真香机</title>
-      <link href="/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/8c836d33/"/>
-      <url>/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/8c836d33/</url>
-      
-        <content type="html"><![CDATA[<p>小米11在昨晚上发布了，颜值是真的比小米10好了不少，尤其是后面摄像头这里，比小米10好看很多，而且摄像头也更大了，颜值也提升了，拍照效果也得到了极大的提升。</p><span id="more"></span><p>价格还是和小米10发布的时候一样的也是3999，之前说是不配充电器，但是套餐版配了氮化镓充电器，而且价格和标准版的不配充电器是一样的，这样的定价应该也是有点冲突了，因为这样可能就没有人去买标准版不带充电器的了，毕竟消费者都是考虑有利于自己的一方面去选择的，最终还是达不到环保的目的，应是配充电器的比不配充电器的贵个50，那样才能真的即达到环保的目的，也让消费者觉得有实惠的选择，毕竟单买这个充电器好像都是要149，只能说小米的定价很厚道的了，买到基本上等于赚到。</p><p>这次小米11颜值和性能都是无敌的存在，目前还没有那一款手机性能有小米11强的，首发了高通骁龙888处理器，算是目前最强的手机处理器了。在颜值方面这次的做得更薄，而且充电速度比上一代的小米10更快了，达到了55瓦的有线闪充和50瓦的无线闪充，上一代的小米10充电速度我都感觉很快了，而这一次充电速度更快。</p><p>颜色是有六种颜色，黑色、白色、蓝色，素皮玻璃的卡其、烟紫和雷军签名版，雷军签名版的价格和12+256的价格是一样的，定价可谓是真的厚道。</p><p>屏幕分辨率达到了2K屏，网络方面做到了支持WiFi6增强版，并且也发布了WiFi6增强版路由器AX6000，很多人还没有用到WiFi6的处理器，然而WiFi6e都已经发布了，这说明小米的研发技术已经站到了技术前沿的制高点。</p><p>总的来说目前这款手机各方面都做到了安卓手机前所未有的高度，并且目前这款手机系统和硬件都比苹果手机好，要认清一个事实就是现在的安卓系统早已经不比苹果系统差了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 互联网科技 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 小米11 </tag>
-            
-            <tag> 高颜值 </tag>
-            
-            <tag> 高性能 </tag>
-            
-            <tag> 真香机 </tag>
-            
-            <tag> 小米10 </tag>
-            
-            <tag> 充电器 </tag>
-            
-            <tag> 氮化镓 </tag>
-            
-            <tag> 无敌 </tag>
-            
-            <tag> 素皮玻璃 </tag>
-            
-            <tag> 烟紫 </tag>
-            
-            <tag> 卡其 </tag>
-            
-            <tag> 雷军签名版 </tag>
-            
-            <tag> 研发技术 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>已经坚持日更26天了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f815bf0f/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f815bf0f/</url>
@@ -16987,6 +16987,49 @@
     
     
     <entry>
+      <title>很多人问我要挖狗狗币的教程，我有时间再写</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c39404ee/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c39404ee/</url>
+      
+        <content type="html"><![CDATA[<p>教程是不难的，写出来也容易，但是现在发文章这些平台很难发带链接的文章，既然是教程肯定会要用到很多网站的链接，不能发链接写出来也没有什么用，就算写出来别人看了也不知道怎么回事。</p><span id="more"></span><p>等我写好了发到我自己的网站，那样用搜索引擎搜下我网站自己去看就可以了，现在感觉花十多分钟写篇日更都感觉快没有时间。</p><p>但是既然有需求我还是会去写一篇教程出来给大家去参考的，可能在明天抽空去写吧，我自己安装的时候一下就搞好了，但是写教程要把逻辑步骤写出来，所以还是要好好的去组织一下材料才可以的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 文章 </tag>
+            
+            <tag> 安装 </tag>
+            
+            <tag> 教程 </tag>
+            
+            <tag> 网站 </tag>
+            
+            <tag> 挖狗狗币 </tag>
+            
+            <tag> 容易 </tag>
+            
+            <tag> 带链接 </tag>
+            
+            <tag> 链接 </tag>
+            
+            <tag> 搜索引擎 </tag>
+            
+            <tag> 逻辑步骤 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>很多今天还没有完成的事</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/78cd337d/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/78cd337d/</url>
@@ -17003,11 +17046,11 @@
       
         <tags>
             
+            <tag> 手机 </tag>
+            
             <tag> 考试 </tag>
             
             <tag> 今天 </tag>
-            
-            <tag> 手机 </tag>
             
             <tag> 更新文章 </tag>
             
@@ -17063,49 +17106,6 @@
             <tag> 竞争力 </tag>
             
             <tag> M1 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>很多人问我要挖狗狗币的教程，我有时间再写</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c39404ee/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c39404ee/</url>
-      
-        <content type="html"><![CDATA[<p>教程是不难的，写出来也容易，但是现在发文章这些平台很难发带链接的文章，既然是教程肯定会要用到很多网站的链接，不能发链接写出来也没有什么用，就算写出来别人看了也不知道怎么回事。</p><span id="more"></span><p>等我写好了发到我自己的网站，那样用搜索引擎搜下我网站自己去看就可以了，现在感觉花十多分钟写篇日更都感觉快没有时间。</p><p>但是既然有需求我还是会去写一篇教程出来给大家去参考的，可能在明天抽空去写吧，我自己安装的时候一下就搞好了，但是写教程要把逻辑步骤写出来，所以还是要好好的去组织一下材料才可以的。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 文章 </tag>
-            
-            <tag> 安装 </tag>
-            
-            <tag> 教程 </tag>
-            
-            <tag> 网站 </tag>
-            
-            <tag> 挖狗狗币 </tag>
-            
-            <tag> 容易 </tag>
-            
-            <tag> 带链接 </tag>
-            
-            <tag> 链接 </tag>
-            
-            <tag> 搜索引擎 </tag>
-            
-            <tag> 逻辑步骤 </tag>
             
         </tags>
       
@@ -17647,6 +17647,67 @@
     
     
     <entry>
+      <title>我昨晚梦到走一条艰难的路，那条路很窄，下面却是万丈深渊</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/62e9a13e/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/62e9a13e/</url>
+      
+        <content type="html"><![CDATA[<p>我昨晚睡得迷迷糊糊之中，我梦到自己坐车去一个邻县游玩，到了那地方后，突然被一个朋友拉着去赶集，说那天正是赶集的日期，现实中我们这里是五天赶一场集市，邻县估计也是这样的吧。那个拉我和他去赶集的朋友我是一点印象都没有，梦里所见到的东西有时就是如此的荒诞和奇怪，他的样子长什么样我都看不清楚，他拉着我去赶集不会是想害我吧。</p><span id="more"></span><p>后来的梦境说明了一切，他想看我能不能坚持，如果不能克服心里的障碍的话我就会在梦境里面掉下悬崖摔死。我在梦境中问他离去赶集的地方有多远？他说：“两公里，不是太远，你们县那边也有人经常来这边赶集。”到这里我算是清楚一点了，这个集市是在两县的交界处，我不是要去另外的县游玩的吗，怎么兜兜转转又回来了，肯定不是这样的，因为这不符合我一贯做事的逻辑。</p><p>既然那朋友说了只有两公里远，那我和他走路一下子估计就能赶到了。刚开始走的时候那条路虽然狭窄，但是还算很平坦，那是一片绿叶葱葱的树林，路边上是一条河，河水流得很慢，河水看起来很深，就像那片树林一样，绿得让人心生恐惧。大树茂密的叶子挡住了阳光，偶尔有几声鸟叫和几个赶集的行人走过之外再无其他的热闹可看，死一般的沉寂倒是让我的思绪宁静了不少。</p><p>穿过那片树林以后，到了真正的死亡峡谷，两公里的路程一半是前面那片安静的树林，后面的一公里是这条充满死亡气息的悬崖边缘。刚开始走的时候这悬崖边上还算能走一个人，虽然下面已经是弥漫着雾气深不见底，但还不是太让人感觉害怕，只要靠后面走用手抓着岩石凸出来的地方慢慢走，那也还是可以走过去的，真正难走的是走到悬崖的中间以后。走到悬崖中间后路越来越狭窄，甚至走到最中间大概有一段几十米的地方，路就只有手的巴掌那么宽了。走到这里时我已经是大气不敢出了，我不敢站着走了，我站起来走的话我怕被风把我一下就吹下悬崖。虽然那天的天气是风和日丽的，天空无风也无云，蓝蓝天空下的太阳无情的照晒着这悬崖边上的峡谷，白白的雾气袅绕着恐惧的人心，再加上我小时候就有的恐高症，我在太阳的照晒和雾气的弥漫中竟开始头晕了。</p><p>前方万丈悬崖深渊的恐惧令我不敢快步前进，我只能斜着身体，抓着岩壁上岩石突出的地方慢慢的向前爬行着，就这几十米的距离也不知道我爬行了多久，这可能是我这一生中走过最艰难的路了。从早上的天空中一缕晨曦走进树林到走出这几十米的悬崖已经是快到日落西去的下午了，走出这几十米的艰险历程后面的路也就越走越宽了。没有用半个钟也就走到集市的街头了，走到街头的时候我回头望了望我这一路辛苦走过来的艰险之路，只看到一片白白的雾气笼罩着整个峡谷，犹如仙境一般，在雾气的笼罩下根本就看不到悬崖边上的小路。跟着我身后走硬要拉我来赶集的那位朋友也失去了踪影，我想他要不就是掉下悬崖摔死了，要不就是自己一个人悄悄回去了，莫不是他就成仙了，鬼知道他的，我跟他又不熟，还把我害得那么惨差点丢掉性命。</p><p>走到这街头的时候我已经是满脸和满身被石头刮伤的伤痕，街头的当地人看着我说小伙子你真勇敢，他们说能从那悬崖边上的小路走上街头的不多，每个月都有不少人来赶集从那悬崖边上的小路掉下峡谷摔死。我想到此我感觉我还是幸运的，我远远看着那弥漫着白白雾气从未散去过的峡谷，脸上和身上的汗也渐渐干了，伤口也没有那么痛了。</p><p>望着那如仙气袅绕的峡谷之上，我感觉身体也渐渐凉快舒畅了很多。渐渐的我从梦中醒来，原来是天亮了清晨的气温很凉快，原来这一切都只是我的梦幻，梦醒后终归现实，直到现在我的人生中还没有这样的经历。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 梦境 </tag>
+            
+            <tag> 迷迷糊糊 </tag>
+            
+            <tag> 奇怪 </tag>
+            
+            <tag> 昨晚 </tag>
+            
+            <tag> 艰难 </tag>
+            
+            <tag> 路 </tag>
+            
+            <tag> 万丈深渊 </tag>
+            
+            <tag> 邻县游玩 </tag>
+            
+            <tag> 赶集 </tag>
+            
+            <tag> 荒诞 </tag>
+            
+            <tag> 交界处 </tag>
+            
+            <tag> 绿叶葱葱 </tag>
+            
+            <tag> 死亡峡谷 </tag>
+            
+            <tag> 弥漫 </tag>
+            
+            <tag> 快步前进 </tag>
+            
+            <tag> 一缕晨曦 </tag>
+            
+            <tag> 成仙 </tag>
+            
+            <tag> 悬崖 </tag>
+            
+            <tag> 梦幻 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>我的mini小主机算是组装完成了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dcfeae6e/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dcfeae6e/</url>
@@ -17714,110 +17775,6 @@
     
     
     <entry>
-      <title>我昨晚梦到走一条艰难的路，那条路很窄，下面却是万丈深渊</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/62e9a13e/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/62e9a13e/</url>
-      
-        <content type="html"><![CDATA[<p>我昨晚睡得迷迷糊糊之中，我梦到自己坐车去一个邻县游玩，到了那地方后，突然被一个朋友拉着去赶集，说那天正是赶集的日期，现实中我们这里是五天赶一场集市，邻县估计也是这样的吧。那个拉我和他去赶集的朋友我是一点印象都没有，梦里所见到的东西有时就是如此的荒诞和奇怪，他的样子长什么样我都看不清楚，他拉着我去赶集不会是想害我吧。</p><span id="more"></span><p>后来的梦境说明了一切，他想看我能不能坚持，如果不能克服心里的障碍的话我就会在梦境里面掉下悬崖摔死。我在梦境中问他离去赶集的地方有多远？他说：“两公里，不是太远，你们县那边也有人经常来这边赶集。”到这里我算是清楚一点了，这个集市是在两县的交界处，我不是要去另外的县游玩的吗，怎么兜兜转转又回来了，肯定不是这样的，因为这不符合我一贯做事的逻辑。</p><p>既然那朋友说了只有两公里远，那我和他走路一下子估计就能赶到了。刚开始走的时候那条路虽然狭窄，但是还算很平坦，那是一片绿叶葱葱的树林，路边上是一条河，河水流得很慢，河水看起来很深，就像那片树林一样，绿得让人心生恐惧。大树茂密的叶子挡住了阳光，偶尔有几声鸟叫和几个赶集的行人走过之外再无其他的热闹可看，死一般的沉寂倒是让我的思绪宁静了不少。</p><p>穿过那片树林以后，到了真正的死亡峡谷，两公里的路程一半是前面那片安静的树林，后面的一公里是这条充满死亡气息的悬崖边缘。刚开始走的时候这悬崖边上还算能走一个人，虽然下面已经是弥漫着雾气深不见底，但还不是太让人感觉害怕，只要靠后面走用手抓着岩石凸出来的地方慢慢走，那也还是可以走过去的，真正难走的是走到悬崖的中间以后。走到悬崖中间后路越来越狭窄，甚至走到最中间大概有一段几十米的地方，路就只有手的巴掌那么宽了。走到这里时我已经是大气不敢出了，我不敢站着走了，我站起来走的话我怕被风把我一下就吹下悬崖。虽然那天的天气是风和日丽的，天空无风也无云，蓝蓝天空下的太阳无情的照晒着这悬崖边上的峡谷，白白的雾气袅绕着恐惧的人心，再加上我小时候就有的恐高症，我在太阳的照晒和雾气的弥漫中竟开始头晕了。</p><p>前方万丈悬崖深渊的恐惧令我不敢快步前进，我只能斜着身体，抓着岩壁上岩石突出的地方慢慢的向前爬行着，就这几十米的距离也不知道我爬行了多久，这可能是我这一生中走过最艰难的路了。从早上的天空中一缕晨曦走进树林到走出这几十米的悬崖已经是快到日落西去的下午了，走出这几十米的艰险历程后面的路也就越走越宽了。没有用半个钟也就走到集市的街头了，走到街头的时候我回头望了望我这一路辛苦走过来的艰险之路，只看到一片白白的雾气笼罩着整个峡谷，犹如仙境一般，在雾气的笼罩下根本就看不到悬崖边上的小路。跟着我身后走硬要拉我来赶集的那位朋友也失去了踪影，我想他要不就是掉下悬崖摔死了，要不就是自己一个人悄悄回去了，莫不是他就成仙了，鬼知道他的，我跟他又不熟，还把我害得那么惨差点丢掉性命。</p><p>走到这街头的时候我已经是满脸和满身被石头刮伤的伤痕，街头的当地人看着我说小伙子你真勇敢，他们说能从那悬崖边上的小路走上街头的不多，每个月都有不少人来赶集从那悬崖边上的小路掉下峡谷摔死。我想到此我感觉我还是幸运的，我远远看着那弥漫着白白雾气从未散去过的峡谷，脸上和身上的汗也渐渐干了，伤口也没有那么痛了。</p><p>望着那如仙气袅绕的峡谷之上，我感觉身体也渐渐凉快舒畅了很多。渐渐的我从梦中醒来，原来是天亮了清晨的气温很凉快，原来这一切都只是我的梦幻，梦醒后终归现实，直到现在我的人生中还没有这样的经历。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 情感美文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 梦境 </tag>
-            
-            <tag> 迷迷糊糊 </tag>
-            
-            <tag> 奇怪 </tag>
-            
-            <tag> 昨晚 </tag>
-            
-            <tag> 艰难 </tag>
-            
-            <tag> 路 </tag>
-            
-            <tag> 万丈深渊 </tag>
-            
-            <tag> 邻县游玩 </tag>
-            
-            <tag> 赶集 </tag>
-            
-            <tag> 荒诞 </tag>
-            
-            <tag> 交界处 </tag>
-            
-            <tag> 绿叶葱葱 </tag>
-            
-            <tag> 死亡峡谷 </tag>
-            
-            <tag> 弥漫 </tag>
-            
-            <tag> 快步前进 </tag>
-            
-            <tag> 一缕晨曦 </tag>
-            
-            <tag> 成仙 </tag>
-            
-            <tag> 悬崖 </tag>
-            
-            <tag> 梦幻 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>我的mini电脑还是没有弄好</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/38f4187b/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/38f4187b/</url>
-      
-        <content type="html"><![CDATA[<p>本来就快弄好了的，结果插到显示器上显示无信号，害我弄了很大半天，到天快发黑的时候我问买机箱的那家客服，它才找了他们的技术员给我看了下，原来是他们卖的那个转换板有问题。</p><span id="more"></span><p>本来CPU供电那里是要接8pin供电的结果他们发来的那个转换板上的只是4pin供电，所以CPU是根本没有供上电，真的是害我弄了大半天，早知道就只在他家买机箱就算了，在其他家买转换板肯定是比在他家买好，我买的电源适配器就是在别家买的，一拿来就可以用。</p><p>后面又说要让我从新在他家拍一个250w的ATX-DC转换板，没有办法了有得花钱从新拍一个，前面那个说是可以退款69，这样还好了，比去其他家买划算点了，只是希望不要发错了，再发来用不了我直接是要投诉他家了，花了钱还得到不舒服的感觉，这种感受是没有人愿意的。</p><p>还要等到星期一才给我发货，这几天我又得等了，那种期待奇迹一瞬间出现的感觉就这样被消磨掉了，要是他发的转换板没有问题那现在我的新电脑都已经用上了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 显示器 </tag>
-            
-            <tag> 不舒服 </tag>
-            
-            <tag> 一瞬间 </tag>
-            
-            <tag> mini电脑 </tag>
-            
-            <tag> 无信号 </tag>
-            
-            <tag> 电源适配器 </tag>
-            
-            <tag> ATX-DC </tag>
-            
-            <tag> 转换板 </tag>
-            
-            <tag> 星期一 </tag>
-            
-            <tag> 发货 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>我的mini小主机终于组装好了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d0450d61/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d0450d61/</url>
@@ -17873,63 +17830,41 @@
     
     
     <entry>
-      <title>我那些年的高中记忆</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/8e20c410/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/8e20c410/</url>
+      <title>我的mini电脑还是没有弄好</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/38f4187b/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/38f4187b/</url>
       
-        <content type="html"><![CDATA[<p>因看到简书发来的简信，说是可以写一篇关于学生时代记忆的文章参赛有奖拿，于是我便随意的写下了这篇文章，写得不好地方请勿见怪。</p><span id="more"></span><p>我上高中那年是2006年的一个夏天，因为初中学习很差，复读了一年初三才重新上了一个农村中学的高中，感觉真的高中三年没有学到什么东西，混日子混了三年，真的是可以这么说一点都不夸张。时间过得真的很快，三年间就匆匆过去了，有的时候很想留住那些时光，但那时的我们又希望它过得快一点，想着以前和现在那本来就是一对矛盾体。</p><p>那些年有很多美好的记忆，有时候想起来还到觉得有点可笑，记得那时候第一二年是住在学校的宿舍，也就是高一和高二的那两年，时间久了可能是真的记得不太清了吧，好像高三上个学期也都还是住在学校宿舍的，最后一个学期才搬出去自己租房子住了。我为什么要搬出去自己住了记得当时的理由好像很简单，就是想好好学习了，因为快到高考了。但是其实一点用都没有，每天放学就只想躺在床上睡觉。</p><p>上高中的时候感觉每天都很困，也不知道是为什么，有好多的时候，听着那老师在上面讲课，听着听着就突然的睡着了，可能是每晚都睡得不好的缘故吧。住在学校宿舍的时候每天放学最爱做的事就是去河边看别人钓鱼，因为我们学校就是在一条河边，那条河一到春天和秋天我都感觉很美，春天河里面有很多刚出生的小鱼，有的有大拇指那么大，因为天气暖和全都游到了水面上来，看着就想用手去抓，可是还没有靠近它们半步，它们又突的一下游回到水底下去了。</p><p>那条河里不仅小鱼很多，其实也有大的，记得有一次有个人就在那条河里刚好是我们学校对面那里，他钓到了一条七八斤重的，这其实能钓这么大的，就已经算大的了，因为很少有人能钓到这么大的。</p><p>也就是因为一放学就去看别人钓鱼的缘故吧，好像记得就是上高二那年的春天，我遇到了我一辈子都忘不了的人，那个女孩是让我第一次心动的人，因为她太漂亮了，那时候我想说我喜欢她，可是我这么也说不出口，我只能傻傻的看着她就那样慢慢地走着离开了我的视线，那可能真的就是我的初恋了。从我读书到出来社会了，还真的没有哪一个女的能让我那么心动过。</p><p>我复读初三的时候我的同桌就是个女孩，可是我从来就没有那种让我心动的感觉过，出来社会了我交的女朋友我说的喜欢她们，其实都是嘴上说说的喜欢而已，因为她们都没有让我真的心动过，这无关漂不漂亮的问题，而是没有让我发自内心痴迷的感觉。</p><p>可是这种心动对来说没有结果，我就只见过她那一次，也不知道她姓啥名谁，到底家住何处，她是不是在我们学校上学的，所有的这些我都不清楚，可她就是那种让我第一眼就迷上的女人。记得那天好像是我们学校的那个镇赶集的日子，记得那时候那里还是个乡后来才改成了镇的，我想她应该是来赶集的吧，又或许人家都已经结婚了，可是谁又知道呢。</p><p>从那以后我都一直在思索这个问题，只是这是一个永远没有答案的问题，从那以后我是真的再想见到她一次，只是从那以后我再也没有见过她，直到我高三毕业离开那所学校之后都再也没有见到她，如果老天能让我再见到她一次，那怕就一次那我愿意减寿几年那也没有问题。可是再也没有，真的让我相信了一转身就是一辈子这句话。</p><p>现在记得当年这些事，有后悔也有悔恨，有怪自己不努力，也有怪自己当时没有勇气，可是这就是自己曾经经历过的一段青春记忆，想忘记它，可是自己又时常会想起，想要改变它，可是它已经成为过去式，我们无法回到过去，对于那已经定型了的记忆我们自然是无法改变。曾经那些让我迷恋的人，我怎么也忘不掉，这不知道是一种折磨还是一种精神慰藉，反正她就在那记忆中的深处，自己想不想她都会时常在记忆之中浮现。</p>]]></content>
+        <content type="html"><![CDATA[<p>本来就快弄好了的，结果插到显示器上显示无信号，害我弄了很大半天，到天快发黑的时候我问买机箱的那家客服，它才找了他们的技术员给我看了下，原来是他们卖的那个转换板有问题。</p><span id="more"></span><p>本来CPU供电那里是要接8pin供电的结果他们发来的那个转换板上的只是4pin供电，所以CPU是根本没有供上电，真的是害我弄了大半天，早知道就只在他家买机箱就算了，在其他家买转换板肯定是比在他家买好，我买的电源适配器就是在别家买的，一拿来就可以用。</p><p>后面又说要让我从新在他家拍一个250w的ATX-DC转换板，没有办法了有得花钱从新拍一个，前面那个说是可以退款69，这样还好了，比去其他家买划算点了，只是希望不要发错了，再发来用不了我直接是要投诉他家了，花了钱还得到不舒服的感觉，这种感受是没有人愿意的。</p><p>还要等到星期一才给我发货，这几天我又得等了，那种期待奇迹一瞬间出现的感觉就这样被消磨掉了，要是他发的转换板没有问题那现在我的新电脑都已经用上了。</p>]]></content>
       
       
       <categories>
           
-          <category> 情感美文 </category>
+          <category> 日常记录 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 文章 </tag>
+            <tag> 显示器 </tag>
             
-            <tag> 夏天 </tag>
+            <tag> 不舒服 </tag>
             
-            <tag> 简书 </tag>
+            <tag> 一瞬间 </tag>
             
-            <tag> 喜欢 </tag>
+            <tag> 电源适配器 </tag>
             
-            <tag> 睡觉 </tag>
+            <tag> mini电脑 </tag>
             
-            <tag> 结婚 </tag>
+            <tag> 无信号 </tag>
             
-            <tag> 秋天 </tag>
+            <tag> ATX-DC </tag>
             
-            <tag> 春天 </tag>
+            <tag> 转换板 </tag>
             
-            <tag> 那些年 </tag>
+            <tag> 星期一 </tag>
             
-            <tag> 高中记忆 </tag>
-            
-            <tag> 初中 </tag>
-            
-            <tag> 那些时光 </tag>
-            
-            <tag> 高一 </tag>
-            
-            <tag> 高二 </tag>
-            
-            <tag> 那两年 </tag>
-            
-            <tag> 小鱼 </tag>
-            
-            <tag> 水底 </tag>
-            
-            <tag> 钓鱼 </tag>
-            
-            <tag> 社会 </tag>
-            
-            <tag> 高三毕业 </tag>
-            
-            <tag> 浮现 </tag>
+            <tag> 发货 </tag>
             
         </tags>
       
@@ -18005,6 +17940,71 @@
             <tag> 漂亮 </tag>
             
             <tag> 女诗人 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我那些年的高中记忆</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/8e20c410/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/8e20c410/</url>
+      
+        <content type="html"><![CDATA[<p>因看到简书发来的简信，说是可以写一篇关于学生时代记忆的文章参赛有奖拿，于是我便随意的写下了这篇文章，写得不好地方请勿见怪。</p><span id="more"></span><p>我上高中那年是2006年的一个夏天，因为初中学习很差，复读了一年初三才重新上了一个农村中学的高中，感觉真的高中三年没有学到什么东西，混日子混了三年，真的是可以这么说一点都不夸张。时间过得真的很快，三年间就匆匆过去了，有的时候很想留住那些时光，但那时的我们又希望它过得快一点，想着以前和现在那本来就是一对矛盾体。</p><p>那些年有很多美好的记忆，有时候想起来还到觉得有点可笑，记得那时候第一二年是住在学校的宿舍，也就是高一和高二的那两年，时间久了可能是真的记得不太清了吧，好像高三上个学期也都还是住在学校宿舍的，最后一个学期才搬出去自己租房子住了。我为什么要搬出去自己住了记得当时的理由好像很简单，就是想好好学习了，因为快到高考了。但是其实一点用都没有，每天放学就只想躺在床上睡觉。</p><p>上高中的时候感觉每天都很困，也不知道是为什么，有好多的时候，听着那老师在上面讲课，听着听着就突然的睡着了，可能是每晚都睡得不好的缘故吧。住在学校宿舍的时候每天放学最爱做的事就是去河边看别人钓鱼，因为我们学校就是在一条河边，那条河一到春天和秋天我都感觉很美，春天河里面有很多刚出生的小鱼，有的有大拇指那么大，因为天气暖和全都游到了水面上来，看着就想用手去抓，可是还没有靠近它们半步，它们又突的一下游回到水底下去了。</p><p>那条河里不仅小鱼很多，其实也有大的，记得有一次有个人就在那条河里刚好是我们学校对面那里，他钓到了一条七八斤重的，这其实能钓这么大的，就已经算大的了，因为很少有人能钓到这么大的。</p><p>也就是因为一放学就去看别人钓鱼的缘故吧，好像记得就是上高二那年的春天，我遇到了我一辈子都忘不了的人，那个女孩是让我第一次心动的人，因为她太漂亮了，那时候我想说我喜欢她，可是我这么也说不出口，我只能傻傻的看着她就那样慢慢地走着离开了我的视线，那可能真的就是我的初恋了。从我读书到出来社会了，还真的没有哪一个女的能让我那么心动过。</p><p>我复读初三的时候我的同桌就是个女孩，可是我从来就没有那种让我心动的感觉过，出来社会了我交的女朋友我说的喜欢她们，其实都是嘴上说说的喜欢而已，因为她们都没有让我真的心动过，这无关漂不漂亮的问题，而是没有让我发自内心痴迷的感觉。</p><p>可是这种心动对来说没有结果，我就只见过她那一次，也不知道她姓啥名谁，到底家住何处，她是不是在我们学校上学的，所有的这些我都不清楚，可她就是那种让我第一眼就迷上的女人。记得那天好像是我们学校的那个镇赶集的日子，记得那时候那里还是个乡后来才改成了镇的，我想她应该是来赶集的吧，又或许人家都已经结婚了，可是谁又知道呢。</p><p>从那以后我都一直在思索这个问题，只是这是一个永远没有答案的问题，从那以后我是真的再想见到她一次，只是从那以后我再也没有见过她，直到我高三毕业离开那所学校之后都再也没有见到她，如果老天能让我再见到她一次，那怕就一次那我愿意减寿几年那也没有问题。可是再也没有，真的让我相信了一转身就是一辈子这句话。</p><p>现在记得当年这些事，有后悔也有悔恨，有怪自己不努力，也有怪自己当时没有勇气，可是这就是自己曾经经历过的一段青春记忆，想忘记它，可是自己又时常会想起，想要改变它，可是它已经成为过去式，我们无法回到过去，对于那已经定型了的记忆我们自然是无法改变。曾经那些让我迷恋的人，我怎么也忘不掉，这不知道是一种折磨还是一种精神慰藉，反正她就在那记忆中的深处，自己想不想她都会时常在记忆之中浮现。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 文章 </tag>
+            
+            <tag> 夏天 </tag>
+            
+            <tag> 简书 </tag>
+            
+            <tag> 喜欢 </tag>
+            
+            <tag> 睡觉 </tag>
+            
+            <tag> 结婚 </tag>
+            
+            <tag> 秋天 </tag>
+            
+            <tag> 春天 </tag>
+            
+            <tag> 那些年 </tag>
+            
+            <tag> 高中记忆 </tag>
+            
+            <tag> 初中 </tag>
+            
+            <tag> 那些时光 </tag>
+            
+            <tag> 高一 </tag>
+            
+            <tag> 高二 </tag>
+            
+            <tag> 那两年 </tag>
+            
+            <tag> 小鱼 </tag>
+            
+            <tag> 水底 </tag>
+            
+            <tag> 钓鱼 </tag>
+            
+            <tag> 社会 </tag>
+            
+            <tag> 高三毕业 </tag>
+            
+            <tag> 浮现 </tag>
             
         </tags>
       
@@ -19189,6 +19189,49 @@
     
     
     <entry>
+      <title>昨晚断电一下子，来电后电脑开不了机</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c983425/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c983425/</url>
+      
+        <content type="html"><![CDATA[<p>昨晚我正在用电脑写文章，突然一下子断电了，文章没有来得及保存了，用Word写文章只会5分钟自动保存一次，所以就只保存了前5分钟写的内容，电脑开机以后又重新写后面的。</p><span id="more"></span><p>来电以后电脑就开不了机了，我还以为是烧坏了，把螺丝下开，把盖子打开，按了开机键风扇也不转，怎么按都没有反应，电源插头重新插了也没有反应。</p><p>后面才看到是硬盘盒没有开，虚惊一场，这主板的自检能力真强，一样配件没有开，它怎么都不会开机，我把硬盘盒的开关按下之后，然后再按电脑的开机键风扇也转了，也可以正常开机了。</p><p>正常开机以后就没有什么问题，然后又长按了下让它关机，因为还得把盖子装回去，装回去了再重新开机，要不然碰到正在运行的电脑风扇就不好了，装回去后开机一切正常，只是文章没有完全保存，所以又得重新写后面。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电脑 </tag>
+            
+            <tag> Word </tag>
+            
+            <tag> 断电 </tag>
+            
+            <tag> 写文章 </tag>
+            
+            <tag> 开不了机 </tag>
+            
+            <tag> 保存 </tag>
+            
+            <tag> 烧坏了 </tag>
+            
+            <tag> 电源插头 </tag>
+            
+            <tag> 正常开机 </tag>
+            
+            <tag> 重新写 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>昨晚没有睡好今天没有精神</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9e7487b3/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9e7487b3/</url>
@@ -19471,49 +19514,6 @@
     
     
     <entry>
-      <title>昨晚断电一下子，来电后电脑开不了机</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c983425/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c983425/</url>
-      
-        <content type="html"><![CDATA[<p>昨晚我正在用电脑写文章，突然一下子断电了，文章没有来得及保存了，用Word写文章只会5分钟自动保存一次，所以就只保存了前5分钟写的内容，电脑开机以后又重新写后面的。</p><span id="more"></span><p>来电以后电脑就开不了机了，我还以为是烧坏了，把螺丝下开，把盖子打开，按了开机键风扇也不转，怎么按都没有反应，电源插头重新插了也没有反应。</p><p>后面才看到是硬盘盒没有开，虚惊一场，这主板的自检能力真强，一样配件没有开，它怎么都不会开机，我把硬盘盒的开关按下之后，然后再按电脑的开机键风扇也转了，也可以正常开机了。</p><p>正常开机以后就没有什么问题，然后又长按了下让它关机，因为还得把盖子装回去，装回去了再重新开机，要不然碰到正在运行的电脑风扇就不好了，装回去后开机一切正常，只是文章没有完全保存，所以又得重新写后面。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 电脑 </tag>
-            
-            <tag> Word </tag>
-            
-            <tag> 断电 </tag>
-            
-            <tag> 写文章 </tag>
-            
-            <tag> 开不了机 </tag>
-            
-            <tag> 保存 </tag>
-            
-            <tag> 烧坏了 </tag>
-            
-            <tag> 电源插头 </tag>
-            
-            <tag> 正常开机 </tag>
-            
-            <tag> 重新写 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>有人居然用催吐管减肥</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/45e0131f/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/45e0131f/</url>
@@ -19763,6 +19763,45 @@
             <tag> 银铃 </tag>
             
             <tag> 春意 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>每天不知道做什么心里很难受</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/935d3622/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/935d3622/</url>
+      
+        <content type="html"><![CDATA[<p>现在每天感觉就是在混日子，做什么都没有兴趣，好像只有对女人还有点兴趣了，每天醒来都是拿着手机去社交软件上找女人聊天，可是女人对我不感兴趣，好像女人都只对钱感兴趣。</p><span id="more"></span><p>而且女人喜欢听假话，越表现得越真实女人越不喜欢，老实的男人真的没有市场了，女人喜欢的就是你说的话要符合她们的心理预期。</p><p>好多女的只要我说自己是在厂里上班就立马把我删了，我要是说我在互联网公司上班做程序员立马就有兴趣和我聊了。这样的感觉说实在我很难受，因为骗别人不难受，但是骗自己最难受。</p><p>看着陌陌上那些女的越看越难受，一个个的眼里只看到钱这个字，索性直接关了，还是来简书这里写文章比较快乐。有时候独善其身，一个人思考问题，更能提升自己的人生境界。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 兴趣 </tag>
+            
+            <tag> 心理预期 </tag>
+            
+            <tag> 独善其身 </tag>
+            
+            <tag> 难受 </tag>
+            
+            <tag> 做什么 </tag>
+            
+            <tag> 女人 </tag>
+            
+            <tag> 混日子 </tag>
+            
+            <tag> 老实 </tag>
             
         </tags>
       
@@ -20247,45 +20286,6 @@
     
     
     <entry>
-      <title>每天不知道做什么心里很难受</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/935d3622/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/935d3622/</url>
-      
-        <content type="html"><![CDATA[<p>现在每天感觉就是在混日子，做什么都没有兴趣，好像只有对女人还有点兴趣了，每天醒来都是拿着手机去社交软件上找女人聊天，可是女人对我不感兴趣，好像女人都只对钱感兴趣。</p><span id="more"></span><p>而且女人喜欢听假话，越表现得越真实女人越不喜欢，老实的男人真的没有市场了，女人喜欢的就是你说的话要符合她们的心理预期。</p><p>好多女的只要我说自己是在厂里上班就立马把我删了，我要是说我在互联网公司上班做程序员立马就有兴趣和我聊了。这样的感觉说实在我很难受，因为骗别人不难受，但是骗自己最难受。</p><p>看着陌陌上那些女的越看越难受，一个个的眼里只看到钱这个字，索性直接关了，还是来简书这里写文章比较快乐。有时候独善其身，一个人思考问题，更能提升自己的人生境界。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 兴趣 </tag>
-            
-            <tag> 心理预期 </tag>
-            
-            <tag> 独善其身 </tag>
-            
-            <tag> 难受 </tag>
-            
-            <tag> 做什么 </tag>
-            
-            <tag> 女人 </tag>
-            
-            <tag> 混日子 </tag>
-            
-            <tag> 老实 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>用了很多电脑系统，最后发现win10才是最好用的</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1e50e113/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1e50e113/</url>
@@ -20329,6 +20329,53 @@
             <tag> 凤凰系统 </tag>
             
             <tag> office2010 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>用手机玩手游英雄联盟</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9d0802bd/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9d0802bd/</url>
+      
+        <content type="html"><![CDATA[<p>这个游戏也已经出来很久了，之前一直没有怎么玩，刚出来的时候没有中文版的，到12月的时候才出来了台服的终于是中文了，就算是繁体中文界面看起来也一目了然了，之前全是英文，那个看起来就是一头雾水，只是现在免费加速器只能用biubiu加速器了，12月的时候还可以用迅游，现在迅游要会员才可以了。</p><span id="more"></span><p>这个台服的之前是用迅游加速器下载的，但是后来好像更新了，用biubiu这个加速器根本更新不了，一加载更新就跳到手机自带的应用商店，但是手机自带的应用商店里根本没有这个游戏，不用加速器直接更新也不行，跳转到谷歌应用商店，提示不支持此地区下载，用了很多方法都不行，后面还是回到迅游加速器这里，终于在这里完美的解决了问题，这里虽然不能加速了，但是更新游戏还是可以的，而且下载的速度很快。</p><p>安卓的手机如果不能从这个加速器下载手游版的英雄联盟，那就真的没有地方可以下了，苹果手机感觉换个区就可以下载了，这个游戏感觉还是挺好玩的，和PC端的英雄人物也是一摸一样。</p><p>更新能进游戏了登录这里也是差点登录不上去，一直提示此区域的账号无法登录，后面重新登录了几次是终于可以了，应该网速太慢了延迟太高导致的，这个只要注册了一个拳头的账号其他的平台也是通用的，苹果和安卓都可以用同一个账号登录，关键是游戏数据是完全同步的，而不像王者荣耀那样换个手机系统又要重新开始，这个游戏不存在，直接登录游戏就可以，想用苹果设备玩就用苹果，想用安卓就用安卓，上面获得的游戏数据一点都不影响。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 应用商店 </tag>
+            
+            <tag> 手机 </tag>
+            
+            <tag> 安卓 </tag>
+            
+            <tag> 苹果 </tag>
+            
+            <tag> 手游 </tag>
+            
+            <tag> 王者荣耀 </tag>
+            
+            <tag> 重新开始 </tag>
+            
+            <tag> 英雄联盟 </tag>
+            
+            <tag> 台服 </tag>
+            
+            <tag> 繁体中文 </tag>
+            
+            <tag> 不支持 </tag>
+            
+            <tag> 加速器 </tag>
             
         </tags>
       
@@ -20562,53 +20609,6 @@
             <tag> 自动赚钱 </tag>
             
             <tag> 自动点击器 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>用手机玩手游英雄联盟</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9d0802bd/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9d0802bd/</url>
-      
-        <content type="html"><![CDATA[<p>这个游戏也已经出来很久了，之前一直没有怎么玩，刚出来的时候没有中文版的，到12月的时候才出来了台服的终于是中文了，就算是繁体中文界面看起来也一目了然了，之前全是英文，那个看起来就是一头雾水，只是现在免费加速器只能用biubiu加速器了，12月的时候还可以用迅游，现在迅游要会员才可以了。</p><span id="more"></span><p>这个台服的之前是用迅游加速器下载的，但是后来好像更新了，用biubiu这个加速器根本更新不了，一加载更新就跳到手机自带的应用商店，但是手机自带的应用商店里根本没有这个游戏，不用加速器直接更新也不行，跳转到谷歌应用商店，提示不支持此地区下载，用了很多方法都不行，后面还是回到迅游加速器这里，终于在这里完美的解决了问题，这里虽然不能加速了，但是更新游戏还是可以的，而且下载的速度很快。</p><p>安卓的手机如果不能从这个加速器下载手游版的英雄联盟，那就真的没有地方可以下了，苹果手机感觉换个区就可以下载了，这个游戏感觉还是挺好玩的，和PC端的英雄人物也是一摸一样。</p><p>更新能进游戏了登录这里也是差点登录不上去，一直提示此区域的账号无法登录，后面重新登录了几次是终于可以了，应该网速太慢了延迟太高导致的，这个只要注册了一个拳头的账号其他的平台也是通用的，苹果和安卓都可以用同一个账号登录，关键是游戏数据是完全同步的，而不像王者荣耀那样换个手机系统又要重新开始，这个游戏不存在，直接登录游戏就可以，想用苹果设备玩就用苹果，想用安卓就用安卓，上面获得的游戏数据一点都不影响。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 应用商店 </tag>
-            
-            <tag> 手机 </tag>
-            
-            <tag> 安卓 </tag>
-            
-            <tag> 苹果 </tag>
-            
-            <tag> 手游 </tag>
-            
-            <tag> 王者荣耀 </tag>
-            
-            <tag> 重新开始 </tag>
-            
-            <tag> 英雄联盟 </tag>
-            
-            <tag> 台服 </tag>
-            
-            <tag> 繁体中文 </tag>
-            
-            <tag> 不支持 </tag>
-            
-            <tag> 加速器 </tag>
             
         </tags>
       
@@ -21309,6 +21309,45 @@
     
     
     <entry>
+      <title>社区团购的坑，第一次能买到点便宜的第二次就不行了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a5982df5/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a5982df5/</url>
+      
+        <content type="html"><![CDATA[<p>我第一次在美团上买了橙子才花了一分钱感觉还可以，但是昨天又买一斤土豆还有一斤鸡胸肉和一份水饺，结果今天去拿货等到晚上才到，去拿了几次都没有送过来，这还不是最坑的，最坑的是土豆居然那么小一个，在种在农村里都不是用来吃的，果然是真的便宜没有好货，这句话在这里真正的得到验证了。</p><span id="more"></span><p>还有那个鸡胸肉一斤鸡胸肉能够拧出半斤水来，比我以前在另一个平台买的差远了，好像里面就是注水了的，而且吃起来一点鸡肉的味道都没有，就和合成的鸡肉一样，刚开始做那些平台确实是认真做的，后面这些完全就是为了打价格战，品质非常差，也不怕砸了自己的招牌了，比淘宝买东西还不如，淘宝卖家怕你给差评还发好的，这些平台你连差评都没有地方给，反正都是继续坑下一个。</p><p>水饺是其他的都到了那个就没有货，我也是醉了，就是看着这个水饺可以才一起买的。价格便宜的那种是带包装的反正就是不发货，等到你去拿的时候才说没有货，然后就让退款，没有货为什么还要上架，完全就是为了吸引消费者的眼球，因为这些带包装的价格和品质都一样，从中不可能做手脚来赚利润，不用怎么包装没有统一规格的这种就不一样了。</p><p>一般的带包装有一定规格的，要么就是买的时候刚付完款他就给你退款了，今天早上我就遇到一次，搞得我莫名其妙，而且上面退款原因也没有。还有一种就是一起买的几样，带包装有一定规格的其他到了有货那个就是没有，多多买菜和美团都遇到过一次了，以后买还是要擦亮眼睛了，我发觉如果只单独买那一样估计也是秒退的，不发货还挂在上面干嘛，而且还显示再买一单，这不是有问题吗，总结出来就只有一句话，挂羊头买狗肉，真的再贴切不过了。</p><p>社区团购前年2019年的大概12月就开始在同程上买过了，那些虽然是斤两差了一些，但是品质有保证，也没有不发货的情况，后面的这些是什么鬼真的搞不清楚。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 社区团购 </tag>
+            
+            <tag> 平台 </tag>
+            
+            <tag> 第二次 </tag>
+            
+            <tag> 鸡胸肉 </tag>
+            
+            <tag> 半斤水 </tag>
+            
+            <tag> 赚利润 </tag>
+            
+            <tag> 秒退 </tag>
+            
+            <tag> 不发货 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>窗外下起了雨，这雨如同下在我的心里</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/36057a56/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/36057a56/</url>
@@ -21645,45 +21684,6 @@
     
     
     <entry>
-      <title>社区团购的坑，第一次能买到点便宜的第二次就不行了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a5982df5/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a5982df5/</url>
-      
-        <content type="html"><![CDATA[<p>我第一次在美团上买了橙子才花了一分钱感觉还可以，但是昨天又买一斤土豆还有一斤鸡胸肉和一份水饺，结果今天去拿货等到晚上才到，去拿了几次都没有送过来，这还不是最坑的，最坑的是土豆居然那么小一个，在种在农村里都不是用来吃的，果然是真的便宜没有好货，这句话在这里真正的得到验证了。</p><span id="more"></span><p>还有那个鸡胸肉一斤鸡胸肉能够拧出半斤水来，比我以前在另一个平台买的差远了，好像里面就是注水了的，而且吃起来一点鸡肉的味道都没有，就和合成的鸡肉一样，刚开始做那些平台确实是认真做的，后面这些完全就是为了打价格战，品质非常差，也不怕砸了自己的招牌了，比淘宝买东西还不如，淘宝卖家怕你给差评还发好的，这些平台你连差评都没有地方给，反正都是继续坑下一个。</p><p>水饺是其他的都到了那个就没有货，我也是醉了，就是看着这个水饺可以才一起买的。价格便宜的那种是带包装的反正就是不发货，等到你去拿的时候才说没有货，然后就让退款，没有货为什么还要上架，完全就是为了吸引消费者的眼球，因为这些带包装的价格和品质都一样，从中不可能做手脚来赚利润，不用怎么包装没有统一规格的这种就不一样了。</p><p>一般的带包装有一定规格的，要么就是买的时候刚付完款他就给你退款了，今天早上我就遇到一次，搞得我莫名其妙，而且上面退款原因也没有。还有一种就是一起买的几样，带包装有一定规格的其他到了有货那个就是没有，多多买菜和美团都遇到过一次了，以后买还是要擦亮眼睛了，我发觉如果只单独买那一样估计也是秒退的，不发货还挂在上面干嘛，而且还显示再买一单，这不是有问题吗，总结出来就只有一句话，挂羊头买狗肉，真的再贴切不过了。</p><p>社区团购前年2019年的大概12月就开始在同程上买过了，那些虽然是斤两差了一些，但是品质有保证，也没有不发货的情况，后面的这些是什么鬼真的搞不清楚。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 社区团购 </tag>
-            
-            <tag> 平台 </tag>
-            
-            <tag> 第二次 </tag>
-            
-            <tag> 鸡胸肉 </tag>
-            
-            <tag> 半斤水 </tag>
-            
-            <tag> 赚利润 </tag>
-            
-            <tag> 秒退 </tag>
-            
-            <tag> 不发货 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>组装一台mini主机真的是一波三折</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1ac42388/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1ac42388/</url>
@@ -21922,51 +21922,6 @@
     
     
     <entry>
-      <title>网上购物省钱方法</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/889f67f5/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/889f67f5/</url>
-      
-        <content type="html"><![CDATA[<p>我首先发现的是淘宝联盟，这个是为淘宝推广商品的一个平台，以前学做淘宝客网站时候我就知道了。</p><span id="more"></span><p>那时候只知道在自己网站上推广商品可以赚钱，其实在其他平台上发链接也是可以的，QQ，微博都可以，这个是有个手机APP的，选好自己在淘宝要买的商品，然后加入收藏夹，在淘宝联盟的收藏夹里面就可以找到。</p><p>然后就是像推广给别人那样，复制推广链接或者淘口令，然后有重新打开淘宝，淘宝就会自动识别这个淘口令，这里就下单就可以自己获得佣金了。</p><p>只要参加了淘宝客推广活动商家的商品都可以拿到佣金，分享给别人不一定有人买，但是自己买还是可以回点血的。</p><p>要下单付款的时候先不着急付款，打开一淘用一淘来付款，这样有一淘立减，又可以多少省一点，淘宝和天猫的商品都是可以在一淘付款的，只要加入购物车就可以在一淘找到。</p><p>最主要的就是要复制淘口令然后加入购物车这里，之前已经加入购物车的必须还得再加入一次，不然佣金无效的，付款在一淘付款的时候再把多加的减掉，不然只买一件的，买了两件那也麻烦。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 微博 </tag>
-            
-            <tag> 赚钱 </tag>
-            
-            <tag> 省钱 </tag>
-            
-            <tag> 淘宝联盟 </tag>
-            
-            <tag> 网购 </tag>
-            
-            <tag> 推广商品 </tag>
-            
-            <tag> 推广链接 </tag>
-            
-            <tag> 淘口令 </tag>
-            
-            <tag> 回点血 </tag>
-            
-            <tag> 一淘 </tag>
-            
-            <tag> 佣金 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>网站差不多快弄好了，已经部署到Github和Gitee了</title>
       <link href="/Hexo/aede53ce/"/>
       <url>/Hexo/aede53ce/</url>
@@ -22008,6 +21963,51 @@
             <tag> master </tag>
             
             <tag> 升级 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>网上购物省钱方法</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/889f67f5/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/889f67f5/</url>
+      
+        <content type="html"><![CDATA[<p>我首先发现的是淘宝联盟，这个是为淘宝推广商品的一个平台，以前学做淘宝客网站时候我就知道了。</p><span id="more"></span><p>那时候只知道在自己网站上推广商品可以赚钱，其实在其他平台上发链接也是可以的，QQ，微博都可以，这个是有个手机APP的，选好自己在淘宝要买的商品，然后加入收藏夹，在淘宝联盟的收藏夹里面就可以找到。</p><p>然后就是像推广给别人那样，复制推广链接或者淘口令，然后有重新打开淘宝，淘宝就会自动识别这个淘口令，这里就下单就可以自己获得佣金了。</p><p>只要参加了淘宝客推广活动商家的商品都可以拿到佣金，分享给别人不一定有人买，但是自己买还是可以回点血的。</p><p>要下单付款的时候先不着急付款，打开一淘用一淘来付款，这样有一淘立减，又可以多少省一点，淘宝和天猫的商品都是可以在一淘付款的，只要加入购物车就可以在一淘找到。</p><p>最主要的就是要复制淘口令然后加入购物车这里，之前已经加入购物车的必须还得再加入一次，不然佣金无效的，付款在一淘付款的时候再把多加的减掉，不然只买一件的，买了两件那也麻烦。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 微博 </tag>
+            
+            <tag> 赚钱 </tag>
+            
+            <tag> 省钱 </tag>
+            
+            <tag> 淘宝联盟 </tag>
+            
+            <tag> 网购 </tag>
+            
+            <tag> 推广商品 </tag>
+            
+            <tag> 推广链接 </tag>
+            
+            <tag> 淘口令 </tag>
+            
+            <tag> 回点血 </tag>
+            
+            <tag> 一淘 </tag>
+            
+            <tag> 佣金 </tag>
             
         </tags>
       
@@ -22218,6 +22218,51 @@
     
     
     <entry>
+      <title>自己组装一台迷你机比买因特尔的NUC划算很多</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6bb32ccc/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6bb32ccc/</url>
+      
+        <content type="html"><![CDATA[<p>因特尔NUC最新版价格是4200，但是没有硬盘，没有内存，没有系统，有这4200自己完全可以组装一个了，而且是包含硬盘和内存系统的，还包括显示器在内。</p><span id="more"></span><p>自己组装的组装好了开机就可以直接使用，而不像直接买这个NUC一样还要买硬盘和内存条，这些加起来估计要上5000才能开机，而且再加个显示器直接是要5600左右才能搞定。</p><p>我自己组装的一个同样的是迷你机但是4000不到还包括了显示器在内，所以说迷你机与其买还不如自己DIY组装一个划算很多，自己装其实也没有那么麻烦，只要多上网查一下都是可以搞定的，反正是节约了钱，得到自己想要的配置了，还学到了组装电脑的知识，这是何乐而不为呢。</p><p>迷你机其实没有用到多少配件，就一个带核显的处理器，一个块miniITX主板，两根内存条，一个M.2的固态硬盘，再有一个机箱，电源适配器和转换板都是买机箱的时候可以一起买的，加起来就是这么多，看起来也很简单，装起来也真的不难。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 显示器 </tag>
+            
+            <tag> 处理器 </tag>
+            
+            <tag> 系统 </tag>
+            
+            <tag> 组装 </tag>
+            
+            <tag> 硬盘 </tag>
+            
+            <tag> 迷你机 </tag>
+            
+            <tag> 因特尔 </tag>
+            
+            <tag> NUC </tag>
+            
+            <tag> 最新版 </tag>
+            
+            <tag> 内存 </tag>
+            
+            <tag> M.2 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>自己组装一个和Macmini差不多一样的电脑</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e3801fd/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e3801fd/</url>
@@ -22265,100 +22310,6 @@
             <tag> 100帧 </tag>
             
             <tag> USB3.0 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>自己组装一台迷你机比买因特尔的NUC划算很多</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6bb32ccc/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6bb32ccc/</url>
-      
-        <content type="html"><![CDATA[<p>因特尔NUC最新版价格是4200，但是没有硬盘，没有内存，没有系统，有这4200自己完全可以组装一个了，而且是包含硬盘和内存系统的，还包括显示器在内。</p><span id="more"></span><p>自己组装的组装好了开机就可以直接使用，而不像直接买这个NUC一样还要买硬盘和内存条，这些加起来估计要上5000才能开机，而且再加个显示器直接是要5600左右才能搞定。</p><p>我自己组装的一个同样的是迷你机但是4000不到还包括了显示器在内，所以说迷你机与其买还不如自己DIY组装一个划算很多，自己装其实也没有那么麻烦，只要多上网查一下都是可以搞定的，反正是节约了钱，得到自己想要的配置了，还学到了组装电脑的知识，这是何乐而不为呢。</p><p>迷你机其实没有用到多少配件，就一个带核显的处理器，一个块miniITX主板，两根内存条，一个M.2的固态硬盘，再有一个机箱，电源适配器和转换板都是买机箱的时候可以一起买的，加起来就是这么多，看起来也很简单，装起来也真的不难。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 显示器 </tag>
-            
-            <tag> 处理器 </tag>
-            
-            <tag> 系统 </tag>
-            
-            <tag> 组装 </tag>
-            
-            <tag> 硬盘 </tag>
-            
-            <tag> 迷你机 </tag>
-            
-            <tag> 因特尔 </tag>
-            
-            <tag> NUC </tag>
-            
-            <tag> 最新版 </tag>
-            
-            <tag> 内存 </tag>
-            
-            <tag> M.2 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>自己给自己理了个头发，上手也不难</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/cc3aadf2/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/cc3aadf2/</url>
-      
-        <content type="html"><![CDATA[<p>这已经是第二次我给自己剪头发了，第一次只是用理发器推了一下两边和后面，没有剪子把前面和顶上剪短一点，顶上没有剪太长了也感觉不舒服，今天心血来潮也用剪子把顶上剪短了一点。</p><span id="more"></span><p>刚开始用剪子剪的时候对着镜子怎么都剪不到，后面靠着感觉把剪子对着另外一只手的中指和食指夹起来的头发以后，然后在看着镜子剪，这样重复几次之后才感觉手用剪子顺了一点。</p><p>我用的理发器是映趣的那个，在小米有品上买的，买的时候做活动减价10元，好像是72块钱的，还送了两个剪子，一个牙剪和一个平剪，还有一块围布，感觉还挺可以，这个理发器很容易上手，刚收到我就给自己理了一下了。</p><p>我今天用的是平剪，手还没有怎么练熟所以就先练一下平剪，等熟了之后再用牙剪试一下，自己感觉剪得也还可以，当然是没有去理发店里的剪得那么好，但是也方便了不少，至少证明自己确实可以给自己剪头发。</p><p>应该如果以后自己剪多了肯定会更熟练，别人需要的话也还可以帮别人剪，自己有理发器就是省了不少剪头发的钱，现在是快过年了，去理发店剪也很贵，自己有理发器半个月剪一次或者几天修一次都可以。</p><p>自己剪的时候其实围布都可以不用，直接光着上身剪完了去洗个澡就可以了，身上的碎头发用水冲一下就掉了，我第一次剪的时候还穿着衣服，搞得那短袖T恤上全是碎发，那个围布应该是给别人剪的时候才用得上。</p><p>最烦的就是去理发店里一下又要染头发，一下又让给设计一个什么发型的，烦都烦死了，处处都是想要多坑我点钱才肯罢休，剪一下洗一下有的时候30多都算是便宜的了，想去年3月份的时候我去剪了一下直接50，那个是真的太坑了，算一下自己买个理发器，还用不到半年就可以把理发的钱给节约下来了，而且是自己有空的时候就可以给自己剪一下，这样才有自己的发型自己做主的乐趣。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 小米有品 </tag>
-            
-            <tag> 自己 </tag>
-            
-            <tag> 上手 </tag>
-            
-            <tag> 理发 </tag>
-            
-            <tag> 剪子 </tag>
-            
-            <tag> 理发器 </tag>
-            
-            <tag> 牙剪 </tag>
-            
-            <tag> 平剪 </tag>
-            
-            <tag> 映趣 </tag>
-            
-            <tag> 洗个澡 </tag>
-            
-            <tag> 染头发 </tag>
-            
-            <tag> 理发店 </tag>
-            
-            <tag> 发型 </tag>
             
         </tags>
       
@@ -22568,55 +22519,6 @@
     
     
     <entry>
-      <title>装了一台电脑还是只觉得玩网页小游戏比较香</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6673a22f/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6673a22f/</url>
-      
-        <content type="html"><![CDATA[<p>组装了一台台式迷你机，刚开始还想着玩一下原神这样的网络游戏，玩了几天后面就是再也没有玩过了，玩着都感觉没有什么兴趣了，而且还浪费很多时间，就不要说充钱了，我玩网络游戏就从来没有充过钱，顶多是在上面花点时间都算是可以的了。</p><span id="more"></span><p>本来刚组装电脑的时候总觉得是要用来玩什么网络游戏的，想着也要把电脑配置加到好点才行，后面玩了几天是真的发觉没有什么必要，因为那些游戏顶多玩了几次就再也不想去玩了。</p><p>不得不说最后还是用来玩网页游戏比较香，但是其实笔记本电脑也是可以玩的，只不过是台式机的散热比笔记本好，当然就不会出现像笔记本的突然就死机或者关机了。</p><p>当然还是网页游戏玩着没有那么累，想玩就玩一下就可以了，而且玩一段时间到一定等级还可以赚个几毛钱，虽然赚的钱不多，但是不用花钱玩游戏，还可以赚个几毛钱感觉还是挺不错的，就当是给自己一个奖励，对于戒游戏也是很有帮助。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 电脑 </tag>
-            
-            <tag> 兴趣 </tag>
-            
-            <tag> 小游戏 </tag>
-            
-            <tag> 比较香 </tag>
-            
-            <tag> 台式迷你机 </tag>
-            
-            <tag> LOL </tag>
-            
-            <tag> 网络游戏 </tag>
-            
-            <tag> 花点时间 </tag>
-            
-            <tag> 组装电脑 </tag>
-            
-            <tag> 网页游戏 </tag>
-            
-            <tag> 赚个几毛钱 </tag>
-            
-            <tag> 奖励 </tag>
-            
-            <tag> 戒游戏 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>装机失败的那些事</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/69c2eb21/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/69c2eb21/</url>
@@ -22766,11 +22668,11 @@
     
     
     <entry>
-      <title>记录自己真实的梦境:我昨晚做了两个梦，后面一个让我感到很害怕</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/</url>
+      <title>试用一款清僵尸粉的软件</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/992367e2/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/992367e2/</url>
       
-        <content type="html"><![CDATA[<p>昨晚做了两个梦，第一个是梦到两个自己从未见过的女孩，梦到自己突然回到了高中时期，梦里两个女孩是和我同班的，而且离我家不是太远，一个感觉很真实，而另外一个我感觉很模糊。</p><span id="more"></span><p>真实的这个每天放学后，我都要跟着她后面走很长一段路，直到快要走到她家对面，我只能远远的看着她，我离她家对面的中间是一条河沟，看着不远，其实实际距离是非常的远，因为我站在她家对面，中间的河沟是一个U弧形的，要从我这边走下去，然后又从她家那边走上去，这种地方我现实中是见到过的，不知道为何会出现在我的梦里，而是且时间地点也是错误的。我只能远远的在对面看着她消失在我的视野里，但是我却就是不敢跟她表白，说我喜欢她。</p><p>第二个梦是梦到自己去一个厂里上班，也不知自己怎么就没有衣服穿了，别人就随便给了我一件，我也不看是不是女人穿的，自己就胡乱穿在身上了，后来遇到厂里一个上了年纪的女人，说我身上穿的那件衣服，是一个已经逝去的女人穿的，还告诉我那个女人的名字叫邓红，说她已经病逝一年多了。我他妈顿时就是毛骨悚然，在梦中我都感到害怕了，我怎么就穿着死去女人的衣服，难怪那衣服上还有女人的味道，我顿时就被吓惊醒了，这太恐怖了。</p>]]></content>
+        <content type="html"><![CDATA[<p>微信上那些把自己删除和拉黑的和已经注销账号的，时间长了就会越来越多，微信上加的人太多了根本也不知道那些人已经是僵尸粉了，一个个试不仅麻烦还比较累人。</p><span id="more"></span><p>这款软件是安装在电脑端，需要配合微信PC版使用，名字就叫酷V群发器，在百度上搜索酷V就可以搜到。</p><p>这款软件我试用下来感觉有优点也有缺点，优点就是查找僵尸粉很精准，而且效率也很高。缺点就是只能删掉拉黑和注销账号的，别人删除自己的删不掉。</p><p>我一查才知道我微信上有一千多是僵尸粉，这个软件还是挺不错的，虽然不能全部删除那些僵尸粉，但是还有其他功能，群发，爆粉什么的这些功能都有。</p>]]></content>
       
       
       <categories>
@@ -22782,21 +22684,23 @@
       
         <tags>
             
-            <tag> 厂里上班 </tag>
+            <tag> 软件 </tag>
             
-            <tag> 衣服 </tag>
+            <tag> 微信 </tag>
             
-            <tag> 真实 </tag>
+            <tag> 效率 </tag>
             
-            <tag> 两个梦 </tag>
+            <tag> 删除 </tag>
             
-            <tag> 同班 </tag>
+            <tag> 清僵尸粉 </tag>
             
-            <tag> 河沟 </tag>
+            <tag> 拉黑 </tag>
             
-            <tag> 吓惊醒了 </tag>
+            <tag> 电脑端 </tag>
             
-            <tag> 太恐怖了 </tag>
+            <tag> 酷V群发器 </tag>
+            
+            <tag> 群发 </tag>
             
         </tags>
       
@@ -22834,47 +22738,6 @@
             <tag> 戴口罩 </tag>
             
             <tag> 坐公交车 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>试用一款清僵尸粉的软件</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/992367e2/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/992367e2/</url>
-      
-        <content type="html"><![CDATA[<p>微信上那些把自己删除和拉黑的和已经注销账号的，时间长了就会越来越多，微信上加的人太多了根本也不知道那些人已经是僵尸粉了，一个个试不仅麻烦还比较累人。</p><span id="more"></span><p>这款软件是安装在电脑端，需要配合微信PC版使用，名字就叫酷V群发器，在百度上搜索酷V就可以搜到。</p><p>这款软件我试用下来感觉有优点也有缺点，优点就是查找僵尸粉很精准，而且效率也很高。缺点就是只能删掉拉黑和注销账号的，别人删除自己的删不掉。</p><p>我一查才知道我微信上有一千多是僵尸粉，这个软件还是挺不错的，虽然不能全部删除那些僵尸粉，但是还有其他功能，群发，爆粉什么的这些功能都有。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 软件 </tag>
-            
-            <tag> 微信 </tag>
-            
-            <tag> 效率 </tag>
-            
-            <tag> 删除 </tag>
-            
-            <tag> 清僵尸粉 </tag>
-            
-            <tag> 拉黑 </tag>
-            
-            <tag> 电脑端 </tag>
-            
-            <tag> 酷V群发器 </tag>
-            
-            <tag> 群发 </tag>
             
         </tags>
       
@@ -23030,49 +22893,6 @@
     
     
     <entry>
-      <title>读《围炉夜话》其九有感</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f84f140c/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f84f140c/</url>
-      
-        <content type="html"><![CDATA[<p>擅长维持生计的人家，长幼有不同的分工做事方法，年老的和年幼的就在家里维持家业，年轻的就可以去外面打拼，勤勤恳恳做好自己分内的工作，这样虽然不能使自己的家庭富裕，但是生活也自然可以过得安安稳稳。</p><span id="more"></span><p>生活有时候没有必要刻意去追求大富大贵，不是自己该得到的怎么去求也求不来，到头来还弄了一身的伤痕累累，倒不如安安稳稳只要能过得下去，那样又有何不可，安稳可以让自己过得舒心，比起整天去追求那些不属于自己能够得到的，要好了很多，比起整天活在担惊受怕之中，安稳生活是比什么都强。</p><p>善于处理事情的人，只看对错是否可行，制定规章制度也不是为了自己的一己之私。私人的事绝不能用公务的方法来解决，假公济私这样做损害他人的利益，同时对自己也没有好处。</p><p>人的私心不可能没有的，但是满足自己私利的同时我们不能去损害别人的利益，私人之间的事情就应该用私人之间的方法来解决，用公事的做法来打压私人的纠纷，那就真的是有一点过分了，这样做本身也是一件极不道德的事，会处理事情的人就是要做到公私分明，赏罚分明才行。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 围炉夜话 </tag>
-            
-            <tag> 维持生计 </tag>
-            
-            <tag> 年老 </tag>
-            
-            <tag> 年幼 </tag>
-            
-            <tag> 安安稳稳 </tag>
-            
-            <tag> 大富大贵 </tag>
-            
-            <tag> 伤痕累累 </tag>
-            
-            <tag> 假公济私 </tag>
-            
-            <tag> 公事 </tag>
-            
-            <tag> 赏罚分明 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>读《围炉夜话》其二有感</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b7698495/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b7698495/</url>
@@ -23093,9 +22913,9 @@
             
             <tag> 学习 </tag>
             
-            <tag> 理论 </tag>
-            
             <tag> 方法 </tag>
+            
+            <tag> 理论 </tag>
             
             <tag> 围炉夜话 </tag>
             
@@ -23120,6 +22940,45 @@
             <tag> 透彻 </tag>
             
             <tag> 明明白白 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>记录自己真实的梦境:我昨晚做了两个梦，后面一个让我感到很害怕</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/</url>
+      
+        <content type="html"><![CDATA[<p>昨晚做了两个梦，第一个是梦到两个自己从未见过的女孩，梦到自己突然回到了高中时期，梦里两个女孩是和我同班的，而且离我家不是太远，一个感觉很真实，而另外一个我感觉很模糊。</p><span id="more"></span><p>真实的这个每天放学后，我都要跟着她后面走很长一段路，直到快要走到她家对面，我只能远远的看着她，我离她家对面的中间是一条河沟，看着不远，其实实际距离是非常的远，因为我站在她家对面，中间的河沟是一个U弧形的，要从我这边走下去，然后又从她家那边走上去，这种地方我现实中是见到过的，不知道为何会出现在我的梦里，而是且时间地点也是错误的。我只能远远的在对面看着她消失在我的视野里，但是我却就是不敢跟她表白，说我喜欢她。</p><p>第二个梦是梦到自己去一个厂里上班，也不知自己怎么就没有衣服穿了，别人就随便给了我一件，我也不看是不是女人穿的，自己就胡乱穿在身上了，后来遇到厂里一个上了年纪的女人，说我身上穿的那件衣服，是一个已经逝去的女人穿的，还告诉我那个女人的名字叫邓红，说她已经病逝一年多了。我他妈顿时就是毛骨悚然，在梦中我都感到害怕了，我怎么就穿着死去女人的衣服，难怪那衣服上还有女人的味道，我顿时就被吓惊醒了，这太恐怖了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 厂里上班 </tag>
+            
+            <tag> 衣服 </tag>
+            
+            <tag> 真实 </tag>
+            
+            <tag> 两个梦 </tag>
+            
+            <tag> 同班 </tag>
+            
+            <tag> 河沟 </tag>
+            
+            <tag> 吓惊醒了 </tag>
+            
+            <tag> 太恐怖了 </tag>
             
         </tags>
       
@@ -23614,11 +23473,11 @@
     
     
     <entry>
-      <title>还有一套试题今天又没有做</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/10c71eb2/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/10c71eb2/</url>
+      <title>过年都没有出去玩，明天想出去玩下了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/160823dd/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/160823dd/</url>
       
-        <content type="html"><![CDATA[<p>今天一直在玩游戏赚点零花钱，再有今天又去打印了准考证，这两天这里外面下着点小雨，在家里还不感觉冷，在外面骑电动车，而我又只穿一件衣服，感觉还是有点冷，骑快了的时候那个毛毛雨打在脸上差点连路都看不清。</p><span id="more"></span><p>明天还是要把那剩下的一套试题做了，本来我还以为四套的结果是没有，才只有两套试题，以前买的也都是两套的，我是把后面的答案也看成是试题了，所以才会产生了错觉。</p><p>今天去打印准考证和一张防疫要求还花了我四块钱，应该是那张准考证我要她打印成彩色的所以贵了，因为彩色的纸都不一样了，比防疫要求那张的纸要厚很多。</p><p>不过也还好了，2019年的时候去镇上的另外一家打印两张准考证都是十块钱了，而且那家比这家远。那时候是刚来这边不知道近的这家，才在百度地图上找的那家，导航过去的不仅距离远价格还贵。</p>]]></content>
+        <content type="html"><![CDATA[<p>过年这几天都是白天一直在家睡觉，晚上睡不着，一到天亮就开始困了，感觉是拖延症越来越严重了，大年三十的晚上就想着初一那天出去玩的，结果又是一觉睡到下午，因为晚上就没有睡着过，白天就醒不来。</p><span id="more"></span><p>我当自己睡不着的晚上我每次都在告诉自己，就算晚上没有睡觉第二天也必须要醒来，结果一到天亮就困得不行，根本起不来。</p><p>但是我想要从明天开始改变了，不管我晚上有没有睡着我天亮就必须起来，我必须把睡觉的时间改到晚上才行，不然我长期下去整个人的生物钟都会更加混乱。</p>]]></content>
       
       
       <categories>
@@ -23630,25 +23489,19 @@
       
         <tags>
             
-            <tag> 答案 </tag>
+            <tag> 睡不着 </tag>
             
-            <tag> 玩游戏 </tag>
+            <tag> 睡觉 </tag>
             
-            <tag> 骑电动车 </tag>
+            <tag> 晚上 </tag>
             
-            <tag> 零花钱 </tag>
+            <tag> 出去玩 </tag>
             
-            <tag> 准考证 </tag>
+            <tag> 过年 </tag>
             
-            <tag> 一套试题 </tag>
+            <tag> 明天 </tag>
             
-            <tag> 没有做 </tag>
-            
-            <tag> 剩下 </tag>
-            
-            <tag> 防疫要求 </tag>
-            
-            <tag> 距离远 </tag>
+            <tag> 拖延症 </tag>
             
         </tags>
       
@@ -23686,6 +23539,49 @@
             <tag> 硬盘空间 </tag>
             
             <tag> 黑苹果 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>还有一套试题今天又没有做</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/10c71eb2/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/10c71eb2/</url>
+      
+        <content type="html"><![CDATA[<p>今天一直在玩游戏赚点零花钱，再有今天又去打印了准考证，这两天这里外面下着点小雨，在家里还不感觉冷，在外面骑电动车，而我又只穿一件衣服，感觉还是有点冷，骑快了的时候那个毛毛雨打在脸上差点连路都看不清。</p><span id="more"></span><p>明天还是要把那剩下的一套试题做了，本来我还以为四套的结果是没有，才只有两套试题，以前买的也都是两套的，我是把后面的答案也看成是试题了，所以才会产生了错觉。</p><p>今天去打印准考证和一张防疫要求还花了我四块钱，应该是那张准考证我要她打印成彩色的所以贵了，因为彩色的纸都不一样了，比防疫要求那张的纸要厚很多。</p><p>不过也还好了，2019年的时候去镇上的另外一家打印两张准考证都是十块钱了，而且那家比这家远。那时候是刚来这边不知道近的这家，才在百度地图上找的那家，导航过去的不仅距离远价格还贵。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 答案 </tag>
+            
+            <tag> 玩游戏 </tag>
+            
+            <tag> 骑电动车 </tag>
+            
+            <tag> 零花钱 </tag>
+            
+            <tag> 准考证 </tag>
+            
+            <tag> 一套试题 </tag>
+            
+            <tag> 没有做 </tag>
+            
+            <tag> 剩下 </tag>
+            
+            <tag> 防疫要求 </tag>
+            
+            <tag> 距离远 </tag>
             
         </tags>
       
@@ -23751,43 +23647,6 @@
     
     
     <entry>
-      <title>过年都没有出去玩，明天想出去玩下了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/160823dd/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/160823dd/</url>
-      
-        <content type="html"><![CDATA[<p>过年这几天都是白天一直在家睡觉，晚上睡不着，一到天亮就开始困了，感觉是拖延症越来越严重了，大年三十的晚上就想着初一那天出去玩的，结果又是一觉睡到下午，因为晚上就没有睡着过，白天就醒不来。</p><span id="more"></span><p>我当自己睡不着的晚上我每次都在告诉自己，就算晚上没有睡觉第二天也必须要醒来，结果一到天亮就困得不行，根本起不来。</p><p>但是我想要从明天开始改变了，不管我晚上有没有睡着我天亮就必须起来，我必须把睡觉的时间改到晚上才行，不然我长期下去整个人的生物钟都会更加混乱。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 睡不着 </tag>
-            
-            <tag> 睡觉 </tag>
-            
-            <tag> 晚上 </tag>
-            
-            <tag> 出去玩 </tag>
-            
-            <tag> 过年 </tag>
-            
-            <tag> 明天 </tag>
-            
-            <tag> 拖延症 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>迷你电脑主机的好处</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5c1dd71a/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5c1dd71a/</url>
@@ -23826,8 +23685,6 @@
             
             <tag> 迷你机 </tag>
             
-            <tag> 组装电脑 </tag>
-            
             <tag> 贴吧 </tag>
             
             <tag> 迷你电脑 </tag>
@@ -23835,6 +23692,8 @@
             <tag> 主机 </tag>
             
             <tag> 3.2L </tag>
+            
+            <tag> 组装电脑 </tag>
             
             <tag> 空间 </tag>
             
@@ -23847,6 +23706,55 @@
             <tag> 性能过剩 </tag>
             
             <tag> 办公 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>自己给自己理了个头发，上手也不难</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/cc3aadf2/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/cc3aadf2/</url>
+      
+        <content type="html"><![CDATA[<p>这已经是第二次我给自己剪头发了，第一次只是用理发器推了一下两边和后面，没有剪子把前面和顶上剪短一点，顶上没有剪太长了也感觉不舒服，今天心血来潮也用剪子把顶上剪短了一点。</p><span id="more"></span><p>刚开始用剪子剪的时候对着镜子怎么都剪不到，后面靠着感觉把剪子对着另外一只手的中指和食指夹起来的头发以后，然后在看着镜子剪，这样重复几次之后才感觉手用剪子顺了一点。</p><p>我用的理发器是映趣的那个，在小米有品上买的，买的时候做活动减价10元，好像是72块钱的，还送了两个剪子，一个牙剪和一个平剪，还有一块围布，感觉还挺可以，这个理发器很容易上手，刚收到我就给自己理了一下了。</p><p>我今天用的是平剪，手还没有怎么练熟所以就先练一下平剪，等熟了之后再用牙剪试一下，自己感觉剪得也还可以，当然是没有去理发店里的剪得那么好，但是也方便了不少，至少证明自己确实可以给自己剪头发。</p><p>应该如果以后自己剪多了肯定会更熟练，别人需要的话也还可以帮别人剪，自己有理发器就是省了不少剪头发的钱，现在是快过年了，去理发店剪也很贵，自己有理发器半个月剪一次或者几天修一次都可以。</p><p>自己剪的时候其实围布都可以不用，直接光着上身剪完了去洗个澡就可以了，身上的碎头发用水冲一下就掉了，我第一次剪的时候还穿着衣服，搞得那短袖T恤上全是碎发，那个围布应该是给别人剪的时候才用得上。</p><p>最烦的就是去理发店里一下又要染头发，一下又让给设计一个什么发型的，烦都烦死了，处处都是想要多坑我点钱才肯罢休，剪一下洗一下有的时候30多都算是便宜的了，想去年3月份的时候我去剪了一下直接50，那个是真的太坑了，算一下自己买个理发器，还用不到半年就可以把理发的钱给节约下来了，而且是自己有空的时候就可以给自己剪一下，这样才有自己的发型自己做主的乐趣。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 小米有品 </tag>
+            
+            <tag> 自己 </tag>
+            
+            <tag> 上手 </tag>
+            
+            <tag> 理发 </tag>
+            
+            <tag> 剪子 </tag>
+            
+            <tag> 理发器 </tag>
+            
+            <tag> 牙剪 </tag>
+            
+            <tag> 平剪 </tag>
+            
+            <tag> 映趣 </tag>
+            
+            <tag> 洗个澡 </tag>
+            
+            <tag> 染头发 </tag>
+            
+            <tag> 理发店 </tag>
+            
+            <tag> 发型 </tag>
             
         </tags>
       
@@ -24022,51 +23930,6 @@
     
     
     <entry>
-      <title>郑爽代孕弃养和普通人有关系吗</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/70cfdcf4/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/70cfdcf4/</url>
-      
-        <content type="html"><![CDATA[<p>现在一打开百度还有浏览器就是这个新闻，为什么很多媒体喜欢去写这个，这个和普通人有关系吗，以为这个和明星有关的热点就一定会有人去看了，这种想法未免有点幼稚了吧，还有多少人真的还活在那个追星的年代吗，娱乐圈的新闻和普通人民大众有什么关系。</p><span id="more"></span><p>我怀疑很多人是找不到写的话题了，以为写这个就有很多人去关注，谁去稀罕看这个，我关心的只是和我利益有关的事情，娱乐至死的概念不是真的就存在，多写点和普通人民大众有关的事不好吗，总是要把那些娱乐圈的破事拿出来水，看着就很反感。</p><p>还有又有的写别人谁和谁又没有结婚就生孩子，别人愿意生那是人家两个人的事，当吃瓜群众看热闹真的很好吗，还是和鲁迅先生小说里写的一样没有改变喜欢看热闹的劣根性，这可是都已经过了差不多一百年了，难道人的思想还是改变不了吗，难怪会永远的活在旧思维里，社会是解放了，只是思想还是旧的思想，似乎真的没有得到过改造。</p><p>现在很多自媒体都是这样找不到热点都下想制造一个出来，当然有了就去拼命的抓重点去写，可是要知道这种娱乐圈的破事真的没有几个人去看，那是他人的生活，和我普通大众没有关系，普通大众和这些明星根本就不是一个阶层的人，是想把这个留给我们下层人士一个笑料吗，可是这并不搞笑啊。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 百度 </tag>
-            
-            <tag> 浏览器 </tag>
-            
-            <tag> 普通人 </tag>
-            
-            <tag> 结婚 </tag>
-            
-            <tag> 重点 </tag>
-            
-            <tag> 笑料 </tag>
-            
-            <tag> 郑爽 </tag>
-            
-            <tag> 代孕弃养 </tag>
-            
-            <tag> 热点 </tag>
-            
-            <tag> 幼稚 </tag>
-            
-            <tag> 劣根性 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>都快睡觉了，才突然发现今天还没有更新文章</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/fdac98a8/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/fdac98a8/</url>
@@ -24155,43 +24018,6 @@
     
     
     <entry>
-      <title>重新安装的这个word版本没有以前那个好用了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e2ba885/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e2ba885/</url>
-      
-        <content type="html"><![CDATA[<p>这个界面我找了半天也没有找到专注模式，还有是界面不能设置成全黑模式了，就是中间编辑区这一块还是白色的了，比以前那个版本好一点的应该是不会出现乱码了，以前用的那个是一段时间界面就会出现乱码，直接要重启word才能看得清楚。</p><span id="more"></span><p>每个版本真的都有好用的地方和不好的地方，既然不能设置全黑也只能将就用着了，毕竟这个都已经是最新版本的了，总比那个2019增强版好用很多，那个是一打开就闪退，这个好点不会了。</p><p>现在用它来写文章也没有遇到特别不好的地方，就是界面不能设置成自己想要的这一点缺点了，另外这个好像也没有文字语音朗读功能了，之前那个版本的我每次写好文章都是会用这个功能朗读一遍，看看那些地方需要改进，这个是没有了，只能自己多看几遍了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 专注模式 </tag>
-            
-            <tag> 重新安装 </tag>
-            
-            <tag> word版本 </tag>
-            
-            <tag> 编辑区 </tag>
-            
-            <tag> 重启word </tag>
-            
-            <tag> 2019增强版 </tag>
-            
-            <tag> 语音朗读 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>际遇不一样的人生，领略不同的峡谷和山川</title>
       <link href="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/"/>
       <url>/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/</url>
@@ -24263,6 +24089,43 @@
             <tag> 独自流淌 </tag>
             
             <tag> 歌声 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>重新安装的这个word版本没有以前那个好用了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e2ba885/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e2ba885/</url>
+      
+        <content type="html"><![CDATA[<p>这个界面我找了半天也没有找到专注模式，还有是界面不能设置成全黑模式了，就是中间编辑区这一块还是白色的了，比以前那个版本好一点的应该是不会出现乱码了，以前用的那个是一段时间界面就会出现乱码，直接要重启word才能看得清楚。</p><span id="more"></span><p>每个版本真的都有好用的地方和不好的地方，既然不能设置全黑也只能将就用着了，毕竟这个都已经是最新版本的了，总比那个2019增强版好用很多，那个是一打开就闪退，这个好点不会了。</p><p>现在用它来写文章也没有遇到特别不好的地方，就是界面不能设置成自己想要的这一点缺点了，另外这个好像也没有文字语音朗读功能了，之前那个版本的我每次写好文章都是会用这个功能朗读一遍，看看那些地方需要改进，这个是没有了，只能自己多看几遍了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 专注模式 </tag>
+            
+            <tag> 重新安装 </tag>
+            
+            <tag> word版本 </tag>
+            
+            <tag> 编辑区 </tag>
+            
+            <tag> 重启word </tag>
+            
+            <tag> 2019增强版 </tag>
+            
+            <tag> 语音朗读 </tag>
             
         </tags>
       
@@ -24481,6 +24344,143 @@
             <tag> 经常骑 </tag>
             
             <tag> 锂电池 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>郑爽代孕弃养和普通人有关系吗</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/70cfdcf4/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/70cfdcf4/</url>
+      
+        <content type="html"><![CDATA[<p>现在一打开百度还有浏览器就是这个新闻，为什么很多媒体喜欢去写这个，这个和普通人有关系吗，以为这个和明星有关的热点就一定会有人去看了，这种想法未免有点幼稚了吧，还有多少人真的还活在那个追星的年代吗，娱乐圈的新闻和普通人民大众有什么关系。</p><span id="more"></span><p>我怀疑很多人是找不到写的话题了，以为写这个就有很多人去关注，谁去稀罕看这个，我关心的只是和我利益有关的事情，娱乐至死的概念不是真的就存在，多写点和普通人民大众有关的事不好吗，总是要把那些娱乐圈的破事拿出来水，看着就很反感。</p><p>还有又有的写别人谁和谁又没有结婚就生孩子，别人愿意生那是人家两个人的事，当吃瓜群众看热闹真的很好吗，还是和鲁迅先生小说里写的一样没有改变喜欢看热闹的劣根性，这可是都已经过了差不多一百年了，难道人的思想还是改变不了吗，难怪会永远的活在旧思维里，社会是解放了，只是思想还是旧的思想，似乎真的没有得到过改造。</p><p>现在很多自媒体都是这样找不到热点都下想制造一个出来，当然有了就去拼命的抓重点去写，可是要知道这种娱乐圈的破事真的没有几个人去看，那是他人的生活，和我普通大众没有关系，普通大众和这些明星根本就不是一个阶层的人，是想把这个留给我们下层人士一个笑料吗，可是这并不搞笑啊。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 百度 </tag>
+            
+            <tag> 浏览器 </tag>
+            
+            <tag> 普通人 </tag>
+            
+            <tag> 结婚 </tag>
+            
+            <tag> 重点 </tag>
+            
+            <tag> 笑料 </tag>
+            
+            <tag> 郑爽 </tag>
+            
+            <tag> 代孕弃养 </tag>
+            
+            <tag> 热点 </tag>
+            
+            <tag> 幼稚 </tag>
+            
+            <tag> 劣根性 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>读《围炉夜话》其九有感</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f84f140c/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f84f140c/</url>
+      
+        <content type="html"><![CDATA[<p>擅长维持生计的人家，长幼有不同的分工做事方法，年老的和年幼的就在家里维持家业，年轻的就可以去外面打拼，勤勤恳恳做好自己分内的工作，这样虽然不能使自己的家庭富裕，但是生活也自然可以过得安安稳稳。</p><span id="more"></span><p>生活有时候没有必要刻意去追求大富大贵，不是自己该得到的怎么去求也求不来，到头来还弄了一身的伤痕累累，倒不如安安稳稳只要能过得下去，那样又有何不可，安稳可以让自己过得舒心，比起整天去追求那些不属于自己能够得到的，要好了很多，比起整天活在担惊受怕之中，安稳生活是比什么都强。</p><p>善于处理事情的人，只看对错是否可行，制定规章制度也不是为了自己的一己之私。私人的事绝不能用公务的方法来解决，假公济私这样做损害他人的利益，同时对自己也没有好处。</p><p>人的私心不可能没有的，但是满足自己私利的同时我们不能去损害别人的利益，私人之间的事情就应该用私人之间的方法来解决，用公事的做法来打压私人的纠纷，那就真的是有一点过分了，这样做本身也是一件极不道德的事，会处理事情的人就是要做到公私分明，赏罚分明才行。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 围炉夜话 </tag>
+            
+            <tag> 维持生计 </tag>
+            
+            <tag> 年老 </tag>
+            
+            <tag> 年幼 </tag>
+            
+            <tag> 安安稳稳 </tag>
+            
+            <tag> 大富大贵 </tag>
+            
+            <tag> 伤痕累累 </tag>
+            
+            <tag> 假公济私 </tag>
+            
+            <tag> 公事 </tag>
+            
+            <tag> 赏罚分明 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>装了一台电脑还是只觉得玩网页小游戏比较香</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6673a22f/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6673a22f/</url>
+      
+        <content type="html"><![CDATA[<p>组装了一台台式迷你机，刚开始还想着玩一下原神这样的网络游戏，玩了几天后面就是再也没有玩过了，玩着都感觉没有什么兴趣了，而且还浪费很多时间，就不要说充钱了，我玩网络游戏就从来没有充过钱，顶多是在上面花点时间都算是可以的了。</p><span id="more"></span><p>本来刚组装电脑的时候总觉得是要用来玩什么网络游戏的，想着也要把电脑配置加到好点才行，后面玩了几天是真的发觉没有什么必要，因为那些游戏顶多玩了几次就再也不想去玩了。</p><p>不得不说最后还是用来玩网页游戏比较香，但是其实笔记本电脑也是可以玩的，只不过是台式机的散热比笔记本好，当然就不会出现像笔记本的突然就死机或者关机了。</p><p>当然还是网页游戏玩着没有那么累，想玩就玩一下就可以了，而且玩一段时间到一定等级还可以赚个几毛钱，虽然赚的钱不多，但是不用花钱玩游戏，还可以赚个几毛钱感觉还是挺不错的，就当是给自己一个奖励，对于戒游戏也是很有帮助。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电脑 </tag>
+            
+            <tag> 兴趣 </tag>
+            
+            <tag> 小游戏 </tag>
+            
+            <tag> 组装电脑 </tag>
+            
+            <tag> 比较香 </tag>
+            
+            <tag> 台式迷你机 </tag>
+            
+            <tag> LOL </tag>
+            
+            <tag> 网络游戏 </tag>
+            
+            <tag> 花点时间 </tag>
+            
+            <tag> 网页游戏 </tag>
+            
+            <tag> 赚个几毛钱 </tag>
+            
+            <tag> 奖励 </tag>
+            
+            <tag> 戒游戏 </tag>
             
         </tags>
       
