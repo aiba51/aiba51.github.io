@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 5.4.2">
+
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon128x128.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon128x128.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon128x128.ico">
+  <link rel="mask-icon" href="/logo.svg" color="#222">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="google-site-verification" content="true">
+  <meta name="msvalidate.01" content="true">
+  <meta name="yandex-verification" content="5ed9d41655940367">
+  <meta name="baidu-site-verification" content="true">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic%7CMa+Shan+Zheng:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"aixz.xyz","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.11.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"width":280},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"buttons","active":"utterances","storage":false,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="关于我搭建博客网站的经历我是一名技术爱好者，在这个领域已经有7年的工作经验，也算是一名资深的技术人员了。在我看来，没有技术就没有创新，只有不断地去学习和创新，才能不断地成长和进步。我从2016年开始学习网站搭建技术，其实自己的博客网站搭建也是从2017年开始的，所以今天和大家分享一下我搭建博客网站的经历。">
+<meta property="og:type" content="website">
+<meta property="og:title" content="关于我搭建博客网站的经历">
+<meta property="og:url" content="https://aixz.xyz/en/about/index.html">
+<meta property="og:site_name" content="夜色酒庄">
+<meta property="og:description" content="关于我搭建博客网站的经历我是一名技术爱好者，在这个领域已经有7年的工作经验，也算是一名资深的技术人员了。在我看来，没有技术就没有创新，只有不断地去学习和创新，才能不断地成长和进步。我从2016年开始学习网站搭建技术，其实自己的博客网站搭建也是从2017年开始的，所以今天和大家分享一下我搭建博客网站的经历。">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://aixz.xyz/about/index/%E5%85%B3%E4%BA%8E.png">
+<meta property="og:image" content="https://aixz.xyz/about/index/1.jpg">
+<meta property="og:image" content="https://aixz.xyz/about/index/2.jpg">
+<meta property="og:image" content="https://aixz.xyz/about/index/3.jpg">
+<meta property="og:image" content="https://aixz.xyz/about/index/4.jpg">
+<meta property="og:image" content="https://aixz.xyz/about/index/5.jpg">
+<meta property="og:image" content="https://aixz.xyz/about/index/6.jpg">
+<meta property="og:image" content="https://aixz.xyz/about/index/7.jpg">
+<meta property="og:image" content="https://aixz.xyz/about/index/8.jpg">
+<meta property="article:published_time" content="2019-03-29T03:33:05.000Z">
+<meta property="article:modified_time" content="2019-03-29T03:33:05.000Z">
+<meta property="article:author" content="头号梦想家">
+<meta property="article:tag" content="关于">
+<meta property="article:tag" content="搭建">
+<meta property="article:tag" content="博客网站">
+<meta property="article:tag" content="技术爱好者">
+<meta property="article:tag" content="网站搭建">
+<meta property="article:tag" content="SEO知识">
+<meta property="article:tag" content="摸索">
+<meta property="article:tag" content="学习">
+<meta property="article:tag" content="收获">
+<meta property="article:tag" content="Wordpress">
+<meta property="article:tag" content="hexo建站">
+<meta property="article:tag" content="SEO优化">
+<meta property="article:tag" content="SEO和SEM">
+<meta property="article:tag" content="搜索引擎">
+<meta property="article:tag" content="编辑器">
+<meta property="article:tag" content="文章内链">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://aixz.xyz/about/index/%E5%85%B3%E4%BA%8E.png">
+
+
+<link rel="canonical" href="https://aixz.xyz/en/about/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"en","comments":true,"permalink":"https://aixz.xyz/about/index.html","path":"en/about/index.html","title":"关于我搭建博客网站的经历"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>关于我搭建博客网站的经历 | 夜色酒庄
+</title>
+  
+
+  <script src="/js/third-party/analytics/baidu-analytics.js"></script>
+  <script async src="https://hm.baidu.com/hm.js?83985bd900b5aae5a98242babd70e81e"></script>
+
+
+
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "bpj9ykd50k");
+</script>
+<script src="/lib/fireworks.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.css"><style>
+#needsharebutton-postbottom {
+  cursor: pointer;
+  height: 26px;
+  margin-top: 10px;
+  position: relative;
+}
+#needsharebutton-postbottom .btn {
+  border: 1px solid $btn-default-border-color;
+  border-radius: 3px;
+  display: initial;
+  padding: 1px 4px;
+}
+</style><!-- 谷歌广告代码 -->
+<div>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
+		 crossorigin="anonymous"></script>
+</div>
+
+<!-- 头条js提交 -->
+<div>
+	<script>
+		(function(){
+			var el = document.createElement("script");
+			el.src = "https://lf1-cdn-tos.bytegoofy.com/goofy/ttzz/push.js?e5ad13bb664713fffdc754a4f1f0fe0cef91cdb255ad969a2ef5c715d5ed5baecaf7cd753709c168f20e6a2e9019123fd11e31a222d3a2fe01ad05c6b8f519b2";
+			el.id = "ttzz";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(el, s);
+			}
+		)(window)
+	</script>
+</div>
+
+
+<!-- 百度站点验证 -->
+<div>
+	<meta name="baidu-site-verification" content="code-kgHEd6fNg4" />
+</div>
+
+<!-- 谷歌站点验证 -->
+<div>
+	<meta name="google-site-verification" content="ok4H2qX_yJktrhgGyfWDz_dv740oP-hzcNlALxvz7wk" />
+</div>
+
+<!-- 神马站点验证 -->
+<div>
+	<meta name="shenma-site-verification" content="27a58f0e42c2068a42fb50e8b9e1b27e_1651511296">
+</div>
+
+<!-- 头条站点验证 -->
+<div>
+	<meta name="bytedance-verification-code" content="BM/MabfJJnVOcZP0FUwW" />
+</div>
+
+
+<!-- 必应站点验证 -->
+<div>
+	<meta name="msvalidate.01" content="CF80B9B456458BB1BAB4CC2FDB2CFDE5" />
+</div>
+
+
+<!-- 搜狗站点验证 -->
+<div>
+	<meta name="sogou_site_verification" content="458kjEk2E2" />
+</div>
+
+<!-- 360站点验证 -->
+<div>
+	<meta name="360-site-verification" content="2c0c52c4294c8cc6b31ed691c74eb7f8" />
+</div>
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="夜色酒庄" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">夜色酒庄</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">记录自己生活的点滴</p>
+      <img class="custom-logo-image" src="/images/custom_logo.jpg" alt="夜色酒庄">
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">4296</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">17</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">550</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a></li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup"><div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off" maxlength="80"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close" role="button">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div class="search-result-container no-result">
+  <div class="search-result-icon">
+    <i class="fa fa-spinner fa-pulse fa-5x"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%B3%E4%BA%8E%E6%88%91%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E7%9A%84%E7%BB%8F%E5%8E%86"><span class="nav-number">1.</span> <span class="nav-text">关于我搭建博客网站的经历</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%80%E3%80%81%E5%89%8D%E8%A8%80"><span class="nav-number">1.1.</span> <span class="nav-text">一、前言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%8C%E3%80%81%E5%BC%80%E5%A7%8B%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99"><span class="nav-number">1.2.</span> <span class="nav-text">二、开始搭建博客网站</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%89%E3%80%81%E6%90%AD%E5%BB%BA%E7%BD%91%E7%AB%99%E7%9A%84%E8%BF%87%E7%A8%8B"><span class="nav-number">1.3.</span> <span class="nav-text">三、搭建网站的过程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%9B%9B%E3%80%81%E7%BD%91%E7%AB%99%E7%9A%84%E4%BD%BF%E7%94%A8%E4%B8%8E%E8%B0%83%E8%AF%95"><span class="nav-number">1.4.</span> <span class="nav-text">四、网站的使用与调试</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BA%94%E3%80%81%E7%BD%91%E7%AB%99%E7%9A%84%E5%8F%91%E5%B8%83%E4%B8%8E%E6%8E%A8%E5%B9%BF"><span class="nav-number">1.5.</span> <span class="nav-text">五、网站的发布与推广</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%85%AD%E3%80%81%E5%85%B3%E4%BA%8E%E5%8D%9A%E5%AE%A2%E7%AB%99%E7%9A%84%E5%90%8E%E7%BB%AD%E5%B7%A5%E4%BD%9C"><span class="nav-number">1.6.</span> <span class="nav-text">六、关于博客站的后续工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%83%E3%80%81%E6%80%BB%E7%BB%93"><span class="nav-number">1.7.</span> <span class="nav-text">七、总结</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="头号梦想家"
+      src="/avatar.gif">
+  <p class="site-author-name" itemprop="name">头号梦想家</p>
+  <div class="site-description" itemprop="description">夜色酒庄是我用来记录自己生活点滴的网站</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">550</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">17</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">4296</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="sidebar-button site-overview-item animated">
+    <button><i class="fa fa-comment"></i>
+      闲聊
+    </button>
+  </div>
+  <div class="links-of-author site-overview-item animated">
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FpYmE1MQ==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;aiba51"><i class="fab fa-github fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="bWFpbHRvOjk3NzYzMzk4M0BxcS5jb20=" title="E-Mail → mailto:977633983@qq.com"><i class="fa fa-envelope fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93ZWliby5jb20vYWliYTUx" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;aiba51"><i class="fab fa-weibo fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly93d3cuZmFjZWJvb2suY29tL2FpeHoueHl6" title="FB Page → https:&#x2F;&#x2F;www.facebook.com&#x2F;aixz.xyz"><i class="fab fa-facebook fa-fw"></i></span>
+      </span>
+      <span class="links-of-author-item">
+        <span class="exturl" data-url="aHR0cHM6Ly9pbnN0YWdyYW0uY29tL2FpeHoueHl6Lw==" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;aixz.xyz&#x2F;"><i class="fab fa-instagram fa-fw"></i></span>
+      </span>
+  </div>
+  <div class="cc-license site-overview-item animated" itemprop="license">
+    <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC96aC1DTg=="><img src="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></span>
+  </div>
+
+
+  <div class="links-of-blogroll site-overview-item animated">
+    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+      友链
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly93ZWlkaWFuLmNvbS9zLzIzMzc5Nzc=" title="https:&#x2F;&#x2F;weidian.com&#x2F;s&#x2F;2337977">微店</span>
+        </li>
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vYWliYTUx" title="https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;aiba51">知乎专栏</span>
+        </li>
+        <li class="links-of-blogroll-item">
+          <span class="exturl" data-url="aHR0cHM6Ly9qLnlvdXphbi5jb20vYUVySHpK" title="https:&#x2F;&#x2F;j.youzan.com&#x2F;aErHzJ">正品好物</span>
+        </li>
+    </ul>
+  </div>
+<!-- CloudCalendar -->
+<div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
+	<div class="widget" id="CloudCalendar"></div>
+</div><!-- 近期文章 -->
+
+
+
+   <div class="links-of-blogroll motion-element links-of-blogroll-block">
+
+     <div class="links-of-blogroll-title">
+
+       <!-- modify icon to fire by szw -->
+
+       <i class="fa fa-history fa-" aria-hidden="true"></i>
+
+       近期文章
+
+     </div>
+
+     <ul class="links-of-blogroll-list">
+
+        
+
+        
+
+       
+
+         <li>
+
+           <a href="/Git/aa52116d/" title="从Github克隆仓库到Gitee" target="_blank">从Github克隆仓库到Gitee</a>
+
+         </li>
+
+       
+
+         <li>
+
+           <a href="/Termux/ad000d0/" title="Termux shell界面美化教程" target="_blank">Termux shell界面美化教程</a>
+
+         </li>
+
+       
+
+         <li>
+
+           <a href="/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/53b59f91/" title="让兴趣成为学习的动力" target="_blank">让兴趣成为学习的动力</a>
+
+         </li>
+
+       
+
+         <li>
+
+           <a href="/Kali/6b888a23/" title="Kali实体机安装步骤" target="_blank">Kali实体机安装步骤</a>
+
+         </li>
+
+       
+
+         <li>
+
+           <a href="/vim/85cf1172/" title="vim安装markdown插件" target="_blank">vim安装markdown插件</a>
+
+         </li>
+
+       
+
+     </ul>
+
+   </div>
+
+
+
+
+
+<!-- 侧边栏中的网状徽标 -->
+<div class="cc-license animated" itemprop="sponsor">
+  <a href="https://www.netlify.com" class="cc-opacity" title="Deploy with Netlify → https://www.netlify.com" target="_blank"><img width="80" src="https://www.netlify.com/img/global/badges/netlify-dark.svg" alt="Netlify"></a>
+</div>
+
+
+<!-- 展示广告 -->
+<div>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6233451802500824"
+		 crossorigin="anonymous"></script>
+	<!-- 展示广告 -->
+	<ins class="adsbygoogle"
+		 style="display:block"
+		 data-ad-client="ca-pub-6233451802500824"
+		 data-ad-slot="9077403306"
+		 data-ad-format="auto"
+		 data-full-width-responsive="true"></ins>
+	<script>
+		 (adsbygoogle = window.adsbygoogle || []).push({});
+	</script>
+</div>	
+        </div>
+      </div>
+        <div class="back-to-top animated" role="button" aria-label="Back to top">
+          <i class="fa fa-arrow-up"></i>
+          <span>0%</span>
+        </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner page posts-expand">
+
+
+    
+    
+    
+    <div class="post-block" lang="en"><header class="post-header">
+
+<h1 class="post-title" itemprop="name headline">关于我搭建博客网站的经历
+</h1>
+
+<div class="post-meta-container">
+  <ul class="breadcrumb">
+            <li><a href="/en/">EN</a></li>
+          <li>ABOUT</li>
+  </ul>
+</div>
+
+</header>
+
+      
+      
+      <div class="post-body">
+          <p><img data-src="/about/index/%E5%85%B3%E4%BA%8E.png"></p>
+<h1 id="关于我搭建博客网站的经历"><a href="#关于我搭建博客网站的经历" class="headerlink" title="关于我搭建博客网站的经历"></a>关于我搭建博客网站的经历</h1><p>我是一名技术爱好者，在这个领域已经有7年的工作经验，也算是一名资深的技术人员了。在我看来，没有技术就没有创新，只有不断地去学习和创新，才能不断地成长和进步。我从2016年开始学习网站搭建技术，其实自己的博客网站搭建也是从2017年开始的，所以今天和大家分享一下我搭建博客网站的经历。</p>
+<span id="more"></span>
+
+<p>先来说一下搭建网站之前的经历吧，2015年11月20号，我在一个学习交流群里面看到有一个叫“DZ博客”的学习交流群里面有老师在组织大家学习 SEO知识。当时是在这个群里面看到老师发了一些关于如何搭建博客网站的视频教学，我当时还没有学过 SEO，但是因为我一直喜欢看关于网站方面的视频学习知识，所以我就听了老师讲完课之后就自己开始搭建起了一个类似于 DZ博客的网站。当时也不懂怎么搭建，只是根据老师讲的内容把所有页面都按照老师讲的建起来了。</p>
+<p>然后到了12月26号就开始写文章去发布自己建立起来的这个网站了。在此之前我还没有学过 SEO知识，也没怎么写过文章发布到自己建立起来的这个网站上去。所以很多东西都是在摸索中前进。对于建站方面有什么不懂的地方可以多问多学习，不要自己硬来，这样你学不会别人也学不会你。</p>
+<p><img data-src="/about/index/1.jpg"></p>
+<h2 id="一、前言"><a href="#一、前言" class="headerlink" title="一、前言"></a>一、前言</h2><p>我写这个文章的目的是想告诉大家，想要学习一个新的东西，就要不断地去摸索、学习、创新和总结，这样才能更好地掌握这个东西。没有任何一门技术是一劳永逸的，都是需要我们不断地去学习、探索和创新的。希望大家可以看完这篇文章之后能够有所收获。</p>
+<p>这篇文章主要是讲我自己搭建博客网站的经历，没有专业的术语或者是术语比较难懂，但是都是从实践中总结出来的一些东西。想要做一个东西，就要多做多想，在实践中不断地去摸索和总结。</p>
+<p>另外我在写这篇文章的时候也没有想到会有人看，所以我也不知道文章是否被推送到了我所在的这个地方。如果大家对我写的内容感兴趣，可以在留言板或者我微博关注下这篇文章。</p>
+<p><img data-src="/about/index/2.jpg"></p>
+<h2 id="二、开始搭建博客网站"><a href="#二、开始搭建博客网站" class="headerlink" title="二、开始搭建博客网站"></a>二、开始搭建博客网站</h2><p>2017年3月21号，我开始学习搭建博客网站，当时用的是 wordpress，我在百度搜索了一下关于 wordpress搭建的教程，然后根据自己的实际情况选择了一种适合自己的搭建方式。因为我是新手小白，所以我选择了一种免费的方式进行学习。</p>
+<p>当时我用的是 wordpress安装包，这样安装起来比较简单，对于新手来说不会有很大的压力，因为就只有一个 wordpress包。下载完成之后直接在安装目录下打开安装包进行安装，一般几分钟就可以搞定了。这里要注意的是， Wordpress的安装过程中会有一个重装系统的步骤。在安装之后会出现一个提示框：“你还需要重新安装 Wordpress”。</p>
+<p><img data-src="/about/index/3.jpg"></p>
+<h2 id="三、搭建网站的过程"><a href="#三、搭建网站的过程" class="headerlink" title="三、搭建网站的过程"></a>三、搭建网站的过程</h2><p>当时搭建网站的时候，因为还没有学 SEO，所以当时建的网站内容都是比较简单的，比如图片、文章、音乐等。因为当时没有学过 SEO，所以自己建网站的时候就是按照自己喜欢的方式去做，比如图片采用 jpg格式制作，文章采用 Word格式制作。</p>
+<p>在我看来网站的搭建过程中有几点我觉得可以分享给大家。</p>
+<p>第一，网站可以多做几个类型的分类。比如博客类、论坛类等等。</p>
+<p>第二，网站尽量要做得简洁点。因为搜索引擎对于网站收录很重要，所以网站尽量要简洁一点。这样搜索引擎收录起来会更加容易一点。</p>
+<p>第三，搜索引擎优化非常重要。在制作完网站之后要把这些内容优化到搜索引擎比较容易搜索到的位置上去，这样用户搜索到你的网站之后会更容易找到你的站点内容，也能提升你的用户体验度。</p>
+<p>第四，做好一个博客类的网站在优化上不要太贪心，要给自己留下一些空间去做其他类型网站。</p>
+<p><img data-src="/about/index/4.jpg"></p>
+<h2 id="四、网站的使用与调试"><a href="#四、网站的使用与调试" class="headerlink" title="四、网站的使用与调试"></a>四、网站的使用与调试</h2><p>在网站的使用方面，我当时使用的 Wordpress建站，使用过一段时间后感觉它的弊端还是蛮大的，最起码不够稳定，经常会出现故障。所以后来我就又去学习了 hexo建站，用的是 hexo开源建站系统（注：不是“源码”哈）。优点有很多，比如说稳定、速度快、源码开源等。hexo系统对我来说最大的缺点就是我用它搭建好的网站经常会出现无法访问的情况，经常会出现错误。</p>
+<p>不过，在学习了 hexo建站之后我就掌握了搭建博客网站所需要用到的知识和技能了，但是对于 SEO优化方面还不是很了解。在这里我也给大家分享一些关于网站 SEO优化方面的小技巧吧！</p>
+<p>1.关键词优化。就是通过对网站关键词的优化来提高网站在搜索引擎中的排名。</p>
+<p>2.收录、蜘蛛抓取</p>
+<p>3.关键词规划布局</p>
+<p>4.伪原创</p>
+<p>5.提高网站主题标题与关键词相关性</p>
+<p><img data-src="/about/index/5.jpg"></p>
+<h2 id="五、网站的发布与推广"><a href="#五、网站的发布与推广" class="headerlink" title="五、网站的发布与推广"></a>五、网站的发布与推广</h2><p>1、我的网站在建好之后，就把所有文章都发布到自己建起来的这个网站上面了。</p>
+<p>2、之后我就开始摸索着去推广了，当时都是用的 SEO和 SEM推广方式，主要还是靠自己做自媒体来引流。</p>
+<p>3、把所有文章发布到平台上之后，我又开始学习 SEO知识，学习一些站内优化以及站外优化方面的知识。</p>
+<p>4、因为之前没有任何 SEO和SEM方面的基础，所以对于这方面真的不是很懂，所以当时做完之后我就开始学习 SEO知识了。在网上搜了一些关于 SEO的视频，看了一下这些视频之后感觉还可以。</p>
+<p>5、经过半年多的摸索和学习，我发现一个问题就是我建的这个网站上面的内容大部分都是自己写的文章，所以如果在搜索引擎上面排名不好就很难被发现。</p>
+<p>6、最后我就开始优化网站内链，在网站上设置文章内链和产品链接等等。这样搜索引擎就可以抓取到我的网页内容了，这样排名就会更好。</p>
+<p><img data-src="/about/index/6.jpg"></p>
+<h2 id="六、关于博客站的后续工作"><a href="#六、关于博客站的后续工作" class="headerlink" title="六、关于博客站的后续工作"></a>六、关于博客站的后续工作</h2><p>因为我这人比较懒，平时工作比较忙，所以建站之后的后续工作就是每天都会继续写文章发布到网站上去。</p>
+<p>我自己建的这个博客网站目前也就是更新了四篇文章，其中一篇是《那些被我删除的网页，你还能找到吗？》，这篇文章没有收录。</p>
+<p>除了这些之外我还把一些旧的文章进行了二次编辑。我发现Wordpress一个问题就是：如果你使用 hexo去写文章会导致代码无法搜索，所以我在网站后台里面的代码编辑器里面设置了一个插件，就是当我们添加好文档之后，软件会自动去搜索这些文档内容，这样我们就可以把这些内容进行复制粘贴上去了。这样方便快捷的同时还可以节省不少的时间。</p>
+<p>希望大家可以多多支持我的博客。</p>
+<p><img data-src="/about/index/7.jpg"></p>
+<h2 id="七、总结"><a href="#七、总结" class="headerlink" title="七、总结"></a>七、总结</h2><p>我搭建博客网站的时候用的是 Wordpress，因为我觉得这个版本是最方便快捷的一个版本。当时那个网站有很多功能都没有开发出来，只是提供一个简单的文章展示功能。后来我学到了 hexo，学会了如何搭建一个博客网站，然后开始对博客网站进行开发。</p>
+<p>通过不断地学习和创新，才能让自己变得越来越优秀。</p>
+<p>一个人只要有好奇心，有信心，你就能把自己变得很优秀，最后变成自己喜欢的样子。</p>
+<p><img data-src="/about/index/8.jpg"></p>
+
+      </div>
+      
+      
+      
+    </div>
+  <ul class="breadcrumb">
+            <li><a href="/en/">EN</a></li>
+          <li>ABOUT</li>
+  </ul>
+
+    
+    
+
+
+    <div class="comments utterances-container"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+  <div class="languages">
+    <label class="lang-select-label">
+      <i class="fa fa-language"></i>
+      <span>English</span>
+      <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </label>
+    <select class="lang-select" data-canonical="" aria-label="Select language">
+      
+        <option value="zh-CN" data-href="/about/index.html" selected="">
+          简体中文
+        </option>
+      
+        <option value="en" data-href="/en/about/index.html" selected="">
+          English
+        </option>
+      
+    </select>
+  </div>
+
+
+<div class="copyright">
+  &copy; 2018 – 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">头号梦想家</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+      <span>Symbols count total: </span>
+    <span title="Symbols count total">306k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+      <span>Reading time total &asymp;</span>
+    <span title="Reading time total">4:38</span>
+  </span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+  <div class="powered-by">Powered by <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span>
+  </div>
+  <div class="addthis_inline_share_toolbox">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ca1bf1410f796a3" async="async"></script>
+  </div><!-- 打字效果代码 -->
+<div> 
+	<script src="https://cdn.jsdelivr.net/gh/suyin-long/activate-power-mode@1.0/dist/activate-power-mode.js"></script>
+	<script>
+		POWERMODE.colorful = true; // make power mode colorful
+		POWERMODE.shake = false; // turn off shake
+		document.body.addEventListener('input', POWERMODE);
+	</script>
+
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script size="300" alpha="0.6" zIndex="-1" src="https://cdn.jsdelivr.net/npm/ribbon.js@1.0.2/dist/ribbon.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@next-theme/pjax@0.5.0/pjax.min.js" integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script><script src="/js/pjax.js"></script>
+
+  
+<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+<script src="/js/third-party/search/local-search.js"></script>
+<script src="//code.tidio.co/c2bcyspdynwdso5sistq9ft1vxxzlrse.js"></script>
+<script src="/js/third-party/chat/tidio.js"></script>
+
+  <script class="next-config" data-name="pdf" type="application/json">{"object_url":{"url":"https://cdn.jsdelivr.net/npm/pdfobject@2.2.7/pdfobject.min.js","integrity":"sha256-ph3Dk89VmuTVXG6x/RDzk53SU9LPdAh1tpv0UvnDZ2I="},"url":"/lib/pdf/web/viewer.html"}</script>
+  <script src="/js/third-party/tags/pdf.js"></script>
+
+  <script class="next-config" data-name="mermaid" type="application/json">{"enable":true,"theme":"forest","js":{"url":"https://cdn.jsdelivr.net/npm/mermaid@8.14.0/dist/mermaid.min.js","integrity":"sha256-7wT34TI0pEBeEFoi4z+vhuSddGh6vUTMWdqJ2SDe2jg="}}</script>
+  <script src="/js/third-party/tags/mermaid.js"></script>
+
+  <script src="/js/third-party/fancybox.js"></script>
+
+
+  
+  <script data-pjax async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">false</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
+  <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://aixz.xyz/en/about/"}</script>
+  <script src="/js/third-party/quicklink.js"></script>
+<!-- calendar widget -->
+<div>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/calendar.min.js"></script>
+    <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-calendar/languages.min.js"></script>
+    <script>
+    $(function() {
+        $('#CloudCalendar').aCalendar('zh-CN',
+            $.extend(
+                '', {
+                    single:true,
+                    root:'/calendar/'
+                }
+            )
+        );
+    });
+    </script>
+
+</div>
+  <script src="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.js"></script>
+  <script>
+      pbOptions = {};
+        pbOptions.iconStyle = "box";
+        pbOptions.boxForm = "horizontal";
+        pbOptions.position = "top";
+        pbOptions.networks = "Weibo,Wechat,Douban,QQZone,Linkedin,Facebook";
+      new needShareButton('#needsharebutton-postbottom', pbOptions);
+  </script><script class="next-config" data-name="utterances" type="application/json">{"enable":true,"repo":"aiba51/Utterances","issue_term":"pathname","theme":"github-dark"}</script>
+<script src="/js/third-party/comments/utterances.js"></script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","model":{"jsonPath":"/live2dw/assets/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"react":{"opacity":0.7},"log":false,"tagMode":false});</script></body>
+</html>
