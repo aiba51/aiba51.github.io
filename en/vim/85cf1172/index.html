@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#222" media="(prefers-color-scheme: dark)"><meta name="generator" content="Hexo 5.4.2">
-
 <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
 <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon128x128.ico">
@@ -22,11 +21,11 @@
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic%7CMa+Shan+Zheng:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" integrity="sha256-DfWjNxDkM94fVBWx1H5BMMp0Zq7luBlV8QRcSES7s+0=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.3.0/css/all.min.css" integrity="sha256-/4UQcSmErDzPCMAiuOiWPVVsNN2s3ZY/NsmXNcj0IFc=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"aixz.xyz","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.11.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"width":280},"copycode":true,"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"buttons","active":"utterances","storage":false,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"aixz.xyz","root":"/","images":"/images","scheme":"Gemini","darkmode":true,"version":"8.15.0","exturl":true,"sidebar":{"position":"left","display":"always","padding":18,"offset":12,"width":280},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":true,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":true,"pangu":true,"comments":{"style":"buttons","active":"utterances","storage":false,"lazyload":false,"nav":null,"activeClass":"utterances"},"stickytabs":false,"motion":{"enable":true,"async":true,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
     <meta name="description" content="vim安装markdown步骤：1.安装vundle管理插件1git clone https:&#x2F;&#x2F;github.com&#x2F;VundleVim&#x2F;Vundle.vim.git ~&#x2F;.vim&#x2F;bundle&#x2F;Vundle.vim 默认安装在&#x2F;.vim&#x2F;bundle&#x2F;vundle下">
 <meta property="og:type" content="article">
@@ -68,6 +67,9 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "bpj9ykd50k");
 </script>
+
+
+
 <script src="/lib/fireworks.js"></script><link rel="stylesheet" href="//cdn.jsdelivr.net/gh/theme-next/theme-next-needmoreshare2@1/needsharebutton.min.css"><style>
 #needsharebutton-postbottom {
   cursor: pointer;
@@ -148,8 +150,8 @@
   <div class="headband"></div>
 
   <main class="main">
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
   <div class="site-nav-toggle">
     <div class="toggle" aria-label="Toggle navigation bar" role="button">
         <span class="toggle-line"></span>
@@ -170,7 +172,7 @@
   </div>
 
   <div class="site-nav-right">
-    <div class="toggle popup-trigger">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
         <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
@@ -179,7 +181,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">4296</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">17</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">550</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">4331</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">17</span></a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">555</span></a></li><li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>Sitemap</a></li><li class="menu-item menu-item-rss"><a href="/atom.xml" rel="section"><i class="fa fa-rss fa-fw"></i>RSS</a></li><li class="menu-item menu-item-commonweal"><a href="/404/" rel="section"><i class="fa fa-heartbeat fa-fw"></i>Commonweal 404</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -212,15 +214,9 @@
     </div>
   </div>
 
-</div>
+</header>
         
   
-  <div class="toggle sidebar-toggle" role="button">
-    <span class="toggle-line"></span>
-    <span class="toggle-line"></span>
-    <span class="toggle-line"></span>
-  </div>
-
   <aside class="sidebar">
 
     <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
@@ -241,17 +237,17 @@
         <!--/noindex-->
 
         <div class="site-overview-wrap sidebar-panel">
-          <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
     <img class="site-author-image" itemprop="image" alt="头号梦想家"
       src="/avatar.gif">
   <p class="site-author-name" itemprop="name">头号梦想家</p>
   <div class="site-description" itemprop="description">夜色酒庄是我用来记录自己生活点滴的网站</div>
 </div>
-<div class="site-state-wrap site-overview-item animated">
+<div class="site-state-wrap animated">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">550</span>
+          <span class="site-state-item-count">555</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -262,17 +258,17 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">4296</span>
+        <span class="site-state-item-count">4331</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
 </div>
-  <div class="sidebar-button site-overview-item animated">
+  <div class="sidebar-button animated">
     <button><i class="fa fa-comment"></i>
-      闲聊
+      Chat
     </button>
   </div>
-  <div class="links-of-author site-overview-item animated">
+  <div class="links-of-author animated">
       <span class="links-of-author-item">
         <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FpYmE1MQ==" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;aiba51"><i class="fab fa-github fa-fw"></i></span>
       </span>
@@ -289,26 +285,8 @@
         <span class="exturl" data-url="aHR0cHM6Ly9pbnN0YWdyYW0uY29tL2FpeHoueHl6Lw==" title="Instagram → https:&#x2F;&#x2F;instagram.com&#x2F;aixz.xyz&#x2F;"><i class="fab fa-instagram fa-fw"></i></span>
       </span>
   </div>
-  <div class="cc-license site-overview-item animated" itemprop="license">
+  <div class="cc-license animated" itemprop="license">
     <span class="exturl cc-opacity" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC96aC1DTg=="><img src="https://cdn.jsdelivr.net/npm/@creativecommons/vocabulary@2020.11.3/assets/license_badges/small/by_nc_sa.svg" alt="Creative Commons"></span>
-  </div>
-
-
-  <div class="links-of-blogroll site-overview-item animated">
-    <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
-      友链
-    </div>
-    <ul class="links-of-blogroll-list">
-        <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly93ZWlkaWFuLmNvbS9zLzIzMzc5Nzc=" title="https:&#x2F;&#x2F;weidian.com&#x2F;s&#x2F;2337977">微店</span>
-        </li>
-        <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vYWliYTUx" title="https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;aiba51">知乎专栏</span>
-        </li>
-        <li class="links-of-blogroll-item">
-          <span class="exturl" data-url="aHR0cHM6Ly9qLnlvdXphbi5jb20vYUVySHpK" title="https:&#x2F;&#x2F;j.youzan.com&#x2F;aErHzJ">正品好物</span>
-        </li>
-    </ul>
   </div>
 <!-- CloudCalendar -->
 <div class="widget-wrap" style="width: 90%;margin-left: auto;margin-right: auto; opacity: 0.97;">
@@ -339,7 +317,7 @@
 
          <li>
 
-           <a href="/Git/aa52116d/" title="从Github克隆仓库到Gitee" target="_blank">从Github克隆仓库到Gitee</a>
+           <a href="/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/7200f10b/" title="奋斗的意义" target="_blank">奋斗的意义</a>
 
          </li>
 
@@ -347,7 +325,7 @@
 
          <li>
 
-           <a href="/Termux/ad000d0/" title="Termux shell界面美化教程" target="_blank">Termux shell界面美化教程</a>
+           <a href="/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/be205ed4/" title="手机里的广告" target="_blank">手机里的广告</a>
 
          </li>
 
@@ -355,7 +333,7 @@
 
          <li>
 
-           <a href="/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/53b59f91/" title="让兴趣成为学习的动力" target="_blank">让兴趣成为学习的动力</a>
+           <a href="/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/c29855f/" title="变与不变：是一种创新与坚守" target="_blank">变与不变：是一种创新与坚守</a>
 
          </li>
 
@@ -363,7 +341,7 @@
 
          <li>
 
-           <a href="/Kali/6b888a23/" title="Kali实体机安装步骤" target="_blank">Kali实体机安装步骤</a>
+           <a href="/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/a7e6e0ff/" title="诗歌是一种不限时空的美" target="_blank">诗歌是一种不限时空的美</a>
 
          </li>
 
@@ -371,7 +349,7 @@
 
          <li>
 
-           <a href="/vim/85cf1172/" title="vim安装markdown插件" target="_blank">vim安装markdown插件</a>
+           <a href="/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/f050306a/" title="成功的关键是相信自己" target="_blank">成功的关键是相信自己</a>
 
          </li>
 
@@ -413,20 +391,30 @@
           <span>0%</span>
         </div>
     </div>
-  </aside>
-  <div class="sidebar-dimmer"></div>
-
-
-    </header>
 
     
-  <div class="reading-progress-bar"></div>
-  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+    <div class="sidebar-inner sidebar-blogroll">
+      <div class="links-of-blogroll animated">
+        <div class="links-of-blogroll-title"><i class="fa fa-globe fa-fw"></i>
+          Links
+        </div>
+        <ul class="links-of-blogroll-list">
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly93ZWlkaWFuLmNvbS9zLzIzMzc5Nzc=" title="https:&#x2F;&#x2F;weidian.com&#x2F;s&#x2F;2337977">微店</span>
+            </li>
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly96aHVhbmxhbi56aGlodS5jb20vYWliYTUx" title="https:&#x2F;&#x2F;zhuanlan.zhihu.com&#x2F;aiba51">知乎专栏</span>
+            </li>
+            <li class="links-of-blogroll-item">
+              <span class="exturl" data-url="aHR0cHM6Ly9qLnlvdXphbi5jb20vYUVySHpK" title="https:&#x2F;&#x2F;j.youzan.com&#x2F;aErHzJ">正品好物</span>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </aside>
 
-<noscript>
-  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
-</noscript>
 
+    </div>
 
     <div class="main-inner post posts-expand">
 
@@ -493,12 +481,12 @@
 
 
     <span class="post-meta-break"></span>
-    <span class="post-meta-item" title="Symbols count in article">
+    <span class="post-meta-item" title="Word count in article">
       <span class="post-meta-item-icon">
         <i class="far fa-file-word"></i>
       </span>
-      <span class="post-meta-item-text">Symbols count in article: </span>
-      <span>2.5k</span>
+      <span class="post-meta-item-text">Word count in article: </span>
+      <span>2.6k</span>
     </span>
     <span class="post-meta-item" title="Reading time">
       <span class="post-meta-item-icon">
@@ -530,7 +518,8 @@
 <p>也可以直接在目录中打开（快捷键ctrl+H显示隐藏文件）。<br>将以下加在<code>.vimrc</code>文件中，加入之后保存之后就可以使用vundle了。</p>
 <h3 id="添加的配置信息（样例）"><a href="#添加的配置信息（样例）" class="headerlink" title="添加的配置信息（样例）"></a>添加的配置信息（样例）</h3><p>注：以后安装新插件就直接编辑<code>.vimrc</code>，添加plugin就行了，在这里我们添加的plugin只是例子，你可以不安装这些插件，换上自己需要安装的插件。</p>
 <figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&quot; vundle配置 </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">set</span> nocompatible              <span class="comment">&quot; 去除VI一致性,必须要添加</span></span><br><span class="line"><span class="keyword">filetype</span> off                  <span class="comment">&quot; 必须要添加</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 设置包括vundle和初始化相关的runtime path</span></span><br><span class="line"><span class="keyword">set</span> rtp+=~/.<span class="keyword">vim</span>/bundle/Vundle.<span class="keyword">vim</span></span><br><span class="line"><span class="keyword">call</span> vundle#begin()</span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 安装插件位置</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 另一种选择, 指定一个vundle安装插件的路径</span></span><br><span class="line"><span class="comment">&quot;call vundle#begin(&#x27;~/some/path/here&#x27;)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 让vundle管理插件版本,必须</span></span><br><span class="line">Plugin <span class="string">&#x27;VundleVim/Vundle.vim&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 以下范例用来支持不同格式的插件安装.</span></span><br><span class="line"><span class="comment">&quot; 请将安装插件的命令放在vundle#begin和vundle#end之间.</span></span><br><span class="line"><span class="comment">&quot; Github上的插件</span></span><br><span class="line"><span class="comment">&quot; 格式为 Plugin &#x27;用户名/插件仓库名&#x27;</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;tpope/vim-fugitive&#x27;</span></span><br><span class="line"><span class="comment">&quot; 来自 http://vim-scripts.org/vim/scripts.html 的插件</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;插件名称&#x27; 实际上是 Plugin &#x27;vim-scripts/插件仓库名&#x27; 只是此处的用户名可以省略</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;L9&#x27;</span></span><br><span class="line"><span class="comment">&quot; 由Git支持但不再github上的插件仓库 Plugin &#x27;git clone 后面的地址&#x27;</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;git://git.wincent.com/command-t.git&#x27;</span></span><br><span class="line"><span class="comment">&quot; 本地的Git仓库(例如自己的插件) Plugin &#x27;file:///+本地插件仓库绝对路径&#x27;</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;file:///home/gmarik/path/to/plugin&#x27;</span></span><br><span class="line"><span class="comment">&quot; 插件在仓库的子目录中.</span></span><br><span class="line"><span class="comment">&quot; 正确指定路径用以设置runtimepath. 以下范例插件在sparkup/vim目录下</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;rstacruz/sparkup&#x27;, &#123;&#x27;rtp&#x27;: &#x27;vim/&#x27;&#125;</span></span><br><span class="line"><span class="comment">&quot; 安装L9，如果已经安装过这个插件，可利用以下格式避免命名冲突</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;ascenator/L9&#x27;, &#123;&#x27;name&#x27;: &#x27;newL9&#x27;&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 你的所有插件需要在下面这行之前</span></span><br><span class="line"><span class="keyword">call</span> vundle#end()            <span class="comment">&quot; 必须</span></span><br><span class="line"><span class="keyword">filetype</span> plugin <span class="built_in">indent</span> <span class="keyword">on</span>    <span class="comment">&quot; 必须 加载vim自带和插件相应的语法和文件类型相关脚本</span></span><br><span class="line"><span class="comment">&quot; 忽视插件改变缩进,可以使用以下替代:</span></span><br><span class="line"><span class="comment">&quot;filetype plugin on</span></span><br><span class="line"><span class="comment">&quot;</span></span><br><span class="line"><span class="comment">&quot; 常用的命令</span></span><br><span class="line"><span class="comment">&quot; :PluginList       - 列出所有已配置的插件</span></span><br><span class="line"><span class="comment">&quot; :PluginInstall  	 - 安装插件,追加 `!` 用以更新或使用 :PluginUpdate</span></span><br><span class="line"><span class="comment">&quot; :PluginSearch foo - 搜索 foo ; 追加 `!` 清除本地缓存</span></span><br><span class="line"><span class="comment">&quot; :PluginClean      - 清除未使用插件,需要确认; 追加 `!` 自动批准移除未使用插件</span></span><br><span class="line"><span class="comment">&quot;</span></span><br><span class="line"><span class="comment">&quot; 查阅 :h vundle 获取更多细节和wiki以及FAQ</span></span><br><span class="line"><span class="comment">&quot; 将你自己对非插件片段放在这行之后</span></span><br></pre></td></tr></table></figure>
-<h2 id="3-安装vim-instant-markdown插件"><a href="#3-安装vim-instant-markdown插件" class="headerlink" title="3.安装vim-instant-markdown插件"></a>3.安装vim-instant-markdown插件</h2><p>在<code>.vimrc</code>中vundle配置<code>vundle#begin</code>和<code>vundle#end</code>之间加入以下命令</p>
+<h2 id="3-安装vim-instant-markdown插件"><a href="#3-安装vim-instant-markdown插件" class="headerlink" title="3.安装vim-instant-markdown插件"></a>3.安装vim-instant-markdown插件</h2><p>首先安装 Node.js 微型服务器：<br>npm -g install instant-markdown-d</p>
+<p>在<code>.vimrc</code>中vundle配置<code>vundle#begin</code>和<code>vundle#end</code>之间加入以下命令</p>
 <figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">Plugin</span> <span class="string">&#x27;suan/vim-instant-markdown&#x27;</span></span><br></pre></td></tr></table></figure>
 <p>位置在vundle配置中有备注说明</p>
 <p>:wq保存之后运行vim</p>
@@ -595,7 +584,7 @@
 </div>
 
           <div class="reward-container">
-  <div>给我买杯咖啡</div>
+  <div>Buy me a coffee</div>
   <button>
     Donate
   </button>
@@ -635,23 +624,25 @@
   <div class="social-list">
 
       <div class="social-item">
-        <a target="_blank" class="social-link" href="/uploads/%E5%BE%AE%E4%BF%A1%E6%90%9C%E4%B8%80%E6%90%9C%E2%80%9C%E5%A4%B4%E5%8F%B7%E6%A2%A6%E6%83%B3%E5%AE%B6%E2%80%9D%E5%85%B3%E6%B3%A8%E6%88%91.png">
-          <span class="icon">
-            <i class="fab fa-weixin"></i>
+          <span class="social-link">
+            <span class="icon">
+              <i class="fab fa-weixin"></i>
+            </span>
+
+            <span class="label">微信公众号</span>
           </span>
 
-          <span class="label">微信公众号</span>
-        </a>
+          <img class="social-item-img" src="/uploads/%E5%BE%AE%E4%BF%A1%E6%90%9C%E4%B8%80%E6%90%9C%E2%80%9C%E5%A4%B4%E5%8F%B7%E6%A2%A6%E6%83%B3%E5%AE%B6%E2%80%9D%E5%85%B3%E6%B3%A8%E6%88%91.png">
       </div>
 
       <div class="social-item">
-        <a target="_blank" class="social-link" href="/atom.xml">
-          <span class="icon">
-            <i class="fa fa-rss"></i>
-          </span>
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
 
-          <span class="label">RSS</span>
-        </a>
+            <span class="label">RSS</span>
+          </a>
       </div>
   </div>
 </div>
@@ -665,6 +656,9 @@
           </div>
 
         
+  <div class="addthis_inline_share_toolbox social-like">
+    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ca1bf1410f796a3" async="async"></script>
+  </div>
 
           <div class="post-nav">
             <div class="post-nav-item">
@@ -726,15 +720,15 @@
     <span class="post-meta-item-icon">
       <i class="fa fa-chart-line"></i>
     </span>
-      <span>Symbols count total: </span>
-    <span title="Symbols count total">306k</span>
+      <span>Word count total: </span>
+    <span title="Word count total">310k</span>
   </span>
   <span class="post-meta-item">
     <span class="post-meta-item-icon">
       <i class="fa fa-coffee"></i>
     </span>
       <span>Reading time total &asymp;</span>
-    <span title="Reading time total">4:38</span>
+    <span title="Reading time total">4:42</span>
   </span>
 </div>
 <div class="busuanzi-count">
@@ -756,9 +750,6 @@
     </span>
 </div>
   <div class="powered-by">Powered by <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & <span class="exturl" data-url="aHR0cHM6Ly90aGVtZS1uZXh0LmpzLm9yZw==">NexT.Gemini</span>
-  </div>
-  <div class="addthis_inline_share_toolbox">
-    <script src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ca1bf1410f796a3" async="async"></script>
   </div><!-- 打字效果代码 -->
 <div> 
 	<script src="https://cdn.jsdelivr.net/gh/suyin-long/activate-power-mode@1.0/dist/activate-power-mode.js"></script>
@@ -774,25 +765,33 @@
   </footer>
 
   
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
   <script size="300" alpha="0.6" zIndex="-1" src="https://cdn.jsdelivr.net/npm/ribbon.js@1.0.2/dist/ribbon.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@next-theme/pjax@0.5.0/pjax.min.js" integrity="sha256-3NkoLDrmHLTYj7csHIZSr0MHAFTXth7Ua/DDt4MRUAg=" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@next-theme/pjax@0.6.0/pjax.min.js" integrity="sha256-vxLn1tSKWD4dqbMRyv940UYw4sXgMtYcK6reefzZrao=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/lozad@1.16.0/dist/lozad.min.js" integrity="sha256-mOFREFhqmHeQbXpK2lp4nA3qooVgACfh88fpJftLBbc=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/pangu@4.0.7/dist/browser/pangu.min.js" integrity="sha256-j+yj56cdEY2CwkVtGyz18fNybFGpMGJ8JxG3GSyO2+I=" crossorigin="anonymous"></script>
 <script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/next-boot.js"></script><script src="/js/bookmark.js"></script><script src="/js/pjax.js"></script>
 
-  
-<script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.0/dist/search.js" integrity="sha256-vXZMYLEqsROAXkEw93GGIvaB2ab+QW6w3+1ahD9nXXA=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/hexo-generator-searchdb@1.4.1/dist/search.js" integrity="sha256-1kfA5uHPf65M5cphT2dvymhkuyHPQp5A53EGZOnOLmc=" crossorigin="anonymous"></script>
 <script src="/js/third-party/search/local-search.js"></script>
 <script src="//code.tidio.co/c2bcyspdynwdso5sistq9ft1vxxzlrse.js"></script>
 <script src="/js/third-party/chat/tidio.js"></script>
 
-  <script class="next-config" data-name="pdf" type="application/json">{"object_url":{"url":"https://cdn.jsdelivr.net/npm/pdfobject@2.2.7/pdfobject.min.js","integrity":"sha256-ph3Dk89VmuTVXG6x/RDzk53SU9LPdAh1tpv0UvnDZ2I="},"url":"/lib/pdf/web/viewer.html"}</script>
+  <script class="next-config" data-name="pdf" type="application/json">{"object_url":{"url":"https://cdn.jsdelivr.net/npm/pdfobject@2.2.8/pdfobject.min.js","integrity":"sha256-tu9j5pBilBQrWSDePOOajCUdz6hWsid/lBNzK4KgEPM="},"url":"/lib/pdf/web/viewer.html"}</script>
   <script src="/js/third-party/tags/pdf.js"></script>
 
-  <script class="next-config" data-name="mermaid" type="application/json">{"enable":true,"theme":"forest","js":{"url":"https://cdn.jsdelivr.net/npm/mermaid@8.14.0/dist/mermaid.min.js","integrity":"sha256-7wT34TI0pEBeEFoi4z+vhuSddGh6vUTMWdqJ2SDe2jg="}}</script>
+  <script class="next-config" data-name="mermaid" type="application/json">{"enable":true,"theme":"forest","js":{"url":"https://cdn.jsdelivr.net/npm/mermaid@9.4.0/dist/mermaid.min.js","integrity":"sha256-3JloMMI/ZQx6ryuhhZTsQJQmGAkXeni6PkshX7UUO2s="}}</script>
   <script src="/js/third-party/tags/mermaid.js"></script>
 
   <script src="/js/third-party/fancybox.js"></script>
@@ -810,7 +809,7 @@
 <script src="/js/third-party/math/mathjax.js"></script>
 
 
-  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.2.0/dist/quicklink.umd.js" integrity="sha256-4kQf9z5ntdQrzsBC3YSHnEz02Z9C1UeW/E9OgnvlzSY=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/quicklink@2.3.0/dist/quicklink.umd.js" integrity="sha256-yvJQOINiH9fWemHn0vCA5lsHWJaHs6/ZmO+1Ft04SvM=" crossorigin="anonymous"></script>
   <script class="next-config" data-name="quicklink" type="application/json">{"enable":true,"home":true,"archive":true,"delay":true,"timeout":3000,"priority":true,"ignores":null,"url":"https://aixz.xyz/en/vim/85cf1172/"}</script>
   <script src="/js/third-party/quicklink.js"></script>
 <!-- calendar widget -->
