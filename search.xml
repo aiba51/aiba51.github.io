@@ -381,7 +381,7 @@
       <link href="/vim/85cf1172/"/>
       <url>/vim/85cf1172/</url>
       
-        <content type="html"><![CDATA[<h1 id="vim安装markdown步骤："><a href="#vim安装markdown步骤：" class="headerlink" title="vim安装markdown步骤："></a>vim安装markdown步骤：</h1><h2 id="1-安装vundle管理插件"><a href="#1-安装vundle管理插件" class="headerlink" title="1.安装vundle管理插件"></a>1.安装vundle管理插件</h2><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:<span class="regexp">//gi</span>thub.com<span class="regexp">/VundleVim/</span>Vundle.vim.git ~<span class="regexp">/.vim/</span>bundle/Vundle.vim</span><br></pre></td></tr></table></figure><p>默认安装在<code>/.vim/bundle/vundle</code>下</p><span id="more"></span><h2 id="2-配置vundle插件"><a href="#2-配置vundle插件" class="headerlink" title="2.配置vundle插件"></a>2.配置vundle插件</h2><p>先用</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span> -a</span><br></pre></td></tr></table></figure><p>首先查看&#x2F;home&#x2F;用户名&#x2F;下有没有<code>.vimrc</code>文件</p><p>如果没有就从&#x2F;etc&#x2F;vim&#x2F;目录下复制一个vimrc到&#x2F;home&#x2F;用户名&#x2F;下</p><p>并改名为<code>.vimrc</code></p><p>在终端通过vim打开<code>~/.vimrc</code>文件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.vimrc</span><br></pre></td></tr></table></figure><p>也可以直接在目录中打开（快捷键ctrl+H显示隐藏文件）。<br>将以下加在<code>.vimrc</code>文件中，加入之后保存之后就可以使用vundle了。</p><h3 id="添加的配置信息（样例）"><a href="#添加的配置信息（样例）" class="headerlink" title="添加的配置信息（样例）"></a>添加的配置信息（样例）</h3><p>注：以后安装新插件就直接编辑<code>.vimrc</code>，添加plugin就行了，在这里我们添加的plugin只是例子，你可以不安装这些插件，换上自己需要安装的插件。</p><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&quot; vundle配置 </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">set</span> nocompatible              <span class="comment">&quot; 去除VI一致性,必须要添加</span></span><br><span class="line"><span class="keyword">filetype</span> off                  <span class="comment">&quot; 必须要添加</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 设置包括vundle和初始化相关的runtime path</span></span><br><span class="line"><span class="keyword">set</span> rtp+=~/.<span class="keyword">vim</span>/bundle/Vundle.<span class="keyword">vim</span></span><br><span class="line"><span class="keyword">call</span> vundle#begin()</span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 安装插件位置</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 另一种选择, 指定一个vundle安装插件的路径</span></span><br><span class="line"><span class="comment">&quot;call vundle#begin(&#x27;~/some/path/here&#x27;)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 让vundle管理插件版本,必须</span></span><br><span class="line">Plugin <span class="string">&#x27;VundleVim/Vundle.vim&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 以下范例用来支持不同格式的插件安装.</span></span><br><span class="line"><span class="comment">&quot; 请将安装插件的命令放在vundle#begin和vundle#end之间.</span></span><br><span class="line"><span class="comment">&quot; Github上的插件</span></span><br><span class="line"><span class="comment">&quot; 格式为 Plugin &#x27;用户名/插件仓库名&#x27;</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;tpope/vim-fugitive&#x27;</span></span><br><span class="line"><span class="comment">&quot; 来自 http://vim-scripts.org/vim/scripts.html 的插件</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;插件名称&#x27; 实际上是 Plugin &#x27;vim-scripts/插件仓库名&#x27; 只是此处的用户名可以省略</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;L9&#x27;</span></span><br><span class="line"><span class="comment">&quot; 由Git支持但不再github上的插件仓库 Plugin &#x27;git clone 后面的地址&#x27;</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;git://git.wincent.com/command-t.git&#x27;</span></span><br><span class="line"><span class="comment">&quot; 本地的Git仓库(例如自己的插件) Plugin &#x27;file:///+本地插件仓库绝对路径&#x27;</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;file:///home/gmarik/path/to/plugin&#x27;</span></span><br><span class="line"><span class="comment">&quot; 插件在仓库的子目录中.</span></span><br><span class="line"><span class="comment">&quot; 正确指定路径用以设置runtimepath. 以下范例插件在sparkup/vim目录下</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;rstacruz/sparkup&#x27;, &#123;&#x27;rtp&#x27;: &#x27;vim/&#x27;&#125;</span></span><br><span class="line"><span class="comment">&quot; 安装L9，如果已经安装过这个插件，可利用以下格式避免命名冲突</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;ascenator/L9&#x27;, &#123;&#x27;name&#x27;: &#x27;newL9&#x27;&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 你的所有插件需要在下面这行之前</span></span><br><span class="line"><span class="keyword">call</span> vundle#end()            <span class="comment">&quot; 必须</span></span><br><span class="line"><span class="keyword">filetype</span> plugin <span class="built_in">indent</span> <span class="keyword">on</span>    <span class="comment">&quot; 必须 加载vim自带和插件相应的语法和文件类型相关脚本</span></span><br><span class="line"><span class="comment">&quot; 忽视插件改变缩进,可以使用以下替代:</span></span><br><span class="line"><span class="comment">&quot;filetype plugin on</span></span><br><span class="line"><span class="comment">&quot;</span></span><br><span class="line"><span class="comment">&quot; 常用的命令</span></span><br><span class="line"><span class="comment">&quot; :PluginList       - 列出所有已配置的插件</span></span><br><span class="line"><span class="comment">&quot; :PluginInstall   - 安装插件,追加 `!` 用以更新或使用 :PluginUpdate</span></span><br><span class="line"><span class="comment">&quot; :PluginSearch foo - 搜索 foo ; 追加 `!` 清除本地缓存</span></span><br><span class="line"><span class="comment">&quot; :PluginClean      - 清除未使用插件,需要确认; 追加 `!` 自动批准移除未使用插件</span></span><br><span class="line"><span class="comment">&quot;</span></span><br><span class="line"><span class="comment">&quot; 查阅 :h vundle 获取更多细节和wiki以及FAQ</span></span><br><span class="line"><span class="comment">&quot; 将你自己对非插件片段放在这行之后</span></span><br></pre></td></tr></table></figure><h2 id="3-安装vim-instant-markdown插件"><a href="#3-安装vim-instant-markdown插件" class="headerlink" title="3.安装vim-instant-markdown插件"></a>3.安装vim-instant-markdown插件</h2><p>首先安装 Node.js 微型服务器：<br>npm -g install instant-markdown-d</p><p>在<code>.vimrc</code>中vundle配置<code>vundle#begin</code>和<code>vundle#end</code>之间加入以下命令</p><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">Plugin</span> <span class="string">&#x27;suan/vim-instant-markdown&#x27;</span></span><br></pre></td></tr></table></figure><p>位置在vundle配置中有备注说明</p><p>:wq保存之后运行vim</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">vim</span></span><br></pre></td></tr></table></figure><p>在vim里运行安装命令</p><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">:PluginInstall</span></span><br></pre></td></tr></table></figure><p>这里vim里面安装markdown就已经安装完成了</p><h3 id="移除不需要的插件"><a href="#移除不需要的插件" class="headerlink" title="移除不需要的插件"></a>移除不需要的插件</h3><ol><li>编辑.vimrc文件移除的你要移除的插件所对应的plugin那一行。</li><li>保存退出当前的vim</li><li>重新打开vim，输入命令BundleClean。</li></ol><h3 id="其他常用命令"><a href="#其他常用命令" class="headerlink" title="其他常用命令"></a>其他常用命令</h3><p>可以在vim里用这个命令列出所有已安装的插件</p><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">:BundleList</span></span><br></pre></td></tr></table></figure><p>更新插件</p><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">:BundleUpdate</span></span><br></pre></td></tr></table></figure><p>查找插件</p><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">:BundleSearch</span></span><br></pre></td></tr></table></figure><p>这个markdown插件安装以后会在浏览器开一个本地网页作为预览</p><p>也可以安装其他的插件方法都一样</p><p>我这篇文章就是<code>vim-instant-markdown</code>这个插件写的</p><p>只要对markdown语法和vim熟悉，和其他markdown编辑器没有什么区别</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="vim安装markdown步骤："><a href="#vim安装markdown步骤：" class="headerlink" title="vim安装markdown步骤："></a>vim安装markdown步骤：</h1><h2 id="1-安装vundle管理插件"><a href="#1-安装vundle管理插件" class="headerlink" title="1.安装vundle管理插件"></a>1.安装vundle管理插件</h2><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:<span class="regexp">//gi</span>thub.com<span class="regexp">/VundleVim/</span>Vundle.vim.git ~<span class="regexp">/.vim/</span>bundle/Vundle.vim</span><br></pre></td></tr></table></figure><p>默认安装在<code>/.vim/bundle/vundle</code>下</p><span id="more"></span><h2 id="2-配置vundle插件"><a href="#2-配置vundle插件" class="headerlink" title="2.配置vundle插件"></a>2.配置vundle插件</h2><p>先用</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span> -a</span><br></pre></td></tr></table></figure><p>首先查看&#x2F;home&#x2F;用户名&#x2F;下有没有<code>.vimrc</code>文件</p><p>如果没有就从&#x2F;etc&#x2F;vim&#x2F;目录下复制一个vimrc到&#x2F;home&#x2F;用户名&#x2F;下</p><p>并改名为<code>.vimrc</code></p><p>在终端通过vim打开<code>~/.vimrc</code>文件</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim ~/.vimrc</span><br></pre></td></tr></table></figure><p>也可以直接在目录中打开（快捷键ctrl+H显示隐藏文件）。<br>将以下加在<code>.vimrc</code>文件中，加入之后保存之后就可以使用vundle了。</p><h3 id="添加的配置信息（样例）"><a href="#添加的配置信息（样例）" class="headerlink" title="添加的配置信息（样例）"></a>添加的配置信息（样例）</h3><p>注：以后安装新插件就直接编辑<code>.vimrc</code>，添加plugin就行了，在这里我们添加的plugin只是例子，你可以不安装这些插件，换上自己需要安装的插件。</p><figure class="highlight vim"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&quot; vundle配置 </span></span><br><span class="line"></span><br><span class="line"><span class="keyword">set</span> nocompatible              <span class="comment">&quot; 去除VI一致性,必须要添加</span></span><br><span class="line"><span class="keyword">filetype</span> off                  <span class="comment">&quot; 必须要添加</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 设置包括vundle和初始化相关的runtime path</span></span><br><span class="line"><span class="keyword">set</span> rtp+=~/.<span class="keyword">vim</span>/bundle/Vundle.<span class="keyword">vim</span></span><br><span class="line"><span class="keyword">call</span> vundle#begin()</span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 安装插件位置</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 另一种选择, 指定一个vundle安装插件的路径</span></span><br><span class="line"><span class="comment">&quot;call vundle#begin(&#x27;~/some/path/here&#x27;)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 让vundle管理插件版本,必须</span></span><br><span class="line">Plugin <span class="string">&#x27;VundleVim/Vundle.vim&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 以下范例用来支持不同格式的插件安装.</span></span><br><span class="line"><span class="comment">&quot; 请将安装插件的命令放在vundle#begin和vundle#end之间.</span></span><br><span class="line"><span class="comment">&quot; Github上的插件</span></span><br><span class="line"><span class="comment">&quot; 格式为 Plugin &#x27;用户名/插件仓库名&#x27;</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;tpope/vim-fugitive&#x27;</span></span><br><span class="line"><span class="comment">&quot; 来自 http://vim-scripts.org/vim/scripts.html 的插件</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;插件名称&#x27; 实际上是 Plugin &#x27;vim-scripts/插件仓库名&#x27; 只是此处的用户名可以省略</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;L9&#x27;</span></span><br><span class="line"><span class="comment">&quot; 由Git支持但不再github上的插件仓库 Plugin &#x27;git clone 后面的地址&#x27;</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;git://git.wincent.com/command-t.git&#x27;</span></span><br><span class="line"><span class="comment">&quot; 本地的Git仓库(例如自己的插件) Plugin &#x27;file:///+本地插件仓库绝对路径&#x27;</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;file:///home/gmarik/path/to/plugin&#x27;</span></span><br><span class="line"><span class="comment">&quot; 插件在仓库的子目录中.</span></span><br><span class="line"><span class="comment">&quot; 正确指定路径用以设置runtimepath. 以下范例插件在sparkup/vim目录下</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;rstacruz/sparkup&#x27;, &#123;&#x27;rtp&#x27;: &#x27;vim/&#x27;&#125;</span></span><br><span class="line"><span class="comment">&quot; 安装L9，如果已经安装过这个插件，可利用以下格式避免命名冲突</span></span><br><span class="line"><span class="comment">&quot; Plugin &#x27;ascenator/L9&#x27;, &#123;&#x27;name&#x27;: &#x27;newL9&#x27;&#125;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">&quot; 你的所有插件需要在下面这行之前</span></span><br><span class="line"><span class="keyword">call</span> vundle#end()            <span class="comment">&quot; 必须</span></span><br><span class="line"><span class="keyword">filetype</span> plugin <span class="built_in">indent</span> <span class="keyword">on</span>    <span class="comment">&quot; 必须 加载vim自带和插件相应的语法和文件类型相关脚本</span></span><br><span class="line"><span class="comment">&quot; 忽视插件改变缩进,可以使用以下替代:</span></span><br><span class="line"><span class="comment">&quot;filetype plugin on</span></span><br><span class="line"><span class="comment">&quot;</span></span><br><span class="line"><span class="comment">&quot; 常用的命令</span></span><br><span class="line"><span class="comment">&quot; :PluginList       - 列出所有已配置的插件</span></span><br><span class="line"><span class="comment">&quot; :PluginInstall   - 安装插件,追加 `!` 用以更新或使用 :PluginUpdate</span></span><br><span class="line"><span class="comment">&quot; :PluginSearch foo - 搜索 foo ; 追加 `!` 清除本地缓存</span></span><br><span class="line"><span class="comment">&quot; :PluginClean      - 清除未使用插件,需要确认; 追加 `!` 自动批准移除未使用插件</span></span><br><span class="line"><span class="comment">&quot;</span></span><br><span class="line"><span class="comment">&quot; 查阅 :h vundle 获取更多细节和wiki以及FAQ</span></span><br><span class="line"><span class="comment">&quot; 将你自己对非插件片段放在这行之后</span></span><br></pre></td></tr></table></figure><h2 id="3-安装vim-instant-markdown插件"><a href="#3-安装vim-instant-markdown插件" class="headerlink" title="3.安装vim-instant-markdown插件"></a>3.安装vim-instant-markdown插件</h2><h3 id="首先安装-Node-js-微型服务器："><a href="#首先安装-Node-js-微型服务器：" class="headerlink" title="首先安装 Node.js 微型服务器："></a>首先安装 Node.js 微型服务器：</h3><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -g <span class="keyword">install</span> instant-markdown-d</span><br></pre></td></tr></table></figure><p>在<code>.vimrc</code>中vundle配置<code>vundle#begin</code>和<code>vundle#end</code>之间加入以下命令</p><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">Plugin</span> <span class="string">&#x27;suan/vim-instant-markdown&#x27;</span></span><br></pre></td></tr></table></figure><p>位置在vundle配置中有备注说明</p><p>:wq保存之后运行vim</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">vim</span></span><br></pre></td></tr></table></figure><p>在vim里运行安装命令</p><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">:PluginInstall</span></span><br></pre></td></tr></table></figure><p>这里vim里面安装markdown就已经安装完成了</p><h3 id="移除不需要的插件"><a href="#移除不需要的插件" class="headerlink" title="移除不需要的插件"></a>移除不需要的插件</h3><ol><li>编辑.vimrc文件移除的你要移除的插件所对应的plugin那一行。</li><li>保存退出当前的vim</li><li>重新打开vim，输入命令BundleClean。</li></ol><h3 id="其他常用命令"><a href="#其他常用命令" class="headerlink" title="其他常用命令"></a>其他常用命令</h3><p>可以在vim里用这个命令列出所有已安装的插件</p><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">:BundleList</span></span><br></pre></td></tr></table></figure><p>更新插件</p><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">:BundleUpdate</span></span><br></pre></td></tr></table></figure><p>查找插件</p><figure class="highlight clojure"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">:BundleSearch</span></span><br></pre></td></tr></table></figure><p>这个markdown插件安装以后会在浏览器开一个本地网页作为预览</p><p>也可以安装其他的插件方法都一样</p><p>我这篇文章就是<code>vim-instant-markdown</code>这个插件写的</p><p>只要对markdown语法和vim熟悉，和其他markdown编辑器没有什么区别</p>]]></content>
       
       
       <categories>
@@ -500,9 +500,9 @@
       
         <tags>
             
-            <tag> 学习 </tag>
-            
             <tag> 乐趣 </tag>
+            
+            <tag> 学习 </tag>
             
             <tag> 兴趣 </tag>
             
@@ -1546,9 +1546,9 @@
       
         <tags>
             
-            <tag> 创造力 </tag>
-            
             <tag> 乐趣 </tag>
+            
+            <tag> 创造力 </tag>
             
             <tag> 题目 </tag>
             
@@ -3546,11 +3546,11 @@
             
             <tag> 玩游戏 </tag>
             
-            <tag> 蓝牙键盘 </tag>
-            
             <tag> 盖世小鸡 </tag>
             
             <tag> 狂野飙车8 </tag>
+            
+            <tag> 蓝牙键盘 </tag>
             
             <tag> 同屏器 </tag>
             
@@ -5592,9 +5592,9 @@
             
             <tag> 文章 </tag>
             
-            <tag> windows </tag>
-            
             <tag> Word </tag>
+            
+            <tag> windows </tag>
             
             <tag> 办公软件 </tag>
             
@@ -6329,9 +6329,9 @@
             
             <tag> 玩游戏 </tag>
             
-            <tag> 游戏 </tag>
-            
             <tag> 上班 </tag>
+            
+            <tag> 游戏 </tag>
             
             <tag> 无聊人 </tag>
             
@@ -10097,6 +10097,8 @@
             
             <tag> Hexo </tag>
             
+            <tag> next主题 </tag>
+            
             <tag> 模板文件 </tag>
             
             <tag> 自动 </tag>
@@ -10104,8 +10106,6 @@
             <tag> 添加标题 </tag>
             
             <tag> 日期 </tag>
-            
-            <tag> next主题 </tag>
             
             <tag> 安装 </tag>
             
@@ -10148,9 +10148,9 @@
             
             <tag> 休息 </tag>
             
-            <tag> 蓝牙音箱 </tag>
-            
             <tag> 上班 </tag>
+            
+            <tag> 蓝牙音箱 </tag>
             
             <tag> 两件事 </tag>
             
@@ -10623,9 +10623,9 @@
             
             <tag> Hexo </tag>
             
-            <tag> next主题 </tag>
-            
             <tag> 主题配置 </tag>
+            
+            <tag> next主题 </tag>
             
             <tag> 代替主题 </tag>
             
@@ -10677,6 +10677,49 @@
     
     
     <entry>
+      <title>Hexo在数据文件夹里添加谷歌和百度站点验证</title>
+      <link href="/Hexo/228e7a34/"/>
+      <url>/Hexo/228e7a34/</url>
+      
+        <content type="html"><![CDATA[<p>首先在<code>source</code>文件夹下新建一个<code>_data</code>文件夹，已经建过的这一步就可以略过。然后在next配置文件里面把<code>custom_file_path</code>下面的<code>head</code>前的注释去掉。</p><span id="more"></span><p>复制下<code>_data</code>后面的<code>head.njk</code>文件名，在<code>_data</code>文件夹里面新建一个<code>head.njk</code>文件，在谷歌获得的<code>html</code>标签文件到这里面，百度也是一样。</p><p>我开始第一次是用文件验证可以，第二次我用Gitee的二级域名再用文件验证的方式就不行了，但是我用Gitee的二级域名用的标签验证是可以的，所以还是直接用标签验证的这种方法比较可靠，百度和谷歌我都用的Gitee的二级域名验证成功了，就等着被收录就可以了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 数据文件夹 </tag>
+            
+            <tag> 谷歌 </tag>
+            
+            <tag> 百度 </tag>
+            
+            <tag> source </tag>
+            
+            <tag> next配置 </tag>
+            
+            <tag> html标签 </tag>
+            
+            <tag> gitee </tag>
+            
+            <tag> 二级域名 </tag>
+            
+            <tag> 收录 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo换电脑更新，能推送上去了才算迁移成功</title>
       <link href="/Hexo/3e845146/"/>
       <url>/Hexo/3e845146/</url>
@@ -10699,11 +10742,11 @@
             
             <tag> Hexo </tag>
             
+            <tag> gitee </tag>
+            
             <tag> 推送 </tag>
             
             <tag> 迁移 </tag>
-            
-            <tag> gitee </tag>
             
             <tag> 思路 </tag>
             
@@ -10765,49 +10808,6 @@
     
     
     <entry>
-      <title>Hexo在数据文件夹里添加谷歌和百度站点验证</title>
-      <link href="/Hexo/228e7a34/"/>
-      <url>/Hexo/228e7a34/</url>
-      
-        <content type="html"><![CDATA[<p>首先在<code>source</code>文件夹下新建一个<code>_data</code>文件夹，已经建过的这一步就可以略过。然后在next配置文件里面把<code>custom_file_path</code>下面的<code>head</code>前的注释去掉。</p><span id="more"></span><p>复制下<code>_data</code>后面的<code>head.njk</code>文件名，在<code>_data</code>文件夹里面新建一个<code>head.njk</code>文件，在谷歌获得的<code>html</code>标签文件到这里面，百度也是一样。</p><p>我开始第一次是用文件验证可以，第二次我用Gitee的二级域名再用文件验证的方式就不行了，但是我用Gitee的二级域名用的标签验证是可以的，所以还是直接用标签验证的这种方法比较可靠，百度和谷歌我都用的Gitee的二级域名验证成功了，就等着被收录就可以了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-            <tag> gitee </tag>
-            
-            <tag> 数据文件夹 </tag>
-            
-            <tag> 谷歌 </tag>
-            
-            <tag> 百度 </tag>
-            
-            <tag> source </tag>
-            
-            <tag> next配置 </tag>
-            
-            <tag> html标签 </tag>
-            
-            <tag> 二级域名 </tag>
-            
-            <tag> 收录 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hexo推送失败的问题解决</title>
       <link href="/Hexo/5cc57a7a/"/>
       <url>/Hexo/5cc57a7a/</url>
@@ -10859,6 +10859,136 @@
             <tag> 迅雷下载 </tag>
             
             <tag> 巨无霸 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo网站配置多个SSH-Key一起推送多个远程仓库</title>
+      <link href="/Hexo/727937ad/"/>
+      <url>/Hexo/727937ad/</url>
+      
+        <content type="html"><![CDATA[<p>我要用<code>SSH</code>密钥这种链接推送其实不是因为它方便，当然也其实很方便，只是要在不设置<code>Git</code>密码的情况下，设置<code>Git</code>密码就要每次都输密码才能推送，所以我后面设置都是留空，这样我一键推送以后就可以去做其他事了。</p><span id="more"></span><p>之前用https这个链接其实也很方便的，至于有的人说每次都要输入密码才可以，我是第一次输入过后面的推送都是不用的，因为现在的<code>win10</code>系统是可以在本地账号里面保存凭据的，有了凭据肯定是不用每次都输密码了。</p><p>所以我要换成<code>SSH</code>这种链接的推送方式不是方便和不方便的问题了，问题是<code>Github</code>不能通过<code>https</code>这种加密链接推送了，几天之前<code>Github</code>就发邮件给我说这种推送方法不能用了，当时也还没有觉得有多大的问题，后面有一天是真的就推送不了，连用了几次一键推送都是失败的，于是就下定决心在昨天把它换了。</p><p>换个推送链接说起来和做起来真的不太难，可是关键的问题是换了之后出问题了，<code>Github</code>倒是能推送上去了，但是<code>Gitee</code>这个平台的仓库就推送不上去了，当时也不知道什么原因，就想着把<code>Gitee</code>这个链接在站点配置文件里注释一下，只保留Github这个单独推送，果然单独推送确实是可以的，那么问题就只在<code>Gitee</code>这一边了。当然其实我也可以用<code>Gitee</code>这里依然保持用<code>https</code>推送，因为那样也是可以的，只是我强迫症犯了，我做事喜欢保持整齐划一，要换自然要两个都换了才行。</p><p>在网上查了一下都没有找到什么答案，最后还是去看了<code>Gitee</code>上面的帮助文档，在文档里面搜了一下关于公钥配置的问题，突然看到可以配置多个<code>SSH-Key</code>的方法：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span>. 一个Gitee</span><br><span class="line"><span class="selector-tag">b</span>. 一个Github</span><br></pre></td></tr></table></figure><p><strong>解决方法：</strong></p><p>1.生成一个<code>Gitee</code>用的<code>SSH-Key</code></p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&#x27;xxxxx@company.com&#x27;</span> -f ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之前的版本</span></span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;xxxxx@company.com&quot;</span> -f ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之后的版本</span></span><br></pre></td></tr></table></figure><p>2.生成一个<code>Github</code>用的<code>SSH-Key</code></p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&#x27;xxxxx@qq.com&#x27;</span> -f ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之前的版本</span></span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;xxxxx@qq.com&quot;</span> -f ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之后的版本</span></span><br></pre></td></tr></table></figure><p>3.在<code> ~/.ssh</code> 目录下新建一个<code>config</code>文件，添加如下内容（其中<code>Host</code>和<code>HostName</code>填写<code>git</code>服务器的域名，<code>IdentityFile</code>指定私钥的路径）。这里的<code>config</code>文件怎么创建刚开始我也是搞不懂，其实也不难，就是找到<code>~/.ssh</code>这个文件夹目录，在它里面新建一个文本文档，然后把这个文本文档的名字和后缀改成<code>config</code>，这样就创建好了这个<code>config</code>文件，然后用<code>notepad++</code>打开添加如下内容后保存。</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># gitee</span></span><br><span class="line">Host gitee.com</span><br><span class="line">HostName gitee.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment"># github</span></span><br><span class="line">Host github.com</span><br><span class="line">HostName github.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br></pre></td></tr></table></figure><p>4.添加私钥,分别按顺序输入下面的代码</p><figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ssh-agent bash</span><br><span class="line">ssh-add ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line">ssh-add ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br></pre></td></tr></table></figure><p>注意：电脑重置系统以后就算密钥还在，这几个指令也必须按顺序添加。</p><p>5.把公钥添加到远程服务器Gitee和Github<br>到这里两个平台的<code>SSH-Key</code>就配置完成了，把两个不同平台的公钥分别添加到各自的平台，用<code>notepad++</code>分别打开<code>gitee_id_rsa.pub</code>和<code>github_id_rsa.pub</code>，打开后复制到添加公钥的地方就可以。</p><p>6.用ssh命令分别测试</p><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">ssh</span> -T git<span class="variable">@gitee</span>.com</span><br><span class="line">ssh -T git<span class="variable">@github</span>.com</span><br></pre></td></tr></table></figure><p>以gitee为例，成功的话会返回下图内容<br><img data-src="/Hexo/727937ad/1.png"></p><p>7.设置推送的配置信息</p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config <span class="attr">--global</span> user<span class="selector-class">.name</span> <span class="string">&quot;yourname&quot;</span></span><br><span class="line">git config <span class="attr">--global</span> user<span class="selector-class">.email</span> <span class="string">&quot;youremail&quot;</span></span><br></pre></td></tr></table></figure><p>这里要注意<code>Gitee</code>的公钥必须要添加到个人公钥才可以，具体不能推送的问题应该也不是要配置多个<code>SSH</code>密钥的这个问题，这个报错的问题是我后面才发现的，那就是我把电脑上创建的公钥放到部署公钥那里去了，发现这个问题是因为配置了两个密钥还是不能推送，后面一看原因就是在这里，因为部署公钥只能下载不能写入，就是这个公钥只能从这里部署到其他服务器上去，而不能用这个公钥从<code>Git</code>推送写入到仓库里面。</p><p>后面才发现后面有一行如下图的小字：<br><img data-src="/Hexo/727937ad/2.png"><br>说是要添加个人公钥才能对仓库进行写操作，到这里总算搞清楚问题所在了，那就先把添加到部署公钥这个删了，点了那个蓝色一行小字，跳转过去添加个人公钥，从本地电脑<code>notepad++</code>上打开的公钥直接复制过去添加确定输入密码就可以了。</p><p>重新使用一键编译和推送，然后发现正常推送了，也不需要输入密码的操作了，是的第一次就不需要，这个确实要比<code>https</code>这种方便很多了，只要一键推送了后面的事都可以不用管了，只要它不推送失败，都没有什么问题，打开网站只要刷新一下就更新了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 更新 </tag>
+            
+            <tag> Github </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 配置文件 </tag>
+            
+            <tag> gitee </tag>
+            
+            <tag> 推送 </tag>
+            
+            <tag> win10 </tag>
+            
+            <tag> Git </tag>
+            
+            <tag> 网站配置 </tag>
+            
+            <tag> SSH-Key </tag>
+            
+            <tag> 远程仓库 </tag>
+            
+            <tag> SSH </tag>
+            
+            <tag> 密码 </tag>
+            
+            <tag> https </tag>
+            
+            <tag> 注释 </tag>
+            
+            <tag> 强迫症 </tag>
+            
+            <tag> 答案 </tag>
+            
+            <tag> 公钥配置 </tag>
+            
+            <tag> config </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Office2021的这个功能真的是创作者的福利</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/62b9cd7b/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/62b9cd7b/</url>
+      
+        <content type="html"><![CDATA[<p>每当我们不知道写什么的时候都会去看下别人写了什么，然后好借鉴一下之类的，但是在网上和手机上看了半天却发现一点有用的都没有，自己还白白浪费了时间，看得越多越发现自己的思维越混乱，到后面自己要写的什么内容更是一点头绪都没有了。</p><span id="more"></span><p>其实写作这东西真的完全借鉴不来，你看到的只是别人用文字表达出来的表面现象，你无法深入的去揣测别人的思维，单纯的去看下别人写了什么，在你的思维之中没有这个映像，那借鉴来的东西自己也不知道怎么去消化理解。</p><p>消化理解层面都没有做到，那用其来作为自己的创作思维的源泉也更是不可能了，所以这个时候要做的不是不停的去借鉴别人的文字，而是自己静下心来，这个方法其实就是专注，对的只有专注的去做一件事这件事真的才能做好。</p><p>包括现在流行提倡的工匠精神之类的，都是需要专注一件事去做了，才会出成就的，所以写作更是要专注，只有自己专注了自己才能将自己要表达的东西通过文字很好的表述出来，如果不专注那么自己的思维都是东想一点西想一些的，写出来的文章和句子都是上下文不能衔接的，更不可能说还有什么可读的美感了。</p><p>写了这么多既然写的是专注这件事，自然是离不开写作工具啊，我一直以来都是用的Word来写文章，然后再复制粘贴发到其他平台上去，好处就是我可以按照自己的思维去写好一篇文章，而不会被其他不相干的事物所干扰自己的思维，思维这东西真的很重要，前一秒刚想到的东西，如果不及时写出来，下一秒可能都不记得自己想的是什么了。</p><p>这个功能也是我用Office2021的Word写文章之后才发现的，它就是专注模式，用Word写文章的时候只要点一下专注模式这个按钮，那么屏幕多余的部分就会变成黑屏，只保留文字编辑区这一块，因为看不到其他的东西，也不会造成自己分心，所以写作速度和质量都会有一个意想不到的提升，自己思维不被外物所干扰，那表述得肯定是更完整。</p><p>用了这个功能就不用担心自己写了多少字了，其实一直看自己写了多少字对自己的写作是一点用都没有的，因为看着那个字数自己就会感觉满足了，然后就不想写了，也想不出来还要写些什么来把这件事补充得更完整这类的了，还有的时候明明知道自己是必须要写那么多字才能达到自己的要求的，但是快到了还差一两百字的时候，突然的发现自己江郎才尽了，估计很多人写作的过程中都会出现这样的尴尬情况。</p><p>产生这种情况都是由于自己不够专注于自己写作的本身，心思被外物勾去了所导致的，对于这种情况的改善方法其实只有一个，那就是让自己更加专注于写作，写自己能够想到的，写自己的想法就对了，写作的本身也不过就是如此，写自己所想，要是写别人的想法那还叫创作吗？</p><p>每个人的想法都不一样自然写出来的文章也是不一样的，因为思维的千千万万，所以写出来的文字才有了不同的乐趣，如果一味的靠借鉴模仿，那这样写出的东西没有一点灵魂。就比如很多电影一样，只是换了汤药配方还是别人的配方，这样的作品怎么好意思说是自己的作品，真的是当观众的眼瞎的吗，就算不会看的人看多了都会明白其中的意味。</p><p>所以专注很重要，专注的去写自己的作品更重要，自己写得好不好那是另外的一回事，和写的是不是自己的想法那就是天壤之别的另外一回事了，对于写作时不够专注的，用了这个功能不能说百分百治愈了，但是也会事半功倍了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Office2021 </tag>
+            
+            <tag> 功能 </tag>
+            
+            <tag> 创作者 </tag>
+            
+            <tag> 福利 </tag>
+            
+            <tag> 借鉴 </tag>
+            
+            <tag> 看得越多 </tag>
+            
+            <tag> 头绪 </tag>
+            
+            <tag> 映像 </tag>
+            
+            <tag> 专注 </tag>
+            
+            <tag> 消化理解 </tag>
+            
+            <tag> 上下文 </tag>
+            
+            <tag> 美感 </tag>
+            
+            <tag> 复制粘贴 </tag>
+            
+            <tag> 衔接 </tag>
+            
+            <tag> Word </tag>
+            
+            <tag> 黑屏 </tag>
+            
+            <tag> 文字编辑区 </tag>
+            
+            <tag> 专注模式 </tag>
+            
+            <tag> 字数 </tag>
+            
+            <tag> 思维 </tag>
+            
+            <tag> 乐趣 </tag>
+            
+            <tag> 天壤之别 </tag>
+            
+            <tag> 事半功倍 </tag>
             
         </tags>
       
@@ -10994,67 +11124,6 @@
     
     
     <entry>
-      <title>Hexo网站配置多个SSH-Key一起推送多个远程仓库</title>
-      <link href="/Hexo/727937ad/"/>
-      <url>/Hexo/727937ad/</url>
-      
-        <content type="html"><![CDATA[<p>我要用<code>SSH</code>密钥这种链接推送其实不是因为它方便，当然也其实很方便，只是要在不设置<code>Git</code>密码的情况下，设置<code>Git</code>密码就要每次都输密码才能推送，所以我后面设置都是留空，这样我一键推送以后就可以去做其他事了。</p><span id="more"></span><p>之前用https这个链接其实也很方便的，至于有的人说每次都要输入密码才可以，我是第一次输入过后面的推送都是不用的，因为现在的<code>win10</code>系统是可以在本地账号里面保存凭据的，有了凭据肯定是不用每次都输密码了。</p><p>所以我要换成<code>SSH</code>这种链接的推送方式不是方便和不方便的问题了，问题是<code>Github</code>不能通过<code>https</code>这种加密链接推送了，几天之前<code>Github</code>就发邮件给我说这种推送方法不能用了，当时也还没有觉得有多大的问题，后面有一天是真的就推送不了，连用了几次一键推送都是失败的，于是就下定决心在昨天把它换了。</p><p>换个推送链接说起来和做起来真的不太难，可是关键的问题是换了之后出问题了，<code>Github</code>倒是能推送上去了，但是<code>Gitee</code>这个平台的仓库就推送不上去了，当时也不知道什么原因，就想着把<code>Gitee</code>这个链接在站点配置文件里注释一下，只保留Github这个单独推送，果然单独推送确实是可以的，那么问题就只在<code>Gitee</code>这一边了。当然其实我也可以用<code>Gitee</code>这里依然保持用<code>https</code>推送，因为那样也是可以的，只是我强迫症犯了，我做事喜欢保持整齐划一，要换自然要两个都换了才行。</p><p>在网上查了一下都没有找到什么答案，最后还是去看了<code>Gitee</code>上面的帮助文档，在文档里面搜了一下关于公钥配置的问题，突然看到可以配置多个<code>SSH-Key</code>的方法：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span>. 一个Gitee</span><br><span class="line"><span class="selector-tag">b</span>. 一个Github</span><br></pre></td></tr></table></figure><p><strong>解决方法：</strong></p><p>1.生成一个<code>Gitee</code>用的<code>SSH-Key</code></p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&#x27;xxxxx@company.com&#x27;</span> -f ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之前的版本</span></span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;xxxxx@company.com&quot;</span> -f ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之后的版本</span></span><br></pre></td></tr></table></figure><p>2.生成一个<code>Github</code>用的<code>SSH-Key</code></p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&#x27;xxxxx@qq.com&#x27;</span> -f ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之前的版本</span></span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;xxxxx@qq.com&quot;</span> -f ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之后的版本</span></span><br></pre></td></tr></table></figure><p>3.在<code> ~/.ssh</code> 目录下新建一个<code>config</code>文件，添加如下内容（其中<code>Host</code>和<code>HostName</code>填写<code>git</code>服务器的域名，<code>IdentityFile</code>指定私钥的路径）。这里的<code>config</code>文件怎么创建刚开始我也是搞不懂，其实也不难，就是找到<code>~/.ssh</code>这个文件夹目录，在它里面新建一个文本文档，然后把这个文本文档的名字和后缀改成<code>config</code>，这样就创建好了这个<code>config</code>文件，然后用<code>notepad++</code>打开添加如下内容后保存。</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># gitee</span></span><br><span class="line">Host gitee.com</span><br><span class="line">HostName gitee.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment"># github</span></span><br><span class="line">Host github.com</span><br><span class="line">HostName github.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br></pre></td></tr></table></figure><p>4.添加私钥,分别按顺序输入下面的代码</p><figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ssh-agent bash</span><br><span class="line">ssh-add ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line">ssh-add ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br></pre></td></tr></table></figure><p>注意：电脑重置系统以后就算密钥还在，这几个指令也必须按顺序添加。</p><p>5.把公钥添加到远程服务器Gitee和Github<br>到这里两个平台的<code>SSH-Key</code>就配置完成了，把两个不同平台的公钥分别添加到各自的平台，用<code>notepad++</code>分别打开<code>gitee_id_rsa.pub</code>和<code>github_id_rsa.pub</code>，打开后复制到添加公钥的地方就可以。</p><p>6.用ssh命令分别测试</p><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">ssh</span> -T git<span class="variable">@gitee</span>.com</span><br><span class="line">ssh -T git<span class="variable">@github</span>.com</span><br></pre></td></tr></table></figure><p>以gitee为例，成功的话会返回下图内容<br><img data-src="/Hexo/727937ad/1.png"></p><p>7.设置推送的配置信息</p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config <span class="attr">--global</span> user<span class="selector-class">.name</span> <span class="string">&quot;yourname&quot;</span></span><br><span class="line">git config <span class="attr">--global</span> user<span class="selector-class">.email</span> <span class="string">&quot;youremail&quot;</span></span><br></pre></td></tr></table></figure><p>这里要注意<code>Gitee</code>的公钥必须要添加到个人公钥才可以，具体不能推送的问题应该也不是要配置多个<code>SSH</code>密钥的这个问题，这个报错的问题是我后面才发现的，那就是我把电脑上创建的公钥放到部署公钥那里去了，发现这个问题是因为配置了两个密钥还是不能推送，后面一看原因就是在这里，因为部署公钥只能下载不能写入，就是这个公钥只能从这里部署到其他服务器上去，而不能用这个公钥从<code>Git</code>推送写入到仓库里面。</p><p>后面才发现后面有一行如下图的小字：<br><img data-src="/Hexo/727937ad/2.png"><br>说是要添加个人公钥才能对仓库进行写操作，到这里总算搞清楚问题所在了，那就先把添加到部署公钥这个删了，点了那个蓝色一行小字，跳转过去添加个人公钥，从本地电脑<code>notepad++</code>上打开的公钥直接复制过去添加确定输入密码就可以了。</p><p>重新使用一键编译和推送，然后发现正常推送了，也不需要输入密码的操作了，是的第一次就不需要，这个确实要比<code>https</code>这种方便很多了，只要一键推送了后面的事都可以不用管了，只要它不推送失败，都没有什么问题，打开网站只要刷新一下就更新了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 更新 </tag>
-            
-            <tag> Github </tag>
-            
-            <tag> Hexo </tag>
-            
-            <tag> 配置文件 </tag>
-            
-            <tag> 推送 </tag>
-            
-            <tag> gitee </tag>
-            
-            <tag> win10 </tag>
-            
-            <tag> Git </tag>
-            
-            <tag> 网站配置 </tag>
-            
-            <tag> SSH-Key </tag>
-            
-            <tag> 远程仓库 </tag>
-            
-            <tag> SSH </tag>
-            
-            <tag> 密码 </tag>
-            
-            <tag> https </tag>
-            
-            <tag> 注释 </tag>
-            
-            <tag> 强迫症 </tag>
-            
-            <tag> 答案 </tag>
-            
-            <tag> 公钥配置 </tag>
-            
-            <tag> config </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>《白发》中的启皇容齐才是漫夭的初恋</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/c34fd0/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/c34fd0/</url>
@@ -11171,6 +11240,65 @@
     
     
     <entry>
+      <title>《红楼梦》晴雯之死</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/215f096a/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/215f096a/</url>
+      
+        <content type="html"><![CDATA[<p>晴雯这个丫鬟不仅仅是因为她的名字读起来朗朗上口让人映像深刻，还因为其实在书中写到她是贾宝玉身边最漂亮的丫鬟，在书中曾写到她的身段和颜值都要比袭人高出了很多。在她死后贾宝玉为她写了一篇祭祀她的文章，这篇祭文他写得情深意重而不落俗套。从贾宝玉在她死后祭祀她所写的这篇文章可以看出她在贾宝玉心中的位置也是挺重要的，贾宝玉也是因为这篇文章打破了世人都说他不爱读书的传言，若是他这样能写出如此情深意切的文章的人都算是不爱读书的人，那贾府中还有会读书的人吗。</p><span id="more"></span><p>晴雯的死亡说明贾家两府已经开始走向衰败了，其实能挨到这样几年才出现衰败之象已经很不容易了，从小说一开始的几章贾雨村就已经听人说贾府已经有衰败之象。能挨到过了几年才遣散府里的丫鬟下人来节约开支确实是真不容易，这其实也得多亏了林黛玉在她父亲过世后带进贾府的那些家产，如此才没有导致贾府那么快的落寞。</p><p>林黛玉他父亲生前是两江巡盐御史，这在当时本身就是个肥差，这其中的道理所有人都懂，要说她家没有钱那肯定是不可能的，以林黛玉的才华加上她家富有的家产如果她不进贾府，那她肯定可以成为富甲一方的富姐。贾府利用表面的亲情忽悠了她这个无知而善良的少女，最后都把她从家里带来的财产挥霍一空了，而她却全然不知。</p><p>同样是贾府的亲戚论才华诗词歌赋这些薛宝钗比不过林黛玉，但论智谋她却不及薛宝钗的十分之一，而贾府对待她和薛宝钗的态度上也是不同的，除了贾母对待她们都一样之外，在王夫人和凤姐这里却是有着天壤之别，在凤姐掌握了贾府的大权之后王家在贾府的势力可以说是达到了顶峰，就拿有一次因为一个丫鬟在园中草丛里捡到一个看了让人害羞的玩具，然后王夫人就愤怒了，以为是凤姐落下的，之后就开始搜检贾府各处了，但有一个很有意思的是林黛玉的房间被搜了，但是薛宝钗的房间凤姐以她是贾府的亲戚而不让下人去搜了，这里说明凤姐她这个人很偏私的，难道林黛玉就不是贾府的亲戚了吗。薛宝钗也很聪明知道头天晚上没有搜她院子，第二天就以要为她哥哥薛蟠置办婚礼很忙为由而搬出去了。</p><p>凤姐的嚣张多半是王家势力的崛起，因为她的堂叔也就是贾宝玉的舅舅是京营节度使，手中掌握着防守京都安全的兵力，贾家虽然也是明朝的开国功臣，也曾是立下汗马功劳的一代武将，但是到了贾政这一代他家在朝中的势力已经只剩下文官和一个皇妃了，朝中的武将已经没有贾府的身影了，文官自然是比不上武将那么有实力和话语权的。</p><p>说起贾家两府的衰败其实和凤姐她也没有关系她这么嚣张也只能跟她同一辈的人嚣张，衰败的缘由其实还是在贾政和贾赦身上，因为就在贾元春被选为皇妃后，他家搞了一个大工程，而此时正是林黛玉来到贾府才不久，很明显他们用来搞这个大工程也就是省亲别院的钱是用的林黛玉带来的家产，果然花别人的钱就是不觉得心痛，连当时的皇妃贾元春都觉得她家搞的这个大工程太过于铺张浪费了，这一个大工程基本上花完了林黛玉带进贾府的家产。</p><p>到晴雯去世这一章时，贾赦像是已经走投无路了，他把自己女儿的婚姻当成了还债的牺牲品，就因为欠下人家的五千两银子，一个很有名望的大富人家已经沦落至此了，有的只是表面的繁华还在苦撑着，其实里子早已经被掏空了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 红楼梦 </tag>
+            
+            <tag> 晴雯 </tag>
+            
+            <tag> 丫鬟 </tag>
+            
+            <tag> 贾宝玉 </tag>
+            
+            <tag> 身段 </tag>
+            
+            <tag> 颜值 </tag>
+            
+            <tag> 情深意切 </tag>
+            
+            <tag> 衰败 </tag>
+            
+            <tag> 落寞 </tag>
+            
+            <tag> 富甲一方 </tag>
+            
+            <tag> 诗词歌赋 </tag>
+            
+            <tag> 薛宝钗 </tag>
+            
+            <tag> 贾母 </tag>
+            
+            <tag> 薛蟠 </tag>
+            
+            <tag> 话语权 </tag>
+            
+            <tag> 缘由 </tag>
+            
+            <tag> 贾府 </tag>
+            
+            <tag> 掏空 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>《金刚川》真的是一部战争电影的佳作</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/af2caa05/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/af2caa05/</url>
@@ -11253,6 +11381,41 @@
     
     
     <entry>
+      <title>一年的最后一个月</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/12826749/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/12826749/</url>
+      
+        <content type="html"><![CDATA[<p>如今已经到了12月了，这一年又是这样被浪费掉了，过完这个月就到了2021年了，时间每到这时就觉得突然的变快了许多。</p><span id="more"></span><p>还记得春天的时候只觉得这一年才刚刚开始，如今已是12月，说快不快的这岁月一瞬之间就划了过去。</p><p>就如滑动一根火柴一样，来得瞬时去时也无影，好多年初的想法，也只是成了想法，只留在大脑里面的没有办法去实现的想法，也许是自己想得太过于简单，一年复一年不都是这样走过去了吗，已去的岁月之中从来也没有什么奇迹出现过。</p><p>感叹时光消逝得太快，又愿望未来不及于己，生活总是如此反复着交替着。年复一年日复一日，自己的想法总是的那么千奇百怪。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 一年 </tag>
+            
+            <tag> 最后 </tag>
+            
+            <tag> 变快了 </tag>
+            
+            <tag> 火柴 </tag>
+            
+            <tag> 生活 </tag>
+            
+            <tag> 想法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>一款免费的文件传输系统，青阳网络文件传输系统kiftd</title>
       <link href="/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/8750236c/"/>
       <url>/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/8750236c/</url>
@@ -11288,41 +11451,6 @@
             <tag> MP4 </tag>
             
             <tag> 手机内存空间 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>一年的最后一个月</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/12826749/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/12826749/</url>
-      
-        <content type="html"><![CDATA[<p>如今已经到了12月了，这一年又是这样被浪费掉了，过完这个月就到了2021年了，时间每到这时就觉得突然的变快了许多。</p><span id="more"></span><p>还记得春天的时候只觉得这一年才刚刚开始，如今已是12月，说快不快的这岁月一瞬之间就划了过去。</p><p>就如滑动一根火柴一样，来得瞬时去时也无影，好多年初的想法，也只是成了想法，只留在大脑里面的没有办法去实现的想法，也许是自己想得太过于简单，一年复一年不都是这样走过去了吗，已去的岁月之中从来也没有什么奇迹出现过。</p><p>感叹时光消逝得太快，又愿望未来不及于己，生活总是如此反复着交替着。年复一年日复一日，自己的想法总是的那么千奇百怪。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 一年 </tag>
-            
-            <tag> 最后 </tag>
-            
-            <tag> 变快了 </tag>
-            
-            <tag> 火柴 </tag>
-            
-            <tag> 生活 </tag>
-            
-            <tag> 想法 </tag>
             
         </tags>
       
@@ -11507,6 +11635,8 @@
       
         <tags>
             
+            <tag> 思维 </tag>
+            
             <tag> 想法 </tag>
             
             <tag> 写文 </tag>
@@ -11516,8 +11646,6 @@
             <tag> 日更挑战 </tag>
             
             <tag> 心情感受 </tag>
-            
-            <tag> 思维 </tag>
             
             <tag> 剧情 </tag>
             
@@ -11530,75 +11658,6 @@
             <tag> 写作理论 </tag>
             
             <tag> 旁观者 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Office2021的这个功能真的是创作者的福利</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/62b9cd7b/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/62b9cd7b/</url>
-      
-        <content type="html"><![CDATA[<p>每当我们不知道写什么的时候都会去看下别人写了什么，然后好借鉴一下之类的，但是在网上和手机上看了半天却发现一点有用的都没有，自己还白白浪费了时间，看得越多越发现自己的思维越混乱，到后面自己要写的什么内容更是一点头绪都没有了。</p><span id="more"></span><p>其实写作这东西真的完全借鉴不来，你看到的只是别人用文字表达出来的表面现象，你无法深入的去揣测别人的思维，单纯的去看下别人写了什么，在你的思维之中没有这个映像，那借鉴来的东西自己也不知道怎么去消化理解。</p><p>消化理解层面都没有做到，那用其来作为自己的创作思维的源泉也更是不可能了，所以这个时候要做的不是不停的去借鉴别人的文字，而是自己静下心来，这个方法其实就是专注，对的只有专注的去做一件事这件事真的才能做好。</p><p>包括现在流行提倡的工匠精神之类的，都是需要专注一件事去做了，才会出成就的，所以写作更是要专注，只有自己专注了自己才能将自己要表达的东西通过文字很好的表述出来，如果不专注那么自己的思维都是东想一点西想一些的，写出来的文章和句子都是上下文不能衔接的，更不可能说还有什么可读的美感了。</p><p>写了这么多既然写的是专注这件事，自然是离不开写作工具啊，我一直以来都是用的Word来写文章，然后再复制粘贴发到其他平台上去，好处就是我可以按照自己的思维去写好一篇文章，而不会被其他不相干的事物所干扰自己的思维，思维这东西真的很重要，前一秒刚想到的东西，如果不及时写出来，下一秒可能都不记得自己想的是什么了。</p><p>这个功能也是我用Office2021的Word写文章之后才发现的，它就是专注模式，用Word写文章的时候只要点一下专注模式这个按钮，那么屏幕多余的部分就会变成黑屏，只保留文字编辑区这一块，因为看不到其他的东西，也不会造成自己分心，所以写作速度和质量都会有一个意想不到的提升，自己思维不被外物所干扰，那表述得肯定是更完整。</p><p>用了这个功能就不用担心自己写了多少字了，其实一直看自己写了多少字对自己的写作是一点用都没有的，因为看着那个字数自己就会感觉满足了，然后就不想写了，也想不出来还要写些什么来把这件事补充得更完整这类的了，还有的时候明明知道自己是必须要写那么多字才能达到自己的要求的，但是快到了还差一两百字的时候，突然的发现自己江郎才尽了，估计很多人写作的过程中都会出现这样的尴尬情况。</p><p>产生这种情况都是由于自己不够专注于自己写作的本身，心思被外物勾去了所导致的，对于这种情况的改善方法其实只有一个，那就是让自己更加专注于写作，写自己能够想到的，写自己的想法就对了，写作的本身也不过就是如此，写自己所想，要是写别人的想法那还叫创作吗？</p><p>每个人的想法都不一样自然写出来的文章也是不一样的，因为思维的千千万万，所以写出来的文字才有了不同的乐趣，如果一味的靠借鉴模仿，那这样写出的东西没有一点灵魂。就比如很多电影一样，只是换了汤药配方还是别人的配方，这样的作品怎么好意思说是自己的作品，真的是当观众的眼瞎的吗，就算不会看的人看多了都会明白其中的意味。</p><p>所以专注很重要，专注的去写自己的作品更重要，自己写得好不好那是另外的一回事，和写的是不是自己的想法那就是天壤之别的另外一回事了，对于写作时不够专注的，用了这个功能不能说百分百治愈了，但是也会事半功倍了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 思维 </tag>
-            
-            <tag> Office2021 </tag>
-            
-            <tag> 功能 </tag>
-            
-            <tag> 创作者 </tag>
-            
-            <tag> 福利 </tag>
-            
-            <tag> 借鉴 </tag>
-            
-            <tag> 看得越多 </tag>
-            
-            <tag> 头绪 </tag>
-            
-            <tag> 映像 </tag>
-            
-            <tag> 专注 </tag>
-            
-            <tag> 消化理解 </tag>
-            
-            <tag> 上下文 </tag>
-            
-            <tag> 美感 </tag>
-            
-            <tag> 复制粘贴 </tag>
-            
-            <tag> 衔接 </tag>
-            
-            <tag> Word </tag>
-            
-            <tag> 黑屏 </tag>
-            
-            <tag> 文字编辑区 </tag>
-            
-            <tag> 专注模式 </tag>
-            
-            <tag> 字数 </tag>
-            
-            <tag> 乐趣 </tag>
-            
-            <tag> 天壤之别 </tag>
-            
-            <tag> 事半功倍 </tag>
             
         </tags>
       
@@ -11776,65 +11835,6 @@
             <tag> 微笑 </tag>
             
             <tag> 身后 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>《红楼梦》晴雯之死</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/215f096a/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/215f096a/</url>
-      
-        <content type="html"><![CDATA[<p>晴雯这个丫鬟不仅仅是因为她的名字读起来朗朗上口让人映像深刻，还因为其实在书中写到她是贾宝玉身边最漂亮的丫鬟，在书中曾写到她的身段和颜值都要比袭人高出了很多。在她死后贾宝玉为她写了一篇祭祀她的文章，这篇祭文他写得情深意重而不落俗套。从贾宝玉在她死后祭祀她所写的这篇文章可以看出她在贾宝玉心中的位置也是挺重要的，贾宝玉也是因为这篇文章打破了世人都说他不爱读书的传言，若是他这样能写出如此情深意切的文章的人都算是不爱读书的人，那贾府中还有会读书的人吗。</p><span id="more"></span><p>晴雯的死亡说明贾家两府已经开始走向衰败了，其实能挨到这样几年才出现衰败之象已经很不容易了，从小说一开始的几章贾雨村就已经听人说贾府已经有衰败之象。能挨到过了几年才遣散府里的丫鬟下人来节约开支确实是真不容易，这其实也得多亏了林黛玉在她父亲过世后带进贾府的那些家产，如此才没有导致贾府那么快的落寞。</p><p>林黛玉他父亲生前是两江巡盐御史，这在当时本身就是个肥差，这其中的道理所有人都懂，要说她家没有钱那肯定是不可能的，以林黛玉的才华加上她家富有的家产如果她不进贾府，那她肯定可以成为富甲一方的富姐。贾府利用表面的亲情忽悠了她这个无知而善良的少女，最后都把她从家里带来的财产挥霍一空了，而她却全然不知。</p><p>同样是贾府的亲戚论才华诗词歌赋这些薛宝钗比不过林黛玉，但论智谋她却不及薛宝钗的十分之一，而贾府对待她和薛宝钗的态度上也是不同的，除了贾母对待她们都一样之外，在王夫人和凤姐这里却是有着天壤之别，在凤姐掌握了贾府的大权之后王家在贾府的势力可以说是达到了顶峰，就拿有一次因为一个丫鬟在园中草丛里捡到一个看了让人害羞的玩具，然后王夫人就愤怒了，以为是凤姐落下的，之后就开始搜检贾府各处了，但有一个很有意思的是林黛玉的房间被搜了，但是薛宝钗的房间凤姐以她是贾府的亲戚而不让下人去搜了，这里说明凤姐她这个人很偏私的，难道林黛玉就不是贾府的亲戚了吗。薛宝钗也很聪明知道头天晚上没有搜她院子，第二天就以要为她哥哥薛蟠置办婚礼很忙为由而搬出去了。</p><p>凤姐的嚣张多半是王家势力的崛起，因为她的堂叔也就是贾宝玉的舅舅是京营节度使，手中掌握着防守京都安全的兵力，贾家虽然也是明朝的开国功臣，也曾是立下汗马功劳的一代武将，但是到了贾政这一代他家在朝中的势力已经只剩下文官和一个皇妃了，朝中的武将已经没有贾府的身影了，文官自然是比不上武将那么有实力和话语权的。</p><p>说起贾家两府的衰败其实和凤姐她也没有关系她这么嚣张也只能跟她同一辈的人嚣张，衰败的缘由其实还是在贾政和贾赦身上，因为就在贾元春被选为皇妃后，他家搞了一个大工程，而此时正是林黛玉来到贾府才不久，很明显他们用来搞这个大工程也就是省亲别院的钱是用的林黛玉带来的家产，果然花别人的钱就是不觉得心痛，连当时的皇妃贾元春都觉得她家搞的这个大工程太过于铺张浪费了，这一个大工程基本上花完了林黛玉带进贾府的家产。</p><p>到晴雯去世这一章时，贾赦像是已经走投无路了，他把自己女儿的婚姻当成了还债的牺牲品，就因为欠下人家的五千两银子，一个很有名望的大富人家已经沦落至此了，有的只是表面的繁华还在苦撑着，其实里子早已经被掏空了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 情感美文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 红楼梦 </tag>
-            
-            <tag> 晴雯 </tag>
-            
-            <tag> 丫鬟 </tag>
-            
-            <tag> 贾宝玉 </tag>
-            
-            <tag> 身段 </tag>
-            
-            <tag> 颜值 </tag>
-            
-            <tag> 情深意切 </tag>
-            
-            <tag> 衰败 </tag>
-            
-            <tag> 落寞 </tag>
-            
-            <tag> 富甲一方 </tag>
-            
-            <tag> 诗词歌赋 </tag>
-            
-            <tag> 薛宝钗 </tag>
-            
-            <tag> 贾母 </tag>
-            
-            <tag> 薛蟠 </tag>
-            
-            <tag> 话语权 </tag>
-            
-            <tag> 缘由 </tag>
-            
-            <tag> 贾府 </tag>
-            
-            <tag> 掏空 </tag>
             
         </tags>
       
@@ -12047,13 +12047,13 @@
             
             <tag> 电子产品 </tag>
             
+            <tag> 蓝牙键盘 </tag>
+            
             <tag> 吃灰 </tag>
             
             <tag> 淘宝 </tag>
             
             <tag> iPad </tag>
-            
-            <tag> 蓝牙键盘 </tag>
             
             <tag> 电池 </tag>
             
@@ -12272,59 +12272,6 @@
     
     
     <entry>
-      <title>人力资源管理（一）一考通简答题1</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/422c79b9/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/422c79b9/</url>
-      
-        <content type="html"><![CDATA[<h2 id="三、简答题"><a href="#三、简答题" class="headerlink" title="三、简答题"></a>三、简答题</h2><p><strong>31.(2P86)简述亚当斯公平理论界定的员工由于不公平感而产生的可能行为。</strong></p><p>答: </p><p>(1).改变投人。</p><p>(2).改变产出。</p><p>(3).认知扭曲。</p><p>(4).离开。</p><p>(5).作用于他人。</p><p>(6).改变比较对象。</p><span id="more"></span><p><strong>32.(4P144)简述人力资源战略规划编制的层次。</strong></p><p>答: </p><p>(1).长期战略性人力资源战略规划。</p><p>(2).短期经营性人力资源战略规划。</p><p>(3).人力资源战略规划的实施、控制与评价。</p><p><strong>33.(6P191)简述无领导小组讨论中对被测评者评分的标准。</strong></p><p>答: </p><p>(1).发言次数的多少。</p><p>(2).是否善于提出新的见解和方案、敢于发表不同意见、支持或肯定别人的意见、坚持自己的正确意见。</p><p>(3).是否善于消除紧张气氛、说服别人、调节争议问题。</p><p>(4).创造一个使不愿开口的人也想发言的气氛,把众人的意见引向一致。</p><p>(5).能否倾听他人的意见,是否尊重他人，是否侵犯他人的发言权等。</p><p><strong>34.(7P209)简述员工培训需求分析的层次。</strong></p><p>答：</p><p>(1).组织层次。</p><p>(2).岗位层次。</p><p>(3).个人层次。</p><p><strong>35.(9P270)简述薪酬结构的类型。</strong></p><p>答：</p><p>(1).以员工岗位为基础的薪酬结构。包括居于岗位内容的薪酬结构和基于岗位价值的薪酬结构。</p><p>(2).基于任职者的薪酬结构。包括基于任职者技能的薪酬结构和基于任职者能力的薪酬结构。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 岗位 </tag>
-            
-            <tag> 公平理论 </tag>
-            
-            <tag> 人力资源 </tag>
-            
-            <tag> 战略规划 </tag>
-            
-            <tag> 编制 </tag>
-            
-            <tag> 无领导 </tag>
-            
-            <tag> 小组讨论 </tag>
-            
-            <tag> 员工培训 </tag>
-            
-            <tag> 需求分析 </tag>
-            
-            <tag> 薪酬结构 </tag>
-            
-            <tag> 类型 </tag>
-            
-            <tag> 亚当斯 </tag>
-            
-            <tag> 经营性 </tag>
-            
-            <tag> 发言 </tag>
-            
-            <tag> 测评者 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>人力资源管理（一）一考通案例分析题2</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2fdc7711/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2fdc7711/</url>
@@ -12374,6 +12321,59 @@
             <tag> 最佳效果 </tag>
             
             <tag> 真诚 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>人力资源管理（一）一考通简答题1</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/422c79b9/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/422c79b9/</url>
+      
+        <content type="html"><![CDATA[<h2 id="三、简答题"><a href="#三、简答题" class="headerlink" title="三、简答题"></a>三、简答题</h2><p><strong>31.(2P86)简述亚当斯公平理论界定的员工由于不公平感而产生的可能行为。</strong></p><p>答: </p><p>(1).改变投人。</p><p>(2).改变产出。</p><p>(3).认知扭曲。</p><p>(4).离开。</p><p>(5).作用于他人。</p><p>(6).改变比较对象。</p><span id="more"></span><p><strong>32.(4P144)简述人力资源战略规划编制的层次。</strong></p><p>答: </p><p>(1).长期战略性人力资源战略规划。</p><p>(2).短期经营性人力资源战略规划。</p><p>(3).人力资源战略规划的实施、控制与评价。</p><p><strong>33.(6P191)简述无领导小组讨论中对被测评者评分的标准。</strong></p><p>答: </p><p>(1).发言次数的多少。</p><p>(2).是否善于提出新的见解和方案、敢于发表不同意见、支持或肯定别人的意见、坚持自己的正确意见。</p><p>(3).是否善于消除紧张气氛、说服别人、调节争议问题。</p><p>(4).创造一个使不愿开口的人也想发言的气氛,把众人的意见引向一致。</p><p>(5).能否倾听他人的意见,是否尊重他人，是否侵犯他人的发言权等。</p><p><strong>34.(7P209)简述员工培训需求分析的层次。</strong></p><p>答：</p><p>(1).组织层次。</p><p>(2).岗位层次。</p><p>(3).个人层次。</p><p><strong>35.(9P270)简述薪酬结构的类型。</strong></p><p>答：</p><p>(1).以员工岗位为基础的薪酬结构。包括居于岗位内容的薪酬结构和基于岗位价值的薪酬结构。</p><p>(2).基于任职者的薪酬结构。包括基于任职者技能的薪酬结构和基于任职者能力的薪酬结构。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 岗位 </tag>
+            
+            <tag> 公平理论 </tag>
+            
+            <tag> 人力资源 </tag>
+            
+            <tag> 战略规划 </tag>
+            
+            <tag> 编制 </tag>
+            
+            <tag> 无领导 </tag>
+            
+            <tag> 小组讨论 </tag>
+            
+            <tag> 员工培训 </tag>
+            
+            <tag> 需求分析 </tag>
+            
+            <tag> 薪酬结构 </tag>
+            
+            <tag> 类型 </tag>
+            
+            <tag> 亚当斯 </tag>
+            
+            <tag> 经营性 </tag>
+            
+            <tag> 发言 </tag>
+            
+            <tag> 测评者 </tag>
             
         </tags>
       
@@ -12601,6 +12601,41 @@
     
     
     <entry>
+      <title>人力资源管理（一）自考通论述题1</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/52e18ab8/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/52e18ab8/</url>
+      
+        <content type="html"><![CDATA[<h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="四、论述题"><a href="#四、论述题" class="headerlink" title="四、论述题"></a>四、论述题</h2><p><strong>36.如何进行绩效反馈面谈? (P239-240)</strong></p><p>答:绩效反馈有正式的绩效反馈和非正式的绩效反馈，以及口头绩效反馈和书面绩效反馈等不同形式。其中在绩效考核之后所进行的绩效反馈面谈是一种重要和有效的绩效反馈形式。</p><span id="more"></span><p>(1). 绩效反馈面谈的准备。为了有效地进行绩效反馈面谈。在面谈之前管理者和员工双方都要进行充分的准备。这种面谈前的准备包括:面谈时间、面谈场所和面谈所需资料的准备。</p><p>(2). 应注意的问题有:</p><p>  ①. 确定好面谈目的;<br>  ②. 面谈内容要具体;<br>  ③. 肯定员工的优点与进步;<br>  ④. 尽量减少批评;<br>  ⑤. 鼓励员工积极参与面谈过程;<br>  ⑥. 避免冲突与对抗;<br>  ⑦. 重点放在问题的解决上;<br>  ⑧. 制定具体的绩效改善目标。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 绩效反馈 </tag>
+            
+            <tag> 面谈 </tag>
+            
+            <tag> 资料 </tag>
+            
+            <tag> 问题 </tag>
+            
+            <tag> 正式 </tag>
+            
+            <tag> 考核 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>人力资源管理(一)自考通错题集1</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d84e05fc/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d84e05fc/</url>
@@ -12654,41 +12689,6 @@
             <tag> 思维方式 </tag>
             
             <tag> 显著特征 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>人力资源管理（一）自考通论述题1</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/52e18ab8/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/52e18ab8/</url>
-      
-        <content type="html"><![CDATA[<h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="四、论述题"><a href="#四、论述题" class="headerlink" title="四、论述题"></a>四、论述题</h2><p><strong>36.如何进行绩效反馈面谈? (P239-240)</strong></p><p>答:绩效反馈有正式的绩效反馈和非正式的绩效反馈，以及口头绩效反馈和书面绩效反馈等不同形式。其中在绩效考核之后所进行的绩效反馈面谈是一种重要和有效的绩效反馈形式。</p><span id="more"></span><p>(1). 绩效反馈面谈的准备。为了有效地进行绩效反馈面谈。在面谈之前管理者和员工双方都要进行充分的准备。这种面谈前的准备包括:面谈时间、面谈场所和面谈所需资料的准备。</p><p>(2). 应注意的问题有:</p><p>  ①. 确定好面谈目的;<br>  ②. 面谈内容要具体;<br>  ③. 肯定员工的优点与进步;<br>  ④. 尽量减少批评;<br>  ⑤. 鼓励员工积极参与面谈过程;<br>  ⑥. 避免冲突与对抗;<br>  ⑦. 重点放在问题的解决上;<br>  ⑧. 制定具体的绩效改善目标。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 绩效反馈 </tag>
-            
-            <tag> 面谈 </tag>
-            
-            <tag> 资料 </tag>
-            
-            <tag> 问题 </tag>
-            
-            <tag> 正式 </tag>
-            
-            <tag> 考核 </tag>
             
         </tags>
       
@@ -13381,6 +13381,45 @@
     
     
     <entry>
+      <title>今天是除夕，去菜场买菜去晚了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dd80ab00/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dd80ab00/</url>
+      
+        <content type="html"><![CDATA[<p>我下午三点钟去的买肉的都没有了，只剩两个卖菜的了，没有其他选择了就只好买了些豌豆角了，然后又去那下面一点的一个超市买了一点肉，青椒也还有的就买点肉来炒豌豆角好了，过年了去超市买东西的人还挺多，付款的时候还都得排队了，不过超市里的肉比市场的要贵了不少，因为我是骑着电动车去的所以也不用什么购物袋了，那样还得花几毛钱。</p><span id="more"></span><p>回来后把家里的垃圾全丢了，还把地上用拖耙弄一下，新年里就该得有一个新气象啊，什么都焕然一新才好啊，弄好了也是接着忙了，因为都已经快5点钟了，所以也是到做饭吃的时候了。</p><p>过了大概半个小时左右，饭做好了我菜也炒好了，然后就是一个人自己吃饭了，吃完饭就是看春晚了，用的以前买的电视盒子看，刚开始用的那个蜂蜜直播看的，清晰度很差，后面我退出了，又用酷喵看了，还是这个比较高清，有1080P的选项，4K的不知道在哪里看，用的1080P的显示器看1080的感觉也很清晰了，现在就是用平板电脑边看春晚边写文了，因为要用显示器看春晚，所以就不能用电脑写了，还好有智能盒子不然还不知道怎么看春晚了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 超市 </tag>
+            
+            <tag> 买菜 </tag>
+            
+            <tag> 除夕 </tag>
+            
+            <tag> 菜场 </tag>
+            
+            <tag> 豌豆角 </tag>
+            
+            <tag> 直播 </tag>
+            
+            <tag> 春晚 </tag>
+            
+            <tag> 酷喵 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>今天是终于完成昨天的目标了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/7f07775c/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/7f07775c/</url>
@@ -13418,45 +13457,6 @@
             <tag> 考试真题 </tag>
             
             <tag> 赶得挺紧 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>今天是除夕，去菜场买菜去晚了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dd80ab00/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dd80ab00/</url>
-      
-        <content type="html"><![CDATA[<p>我下午三点钟去的买肉的都没有了，只剩两个卖菜的了，没有其他选择了就只好买了些豌豆角了，然后又去那下面一点的一个超市买了一点肉，青椒也还有的就买点肉来炒豌豆角好了，过年了去超市买东西的人还挺多，付款的时候还都得排队了，不过超市里的肉比市场的要贵了不少，因为我是骑着电动车去的所以也不用什么购物袋了，那样还得花几毛钱。</p><span id="more"></span><p>回来后把家里的垃圾全丢了，还把地上用拖耙弄一下，新年里就该得有一个新气象啊，什么都焕然一新才好啊，弄好了也是接着忙了，因为都已经快5点钟了，所以也是到做饭吃的时候了。</p><p>过了大概半个小时左右，饭做好了我菜也炒好了，然后就是一个人自己吃饭了，吃完饭就是看春晚了，用的以前买的电视盒子看，刚开始用的那个蜂蜜直播看的，清晰度很差，后面我退出了，又用酷喵看了，还是这个比较高清，有1080P的选项，4K的不知道在哪里看，用的1080P的显示器看1080的感觉也很清晰了，现在就是用平板电脑边看春晚边写文了，因为要用显示器看春晚，所以就不能用电脑写了，还好有智能盒子不然还不知道怎么看春晚了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 超市 </tag>
-            
-            <tag> 买菜 </tag>
-            
-            <tag> 除夕 </tag>
-            
-            <tag> 菜场 </tag>
-            
-            <tag> 豌豆角 </tag>
-            
-            <tag> 直播 </tag>
-            
-            <tag> 春晚 </tag>
-            
-            <tag> 酷喵 </tag>
             
         </tags>
       
@@ -14068,9 +14068,9 @@
       
         <tags>
             
-            <tag> 喜欢 </tag>
-            
             <tag> 简书 </tag>
+            
+            <tag> 喜欢 </tag>
             
             <tag> 成就感 </tag>
             
@@ -14253,9 +14253,9 @@
             
             <tag> 思想 </tag>
             
-            <tag> 写作 </tag>
-            
             <tag> 思维 </tag>
+            
+            <tag> 写作 </tag>
             
             <tag> 套路 </tag>
             
@@ -14296,6 +14296,59 @@
             <tag> 跟班 </tag>
             
             <tag> 个性 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>写作就是每天都坚持写一点点</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/92c11313/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/92c11313/</url>
+      
+        <content type="html"><![CDATA[<p>当自己不知道写什么的时候就写一写自己该怎么练习写作，写一写自己该怎么提高自己的写作能力，在边写作中思考写作的思路，这就是一种很好的用来提高自己写作能力的方法。放开自己的思维，把能想到的都写出来，对于写作不要太拘于一格，放开自己才能让自己的思维变得活跃起来，自己能想到的东西越多，自己能写出来的也就越多，当然写到的越多能想到的也就越多，自己写得自然也会越顺畅。这是一个良性循环的过程，反之，如果不能很好的放开自己那就会成为一个恶性循环的过程。</p><span id="more"></span><p>写作其实真的不难，想到什么就尽管去写，只要能把它写出来自己都已经成功一半了，不要怕自己写得不好，也不要怕自己写出的错别字太多，又或者是写出来的句子不够通顺，这些其实都无所谓，在写的过程中不要去过多的在乎这些问题，把一个问题或者是一个故事表达清楚，自己感觉字数也差不多达到了，那后面的步骤就是要多读几遍，一篇文章写好以后最少要读三遍才能发给其他人看，如果自己一遍都没有看过就发给其他人看，就会犯一些低级的错误，这种错误他人读一遍就可以看得出来。有时候尽管自己虽然读了三遍，但是还是会无可避免的犯一些错误，此时如果别人只读一遍其实已经很难发现了，因为你自己读了三遍都没有发现的错误，其他人只读过一遍是根本发现不了的。</p><p>曾经有人说过自己写的文章要至少读二十遍，其实我们自己写的用不着那么严格也是可以的，但是三遍已经是最低要求不能少了，自己阅读自己的文章发现自己错误的地方，这也是提高写作的一种方法，其实好文章都不过是经过多遍的修改得出来的，只是有些人不会去承认自己的文章是经过多遍打磨才得出来的，每个写作者其实都希望读者看到他的文章就是很流畅的一遍就写出来的，当然如果他自己不说自己的文章是经过几遍打磨才得出来的，那读者肯定就不清楚，自然就会认为那篇文章就是作者一蹴而就完成的。</p><p>写文章就是要学会编，说自己会写不如说自己会编，对于写文学作品多半写的就是自己的主观感受，对错都不过是在于自己笔下的一瞬间，这和写新闻文体是不一样的，新闻属于应用文体的范畴，新闻要力求事件的真实性，普通人最不适合写新闻的，只有那些新闻媒体机构才可以写，一般人无论如何都写不好，因为那要客观的看待问题而非主观意识。一般人写写文学体裁的就可以，文学作品表达的是写作者的主观感受，而不是客观事实，所以观点的对错没有那么的明显，只是别人读了文章后对作者观点赞同与不赞同的问题，因为那写的本身就是作者的想法，根本就没有对错之分。</p><p>写作对于拥有一个很能编的思维是真的很重要，每个成功的写作者可以说都是一个个的幻想家，他们能从一件事联想到其他的事，而这些只要写下来了，让人感觉就是非常奇异的一件事，或许每个读者他也曾有过作者大脑中划过的那一丝想法，只是作者将其写出来了，而读者没有，所以读者就会感觉这件事好像就是自己似曾相识的那种感觉。</p><p>那些写意识流小说的人想象力就很丰富，他们从一件事联想到另一件事，看似天马行空其实逻辑性却是非常的强，这种小说别人读了也会跟着他的思维走，因为给读者错觉那就是自己的思维，好像那些一件接着一件事件都是自己经历过一样。作为一个爱好写作的人来说我们就应该拥有意识流这样的思维，只有这样去想这样去写才会感觉写作不是枯燥的，只要懂得把玩它，它其实也很有趣。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 文章 </tag>
+            
+            <tag> 写作 </tag>
+            
+            <tag> 发现 </tag>
+            
+            <tag> 感觉 </tag>
+            
+            <tag> 每天 </tag>
+            
+            <tag> 坚持写 </tag>
+            
+            <tag> 练习写作 </tag>
+            
+            <tag> 顺畅 </tag>
+            
+            <tag> 循环 </tag>
+            
+            <tag> 通顺 </tag>
+            
+            <tag> 一蹴而就 </tag>
+            
+            <tag> 真实性 </tag>
+            
+            <tag> 主观意识 </tag>
+            
+            <tag> 丰富 </tag>
+            
+            <tag> 有趣 </tag>
             
         </tags>
       
@@ -14400,51 +14453,39 @@
     
     
     <entry>
-      <title>写作就是每天都坚持写一点点</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/92c11313/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/92c11313/</url>
+      <title>写公众号粉丝越来越少了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4733806/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4733806/</url>
       
-        <content type="html"><![CDATA[<p>当自己不知道写什么的时候就写一写自己该怎么练习写作，写一写自己该怎么提高自己的写作能力，在边写作中思考写作的思路，这就是一种很好的用来提高自己写作能力的方法。放开自己的思维，把能想到的都写出来，对于写作不要太拘于一格，放开自己才能让自己的思维变得活跃起来，自己能想到的东西越多，自己能写出来的也就越多，当然写到的越多能想到的也就越多，自己写得自然也会越顺畅。这是一个良性循环的过程，反之，如果不能很好的放开自己那就会成为一个恶性循环的过程。</p><span id="more"></span><p>写作其实真的不难，想到什么就尽管去写，只要能把它写出来自己都已经成功一半了，不要怕自己写得不好，也不要怕自己写出的错别字太多，又或者是写出来的句子不够通顺，这些其实都无所谓，在写的过程中不要去过多的在乎这些问题，把一个问题或者是一个故事表达清楚，自己感觉字数也差不多达到了，那后面的步骤就是要多读几遍，一篇文章写好以后最少要读三遍才能发给其他人看，如果自己一遍都没有看过就发给其他人看，就会犯一些低级的错误，这种错误他人读一遍就可以看得出来。有时候尽管自己虽然读了三遍，但是还是会无可避免的犯一些错误，此时如果别人只读一遍其实已经很难发现了，因为你自己读了三遍都没有发现的错误，其他人只读过一遍是根本发现不了的。</p><p>曾经有人说过自己写的文章要至少读二十遍，其实我们自己写的用不着那么严格也是可以的，但是三遍已经是最低要求不能少了，自己阅读自己的文章发现自己错误的地方，这也是提高写作的一种方法，其实好文章都不过是经过多遍的修改得出来的，只是有些人不会去承认自己的文章是经过多遍打磨才得出来的，每个写作者其实都希望读者看到他的文章就是很流畅的一遍就写出来的，当然如果他自己不说自己的文章是经过几遍打磨才得出来的，那读者肯定就不清楚，自然就会认为那篇文章就是作者一蹴而就完成的。</p><p>写文章就是要学会编，说自己会写不如说自己会编，对于写文学作品多半写的就是自己的主观感受，对错都不过是在于自己笔下的一瞬间，这和写新闻文体是不一样的，新闻属于应用文体的范畴，新闻要力求事件的真实性，普通人最不适合写新闻的，只有那些新闻媒体机构才可以写，一般人无论如何都写不好，因为那要客观的看待问题而非主观意识。一般人写写文学体裁的就可以，文学作品表达的是写作者的主观感受，而不是客观事实，所以观点的对错没有那么的明显，只是别人读了文章后对作者观点赞同与不赞同的问题，因为那写的本身就是作者的想法，根本就没有对错之分。</p><p>写作对于拥有一个很能编的思维是真的很重要，每个成功的写作者可以说都是一个个的幻想家，他们能从一件事联想到其他的事，而这些只要写下来了，让人感觉就是非常奇异的一件事，或许每个读者他也曾有过作者大脑中划过的那一丝想法，只是作者将其写出来了，而读者没有，所以读者就会感觉这件事好像就是自己似曾相识的那种感觉。</p><p>那些写意识流小说的人想象力就很丰富，他们从一件事联想到另一件事，看似天马行空其实逻辑性却是非常的强，这种小说别人读了也会跟着他的思维走，因为给读者错觉那就是自己的思维，好像那些一件接着一件事件都是自己经历过一样。作为一个爱好写作的人来说我们就应该拥有意识流这样的思维，只有这样去想这样去写才会感觉写作不是枯燥的，只要懂得把玩它，它其实也很有趣。</p>]]></content>
+        <content type="html"><![CDATA[<p>昨天晚上去公众号发文章，看到现在又增加一个新功能了，就是专辑，挨着页面模板那里。专辑和页面模板不一样，这个不能添加到菜单，只是发文章的时候选中它就会出现在文章的上面。</p><span id="more"></span><p>搞这么多功能其实就是为了增加阅读量，但是阅读量多也没有什么用，要粉丝够了才能上广告，那才能有收益。</p><p>可是我这个号几年了，还是那点粉丝，不增加到也没有什么奇怪的，关键是居然还减少了，减少就减少吧，反正这个不是自己能控制的，就当成是自己一个发声的窗口就可以了，有没有粉丝不重要，反正不能想着靠这个来赚钱。</p><p>现在我写在简书的文章除了发公众号，还发到我自己的网站和微博头条文章，也就只能发这几处，本身感觉自己都写得不太好，发的平台多了感觉就是浪费精力。</p><p>还好我的网站现在是开通了谷歌广告，只要有人点击上面的广告那我也会有广告费的，就是提现有点难，要满100美元才可以。我都不希望能得到提现了，网站就是做来自己玩的。</p>]]></content>
       
       
       <categories>
           
-          <category> 情感美文 </category>
+          <category> 日常记录 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 文章 </tag>
+            <tag> 阅读量 </tag>
             
-            <tag> 写作 </tag>
+            <tag> 网站 </tag>
             
-            <tag> 发现 </tag>
+            <tag> 头条文章 </tag>
             
-            <tag> 感觉 </tag>
+            <tag> 公众号 </tag>
             
-            <tag> 每天 </tag>
+            <tag> 新功能 </tag>
             
-            <tag> 坚持写 </tag>
+            <tag> 专辑 </tag>
             
-            <tag> 练习写作 </tag>
+            <tag> 页面模板 </tag>
             
-            <tag> 顺畅 </tag>
+            <tag> 菜单 </tag>
             
-            <tag> 循环 </tag>
-            
-            <tag> 通顺 </tag>
-            
-            <tag> 一蹴而就 </tag>
-            
-            <tag> 真实性 </tag>
-            
-            <tag> 主观意识 </tag>
-            
-            <tag> 丰富 </tag>
-            
-            <tag> 有趣 </tag>
+            <tag> 粉丝 </tag>
             
         </tags>
       
@@ -14490,47 +14531,6 @@
             <tag> 新书 </tag>
             
             <tag> 费点时间 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>写公众号粉丝越来越少了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4733806/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4733806/</url>
-      
-        <content type="html"><![CDATA[<p>昨天晚上去公众号发文章，看到现在又增加一个新功能了，就是专辑，挨着页面模板那里。专辑和页面模板不一样，这个不能添加到菜单，只是发文章的时候选中它就会出现在文章的上面。</p><span id="more"></span><p>搞这么多功能其实就是为了增加阅读量，但是阅读量多也没有什么用，要粉丝够了才能上广告，那才能有收益。</p><p>可是我这个号几年了，还是那点粉丝，不增加到也没有什么奇怪的，关键是居然还减少了，减少就减少吧，反正这个不是自己能控制的，就当成是自己一个发声的窗口就可以了，有没有粉丝不重要，反正不能想着靠这个来赚钱。</p><p>现在我写在简书的文章除了发公众号，还发到我自己的网站和微博头条文章，也就只能发这几处，本身感觉自己都写得不太好，发的平台多了感觉就是浪费精力。</p><p>还好我的网站现在是开通了谷歌广告，只要有人点击上面的广告那我也会有广告费的，就是提现有点难，要满100美元才可以。我都不希望能得到提现了，网站就是做来自己玩的。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 阅读量 </tag>
-            
-            <tag> 网站 </tag>
-            
-            <tag> 头条文章 </tag>
-            
-            <tag> 公众号 </tag>
-            
-            <tag> 新功能 </tag>
-            
-            <tag> 专辑 </tag>
-            
-            <tag> 页面模板 </tag>
-            
-            <tag> 菜单 </tag>
-            
-            <tag> 粉丝 </tag>
             
         </tags>
       
@@ -15754,9 +15754,9 @@
             
             <tag> 安装 </tag>
             
-            <tag> 免费 </tag>
-            
             <tag> Office2021 </tag>
+            
+            <tag> 免费 </tag>
             
             <tag> 电脑上 </tag>
             
@@ -16005,9 +16005,9 @@
       
         <tags>
             
-            <tag> 安装 </tag>
-            
             <tag> 代码 </tag>
+            
+            <tag> 安装 </tag>
             
             <tag> 迅雷下载 </tag>
             
@@ -16040,6 +16040,51 @@
             <tag> darwin1012 </tag>
             
             <tag> VMware Tools </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>墨茶走了，他却是我们自己最真实的一面</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1d3ff104/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1d3ff104/</url>
+      
+        <content type="html"><![CDATA[<p>前几天看到新闻说一个B站UP主去世才得到人们的关注，而我开始却不怎么相信，也不知道是怎么一回事，而后面又在贴吧和知乎看到关于他去世的消息，B站有人为他贴了讣告，看了别人发出的他动态，那一刻我感到很难受，他去世得很年轻，才23岁的青春年华，却死于贫病交加的冬日里。</p><span id="more"></span><p>我自己曾经无数次想到我也许会有一天也会向他那样死去，因为我们都不是神，终究是会走到生命尽头的那一刻，承不承认与否我们都无法与命运相抗衡，直到临死之际那小小的愿望也无法达到，他的动态里写道他吃什么吐什么，想吃草莓，但是却没有钱买了，况且身体已经很虚弱了，每当想到这里我都无法控制自己，泪水总是要涌出来。这就是我们每个人真实的自己，我们每天的努力其实只是为了生存下去，那怕多一天也是在和命运做抗争。</p><p>当我们扛不住的那一刻我们终究会倒下，他每一天都被病痛折磨，但却在努力的活着，没有抱怨命运对自己的不公平，贫困和病痛让他怎么也无法摆脱，最终他选择了妥协，因为他再也没有钱去医院看病了，当吃饭都没有钱了，更别说去看病的钱了，他对自己还有希望，他不想就那样死去，以为自己只要睡一觉醒来就好了，但就是那样一觉睡去永远再也没有醒来。</p><p>当一个人明知道被病痛折磨必须是去医院才行，但是连吃饭的钱都没有了，身边没有亲人，那是一种无助的绝望，本不想那样在绝望中死去，但是却没有其他办法。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 冬日 </tag>
+            
+            <tag> 墨茶 </tag>
+            
+            <tag> 真实 </tag>
+            
+            <tag> B站 </tag>
+            
+            <tag> UP主 </tag>
+            
+            <tag> 讣告 </tag>
+            
+            <tag> 青春年华 </tag>
+            
+            <tag> 贫病交加 </tag>
+            
+            <tag> 草莓 </tag>
+            
+            <tag> 命运 </tag>
+            
+            <tag> 医院 </tag>
             
         </tags>
       
@@ -16091,51 +16136,6 @@
             <tag> 放弃 </tag>
             
             <tag> 失落感 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>墨茶走了，他却是我们自己最真实的一面</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1d3ff104/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1d3ff104/</url>
-      
-        <content type="html"><![CDATA[<p>前几天看到新闻说一个B站UP主去世才得到人们的关注，而我开始却不怎么相信，也不知道是怎么一回事，而后面又在贴吧和知乎看到关于他去世的消息，B站有人为他贴了讣告，看了别人发出的他动态，那一刻我感到很难受，他去世得很年轻，才23岁的青春年华，却死于贫病交加的冬日里。</p><span id="more"></span><p>我自己曾经无数次想到我也许会有一天也会向他那样死去，因为我们都不是神，终究是会走到生命尽头的那一刻，承不承认与否我们都无法与命运相抗衡，直到临死之际那小小的愿望也无法达到，他的动态里写道他吃什么吐什么，想吃草莓，但是却没有钱买了，况且身体已经很虚弱了，每当想到这里我都无法控制自己，泪水总是要涌出来。这就是我们每个人真实的自己，我们每天的努力其实只是为了生存下去，那怕多一天也是在和命运做抗争。</p><p>当我们扛不住的那一刻我们终究会倒下，他每一天都被病痛折磨，但却在努力的活着，没有抱怨命运对自己的不公平，贫困和病痛让他怎么也无法摆脱，最终他选择了妥协，因为他再也没有钱去医院看病了，当吃饭都没有钱了，更别说去看病的钱了，他对自己还有希望，他不想就那样死去，以为自己只要睡一觉醒来就好了，但就是那样一觉睡去永远再也没有醒来。</p><p>当一个人明知道被病痛折磨必须是去医院才行，但是连吃饭的钱都没有了，身边没有亲人，那是一种无助的绝望，本不想那样在绝望中死去，但是却没有其他办法。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 冬日 </tag>
-            
-            <tag> 墨茶 </tag>
-            
-            <tag> 真实 </tag>
-            
-            <tag> B站 </tag>
-            
-            <tag> UP主 </tag>
-            
-            <tag> 讣告 </tag>
-            
-            <tag> 青春年华 </tag>
-            
-            <tag> 贫病交加 </tag>
-            
-            <tag> 草莓 </tag>
-            
-            <tag> 命运 </tag>
-            
-            <tag> 医院 </tag>
             
         </tags>
       
@@ -16425,6 +16425,43 @@
     
     
     <entry>
+      <title>好久没有写了，这段时间有空，随便写点吧</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29b7f30d/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29b7f30d/</url>
+      
+        <content type="html"><![CDATA[<p>最近有一个多星期没有上班了，被公司放假休息，做小时工不好就是这点了，没有事做就让休息了，工资都没有，这个月就上了十多天班，工资才一千多块钱。</p><span id="more"></span><p>现在也就是每天躺在床上玩手机，玩到连饭都不想吃了，什么也不想做，反正就是做什么都不感兴趣。玩游戏玩下又不想玩了，用手机看书最多看100页，看着看着就会睡着了。</p><p>不知道做什么，反正每天都无所事事，以前感觉每天要做的事很多，但是当自己真的有很多空闲时间了，却不知道该做什么了。</p><p>每天都是在迷茫中度过，好像也没有什么解脱的办法，只能是度日如年这样的活着，想到什么就写什么，只有写点文字才能让自己的思想活跃下。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 解脱 </tag>
+            
+            <tag> 放假休息 </tag>
+            
+            <tag> 没有上班 </tag>
+            
+            <tag> 工资 </tag>
+            
+            <tag> 空闲时间 </tag>
+            
+            <tag> 做什么 </tag>
+            
+            <tag> 度日如年 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>好久不看微信了，今天看了下还有新的发现</title>
       <link href="/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/72b33af7/"/>
       <url>/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/72b33af7/</url>
@@ -16466,43 +16503,6 @@
             <tag> 认证 </tag>
             
             <tag> 看热闹 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>好久没有写了，这段时间有空，随便写点吧</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29b7f30d/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29b7f30d/</url>
-      
-        <content type="html"><![CDATA[<p>最近有一个多星期没有上班了，被公司放假休息，做小时工不好就是这点了，没有事做就让休息了，工资都没有，这个月就上了十多天班，工资才一千多块钱。</p><span id="more"></span><p>现在也就是每天躺在床上玩手机，玩到连饭都不想吃了，什么也不想做，反正就是做什么都不感兴趣。玩游戏玩下又不想玩了，用手机看书最多看100页，看着看着就会睡着了。</p><p>不知道做什么，反正每天都无所事事，以前感觉每天要做的事很多，但是当自己真的有很多空闲时间了，却不知道该做什么了。</p><p>每天都是在迷茫中度过，好像也没有什么解脱的办法，只能是度日如年这样的活着，想到什么就写什么，只有写点文字才能让自己的思想活跃下。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 解脱 </tag>
-            
-            <tag> 放假休息 </tag>
-            
-            <tag> 没有上班 </tag>
-            
-            <tag> 工资 </tag>
-            
-            <tag> 空闲时间 </tag>
-            
-            <tag> 做什么 </tag>
-            
-            <tag> 度日如年 </tag>
             
         </tags>
       
@@ -16844,6 +16844,43 @@
     
     
     <entry>
+      <title>小说今天一章写不完了，还是来一篇日更好了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c7fd72d/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c7fd72d/</url>
+      
+        <content type="html"><![CDATA[<p>我从昨天开始写小说，昨天一下子写了四千多字，今天就是写不出来了，眼看都已经快到二十三点四十了，于是就想到我必须要在简书发一篇日更了，一看我也知道没有多少给我的时间了，毕竟这简书的日更不能断啊，就算是来个四五百字的我也要把它补上才行，我什么也不用想了，打开Word的文件菜单快速的新建一个文档，我想我这时是真什么都不用想了，想到什么就写什么，再想就真的没有时间了。</p><span id="more"></span><p>小说还没有写好是肯定不能发上去的了，连有些语句都还不通顺，自己都还没有看过一遍，怎么可能发上去呢，小说这篇日更过了后明天接着写。我这时是真的在和时间赛跑，语句不通也没有办法，我是想先发上去再慢慢的修改了。</p><p>说快也不太快，但也不是很慢，一下就两段了，我这不是水文，这只是一篇和时间赛跑的急切之作，时间在一分一秒的过去，我看了下字数也有三百多了，其实现在发上去日更的标准已经达到了，不管了，再写两分钟就发，忙起来那标准什么的我已经记不得了，算了应该够了，就写这么多，不写了，我赶紧发吧。</p><p><strong>发文后的感想：只能说赶得真好，赶上了最后的末班车，还好今天没有掉队。</strong>👌</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Word </tag>
+            
+            <tag> 简书 </tag>
+            
+            <tag> 小说 </tag>
+            
+            <tag> 日更 </tag>
+            
+            <tag> 发文 </tag>
+            
+            <tag> 时间赛跑 </tag>
+            
+            <tag> 明天 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>小米研发出了隔空充电技术，再也不怕没有充电线了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/690f7b38/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/690f7b38/</url>
@@ -16875,43 +16912,6 @@
             <tag> 研发实力 </tag>
             
             <tag> 核心技术 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>小说今天一章写不完了，还是来一篇日更好了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c7fd72d/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c7fd72d/</url>
-      
-        <content type="html"><![CDATA[<p>我从昨天开始写小说，昨天一下子写了四千多字，今天就是写不出来了，眼看都已经快到二十三点四十了，于是就想到我必须要在简书发一篇日更了，一看我也知道没有多少给我的时间了，毕竟这简书的日更不能断啊，就算是来个四五百字的我也要把它补上才行，我什么也不用想了，打开Word的文件菜单快速的新建一个文档，我想我这时是真什么都不用想了，想到什么就写什么，再想就真的没有时间了。</p><span id="more"></span><p>小说还没有写好是肯定不能发上去的了，连有些语句都还不通顺，自己都还没有看过一遍，怎么可能发上去呢，小说这篇日更过了后明天接着写。我这时是真的在和时间赛跑，语句不通也没有办法，我是想先发上去再慢慢的修改了。</p><p>说快也不太快，但也不是很慢，一下就两段了，我这不是水文，这只是一篇和时间赛跑的急切之作，时间在一分一秒的过去，我看了下字数也有三百多了，其实现在发上去日更的标准已经达到了，不管了，再写两分钟就发，忙起来那标准什么的我已经记不得了，算了应该够了，就写这么多，不写了，我赶紧发吧。</p><p><strong>发文后的感想：只能说赶得真好，赶上了最后的末班车，还好今天没有掉队。</strong>👌</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Word </tag>
-            
-            <tag> 简书 </tag>
-            
-            <tag> 小说 </tag>
-            
-            <tag> 日更 </tag>
-            
-            <tag> 发文 </tag>
-            
-            <tag> 时间赛跑 </tag>
-            
-            <tag> 明天 </tag>
             
         </tags>
       
@@ -17860,67 +17860,6 @@
     
     
     <entry>
-      <title>我昨晚梦到走一条艰难的路，那条路很窄，下面却是万丈深渊</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/62e9a13e/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/62e9a13e/</url>
-      
-        <content type="html"><![CDATA[<p>我昨晚睡得迷迷糊糊之中，我梦到自己坐车去一个邻县游玩，到了那地方后，突然被一个朋友拉着去赶集，说那天正是赶集的日期，现实中我们这里是五天赶一场集市，邻县估计也是这样的吧。那个拉我和他去赶集的朋友我是一点印象都没有，梦里所见到的东西有时就是如此的荒诞和奇怪，他的样子长什么样我都看不清楚，他拉着我去赶集不会是想害我吧。</p><span id="more"></span><p>后来的梦境说明了一切，他想看我能不能坚持，如果不能克服心里的障碍的话我就会在梦境里面掉下悬崖摔死。我在梦境中问他离去赶集的地方有多远？他说：“两公里，不是太远，你们县那边也有人经常来这边赶集。”到这里我算是清楚一点了，这个集市是在两县的交界处，我不是要去另外的县游玩的吗，怎么兜兜转转又回来了，肯定不是这样的，因为这不符合我一贯做事的逻辑。</p><p>既然那朋友说了只有两公里远，那我和他走路一下子估计就能赶到了。刚开始走的时候那条路虽然狭窄，但是还算很平坦，那是一片绿叶葱葱的树林，路边上是一条河，河水流得很慢，河水看起来很深，就像那片树林一样，绿得让人心生恐惧。大树茂密的叶子挡住了阳光，偶尔有几声鸟叫和几个赶集的行人走过之外再无其他的热闹可看，死一般的沉寂倒是让我的思绪宁静了不少。</p><p>穿过那片树林以后，到了真正的死亡峡谷，两公里的路程一半是前面那片安静的树林，后面的一公里是这条充满死亡气息的悬崖边缘。刚开始走的时候这悬崖边上还算能走一个人，虽然下面已经是弥漫着雾气深不见底，但还不是太让人感觉害怕，只要靠后面走用手抓着岩石凸出来的地方慢慢走，那也还是可以走过去的，真正难走的是走到悬崖的中间以后。走到悬崖中间后路越来越狭窄，甚至走到最中间大概有一段几十米的地方，路就只有手的巴掌那么宽了。走到这里时我已经是大气不敢出了，我不敢站着走了，我站起来走的话我怕被风把我一下就吹下悬崖。虽然那天的天气是风和日丽的，天空无风也无云，蓝蓝天空下的太阳无情的照晒着这悬崖边上的峡谷，白白的雾气袅绕着恐惧的人心，再加上我小时候就有的恐高症，我在太阳的照晒和雾气的弥漫中竟开始头晕了。</p><p>前方万丈悬崖深渊的恐惧令我不敢快步前进，我只能斜着身体，抓着岩壁上岩石突出的地方慢慢的向前爬行着，就这几十米的距离也不知道我爬行了多久，这可能是我这一生中走过最艰难的路了。从早上的天空中一缕晨曦走进树林到走出这几十米的悬崖已经是快到日落西去的下午了，走出这几十米的艰险历程后面的路也就越走越宽了。没有用半个钟也就走到集市的街头了，走到街头的时候我回头望了望我这一路辛苦走过来的艰险之路，只看到一片白白的雾气笼罩着整个峡谷，犹如仙境一般，在雾气的笼罩下根本就看不到悬崖边上的小路。跟着我身后走硬要拉我来赶集的那位朋友也失去了踪影，我想他要不就是掉下悬崖摔死了，要不就是自己一个人悄悄回去了，莫不是他就成仙了，鬼知道他的，我跟他又不熟，还把我害得那么惨差点丢掉性命。</p><p>走到这街头的时候我已经是满脸和满身被石头刮伤的伤痕，街头的当地人看着我说小伙子你真勇敢，他们说能从那悬崖边上的小路走上街头的不多，每个月都有不少人来赶集从那悬崖边上的小路掉下峡谷摔死。我想到此我感觉我还是幸运的，我远远看着那弥漫着白白雾气从未散去过的峡谷，脸上和身上的汗也渐渐干了，伤口也没有那么痛了。</p><p>望着那如仙气袅绕的峡谷之上，我感觉身体也渐渐凉快舒畅了很多。渐渐的我从梦中醒来，原来是天亮了清晨的气温很凉快，原来这一切都只是我的梦幻，梦醒后终归现实，直到现在我的人生中还没有这样的经历。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 情感美文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 梦境 </tag>
-            
-            <tag> 迷迷糊糊 </tag>
-            
-            <tag> 奇怪 </tag>
-            
-            <tag> 昨晚 </tag>
-            
-            <tag> 艰难 </tag>
-            
-            <tag> 路 </tag>
-            
-            <tag> 万丈深渊 </tag>
-            
-            <tag> 邻县游玩 </tag>
-            
-            <tag> 赶集 </tag>
-            
-            <tag> 荒诞 </tag>
-            
-            <tag> 交界处 </tag>
-            
-            <tag> 绿叶葱葱 </tag>
-            
-            <tag> 死亡峡谷 </tag>
-            
-            <tag> 弥漫 </tag>
-            
-            <tag> 快步前进 </tag>
-            
-            <tag> 一缕晨曦 </tag>
-            
-            <tag> 成仙 </tag>
-            
-            <tag> 悬崖 </tag>
-            
-            <tag> 梦幻 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>我的mini小主机算是组装完成了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dcfeae6e/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dcfeae6e/</url>
@@ -17980,6 +17919,67 @@
             <tag> 机械硬盘 </tag>
             
             <tag> 爆满 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我昨晚梦到走一条艰难的路，那条路很窄，下面却是万丈深渊</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/62e9a13e/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/62e9a13e/</url>
+      
+        <content type="html"><![CDATA[<p>我昨晚睡得迷迷糊糊之中，我梦到自己坐车去一个邻县游玩，到了那地方后，突然被一个朋友拉着去赶集，说那天正是赶集的日期，现实中我们这里是五天赶一场集市，邻县估计也是这样的吧。那个拉我和他去赶集的朋友我是一点印象都没有，梦里所见到的东西有时就是如此的荒诞和奇怪，他的样子长什么样我都看不清楚，他拉着我去赶集不会是想害我吧。</p><span id="more"></span><p>后来的梦境说明了一切，他想看我能不能坚持，如果不能克服心里的障碍的话我就会在梦境里面掉下悬崖摔死。我在梦境中问他离去赶集的地方有多远？他说：“两公里，不是太远，你们县那边也有人经常来这边赶集。”到这里我算是清楚一点了，这个集市是在两县的交界处，我不是要去另外的县游玩的吗，怎么兜兜转转又回来了，肯定不是这样的，因为这不符合我一贯做事的逻辑。</p><p>既然那朋友说了只有两公里远，那我和他走路一下子估计就能赶到了。刚开始走的时候那条路虽然狭窄，但是还算很平坦，那是一片绿叶葱葱的树林，路边上是一条河，河水流得很慢，河水看起来很深，就像那片树林一样，绿得让人心生恐惧。大树茂密的叶子挡住了阳光，偶尔有几声鸟叫和几个赶集的行人走过之外再无其他的热闹可看，死一般的沉寂倒是让我的思绪宁静了不少。</p><p>穿过那片树林以后，到了真正的死亡峡谷，两公里的路程一半是前面那片安静的树林，后面的一公里是这条充满死亡气息的悬崖边缘。刚开始走的时候这悬崖边上还算能走一个人，虽然下面已经是弥漫着雾气深不见底，但还不是太让人感觉害怕，只要靠后面走用手抓着岩石凸出来的地方慢慢走，那也还是可以走过去的，真正难走的是走到悬崖的中间以后。走到悬崖中间后路越来越狭窄，甚至走到最中间大概有一段几十米的地方，路就只有手的巴掌那么宽了。走到这里时我已经是大气不敢出了，我不敢站着走了，我站起来走的话我怕被风把我一下就吹下悬崖。虽然那天的天气是风和日丽的，天空无风也无云，蓝蓝天空下的太阳无情的照晒着这悬崖边上的峡谷，白白的雾气袅绕着恐惧的人心，再加上我小时候就有的恐高症，我在太阳的照晒和雾气的弥漫中竟开始头晕了。</p><p>前方万丈悬崖深渊的恐惧令我不敢快步前进，我只能斜着身体，抓着岩壁上岩石突出的地方慢慢的向前爬行着，就这几十米的距离也不知道我爬行了多久，这可能是我这一生中走过最艰难的路了。从早上的天空中一缕晨曦走进树林到走出这几十米的悬崖已经是快到日落西去的下午了，走出这几十米的艰险历程后面的路也就越走越宽了。没有用半个钟也就走到集市的街头了，走到街头的时候我回头望了望我这一路辛苦走过来的艰险之路，只看到一片白白的雾气笼罩着整个峡谷，犹如仙境一般，在雾气的笼罩下根本就看不到悬崖边上的小路。跟着我身后走硬要拉我来赶集的那位朋友也失去了踪影，我想他要不就是掉下悬崖摔死了，要不就是自己一个人悄悄回去了，莫不是他就成仙了，鬼知道他的，我跟他又不熟，还把我害得那么惨差点丢掉性命。</p><p>走到这街头的时候我已经是满脸和满身被石头刮伤的伤痕，街头的当地人看着我说小伙子你真勇敢，他们说能从那悬崖边上的小路走上街头的不多，每个月都有不少人来赶集从那悬崖边上的小路掉下峡谷摔死。我想到此我感觉我还是幸运的，我远远看着那弥漫着白白雾气从未散去过的峡谷，脸上和身上的汗也渐渐干了，伤口也没有那么痛了。</p><p>望着那如仙气袅绕的峡谷之上，我感觉身体也渐渐凉快舒畅了很多。渐渐的我从梦中醒来，原来是天亮了清晨的气温很凉快，原来这一切都只是我的梦幻，梦醒后终归现实，直到现在我的人生中还没有这样的经历。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 梦境 </tag>
+            
+            <tag> 迷迷糊糊 </tag>
+            
+            <tag> 奇怪 </tag>
+            
+            <tag> 昨晚 </tag>
+            
+            <tag> 艰难 </tag>
+            
+            <tag> 路 </tag>
+            
+            <tag> 万丈深渊 </tag>
+            
+            <tag> 邻县游玩 </tag>
+            
+            <tag> 赶集 </tag>
+            
+            <tag> 荒诞 </tag>
+            
+            <tag> 交界处 </tag>
+            
+            <tag> 绿叶葱葱 </tag>
+            
+            <tag> 死亡峡谷 </tag>
+            
+            <tag> 弥漫 </tag>
+            
+            <tag> 快步前进 </tag>
+            
+            <tag> 一缕晨曦 </tag>
+            
+            <tag> 成仙 </tag>
+            
+            <tag> 悬崖 </tag>
+            
+            <tag> 梦幻 </tag>
             
         </tags>
       
@@ -18181,9 +18181,9 @@
             
             <tag> 夏天 </tag>
             
-            <tag> 喜欢 </tag>
-            
             <tag> 简书 </tag>
+            
+            <tag> 喜欢 </tag>
             
             <tag> 睡觉 </tag>
             
@@ -19269,51 +19269,6 @@
     
     
     <entry>
-      <title>昨天我把自己的网站同步到Gitee了</title>
-      <link href="/Hexo/ceca9b33/"/>
-      <url>/Hexo/ceca9b33/</url>
-      
-        <content type="html"><![CDATA[<p>之前就有看到过别人说可以把Hexo搭建的网站同步到Github和Gitee两个平台，说是Gitee在国内的访问速度比较快，但是一直都没有去做过，这段时间有空去码云把以前的账号重新登陆了，还开通了免费的企业版。</p><span id="more"></span><p>免费的企业版比个人版好的就是空间的域名能够自定义的比个人版要好点，个人版好的都被人抢完了。</p><p>我用自己注册的域名来做这个空间域名感觉还是很不错的，因为很简短才四个字母，这些都是越短越好记。</p><p>Gitee不好的就是自定义域名要钱，还有每次更新都要去点一次那个更新按钮，不过我也没有多余的域名，就先用着给的空间域名吧，这种空间域名其实也是可以被搜索引擎收录的，我用必应搜了下很多用这种域名的只要内容好也被收录了，但是百度就没有收录的。</p><p>免费的也不需要那么多了，反正就当个备用好了，要是真的想搞谷歌广告那些，还是用Github自己买个域名来绑定会比较好，二级域名可能弄不了谷歌广告，我以前记得我用免费的域名都不行，还是自己买了个域名来换了才审核通过了。</p><p>速度的话电脑上访问感觉没有快多少，手机浏览器上感觉会快一点。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Github </tag>
-            
-            <tag> Hexo </tag>
-            
-            <tag> gitee </tag>
-            
-            <tag> 免费 </tag>
-            
-            <tag> 浏览器 </tag>
-            
-            <tag> 网站 </tag>
-            
-            <tag> 搜索引擎 </tag>
-            
-            <tag> 企业版 </tag>
-            
-            <tag> 空间域名 </tag>
-            
-            <tag> 谷歌广告 </tag>
-            
-            <tag> 审核 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>昨晚下了一晚上的雨，雨声一直响睡不着</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c36b9d6b/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c36b9d6b/</url>
@@ -19355,6 +19310,51 @@
             <tag> 鸡蛋 </tag>
             
             <tag> 申请退 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>昨天我把自己的网站同步到Gitee了</title>
+      <link href="/Hexo/ceca9b33/"/>
+      <url>/Hexo/ceca9b33/</url>
+      
+        <content type="html"><![CDATA[<p>之前就有看到过别人说可以把Hexo搭建的网站同步到Github和Gitee两个平台，说是Gitee在国内的访问速度比较快，但是一直都没有去做过，这段时间有空去码云把以前的账号重新登陆了，还开通了免费的企业版。</p><span id="more"></span><p>免费的企业版比个人版好的就是空间的域名能够自定义的比个人版要好点，个人版好的都被人抢完了。</p><p>我用自己注册的域名来做这个空间域名感觉还是很不错的，因为很简短才四个字母，这些都是越短越好记。</p><p>Gitee不好的就是自定义域名要钱，还有每次更新都要去点一次那个更新按钮，不过我也没有多余的域名，就先用着给的空间域名吧，这种空间域名其实也是可以被搜索引擎收录的，我用必应搜了下很多用这种域名的只要内容好也被收录了，但是百度就没有收录的。</p><p>免费的也不需要那么多了，反正就当个备用好了，要是真的想搞谷歌广告那些，还是用Github自己买个域名来绑定会比较好，二级域名可能弄不了谷歌广告，我以前记得我用免费的域名都不行，还是自己买了个域名来换了才审核通过了。</p><p>速度的话电脑上访问感觉没有快多少，手机浏览器上感觉会快一点。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Github </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> gitee </tag>
+            
+            <tag> 免费 </tag>
+            
+            <tag> 浏览器 </tag>
+            
+            <tag> 网站 </tag>
+            
+            <tag> 搜索引擎 </tag>
+            
+            <tag> 企业版 </tag>
+            
+            <tag> 空间域名 </tag>
+            
+            <tag> 谷歌广告 </tag>
+            
+            <tag> 审核 </tag>
             
         </tags>
       
@@ -19498,9 +19498,9 @@
       
         <tags>
             
-            <tag> 一章题 </tag>
-            
             <tag> 睡觉 </tag>
+            
+            <tag> 一章题 </tag>
             
             <tag> 昨晚 </tag>
             
@@ -19817,51 +19817,6 @@
     
     
     <entry>
-      <title>有的文章平台发不了，还是要发到自己的网站才行</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/eaeba784/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/eaeba784/</url>
-      
-        <content type="html"><![CDATA[<p>很久的时候就有这个问题，为什么现在这么多可以发文章的平台还需要自己有一个网站，那是因为不是所有的文章你写了都能发的，只有自己的网站才是稍微自由一点的，这就是为什么美国人喜欢自己建博客网站，而很少有自媒体平台的原因，因为平台的规则是由平台自己定的，作为用户是没有话语权的，就连特朗普的推特账号都能被平台封禁，可想而知一般人又能有多大的权力。</p><span id="more"></span><p>只要是依靠中心化的东西都是不可靠的，因为现在的这个社会人人都有私心，当一个平台或者一个人为中心的时候难免不会被这一个中心人或者平台使坏，所以现在比特币这么火也是有原因的，因为他是去中心化的，不是由某个人说了算。</p><p>如果是不想自己辛辛苦苦写的文章发出来就被锁了，还是得自己有一个网站，自己发在自己的网站上还可以赚点广告费，如果自己的网站被搜索引擎收录得多了，那肯定就会有很多人通过搜索引擎来找到这个网站，然后在上面发广告做推广之类的都是可以赚钱的。</p><p>如果平台发不了而自己又没有自己的网站的话，那幸苦写的一篇文章就只能放在自己的本地文件夹了，然而它一点作用都没有，还浪费了自己的精力，所以无论是做自媒体还是自己喜欢写文章的，都得自己有一个网站，而这个网站才是自己的根据地。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 文章 </tag>
-            
-            <tag> 问题 </tag>
-            
-            <tag> 平台 </tag>
-            
-            <tag> 赚钱 </tag>
-            
-            <tag> 网站 </tag>
-            
-            <tag> 写文章 </tag>
-            
-            <tag> 权力 </tag>
-            
-            <tag> 博客网站 </tag>
-            
-            <tag> 封禁 </tag>
-            
-            <tag> 广告费 </tag>
-            
-            <tag> 根据地 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>本来不想写的还是写下吧</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5fedbe30/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5fedbe30/</url>
@@ -20064,6 +20019,51 @@
             <tag> 捷径 </tag>
             
             <tag> 前提条件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>有的文章平台发不了，还是要发到自己的网站才行</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/eaeba784/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/eaeba784/</url>
+      
+        <content type="html"><![CDATA[<p>很久的时候就有这个问题，为什么现在这么多可以发文章的平台还需要自己有一个网站，那是因为不是所有的文章你写了都能发的，只有自己的网站才是稍微自由一点的，这就是为什么美国人喜欢自己建博客网站，而很少有自媒体平台的原因，因为平台的规则是由平台自己定的，作为用户是没有话语权的，就连特朗普的推特账号都能被平台封禁，可想而知一般人又能有多大的权力。</p><span id="more"></span><p>只要是依靠中心化的东西都是不可靠的，因为现在的这个社会人人都有私心，当一个平台或者一个人为中心的时候难免不会被这一个中心人或者平台使坏，所以现在比特币这么火也是有原因的，因为他是去中心化的，不是由某个人说了算。</p><p>如果是不想自己辛辛苦苦写的文章发出来就被锁了，还是得自己有一个网站，自己发在自己的网站上还可以赚点广告费，如果自己的网站被搜索引擎收录得多了，那肯定就会有很多人通过搜索引擎来找到这个网站，然后在上面发广告做推广之类的都是可以赚钱的。</p><p>如果平台发不了而自己又没有自己的网站的话，那幸苦写的一篇文章就只能放在自己的本地文件夹了，然而它一点作用都没有，还浪费了自己的精力，所以无论是做自媒体还是自己喜欢写文章的，都得自己有一个网站，而这个网站才是自己的根据地。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 文章 </tag>
+            
+            <tag> 问题 </tag>
+            
+            <tag> 平台 </tag>
+            
+            <tag> 赚钱 </tag>
+            
+            <tag> 网站 </tag>
+            
+            <tag> 写文章 </tag>
+            
+            <tag> 权力 </tag>
+            
+            <tag> 博客网站 </tag>
+            
+            <tag> 封禁 </tag>
+            
+            <tag> 广告费 </tag>
+            
+            <tag> 根据地 </tag>
             
         </tags>
       
@@ -21053,43 +21053,6 @@
     
     
     <entry>
-      <title>疫情又严重了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9772c3db/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9772c3db/</url>
-      
-        <content type="html"><![CDATA[<p>新冠病毒也就是差不多去年这个时候爆发的，现在又开始复发了，最大原因还是因为元旦放假的原因吧，听说石家庄感染的56个人都是参加婚礼感染的，这源头应该有点难查出来了。</p><span id="more"></span><p>这个疫情好像一直都没有断过，只是天气热的时候传染率降低了，现在天气一冷病毒的存活几率就开始变高了，所以冬天还是最需要防止的，至少现在只是局部的，情况还是比去年好很多，因为只要局部不扩散，那全国也没有去年那么举国上下防控的地步。</p><p>现在虽然说已经有疫苗了，但是有效性还是需要待观察的，不是谁说打了疫苗去疫情高风险地区不用做个人防护都可以了，那样感染的机率还是非常大的，做好个人防护，常消毒，看来今还得一战呢。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 新冠病毒 </tag>
-            
-            <tag> 元旦放假 </tag>
-            
-            <tag> 存活 </tag>
-            
-            <tag> 局部 </tag>
-            
-            <tag> 防控 </tag>
-            
-            <tag> 个人防护 </tag>
-            
-            <tag> 常消毒 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>目前最适合用来组装迷你主机的两款处理器</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8238d83b/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8238d83b/</url>
@@ -21255,6 +21218,43 @@
     
     
     <entry>
+      <title>疫情又严重了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9772c3db/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9772c3db/</url>
+      
+        <content type="html"><![CDATA[<p>新冠病毒也就是差不多去年这个时候爆发的，现在又开始复发了，最大原因还是因为元旦放假的原因吧，听说石家庄感染的56个人都是参加婚礼感染的，这源头应该有点难查出来了。</p><span id="more"></span><p>这个疫情好像一直都没有断过，只是天气热的时候传染率降低了，现在天气一冷病毒的存活几率就开始变高了，所以冬天还是最需要防止的，至少现在只是局部的，情况还是比去年好很多，因为只要局部不扩散，那全国也没有去年那么举国上下防控的地步。</p><p>现在虽然说已经有疫苗了，但是有效性还是需要待观察的，不是谁说打了疫苗去疫情高风险地区不用做个人防护都可以了，那样感染的机率还是非常大的，做好个人防护，常消毒，看来今还得一战呢。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 新冠病毒 </tag>
+            
+            <tag> 元旦放假 </tag>
+            
+            <tag> 存活 </tag>
+            
+            <tag> 局部 </tag>
+            
+            <tag> 防控 </tag>
+            
+            <tag> 个人防护 </tag>
+            
+            <tag> 常消毒 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>看了一部老电影《东京审判》</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e5808a07/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e5808a07/</url>
@@ -21357,9 +21357,9 @@
       
         <tags>
             
-            <tag> 风景 </tag>
-            
             <tag> 乐趣 </tag>
+            
+            <tag> 风景 </tag>
             
             <tag> 微笑 </tag>
             
@@ -22020,6 +22020,100 @@
     
     
     <entry>
+      <title>网上购物省钱方法</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/889f67f5/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/889f67f5/</url>
+      
+        <content type="html"><![CDATA[<p>我首先发现的是淘宝联盟，这个是为淘宝推广商品的一个平台，以前学做淘宝客网站时候我就知道了。</p><span id="more"></span><p>那时候只知道在自己网站上推广商品可以赚钱，其实在其他平台上发链接也是可以的，QQ，微博都可以，这个是有个手机APP的，选好自己在淘宝要买的商品，然后加入收藏夹，在淘宝联盟的收藏夹里面就可以找到。</p><p>然后就是像推广给别人那样，复制推广链接或者淘口令，然后有重新打开淘宝，淘宝就会自动识别这个淘口令，这里就下单就可以自己获得佣金了。</p><p>只要参加了淘宝客推广活动商家的商品都可以拿到佣金，分享给别人不一定有人买，但是自己买还是可以回点血的。</p><p>要下单付款的时候先不着急付款，打开一淘用一淘来付款，这样有一淘立减，又可以多少省一点，淘宝和天猫的商品都是可以在一淘付款的，只要加入购物车就可以在一淘找到。</p><p>最主要的就是要复制淘口令然后加入购物车这里，之前已经加入购物车的必须还得再加入一次，不然佣金无效的，付款在一淘付款的时候再把多加的减掉，不然只买一件的，买了两件那也麻烦。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 微博 </tag>
+            
+            <tag> 赚钱 </tag>
+            
+            <tag> 省钱 </tag>
+            
+            <tag> 淘宝联盟 </tag>
+            
+            <tag> 网购 </tag>
+            
+            <tag> 推广商品 </tag>
+            
+            <tag> 推广链接 </tag>
+            
+            <tag> 淘口令 </tag>
+            
+            <tag> 回点血 </tag>
+            
+            <tag> 一淘 </tag>
+            
+            <tag> 佣金 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>网站差不多快弄好了，已经部署到Github和Gitee了</title>
+      <link href="/Hexo/aede53ce/"/>
+      <url>/Hexo/aede53ce/</url>
+      
+        <content type="html"><![CDATA[<p>现在是已经上传的线上了，就是以前的一些带图片的文章现在图片，显示不了，看来还得再弄一下才行，经过几个晚上是已经恢复到以前的差不多样子了，新主题还增加了，多语言支持和聊天系统支持。</p><span id="more"></span><p>但是以前的一些东西现在是用不了，以前我用的CNZZ来统计网站数据的，现在这个版本的Next主题不支持显示被隐藏了，也不知道代码是不是对的能不能统计到，现在都是未知了。</p><p>没有重新做之前发一篇文章到Github等了半天怎么都没有更新，我还发觉奇怪了，昨晚重新部署才知道，原来我的Github仓库上面有两个分支，一个是Hexo一个master，后面应该是Github更新了，把Hexo设置成默认的了，那我是把网站部署在master这个分支上的，所以一直刷新网站都是没有更新。</p><p>后面在设置里面看了一下才知道，把默认的分支改成master这个分支以后，网站就重新更新了。</p><p>之前没有升级的时候部署到Gitee后更新了然后打开网站就是一片空白，现在升级了这个问题也解决了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Github </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> next主题 </tag>
+            
+            <tag> CNZZ </tag>
+            
+            <tag> gitee </tag>
+            
+            <tag> 网站 </tag>
+            
+            <tag> 主题 </tag>
+            
+            <tag> 部署 </tag>
+            
+            <tag> 聊天系统 </tag>
+            
+            <tag> 多语言 </tag>
+            
+            <tag> 分支 </tag>
+            
+            <tag> master </tag>
+            
+            <tag> 升级 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>绿草青青，时光静美，岁月静好</title>
       <link href="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/4c1e19eb/"/>
       <url>/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/4c1e19eb/</url>
@@ -22127,100 +22221,6 @@
             <tag> 落叶 </tag>
             
             <tag> 彗星 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>网上购物省钱方法</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/889f67f5/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/889f67f5/</url>
-      
-        <content type="html"><![CDATA[<p>我首先发现的是淘宝联盟，这个是为淘宝推广商品的一个平台，以前学做淘宝客网站时候我就知道了。</p><span id="more"></span><p>那时候只知道在自己网站上推广商品可以赚钱，其实在其他平台上发链接也是可以的，QQ，微博都可以，这个是有个手机APP的，选好自己在淘宝要买的商品，然后加入收藏夹，在淘宝联盟的收藏夹里面就可以找到。</p><p>然后就是像推广给别人那样，复制推广链接或者淘口令，然后有重新打开淘宝，淘宝就会自动识别这个淘口令，这里就下单就可以自己获得佣金了。</p><p>只要参加了淘宝客推广活动商家的商品都可以拿到佣金，分享给别人不一定有人买，但是自己买还是可以回点血的。</p><p>要下单付款的时候先不着急付款，打开一淘用一淘来付款，这样有一淘立减，又可以多少省一点，淘宝和天猫的商品都是可以在一淘付款的，只要加入购物车就可以在一淘找到。</p><p>最主要的就是要复制淘口令然后加入购物车这里，之前已经加入购物车的必须还得再加入一次，不然佣金无效的，付款在一淘付款的时候再把多加的减掉，不然只买一件的，买了两件那也麻烦。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 微博 </tag>
-            
-            <tag> 赚钱 </tag>
-            
-            <tag> 省钱 </tag>
-            
-            <tag> 淘宝联盟 </tag>
-            
-            <tag> 网购 </tag>
-            
-            <tag> 推广商品 </tag>
-            
-            <tag> 推广链接 </tag>
-            
-            <tag> 淘口令 </tag>
-            
-            <tag> 回点血 </tag>
-            
-            <tag> 一淘 </tag>
-            
-            <tag> 佣金 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>网站差不多快弄好了，已经部署到Github和Gitee了</title>
-      <link href="/Hexo/aede53ce/"/>
-      <url>/Hexo/aede53ce/</url>
-      
-        <content type="html"><![CDATA[<p>现在是已经上传的线上了，就是以前的一些带图片的文章现在图片，显示不了，看来还得再弄一下才行，经过几个晚上是已经恢复到以前的差不多样子了，新主题还增加了，多语言支持和聊天系统支持。</p><span id="more"></span><p>但是以前的一些东西现在是用不了，以前我用的CNZZ来统计网站数据的，现在这个版本的Next主题不支持显示被隐藏了，也不知道代码是不是对的能不能统计到，现在都是未知了。</p><p>没有重新做之前发一篇文章到Github等了半天怎么都没有更新，我还发觉奇怪了，昨晚重新部署才知道，原来我的Github仓库上面有两个分支，一个是Hexo一个master，后面应该是Github更新了，把Hexo设置成默认的了，那我是把网站部署在master这个分支上的，所以一直刷新网站都是没有更新。</p><p>后面在设置里面看了一下才知道，把默认的分支改成master这个分支以后，网站就重新更新了。</p><p>之前没有升级的时候部署到Gitee后更新了然后打开网站就是一片空白，现在升级了这个问题也解决了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Github </tag>
-            
-            <tag> Hexo </tag>
-            
-            <tag> next主题 </tag>
-            
-            <tag> CNZZ </tag>
-            
-            <tag> gitee </tag>
-            
-            <tag> 网站 </tag>
-            
-            <tag> 主题 </tag>
-            
-            <tag> 部署 </tag>
-            
-            <tag> 聊天系统 </tag>
-            
-            <tag> 多语言 </tag>
-            
-            <tag> 分支 </tag>
-            
-            <tag> master </tag>
-            
-            <tag> 升级 </tag>
             
         </tags>
       
@@ -22619,6 +22619,47 @@
     
     
     <entry>
+      <title>蓝叠64位这个应该是最流畅的模拟器了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b7442738/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b7442738/</url>
+      
+        <content type="html"><![CDATA[<p>我用这个来玩捕鱼游戏经常都可以保持在60帧左右，关键是它自带录制脚本这个功能，所以自动玩捕鱼游戏也是可以的，只要录制一断脚本让它不停运行就可以实现自动玩了。</p><span id="more"></span><p>但是机型设置最好使用默认的，设置其他的就会卡，性能设置内存和CPU核数我都是设置的最大，如果用的32位的设置内存超过4G是没有什么用的，但是64位的性能就不一样了，内存设置越大越流畅。</p><p>那个提示基本上可以忽略，说内存设置超过4096M会被锁定在30帧，其实根本不会，照样是保持在60帧左右。</p><p>以前居然没有发觉这个版本很好用，一直以为最新版的好用，但是我电脑本身是64位的，用64位的软件才能发挥出它该有的性能，玩捕鱼游戏用自带的脚本还可以显示在40-50帧左右还是挺不错的性能了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 性能 </tag>
+            
+            <tag> 模拟器 </tag>
+            
+            <tag> 最新版 </tag>
+            
+            <tag> 蓝叠64位 </tag>
+            
+            <tag> 最流畅 </tag>
+            
+            <tag> 捕鱼游戏 </tag>
+            
+            <tag> 60帧左右 </tag>
+            
+            <tag> 机型设置 </tag>
+            
+            <tag> 发挥出 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>苹果ID改地区，图文详解</title>
       <link href="/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/8042b2bd/"/>
       <url>/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/8042b2bd/</url>
@@ -22668,47 +22709,6 @@
     
     
     <entry>
-      <title>蓝叠64位这个应该是最流畅的模拟器了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b7442738/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b7442738/</url>
-      
-        <content type="html"><![CDATA[<p>我用这个来玩捕鱼游戏经常都可以保持在60帧左右，关键是它自带录制脚本这个功能，所以自动玩捕鱼游戏也是可以的，只要录制一断脚本让它不停运行就可以实现自动玩了。</p><span id="more"></span><p>但是机型设置最好使用默认的，设置其他的就会卡，性能设置内存和CPU核数我都是设置的最大，如果用的32位的设置内存超过4G是没有什么用的，但是64位的性能就不一样了，内存设置越大越流畅。</p><p>那个提示基本上可以忽略，说内存设置超过4096M会被锁定在30帧，其实根本不会，照样是保持在60帧左右。</p><p>以前居然没有发觉这个版本很好用，一直以为最新版的好用，但是我电脑本身是64位的，用64位的软件才能发挥出它该有的性能，玩捕鱼游戏用自带的脚本还可以显示在40-50帧左右还是挺不错的性能了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 性能 </tag>
-            
-            <tag> 模拟器 </tag>
-            
-            <tag> 最新版 </tag>
-            
-            <tag> 蓝叠64位 </tag>
-            
-            <tag> 最流畅 </tag>
-            
-            <tag> 捕鱼游戏 </tag>
-            
-            <tag> 60帧左右 </tag>
-            
-            <tag> 机型设置 </tag>
-            
-            <tag> 发挥出 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>表格练习</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/65046362/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/65046362/</url>
@@ -22732,6 +22732,47 @@
             <tag> 网页设计 </tag>
             
             <tag> html </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>装备没有人秒回收了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a636e618/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a636e618/</url>
+      
+        <content type="html"><![CDATA[<p>达叔走了，装备秒回收是他这几年代言最火的一个游戏广告，他走了我传奇游戏里的装备谁来回收呢，听说他得的是癌症走的，这年头的人最怕的就是得癌症了，有钱也治不了，明星也不例外。</p><span id="more"></span><p>以前是看过他和周星驰合演的很多电影，这几年对他印象最深刻的就是装备秒回收这个游戏广告了，零零后可能没有看过他演的电影，但是一定看过他代言的游戏广告，其实他的电影也很不错的，都是很多小时候的快乐的回忆。</p><p>新闻上说的是过年后才检查出得的癌症，到现在也才多少天啊，这病情进展也太快了，癌症这病真的是只要得了都会离死不远了，癌细胞真的扩散很快。</p><p>才进ICU一天不到人就走了，真的是病来如山倒，病走如抽丝，这话是说得真的一点都没有错了，他的电影会成为永远的经典，他代言的游戏广告是看不到了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 装备 </tag>
+            
+            <tag> 秒回收 </tag>
+            
+            <tag> 代言 </tag>
+            
+            <tag> 传奇游戏 </tag>
+            
+            <tag> 明星 </tag>
+            
+            <tag> 游戏广告 </tag>
+            
+            <tag> 小时候 </tag>
+            
+            <tag> 癌症 </tag>
+            
+            <tag> 病来如山倒 </tag>
             
         </tags>
       
@@ -22781,47 +22822,6 @@
             <tag> 奖励 </tag>
             
             <tag> 戒游戏 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>装备没有人秒回收了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a636e618/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a636e618/</url>
-      
-        <content type="html"><![CDATA[<p>达叔走了，装备秒回收是他这几年代言最火的一个游戏广告，他走了我传奇游戏里的装备谁来回收呢，听说他得的是癌症走的，这年头的人最怕的就是得癌症了，有钱也治不了，明星也不例外。</p><span id="more"></span><p>以前是看过他和周星驰合演的很多电影，这几年对他印象最深刻的就是装备秒回收这个游戏广告了，零零后可能没有看过他演的电影，但是一定看过他代言的游戏广告，其实他的电影也很不错的，都是很多小时候的快乐的回忆。</p><p>新闻上说的是过年后才检查出得的癌症，到现在也才多少天啊，这病情进展也太快了，癌症这病真的是只要得了都会离死不远了，癌细胞真的扩散很快。</p><p>才进ICU一天不到人就走了，真的是病来如山倒，病走如抽丝，这话是说得真的一点都没有错了，他的电影会成为永远的经典，他代言的游戏广告是看不到了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 装备 </tag>
-            
-            <tag> 秒回收 </tag>
-            
-            <tag> 代言 </tag>
-            
-            <tag> 传奇游戏 </tag>
-            
-            <tag> 明星 </tag>
-            
-            <tag> 游戏广告 </tag>
-            
-            <tag> 小时候 </tag>
-            
-            <tag> 癌症 </tag>
-            
-            <tag> 病来如山倒 </tag>
             
         </tags>
       
@@ -23145,6 +23145,104 @@
     
     
     <entry>
+      <title>读《围炉夜话》其七有感</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/304f301/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/304f301/</url>
+      
+        <content type="html"><![CDATA[<p>人人都想要自己的口才极佳，都希望自己能言善变，这是好事有时候也是坏事，好事就是可以为自己赢得更多的关注，坏事就是有时候可以为自己引来杀身之祸。</p><span id="more"></span><p>七国时候的苏秦身挂六国相印，在诸侯国之间穿梭游说，可以说是红极一时，但是谁也没有想到就是因为太能说而招来杀身之祸，有的时候不是什么话都能说的，说话的前提得是先为自己保命。</p><p>说错一句话命都没有了，那这句话还值得去说吗，话多言失其实也是这样的，能言善变也要学会收敛，学会低调才是啊，不管什么东西一但到了极限，那都是会物极必反的，说话同样也是这个道理，以为自己口才好什么都说出来，殊不知得罪了多少人自己都还不知道呢。</p><p>人人都想要拥有很多的财富，但是因为财富太多而丧命的人却也有很多，追求财富让自己过上更好的生活本身是没有错的，但是一味地只想着增加自己的财富，用的手段却是为人所不耻的，那这样的财富再多对自身其实是没有好处只有坏处的，人为财死，鸟为食亡说的也正是这样。</p><p>做人不能太过于只贪恋财富，是人来支配金钱，而不是金钱来驱使人类，一旦对财富追求到了一种走火入魔的地步，那就是什么违法犯罪的事都能够做得出来。要想不被金钱卷入毁灭的深渊，有时候就得用平常之心去对待，不能太过于执迷。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 关注 </tag>
+            
+            <tag> 围炉夜话 </tag>
+            
+            <tag> 人人 </tag>
+            
+            <tag> 口才极佳 </tag>
+            
+            <tag> 苏秦 </tag>
+            
+            <tag> 六国相印 </tag>
+            
+            <tag> 穿梭游说 </tag>
+            
+            <tag> 财富 </tag>
+            
+            <tag> 丧命 </tag>
+            
+            <tag> 金钱 </tag>
+            
+            <tag> 平常之心 </tag>
+            
+            <tag> 执迷 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>读《围炉夜话》其三有感</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a774ac4f/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a774ac4f/</url>
+      
+        <content type="html"><![CDATA[<p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a774ac4f/%E5%9B%B4%E7%82%89%E5%A4%9C%E8%AF%9D.jpg"></p><span id="more"></span><blockquote><p>原文：贫无可奈惟求俭，拙亦何妨只要勤。</p></blockquote><p>当没有其他更好的方法来改变自己贫穷状况的时候，节俭就是唯一最好的方法。金钱上面的贫穷自己一时难以改变，但是精神方面却是可以的，面对自身的状况要以一种安贫乐道的心态去坦然处之，急功近利的想法对自身没有益处，这种思维如果想得太过火了，最终还有可能将自己带入不归的歧途。</p><blockquote><p>穷则独善其身，达则兼济天下。</p></blockquote><p>无论是贫穷或者富贵，都应当要有自己的不同处世之道。人在贫困之中久了自然是可以苦其心志，多读书和学习知识丰富自身的修为，成为精神层面的富有者，这境界难道不是富人所要追求的吗？</p><p>平心静气没有烦恼，当自己富有之时，金钱没有必要看得太重了，因为欲望的深渊永远都是一个无底洞，一个人精神层面的贫穷永远也不可能用金钱来弥补，金钱它带给人的终究是一种物质，和自己所要追求修为的最高境界它是没有必然联系的。</p><p>乐善好施多帮助有需要的人，比用更多的金钱来填补自己的空虚精神世界更有价值。人为什么而活，虽然一直以来都是人们所不停探求的答案，也是一直没有找到确切的答案，但是却有一个否定的答案，那就是不单为了金钱而活着。</p><p>中国古代被称为商圣的第一人范蠡曾几度散尽家财，而又几度忽而所得，他会赚钱，而他又会用赚来的钱去帮助有需要的人，他能赚钱但他却没有独揽天下财富的野心，所以他自然可以成为圣人，他的品行修为是比那些终身为金钱所奴役的人要高出了许多。</p><p>聪明与否对一个人的修为真的不是很大，勤能补拙这话说得是很有道理的，世上的聪明人有很多但是成功了又有多少呢，很多人自认为自己有多聪明，殊不知山外还有山，人外还有人，比自己高明的人世上还有很多，有的时候太自以为是，就是聪明反被聪明误，保持低调而平和的心态，不断去上下探索未知的世界，只有这样的人才能成为真正的聪明人、圣人。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 欲望 </tag>
+            
+            <tag> 独善其身 </tag>
+            
+            <tag> 围炉夜话 </tag>
+            
+            <tag> 金钱 </tag>
+            
+            <tag> 贫穷状况 </tag>
+            
+            <tag> 节俭 </tag>
+            
+            <tag> 急功近利 </tag>
+            
+            <tag> 兼济天下 </tag>
+            
+            <tag> 富贵 </tag>
+            
+            <tag> 苦其心志 </tag>
+            
+            <tag> 深渊 </tag>
+            
+            <tag> 几度 </tag>
+            
+            <tag> 勤能补拙 </tag>
+            
+            <tag> 高明 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>读《围炉夜话》其九有感</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f84f140c/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f84f140c/</url>
@@ -23180,112 +23278,6 @@
             <tag> 公事 </tag>
             
             <tag> 赏罚分明 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>读《围炉夜话》其三有感</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a774ac4f/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a774ac4f/</url>
-      
-        <content type="html"><![CDATA[<p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a774ac4f/%E5%9B%B4%E7%82%89%E5%A4%9C%E8%AF%9D.jpg"></p><span id="more"></span><blockquote><p>原文：贫无可奈惟求俭，拙亦何妨只要勤。</p></blockquote><p>当没有其他更好的方法来改变自己贫穷状况的时候，节俭就是唯一最好的方法。金钱上面的贫穷自己一时难以改变，但是精神方面却是可以的，面对自身的状况要以一种安贫乐道的心态去坦然处之，急功近利的想法对自身没有益处，这种思维如果想得太过火了，最终还有可能将自己带入不归的歧途。</p><blockquote><p>穷则独善其身，达则兼济天下。</p></blockquote><p>无论是贫穷或者富贵，都应当要有自己的不同处世之道。人在贫困之中久了自然是可以苦其心志，多读书和学习知识丰富自身的修为，成为精神层面的富有者，这境界难道不是富人所要追求的吗？</p><p>平心静气没有烦恼，当自己富有之时，金钱没有必要看得太重了，因为欲望的深渊永远都是一个无底洞，一个人精神层面的贫穷永远也不可能用金钱来弥补，金钱它带给人的终究是一种物质，和自己所要追求修为的最高境界它是没有必然联系的。</p><p>乐善好施多帮助有需要的人，比用更多的金钱来填补自己的空虚精神世界更有价值。人为什么而活，虽然一直以来都是人们所不停探求的答案，也是一直没有找到确切的答案，但是却有一个否定的答案，那就是不单为了金钱而活着。</p><p>中国古代被称为商圣的第一人范蠡曾几度散尽家财，而又几度忽而所得，他会赚钱，而他又会用赚来的钱去帮助有需要的人，他能赚钱但他却没有独揽天下财富的野心，所以他自然可以成为圣人，他的品行修为是比那些终身为金钱所奴役的人要高出了许多。</p><p>聪明与否对一个人的修为真的不是很大，勤能补拙这话说得是很有道理的，世上的聪明人有很多但是成功了又有多少呢，很多人自认为自己有多聪明，殊不知山外还有山，人外还有人，比自己高明的人世上还有很多，有的时候太自以为是，就是聪明反被聪明误，保持低调而平和的心态，不断去上下探索未知的世界，只有这样的人才能成为真正的聪明人、圣人。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 欲望 </tag>
-            
-            <tag> 独善其身 </tag>
-            
-            <tag> 围炉夜话 </tag>
-            
-            <tag> 贫穷状况 </tag>
-            
-            <tag> 节俭 </tag>
-            
-            <tag> 急功近利 </tag>
-            
-            <tag> 兼济天下 </tag>
-            
-            <tag> 富贵 </tag>
-            
-            <tag> 苦其心志 </tag>
-            
-            <tag> 深渊 </tag>
-            
-            <tag> 金钱 </tag>
-            
-            <tag> 几度 </tag>
-            
-            <tag> 勤能补拙 </tag>
-            
-            <tag> 高明 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>读《围炉夜话》其五有感</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e358563c/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e358563c/</url>
-      
-        <content type="html"><![CDATA[<p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e358563c/%E5%9B%B4%E7%82%89%E5%A4%9C%E8%AF%9D.jpg"></p><span id="more"></span><p>“处事要代人作想，读书须切己用功。”</p><p>为人处世要多站在他人的角度来思考问题，有很多时候自己想得认为是对的，但是站在他人的角度来看待同样的问题，却是有不一样的感受，很多问题都是需要转换思维，用不同的多个角度才能看得透。</p><p>看问题的角度不同所得出来的差异是很大的，自己很多认为自己做得对的事情，其实在他人看来和自己的想法却是天壤之别，看待问题不能只局限于自己的知识层面，要从多方面地去深刻了解之后，那样才能有发言权，也才能对一个问题作出客观的评价。</p><p>有时候说的很多话，自己说的时候虽然是没有什么感觉，但是说者无意听者有心，别人听了感受就不会像自己说得那样轻易的一笔带过，我们说出的每一句话都会经过别人思考和加工，别人的想法里得出来的结论肯定是和我们自己想的不一样了。</p><p>要想跳出我们自己的思维局限，我们还得要多多的去读书，只有书读得多了，那样思维才能更加开阔，看问题的方法也会更加的全面，读书自然是必须要用功才行的，书从简单的文字变成自己脑海里面的知识，要经过自己不断的去感受和领悟，领悟透了知识才会真正的属于自己，如果读了没有给自己带来一点感悟，那书籍还是只属于纸上的文字。</p><p>读书吸收知识的过程没有不辛苦就可以达到的，但是苦尽甘来，自己学得的知识和思维方式，却是真正属于自己的，装在自己的脑海里，别人拿不走，我们却可以享用它给我们带来的价值。</p><p>学习不一样的思维方式，最好的方法就是从书中去领悟，除此之外再无其他可以，他人口中说出来的言语，万不及书中的文字带给人真切，文字可以给人很多去想象的空间，不同的人读同一本书，所读之人所处的心境不一样，得出的结论也是不同的，同一本书，读出不同的世界。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 天壤之别 </tag>
-            
-            <tag> 感受 </tag>
-            
-            <tag> 思考问题 </tag>
-            
-            <tag> 开阔 </tag>
-            
-            <tag> 处事 </tag>
-            
-            <tag> 代人作想 </tag>
-            
-            <tag> 读书 </tag>
-            
-            <tag> 切己用功 </tag>
-            
-            <tag> 角度 </tag>
-            
-            <tag> 差异 </tag>
-            
-            <tag> 听者有心 </tag>
-            
-            <tag> 思维局限 </tag>
-            
-            <tag> 吸收知识 </tag>
-            
-            <tag> 脑海里 </tag>
-            
-            <tag> 言语 </tag>
-            
-            <tag> 同一本书 </tag>
             
         </tags>
       
@@ -23402,11 +23394,11 @@
     
     
     <entry>
-      <title>读《围炉夜话》其七有感</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/304f301/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/304f301/</url>
+      <title>读《围炉夜话》其五有感</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e358563c/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e358563c/</url>
       
-        <content type="html"><![CDATA[<p>人人都想要自己的口才极佳，都希望自己能言善变，这是好事有时候也是坏事，好事就是可以为自己赢得更多的关注，坏事就是有时候可以为自己引来杀身之祸。</p><span id="more"></span><p>七国时候的苏秦身挂六国相印，在诸侯国之间穿梭游说，可以说是红极一时，但是谁也没有想到就是因为太能说而招来杀身之祸，有的时候不是什么话都能说的，说话的前提得是先为自己保命。</p><p>说错一句话命都没有了，那这句话还值得去说吗，话多言失其实也是这样的，能言善变也要学会收敛，学会低调才是啊，不管什么东西一但到了极限，那都是会物极必反的，说话同样也是这个道理，以为自己口才好什么都说出来，殊不知得罪了多少人自己都还不知道呢。</p><p>人人都想要拥有很多的财富，但是因为财富太多而丧命的人却也有很多，追求财富让自己过上更好的生活本身是没有错的，但是一味地只想着增加自己的财富，用的手段却是为人所不耻的，那这样的财富再多对自身其实是没有好处只有坏处的，人为财死，鸟为食亡说的也正是这样。</p><p>做人不能太过于只贪恋财富，是人来支配金钱，而不是金钱来驱使人类，一旦对财富追求到了一种走火入魔的地步，那就是什么违法犯罪的事都能够做得出来。要想不被金钱卷入毁灭的深渊，有时候就得用平常之心去对待，不能太过于执迷。</p>]]></content>
+        <content type="html"><![CDATA[<p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e358563c/%E5%9B%B4%E7%82%89%E5%A4%9C%E8%AF%9D.jpg"></p><span id="more"></span><p>“处事要代人作想，读书须切己用功。”</p><p>为人处世要多站在他人的角度来思考问题，有很多时候自己想得认为是对的，但是站在他人的角度来看待同样的问题，却是有不一样的感受，很多问题都是需要转换思维，用不同的多个角度才能看得透。</p><p>看问题的角度不同所得出来的差异是很大的，自己很多认为自己做得对的事情，其实在他人看来和自己的想法却是天壤之别，看待问题不能只局限于自己的知识层面，要从多方面地去深刻了解之后，那样才能有发言权，也才能对一个问题作出客观的评价。</p><p>有时候说的很多话，自己说的时候虽然是没有什么感觉，但是说者无意听者有心，别人听了感受就不会像自己说得那样轻易的一笔带过，我们说出的每一句话都会经过别人思考和加工，别人的想法里得出来的结论肯定是和我们自己想的不一样了。</p><p>要想跳出我们自己的思维局限，我们还得要多多的去读书，只有书读得多了，那样思维才能更加开阔，看问题的方法也会更加的全面，读书自然是必须要用功才行的，书从简单的文字变成自己脑海里面的知识，要经过自己不断的去感受和领悟，领悟透了知识才会真正的属于自己，如果读了没有给自己带来一点感悟，那书籍还是只属于纸上的文字。</p><p>读书吸收知识的过程没有不辛苦就可以达到的，但是苦尽甘来，自己学得的知识和思维方式，却是真正属于自己的，装在自己的脑海里，别人拿不走，我们却可以享用它给我们带来的价值。</p><p>学习不一样的思维方式，最好的方法就是从书中去领悟，除此之外再无其他可以，他人口中说出来的言语，万不及书中的文字带给人真切，文字可以给人很多去想象的空间，不同的人读同一本书，所读之人所处的心境不一样，得出的结论也是不同的，同一本书，读出不同的世界。</p>]]></content>
       
       
       <categories>
@@ -23418,29 +23410,37 @@
       
         <tags>
             
-            <tag> 关注 </tag>
+            <tag> 天壤之别 </tag>
             
-            <tag> 围炉夜话 </tag>
+            <tag> 感受 </tag>
             
-            <tag> 金钱 </tag>
+            <tag> 思考问题 </tag>
             
-            <tag> 人人 </tag>
+            <tag> 开阔 </tag>
             
-            <tag> 口才极佳 </tag>
+            <tag> 处事 </tag>
             
-            <tag> 苏秦 </tag>
+            <tag> 代人作想 </tag>
             
-            <tag> 六国相印 </tag>
+            <tag> 读书 </tag>
             
-            <tag> 穿梭游说 </tag>
+            <tag> 切己用功 </tag>
             
-            <tag> 财富 </tag>
+            <tag> 角度 </tag>
             
-            <tag> 丧命 </tag>
+            <tag> 差异 </tag>
             
-            <tag> 平常之心 </tag>
+            <tag> 听者有心 </tag>
             
-            <tag> 执迷 </tag>
+            <tag> 思维局限 </tag>
+            
+            <tag> 吸收知识 </tag>
+            
+            <tag> 脑海里 </tag>
+            
+            <tag> 言语 </tag>
+            
+            <tag> 同一本书 </tag>
             
         </tags>
       
@@ -23901,6 +23901,49 @@
     
     
     <entry>
+      <title>还有一套试题今天又没有做</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/10c71eb2/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/10c71eb2/</url>
+      
+        <content type="html"><![CDATA[<p>今天一直在玩游戏赚点零花钱，再有今天又去打印了准考证，这两天这里外面下着点小雨，在家里还不感觉冷，在外面骑电动车，而我又只穿一件衣服，感觉还是有点冷，骑快了的时候那个毛毛雨打在脸上差点连路都看不清。</p><span id="more"></span><p>明天还是要把那剩下的一套试题做了，本来我还以为四套的结果是没有，才只有两套试题，以前买的也都是两套的，我是把后面的答案也看成是试题了，所以才会产生了错觉。</p><p>今天去打印准考证和一张防疫要求还花了我四块钱，应该是那张准考证我要她打印成彩色的所以贵了，因为彩色的纸都不一样了，比防疫要求那张的纸要厚很多。</p><p>不过也还好了，2019年的时候去镇上的另外一家打印两张准考证都是十块钱了，而且那家比这家远。那时候是刚来这边不知道近的这家，才在百度地图上找的那家，导航过去的不仅距离远价格还贵。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 答案 </tag>
+            
+            <tag> 玩游戏 </tag>
+            
+            <tag> 骑电动车 </tag>
+            
+            <tag> 零花钱 </tag>
+            
+            <tag> 准考证 </tag>
+            
+            <tag> 一套试题 </tag>
+            
+            <tag> 没有做 </tag>
+            
+            <tag> 剩下 </tag>
+            
+            <tag> 防疫要求 </tag>
+            
+            <tag> 距离远 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>这一届的春晚不好看</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a1276669/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a1276669/</url>
@@ -23950,49 +23993,6 @@
             <tag> 趋同 </tag>
             
             <tag> 偷情 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>还有一套试题今天又没有做</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/10c71eb2/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/10c71eb2/</url>
-      
-        <content type="html"><![CDATA[<p>今天一直在玩游戏赚点零花钱，再有今天又去打印了准考证，这两天这里外面下着点小雨，在家里还不感觉冷，在外面骑电动车，而我又只穿一件衣服，感觉还是有点冷，骑快了的时候那个毛毛雨打在脸上差点连路都看不清。</p><span id="more"></span><p>明天还是要把那剩下的一套试题做了，本来我还以为四套的结果是没有，才只有两套试题，以前买的也都是两套的，我是把后面的答案也看成是试题了，所以才会产生了错觉。</p><p>今天去打印准考证和一张防疫要求还花了我四块钱，应该是那张准考证我要她打印成彩色的所以贵了，因为彩色的纸都不一样了，比防疫要求那张的纸要厚很多。</p><p>不过也还好了，2019年的时候去镇上的另外一家打印两张准考证都是十块钱了，而且那家比这家远。那时候是刚来这边不知道近的这家，才在百度地图上找的那家，导航过去的不仅距离远价格还贵。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 答案 </tag>
-            
-            <tag> 玩游戏 </tag>
-            
-            <tag> 骑电动车 </tag>
-            
-            <tag> 零花钱 </tag>
-            
-            <tag> 准考证 </tag>
-            
-            <tag> 一套试题 </tag>
-            
-            <tag> 没有做 </tag>
-            
-            <tag> 剩下 </tag>
-            
-            <tag> 防疫要求 </tag>
-            
-            <tag> 距离远 </tag>
             
         </tags>
       
@@ -24235,45 +24235,6 @@
     
     
     <entry>
-      <title>都快睡觉了，才突然发现今天还没有更新文章</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/fdac98a8/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/fdac98a8/</url>
-      
-        <content type="html"><![CDATA[<p>明天又要休息了，做小时工就是这样休息的时间多上班时间少，上一天班就只有一天工资休息就没有。最近感冒了难受，休息一天也好，今天下班后去药店买了感冒药，这感冒药吃了就想睡觉，还好是晚上吃的，要白天上班的话，这还怎么扛得住。</p><span id="more"></span><p>吃了感冒药后就已经迷迷糊糊的想要睡觉了，如果不是拿起手机看了下，还真的就忘记今天的更文了。</p><p>现在上班培训每天都要交手机，手机能拿在手上的就只有吃饭时间和下班时间了。最近都很少玩手机了，每天更一篇文章，现在感觉就是每天必须要做的事了，其他的事感觉都没有这个事重要，现在每天拿着手机感觉已经没有什么好玩的了，感觉写写文章这个还能玩下，其他都没有什么兴趣了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 拿着手机 </tag>
-            
-            <tag> 感冒药 </tag>
-            
-            <tag> 吃饭时间 </tag>
-            
-            <tag> 明天 </tag>
-            
-            <tag> 一篇文章 </tag>
-            
-            <tag> 做小时工 </tag>
-            
-            <tag> 休息一天 </tag>
-            
-            <tag> 扛得住 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>郑爽代孕弃养和普通人有关系吗</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/70cfdcf4/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/70cfdcf4/</url>
@@ -24311,6 +24272,45 @@
             <tag> 幼稚 </tag>
             
             <tag> 劣根性 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>都快睡觉了，才突然发现今天还没有更新文章</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/fdac98a8/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/fdac98a8/</url>
+      
+        <content type="html"><![CDATA[<p>明天又要休息了，做小时工就是这样休息的时间多上班时间少，上一天班就只有一天工资休息就没有。最近感冒了难受，休息一天也好，今天下班后去药店买了感冒药，这感冒药吃了就想睡觉，还好是晚上吃的，要白天上班的话，这还怎么扛得住。</p><span id="more"></span><p>吃了感冒药后就已经迷迷糊糊的想要睡觉了，如果不是拿起手机看了下，还真的就忘记今天的更文了。</p><p>现在上班培训每天都要交手机，手机能拿在手上的就只有吃饭时间和下班时间了。最近都很少玩手机了，每天更一篇文章，现在感觉就是每天必须要做的事了，其他的事感觉都没有这个事重要，现在每天拿着手机感觉已经没有什么好玩的了，感觉写写文章这个还能玩下，其他都没有什么兴趣了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 拿着手机 </tag>
+            
+            <tag> 感冒药 </tag>
+            
+            <tag> 吃饭时间 </tag>
+            
+            <tag> 明天 </tag>
+            
+            <tag> 一篇文章 </tag>
+            
+            <tag> 做小时工 </tag>
+            
+            <tag> 休息一天 </tag>
+            
+            <tag> 扛得住 </tag>
             
         </tags>
       
@@ -24360,43 +24360,6 @@
             <tag> 单独蓝牙 </tag>
             
             <tag> 有线 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>重新安装的这个word版本没有以前那个好用了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e2ba885/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e2ba885/</url>
-      
-        <content type="html"><![CDATA[<p>这个界面我找了半天也没有找到专注模式，还有是界面不能设置成全黑模式了，就是中间编辑区这一块还是白色的了，比以前那个版本好一点的应该是不会出现乱码了，以前用的那个是一段时间界面就会出现乱码，直接要重启word才能看得清楚。</p><span id="more"></span><p>每个版本真的都有好用的地方和不好的地方，既然不能设置全黑也只能将就用着了，毕竟这个都已经是最新版本的了，总比那个2019增强版好用很多，那个是一打开就闪退，这个好点不会了。</p><p>现在用它来写文章也没有遇到特别不好的地方，就是界面不能设置成自己想要的这一点缺点了，另外这个好像也没有文字语音朗读功能了，之前那个版本的我每次写好文章都是会用这个功能朗读一遍，看看那些地方需要改进，这个是没有了，只能自己多看几遍了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 专注模式 </tag>
-            
-            <tag> 重新安装 </tag>
-            
-            <tag> word版本 </tag>
-            
-            <tag> 编辑区 </tag>
-            
-            <tag> 重启word </tag>
-            
-            <tag> 2019增强版 </tag>
-            
-            <tag> 语音朗读 </tag>
             
         </tags>
       
@@ -24476,6 +24439,43 @@
             <tag> 独自流淌 </tag>
             
             <tag> 歌声 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>重新安装的这个word版本没有以前那个好用了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e2ba885/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e2ba885/</url>
+      
+        <content type="html"><![CDATA[<p>这个界面我找了半天也没有找到专注模式，还有是界面不能设置成全黑模式了，就是中间编辑区这一块还是白色的了，比以前那个版本好一点的应该是不会出现乱码了，以前用的那个是一段时间界面就会出现乱码，直接要重启word才能看得清楚。</p><span id="more"></span><p>每个版本真的都有好用的地方和不好的地方，既然不能设置全黑也只能将就用着了，毕竟这个都已经是最新版本的了，总比那个2019增强版好用很多，那个是一打开就闪退，这个好点不会了。</p><p>现在用它来写文章也没有遇到特别不好的地方，就是界面不能设置成自己想要的这一点缺点了，另外这个好像也没有文字语音朗读功能了，之前那个版本的我每次写好文章都是会用这个功能朗读一遍，看看那些地方需要改进，这个是没有了，只能自己多看几遍了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 专注模式 </tag>
+            
+            <tag> 重新安装 </tag>
+            
+            <tag> word版本 </tag>
+            
+            <tag> 编辑区 </tag>
+            
+            <tag> 重启word </tag>
+            
+            <tag> 2019增强版 </tag>
+            
+            <tag> 语音朗读 </tag>
             
         </tags>
       
