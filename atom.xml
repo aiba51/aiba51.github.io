@@ -6,7 +6,7 @@
   <link href="https://aixz.xyz/atom.xml" rel="self"/>
   
   <link href="https://aixz.xyz/"/>
-  <updated>2023-05-11T15:14:46.000Z</updated>
+  <updated>2024-03-13T07:25:03.000Z</updated>
   <id>https://aixz.xyz/</id>
   
   <author>
@@ -15,6 +15,71 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>MTK阳华K8平板提取boot并root</title>
+    <link href="https://aixz.xyz/MTK/e9ab88dc/"/>
+    <id>https://aixz.xyz/MTK/e9ab88dc/</id>
+    <published>2024-03-13T07:25:03.000Z</published>
+    <updated>2024-03-13T07:25:03.000Z</updated>
+    
+    <content type="html"><![CDATA[<p><img data-src="/MTK/e9ab88dc/K8.png" alt="K8平板信息" title="K8平板信息"></p><span id="more"></span><p>玩机资源下载mtkclient-main</p><p><span class="exturl" data-url="aHR0cHM6Ly93d3AubGFuem91ai5jb20vYjAyamloZm9i" title="玩机资源下载mtkclient-main">https://wwp.lanzouj.com/b02jihfob<i class="fa fa-external-link-alt"></i></span></p><p>密码:4bzb</p><p>安装Python3</p><p>如果已经安装了商店版的需要卸载，在官网下载重新安装</p><p>使用mtkclient-main<br>我平板是需要这个版本才行，Github的版本会闪退，无法连接</p><p>打开PowerShell</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> F:\MTK\mtkclient-main</span><br></pre></td></tr></table></figure><p>配置mtkclient</p><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 <span class="keyword">install</span> -r requirements.txt</span><br></pre></td></tr></table></figure><p>下载安装usbdk</p><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2RheW5peC9Vc2JEay9yZWxlYXNlcy8=" title="下载usbdk">https://github.com/daynix/UsbDk/releases/<i class="fa fa-external-link-alt"></i></span></p><p>启动mtk_gui</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">python mtk_gui</span></span><br></pre></td></tr></table></figure><p><strong>平板关机</strong></p><p><strong>按住音量上键+音量下键</strong></p><p><strong>连接电脑</strong></p><p><strong>右上角的手机图里面出现转圈放开音量上下键</strong></p><p><strong>拔掉数据线</strong></p><p><strong>再次重复按住音量上键+音量下键</strong></p><p><strong>连接电脑</strong></p><p><strong>右上角的手机图里面出现绿色标志说明连接成功，放开音量上下键</strong></p><p>如果连接失败死机了无法开机，用针捅下音量键旁边的**<code>复位孔</code>**就会恢复，注意是音量键边上的孔，不是顶上的麦克风孔。</p><p>确认平板是否解锁bootloader</p><p>如果没有，这个gui也可以解锁，注意：解锁会清楚全部资料恢复出厂设置</p><p>当然进bootloader也可以解锁，都一样会清除数据</p><p>打开开发者选项</p><p>打开USB调试</p><p>点开允许oem解锁</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">adb reboot bootloader</span></span><br></pre></td></tr></table></figure><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">fastboot flashing unlock</span></span><br></pre></td></tr></table></figure><p>音量键选择yes</p><p>重启到系统</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">fastboot reboot</span></span><br></pre></td></tr></table></figure><p><strong>二选一解锁，解锁后都需要重新安装面具再修补boot</strong></p><p>gui点击读分区</p><p>选择要备份的分区，比如boot分区</p><p>勾选备份分区</p><p>点击读取</p><p>选择备份分区的位置</p><p>下面两个进度条走完备份完成</p><p>或者命令行</p><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python mtk r <span class="keyword">boot</span> <span class="keyword">boot</span>.img</span><br></pre></td></tr></table></figure><p>在平板上安装面具</p><p>切换到备份分区的位置</p><p>用adb上传boot.bin文件到平板下载目录</p><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb <span class="keyword">push</span> boot.bin <span class="regexp">/storage/</span>emulated<span class="regexp">/0/</span>Download/</span><br></pre></td></tr></table></figure><p>在平板上用面具修补boot.bin</p><p>修补完成以后后缀名会变成.img</p><p>不用管，名字和后缀名都不用改，原样传回电脑</p><p>用adb下载修补后boot,和上传的时候在同一目录</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb pull <span class="regexp">/storage/</span>emulated<span class="regexp">/0/</span>Download/magisk_patched-<span class="number">27000</span>_y8VEh.img</span><br></pre></td></tr></table></figure><p>传完以后就可以刷入了</p><p>平板开机</p><p>重启到bootloader</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">adb reboot bootloader</span></span><br></pre></td></tr></table></figure><p>刷入修补过的boot</p><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">fastboot</span> flash boot magisk_patched-<span class="number">27000</span>_y8VEh.img</span><br></pre></td></tr></table></figure><p>重启平板</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">fastboot reboot</span></span><br></pre></td></tr></table></figure><p>进入平板上的面具提示需要修复,重启就可以</p><p>设置白名单</p><p>Shamiko白名单模式（Shamiko whitelist）</p><p>1、安装模块：Shamiko</p><p><span class="exturl" data-url="aHR0cHM6Ly9tYWdpc2tjbi5jb20vc2hhbWlrby1pbnN0YWxs" title="安装Shamiko">https://magiskcn.com/shamiko-install<i class="fa fa-external-link-alt"></i></span></p><p>2、下载：MT管理器或者RE文件管理器 ，授权 ROOT 权限</p><p>3、MT管理器 打开目录 &#x2F;data&#x2F;adb&#x2F;shamiko，创建 <code>whitelist</code> 文件（是文件，不是文件夹。不要搞错了哦）</p><p>4、重启手机，成功切换白名单模式</p><p>白名单和黑名单比有什么优势？</p><p>全局隐藏，更彻底，也不用设置排除列表</p><p>所有app都检测不到root，已授权root的app可以正常使用root权限。</p><p>需要授权root，关闭Shamiko模块重启，授权完再启用shamiko模块重启即可。</p><p>实测安装在内存卡的应用不支持白名单模式，就是在没有开启白名单之前获取root权限的，开了白名单模式后root权限就没有了。</p><p>因为面具是只能安装在内部储存，需要在白名单模式下root的应用移到内部储存就可以。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;&lt;img data-src=&quot;/MTK/e9ab88dc/K8.png&quot; alt=&quot;K8平板信息&quot; title=&quot;K8平板信息&quot;&gt;&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="MTK" scheme="https://aixz.xyz/categories/MTK/"/>
+    
+    
+    <category term="Github" scheme="https://aixz.xyz/tags/Github/"/>
+    
+    <category term="MTK" scheme="https://aixz.xyz/tags/MTK/"/>
+    
+    <category term="阳华K8" scheme="https://aixz.xyz/tags/%E9%98%B3%E5%8D%8EK8/"/>
+    
+    <category term="平板" scheme="https://aixz.xyz/tags/%E5%B9%B3%E6%9D%BF/"/>
+    
+    <category term="提取boot" scheme="https://aixz.xyz/tags/%E6%8F%90%E5%8F%96boot/"/>
+    
+    <category term="root" scheme="https://aixz.xyz/tags/root/"/>
+    
+    <category term="mtkclient" scheme="https://aixz.xyz/tags/mtkclient/"/>
+    
+    <category term="玩机资源" scheme="https://aixz.xyz/tags/%E7%8E%A9%E6%9C%BA%E8%B5%84%E6%BA%90/"/>
+    
+    <category term="Python3" scheme="https://aixz.xyz/tags/Python3/"/>
+    
+    <category term="PowerShell" scheme="https://aixz.xyz/tags/PowerShell/"/>
+    
+    <category term="音量上下键" scheme="https://aixz.xyz/tags/%E9%9F%B3%E9%87%8F%E4%B8%8A%E4%B8%8B%E9%94%AE/"/>
+    
+    <category term="bootloader" scheme="https://aixz.xyz/tags/bootloader/"/>
+    
+    <category term="解锁" scheme="https://aixz.xyz/tags/%E8%A7%A3%E9%94%81/"/>
+    
+    <category term="恢复出厂设置" scheme="https://aixz.xyz/tags/%E6%81%A2%E5%A4%8D%E5%87%BA%E5%8E%82%E8%AE%BE%E7%BD%AE/"/>
+    
+    <category term="unlock" scheme="https://aixz.xyz/tags/unlock/"/>
+    
+    <category term="fastboot" scheme="https://aixz.xyz/tags/fastboot/"/>
+    
+    <category term="reboot" scheme="https://aixz.xyz/tags/reboot/"/>
+    
+    <category term="boot分区" scheme="https://aixz.xyz/tags/boot%E5%88%86%E5%8C%BA/"/>
+    
+    <category term="面具" scheme="https://aixz.xyz/tags/%E9%9D%A2%E5%85%B7/"/>
+    
+    <category term="Shamiko白名单" scheme="https://aixz.xyz/tags/Shamiko%E7%99%BD%E5%90%8D%E5%8D%95/"/>
+    
+    <category term="内存卡" scheme="https://aixz.xyz/tags/%E5%86%85%E5%AD%98%E5%8D%A1/"/>
+    
+    <category term="内部储存" scheme="https://aixz.xyz/tags/%E5%86%85%E9%83%A8%E5%82%A8%E5%AD%98/"/>
+    
+    <category term="复位孔" scheme="https://aixz.xyz/tags/%E5%A4%8D%E4%BD%8D%E5%AD%94/"/>
+    
+  </entry>
   
   <entry>
     <title>奋斗的意义</title>
@@ -688,51 +753,6 @@
     <category term="版本" scheme="https://aixz.xyz/tags/%E7%89%88%E6%9C%AC/"/>
     
     <category term="home" scheme="https://aixz.xyz/tags/home/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>爱奇艺充分利用黄金会员，在电视观看4K视频</title>
-    <link href="https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d5e44198/"/>
-    <id>https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d5e44198/</id>
-    <published>2022-06-13T15:47:54.000Z</published>
-    <updated>2022-06-13T15:47:54.000Z</updated>
-    
-    <content type="html"><![CDATA[<p>爱奇艺可以充分利用黄金会员在电视上观看4K视频，爱奇艺手机端和电脑端是通用的，但是电视端就不行，爱奇艺的电视端APP是奇异果，原则上要在电视端奇异果上看4K视频是要开会员才行。</p><span id="more"></span><p>这个要收两次钱还是有点不舒服，当然土豪之类就略过吧，本文主要讲解的是只开一端的会员，就可以在多端使用的方法。</p><p>其实方法很简单就是利用手机端的爱奇艺投屏到电视端，至于其他比如优酷或者腾讯视频行不行，反正我没有试过，因为这两个平台的会员我没有，只有爱奇艺的黄金会员，还是去年在开通爱奇艺VR端会员时赠送的，之前不知道，钱花了都没有好好的把它充分利用起来，现在想想是还有点后悔。</p><p>还是回到说正题关键的方法好了，说到投屏功能现在很多电视都是自带的了，如果电视太老没有投屏功能，那就买个电视盒子也可以解决这个问题，花费也就在200元以内，比买个无线的投屏器要划算很多，如果你用的是无线投屏器，那本文对你来说已经没有什么用了，还是洗洗睡吧😞。</p><p>我这里用的就是电视盒子连接显示屏，可以在手机端直接打开爱奇艺在看的视频右上方就有个投屏的图标，打开是直接可以投屏的，但是只能投1080P以下的画质，而上面有1行黄色的小字说是要投1080P以上就要在电视端安装奇异果才可以，那就安装吧。</p><p>上面也有安装教程，有两种安装方法；第一种就是在手机或者电脑上用网页搜索下载然后传到电视端去安装，第二种就是直接在电视端的应用商店搜索安装，那种感觉方便就用那种，我是用的第一种，因为我在电视盒子的应用商店里面没有搜到，可能是搜的名称不同，全名应该是“银河奇异果”，那按字母搜应该就是YHQYG,而我搜的是QYG，所以没有搜到，我是直接在手机端下载了，传到电视端去安装的，电视端我安装了小白文件管理器，直接用小白文件管理器-多屏互动-文件传输功能，在手机浏览器上输入小白文件管理器给出的IP地址和端口号就可以，但是前提是手机和电视必须连的同一WIFI才可以。</p><p>在小白管理器的传输网页上就可以选择手机里的文件，选择刚下载的安装包传到到电视端，等待传输完成就可以了，直接在小白文件管理器打开就开始安装了。等待安装完成打开一次奇异果，因为第一次安装没有打开，那在手机端爱奇艺选择投屏就找不到奇异果这个设备，有时候也还要网络好才能找到，投到其他名字的设备还是只能看1080P以下的，只有选择投到奇异果这个设备才能观看在手机端选择的4K。</p><p>有时候一次不行就关掉手机端的爱奇艺重新打开多试几次，只要成功投到奇异果就是直接在电视端播放了，可以选择强制全屏，手机屏幕可以熄屏都没有什么影响了。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;爱奇艺可以充分利用黄金会员在电视上观看4K视频，爱奇艺手机端和电脑端是通用的，但是电视端就不行，爱奇艺的电视端APP是奇异果，原则上要在电视端奇异果上看4K视频是要开会员才行。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="日常记录" scheme="https://aixz.xyz/categories/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/"/>
-    
-    
-    <category term="安装" scheme="https://aixz.xyz/tags/%E5%AE%89%E8%A3%85/"/>
-    
-    <category term="1080P" scheme="https://aixz.xyz/tags/1080P/"/>
-    
-    <category term="电视" scheme="https://aixz.xyz/tags/%E7%94%B5%E8%A7%86/"/>
-    
-    <category term="视频" scheme="https://aixz.xyz/tags/%E8%A7%86%E9%A2%91/"/>
-    
-    <category term="优酷" scheme="https://aixz.xyz/tags/%E4%BC%98%E9%85%B7/"/>
-    
-    <category term="爱奇艺" scheme="https://aixz.xyz/tags/%E7%88%B1%E5%A5%87%E8%89%BA/"/>
-    
-    <category term="黄金会员" scheme="https://aixz.xyz/tags/%E9%BB%84%E9%87%91%E4%BC%9A%E5%91%98/"/>
-    
-    <category term="4K" scheme="https://aixz.xyz/tags/4K/"/>
-    
-    <category term="奇异果" scheme="https://aixz.xyz/tags/%E5%A5%87%E5%BC%82%E6%9E%9C/"/>
-    
-    <category term="腾讯" scheme="https://aixz.xyz/tags/%E8%85%BE%E8%AE%AF/"/>
-    
-    <category term="盒子" scheme="https://aixz.xyz/tags/%E7%9B%92%E5%AD%90/"/>
-    
-    <category term="投屏" scheme="https://aixz.xyz/tags/%E6%8A%95%E5%B1%8F/"/>
-    
-    <category term="手机端" scheme="https://aixz.xyz/tags/%E6%89%8B%E6%9C%BA%E7%AB%AF/"/>
     
   </entry>
   

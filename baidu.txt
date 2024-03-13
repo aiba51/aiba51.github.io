@@ -1,3 +1,4 @@
+https://aixz.xyz/MTK/e9ab88dc/
 https://aixz.xyz/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/7200f10b/
 https://aixz.xyz/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/be205ed4/
 https://aixz.xyz/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/c29855f/
@@ -7,4 +8,3 @@ https://aixz.xyz/Git/aa52116d/
 https://aixz.xyz/Termux/ad000d0/
 https://aixz.xyz/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/53b59f91/
 https://aixz.xyz/Kali/6b888a23/
-https://aixz.xyz/vim/85cf1172/

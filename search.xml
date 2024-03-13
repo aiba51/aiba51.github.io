@@ -4,6 +4,75 @@
   
     
     <entry>
+      <title>MTK阳华K8平板提取boot并root</title>
+      <link href="/MTK/e9ab88dc/"/>
+      <url>/MTK/e9ab88dc/</url>
+      
+        <content type="html"><![CDATA[<p><img data-src="/MTK/e9ab88dc/K8.png" alt="K8平板信息" title="K8平板信息"></p><span id="more"></span><p>玩机资源下载mtkclient-main</p><p><span class="exturl" data-url="aHR0cHM6Ly93d3AubGFuem91ai5jb20vYjAyamloZm9i" title="玩机资源下载mtkclient-main">https://wwp.lanzouj.com/b02jihfob<i class="fa fa-external-link-alt"></i></span></p><p>密码:4bzb</p><p>安装Python3</p><p>如果已经安装了商店版的需要卸载，在官网下载重新安装</p><p>使用mtkclient-main<br>我平板是需要这个版本才行，Github的版本会闪退，无法连接</p><p>打开PowerShell</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> F:\MTK\mtkclient-main</span><br></pre></td></tr></table></figure><p>配置mtkclient</p><figure class="highlight cmake"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip3 <span class="keyword">install</span> -r requirements.txt</span><br></pre></td></tr></table></figure><p>下载安装usbdk</p><p><span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2RheW5peC9Vc2JEay9yZWxlYXNlcy8=" title="下载usbdk">https://github.com/daynix/UsbDk/releases/<i class="fa fa-external-link-alt"></i></span></p><p>启动mtk_gui</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">python mtk_gui</span></span><br></pre></td></tr></table></figure><p><strong>平板关机</strong></p><p><strong>按住音量上键+音量下键</strong></p><p><strong>连接电脑</strong></p><p><strong>右上角的手机图里面出现转圈放开音量上下键</strong></p><p><strong>拔掉数据线</strong></p><p><strong>再次重复按住音量上键+音量下键</strong></p><p><strong>连接电脑</strong></p><p><strong>右上角的手机图里面出现绿色标志说明连接成功，放开音量上下键</strong></p><p>如果连接失败死机了无法开机，用针捅下音量键旁边的**<code>复位孔</code>**就会恢复，注意是音量键边上的孔，不是顶上的麦克风孔。</p><p>确认平板是否解锁bootloader</p><p>如果没有，这个gui也可以解锁，注意：解锁会清楚全部资料恢复出厂设置</p><p>当然进bootloader也可以解锁，都一样会清除数据</p><p>打开开发者选项</p><p>打开USB调试</p><p>点开允许oem解锁</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">adb reboot bootloader</span></span><br></pre></td></tr></table></figure><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">fastboot flashing unlock</span></span><br></pre></td></tr></table></figure><p>音量键选择yes</p><p>重启到系统</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">fastboot reboot</span></span><br></pre></td></tr></table></figure><p><strong>二选一解锁，解锁后都需要重新安装面具再修补boot</strong></p><p>gui点击读分区</p><p>选择要备份的分区，比如boot分区</p><p>勾选备份分区</p><p>点击读取</p><p>选择备份分区的位置</p><p>下面两个进度条走完备份完成</p><p>或者命令行</p><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python mtk r <span class="keyword">boot</span> <span class="keyword">boot</span>.img</span><br></pre></td></tr></table></figure><p>在平板上安装面具</p><p>切换到备份分区的位置</p><p>用adb上传boot.bin文件到平板下载目录</p><figure class="highlight gradle"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb <span class="keyword">push</span> boot.bin <span class="regexp">/storage/</span>emulated<span class="regexp">/0/</span>Download/</span><br></pre></td></tr></table></figure><p>在平板上用面具修补boot.bin</p><p>修补完成以后后缀名会变成.img</p><p>不用管，名字和后缀名都不用改，原样传回电脑</p><p>用adb下载修补后boot,和上传的时候在同一目录</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb pull <span class="regexp">/storage/</span>emulated<span class="regexp">/0/</span>Download/magisk_patched-<span class="number">27000</span>_y8VEh.img</span><br></pre></td></tr></table></figure><p>传完以后就可以刷入了</p><p>平板开机</p><p>重启到bootloader</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">adb reboot bootloader</span></span><br></pre></td></tr></table></figure><p>刷入修补过的boot</p><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">fastboot</span> flash boot magisk_patched-<span class="number">27000</span>_y8VEh.img</span><br></pre></td></tr></table></figure><p>重启平板</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">fastboot reboot</span></span><br></pre></td></tr></table></figure><p>进入平板上的面具提示需要修复,重启就可以</p><p>设置白名单</p><p>Shamiko白名单模式（Shamiko whitelist）</p><p>1、安装模块：Shamiko</p><p><span class="exturl" data-url="aHR0cHM6Ly9tYWdpc2tjbi5jb20vc2hhbWlrby1pbnN0YWxs" title="安装Shamiko">https://magiskcn.com/shamiko-install<i class="fa fa-external-link-alt"></i></span></p><p>2、下载：MT管理器或者RE文件管理器 ，授权 ROOT 权限</p><p>3、MT管理器 打开目录 &#x2F;data&#x2F;adb&#x2F;shamiko，创建 <code>whitelist</code> 文件（是文件，不是文件夹。不要搞错了哦）</p><p>4、重启手机，成功切换白名单模式</p><p>白名单和黑名单比有什么优势？</p><p>全局隐藏，更彻底，也不用设置排除列表</p><p>所有app都检测不到root，已授权root的app可以正常使用root权限。</p><p>需要授权root，关闭Shamiko模块重启，授权完再启用shamiko模块重启即可。</p><p>实测安装在内存卡的应用不支持白名单模式，就是在没有开启白名单之前获取root权限的，开了白名单模式后root权限就没有了。</p><p>因为面具是只能安装在内部储存，需要在白名单模式下root的应用移到内部储存就可以。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> MTK </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Github </tag>
+            
+            <tag> MTK </tag>
+            
+            <tag> 阳华K8 </tag>
+            
+            <tag> 平板 </tag>
+            
+            <tag> 提取boot </tag>
+            
+            <tag> root </tag>
+            
+            <tag> mtkclient </tag>
+            
+            <tag> 玩机资源 </tag>
+            
+            <tag> Python3 </tag>
+            
+            <tag> PowerShell </tag>
+            
+            <tag> 音量上下键 </tag>
+            
+            <tag> bootloader </tag>
+            
+            <tag> 解锁 </tag>
+            
+            <tag> 恢复出厂设置 </tag>
+            
+            <tag> unlock </tag>
+            
+            <tag> fastboot </tag>
+            
+            <tag> reboot </tag>
+            
+            <tag> boot分区 </tag>
+            
+            <tag> 面具 </tag>
+            
+            <tag> Shamiko白名单 </tag>
+            
+            <tag> 内存卡 </tag>
+            
+            <tag> 内部储存 </tag>
+            
+            <tag> 复位孔 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>奋斗的意义</title>
       <link href="/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/7200f10b/"/>
       <url>/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/7200f10b/</url>
@@ -892,9 +961,9 @@
             
             <tag> 密码 </tag>
             
-            <tag> ubuntu </tag>
-            
             <tag> root </tag>
+            
+            <tag> ubuntu </tag>
             
             <tag> 账户 </tag>
             
@@ -5988,13 +6057,13 @@
       
         <tags>
             
+            <tag> 恢复出厂设置 </tag>
+            
             <tag> 路由器 </tag>
             
             <tag> 用处 </tag>
             
             <tag> 重启一下 </tag>
-            
-            <tag> 恢复出厂设置 </tag>
             
             <tag> 管理界面 </tag>
             
@@ -10867,6 +10936,51 @@
     
     
     <entry>
+      <title>Hexo搭建网站之用MarkdownPad2发文排版</title>
+      <link href="/Hexo/70a3aa22/"/>
+      <url>/Hexo/70a3aa22/</url>
+      
+        <content type="html"><![CDATA[<p>我用Hexo和GitHub搭建网站已经快3个月了，主题设置这些也基本上完善了，文章也有几十篇了，总结出来一些用MarkdownPad2排版文章的经验分享出来给大家。</p><span id="more"></span><p>我用的主题是Next主题，这个主题还是挺不错的有很多人使用，搜索引擎收录得也是挺快，我的网站才没有多久都已经被谷歌和必应收录了，由于百度蜘蛛被Github屏蔽了，所以百度是收录不了我网站的，这个主题对于个人做博客网站来说是相当可以的了。</p><p>也是支持文章封面的，在用MarkdownPad2写文章的时候用自定义摘要，就是用<code>&lt;！-- more --&gt;</code>把要当作摘要的部分隔开，这里用的如果是文字，那就是把文章第一段作为文章摘要部分，如果是图片那就是把第一张图片作为摘要，在网站上看到的效果就是这篇文章的封面图。在网站上点开标题或者阅读全文就可以就可以看全篇文章，我的图片是没有用到图床那些的，我是直接用了Hexo插件和Markdown语法从本地电脑上传的，只要图片不是太大的，一般两三百K的图片打开也是挺快的。</p><p>当然想要方便的话，我还是比较推荐把摘要符这些每篇文章都要用的放在文章模板那里，这样每次创建文章它就会自动一起创建这些。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Github </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> next主题 </tag>
+            
+            <tag> 搭建网站 </tag>
+            
+            <tag> MarkdownPad2 </tag>
+            
+            <tag> 发文排版 </tag>
+            
+            <tag> 排版文章 </tag>
+            
+            <tag> 百度蜘蛛 </tag>
+            
+            <tag> 自定义摘要 </tag>
+            
+            <tag> 文章封面图 </tag>
+            
+            <tag> 文章模板 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo网站配置多个SSH-Key一起推送多个远程仓库</title>
       <link href="/Hexo/727937ad/"/>
       <url>/Hexo/727937ad/</url>
@@ -10989,51 +11103,6 @@
             <tag> 天壤之别 </tag>
             
             <tag> 事半功倍 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hexo搭建网站之用MarkdownPad2发文排版</title>
-      <link href="/Hexo/70a3aa22/"/>
-      <url>/Hexo/70a3aa22/</url>
-      
-        <content type="html"><![CDATA[<p>我用Hexo和GitHub搭建网站已经快3个月了，主题设置这些也基本上完善了，文章也有几十篇了，总结出来一些用MarkdownPad2排版文章的经验分享出来给大家。</p><span id="more"></span><p>我用的主题是Next主题，这个主题还是挺不错的有很多人使用，搜索引擎收录得也是挺快，我的网站才没有多久都已经被谷歌和必应收录了，由于百度蜘蛛被Github屏蔽了，所以百度是收录不了我网站的，这个主题对于个人做博客网站来说是相当可以的了。</p><p>也是支持文章封面的，在用MarkdownPad2写文章的时候用自定义摘要，就是用<code>&lt;！-- more --&gt;</code>把要当作摘要的部分隔开，这里用的如果是文字，那就是把文章第一段作为文章摘要部分，如果是图片那就是把第一张图片作为摘要，在网站上看到的效果就是这篇文章的封面图。在网站上点开标题或者阅读全文就可以就可以看全篇文章，我的图片是没有用到图床那些的，我是直接用了Hexo插件和Markdown语法从本地电脑上传的，只要图片不是太大的，一般两三百K的图片打开也是挺快的。</p><p>当然想要方便的话，我还是比较推荐把摘要符这些每篇文章都要用的放在文章模板那里，这样每次创建文章它就会自动一起创建这些。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Github </tag>
-            
-            <tag> Hexo </tag>
-            
-            <tag> next主题 </tag>
-            
-            <tag> 搭建网站 </tag>
-            
-            <tag> MarkdownPad2 </tag>
-            
-            <tag> 发文排版 </tag>
-            
-            <tag> 排版文章 </tag>
-            
-            <tag> 百度蜘蛛 </tag>
-            
-            <tag> 自定义摘要 </tag>
-            
-            <tag> 文章封面图 </tag>
-            
-            <tag> 文章模板 </tag>
             
         </tags>
       
@@ -11843,55 +11912,6 @@
     
     
     <entry>
-      <title>为什么分手后的情侣比离婚后的夫妻更难忘记对方？</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/b89c6fe2/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/b89c6fe2/</url>
-      
-        <content type="html"><![CDATA[<p>在生活中经常可以看到很多的夫妻离婚后再见面就和陌生人一样，对自己和对方的爱可以忘得一点都不剩，而分手后的情侣，多年再见面后还是那么深情地注视着对方，也许这份深厚的感情已经不再是爱，而是因爱而生恨，就是爱得有多深恨得就会有多深。分手后的情侣就算是带着对对方的恨意，那也是还在触动着两个人的心灵。</p><span id="more"></span><p>相比之下，离婚后的夫妻，多年再见面后就已经形同陌路，都说一日夫妻百日恩，两人相处的时间越长早已超越一日的恩情，可是感情的深厚却比不上相爱后分手的情侣，是不是相处的时间越长以后感情就会越来越淡呢？</p><p>相处的时间越长之后是对对方会更加的了解，了解得越多之后，对方的缺点和优点，自己就会清清楚楚，也就没有了继续探索的欲望了，就像喝着白开水不加茶叶也不加糖，这样过着的时日越多感情自然也就会变得平淡无奇了。</p><p>离婚后的夫妻感情比不上分手后的情侣的原因除了相处的时间越长感情越淡之外，也许，还可能是分手后的情侣还有一些未完成之事，因为没有完成所以就会一直记挂在心里，直到终于有一天完成之后，这块心里的石头才会落下，自然也才会觉得心安。</p><p>一段感情从开始到结束，并不是从恋爱到离婚，而是从恋爱到结婚，婚姻才是爱情的终点，也是爱情胜利的目的地。结婚后爱情自然就变成了亲情，从结婚到离婚后两人有的只是亲情，自然比上爱情的离开时那样刻骨铭心。</p><p>这就是未完成之事，一份完整的爱情应该是从恋爱到结婚，这才是有始有终的，有完美的开始和完整的结束，这样分手后自然也才不会有遗憾，因为这件事已经做完了，这页已经翻过去了，只有这样也才不会一直心心念念地一直记挂在心里的位置。</p><p>这也就是为什么离婚后的夫妻没有分手后的情侣那么伤感的原因了吧，离婚后的夫妻他们已经走完了他们该要走的路程，他们完成了自己该完成的事，离婚后自然也不再那样心心念念地记挂着对方，因为他们没有未完成之事，自然也没有不能放下和忘记对方的事，而分手后的情侣就不一样了，他们之间还有未完成之事，而这未完成之事就是心里的一个结，要解开这个心结，解铃还需系铃人。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 情感美文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 欲望 </tag>
-            
-            <tag> 分手后 </tag>
-            
-            <tag> 情侣 </tag>
-            
-            <tag> 离婚后 </tag>
-            
-            <tag> 陌生人 </tag>
-            
-            <tag> 形同陌路 </tag>
-            
-            <tag> 觉得心安 </tag>
-            
-            <tag> 刻骨铭心 </tag>
-            
-            <tag> 恋爱 </tag>
-            
-            <tag> 亲情 </tag>
-            
-            <tag> 遗憾 </tag>
-            
-            <tag> 心心念念 </tag>
-            
-            <tag> 系铃人 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>为什么大数据能杀熟</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5427a335/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5427a335/</url>
@@ -11939,6 +11959,55 @@
             <tag> 货比三家 </tag>
             
             <tag> 垄断 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>为什么分手后的情侣比离婚后的夫妻更难忘记对方？</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/b89c6fe2/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/b89c6fe2/</url>
+      
+        <content type="html"><![CDATA[<p>在生活中经常可以看到很多的夫妻离婚后再见面就和陌生人一样，对自己和对方的爱可以忘得一点都不剩，而分手后的情侣，多年再见面后还是那么深情地注视着对方，也许这份深厚的感情已经不再是爱，而是因爱而生恨，就是爱得有多深恨得就会有多深。分手后的情侣就算是带着对对方的恨意，那也是还在触动着两个人的心灵。</p><span id="more"></span><p>相比之下，离婚后的夫妻，多年再见面后就已经形同陌路，都说一日夫妻百日恩，两人相处的时间越长早已超越一日的恩情，可是感情的深厚却比不上相爱后分手的情侣，是不是相处的时间越长以后感情就会越来越淡呢？</p><p>相处的时间越长之后是对对方会更加的了解，了解得越多之后，对方的缺点和优点，自己就会清清楚楚，也就没有了继续探索的欲望了，就像喝着白开水不加茶叶也不加糖，这样过着的时日越多感情自然也就会变得平淡无奇了。</p><p>离婚后的夫妻感情比不上分手后的情侣的原因除了相处的时间越长感情越淡之外，也许，还可能是分手后的情侣还有一些未完成之事，因为没有完成所以就会一直记挂在心里，直到终于有一天完成之后，这块心里的石头才会落下，自然也才会觉得心安。</p><p>一段感情从开始到结束，并不是从恋爱到离婚，而是从恋爱到结婚，婚姻才是爱情的终点，也是爱情胜利的目的地。结婚后爱情自然就变成了亲情，从结婚到离婚后两人有的只是亲情，自然比上爱情的离开时那样刻骨铭心。</p><p>这就是未完成之事，一份完整的爱情应该是从恋爱到结婚，这才是有始有终的，有完美的开始和完整的结束，这样分手后自然也才不会有遗憾，因为这件事已经做完了，这页已经翻过去了，只有这样也才不会一直心心念念地一直记挂在心里的位置。</p><p>这也就是为什么离婚后的夫妻没有分手后的情侣那么伤感的原因了吧，离婚后的夫妻他们已经走完了他们该要走的路程，他们完成了自己该完成的事，离婚后自然也不再那样心心念念地记挂着对方，因为他们没有未完成之事，自然也没有不能放下和忘记对方的事，而分手后的情侣就不一样了，他们之间还有未完成之事，而这未完成之事就是心里的一个结，要解开这个心结，解铃还需系铃人。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 欲望 </tag>
+            
+            <tag> 分手后 </tag>
+            
+            <tag> 情侣 </tag>
+            
+            <tag> 离婚后 </tag>
+            
+            <tag> 陌生人 </tag>
+            
+            <tag> 形同陌路 </tag>
+            
+            <tag> 觉得心安 </tag>
+            
+            <tag> 刻骨铭心 </tag>
+            
+            <tag> 恋爱 </tag>
+            
+            <tag> 亲情 </tag>
+            
+            <tag> 遗憾 </tag>
+            
+            <tag> 心心念念 </tag>
+            
+            <tag> 系铃人 </tag>
             
         </tags>
       
@@ -13381,45 +13450,6 @@
     
     
     <entry>
-      <title>今天是除夕，去菜场买菜去晚了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dd80ab00/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dd80ab00/</url>
-      
-        <content type="html"><![CDATA[<p>我下午三点钟去的买肉的都没有了，只剩两个卖菜的了，没有其他选择了就只好买了些豌豆角了，然后又去那下面一点的一个超市买了一点肉，青椒也还有的就买点肉来炒豌豆角好了，过年了去超市买东西的人还挺多，付款的时候还都得排队了，不过超市里的肉比市场的要贵了不少，因为我是骑着电动车去的所以也不用什么购物袋了，那样还得花几毛钱。</p><span id="more"></span><p>回来后把家里的垃圾全丢了，还把地上用拖耙弄一下，新年里就该得有一个新气象啊，什么都焕然一新才好啊，弄好了也是接着忙了，因为都已经快5点钟了，所以也是到做饭吃的时候了。</p><p>过了大概半个小时左右，饭做好了我菜也炒好了，然后就是一个人自己吃饭了，吃完饭就是看春晚了，用的以前买的电视盒子看，刚开始用的那个蜂蜜直播看的，清晰度很差，后面我退出了，又用酷喵看了，还是这个比较高清，有1080P的选项，4K的不知道在哪里看，用的1080P的显示器看1080的感觉也很清晰了，现在就是用平板电脑边看春晚边写文了，因为要用显示器看春晚，所以就不能用电脑写了，还好有智能盒子不然还不知道怎么看春晚了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 超市 </tag>
-            
-            <tag> 买菜 </tag>
-            
-            <tag> 除夕 </tag>
-            
-            <tag> 菜场 </tag>
-            
-            <tag> 豌豆角 </tag>
-            
-            <tag> 直播 </tag>
-            
-            <tag> 春晚 </tag>
-            
-            <tag> 酷喵 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>今天是终于完成昨天的目标了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/7f07775c/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/7f07775c/</url>
@@ -13457,6 +13487,45 @@
             <tag> 考试真题 </tag>
             
             <tag> 赶得挺紧 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>今天是除夕，去菜场买菜去晚了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dd80ab00/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dd80ab00/</url>
+      
+        <content type="html"><![CDATA[<p>我下午三点钟去的买肉的都没有了，只剩两个卖菜的了，没有其他选择了就只好买了些豌豆角了，然后又去那下面一点的一个超市买了一点肉，青椒也还有的就买点肉来炒豌豆角好了，过年了去超市买东西的人还挺多，付款的时候还都得排队了，不过超市里的肉比市场的要贵了不少，因为我是骑着电动车去的所以也不用什么购物袋了，那样还得花几毛钱。</p><span id="more"></span><p>回来后把家里的垃圾全丢了，还把地上用拖耙弄一下，新年里就该得有一个新气象啊，什么都焕然一新才好啊，弄好了也是接着忙了，因为都已经快5点钟了，所以也是到做饭吃的时候了。</p><p>过了大概半个小时左右，饭做好了我菜也炒好了，然后就是一个人自己吃饭了，吃完饭就是看春晚了，用的以前买的电视盒子看，刚开始用的那个蜂蜜直播看的，清晰度很差，后面我退出了，又用酷喵看了，还是这个比较高清，有1080P的选项，4K的不知道在哪里看，用的1080P的显示器看1080的感觉也很清晰了，现在就是用平板电脑边看春晚边写文了，因为要用显示器看春晚，所以就不能用电脑写了，还好有智能盒子不然还不知道怎么看春晚了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 超市 </tag>
+            
+            <tag> 买菜 </tag>
+            
+            <tag> 除夕 </tag>
+            
+            <tag> 菜场 </tag>
+            
+            <tag> 豌豆角 </tag>
+            
+            <tag> 直播 </tag>
+            
+            <tag> 春晚 </tag>
+            
+            <tag> 酷喵 </tag>
             
         </tags>
       
@@ -14453,47 +14522,6 @@
     
     
     <entry>
-      <title>写公众号粉丝越来越少了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4733806/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4733806/</url>
-      
-        <content type="html"><![CDATA[<p>昨天晚上去公众号发文章，看到现在又增加一个新功能了，就是专辑，挨着页面模板那里。专辑和页面模板不一样，这个不能添加到菜单，只是发文章的时候选中它就会出现在文章的上面。</p><span id="more"></span><p>搞这么多功能其实就是为了增加阅读量，但是阅读量多也没有什么用，要粉丝够了才能上广告，那才能有收益。</p><p>可是我这个号几年了，还是那点粉丝，不增加到也没有什么奇怪的，关键是居然还减少了，减少就减少吧，反正这个不是自己能控制的，就当成是自己一个发声的窗口就可以了，有没有粉丝不重要，反正不能想着靠这个来赚钱。</p><p>现在我写在简书的文章除了发公众号，还发到我自己的网站和微博头条文章，也就只能发这几处，本身感觉自己都写得不太好，发的平台多了感觉就是浪费精力。</p><p>还好我的网站现在是开通了谷歌广告，只要有人点击上面的广告那我也会有广告费的，就是提现有点难，要满100美元才可以。我都不希望能得到提现了，网站就是做来自己玩的。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 阅读量 </tag>
-            
-            <tag> 网站 </tag>
-            
-            <tag> 头条文章 </tag>
-            
-            <tag> 公众号 </tag>
-            
-            <tag> 新功能 </tag>
-            
-            <tag> 专辑 </tag>
-            
-            <tag> 页面模板 </tag>
-            
-            <tag> 菜单 </tag>
-            
-            <tag> 粉丝 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>写作的动力来源于生活</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b21d3bc4/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b21d3bc4/</url>
@@ -14531,6 +14559,47 @@
             <tag> 新书 </tag>
             
             <tag> 费点时间 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>写公众号粉丝越来越少了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4733806/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4733806/</url>
+      
+        <content type="html"><![CDATA[<p>昨天晚上去公众号发文章，看到现在又增加一个新功能了，就是专辑，挨着页面模板那里。专辑和页面模板不一样，这个不能添加到菜单，只是发文章的时候选中它就会出现在文章的上面。</p><span id="more"></span><p>搞这么多功能其实就是为了增加阅读量，但是阅读量多也没有什么用，要粉丝够了才能上广告，那才能有收益。</p><p>可是我这个号几年了，还是那点粉丝，不增加到也没有什么奇怪的，关键是居然还减少了，减少就减少吧，反正这个不是自己能控制的，就当成是自己一个发声的窗口就可以了，有没有粉丝不重要，反正不能想着靠这个来赚钱。</p><p>现在我写在简书的文章除了发公众号，还发到我自己的网站和微博头条文章，也就只能发这几处，本身感觉自己都写得不太好，发的平台多了感觉就是浪费精力。</p><p>还好我的网站现在是开通了谷歌广告，只要有人点击上面的广告那我也会有广告费的，就是提现有点难，要满100美元才可以。我都不希望能得到提现了，网站就是做来自己玩的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 阅读量 </tag>
+            
+            <tag> 网站 </tag>
+            
+            <tag> 头条文章 </tag>
+            
+            <tag> 公众号 </tag>
+            
+            <tag> 新功能 </tag>
+            
+            <tag> 专辑 </tag>
+            
+            <tag> 页面模板 </tag>
+            
+            <tag> 菜单 </tag>
+            
+            <tag> 粉丝 </tag>
             
         </tags>
       
@@ -15934,61 +16003,6 @@
     
     
     <entry>
-      <title>在贝壳小岛卖出150贝，赚了9块钱</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/302d33ef/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/302d33ef/</url>
-      
-        <content type="html"><![CDATA[<p>这是我第一次用这个平台卖贝，以前都是转换成FTN，但是FTN却不知道怎么变现，现在也不知道怎么转换FTN了，就在网上搜了一下，原来是有一个叫贝壳小岛这个平台可以交易贝。</p><span id="more"></span><p>第一次对这个平台不怎么熟悉，就去别人挂单收的那里卖，价格是才0.059，但是第一单买的人没有付款，过了20多分钟还没有付款，联系简信他说付款了，到底付款有没有，系统肯定是有提示的，付款了我微信要收到钱才行啊，估计是看我是新手，想骗我贝，还以为我不懂就确认收款了。</p><p>这里提醒第一次卖贝的，除非是微信已经收到钱了，否则千万不要点击确认收款，骗子是真的很多，有的拍下就故意不付款，真的付款了系统是会提示确认的，看微信真的收到钱了再点确认收款。</p><p>对方不付款我肯定是取消交易了，取消以后是可以把没有卖出去的贝赎回来的，上面显示多少就赎回多少，加上手续费一起的，我卖150贝，那手续费就是2个，加在一起就是152个。</p><p>赎回以后就可以重新再卖了，第二次我就直接自己发布挂单卖了，而且这样价格还高一点，我看前面的都是0.06，我也发布成0.06一个，比前面的那个别人收的价格高。</p><p>才发布了一下子就有人拍了，但是又是不付款，估计又是一个想骗贝的，真的是不想把这些人的简书上的名字曝光。</p><p>后面又过了20多分钟，估计是他那里取消了，然后就又被人秒拍了，因为这时的价格已经涨到0.061了，而我的价格还没有改还是0.06，秒拍而且一下就收到款了，因为上面没有比我价格更便宜的了，买到真的就是秒赚，这次微信收到钱了，我也点确认收款了。</p><p>虽然卖得便宜了，但是无所谓了，这东西一个时候一个价，当我写完这篇文章的时候，收的人价格已经涨到0.06了，挂单卖的还是0.061，这说明马上收马上卖都是有钱赚的，还有说不定晚上又会涨价，或者明天继续涨价，但是我在乎的是当下，穷到连饭都吃不起，谁还管以后的事。</p><p>很多人可能还不知道怎么卖贝，这里就把卖贝的链接发出来了，我也是找了很久才找到，这个可以说是在简书上写文章变现最快捷的方式，当然想囤贝赚钱的也可以去上面买，毕竟价格都是在上涨，买了只赚不亏。卖贝平台：<span class="exturl" data-url="aHR0cHM6Ly93d3cuYmVpa2Vpc2xhbmQuY29tL2luZGV4Lmh0bWwjLz9yZWY9NDczMjkzZjQxOWNiNDQ2MWE2M2IyYjZhOWVhOTRjNGM=" title="贝壳小岛">贝壳小岛<i class="fa fa-external-link-alt"></i></span></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 简书 </tag>
-            
-            <tag> 手续费 </tag>
-            
-            <tag> 微信 </tag>
-            
-            <tag> 简信 </tag>
-            
-            <tag> 贝壳小岛 </tag>
-            
-            <tag> 150贝 </tag>
-            
-            <tag> 9块钱 </tag>
-            
-            <tag> 平台卖贝 </tag>
-            
-            <tag> 转换成FTN </tag>
-            
-            <tag> 变现 </tag>
-            
-            <tag> 付款 </tag>
-            
-            <tag> 取消交易 </tag>
-            
-            <tag> 发布挂单 </tag>
-            
-            <tag> 故意不付款 </tag>
-            
-            <tag> 想骗贝 </tag>
-            
-            <tag> 有钱赚 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>在迷你主机虚拟机上安装黑苹果系统，体验一下Mac mini的感觉</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29c02f2/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29c02f2/</url>
@@ -16048,11 +16062,11 @@
     
     
     <entry>
-      <title>墨茶走了，他却是我们自己最真实的一面</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1d3ff104/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1d3ff104/</url>
+      <title>在贝壳小岛卖出150贝，赚了9块钱</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/302d33ef/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/302d33ef/</url>
       
-        <content type="html"><![CDATA[<p>前几天看到新闻说一个B站UP主去世才得到人们的关注，而我开始却不怎么相信，也不知道是怎么一回事，而后面又在贴吧和知乎看到关于他去世的消息，B站有人为他贴了讣告，看了别人发出的他动态，那一刻我感到很难受，他去世得很年轻，才23岁的青春年华，却死于贫病交加的冬日里。</p><span id="more"></span><p>我自己曾经无数次想到我也许会有一天也会向他那样死去，因为我们都不是神，终究是会走到生命尽头的那一刻，承不承认与否我们都无法与命运相抗衡，直到临死之际那小小的愿望也无法达到，他的动态里写道他吃什么吐什么，想吃草莓，但是却没有钱买了，况且身体已经很虚弱了，每当想到这里我都无法控制自己，泪水总是要涌出来。这就是我们每个人真实的自己，我们每天的努力其实只是为了生存下去，那怕多一天也是在和命运做抗争。</p><p>当我们扛不住的那一刻我们终究会倒下，他每一天都被病痛折磨，但却在努力的活着，没有抱怨命运对自己的不公平，贫困和病痛让他怎么也无法摆脱，最终他选择了妥协，因为他再也没有钱去医院看病了，当吃饭都没有钱了，更别说去看病的钱了，他对自己还有希望，他不想就那样死去，以为自己只要睡一觉醒来就好了，但就是那样一觉睡去永远再也没有醒来。</p><p>当一个人明知道被病痛折磨必须是去医院才行，但是连吃饭的钱都没有了，身边没有亲人，那是一种无助的绝望，本不想那样在绝望中死去，但是却没有其他办法。</p>]]></content>
+        <content type="html"><![CDATA[<p>这是我第一次用这个平台卖贝，以前都是转换成FTN，但是FTN却不知道怎么变现，现在也不知道怎么转换FTN了，就在网上搜了一下，原来是有一个叫贝壳小岛这个平台可以交易贝。</p><span id="more"></span><p>第一次对这个平台不怎么熟悉，就去别人挂单收的那里卖，价格是才0.059，但是第一单买的人没有付款，过了20多分钟还没有付款，联系简信他说付款了，到底付款有没有，系统肯定是有提示的，付款了我微信要收到钱才行啊，估计是看我是新手，想骗我贝，还以为我不懂就确认收款了。</p><p>这里提醒第一次卖贝的，除非是微信已经收到钱了，否则千万不要点击确认收款，骗子是真的很多，有的拍下就故意不付款，真的付款了系统是会提示确认的，看微信真的收到钱了再点确认收款。</p><p>对方不付款我肯定是取消交易了，取消以后是可以把没有卖出去的贝赎回来的，上面显示多少就赎回多少，加上手续费一起的，我卖150贝，那手续费就是2个，加在一起就是152个。</p><p>赎回以后就可以重新再卖了，第二次我就直接自己发布挂单卖了，而且这样价格还高一点，我看前面的都是0.06，我也发布成0.06一个，比前面的那个别人收的价格高。</p><p>才发布了一下子就有人拍了，但是又是不付款，估计又是一个想骗贝的，真的是不想把这些人的简书上的名字曝光。</p><p>后面又过了20多分钟，估计是他那里取消了，然后就又被人秒拍了，因为这时的价格已经涨到0.061了，而我的价格还没有改还是0.06，秒拍而且一下就收到款了，因为上面没有比我价格更便宜的了，买到真的就是秒赚，这次微信收到钱了，我也点确认收款了。</p><p>虽然卖得便宜了，但是无所谓了，这东西一个时候一个价，当我写完这篇文章的时候，收的人价格已经涨到0.06了，挂单卖的还是0.061，这说明马上收马上卖都是有钱赚的，还有说不定晚上又会涨价，或者明天继续涨价，但是我在乎的是当下，穷到连饭都吃不起，谁还管以后的事。</p><p>很多人可能还不知道怎么卖贝，这里就把卖贝的链接发出来了，我也是找了很久才找到，这个可以说是在简书上写文章变现最快捷的方式，当然想囤贝赚钱的也可以去上面买，毕竟价格都是在上涨，买了只赚不亏。卖贝平台：<span class="exturl" data-url="aHR0cHM6Ly93d3cuYmVpa2Vpc2xhbmQuY29tL2luZGV4Lmh0bWwjLz9yZWY9NDczMjkzZjQxOWNiNDQ2MWE2M2IyYjZhOWVhOTRjNGM=" title="贝壳小岛">贝壳小岛<i class="fa fa-external-link-alt"></i></span></p>]]></content>
       
       
       <categories>
@@ -16064,27 +16078,37 @@
       
         <tags>
             
-            <tag> 冬日 </tag>
+            <tag> 简书 </tag>
             
-            <tag> 墨茶 </tag>
+            <tag> 手续费 </tag>
             
-            <tag> 真实 </tag>
+            <tag> 微信 </tag>
             
-            <tag> B站 </tag>
+            <tag> 简信 </tag>
             
-            <tag> UP主 </tag>
+            <tag> 贝壳小岛 </tag>
             
-            <tag> 讣告 </tag>
+            <tag> 150贝 </tag>
             
-            <tag> 青春年华 </tag>
+            <tag> 9块钱 </tag>
             
-            <tag> 贫病交加 </tag>
+            <tag> 平台卖贝 </tag>
             
-            <tag> 草莓 </tag>
+            <tag> 转换成FTN </tag>
             
-            <tag> 命运 </tag>
+            <tag> 变现 </tag>
             
-            <tag> 医院 </tag>
+            <tag> 付款 </tag>
+            
+            <tag> 取消交易 </tag>
+            
+            <tag> 发布挂单 </tag>
+            
+            <tag> 故意不付款 </tag>
+            
+            <tag> 想骗贝 </tag>
+            
+            <tag> 有钱赚 </tag>
             
         </tags>
       
@@ -16136,6 +16160,51 @@
             <tag> 放弃 </tag>
             
             <tag> 失落感 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>墨茶走了，他却是我们自己最真实的一面</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1d3ff104/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1d3ff104/</url>
+      
+        <content type="html"><![CDATA[<p>前几天看到新闻说一个B站UP主去世才得到人们的关注，而我开始却不怎么相信，也不知道是怎么一回事，而后面又在贴吧和知乎看到关于他去世的消息，B站有人为他贴了讣告，看了别人发出的他动态，那一刻我感到很难受，他去世得很年轻，才23岁的青春年华，却死于贫病交加的冬日里。</p><span id="more"></span><p>我自己曾经无数次想到我也许会有一天也会向他那样死去，因为我们都不是神，终究是会走到生命尽头的那一刻，承不承认与否我们都无法与命运相抗衡，直到临死之际那小小的愿望也无法达到，他的动态里写道他吃什么吐什么，想吃草莓，但是却没有钱买了，况且身体已经很虚弱了，每当想到这里我都无法控制自己，泪水总是要涌出来。这就是我们每个人真实的自己，我们每天的努力其实只是为了生存下去，那怕多一天也是在和命运做抗争。</p><p>当我们扛不住的那一刻我们终究会倒下，他每一天都被病痛折磨，但却在努力的活着，没有抱怨命运对自己的不公平，贫困和病痛让他怎么也无法摆脱，最终他选择了妥协，因为他再也没有钱去医院看病了，当吃饭都没有钱了，更别说去看病的钱了，他对自己还有希望，他不想就那样死去，以为自己只要睡一觉醒来就好了，但就是那样一觉睡去永远再也没有醒来。</p><p>当一个人明知道被病痛折磨必须是去医院才行，但是连吃饭的钱都没有了，身边没有亲人，那是一种无助的绝望，本不想那样在绝望中死去，但是却没有其他办法。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 冬日 </tag>
+            
+            <tag> 墨茶 </tag>
+            
+            <tag> 真实 </tag>
+            
+            <tag> B站 </tag>
+            
+            <tag> UP主 </tag>
+            
+            <tag> 讣告 </tag>
+            
+            <tag> 青春年华 </tag>
+            
+            <tag> 贫病交加 </tag>
+            
+            <tag> 草莓 </tag>
+            
+            <tag> 命运 </tag>
+            
+            <tag> 医院 </tag>
             
         </tags>
       
@@ -16425,43 +16494,6 @@
     
     
     <entry>
-      <title>好久没有写了，这段时间有空，随便写点吧</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29b7f30d/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29b7f30d/</url>
-      
-        <content type="html"><![CDATA[<p>最近有一个多星期没有上班了，被公司放假休息，做小时工不好就是这点了，没有事做就让休息了，工资都没有，这个月就上了十多天班，工资才一千多块钱。</p><span id="more"></span><p>现在也就是每天躺在床上玩手机，玩到连饭都不想吃了，什么也不想做，反正就是做什么都不感兴趣。玩游戏玩下又不想玩了，用手机看书最多看100页，看着看着就会睡着了。</p><p>不知道做什么，反正每天都无所事事，以前感觉每天要做的事很多，但是当自己真的有很多空闲时间了，却不知道该做什么了。</p><p>每天都是在迷茫中度过，好像也没有什么解脱的办法，只能是度日如年这样的活着，想到什么就写什么，只有写点文字才能让自己的思想活跃下。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 解脱 </tag>
-            
-            <tag> 放假休息 </tag>
-            
-            <tag> 没有上班 </tag>
-            
-            <tag> 工资 </tag>
-            
-            <tag> 空闲时间 </tag>
-            
-            <tag> 做什么 </tag>
-            
-            <tag> 度日如年 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>好久不看微信了，今天看了下还有新的发现</title>
       <link href="/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/72b33af7/"/>
       <url>/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/72b33af7/</url>
@@ -16503,6 +16535,43 @@
             <tag> 认证 </tag>
             
             <tag> 看热闹 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>好久没有写了，这段时间有空，随便写点吧</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29b7f30d/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29b7f30d/</url>
+      
+        <content type="html"><![CDATA[<p>最近有一个多星期没有上班了，被公司放假休息，做小时工不好就是这点了，没有事做就让休息了，工资都没有，这个月就上了十多天班，工资才一千多块钱。</p><span id="more"></span><p>现在也就是每天躺在床上玩手机，玩到连饭都不想吃了，什么也不想做，反正就是做什么都不感兴趣。玩游戏玩下又不想玩了，用手机看书最多看100页，看着看着就会睡着了。</p><p>不知道做什么，反正每天都无所事事，以前感觉每天要做的事很多，但是当自己真的有很多空闲时间了，却不知道该做什么了。</p><p>每天都是在迷茫中度过，好像也没有什么解脱的办法，只能是度日如年这样的活着，想到什么就写什么，只有写点文字才能让自己的思想活跃下。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 解脱 </tag>
+            
+            <tag> 放假休息 </tag>
+            
+            <tag> 没有上班 </tag>
+            
+            <tag> 工资 </tag>
+            
+            <tag> 空闲时间 </tag>
+            
+            <tag> 做什么 </tag>
+            
+            <tag> 度日如年 </tag>
             
         </tags>
       
@@ -16844,43 +16913,6 @@
     
     
     <entry>
-      <title>小说今天一章写不完了，还是来一篇日更好了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c7fd72d/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c7fd72d/</url>
-      
-        <content type="html"><![CDATA[<p>我从昨天开始写小说，昨天一下子写了四千多字，今天就是写不出来了，眼看都已经快到二十三点四十了，于是就想到我必须要在简书发一篇日更了，一看我也知道没有多少给我的时间了，毕竟这简书的日更不能断啊，就算是来个四五百字的我也要把它补上才行，我什么也不用想了，打开Word的文件菜单快速的新建一个文档，我想我这时是真什么都不用想了，想到什么就写什么，再想就真的没有时间了。</p><span id="more"></span><p>小说还没有写好是肯定不能发上去的了，连有些语句都还不通顺，自己都还没有看过一遍，怎么可能发上去呢，小说这篇日更过了后明天接着写。我这时是真的在和时间赛跑，语句不通也没有办法，我是想先发上去再慢慢的修改了。</p><p>说快也不太快，但也不是很慢，一下就两段了，我这不是水文，这只是一篇和时间赛跑的急切之作，时间在一分一秒的过去，我看了下字数也有三百多了，其实现在发上去日更的标准已经达到了，不管了，再写两分钟就发，忙起来那标准什么的我已经记不得了，算了应该够了，就写这么多，不写了，我赶紧发吧。</p><p><strong>发文后的感想：只能说赶得真好，赶上了最后的末班车，还好今天没有掉队。</strong>👌</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Word </tag>
-            
-            <tag> 简书 </tag>
-            
-            <tag> 小说 </tag>
-            
-            <tag> 日更 </tag>
-            
-            <tag> 发文 </tag>
-            
-            <tag> 时间赛跑 </tag>
-            
-            <tag> 明天 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>小米研发出了隔空充电技术，再也不怕没有充电线了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/690f7b38/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/690f7b38/</url>
@@ -16912,6 +16944,43 @@
             <tag> 研发实力 </tag>
             
             <tag> 核心技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>小说今天一章写不完了，还是来一篇日更好了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c7fd72d/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c7fd72d/</url>
+      
+        <content type="html"><![CDATA[<p>我从昨天开始写小说，昨天一下子写了四千多字，今天就是写不出来了，眼看都已经快到二十三点四十了，于是就想到我必须要在简书发一篇日更了，一看我也知道没有多少给我的时间了，毕竟这简书的日更不能断啊，就算是来个四五百字的我也要把它补上才行，我什么也不用想了，打开Word的文件菜单快速的新建一个文档，我想我这时是真什么都不用想了，想到什么就写什么，再想就真的没有时间了。</p><span id="more"></span><p>小说还没有写好是肯定不能发上去的了，连有些语句都还不通顺，自己都还没有看过一遍，怎么可能发上去呢，小说这篇日更过了后明天接着写。我这时是真的在和时间赛跑，语句不通也没有办法，我是想先发上去再慢慢的修改了。</p><p>说快也不太快，但也不是很慢，一下就两段了，我这不是水文，这只是一篇和时间赛跑的急切之作，时间在一分一秒的过去，我看了下字数也有三百多了，其实现在发上去日更的标准已经达到了，不管了，再写两分钟就发，忙起来那标准什么的我已经记不得了，算了应该够了，就写这么多，不写了，我赶紧发吧。</p><p><strong>发文后的感想：只能说赶得真好，赶上了最后的末班车，还好今天没有掉队。</strong>👌</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Word </tag>
+            
+            <tag> 简书 </tag>
+            
+            <tag> 小说 </tag>
+            
+            <tag> 日更 </tag>
+            
+            <tag> 发文 </tag>
+            
+            <tag> 时间赛跑 </tag>
+            
+            <tag> 明天 </tag>
             
         </tags>
       
@@ -17053,49 +17122,6 @@
     
     
     <entry>
-      <title>弄了下快手直播，结果没有人看，还遇到骗子了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/adcbe78b/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/adcbe78b/</url>
-      
-        <content type="html"><![CDATA[<p>我今天用快手直播了一下游戏直播，结果总共才有13个人看过，而不是有13个人一起在看，经常看的人都是零，这还不是最惨的，最惨的是居然有骗子，才直播一会我手机就收到了两条验证码。</p><span id="more"></span><p>这个套路其实我早就知道了，所以开游戏直播我肯定不会用手机开的了，如果用手机开那他肯定就会盗我的账号，因为验证码可以在手机屏幕上看到，但是我用的是平板电脑直播游戏，所以就算他知道我手机号了，也看不到我验证码，因为验证码是发到手机上，我直播的是平板电脑的画面。</p><p>估计骗子遇到我这样的也没有办法了，看了半天直播画面上就是没有验证码，骗子估计都会疯掉。不过还是要注意的，如果我不是预先在快手上看到这种套路，那我直接用手机直播游戏可能就会中骗子的招了。</p><p>好像已经是有人已经被这样骗过了，骗子就是用别人的手机号和验证码去登陆，然后开始骗钱，在快手铁定是有人用手机直接直播游戏被骗过，不然也不会有那个案例，所以做游戏直播还是要小心，千万不能用插手机卡的手机直播，那样真的很危险，虽然骗子骗不了我，那是因为我提前知道了这个套路，但是大多数不知道的还是会被骗的。</p><p>所以做游戏直播还是最好用平板电脑或者没有插手机卡的手机，这样才能保证自己钱财安全，要不支付宝微信银行卡上的钱一下没有了那都不知道怎么回事，只要知道手机号和验证码很多平台都是可以登录的，所以还是要千万小心才是。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 套路 </tag>
-            
-            <tag> 平板电脑 </tag>
-            
-            <tag> 快手直播 </tag>
-            
-            <tag> 遇到骗子 </tag>
-            
-            <tag> 游戏直播 </tag>
-            
-            <tag> 验证码 </tag>
-            
-            <tag> 手机卡 </tag>
-            
-            <tag> 钱财安全 </tag>
-            
-            <tag> 登录 </tag>
-            
-            <tag> 千万小心 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>当读完一本书时才会感觉有成就感</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/92bcb8ff/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/92bcb8ff/</url>
@@ -17141,6 +17167,49 @@
             <tag> 受累 </tag>
             
             <tag> 表达出来 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>弄了下快手直播，结果没有人看，还遇到骗子了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/adcbe78b/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/adcbe78b/</url>
+      
+        <content type="html"><![CDATA[<p>我今天用快手直播了一下游戏直播，结果总共才有13个人看过，而不是有13个人一起在看，经常看的人都是零，这还不是最惨的，最惨的是居然有骗子，才直播一会我手机就收到了两条验证码。</p><span id="more"></span><p>这个套路其实我早就知道了，所以开游戏直播我肯定不会用手机开的了，如果用手机开那他肯定就会盗我的账号，因为验证码可以在手机屏幕上看到，但是我用的是平板电脑直播游戏，所以就算他知道我手机号了，也看不到我验证码，因为验证码是发到手机上，我直播的是平板电脑的画面。</p><p>估计骗子遇到我这样的也没有办法了，看了半天直播画面上就是没有验证码，骗子估计都会疯掉。不过还是要注意的，如果我不是预先在快手上看到这种套路，那我直接用手机直播游戏可能就会中骗子的招了。</p><p>好像已经是有人已经被这样骗过了，骗子就是用别人的手机号和验证码去登陆，然后开始骗钱，在快手铁定是有人用手机直接直播游戏被骗过，不然也不会有那个案例，所以做游戏直播还是要小心，千万不能用插手机卡的手机直播，那样真的很危险，虽然骗子骗不了我，那是因为我提前知道了这个套路，但是大多数不知道的还是会被骗的。</p><p>所以做游戏直播还是最好用平板电脑或者没有插手机卡的手机，这样才能保证自己钱财安全，要不支付宝微信银行卡上的钱一下没有了那都不知道怎么回事，只要知道手机号和验证码很多平台都是可以登录的，所以还是要千万小心才是。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 套路 </tag>
+            
+            <tag> 平板电脑 </tag>
+            
+            <tag> 快手直播 </tag>
+            
+            <tag> 遇到骗子 </tag>
+            
+            <tag> 游戏直播 </tag>
+            
+            <tag> 验证码 </tag>
+            
+            <tag> 手机卡 </tag>
+            
+            <tag> 钱财安全 </tag>
+            
+            <tag> 登录 </tag>
+            
+            <tag> 千万小心 </tag>
             
         </tags>
       
@@ -17927,6 +17996,61 @@
     
     
     <entry>
+      <title>我的mini小主机终于组装好了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d0450d61/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d0450d61/</url>
+      
+        <content type="html"><![CDATA[<p>今天电源适配器终于到了，昨天才买的今天就到了，真的发货速度很快，果然只要配件对装机也不难啊，早知道都这样分开在一家买，那早都已经装好了，插上电源适配器开机成功那一刻还是感觉挺兴奋的，看着主板粉红色的灯下亮起来是真的太漂亮了。</p><span id="more"></span><p>这或许真的就是自己装机的乐趣，比买一台整机那种感觉舒服很多。安装系统虽然也不难，但是我也是费了一点劲的，好开始是想到用那个硬盘分区软件做一个系统启动盘，结果插上U盘启动了只能进那个软件的界面。</p><p>没有办法又只能把显示器连到笔记本电脑，用微软的那个软件重新做了一个win10启动盘，做这个笔记本电脑是很慢的，大概花了一个多小时才做好。做好后就直接把U盘插在mini主机上，我这个主板是可以不用进bios设置然后就直接可以安装系统的，刚一插上去就开始安装了，安装的时候用那个分区软件分的区居然用不了，只好把那个区删了，然后重新分100G来做系统盘，因为我的m.2固态是500G的，所以分100G做系统盘也还很多余量，然后剩下的就是未分配的了，这里未分配的就进系统再分。</p><p>系统安装好了就是等着安装驱动，不知道是网速原因还是上网的人太多了，驱动是下差不多30分钟才安装完，然后就是重启。</p><p>重启以后就是激活了，激活也差点难道我了，还好我笔记本电脑里面还有激活office的那个软件，这个软件也是可以激活系统的，当然直接用U盘传过来安装不了，会被系统自动删除，还好我想到了先安装一个腾讯电脑管家，然后系统自带的安全软件就没有那么强了，电脑管家也是会删除这个软件，但是恢复就可以了，安装好后系统就直接激活了，算是一个不错的惊喜。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 组装 </tag>
+            
+            <tag> 硬盘 </tag>
+            
+            <tag> 配件 </tag>
+            
+            <tag> mini小主机 </tag>
+            
+            <tag> 电源适配器 </tag>
+            
+            <tag> 装机 </tag>
+            
+            <tag> 不难 </tag>
+            
+            <tag> 开机 </tag>
+            
+            <tag> 太漂亮 </tag>
+            
+            <tag> 安装系统 </tag>
+            
+            <tag> win10启动盘 </tag>
+            
+            <tag> m.2固态 </tag>
+            
+            <tag> 安装驱动 </tag>
+            
+            <tag> 分区软件 </tag>
+            
+            <tag> 直接激活 </tag>
+            
+            <tag> 恢复 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>我昨晚梦到走一条艰难的路，那条路很窄，下面却是万丈深渊</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/62e9a13e/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/62e9a13e/</url>
@@ -17980,61 +18104,6 @@
             <tag> 悬崖 </tag>
             
             <tag> 梦幻 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>我的mini小主机终于组装好了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d0450d61/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d0450d61/</url>
-      
-        <content type="html"><![CDATA[<p>今天电源适配器终于到了，昨天才买的今天就到了，真的发货速度很快，果然只要配件对装机也不难啊，早知道都这样分开在一家买，那早都已经装好了，插上电源适配器开机成功那一刻还是感觉挺兴奋的，看着主板粉红色的灯下亮起来是真的太漂亮了。</p><span id="more"></span><p>这或许真的就是自己装机的乐趣，比买一台整机那种感觉舒服很多。安装系统虽然也不难，但是我也是费了一点劲的，好开始是想到用那个硬盘分区软件做一个系统启动盘，结果插上U盘启动了只能进那个软件的界面。</p><p>没有办法又只能把显示器连到笔记本电脑，用微软的那个软件重新做了一个win10启动盘，做这个笔记本电脑是很慢的，大概花了一个多小时才做好。做好后就直接把U盘插在mini主机上，我这个主板是可以不用进bios设置然后就直接可以安装系统的，刚一插上去就开始安装了，安装的时候用那个分区软件分的区居然用不了，只好把那个区删了，然后重新分100G来做系统盘，因为我的m.2固态是500G的，所以分100G做系统盘也还很多余量，然后剩下的就是未分配的了，这里未分配的就进系统再分。</p><p>系统安装好了就是等着安装驱动，不知道是网速原因还是上网的人太多了，驱动是下差不多30分钟才安装完，然后就是重启。</p><p>重启以后就是激活了，激活也差点难道我了，还好我笔记本电脑里面还有激活office的那个软件，这个软件也是可以激活系统的，当然直接用U盘传过来安装不了，会被系统自动删除，还好我想到了先安装一个腾讯电脑管家，然后系统自带的安全软件就没有那么强了，电脑管家也是会删除这个软件，但是恢复就可以了，安装好后系统就直接激活了，算是一个不错的惊喜。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 组装 </tag>
-            
-            <tag> 硬盘 </tag>
-            
-            <tag> 配件 </tag>
-            
-            <tag> mini小主机 </tag>
-            
-            <tag> 电源适配器 </tag>
-            
-            <tag> 装机 </tag>
-            
-            <tag> 不难 </tag>
-            
-            <tag> 开机 </tag>
-            
-            <tag> 太漂亮 </tag>
-            
-            <tag> 安装系统 </tag>
-            
-            <tag> win10启动盘 </tag>
-            
-            <tag> m.2固态 </tag>
-            
-            <tag> 安装驱动 </tag>
-            
-            <tag> 分区软件 </tag>
-            
-            <tag> 直接激活 </tag>
-            
-            <tag> 恢复 </tag>
             
         </tags>
       
@@ -19269,6 +19338,51 @@
     
     
     <entry>
+      <title>昨天我把自己的网站同步到Gitee了</title>
+      <link href="/Hexo/ceca9b33/"/>
+      <url>/Hexo/ceca9b33/</url>
+      
+        <content type="html"><![CDATA[<p>之前就有看到过别人说可以把Hexo搭建的网站同步到Github和Gitee两个平台，说是Gitee在国内的访问速度比较快，但是一直都没有去做过，这段时间有空去码云把以前的账号重新登陆了，还开通了免费的企业版。</p><span id="more"></span><p>免费的企业版比个人版好的就是空间的域名能够自定义的比个人版要好点，个人版好的都被人抢完了。</p><p>我用自己注册的域名来做这个空间域名感觉还是很不错的，因为很简短才四个字母，这些都是越短越好记。</p><p>Gitee不好的就是自定义域名要钱，还有每次更新都要去点一次那个更新按钮，不过我也没有多余的域名，就先用着给的空间域名吧，这种空间域名其实也是可以被搜索引擎收录的，我用必应搜了下很多用这种域名的只要内容好也被收录了，但是百度就没有收录的。</p><p>免费的也不需要那么多了，反正就当个备用好了，要是真的想搞谷歌广告那些，还是用Github自己买个域名来绑定会比较好，二级域名可能弄不了谷歌广告，我以前记得我用免费的域名都不行，还是自己买了个域名来换了才审核通过了。</p><p>速度的话电脑上访问感觉没有快多少，手机浏览器上感觉会快一点。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Github </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> gitee </tag>
+            
+            <tag> 免费 </tag>
+            
+            <tag> 浏览器 </tag>
+            
+            <tag> 网站 </tag>
+            
+            <tag> 搜索引擎 </tag>
+            
+            <tag> 企业版 </tag>
+            
+            <tag> 空间域名 </tag>
+            
+            <tag> 谷歌广告 </tag>
+            
+            <tag> 审核 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>昨晚下了一晚上的雨，雨声一直响睡不着</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c36b9d6b/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c36b9d6b/</url>
@@ -19310,51 +19424,6 @@
             <tag> 鸡蛋 </tag>
             
             <tag> 申请退 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>昨天我把自己的网站同步到Gitee了</title>
-      <link href="/Hexo/ceca9b33/"/>
-      <url>/Hexo/ceca9b33/</url>
-      
-        <content type="html"><![CDATA[<p>之前就有看到过别人说可以把Hexo搭建的网站同步到Github和Gitee两个平台，说是Gitee在国内的访问速度比较快，但是一直都没有去做过，这段时间有空去码云把以前的账号重新登陆了，还开通了免费的企业版。</p><span id="more"></span><p>免费的企业版比个人版好的就是空间的域名能够自定义的比个人版要好点，个人版好的都被人抢完了。</p><p>我用自己注册的域名来做这个空间域名感觉还是很不错的，因为很简短才四个字母，这些都是越短越好记。</p><p>Gitee不好的就是自定义域名要钱，还有每次更新都要去点一次那个更新按钮，不过我也没有多余的域名，就先用着给的空间域名吧，这种空间域名其实也是可以被搜索引擎收录的，我用必应搜了下很多用这种域名的只要内容好也被收录了，但是百度就没有收录的。</p><p>免费的也不需要那么多了，反正就当个备用好了，要是真的想搞谷歌广告那些，还是用Github自己买个域名来绑定会比较好，二级域名可能弄不了谷歌广告，我以前记得我用免费的域名都不行，还是自己买了个域名来换了才审核通过了。</p><p>速度的话电脑上访问感觉没有快多少，手机浏览器上感觉会快一点。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Github </tag>
-            
-            <tag> Hexo </tag>
-            
-            <tag> gitee </tag>
-            
-            <tag> 免费 </tag>
-            
-            <tag> 浏览器 </tag>
-            
-            <tag> 网站 </tag>
-            
-            <tag> 搜索引擎 </tag>
-            
-            <tag> 企业版 </tag>
-            
-            <tag> 空间域名 </tag>
-            
-            <tag> 谷歌广告 </tag>
-            
-            <tag> 审核 </tag>
             
         </tags>
       
@@ -19582,6 +19651,8 @@
             
             <tag> 显示器 </tag>
             
+            <tag> 平板 </tag>
+            
             <tag> 电子垃圾 </tag>
             
             <tag> 笔记本 </tag>
@@ -19595,8 +19666,6 @@
             <tag> DIY组装 </tag>
             
             <tag> 品牌机 </tag>
-            
-            <tag> 平板 </tag>
             
             <tag> 一体机 </tag>
             
@@ -19817,6 +19886,51 @@
     
     
     <entry>
+      <title>有的文章平台发不了，还是要发到自己的网站才行</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/eaeba784/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/eaeba784/</url>
+      
+        <content type="html"><![CDATA[<p>很久的时候就有这个问题，为什么现在这么多可以发文章的平台还需要自己有一个网站，那是因为不是所有的文章你写了都能发的，只有自己的网站才是稍微自由一点的，这就是为什么美国人喜欢自己建博客网站，而很少有自媒体平台的原因，因为平台的规则是由平台自己定的，作为用户是没有话语权的，就连特朗普的推特账号都能被平台封禁，可想而知一般人又能有多大的权力。</p><span id="more"></span><p>只要是依靠中心化的东西都是不可靠的，因为现在的这个社会人人都有私心，当一个平台或者一个人为中心的时候难免不会被这一个中心人或者平台使坏，所以现在比特币这么火也是有原因的，因为他是去中心化的，不是由某个人说了算。</p><p>如果是不想自己辛辛苦苦写的文章发出来就被锁了，还是得自己有一个网站，自己发在自己的网站上还可以赚点广告费，如果自己的网站被搜索引擎收录得多了，那肯定就会有很多人通过搜索引擎来找到这个网站，然后在上面发广告做推广之类的都是可以赚钱的。</p><p>如果平台发不了而自己又没有自己的网站的话，那幸苦写的一篇文章就只能放在自己的本地文件夹了，然而它一点作用都没有，还浪费了自己的精力，所以无论是做自媒体还是自己喜欢写文章的，都得自己有一个网站，而这个网站才是自己的根据地。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 文章 </tag>
+            
+            <tag> 问题 </tag>
+            
+            <tag> 平台 </tag>
+            
+            <tag> 赚钱 </tag>
+            
+            <tag> 网站 </tag>
+            
+            <tag> 写文章 </tag>
+            
+            <tag> 权力 </tag>
+            
+            <tag> 博客网站 </tag>
+            
+            <tag> 封禁 </tag>
+            
+            <tag> 广告费 </tag>
+            
+            <tag> 根据地 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>本来不想写的还是写下吧</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5fedbe30/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5fedbe30/</url>
@@ -20019,51 +20133,6 @@
             <tag> 捷径 </tag>
             
             <tag> 前提条件 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>有的文章平台发不了，还是要发到自己的网站才行</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/eaeba784/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/eaeba784/</url>
-      
-        <content type="html"><![CDATA[<p>很久的时候就有这个问题，为什么现在这么多可以发文章的平台还需要自己有一个网站，那是因为不是所有的文章你写了都能发的，只有自己的网站才是稍微自由一点的，这就是为什么美国人喜欢自己建博客网站，而很少有自媒体平台的原因，因为平台的规则是由平台自己定的，作为用户是没有话语权的，就连特朗普的推特账号都能被平台封禁，可想而知一般人又能有多大的权力。</p><span id="more"></span><p>只要是依靠中心化的东西都是不可靠的，因为现在的这个社会人人都有私心，当一个平台或者一个人为中心的时候难免不会被这一个中心人或者平台使坏，所以现在比特币这么火也是有原因的，因为他是去中心化的，不是由某个人说了算。</p><p>如果是不想自己辛辛苦苦写的文章发出来就被锁了，还是得自己有一个网站，自己发在自己的网站上还可以赚点广告费，如果自己的网站被搜索引擎收录得多了，那肯定就会有很多人通过搜索引擎来找到这个网站，然后在上面发广告做推广之类的都是可以赚钱的。</p><p>如果平台发不了而自己又没有自己的网站的话，那幸苦写的一篇文章就只能放在自己的本地文件夹了，然而它一点作用都没有，还浪费了自己的精力，所以无论是做自媒体还是自己喜欢写文章的，都得自己有一个网站，而这个网站才是自己的根据地。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 文章 </tag>
-            
-            <tag> 问题 </tag>
-            
-            <tag> 平台 </tag>
-            
-            <tag> 赚钱 </tag>
-            
-            <tag> 网站 </tag>
-            
-            <tag> 写文章 </tag>
-            
-            <tag> 权力 </tag>
-            
-            <tag> 博客网站 </tag>
-            
-            <tag> 封禁 </tag>
-            
-            <tag> 广告费 </tag>
-            
-            <tag> 根据地 </tag>
             
         </tags>
       
@@ -21053,6 +21122,43 @@
     
     
     <entry>
+      <title>疫情又严重了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9772c3db/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9772c3db/</url>
+      
+        <content type="html"><![CDATA[<p>新冠病毒也就是差不多去年这个时候爆发的，现在又开始复发了，最大原因还是因为元旦放假的原因吧，听说石家庄感染的56个人都是参加婚礼感染的，这源头应该有点难查出来了。</p><span id="more"></span><p>这个疫情好像一直都没有断过，只是天气热的时候传染率降低了，现在天气一冷病毒的存活几率就开始变高了，所以冬天还是最需要防止的，至少现在只是局部的，情况还是比去年好很多，因为只要局部不扩散，那全国也没有去年那么举国上下防控的地步。</p><p>现在虽然说已经有疫苗了，但是有效性还是需要待观察的，不是谁说打了疫苗去疫情高风险地区不用做个人防护都可以了，那样感染的机率还是非常大的，做好个人防护，常消毒，看来今还得一战呢。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 新冠病毒 </tag>
+            
+            <tag> 元旦放假 </tag>
+            
+            <tag> 存活 </tag>
+            
+            <tag> 局部 </tag>
+            
+            <tag> 防控 </tag>
+            
+            <tag> 个人防护 </tag>
+            
+            <tag> 常消毒 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>目前最适合用来组装迷你主机的两款处理器</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8238d83b/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8238d83b/</url>
@@ -21210,43 +21316,6 @@
             <tag> 科学技术 </tag>
             
             <tag> 时间逆向 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>疫情又严重了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9772c3db/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9772c3db/</url>
-      
-        <content type="html"><![CDATA[<p>新冠病毒也就是差不多去年这个时候爆发的，现在又开始复发了，最大原因还是因为元旦放假的原因吧，听说石家庄感染的56个人都是参加婚礼感染的，这源头应该有点难查出来了。</p><span id="more"></span><p>这个疫情好像一直都没有断过，只是天气热的时候传染率降低了，现在天气一冷病毒的存活几率就开始变高了，所以冬天还是最需要防止的，至少现在只是局部的，情况还是比去年好很多，因为只要局部不扩散，那全国也没有去年那么举国上下防控的地步。</p><p>现在虽然说已经有疫苗了，但是有效性还是需要待观察的，不是谁说打了疫苗去疫情高风险地区不用做个人防护都可以了，那样感染的机率还是非常大的，做好个人防护，常消毒，看来今还得一战呢。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 新冠病毒 </tag>
-            
-            <tag> 元旦放假 </tag>
-            
-            <tag> 存活 </tag>
-            
-            <tag> 局部 </tag>
-            
-            <tag> 防控 </tag>
-            
-            <tag> 个人防护 </tag>
-            
-            <tag> 常消毒 </tag>
             
         </tags>
       
@@ -21960,6 +22029,8 @@
             
             <tag> 思想 </tag>
             
+            <tag> 解锁 </tag>
+            
             <tag> 20万字 </tag>
             
             <tag> 锁文 </tag>
@@ -21969,8 +22040,6 @@
             <tag> 网络审查 </tag>
             
             <tag> 拘束自己 </tag>
-            
-            <tag> 解锁 </tag>
             
             <tag> 写作风格 </tag>
             
@@ -22012,100 +22081,6 @@
             <tag> 域名续费 </tag>
             
             <tag> 国家域名 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>网上购物省钱方法</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/889f67f5/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/889f67f5/</url>
-      
-        <content type="html"><![CDATA[<p>我首先发现的是淘宝联盟，这个是为淘宝推广商品的一个平台，以前学做淘宝客网站时候我就知道了。</p><span id="more"></span><p>那时候只知道在自己网站上推广商品可以赚钱，其实在其他平台上发链接也是可以的，QQ，微博都可以，这个是有个手机APP的，选好自己在淘宝要买的商品，然后加入收藏夹，在淘宝联盟的收藏夹里面就可以找到。</p><p>然后就是像推广给别人那样，复制推广链接或者淘口令，然后有重新打开淘宝，淘宝就会自动识别这个淘口令，这里就下单就可以自己获得佣金了。</p><p>只要参加了淘宝客推广活动商家的商品都可以拿到佣金，分享给别人不一定有人买，但是自己买还是可以回点血的。</p><p>要下单付款的时候先不着急付款，打开一淘用一淘来付款，这样有一淘立减，又可以多少省一点，淘宝和天猫的商品都是可以在一淘付款的，只要加入购物车就可以在一淘找到。</p><p>最主要的就是要复制淘口令然后加入购物车这里，之前已经加入购物车的必须还得再加入一次，不然佣金无效的，付款在一淘付款的时候再把多加的减掉，不然只买一件的，买了两件那也麻烦。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 微博 </tag>
-            
-            <tag> 赚钱 </tag>
-            
-            <tag> 省钱 </tag>
-            
-            <tag> 淘宝联盟 </tag>
-            
-            <tag> 网购 </tag>
-            
-            <tag> 推广商品 </tag>
-            
-            <tag> 推广链接 </tag>
-            
-            <tag> 淘口令 </tag>
-            
-            <tag> 回点血 </tag>
-            
-            <tag> 一淘 </tag>
-            
-            <tag> 佣金 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>网站差不多快弄好了，已经部署到Github和Gitee了</title>
-      <link href="/Hexo/aede53ce/"/>
-      <url>/Hexo/aede53ce/</url>
-      
-        <content type="html"><![CDATA[<p>现在是已经上传的线上了，就是以前的一些带图片的文章现在图片，显示不了，看来还得再弄一下才行，经过几个晚上是已经恢复到以前的差不多样子了，新主题还增加了，多语言支持和聊天系统支持。</p><span id="more"></span><p>但是以前的一些东西现在是用不了，以前我用的CNZZ来统计网站数据的，现在这个版本的Next主题不支持显示被隐藏了，也不知道代码是不是对的能不能统计到，现在都是未知了。</p><p>没有重新做之前发一篇文章到Github等了半天怎么都没有更新，我还发觉奇怪了，昨晚重新部署才知道，原来我的Github仓库上面有两个分支，一个是Hexo一个master，后面应该是Github更新了，把Hexo设置成默认的了，那我是把网站部署在master这个分支上的，所以一直刷新网站都是没有更新。</p><p>后面在设置里面看了一下才知道，把默认的分支改成master这个分支以后，网站就重新更新了。</p><p>之前没有升级的时候部署到Gitee后更新了然后打开网站就是一片空白，现在升级了这个问题也解决了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Github </tag>
-            
-            <tag> Hexo </tag>
-            
-            <tag> next主题 </tag>
-            
-            <tag> CNZZ </tag>
-            
-            <tag> gitee </tag>
-            
-            <tag> 网站 </tag>
-            
-            <tag> 主题 </tag>
-            
-            <tag> 部署 </tag>
-            
-            <tag> 聊天系统 </tag>
-            
-            <tag> 多语言 </tag>
-            
-            <tag> 分支 </tag>
-            
-            <tag> master </tag>
-            
-            <tag> 升级 </tag>
             
         </tags>
       
@@ -22221,6 +22196,100 @@
             <tag> 落叶 </tag>
             
             <tag> 彗星 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>网上购物省钱方法</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/889f67f5/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/889f67f5/</url>
+      
+        <content type="html"><![CDATA[<p>我首先发现的是淘宝联盟，这个是为淘宝推广商品的一个平台，以前学做淘宝客网站时候我就知道了。</p><span id="more"></span><p>那时候只知道在自己网站上推广商品可以赚钱，其实在其他平台上发链接也是可以的，QQ，微博都可以，这个是有个手机APP的，选好自己在淘宝要买的商品，然后加入收藏夹，在淘宝联盟的收藏夹里面就可以找到。</p><p>然后就是像推广给别人那样，复制推广链接或者淘口令，然后有重新打开淘宝，淘宝就会自动识别这个淘口令，这里就下单就可以自己获得佣金了。</p><p>只要参加了淘宝客推广活动商家的商品都可以拿到佣金，分享给别人不一定有人买，但是自己买还是可以回点血的。</p><p>要下单付款的时候先不着急付款，打开一淘用一淘来付款，这样有一淘立减，又可以多少省一点，淘宝和天猫的商品都是可以在一淘付款的，只要加入购物车就可以在一淘找到。</p><p>最主要的就是要复制淘口令然后加入购物车这里，之前已经加入购物车的必须还得再加入一次，不然佣金无效的，付款在一淘付款的时候再把多加的减掉，不然只买一件的，买了两件那也麻烦。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 微博 </tag>
+            
+            <tag> 赚钱 </tag>
+            
+            <tag> 省钱 </tag>
+            
+            <tag> 淘宝联盟 </tag>
+            
+            <tag> 网购 </tag>
+            
+            <tag> 推广商品 </tag>
+            
+            <tag> 推广链接 </tag>
+            
+            <tag> 淘口令 </tag>
+            
+            <tag> 回点血 </tag>
+            
+            <tag> 一淘 </tag>
+            
+            <tag> 佣金 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>网站差不多快弄好了，已经部署到Github和Gitee了</title>
+      <link href="/Hexo/aede53ce/"/>
+      <url>/Hexo/aede53ce/</url>
+      
+        <content type="html"><![CDATA[<p>现在是已经上传的线上了，就是以前的一些带图片的文章现在图片，显示不了，看来还得再弄一下才行，经过几个晚上是已经恢复到以前的差不多样子了，新主题还增加了，多语言支持和聊天系统支持。</p><span id="more"></span><p>但是以前的一些东西现在是用不了，以前我用的CNZZ来统计网站数据的，现在这个版本的Next主题不支持显示被隐藏了，也不知道代码是不是对的能不能统计到，现在都是未知了。</p><p>没有重新做之前发一篇文章到Github等了半天怎么都没有更新，我还发觉奇怪了，昨晚重新部署才知道，原来我的Github仓库上面有两个分支，一个是Hexo一个master，后面应该是Github更新了，把Hexo设置成默认的了，那我是把网站部署在master这个分支上的，所以一直刷新网站都是没有更新。</p><p>后面在设置里面看了一下才知道，把默认的分支改成master这个分支以后，网站就重新更新了。</p><p>之前没有升级的时候部署到Gitee后更新了然后打开网站就是一片空白，现在升级了这个问题也解决了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Github </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> next主题 </tag>
+            
+            <tag> CNZZ </tag>
+            
+            <tag> gitee </tag>
+            
+            <tag> 网站 </tag>
+            
+            <tag> 主题 </tag>
+            
+            <tag> 部署 </tag>
+            
+            <tag> 聊天系统 </tag>
+            
+            <tag> 多语言 </tag>
+            
+            <tag> 分支 </tag>
+            
+            <tag> master </tag>
+            
+            <tag> 升级 </tag>
             
         </tags>
       
@@ -22619,47 +22688,6 @@
     
     
     <entry>
-      <title>蓝叠64位这个应该是最流畅的模拟器了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b7442738/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b7442738/</url>
-      
-        <content type="html"><![CDATA[<p>我用这个来玩捕鱼游戏经常都可以保持在60帧左右，关键是它自带录制脚本这个功能，所以自动玩捕鱼游戏也是可以的，只要录制一断脚本让它不停运行就可以实现自动玩了。</p><span id="more"></span><p>但是机型设置最好使用默认的，设置其他的就会卡，性能设置内存和CPU核数我都是设置的最大，如果用的32位的设置内存超过4G是没有什么用的，但是64位的性能就不一样了，内存设置越大越流畅。</p><p>那个提示基本上可以忽略，说内存设置超过4096M会被锁定在30帧，其实根本不会，照样是保持在60帧左右。</p><p>以前居然没有发觉这个版本很好用，一直以为最新版的好用，但是我电脑本身是64位的，用64位的软件才能发挥出它该有的性能，玩捕鱼游戏用自带的脚本还可以显示在40-50帧左右还是挺不错的性能了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 性能 </tag>
-            
-            <tag> 模拟器 </tag>
-            
-            <tag> 最新版 </tag>
-            
-            <tag> 蓝叠64位 </tag>
-            
-            <tag> 最流畅 </tag>
-            
-            <tag> 捕鱼游戏 </tag>
-            
-            <tag> 60帧左右 </tag>
-            
-            <tag> 机型设置 </tag>
-            
-            <tag> 发挥出 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>苹果ID改地区，图文详解</title>
       <link href="/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/8042b2bd/"/>
       <url>/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/8042b2bd/</url>
@@ -22709,42 +22737,11 @@
     
     
     <entry>
-      <title>表格练习</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/65046362/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/65046362/</url>
+      <title>蓝叠64位这个应该是最流畅的模拟器了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b7442738/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b7442738/</url>
       
-        <content type="html"><![CDATA[<p>在中国大学MOOC学习《网页设计基础》第四章表格标记的一些日常记录，作用就是使自己更加深刻理解HTML中表格的插入。</p><span id="more"></span><p>源代码</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>table-1<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>1-1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>1-2<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>2-1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>2-2<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>效果</p><html><head><title>table-1</title></head><body><table><tr><td>1-1</td><td>1-2</td></tr><tr><td>2-1</td><td>2-2</td></tr></table></body></html><p>源代码</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>table-1<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">border</span>=<span class="string">&quot;1&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">caption</span>&gt;</span>table-2<span class="tag">&lt;/<span class="name">caption</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>head1<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>head2<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>1-1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>1-2<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>2-1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>2-2<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><p>效果</p><html><head><title>table-1</title></head><body><table border="1"><caption>table-2</caption><tr><th>head1</th><th>head2</th></tr><tr><td>1-1</td><td>1-2</td></tr><tr><td>2-1</td><td>2-2</td></tr></table></body></html><p>源代码</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">border</span>=<span class="string">&quot;1&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>姓名<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;<span class="name">th</span> <span class="attr">colspan</span>=<span class="string">&quot;2&quot;</span>&gt;</span>电话<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>Bill Gates<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>555 77 854<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>555 77 855<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">border</span>=<span class="string">&quot;1&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>姓名<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>Bill Gates<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">th</span> <span class="attr">rowspan</span>=<span class="string">&quot;2&quot;</span>&gt;</span>电话<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>555 77 854<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>555 77 855<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><p>效果</p><html><body><table border="1"><tr><th>姓名</th><th colspan="2">电话</th></tr><tr><td>Bill Gates</td><td>555 77 854</td><td>555 77 855</td></tr></table><table border="1"><tr><th>姓名</th><td>Bill Gates</td></tr><tr><th rowspan="2">电话</th><td>555 77 854</td></tr><tr><td>555 77 855</td></tr></table></body></html>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 练习 </tag>
-            
-            <tag> 表格 </tag>
-            
-            <tag> 网页设计 </tag>
-            
-            <tag> html </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>装备没有人秒回收了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a636e618/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a636e618/</url>
-      
-        <content type="html"><![CDATA[<p>达叔走了，装备秒回收是他这几年代言最火的一个游戏广告，他走了我传奇游戏里的装备谁来回收呢，听说他得的是癌症走的，这年头的人最怕的就是得癌症了，有钱也治不了，明星也不例外。</p><span id="more"></span><p>以前是看过他和周星驰合演的很多电影，这几年对他印象最深刻的就是装备秒回收这个游戏广告了，零零后可能没有看过他演的电影，但是一定看过他代言的游戏广告，其实他的电影也很不错的，都是很多小时候的快乐的回忆。</p><p>新闻上说的是过年后才检查出得的癌症，到现在也才多少天啊，这病情进展也太快了，癌症这病真的是只要得了都会离死不远了，癌细胞真的扩散很快。</p><p>才进ICU一天不到人就走了，真的是病来如山倒，病走如抽丝，这话是说得真的一点都没有错了，他的电影会成为永远的经典，他代言的游戏广告是看不到了。</p>]]></content>
+        <content type="html"><![CDATA[<p>我用这个来玩捕鱼游戏经常都可以保持在60帧左右，关键是它自带录制脚本这个功能，所以自动玩捕鱼游戏也是可以的，只要录制一断脚本让它不停运行就可以实现自动玩了。</p><span id="more"></span><p>但是机型设置最好使用默认的，设置其他的就会卡，性能设置内存和CPU核数我都是设置的最大，如果用的32位的设置内存超过4G是没有什么用的，但是64位的性能就不一样了，内存设置越大越流畅。</p><p>那个提示基本上可以忽略，说内存设置超过4096M会被锁定在30帧，其实根本不会，照样是保持在60帧左右。</p><p>以前居然没有发觉这个版本很好用，一直以为最新版的好用，但是我电脑本身是64位的，用64位的软件才能发挥出它该有的性能，玩捕鱼游戏用自带的脚本还可以显示在40-50帧左右还是挺不错的性能了。</p>]]></content>
       
       
       <categories>
@@ -22756,23 +22753,23 @@
       
         <tags>
             
-            <tag> 装备 </tag>
+            <tag> 性能 </tag>
             
-            <tag> 秒回收 </tag>
+            <tag> 模拟器 </tag>
             
-            <tag> 代言 </tag>
+            <tag> 最新版 </tag>
             
-            <tag> 传奇游戏 </tag>
+            <tag> 蓝叠64位 </tag>
             
-            <tag> 明星 </tag>
+            <tag> 最流畅 </tag>
             
-            <tag> 游戏广告 </tag>
+            <tag> 捕鱼游戏 </tag>
             
-            <tag> 小时候 </tag>
+            <tag> 60帧左右 </tag>
             
-            <tag> 癌症 </tag>
+            <tag> 机型设置 </tag>
             
-            <tag> 病来如山倒 </tag>
+            <tag> 发挥出 </tag>
             
         </tags>
       
@@ -22830,6 +22827,47 @@
     
     
     <entry>
+      <title>装备没有人秒回收了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a636e618/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a636e618/</url>
+      
+        <content type="html"><![CDATA[<p>达叔走了，装备秒回收是他这几年代言最火的一个游戏广告，他走了我传奇游戏里的装备谁来回收呢，听说他得的是癌症走的，这年头的人最怕的就是得癌症了，有钱也治不了，明星也不例外。</p><span id="more"></span><p>以前是看过他和周星驰合演的很多电影，这几年对他印象最深刻的就是装备秒回收这个游戏广告了，零零后可能没有看过他演的电影，但是一定看过他代言的游戏广告，其实他的电影也很不错的，都是很多小时候的快乐的回忆。</p><p>新闻上说的是过年后才检查出得的癌症，到现在也才多少天啊，这病情进展也太快了，癌症这病真的是只要得了都会离死不远了，癌细胞真的扩散很快。</p><p>才进ICU一天不到人就走了，真的是病来如山倒，病走如抽丝，这话是说得真的一点都没有错了，他的电影会成为永远的经典，他代言的游戏广告是看不到了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 装备 </tag>
+            
+            <tag> 秒回收 </tag>
+            
+            <tag> 代言 </tag>
+            
+            <tag> 传奇游戏 </tag>
+            
+            <tag> 明星 </tag>
+            
+            <tag> 游戏广告 </tag>
+            
+            <tag> 小时候 </tag>
+            
+            <tag> 癌症 </tag>
+            
+            <tag> 病来如山倒 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>装机失败的那些事</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/69c2eb21/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/69c2eb21/</url>
@@ -22869,6 +22907,37 @@
             <tag> 防呆 </tag>
             
             <tag> 型号 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>表格练习</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/65046362/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/65046362/</url>
+      
+        <content type="html"><![CDATA[<p>在中国大学MOOC学习《网页设计基础》第四章表格标记的一些日常记录，作用就是使自己更加深刻理解HTML中表格的插入。</p><span id="more"></span><p>源代码</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>table-1<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">table</span>&gt;</span><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>1-1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>1-2<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>2-1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>2-2<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>效果</p><html><head><title>table-1</title></head><body><table><tr><td>1-1</td><td>1-2</td></tr><tr><td>2-1</td><td>2-2</td></tr></table></body></html><p>源代码</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">title</span>&gt;</span>table-1<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">border</span>=<span class="string">&quot;1&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">caption</span>&gt;</span>table-2<span class="tag">&lt;/<span class="name">caption</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>head1<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>head2<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>1-1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>1-2<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>2-1<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>2-2<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><p>效果</p><html><head><title>table-1</title></head><body><table border="1"><caption>table-2</caption><tr><th>head1</th><th>head2</th></tr><tr><td>1-1</td><td>1-2</td></tr><tr><td>2-1</td><td>2-2</td></tr></table></body></html><p>源代码</p><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">border</span>=<span class="string">&quot;1&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>姓名<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;<span class="name">th</span> <span class="attr">colspan</span>=<span class="string">&quot;2&quot;</span>&gt;</span>电话<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>Bill Gates<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>555 77 854<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>555 77 855<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line">    </span><br><span class="line"><span class="tag">&lt;<span class="name">table</span> <span class="attr">border</span>=<span class="string">&quot;1&quot;</span>&gt;</span><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">th</span>&gt;</span>姓名<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>Bill Gates<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">th</span> <span class="attr">rowspan</span>=<span class="string">&quot;2&quot;</span>&gt;</span>电话<span class="tag">&lt;/<span class="name">th</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>555 77 854<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">tr</span>&gt;</span><span class="tag">&lt;<span class="name">td</span>&gt;</span>555 77 855<span class="tag">&lt;/<span class="name">td</span>&gt;</span><span class="tag">&lt;/<span class="name">tr</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">table</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure><p>效果</p><html><body><table border="1"><tr><th>姓名</th><th colspan="2">电话</th></tr><tr><td>Bill Gates</td><td>555 77 854</td><td>555 77 855</td></tr></table><table border="1"><tr><th>姓名</th><td>Bill Gates</td></tr><tr><th rowspan="2">电话</th><td>555 77 854</td></tr><tr><td>555 77 855</td></tr></table></body></html>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 练习 </tag>
+            
+            <tag> 表格 </tag>
+            
+            <tag> 网页设计 </tag>
+            
+            <tag> html </tag>
             
         </tags>
       
@@ -23341,59 +23410,6 @@
     
     
     <entry>
-      <title>读《围炉夜话》其八有感</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f6e5d615/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f6e5d615/</url>
-      
-        <content type="html"><![CDATA[<p>教育小孩应该要态度严厉，宠爱和太过于溺爱对小孩都是没有好处的，只有严厉的教育才能锻炼出小孩子的独立性，毕竟如今的社会是复杂多变的，那种长大后，依然还是巨婴的人是很难在社会上生存的，严厉的教育可以培养出孩子的独立性和自信心。</p><span id="more"></span><p>对小孩太过于溺爱那样反而是害了他自己，对于小孩子想要什么都千依百顺地去满足，那样一旦他长大后得不到自己想要的就会走入犯罪的深渊，所以有小孩的父母当要引以为戒。</p><p>然而对待小人我们要以一种尊敬的心态去对待他们，他们虽然有不好的地方，但是从他们身上还是有我们值得去学习的，如果老是用一种奇特的眼光去看待他们那是要不得的，我们要想引他们向善，就得先让他们觉得我们对他们没有恶意。</p><p>只有他们觉得我们是对他们是好的，那样他们才能走向善的一面，只有种下的是善的种子结出来的才是善果，如果我们自己都没有善意，那小人他们怎么又会被我们感化呢，如果我们对他人没有善意，那种下的种子，结出来的自然也还是恶果。</p><p>想要引人向善，我们自己的言行就首先得是善的，我们要对恶人行善，那样这个世界才会结出来更多的善果，我们对待小人要有一种敬畏之心，才能用我们的行动，我们的善来唤醒他们沉睡的良知，要多怀敬畏之心，才能让他人走向正途。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 围炉夜话 </tag>
-            
-            <tag> 教育小孩 </tag>
-            
-            <tag> 态度严厉 </tag>
-            
-            <tag> 宠爱 </tag>
-            
-            <tag> 溺爱 </tag>
-            
-            <tag> 独立性 </tag>
-            
-            <tag> 复杂多变 </tag>
-            
-            <tag> 自信心 </tag>
-            
-            <tag> 犯罪 </tag>
-            
-            <tag> 引以为戒 </tag>
-            
-            <tag> 对待小人 </tag>
-            
-            <tag> 奇特 </tag>
-            
-            <tag> 善果 </tag>
-            
-            <tag> 敬畏之心 </tag>
-            
-            <tag> 正途 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>读《围炉夜话》其五有感</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e358563c/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e358563c/</url>
@@ -23441,6 +23457,59 @@
             <tag> 言语 </tag>
             
             <tag> 同一本书 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>读《围炉夜话》其八有感</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f6e5d615/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f6e5d615/</url>
+      
+        <content type="html"><![CDATA[<p>教育小孩应该要态度严厉，宠爱和太过于溺爱对小孩都是没有好处的，只有严厉的教育才能锻炼出小孩子的独立性，毕竟如今的社会是复杂多变的，那种长大后，依然还是巨婴的人是很难在社会上生存的，严厉的教育可以培养出孩子的独立性和自信心。</p><span id="more"></span><p>对小孩太过于溺爱那样反而是害了他自己，对于小孩子想要什么都千依百顺地去满足，那样一旦他长大后得不到自己想要的就会走入犯罪的深渊，所以有小孩的父母当要引以为戒。</p><p>然而对待小人我们要以一种尊敬的心态去对待他们，他们虽然有不好的地方，但是从他们身上还是有我们值得去学习的，如果老是用一种奇特的眼光去看待他们那是要不得的，我们要想引他们向善，就得先让他们觉得我们对他们没有恶意。</p><p>只有他们觉得我们是对他们是好的，那样他们才能走向善的一面，只有种下的是善的种子结出来的才是善果，如果我们自己都没有善意，那小人他们怎么又会被我们感化呢，如果我们对他人没有善意，那种下的种子，结出来的自然也还是恶果。</p><p>想要引人向善，我们自己的言行就首先得是善的，我们要对恶人行善，那样这个世界才会结出来更多的善果，我们对待小人要有一种敬畏之心，才能用我们的行动，我们的善来唤醒他们沉睡的良知，要多怀敬畏之心，才能让他人走向正途。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 围炉夜话 </tag>
+            
+            <tag> 教育小孩 </tag>
+            
+            <tag> 态度严厉 </tag>
+            
+            <tag> 宠爱 </tag>
+            
+            <tag> 溺爱 </tag>
+            
+            <tag> 独立性 </tag>
+            
+            <tag> 复杂多变 </tag>
+            
+            <tag> 自信心 </tag>
+            
+            <tag> 犯罪 </tag>
+            
+            <tag> 引以为戒 </tag>
+            
+            <tag> 对待小人 </tag>
+            
+            <tag> 奇特 </tag>
+            
+            <tag> 善果 </tag>
+            
+            <tag> 敬畏之心 </tag>
+            
+            <tag> 正途 </tag>
             
         </tags>
       
@@ -23535,61 +23604,6 @@
     
     
     <entry>
-      <title>读《围炉夜话》其十有感</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4ecdab72/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4ecdab72/</url>
-      
-        <content type="html"><![CDATA[<p>本来不属于自己的名利，但是自己却通过不正当的手段去得到了，开始时是觉得自己的运气好，但是以后也可能会因为这件事而惹祸上身。</p><span id="more"></span><p>塞翁失马未必就是一件坏事，但是马后面不仅回来了，还带了一群马回来，这也未必就是一件好事，福祸所倚，祸福所伏，说的也正是这个道理。</p><p>一个人穷困潦倒到了极点，还能咬紧牙关继续坚持活着，这样的人是最有能耐的，当苦难过去之后，顺境必然会到来，苦难可以磨练一个人的性格，先苦后甜的幸福不属于这样的人，哪还会属于谁呢？</p><p>人的聪明才智，最主要在于忠信二字，做一个不忠不信的人就算怎么有才智，那也是无用之才，忠信二字都没有的无用之才，也很难为他人创造价值，自然也无法实现自己的人生价值。</p><p>自己的聪明才智应该是要表现在忠信二字上，而不是用灵活机变的心思来代替，只有把最基本的做到了，才能往最深层次的去扩展。</p><p>读书人好坏不单就是看成绩考了多少分，还要看品行，品行才是最重要的，品行不好的人，成绩再怎么好，这样的人培养出来了对社会也没有什么用处。</p><p>读书人该做的就是：“为天地立心，为生民立命，为往圣继绝学，为万世开太平。”要以德为本，并且身体力行地去做，并不是认为自己成绩好就能轻易做到的，要以自己的本心，心无杂念地不断去摸索，最终才能做出成功的事业。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 成绩 </tag>
-            
-            <tag> 摸索 </tag>
-            
-            <tag> 围炉夜话 </tag>
-            
-            <tag> 名利 </tag>
-            
-            <tag> 不正当 </tag>
-            
-            <tag> 运气好 </tag>
-            
-            <tag> 惹祸上身 </tag>
-            
-            <tag> 福祸所倚 </tag>
-            
-            <tag> 祸福所伏 </tag>
-            
-            <tag> 穷困潦倒 </tag>
-            
-            <tag> 磨练 </tag>
-            
-            <tag> 忠信二字 </tag>
-            
-            <tag> 聪明才智 </tag>
-            
-            <tag> 读书人 </tag>
-            
-            <tag> 培养 </tag>
-            
-            <tag> 事业 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>读《围炉夜话》其四有感</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/37b7505e/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/37b7505e/</url>
@@ -23645,6 +23659,61 @@
             <tag> 贪念之心 </tag>
             
             <tag> 道理 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>读《围炉夜话》其十有感</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4ecdab72/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4ecdab72/</url>
+      
+        <content type="html"><![CDATA[<p>本来不属于自己的名利，但是自己却通过不正当的手段去得到了，开始时是觉得自己的运气好，但是以后也可能会因为这件事而惹祸上身。</p><span id="more"></span><p>塞翁失马未必就是一件坏事，但是马后面不仅回来了，还带了一群马回来，这也未必就是一件好事，福祸所倚，祸福所伏，说的也正是这个道理。</p><p>一个人穷困潦倒到了极点，还能咬紧牙关继续坚持活着，这样的人是最有能耐的，当苦难过去之后，顺境必然会到来，苦难可以磨练一个人的性格，先苦后甜的幸福不属于这样的人，哪还会属于谁呢？</p><p>人的聪明才智，最主要在于忠信二字，做一个不忠不信的人就算怎么有才智，那也是无用之才，忠信二字都没有的无用之才，也很难为他人创造价值，自然也无法实现自己的人生价值。</p><p>自己的聪明才智应该是要表现在忠信二字上，而不是用灵活机变的心思来代替，只有把最基本的做到了，才能往最深层次的去扩展。</p><p>读书人好坏不单就是看成绩考了多少分，还要看品行，品行才是最重要的，品行不好的人，成绩再怎么好，这样的人培养出来了对社会也没有什么用处。</p><p>读书人该做的就是：“为天地立心，为生民立命，为往圣继绝学，为万世开太平。”要以德为本，并且身体力行地去做，并不是认为自己成绩好就能轻易做到的，要以自己的本心，心无杂念地不断去摸索，最终才能做出成功的事业。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 成绩 </tag>
+            
+            <tag> 摸索 </tag>
+            
+            <tag> 围炉夜话 </tag>
+            
+            <tag> 名利 </tag>
+            
+            <tag> 不正当 </tag>
+            
+            <tag> 运气好 </tag>
+            
+            <tag> 惹祸上身 </tag>
+            
+            <tag> 福祸所倚 </tag>
+            
+            <tag> 祸福所伏 </tag>
+            
+            <tag> 穷困潦倒 </tag>
+            
+            <tag> 磨练 </tag>
+            
+            <tag> 忠信二字 </tag>
+            
+            <tag> 聪明才智 </tag>
+            
+            <tag> 读书人 </tag>
+            
+            <tag> 培养 </tag>
+            
+            <tag> 事业 </tag>
             
         </tags>
       
@@ -24255,9 +24324,9 @@
             
             <tag> 浏览器 </tag>
             
-            <tag> 普通人 </tag>
-            
             <tag> 结婚 </tag>
+            
+            <tag> 普通人 </tag>
             
             <tag> 重点 </tag>
             
@@ -24368,6 +24437,43 @@
     
     
     <entry>
+      <title>重新安装的这个word版本没有以前那个好用了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e2ba885/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e2ba885/</url>
+      
+        <content type="html"><![CDATA[<p>这个界面我找了半天也没有找到专注模式，还有是界面不能设置成全黑模式了，就是中间编辑区这一块还是白色的了，比以前那个版本好一点的应该是不会出现乱码了，以前用的那个是一段时间界面就会出现乱码，直接要重启word才能看得清楚。</p><span id="more"></span><p>每个版本真的都有好用的地方和不好的地方，既然不能设置全黑也只能将就用着了，毕竟这个都已经是最新版本的了，总比那个2019增强版好用很多，那个是一打开就闪退，这个好点不会了。</p><p>现在用它来写文章也没有遇到特别不好的地方，就是界面不能设置成自己想要的这一点缺点了，另外这个好像也没有文字语音朗读功能了，之前那个版本的我每次写好文章都是会用这个功能朗读一遍，看看那些地方需要改进，这个是没有了，只能自己多看几遍了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 专注模式 </tag>
+            
+            <tag> 重新安装 </tag>
+            
+            <tag> word版本 </tag>
+            
+            <tag> 编辑区 </tag>
+            
+            <tag> 重启word </tag>
+            
+            <tag> 2019增强版 </tag>
+            
+            <tag> 语音朗读 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>际遇不一样的人生，领略不同的峡谷和山川</title>
       <link href="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/"/>
       <url>/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/ba66362a/</url>
@@ -24439,43 +24545,6 @@
             <tag> 独自流淌 </tag>
             
             <tag> 歌声 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>重新安装的这个word版本没有以前那个好用了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e2ba885/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e2ba885/</url>
-      
-        <content type="html"><![CDATA[<p>这个界面我找了半天也没有找到专注模式，还有是界面不能设置成全黑模式了，就是中间编辑区这一块还是白色的了，比以前那个版本好一点的应该是不会出现乱码了，以前用的那个是一段时间界面就会出现乱码，直接要重启word才能看得清楚。</p><span id="more"></span><p>每个版本真的都有好用的地方和不好的地方，既然不能设置全黑也只能将就用着了，毕竟这个都已经是最新版本的了，总比那个2019增强版好用很多，那个是一打开就闪退，这个好点不会了。</p><p>现在用它来写文章也没有遇到特别不好的地方，就是界面不能设置成自己想要的这一点缺点了，另外这个好像也没有文字语音朗读功能了，之前那个版本的我每次写好文章都是会用这个功能朗读一遍，看看那些地方需要改进，这个是没有了，只能自己多看几遍了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 专注模式 </tag>
-            
-            <tag> 重新安装 </tag>
-            
-            <tag> word版本 </tag>
-            
-            <tag> 编辑区 </tag>
-            
-            <tag> 重启word </tag>
-            
-            <tag> 2019增强版 </tag>
-            
-            <tag> 语音朗读 </tag>
             
         </tags>
       
