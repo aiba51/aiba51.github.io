@@ -1,9 +1,10 @@
-央视频道,#genre#,https://epg.erw.cc/api/diyp
+央视频道,#genre#
 CCTV1-综合,https://node1.olelive.com:6443/live/CCTV1HD/hls.m3u8
 CCTV2-财经,https://node1.olelive.com:6443/live/CCTV2HD/hls.m3u8
 CCTV3-综艺,http://58.35.70.169:10055/live/cctv03/hls.m3u8
 CCTV4-中文国际（亚）,http://183.204.13.13/1.v.smtcdns.net/hlslive-tx-cdn.ysp.cctv.cn/ysp/2022576603.m3u8
 CCTV4K-超高清,http://27.222.3.214/liveali-tp4k.cctv.cn/live/4K10M.stream/playlist.m3u8
+CCTV8K-超高清,https://tv.cry33.com/ys4k.php?id=8k
 CCTV5-体育,https://node1.olelive.com:6443/live/CCTV5HD/hls.m3u8
 CCTV5+-体育赛事,https://node1.olelive.com:6443/live/CCTV5PHD/hls.m3u8
 CCTV6-电影,http://58.35.70.169:10055/live/cctv06/hls.m3u8
@@ -163,6 +164,7 @@ CETV4,http://txycsbl.centv.cn/zb/0822cetv4.m3u8
 兵团卫视,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226214/index.m3u8
 延边卫视,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226220/index.m3u8
 内蒙古卫视,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221225786/index.m3u8
+内蒙古卫视,https://livestream-bt.nmtv.cn/nmtv/2314general.m3u8?txSecret=dc348a27bd36fe1bd63562af5e7269ea&txTime=771EF880
 康巴卫视,http://dbiptv.sn.chinamobile.com/PLTV/88888890/224/3221226234/index.m3u8
 
 江苏卫视,https://live.goodiptv.club/api/bestv.php?id=jswshd8m/8000000
@@ -647,6 +649,7 @@ TVB星河,http://r.jdshipin.com/Voac4
 明珠台,http://r.jdshipin.com/GeWKr?id=mzt720
 明珠台,http://php.jdshipin.com:8880/iptv.php?id=mzt
 香港卫视,http://zhibo.hkstv.tv/livestream/mutfysrq/playlist.m3u8
+香港卫视,http://zhibo.hkstv.tv:80/livestream/mutfysrq.flv
 J2,http://r.jdshipin.com/Nr5jq
 J2,http://r.jdshipin.com/ndGgS
 VIUTV,http://r.jdshipin.com/vSJvl
@@ -2780,12 +2783,20 @@ BesTV轮播,#genre#
 看天下精选,http://php.jdshipin.com:8880/bst.php?id=ktxjx8m/8000000
 电竞天堂,http://php.jdshipin.com:8880/bst.php?id=djtt8m/8000000
 
+好看的,#genre#
+需要爸爸播种子,https://vip15.play-cdn15.com/20231011/25009_d041473d/2000k/hls/index.m3u8
+媳妇的诱惑,https://vip15.play-cdn15.com/20231013/25054_c87471b9/2000k/hls/index.m3u8
+抖娘利世小姨子的秘密被姐夫发现,https://cdn14.yzzy-dy-cdn.com/20230812/31323_1ccf6331/2000k/hls/index.m3u8
+激情丛林,https://vip15.play-cdn15.com/20230907/24509_af335acb/2000k/hls/index.m3u8
+赤字温泉:北欧性爱救世主,https://vip15.play-cdn15.com/20231025/25302_baa6050a/2000k/hls/index.m3u8
+妈妈朋友8,https://yzzy1.play-cdn16.com/20240226/28120_1bbbd8b9/2000k/hls/mixed.m3u8
+超感猎杀：性年快乐,https://ikcdn01.ikzybf.com/20240425/daeO6B9j/2000kb/hls/index.m3u8
+聊斋艳谭之聊斋连锁,https://ikcdn01.ikzybf.com/20240424/axMERoXP/2000kb/hls/index.m3u8
+恶夜2000,https://ikcdn01.ikzybf.com/20240425/4Xoi5lLW/2000kb/hls/index.m3u8
+情欲,https://ikcdn01.ikzybf.com/20240424/QCnQCLxE/2000kb/hls/index.m3u8
+
+
 ♥聚玩盒子,#genre#
 小盒子整理,https://15799848.s21v.faiusr.com/58/ABUIABA6GAAgn-zL9QUo4L7HJQ.mp4
-所有资源,http://tv.nxog.top/m/404/xjj.php
-均为免费,http://tv.nxog.top/m/404/xjj.php
-抖音搜索,http://tv.nxog.top/m/404/xjj.php
-聚玩盒子,http://tv.nxog.top/m/404/xjj.php
-微信搜索,http://tv.nxog.top/m/404/xjj.php
-聚玩盒子,http://tv.nxog.top/m/404/xjj.php
+
 
