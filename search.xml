@@ -995,9 +995,9 @@
             
             <tag> 文章 </tag>
             
-            <tag> 数据文件夹 </tag>
-            
             <tag> 配置文件 </tag>
+            
+            <tag> 数据文件夹 </tag>
             
             <tag> 网站 </tag>
             
@@ -1124,11 +1124,11 @@
             
             <tag> Git </tag>
             
+            <tag> 脚本 </tag>
+            
             <tag> shell </tag>
             
             <tag> bash </tag>
-            
-            <tag> 脚本 </tag>
             
             <tag> script </tag>
             
@@ -1917,9 +1917,9 @@
             
             <tag> 思想 </tag>
             
-            <tag> 睡不着 </tag>
-            
             <tag> 看书 </tag>
+            
+            <tag> 睡不着 </tag>
             
             <tag> 弱点 </tag>
             
@@ -5206,9 +5206,11 @@
       
         <tags>
             
-            <tag> 毕节 </tag>
+            <tag> 中山 </tag>
             
             <tag> 珠海 </tag>
+            
+            <tag> 毕节 </tag>
             
             <tag> 坐车 </tag>
             
@@ -5221,8 +5223,6 @@
             <tag> 刷二维码 </tag>
             
             <tag> 广州 </tag>
-            
-            <tag> 中山 </tag>
             
         </tags>
       
@@ -6785,6 +6785,8 @@
             
             <tag> 浏览器 </tag>
             
+            <tag> 刷牙洗脸 </tag>
+            
             <tag> 头痛老病 </tag>
             
             <tag> 珀金一 </tag>
@@ -6792,8 +6794,6 @@
             <tag> 青椒 </tag>
             
             <tag> 蚊香 </tag>
-            
-            <tag> 刷牙洗脸 </tag>
             
         </tags>
       
@@ -7177,9 +7177,9 @@
             
             <tag> 海边 </tag>
             
-            <tag> 珠海 </tag>
-            
             <tag> 中山 </tag>
+            
+            <tag> 珠海 </tag>
             
             <tag> 不认床 </tag>
             
@@ -7208,9 +7208,9 @@
       
         <tags>
             
-            <tag> 珠海 </tag>
-            
             <tag> 中山 </tag>
+            
+            <tag> 珠海 </tag>
             
             <tag> 浪费 </tag>
             
@@ -7774,9 +7774,9 @@
             
             <tag> 玩手机 </tag>
             
-            <tag> 刷牙洗脸 </tag>
-            
             <tag> 凉水澡 </tag>
+            
+            <tag> 刷牙洗脸 </tag>
             
             <tag> 麻烦 </tag>
             
@@ -10948,6 +10948,43 @@
     
     
     <entry>
+      <title>Hexo在数据文件夹中添加CNZZ统计</title>
+      <link href="/Hexo/7b6e1cf9/"/>
+      <url>/Hexo/7b6e1cf9/</url>
+      
+        <content type="html"><![CDATA[<p>首先在source文件夹下新建一个_data文件夹，打开主题配置文件或者备用主题配置文件，我用的是备用主题配置文件，搜索找到custom_file_path，这里下面是自定义数据文件路径，把第六个footer前面的注释符#去掉，可以看到路径上有个_data文件夹下面还要有个footer.njk文件才可以。</p><span id="more"></span><p>复制footer.njk这个文件名，在刚才新建的_data文件夹下新建一个文本文件，把名字改成footer.njk,到这里这个文件就建好了。</p><p>复制友盟的cnzz统计代码放到这个footer.njk这个文件里面就可以了，我这里用的工具是notepad++,用这个工具打开footer.njk自己新建的这个文件，把复制的代码粘贴到里面，然后把主题配置文件的cnzz_siteid这里设置成true,注意冒号后面有个空格，保存主题配置文件这样就可以了，用其他工具打开也可以，但是我一直用的这个，感觉很简洁。这样是真的简单很多，不用去修改主题文件。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 数据文件 </tag>
+            
+            <tag> CNZZ </tag>
+            
+            <tag> 路径 </tag>
+            
+            <tag> 统计代码 </tag>
+            
+            <tag> 配置文件 </tag>
+            
+            <tag> footer </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo在数据文件夹里添加谷歌和百度站点验证</title>
       <link href="/Hexo/228e7a34/"/>
       <url>/Hexo/228e7a34/</url>
@@ -10991,43 +11028,6 @@
     
     
     <entry>
-      <title>Hexo在数据文件夹中添加CNZZ统计</title>
-      <link href="/Hexo/7b6e1cf9/"/>
-      <url>/Hexo/7b6e1cf9/</url>
-      
-        <content type="html"><![CDATA[<p>首先在source文件夹下新建一个_data文件夹，打开主题配置文件或者备用主题配置文件，我用的是备用主题配置文件，搜索找到custom_file_path，这里下面是自定义数据文件路径，把第六个footer前面的注释符#去掉，可以看到路径上有个_data文件夹下面还要有个footer.njk文件才可以。</p><span id="more"></span><p>复制footer.njk这个文件名，在刚才新建的_data文件夹下新建一个文本文件，把名字改成footer.njk,到这里这个文件就建好了。</p><p>复制友盟的cnzz统计代码放到这个footer.njk这个文件里面就可以了，我这里用的工具是notepad++,用这个工具打开footer.njk自己新建的这个文件，把复制的代码粘贴到里面，然后把主题配置文件的cnzz_siteid这里设置成true,注意冒号后面有个空格，保存主题配置文件这样就可以了，用其他工具打开也可以，但是我一直用的这个，感觉很简洁。这样是真的简单很多，不用去修改主题文件。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-            <tag> 数据文件 </tag>
-            
-            <tag> CNZZ </tag>
-            
-            <tag> 路径 </tag>
-            
-            <tag> 统计代码 </tag>
-            
-            <tag> 配置文件 </tag>
-            
-            <tag> footer </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hexo换电脑更新，能推送上去了才算迁移成功</title>
       <link href="/Hexo/3e845146/"/>
       <url>/Hexo/3e845146/</url>
@@ -11046,9 +11046,9 @@
             
             <tag> Github </tag>
             
-            <tag> Hexo </tag>
-            
             <tag> 电脑 </tag>
+            
+            <tag> Hexo </tag>
             
             <tag> gitee </tag>
             
@@ -11242,9 +11242,9 @@
             
             <tag> Hexo </tag>
             
-            <tag> gitee </tag>
-            
             <tag> 配置文件 </tag>
+            
+            <tag> gitee </tag>
             
             <tag> 推送 </tag>
             
@@ -11350,6 +11350,37 @@
     
     
     <entry>
+      <title>Hello World</title>
+      <link href="/Hexo/4a17b156/"/>
+      <url>/Hexo/4a17b156/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo<i class="fa fa-external-link-alt"></i></span>! This is your very first post. Check <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv">documentation<i class="fa fa-external-link-alt"></i></span> for more info. If you get any problems when using Hexo, you can find the answer in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=">troubleshooting<i class="fa fa-external-link-alt"></i></span> or you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==">GitHub<i class="fa fa-external-link-alt"></i></span>.</p><span id="more"></span><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s">Writing<i class="fa fa-external-link-alt"></i></span></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=">Server<i class="fa fa-external-link-alt"></i></span></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s">Generating<i class="fa fa-external-link-alt"></i></span></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZGVwbG95bWVudC5odG1s">Deployment<i class="fa fa-external-link-alt"></i></span></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 文章 </tag>
+            
+            <tag> 你好 </tag>
+            
+            <tag> 世界 </tag>
+            
+            <tag> 第一篇 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>mini主机的性能和比笔记本电脑比起来还是要强上不少</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a3573799/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a3573799/</url>
@@ -11401,6 +11432,53 @@
     
     
     <entry>
+      <title>《白发》全集终于看完了，虽然不是我要的结局但还算完美</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/404bf18a/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/404bf18a/</url>
+      
+        <content type="html"><![CDATA[<p>对于这部剧我是看了很久才看完，也许是更新太慢了所以才看那么久才看完，星期二到星期四每天更新两集，也就是说一个星期只更新六集，追了一个多月也才终于把它看完。</p><span id="more"></span><p>最后的结局相信很多人不用看都已经猜到了，容齐用自己的血为容乐解了天命之毒，容齐为了心爱之人用自己的生命成全了容乐的幸福，他对容乐的这份爱无私而伟大，容乐记起了一切曾经的过往，对容齐从前的恨意也烟消云散荡然无存。</p><p>容乐对容齐的爱及她对容齐的愧疚之情使她久久不愿离开西启。在西启守望已逝去的容齐五年之后，她终究又重新回到了她当年去和亲的地方，只是这一次她归来不再是和亲公主的身份，在城门外迎接她的不再是当年那个对她冷嘲热讽的陈王，而这次是宗政无忧。</p><p>不久之后，宗政无忧成了北临皇帝她自然地也成了北临皇后，她回想起以前的种种过往，在自己记忆中存在的那些人，她觉得自己是幸运的，从前的那些事，从前的那些人都已成为了过去，而当宗政无忧牵着她的手走向皇宫大殿的那一刻，她想的是永远和宗政无忧一直走下去。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 白发 </tag>
+            
+            <tag> 全集 </tag>
+            
+            <tag> 结局 </tag>
+            
+            <tag> 完美 </tag>
+            
+            <tag> 容齐 </tag>
+            
+            <tag> 容乐 </tag>
+            
+            <tag> 天命之毒 </tag>
+            
+            <tag> 烟消云散 </tag>
+            
+            <tag> 宗政无忧 </tag>
+            
+            <tag> 北临皇帝 </tag>
+            
+            <tag> 北临皇后 </tag>
+            
+            <tag> 皇宫大殿 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>《白发》中的启皇容齐才是漫夭的初恋</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/c34fd0/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/c34fd0/</url>
@@ -11421,6 +11499,10 @@
             
             <tag> 容齐 </tag>
             
+            <tag> 天命之毒 </tag>
+            
+            <tag> 宗政无忧 </tag>
+            
             <tag> 漫夭 </tag>
             
             <tag> 初恋 </tag>
@@ -11431,8 +11513,6 @@
             
             <tag> 秦漫 </tag>
             
-            <tag> 天命之毒 </tag>
-            
             <tag> 扶鸢 </tag>
             
             <tag> 林申 </tag>
@@ -11440,8 +11520,6 @@
             <tag> 宗政允赫 </tag>
             
             <tag> 傅筹 </tag>
-            
-            <tag> 宗政无忧 </tag>
             
             <tag> 云贵妃 </tag>
             
@@ -11462,53 +11540,6 @@
             <tag> 恩怨仇恨 </tag>
             
             <tag> 有缘无份 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>《白发》全集终于看完了，虽然不是我要的结局但还算完美</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/404bf18a/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/404bf18a/</url>
-      
-        <content type="html"><![CDATA[<p>对于这部剧我是看了很久才看完，也许是更新太慢了所以才看那么久才看完，星期二到星期四每天更新两集，也就是说一个星期只更新六集，追了一个多月也才终于把它看完。</p><span id="more"></span><p>最后的结局相信很多人不用看都已经猜到了，容齐用自己的血为容乐解了天命之毒，容齐为了心爱之人用自己的生命成全了容乐的幸福，他对容乐的这份爱无私而伟大，容乐记起了一切曾经的过往，对容齐从前的恨意也烟消云散荡然无存。</p><p>容乐对容齐的爱及她对容齐的愧疚之情使她久久不愿离开西启。在西启守望已逝去的容齐五年之后，她终究又重新回到了她当年去和亲的地方，只是这一次她归来不再是和亲公主的身份，在城门外迎接她的不再是当年那个对她冷嘲热讽的陈王，而这次是宗政无忧。</p><p>不久之后，宗政无忧成了北临皇帝她自然地也成了北临皇后，她回想起以前的种种过往，在自己记忆中存在的那些人，她觉得自己是幸运的，从前的那些事，从前的那些人都已成为了过去，而当宗政无忧牵着她的手走向皇宫大殿的那一刻，她想的是永远和宗政无忧一直走下去。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 情感美文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 白发 </tag>
-            
-            <tag> 容齐 </tag>
-            
-            <tag> 天命之毒 </tag>
-            
-            <tag> 宗政无忧 </tag>
-            
-            <tag> 全集 </tag>
-            
-            <tag> 结局 </tag>
-            
-            <tag> 完美 </tag>
-            
-            <tag> 容乐 </tag>
-            
-            <tag> 烟消云散 </tag>
-            
-            <tag> 北临皇帝 </tag>
-            
-            <tag> 北临皇后 </tag>
-            
-            <tag> 皇宫大殿 </tag>
             
         </tags>
       
@@ -11615,37 +11646,6 @@
     
     
     <entry>
-      <title>Hello World</title>
-      <link href="/Hexo/4a17b156/"/>
-      <url>/Hexo/4a17b156/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo<i class="fa fa-external-link-alt"></i></span>! This is your very first post. Check <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv">documentation<i class="fa fa-external-link-alt"></i></span> for more info. If you get any problems when using Hexo, you can find the answer in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=">troubleshooting<i class="fa fa-external-link-alt"></i></span> or you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==">GitHub<i class="fa fa-external-link-alt"></i></span>.</p><span id="more"></span><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s">Writing<i class="fa fa-external-link-alt"></i></span></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=">Server<i class="fa fa-external-link-alt"></i></span></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s">Generating<i class="fa fa-external-link-alt"></i></span></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZGVwbG95bWVudC5odG1s">Deployment<i class="fa fa-external-link-alt"></i></span></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 文章 </tag>
-            
-            <tag> 你好 </tag>
-            
-            <tag> 世界 </tag>
-            
-            <tag> 第一篇 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>一分钱居然可以点一份外卖</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/161cf97a/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/161cf97a/</url>
@@ -11689,41 +11689,6 @@
     
     
     <entry>
-      <title>一年的最后一个月</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/12826749/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/12826749/</url>
-      
-        <content type="html"><![CDATA[<p>如今已经到了12月了，这一年又是这样被浪费掉了，过完这个月就到了2021年了，时间每到这时就觉得突然的变快了许多。</p><span id="more"></span><p>还记得春天的时候只觉得这一年才刚刚开始，如今已是12月，说快不快的这岁月一瞬之间就划了过去。</p><p>就如滑动一根火柴一样，来得瞬时去时也无影，好多年初的想法，也只是成了想法，只留在大脑里面的没有办法去实现的想法，也许是自己想得太过于简单，一年复一年不都是这样走过去了吗，已去的岁月之中从来也没有什么奇迹出现过。</p><p>感叹时光消逝得太快，又愿望未来不及于己，生活总是如此反复着交替着。年复一年日复一日，自己的想法总是的那么千奇百怪。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 一年 </tag>
-            
-            <tag> 最后 </tag>
-            
-            <tag> 变快了 </tag>
-            
-            <tag> 火柴 </tag>
-            
-            <tag> 生活 </tag>
-            
-            <tag> 想法 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>一款免费的文件传输系统，青阳网络文件传输系统kiftd</title>
       <link href="/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/8750236c/"/>
       <url>/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/8750236c/</url>
@@ -11759,6 +11724,41 @@
             <tag> MP4 </tag>
             
             <tag> 手机内存空间 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>一年的最后一个月</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/12826749/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/12826749/</url>
+      
+        <content type="html"><![CDATA[<p>如今已经到了12月了，这一年又是这样被浪费掉了，过完这个月就到了2021年了，时间每到这时就觉得突然的变快了许多。</p><span id="more"></span><p>还记得春天的时候只觉得这一年才刚刚开始，如今已是12月，说快不快的这岁月一瞬之间就划了过去。</p><p>就如滑动一根火柴一样，来得瞬时去时也无影，好多年初的想法，也只是成了想法，只留在大脑里面的没有办法去实现的想法，也许是自己想得太过于简单，一年复一年不都是这样走过去了吗，已去的岁月之中从来也没有什么奇迹出现过。</p><p>感叹时光消逝得太快，又愿望未来不及于己，生活总是如此反复着交替着。年复一年日复一日，自己的想法总是的那么千奇百怪。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 一年 </tag>
+            
+            <tag> 最后 </tag>
+            
+            <tag> 变快了 </tag>
+            
+            <tag> 火柴 </tag>
+            
+            <tag> 生活 </tag>
+            
+            <tag> 想法 </tag>
             
         </tags>
       
@@ -12727,6 +12727,49 @@
     
     
     <entry>
+      <title>人力资源管理（一）一考通简答题2</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/db252803/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/db252803/</url>
+      
+        <content type="html"><![CDATA[<h2 id="三、简答题"><a href="#三、简答题" class="headerlink" title="三、简答题"></a>三、简答题</h2><p><strong>31.(1P50)简述“社会人”假设的管理措施。</strong></p><p>答:</p><p>(1).管理人员在注重完成任务的同时，也要关注人,重视满足人的社会需要,培养员工的归属感。</p><p>(2).在实行奖励时,提倡集体奖励制度。</p><p>(3).重视非正式组织的作用。</p><span id="more"></span><p><strong>32.(3P114)简述工作设计的原则。</strong></p><p>答:工作设计的原则:</p><p>(1).因事设岗原则。</p><p>(2).系统性原则。</p><p>(3).实质性原则。</p><p>(4).简单化原则。</p><p>(5).匹配原则。</p><p><strong>33.(5P156)简述招募信息发布的原则。</strong></p><p>答:面广原则,及时原则,层次原则,最佳原则。</p><p><strong>34.(7P216)简述讲授培训法的优缺点。</strong></p><p>答：</p><p>(1).优点：</p><p>①.信息量大。</p><p>②.操作容易。</p><p>③.传授的知识比较系统、全面。<br>　　<br>(2).缺点：</p><p>①.单纯的讲授是单向的信息传递过程,缺少交流和沟通。</p><p>②.对受训者的差异不敏感,难以根据受训者的差异而采取有针对性的培训。</p><p>③.讲授法一般不太适合技能的培训。</p><p><strong>35.(8P233)简述绩效计划的内容。</strong></p><p>答：</p><p>(1).绩效工作目标。</p><p>(2).绩效发展目标。</p><p>(3).绩效权重。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> “社会人”假设 </tag>
+            
+            <tag> 工作设计 </tag>
+            
+            <tag> 招募信息 </tag>
+            
+            <tag> 讲授 </tag>
+            
+            <tag> 培训法 </tag>
+            
+            <tag> 绩效计划 </tag>
+            
+            <tag> 归属感 </tag>
+            
+            <tag> 奖励制度 </tag>
+            
+            <tag> 受训者 </tag>
+            
+            <tag> 权重 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>人力资源管理（一）自考通分析说明题1</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d850f6a5/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d850f6a5/</url>
@@ -12770,11 +12813,11 @@
     
     
     <entry>
-      <title>人力资源管理（一）一考通简答题2</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/db252803/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/db252803/</url>
+      <title>人力资源管理（一）自考通案例分析题1</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ec01e93e/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ec01e93e/</url>
       
-        <content type="html"><![CDATA[<h2 id="三、简答题"><a href="#三、简答题" class="headerlink" title="三、简答题"></a>三、简答题</h2><p><strong>31.(1P50)简述“社会人”假设的管理措施。</strong></p><p>答:</p><p>(1).管理人员在注重完成任务的同时，也要关注人,重视满足人的社会需要,培养员工的归属感。</p><p>(2).在实行奖励时,提倡集体奖励制度。</p><p>(3).重视非正式组织的作用。</p><span id="more"></span><p><strong>32.(3P114)简述工作设计的原则。</strong></p><p>答:工作设计的原则:</p><p>(1).因事设岗原则。</p><p>(2).系统性原则。</p><p>(3).实质性原则。</p><p>(4).简单化原则。</p><p>(5).匹配原则。</p><p><strong>33.(5P156)简述招募信息发布的原则。</strong></p><p>答:面广原则,及时原则,层次原则,最佳原则。</p><p><strong>34.(7P216)简述讲授培训法的优缺点。</strong></p><p>答：</p><p>(1).优点：</p><p>①.信息量大。</p><p>②.操作容易。</p><p>③.传授的知识比较系统、全面。<br>　　<br>(2).缺点：</p><p>①.单纯的讲授是单向的信息传递过程,缺少交流和沟通。</p><p>②.对受训者的差异不敏感,难以根据受训者的差异而采取有针对性的培训。</p><p>③.讲授法一般不太适合技能的培训。</p><p><strong>35.(8P233)简述绩效计划的内容。</strong></p><p>答：</p><p>(1).绩效工作目标。</p><p>(2).绩效发展目标。</p><p>(3).绩效权重。</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="六、案例分析题"><a href="#六、案例分析题" class="headerlink" title="六、案例分析题"></a>六、案例分析题</h2><p><strong>38.案例:</strong></p><p>某家专业咨询公司给一家民营企业做咨询，咨询内容侧重于薪酬设计。通过了解，目前公司的中层及以下员工的薪酬在本地区本行业内处于中等偏上水平，高管的薪酬水平与同行业持平。公司的福利也很好，五险一金、过节费、通讯费、交通补贴等都有。由于企业尚处于创业期，企业给出这样的薪资待遇，员工们都很满意。老板对所有的高管实行了股权激励，不管是一起打江山的元老，还是刚外聘的高管，一视同仁，老板将自己的股权拿出来，无偿赠予。对中层管理者及一般员工,老板也计划实行股权激励，正在让下面的人制订方案。</p><span id="more"></span><p>通过此次咨询，该公司希望通过岗位评价帮助企业建立一套完整的薪酬体系，以规范现有薪酬管理。现在员工的薪酬可能不会被动及,因为今年年初刚普调了一级工资。</p><p>通过谈及这次薪酬设计的总要求，老板要求这次的薪酬要大调整，他要求公司高层的薪酬要在本行业内处于领先位置，中层及以下员工的薪酬要与行业内前三名的平均值相当。向第一名看齐!</p><p>这个企业正处于需大量投入资金且利润几乎还没有的创业阶段，下面的员工对目前企业的现状非常清楚，对公司给出的薪酬已非常满意。薪酬若再次调高，公司的人工成本会猛增很多。老板说:“我就是要让我的员工成为行业内的骄做。我要的是高薪酬、高绩效。”</p><p><strong>问题:</strong><br>  (1)制定合理薪酬水平需要考虑哪些因素?</p><p>  (2)结合该公司老板对新酬设计的要求，你认为合理的薪酬设计应遵循哪些原则?</p><p>38.(1)制定合理薪酬水平需要考虑哪些因素? (P265~266)</p><p>   答:影响企业薪酬水平的因素可分为宏观因素和微观因素。宏观因素主要有：劳动生产率水平、积累消费水平、政府政策法规的调节、劳动力市场供求状况和物价变动。微观因素主要有:企业经营效益、企业薪酬策略及价值观、企业的规模和发展阶段、员工异质性、劳资双方的谈判和心理因素。</p><p>   (2)结合该公司老板对薪酬设计的要求，您认为合理的薪酬设计应遵循哪些原则?(P273-275)</p><p>   答:合理科学的薪酬设计需要遵循公平性、竞争性、激励性、经济性、合法性和战略性原则。</p>]]></content>
       
       
       <categories>
@@ -12786,25 +12829,27 @@
       
         <tags>
             
-            <tag> “社会人”假设 </tag>
+            <tag> 薪酬水平 </tag>
             
-            <tag> 工作设计 </tag>
+            <tag> 案例分析 </tag>
             
-            <tag> 招募信息 </tag>
+            <tag> 民营企业 </tag>
             
-            <tag> 讲授 </tag>
+            <tag> 创业期 </tag>
             
-            <tag> 培训法 </tag>
+            <tag> 投入资金 </tag>
             
-            <tag> 绩效计划 </tag>
+            <tag> 新酬设计 </tag>
             
-            <tag> 归属感 </tag>
+            <tag> 宏观 </tag>
             
-            <tag> 奖励制度 </tag>
+            <tag> 微观 </tag>
             
-            <tag> 受训者 </tag>
+            <tag> 遵循 </tag>
             
-            <tag> 权重 </tag>
+            <tag> 原则 </tag>
+            
+            <tag> 心理因素 </tag>
             
         </tags>
       
@@ -12864,11 +12909,11 @@
     
     
     <entry>
-      <title>人力资源管理（一）自考通案例分析题1</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ec01e93e/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ec01e93e/</url>
+      <title>人力资源管理（一）自考通论述题1</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/52e18ab8/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/52e18ab8/</url>
       
-        <content type="html"><![CDATA[<h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="六、案例分析题"><a href="#六、案例分析题" class="headerlink" title="六、案例分析题"></a>六、案例分析题</h2><p><strong>38.案例:</strong></p><p>某家专业咨询公司给一家民营企业做咨询，咨询内容侧重于薪酬设计。通过了解，目前公司的中层及以下员工的薪酬在本地区本行业内处于中等偏上水平，高管的薪酬水平与同行业持平。公司的福利也很好，五险一金、过节费、通讯费、交通补贴等都有。由于企业尚处于创业期，企业给出这样的薪资待遇，员工们都很满意。老板对所有的高管实行了股权激励，不管是一起打江山的元老，还是刚外聘的高管，一视同仁，老板将自己的股权拿出来，无偿赠予。对中层管理者及一般员工,老板也计划实行股权激励，正在让下面的人制订方案。</p><span id="more"></span><p>通过此次咨询，该公司希望通过岗位评价帮助企业建立一套完整的薪酬体系，以规范现有薪酬管理。现在员工的薪酬可能不会被动及,因为今年年初刚普调了一级工资。</p><p>通过谈及这次薪酬设计的总要求，老板要求这次的薪酬要大调整，他要求公司高层的薪酬要在本行业内处于领先位置，中层及以下员工的薪酬要与行业内前三名的平均值相当。向第一名看齐!</p><p>这个企业正处于需大量投入资金且利润几乎还没有的创业阶段，下面的员工对目前企业的现状非常清楚，对公司给出的薪酬已非常满意。薪酬若再次调高，公司的人工成本会猛增很多。老板说:“我就是要让我的员工成为行业内的骄做。我要的是高薪酬、高绩效。”</p><p><strong>问题:</strong><br>  (1)制定合理薪酬水平需要考虑哪些因素?</p><p>  (2)结合该公司老板对新酬设计的要求，你认为合理的薪酬设计应遵循哪些原则?</p><p>38.(1)制定合理薪酬水平需要考虑哪些因素? (P265~266)</p><p>   答:影响企业薪酬水平的因素可分为宏观因素和微观因素。宏观因素主要有：劳动生产率水平、积累消费水平、政府政策法规的调节、劳动力市场供求状况和物价变动。微观因素主要有:企业经营效益、企业薪酬策略及价值观、企业的规模和发展阶段、员工异质性、劳资双方的谈判和心理因素。</p><p>   (2)结合该公司老板对薪酬设计的要求，您认为合理的薪酬设计应遵循哪些原则?(P273-275)</p><p>   答:合理科学的薪酬设计需要遵循公平性、竞争性、激励性、经济性、合法性和战略性原则。</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="四、论述题"><a href="#四、论述题" class="headerlink" title="四、论述题"></a>四、论述题</h2><p><strong>36.如何进行绩效反馈面谈? (P239-240)</strong></p><p>答:绩效反馈有正式的绩效反馈和非正式的绩效反馈，以及口头绩效反馈和书面绩效反馈等不同形式。其中在绩效考核之后所进行的绩效反馈面谈是一种重要和有效的绩效反馈形式。</p><span id="more"></span><p>(1). 绩效反馈面谈的准备。为了有效地进行绩效反馈面谈。在面谈之前管理者和员工双方都要进行充分的准备。这种面谈前的准备包括:面谈时间、面谈场所和面谈所需资料的准备。</p><p>(2). 应注意的问题有:</p><p>  ①. 确定好面谈目的;<br>  ②. 面谈内容要具体;<br>  ③. 肯定员工的优点与进步;<br>  ④. 尽量减少批评;<br>  ⑤. 鼓励员工积极参与面谈过程;<br>  ⑥. 避免冲突与对抗;<br>  ⑦. 重点放在问题的解决上;<br>  ⑧. 制定具体的绩效改善目标。</p>]]></content>
       
       
       <categories>
@@ -12880,27 +12925,17 @@
       
         <tags>
             
-            <tag> 薪酬水平 </tag>
+            <tag> 绩效反馈 </tag>
             
-            <tag> 案例分析 </tag>
+            <tag> 面谈 </tag>
             
-            <tag> 民营企业 </tag>
+            <tag> 资料 </tag>
             
-            <tag> 创业期 </tag>
+            <tag> 问题 </tag>
             
-            <tag> 投入资金 </tag>
+            <tag> 正式 </tag>
             
-            <tag> 新酬设计 </tag>
-            
-            <tag> 宏观 </tag>
-            
-            <tag> 微观 </tag>
-            
-            <tag> 遵循 </tag>
-            
-            <tag> 原则 </tag>
-            
-            <tag> 心理因素 </tag>
+            <tag> 考核 </tag>
             
         </tags>
       
@@ -12962,41 +12997,6 @@
             <tag> 思维方式 </tag>
             
             <tag> 显著特征 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>人力资源管理（一）自考通论述题1</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/52e18ab8/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/52e18ab8/</url>
-      
-        <content type="html"><![CDATA[<h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="四、论述题"><a href="#四、论述题" class="headerlink" title="四、论述题"></a>四、论述题</h2><p><strong>36.如何进行绩效反馈面谈? (P239-240)</strong></p><p>答:绩效反馈有正式的绩效反馈和非正式的绩效反馈，以及口头绩效反馈和书面绩效反馈等不同形式。其中在绩效考核之后所进行的绩效反馈面谈是一种重要和有效的绩效反馈形式。</p><span id="more"></span><p>(1). 绩效反馈面谈的准备。为了有效地进行绩效反馈面谈。在面谈之前管理者和员工双方都要进行充分的准备。这种面谈前的准备包括:面谈时间、面谈场所和面谈所需资料的准备。</p><p>(2). 应注意的问题有:</p><p>  ①. 确定好面谈目的;<br>  ②. 面谈内容要具体;<br>  ③. 肯定员工的优点与进步;<br>  ④. 尽量减少批评;<br>  ⑤. 鼓励员工积极参与面谈过程;<br>  ⑥. 避免冲突与对抗;<br>  ⑦. 重点放在问题的解决上;<br>  ⑧. 制定具体的绩效改善目标。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 绩效反馈 </tag>
-            
-            <tag> 面谈 </tag>
-            
-            <tag> 资料 </tag>
-            
-            <tag> 问题 </tag>
-            
-            <tag> 正式 </tag>
-            
-            <tag> 考核 </tag>
             
         </tags>
       
@@ -13689,51 +13689,6 @@
     
     
     <entry>
-      <title>今天是终于完成昨天的目标了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/7f07775c/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/7f07775c/</url>
-      
-        <content type="html"><![CDATA[<p>由于昨天和今天这两章的内容比较少一点，所以完成了昨天留下的，今天也还另外做了一章新的题，这一科总共就10章题，现在已经完成6章了，是已经完成了一半了。</p><span id="more"></span><p>距离考试还有八天的时间，在考试之前把所有题做完是有可能的了，就是没有多余的时间来复习了，这本题库最后面还有4套历年的考试真题，可能真的要一天做两套才能在考试之前完成。</p><p>能不能考过是另外一回事，但是题一定是要做完的，像上次一样的是买的两本试题都没有做完，但是幸好还是过了，所以这次我就没有买试题了，因为买了根本没有时间做，这次的时间也是赶得挺紧的，总之一切都是为了考试的时候轻松一点。</p><p>如果一点题都不做考试的时候就是一脸的懵，根据我这么多次考试的经验来看，考试的题都是我买的这本题库上的，所以能记住点还是有好处的。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 经验 </tag>
-            
-            <tag> 内容 </tag>
-            
-            <tag> 考试 </tag>
-            
-            <tag> 今天 </tag>
-            
-            <tag> 终于 </tag>
-            
-            <tag> 昨天 </tag>
-            
-            <tag> 目标 </tag>
-            
-            <tag> 题库 </tag>
-            
-            <tag> 复习 </tag>
-            
-            <tag> 考试真题 </tag>
-            
-            <tag> 赶得挺紧 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>今天是除夕，去菜场买菜去晚了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dd80ab00/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dd80ab00/</url>
@@ -13765,6 +13720,51 @@
             <tag> 春晚 </tag>
             
             <tag> 酷喵 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>今天是终于完成昨天的目标了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/7f07775c/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/7f07775c/</url>
+      
+        <content type="html"><![CDATA[<p>由于昨天和今天这两章的内容比较少一点，所以完成了昨天留下的，今天也还另外做了一章新的题，这一科总共就10章题，现在已经完成6章了，是已经完成了一半了。</p><span id="more"></span><p>距离考试还有八天的时间，在考试之前把所有题做完是有可能的了，就是没有多余的时间来复习了，这本题库最后面还有4套历年的考试真题，可能真的要一天做两套才能在考试之前完成。</p><p>能不能考过是另外一回事，但是题一定是要做完的，像上次一样的是买的两本试题都没有做完，但是幸好还是过了，所以这次我就没有买试题了，因为买了根本没有时间做，这次的时间也是赶得挺紧的，总之一切都是为了考试的时候轻松一点。</p><p>如果一点题都不做考试的时候就是一脸的懵，根据我这么多次考试的经验来看，考试的题都是我买的这本题库上的，所以能记住点还是有好处的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 经验 </tag>
+            
+            <tag> 内容 </tag>
+            
+            <tag> 今天 </tag>
+            
+            <tag> 考试 </tag>
+            
+            <tag> 终于 </tag>
+            
+            <tag> 昨天 </tag>
+            
+            <tag> 目标 </tag>
+            
+            <tag> 题库 </tag>
+            
+            <tag> 复习 </tag>
+            
+            <tag> 考试真题 </tag>
+            
+            <tag> 赶得挺紧 </tag>
             
         </tags>
       
@@ -14313,6 +14313,53 @@
     
     
     <entry>
+      <title>关于想做有收益的自媒体，可是没电脑做不了，有没有更好的方法？</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/85c33271/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/85c33271/</url>
+      
+        <content type="html"><![CDATA[<p>对于这个问题的答案是肯定的也是可以的，就先拿头条来举例吧，今日头条是可以通过手机端来发表头条号的文章的，只要在发文时插入头条广告，有阅读量自然是会有收益的，前提是你要先把头条号在浏览器端开通，这个应该不是太难，随便找个网吧上哈网一下子就搞定的。</p><span id="more"></span><p>如果这都不能其实还有另外的一个方法，那就是用手机浏览器来开通，虽然操作起来没有电脑那么流畅，但这也是没有办法中的办法。具体做法就是打开浏览器然后把手机浏览器设置为电脑模式，手机开启旋转横屏，用搜索引擎搜索头条号，在第一条的如果没有广告就是头条号的官网，用你头条的账号登录，登录上以后选择自己要注册的类型。</p><p>这里个人一般都是选择个人自媒体这一项，其他的也不用去看，选择好以后填写账号名称，如果不想改就和头条上自己的用户昵称一样就可以。</p><p>实名认证、身份认证做完以后，你这个头条号就算注册完成了，后面就是等待通过审核了，这个等待的过程有可能是几天就通过了，那恭喜你头条号注册成功，也有可能因为种种原因没有办法通过，这一切都必须要做好心理准备，“不以物喜，不以己悲”,要的就是以平常心来对待，看看官方发来没有通过的信息是什么原因，找出自己不能通过的因素是那些，修改后再次申请重新再战。</p><p>通过以后就可以在头条手机端正大光明的发文了，而且是可以插入头条广告的，我以前就看到过是可以的，具体收益能得到多少，那就看个人的写作能力和执行力了。</p><p>以上就是我对没有电脑如何做有收益的自媒体的回答，以上只是一些简要的方法论和一些简单的步骤，具体成功与否还要看个人实践再实践，只有不断的实践才能出真知。</p><p>当然也还有其他平台的也可以，由于文章的篇幅有限，我怕写多了大家看着也累，所以就写怎么多吧，其他的可以关注我的主页，有机会在给大家介绍，看完关注我以后就去实践下吧，毕竟实践才能出真知，我再怎么写一千道一万，你不去实践那也是一片枉然。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 答案 </tag>
+            
+            <tag> 收益 </tag>
+            
+            <tag> 自媒体 </tag>
+            
+            <tag> 没电脑 </tag>
+            
+            <tag> 更好的方法 </tag>
+            
+            <tag> 浏览器端 </tag>
+            
+            <tag> 流畅 </tag>
+            
+            <tag> 头条号 </tag>
+            
+            <tag> 账号名称 </tag>
+            
+            <tag> 写作能力 </tag>
+            
+            <tag> 执行力 </tag>
+            
+            <tag> 一片枉然 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于我的微信公众号和我知道其他自媒体号的历程</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/1b3da9bf/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/1b3da9bf/</url>
@@ -14343,6 +14390,8 @@
             
             <tag> 微信公众号 </tag>
             
+            <tag> 头条号 </tag>
+            
             <tag> 自媒体号 </tag>
             
             <tag> 历程 </tag>
@@ -14358,8 +14407,6 @@
             <tag> 核心 </tag>
             
             <tag> 冰山 </tag>
-            
-            <tag> 头条号 </tag>
             
             <tag> 大鱼号 </tag>
             
@@ -14394,53 +14441,6 @@
             <tag> 阅读 </tag>
             
             <tag> 群发分享 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>关于想做有收益的自媒体，可是没电脑做不了，有没有更好的方法？</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/85c33271/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/85c33271/</url>
-      
-        <content type="html"><![CDATA[<p>对于这个问题的答案是肯定的也是可以的，就先拿头条来举例吧，今日头条是可以通过手机端来发表头条号的文章的，只要在发文时插入头条广告，有阅读量自然是会有收益的，前提是你要先把头条号在浏览器端开通，这个应该不是太难，随便找个网吧上哈网一下子就搞定的。</p><span id="more"></span><p>如果这都不能其实还有另外的一个方法，那就是用手机浏览器来开通，虽然操作起来没有电脑那么流畅，但这也是没有办法中的办法。具体做法就是打开浏览器然后把手机浏览器设置为电脑模式，手机开启旋转横屏，用搜索引擎搜索头条号，在第一条的如果没有广告就是头条号的官网，用你头条的账号登录，登录上以后选择自己要注册的类型。</p><p>这里个人一般都是选择个人自媒体这一项，其他的也不用去看，选择好以后填写账号名称，如果不想改就和头条上自己的用户昵称一样就可以。</p><p>实名认证、身份认证做完以后，你这个头条号就算注册完成了，后面就是等待通过审核了，这个等待的过程有可能是几天就通过了，那恭喜你头条号注册成功，也有可能因为种种原因没有办法通过，这一切都必须要做好心理准备，“不以物喜，不以己悲”,要的就是以平常心来对待，看看官方发来没有通过的信息是什么原因，找出自己不能通过的因素是那些，修改后再次申请重新再战。</p><p>通过以后就可以在头条手机端正大光明的发文了，而且是可以插入头条广告的，我以前就看到过是可以的，具体收益能得到多少，那就看个人的写作能力和执行力了。</p><p>以上就是我对没有电脑如何做有收益的自媒体的回答，以上只是一些简要的方法论和一些简单的步骤，具体成功与否还要看个人实践再实践，只有不断的实践才能出真知。</p><p>当然也还有其他平台的也可以，由于文章的篇幅有限，我怕写多了大家看着也累，所以就写怎么多吧，其他的可以关注我的主页，有机会在给大家介绍，看完关注我以后就去实践下吧，毕竟实践才能出真知，我再怎么写一千道一万，你不去实践那也是一片枉然。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 答案 </tag>
-            
-            <tag> 收益 </tag>
-            
-            <tag> 自媒体 </tag>
-            
-            <tag> 头条号 </tag>
-            
-            <tag> 没电脑 </tag>
-            
-            <tag> 更好的方法 </tag>
-            
-            <tag> 浏览器端 </tag>
-            
-            <tag> 流畅 </tag>
-            
-            <tag> 账号名称 </tag>
-            
-            <tag> 写作能力 </tag>
-            
-            <tag> 执行力 </tag>
-            
-            <tag> 一片枉然 </tag>
             
         </tags>
       
@@ -14665,53 +14665,6 @@
     
     
     <entry>
-      <title>写作日更365天了，第一次达到这个境界</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/42e92f40/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/42e92f40/</url>
-      
-        <content type="html"><![CDATA[<p>从去年开始到昨天我终于更新到365天了，这个标签是永久性的，就算以后停更了它也是依然存在的，365天其实也是挺不容易的了，好多时候是都有想要放弃不写了的打算，但是一咬紧牙关又是自然的坚持过来了。</p><span id="more"></span><p>当然这一路走过来的365天也收获很多东西，包括写作上的一些技巧，以前总是认为写作是一件高大上的事，其实并不是这样的，写作其实就是用自己的语言来讲述自己生活中的故事，千万不要想得太难，越想得太难，越想得高大上，好多东西写出来就感觉有点虚无缥缈找不到逻辑了。</p><p>写作这条路自然是没有什么技巧的，全靠自己多写，很多人想到自己能够写到如何如何的水平，但是没有开始去写，一切都只不过是在原地踏步而已。</p><p>千万不要想得太多，结果写得太少，甚至不愿意去写，总感觉自己写得不行，总感觉别人写的才是真正的好作品，自己一直以为是自叹不如，其实根本都不是自己想的这样，每个人写的东西都有自己的风格，羡慕别人的还不如拿出自己的真材实料来更有价值。</p><p>坚持写自己的风格就好了，就算是没有人欣赏对自己来说也是没有什么损失的，不仅是对自己没有什么损失，写到一定程度对自己的写作水平的提高是有很大帮助的，千万不要认为写得不好就不写了，写得好与坏都得坚持写才是最好的出路。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 坚持 </tag>
-            
-            <tag> 境界 </tag>
-            
-            <tag> 写作日更 </tag>
-            
-            <tag> 365天 </tag>
-            
-            <tag> 第一次 </tag>
-            
-            <tag> 高大上 </tag>
-            
-            <tag> 原地踏步 </tag>
-            
-            <tag> 羡慕别人 </tag>
-            
-            <tag> 真材实料 </tag>
-            
-            <tag> 自叹不如 </tag>
-            
-            <tag> 逻辑 </tag>
-            
-            <tag> 风格 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>写作就是记录自己每天的生活点滴</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/301e49fc/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/301e49fc/</url>
@@ -14753,6 +14706,53 @@
             <tag> 感动 </tag>
             
             <tag> 难能可贵 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>写作日更365天了，第一次达到这个境界</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/42e92f40/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/42e92f40/</url>
+      
+        <content type="html"><![CDATA[<p>从去年开始到昨天我终于更新到365天了，这个标签是永久性的，就算以后停更了它也是依然存在的，365天其实也是挺不容易的了，好多时候是都有想要放弃不写了的打算，但是一咬紧牙关又是自然的坚持过来了。</p><span id="more"></span><p>当然这一路走过来的365天也收获很多东西，包括写作上的一些技巧，以前总是认为写作是一件高大上的事，其实并不是这样的，写作其实就是用自己的语言来讲述自己生活中的故事，千万不要想得太难，越想得太难，越想得高大上，好多东西写出来就感觉有点虚无缥缈找不到逻辑了。</p><p>写作这条路自然是没有什么技巧的，全靠自己多写，很多人想到自己能够写到如何如何的水平，但是没有开始去写，一切都只不过是在原地踏步而已。</p><p>千万不要想得太多，结果写得太少，甚至不愿意去写，总感觉自己写得不行，总感觉别人写的才是真正的好作品，自己一直以为是自叹不如，其实根本都不是自己想的这样，每个人写的东西都有自己的风格，羡慕别人的还不如拿出自己的真材实料来更有价值。</p><p>坚持写自己的风格就好了，就算是没有人欣赏对自己来说也是没有什么损失的，不仅是对自己没有什么损失，写到一定程度对自己的写作水平的提高是有很大帮助的，千万不要认为写得不好就不写了，写得好与坏都得坚持写才是最好的出路。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 坚持 </tag>
+            
+            <tag> 境界 </tag>
+            
+            <tag> 写作日更 </tag>
+            
+            <tag> 365天 </tag>
+            
+            <tag> 第一次 </tag>
+            
+            <tag> 高大上 </tag>
+            
+            <tag> 原地踏步 </tag>
+            
+            <tag> 羡慕别人 </tag>
+            
+            <tag> 真材实料 </tag>
+            
+            <tag> 自叹不如 </tag>
+            
+            <tag> 逻辑 </tag>
+            
+            <tag> 风格 </tag>
             
         </tags>
       
@@ -14806,6 +14806,47 @@
     
     
     <entry>
+      <title>写公众号粉丝越来越少了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4733806/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4733806/</url>
+      
+        <content type="html"><![CDATA[<p>昨天晚上去公众号发文章，看到现在又增加一个新功能了，就是专辑，挨着页面模板那里。专辑和页面模板不一样，这个不能添加到菜单，只是发文章的时候选中它就会出现在文章的上面。</p><span id="more"></span><p>搞这么多功能其实就是为了增加阅读量，但是阅读量多也没有什么用，要粉丝够了才能上广告，那才能有收益。</p><p>可是我这个号几年了，还是那点粉丝，不增加到也没有什么奇怪的，关键是居然还减少了，减少就减少吧，反正这个不是自己能控制的，就当成是自己一个发声的窗口就可以了，有没有粉丝不重要，反正不能想着靠这个来赚钱。</p><p>现在我写在简书的文章除了发公众号，还发到我自己的网站和微博头条文章，也就只能发这几处，本身感觉自己都写得不太好，发的平台多了感觉就是浪费精力。</p><p>还好我的网站现在是开通了谷歌广告，只要有人点击上面的广告那我也会有广告费的，就是提现有点难，要满100美元才可以。我都不希望能得到提现了，网站就是做来自己玩的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 阅读量 </tag>
+            
+            <tag> 网站 </tag>
+            
+            <tag> 头条文章 </tag>
+            
+            <tag> 公众号 </tag>
+            
+            <tag> 新功能 </tag>
+            
+            <tag> 专辑 </tag>
+            
+            <tag> 页面模板 </tag>
+            
+            <tag> 菜单 </tag>
+            
+            <tag> 粉丝 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>写微信公众号以来第一次遇到金主打赏</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c0b0a06b/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c0b0a06b/</url>
@@ -14841,47 +14882,6 @@
             <tag> 帮助 </tag>
             
             <tag> 大力支持 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>写公众号粉丝越来越少了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4733806/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4733806/</url>
-      
-        <content type="html"><![CDATA[<p>昨天晚上去公众号发文章，看到现在又增加一个新功能了，就是专辑，挨着页面模板那里。专辑和页面模板不一样，这个不能添加到菜单，只是发文章的时候选中它就会出现在文章的上面。</p><span id="more"></span><p>搞这么多功能其实就是为了增加阅读量，但是阅读量多也没有什么用，要粉丝够了才能上广告，那才能有收益。</p><p>可是我这个号几年了，还是那点粉丝，不增加到也没有什么奇怪的，关键是居然还减少了，减少就减少吧，反正这个不是自己能控制的，就当成是自己一个发声的窗口就可以了，有没有粉丝不重要，反正不能想着靠这个来赚钱。</p><p>现在我写在简书的文章除了发公众号，还发到我自己的网站和微博头条文章，也就只能发这几处，本身感觉自己都写得不太好，发的平台多了感觉就是浪费精力。</p><p>还好我的网站现在是开通了谷歌广告，只要有人点击上面的广告那我也会有广告费的，就是提现有点难，要满100美元才可以。我都不希望能得到提现了，网站就是做来自己玩的。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 阅读量 </tag>
-            
-            <tag> 网站 </tag>
-            
-            <tag> 头条文章 </tag>
-            
-            <tag> 公众号 </tag>
-            
-            <tag> 新功能 </tag>
-            
-            <tag> 专辑 </tag>
-            
-            <tag> 页面模板 </tag>
-            
-            <tag> 菜单 </tag>
-            
-            <tag> 粉丝 </tag>
             
         </tags>
       
@@ -15377,37 +15377,6 @@
     
     
     <entry>
-      <title>又不知道该写什么了，开始犯难了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/31ccc028/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/31ccc028/</url>
-      
-        <content type="html"><![CDATA[<p>写着写着就不知道该写些什么了，每到这个时候就会感觉开始犯难了，既然是不知道要想着写什么，那就不用想了，直接打字写就是了，反正想半天也是什么都想不出来，只又边写着边想才能写出来。</p><span id="more"></span><p>如果是一直只停留在一开始要写什么的思维里面，那肯定是什么都写不出来的，写东西只有动笔了才有进一步的思维，一直想但是一直都不知道写什么永远只会停留在第一步，就是想的这个阶段。</p><p>想的东西只有写在纸上，把它写出来才算是有点眉目，如果是只想但是没有动笔写，那怎么感觉都想不出什么东西。在写的过程中自然就会把想的东西慢慢理通顺了，在不知道写什么的时候直接动笔顺便写就是最好的方法。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 写什么 </tag>
-            
-            <tag> 自然 </tag>
-            
-            <tag> 犯难 </tag>
-            
-            <tag> 打字 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>去年办的澳门通行证快过期了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f2d44d2/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f2d44d2/</url>
@@ -15437,6 +15406,37 @@
             <tag> 中国经济 </tag>
             
             <tag> 疫情 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>又不知道该写什么了，开始犯难了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/31ccc028/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/31ccc028/</url>
+      
+        <content type="html"><![CDATA[<p>写着写着就不知道该写些什么了，每到这个时候就会感觉开始犯难了，既然是不知道要想着写什么，那就不用想了，直接打字写就是了，反正想半天也是什么都想不出来，只又边写着边想才能写出来。</p><span id="more"></span><p>如果是一直只停留在一开始要写什么的思维里面，那肯定是什么都写不出来的，写东西只有动笔了才有进一步的思维，一直想但是一直都不知道写什么永远只会停留在第一步，就是想的这个阶段。</p><p>想的东西只有写在纸上，把它写出来才算是有点眉目，如果是只想但是没有动笔写，那怎么感觉都想不出什么东西。在写的过程中自然就会把想的东西慢慢理通顺了，在不知道写什么的时候直接动笔顺便写就是最好的方法。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 写什么 </tag>
+            
+            <tag> 自然 </tag>
+            
+            <tag> 犯难 </tag>
+            
+            <tag> 打字 </tag>
             
         </tags>
       
@@ -15723,43 +15723,6 @@
     
     
     <entry>
-      <title>喝了点酒过敏了身上起了很多泡</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b7d51ef5/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b7d51ef5/</url>
-      
-        <content type="html"><![CDATA[<p>因为考完试了，就想着之前在京东花了9.9元买的一瓶酒还没有喝完，因为考试之前一直不敢喝了，喝了酒之前做过的题都会完全忘记，现在是没有事了，想怎么喝就怎么喝了，但是我昨晚喝没有事，今晚喝就过敏了。</p><span id="more"></span><p>还好我及时吃了一片过敏药才一会感觉好点了，我是真的很容易过敏，吃海鲜和喝酒都会，所以从去年我就买几盒抗过敏的药来放着，这样确实是挺管用的，过敏的时候吃一片就没有事了，而且吃一片就可以管一天了。</p><p>要是不买点这个药备着那还不知道要多难受了，全身起泡还痒那感觉比死还难受了，吃了药一会感觉就没有那么痒了，起的水泡也慢慢的消下去了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 喝了点酒 </tag>
-            
-            <tag> 很多泡 </tag>
-            
-            <tag> 考完试了 </tag>
-            
-            <tag> 一瓶酒 </tag>
-            
-            <tag> 今晚喝 </tag>
-            
-            <tag> 抗过敏 </tag>
-            
-            <tag> 多难受 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>听雪楼中的几大利器让听雪楼成为了武林霸主</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/995dad82/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/995dad82/</url>
@@ -15827,6 +15790,43 @@
             <tag> 石明烟 </tag>
             
             <tag> 拜月教 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>喝了点酒过敏了身上起了很多泡</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b7d51ef5/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b7d51ef5/</url>
+      
+        <content type="html"><![CDATA[<p>因为考完试了，就想着之前在京东花了9.9元买的一瓶酒还没有喝完，因为考试之前一直不敢喝了，喝了酒之前做过的题都会完全忘记，现在是没有事了，想怎么喝就怎么喝了，但是我昨晚喝没有事，今晚喝就过敏了。</p><span id="more"></span><p>还好我及时吃了一片过敏药才一会感觉好点了，我是真的很容易过敏，吃海鲜和喝酒都会，所以从去年我就买几盒抗过敏的药来放着，这样确实是挺管用的，过敏的时候吃一片就没有事了，而且吃一片就可以管一天了。</p><p>要是不买点这个药备着那还不知道要多难受了，全身起泡还痒那感觉比死还难受了，吃了药一会感觉就没有那么痒了，起的水泡也慢慢的消下去了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 喝了点酒 </tag>
+            
+            <tag> 很多泡 </tag>
+            
+            <tag> 考完试了 </tag>
+            
+            <tag> 一瓶酒 </tag>
+            
+            <tag> 今晚喝 </tag>
+            
+            <tag> 抗过敏 </tag>
+            
+            <tag> 多难受 </tag>
             
         </tags>
       
@@ -15956,47 +15956,6 @@
     
     
     <entry>
-      <title>在淘宝上买的那个香茅防蚊虫凝胶一点用都没有</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6cb6ef8a/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6cb6ef8a/</url>
-      
-        <content type="html"><![CDATA[<p>虽然是只花了几毛钱在淘宝特价版买的，但是真的一点用都没有，把盖子打开蚊子一样的很多，还是要点蚊香才有用，这香茅凝胶要是有用，做蚊香的厂家还不也生产出来了，关键是它真的一点用都没有。</p><span id="more"></span><p>电蚊香液我是没有用过，不知道用起来怎么样，但是看网上说的是没有蚊香安全，因为会把飞沫吸到呼吸道里面去，我没有用过是不是这样，我不清楚，但是我觉得最好的就是点蚊香，这个我关着门窗都感觉没有事。</p><p>每天都要点蚊香一个打火机没有多久气就用完了，去超市买还要一块钱一个，看淘宝上便宜很多，我看着有那种充电就可以点烟的，不知道买来点蚊香怎么样，不知道还要充气不要。看着才几块钱的就买一个来试一下，用了淘宝特价版新人红包是一分钱都不要，不好用也不亏什么，就等到货试试看吧。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 淘宝 </tag>
-            
-            <tag> 蚊香 </tag>
-            
-            <tag> 香茅防蚊虫 </tag>
-            
-            <tag> 凝胶 </tag>
-            
-            <tag> 淘宝特价版 </tag>
-            
-            <tag> 电蚊香液 </tag>
-            
-            <tag> 点烟 </tag>
-            
-            <tag> 充电 </tag>
-            
-            <tag> 新人红包 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>在电脑上一边自动刷快手，一边写文章</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/63d8d42c/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/63d8d42c/</url>
@@ -16036,6 +15995,47 @@
             <tag> 敲击 </tag>
             
             <tag> 电脑风扇 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>在淘宝上买的那个香茅防蚊虫凝胶一点用都没有</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6cb6ef8a/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6cb6ef8a/</url>
+      
+        <content type="html"><![CDATA[<p>虽然是只花了几毛钱在淘宝特价版买的，但是真的一点用都没有，把盖子打开蚊子一样的很多，还是要点蚊香才有用，这香茅凝胶要是有用，做蚊香的厂家还不也生产出来了，关键是它真的一点用都没有。</p><span id="more"></span><p>电蚊香液我是没有用过，不知道用起来怎么样，但是看网上说的是没有蚊香安全，因为会把飞沫吸到呼吸道里面去，我没有用过是不是这样，我不清楚，但是我觉得最好的就是点蚊香，这个我关着门窗都感觉没有事。</p><p>每天都要点蚊香一个打火机没有多久气就用完了，去超市买还要一块钱一个，看淘宝上便宜很多，我看着有那种充电就可以点烟的，不知道买来点蚊香怎么样，不知道还要充气不要。看着才几块钱的就买一个来试一下，用了淘宝特价版新人红包是一分钱都不要，不好用也不亏什么，就等到货试试看吧。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 淘宝 </tag>
+            
+            <tag> 蚊香 </tag>
+            
+            <tag> 香茅防蚊虫 </tag>
+            
+            <tag> 凝胶 </tag>
+            
+            <tag> 淘宝特价版 </tag>
+            
+            <tag> 电蚊香液 </tag>
+            
+            <tag> 点烟 </tag>
+            
+            <tag> 充电 </tag>
+            
+            <tag> 新人红包 </tag>
             
         </tags>
       
@@ -16356,51 +16356,6 @@
     
     
     <entry>
-      <title>墨茶走了，他却是我们自己最真实的一面</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1d3ff104/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1d3ff104/</url>
-      
-        <content type="html"><![CDATA[<p>前几天看到新闻说一个B站UP主去世才得到人们的关注，而我开始却不怎么相信，也不知道是怎么一回事，而后面又在贴吧和知乎看到关于他去世的消息，B站有人为他贴了讣告，看了别人发出的他动态，那一刻我感到很难受，他去世得很年轻，才23岁的青春年华，却死于贫病交加的冬日里。</p><span id="more"></span><p>我自己曾经无数次想到我也许会有一天也会向他那样死去，因为我们都不是神，终究是会走到生命尽头的那一刻，承不承认与否我们都无法与命运相抗衡，直到临死之际那小小的愿望也无法达到，他的动态里写道他吃什么吐什么，想吃草莓，但是却没有钱买了，况且身体已经很虚弱了，每当想到这里我都无法控制自己，泪水总是要涌出来。这就是我们每个人真实的自己，我们每天的努力其实只是为了生存下去，那怕多一天也是在和命运做抗争。</p><p>当我们扛不住的那一刻我们终究会倒下，他每一天都被病痛折磨，但却在努力的活着，没有抱怨命运对自己的不公平，贫困和病痛让他怎么也无法摆脱，最终他选择了妥协，因为他再也没有钱去医院看病了，当吃饭都没有钱了，更别说去看病的钱了，他对自己还有希望，他不想就那样死去，以为自己只要睡一觉醒来就好了，但就是那样一觉睡去永远再也没有醒来。</p><p>当一个人明知道被病痛折磨必须是去医院才行，但是连吃饭的钱都没有了，身边没有亲人，那是一种无助的绝望，本不想那样在绝望中死去，但是却没有其他办法。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 冬日 </tag>
-            
-            <tag> 墨茶 </tag>
-            
-            <tag> 真实 </tag>
-            
-            <tag> B站 </tag>
-            
-            <tag> UP主 </tag>
-            
-            <tag> 讣告 </tag>
-            
-            <tag> 青春年华 </tag>
-            
-            <tag> 贫病交加 </tag>
-            
-            <tag> 草莓 </tag>
-            
-            <tag> 命运 </tag>
-            
-            <tag> 医院 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>坚持每天都写就是一种好的写作方法</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/a6429f26/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/a6429f26/</url>
@@ -16444,6 +16399,51 @@
             <tag> 放弃 </tag>
             
             <tag> 失落感 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>墨茶走了，他却是我们自己最真实的一面</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1d3ff104/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1d3ff104/</url>
+      
+        <content type="html"><![CDATA[<p>前几天看到新闻说一个B站UP主去世才得到人们的关注，而我开始却不怎么相信，也不知道是怎么一回事，而后面又在贴吧和知乎看到关于他去世的消息，B站有人为他贴了讣告，看了别人发出的他动态，那一刻我感到很难受，他去世得很年轻，才23岁的青春年华，却死于贫病交加的冬日里。</p><span id="more"></span><p>我自己曾经无数次想到我也许会有一天也会向他那样死去，因为我们都不是神，终究是会走到生命尽头的那一刻，承不承认与否我们都无法与命运相抗衡，直到临死之际那小小的愿望也无法达到，他的动态里写道他吃什么吐什么，想吃草莓，但是却没有钱买了，况且身体已经很虚弱了，每当想到这里我都无法控制自己，泪水总是要涌出来。这就是我们每个人真实的自己，我们每天的努力其实只是为了生存下去，那怕多一天也是在和命运做抗争。</p><p>当我们扛不住的那一刻我们终究会倒下，他每一天都被病痛折磨，但却在努力的活着，没有抱怨命运对自己的不公平，贫困和病痛让他怎么也无法摆脱，最终他选择了妥协，因为他再也没有钱去医院看病了，当吃饭都没有钱了，更别说去看病的钱了，他对自己还有希望，他不想就那样死去，以为自己只要睡一觉醒来就好了，但就是那样一觉睡去永远再也没有醒来。</p><p>当一个人明知道被病痛折磨必须是去医院才行，但是连吃饭的钱都没有了，身边没有亲人，那是一种无助的绝望，本不想那样在绝望中死去，但是却没有其他办法。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 冬日 </tag>
+            
+            <tag> 墨茶 </tag>
+            
+            <tag> 真实 </tag>
+            
+            <tag> B站 </tag>
+            
+            <tag> UP主 </tag>
+            
+            <tag> 讣告 </tag>
+            
+            <tag> 青春年华 </tag>
+            
+            <tag> 贫病交加 </tag>
+            
+            <tag> 草莓 </tag>
+            
+            <tag> 命运 </tag>
+            
+            <tag> 医院 </tag>
             
         </tags>
       
@@ -16733,43 +16733,6 @@
     
     
     <entry>
-      <title>好久没有写了，这段时间有空，随便写点吧</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29b7f30d/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29b7f30d/</url>
-      
-        <content type="html"><![CDATA[<p>最近有一个多星期没有上班了，被公司放假休息，做小时工不好就是这点了，没有事做就让休息了，工资都没有，这个月就上了十多天班，工资才一千多块钱。</p><span id="more"></span><p>现在也就是每天躺在床上玩手机，玩到连饭都不想吃了，什么也不想做，反正就是做什么都不感兴趣。玩游戏玩下又不想玩了，用手机看书最多看100页，看着看着就会睡着了。</p><p>不知道做什么，反正每天都无所事事，以前感觉每天要做的事很多，但是当自己真的有很多空闲时间了，却不知道该做什么了。</p><p>每天都是在迷茫中度过，好像也没有什么解脱的办法，只能是度日如年这样的活着，想到什么就写什么，只有写点文字才能让自己的思想活跃下。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 解脱 </tag>
-            
-            <tag> 放假休息 </tag>
-            
-            <tag> 没有上班 </tag>
-            
-            <tag> 工资 </tag>
-            
-            <tag> 空闲时间 </tag>
-            
-            <tag> 做什么 </tag>
-            
-            <tag> 度日如年 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>好久不看微信了，今天看了下还有新的发现</title>
       <link href="/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/72b33af7/"/>
       <url>/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/72b33af7/</url>
@@ -16819,6 +16782,43 @@
     
     
     <entry>
+      <title>好久没有写了，这段时间有空，随便写点吧</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29b7f30d/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29b7f30d/</url>
+      
+        <content type="html"><![CDATA[<p>最近有一个多星期没有上班了，被公司放假休息，做小时工不好就是这点了，没有事做就让休息了，工资都没有，这个月就上了十多天班，工资才一千多块钱。</p><span id="more"></span><p>现在也就是每天躺在床上玩手机，玩到连饭都不想吃了，什么也不想做，反正就是做什么都不感兴趣。玩游戏玩下又不想玩了，用手机看书最多看100页，看着看着就会睡着了。</p><p>不知道做什么，反正每天都无所事事，以前感觉每天要做的事很多，但是当自己真的有很多空闲时间了，却不知道该做什么了。</p><p>每天都是在迷茫中度过，好像也没有什么解脱的办法，只能是度日如年这样的活着，想到什么就写什么，只有写点文字才能让自己的思想活跃下。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 解脱 </tag>
+            
+            <tag> 放假休息 </tag>
+            
+            <tag> 没有上班 </tag>
+            
+            <tag> 工资 </tag>
+            
+            <tag> 空闲时间 </tag>
+            
+            <tag> 做什么 </tag>
+            
+            <tag> 度日如年 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>好几年都没有过年的感觉了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/75f815e6/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/75f815e6/</url>
@@ -16852,53 +16852,6 @@
             <tag> 往年 </tag>
             
             <tag> 感染者 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>如何通过用短视频平台来赚钱</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/425acf9a/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/425acf9a/</url>
-      
-        <content type="html"><![CDATA[<p>用短视频平台来赚钱理论上是可以的，但是要做起来却是有点难，最容易的就是直接刷短视频领金币，然后每天零点后系统自动兑换成可以提现的，但是赚不了多少，刷一天最多只能赚两块钱。</p><span id="more"></span><p>这样的平台很多，比如抖音极速版，快手也可以，但是有些账号没有这个功能，快手极速版也可以，但是都只能赚几块钱。</p><p>另外就是带货了，抖音要500个粉丝才可以，所以新手根本没有机会，再说了还要交500的保证金，也不适合新手玩，快手还好，没有粉丝限制，零个粉丝也照样可以开通快手小店，货源淘宝、京东的都有，发视频的时候就可以带上了，有人买就有佣金，但有没有人买是未知数，因为我也没有卖出去过，另外快手直接带淘宝联盟的也是要交500的保证金。</p><p>还有就是做直播了，直播游戏或者真人直播都可以，直播好像抖音看的人要多一点，我直播一下还有人送礼，快手基本上直播没有人看，抖音直播那个音符什么的满一元就可以提现。</p><p>能赚是能赚，但是赚不了多少，不要相信那些说月入上万的根本不可能，那些抖音直播上说自己一场直播赚多少的，其实就是为了卖他自己的课程，在咸鱼上可能卖5块钱都没有人看，他可以放在抖音上卖90多，其实买了一点用都没有，还为他增加收入，他开始的那些流水估计是刷的，后面买课程的人多了就是真的了，这都是套路来的。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 流水 </tag>
-            
-            <tag> 短视频 </tag>
-            
-            <tag> 快手 </tag>
-            
-            <tag> 赚钱 </tag>
-            
-            <tag> 直播 </tag>
-            
-            <tag> 理论上 </tag>
-            
-            <tag> 提现 </tag>
-            
-            <tag> 抖音极速版 </tag>
-            
-            <tag> 淘宝联盟 </tag>
-            
-            <tag> 保证金 </tag>
-            
-            <tag> 课程 </tag>
-            
-            <tag> 咸鱼 </tag>
             
         </tags>
       
@@ -16958,6 +16911,53 @@
             <tag> AWS </tag>
             
             <tag> 云服务器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何通过用短视频平台来赚钱</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/425acf9a/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/425acf9a/</url>
+      
+        <content type="html"><![CDATA[<p>用短视频平台来赚钱理论上是可以的，但是要做起来却是有点难，最容易的就是直接刷短视频领金币，然后每天零点后系统自动兑换成可以提现的，但是赚不了多少，刷一天最多只能赚两块钱。</p><span id="more"></span><p>这样的平台很多，比如抖音极速版，快手也可以，但是有些账号没有这个功能，快手极速版也可以，但是都只能赚几块钱。</p><p>另外就是带货了，抖音要500个粉丝才可以，所以新手根本没有机会，再说了还要交500的保证金，也不适合新手玩，快手还好，没有粉丝限制，零个粉丝也照样可以开通快手小店，货源淘宝、京东的都有，发视频的时候就可以带上了，有人买就有佣金，但有没有人买是未知数，因为我也没有卖出去过，另外快手直接带淘宝联盟的也是要交500的保证金。</p><p>还有就是做直播了，直播游戏或者真人直播都可以，直播好像抖音看的人要多一点，我直播一下还有人送礼，快手基本上直播没有人看，抖音直播那个音符什么的满一元就可以提现。</p><p>能赚是能赚，但是赚不了多少，不要相信那些说月入上万的根本不可能，那些抖音直播上说自己一场直播赚多少的，其实就是为了卖他自己的课程，在咸鱼上可能卖5块钱都没有人看，他可以放在抖音上卖90多，其实买了一点用都没有，还为他增加收入，他开始的那些流水估计是刷的，后面买课程的人多了就是真的了，这都是套路来的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 流水 </tag>
+            
+            <tag> 短视频 </tag>
+            
+            <tag> 快手 </tag>
+            
+            <tag> 赚钱 </tag>
+            
+            <tag> 直播 </tag>
+            
+            <tag> 理论上 </tag>
+            
+            <tag> 提现 </tag>
+            
+            <tag> 抖音极速版 </tag>
+            
+            <tag> 淘宝联盟 </tag>
+            
+            <tag> 保证金 </tag>
+            
+            <tag> 课程 </tag>
+            
+            <tag> 咸鱼 </tag>
             
         </tags>
       
@@ -17058,6 +17058,100 @@
     
     
     <entry>
+      <title>小米11是一款高颜值高性能的真香机</title>
+      <link href="/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/8c836d33/"/>
+      <url>/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/8c836d33/</url>
+      
+        <content type="html"><![CDATA[<p>小米11在昨晚上发布了，颜值是真的比小米10好了不少，尤其是后面摄像头这里，比小米10好看很多，而且摄像头也更大了，颜值也提升了，拍照效果也得到了极大的提升。</p><span id="more"></span><p>价格还是和小米10发布的时候一样的也是3999，之前说是不配充电器，但是套餐版配了氮化镓充电器，而且价格和标准版的不配充电器是一样的，这样的定价应该也是有点冲突了，因为这样可能就没有人去买标准版不带充电器的了，毕竟消费者都是考虑有利于自己的一方面去选择的，最终还是达不到环保的目的，应是配充电器的比不配充电器的贵个50，那样才能真的即达到环保的目的，也让消费者觉得有实惠的选择，毕竟单买这个充电器好像都是要149，只能说小米的定价很厚道的了，买到基本上等于赚到。</p><p>这次小米11颜值和性能都是无敌的存在，目前还没有那一款手机性能有小米11强的，首发了高通骁龙888处理器，算是目前最强的手机处理器了。在颜值方面这次的做得更薄，而且充电速度比上一代的小米10更快了，达到了55瓦的有线闪充和50瓦的无线闪充，上一代的小米10充电速度我都感觉很快了，而这一次充电速度更快。</p><p>颜色是有六种颜色，黑色、白色、蓝色，素皮玻璃的卡其、烟紫和雷军签名版，雷军签名版的价格和12+256的价格是一样的，定价可谓是真的厚道。</p><p>屏幕分辨率达到了2K屏，网络方面做到了支持WiFi6增强版，并且也发布了WiFi6增强版路由器AX6000，很多人还没有用到WiFi6的处理器，然而WiFi6e都已经发布了，这说明小米的研发技术已经站到了技术前沿的制高点。</p><p>总的来说目前这款手机各方面都做到了安卓手机前所未有的高度，并且目前这款手机系统和硬件都比苹果手机好，要认清一个事实就是现在的安卓系统早已经不比苹果系统差了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 互联网科技 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 小米11 </tag>
+            
+            <tag> 高颜值 </tag>
+            
+            <tag> 高性能 </tag>
+            
+            <tag> 真香机 </tag>
+            
+            <tag> 小米10 </tag>
+            
+            <tag> 充电器 </tag>
+            
+            <tag> 氮化镓 </tag>
+            
+            <tag> 无敌 </tag>
+            
+            <tag> 素皮玻璃 </tag>
+            
+            <tag> 烟紫 </tag>
+            
+            <tag> 卡其 </tag>
+            
+            <tag> 雷军签名版 </tag>
+            
+            <tag> 研发技术 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>小米出的这个MIUI+的功能很好用</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/77a713ef/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/77a713ef/</url>
+      
+        <content type="html"><![CDATA[<p>以前手机还没有更新到MIUI12.5之前一直不知道这个功能有多好用，但是最近我手机更新到了MIUI12.5了，感觉这个功能真的是太神奇了，有了这个简直吊打一切投屏软件。</p><span id="more"></span><p>这个比那些投屏软件要强大很多，这个是可以直接在电脑上控制手机的，连接上以后电脑上就可以显示手机的屏幕，在手机上能做的在电脑上也可以，包括点击滑动这些，完全是没有问题。</p><p>而且手机可以不用一直亮屏，电脑上也是可以一直显示的，想要复制手机上的文字到电脑简直不要太方便，直接在电脑上就可以完成，以前要从手机复制文字到电脑上还要打开电脑上的QQ或者微信才行，现在有了MIUI+根本就不用了，想要分享一个网址到电脑，就直接在电脑上复制粘贴就可以完成了。</p><p>刷短视频也是可以的，但是必须要网速稳定才行，因为它用到的原理就是同一WiFi下的局域网传输，所以如果WiFi速度不够就会卡。</p><p>好用是很好用但是前提是要有小米手机，小米和Redmi都是有很多款设备支持的，只要是收到可以更新MIUI12.5的都应该是可以的，电脑没有要求，不一定是要用小米的笔记本才可以，我用的台式机也是可以的，而且这个软件也不需要多高的电脑配置都能运行。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电脑 </tag>
+            
+            <tag> 功能 </tag>
+            
+            <tag> 复制粘贴 </tag>
+            
+            <tag> 手机 </tag>
+            
+            <tag> 笔记本 </tag>
+            
+            <tag> 小米 </tag>
+            
+            <tag> MIUI+ </tag>
+            
+            <tag> MIUI12.5 </tag>
+            
+            <tag> 太神奇 </tag>
+            
+            <tag> 投屏软件 </tag>
+            
+            <tag> 台式机 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>小米研发出了隔空充电技术，再也不怕没有充电线了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/690f7b38/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/690f7b38/</url>
@@ -17126,55 +17220,6 @@
             <tag> 时间赛跑 </tag>
             
             <tag> 明天 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>小米11是一款高颜值高性能的真香机</title>
-      <link href="/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/8c836d33/"/>
-      <url>/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/8c836d33/</url>
-      
-        <content type="html"><![CDATA[<p>小米11在昨晚上发布了，颜值是真的比小米10好了不少，尤其是后面摄像头这里，比小米10好看很多，而且摄像头也更大了，颜值也提升了，拍照效果也得到了极大的提升。</p><span id="more"></span><p>价格还是和小米10发布的时候一样的也是3999，之前说是不配充电器，但是套餐版配了氮化镓充电器，而且价格和标准版的不配充电器是一样的，这样的定价应该也是有点冲突了，因为这样可能就没有人去买标准版不带充电器的了，毕竟消费者都是考虑有利于自己的一方面去选择的，最终还是达不到环保的目的，应是配充电器的比不配充电器的贵个50，那样才能真的即达到环保的目的，也让消费者觉得有实惠的选择，毕竟单买这个充电器好像都是要149，只能说小米的定价很厚道的了，买到基本上等于赚到。</p><p>这次小米11颜值和性能都是无敌的存在，目前还没有那一款手机性能有小米11强的，首发了高通骁龙888处理器，算是目前最强的手机处理器了。在颜值方面这次的做得更薄，而且充电速度比上一代的小米10更快了，达到了55瓦的有线闪充和50瓦的无线闪充，上一代的小米10充电速度我都感觉很快了，而这一次充电速度更快。</p><p>颜色是有六种颜色，黑色、白色、蓝色，素皮玻璃的卡其、烟紫和雷军签名版，雷军签名版的价格和12+256的价格是一样的，定价可谓是真的厚道。</p><p>屏幕分辨率达到了2K屏，网络方面做到了支持WiFi6增强版，并且也发布了WiFi6增强版路由器AX6000，很多人还没有用到WiFi6的处理器，然而WiFi6e都已经发布了，这说明小米的研发技术已经站到了技术前沿的制高点。</p><p>总的来说目前这款手机各方面都做到了安卓手机前所未有的高度，并且目前这款手机系统和硬件都比苹果手机好，要认清一个事实就是现在的安卓系统早已经不比苹果系统差了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 互联网科技 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 小米11 </tag>
-            
-            <tag> 高颜值 </tag>
-            
-            <tag> 高性能 </tag>
-            
-            <tag> 真香机 </tag>
-            
-            <tag> 小米10 </tag>
-            
-            <tag> 充电器 </tag>
-            
-            <tag> 氮化镓 </tag>
-            
-            <tag> 无敌 </tag>
-            
-            <tag> 素皮玻璃 </tag>
-            
-            <tag> 烟紫 </tag>
-            
-            <tag> 卡其 </tag>
-            
-            <tag> 雷军签名版 </tag>
-            
-            <tag> 研发技术 </tag>
             
         </tags>
       
@@ -17267,51 +17312,6 @@
             <tag> 大将军 </tag>
             
             <tag> 忠心耿耿 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>小米出的这个MIUI+的功能很好用</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/77a713ef/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/77a713ef/</url>
-      
-        <content type="html"><![CDATA[<p>以前手机还没有更新到MIUI12.5之前一直不知道这个功能有多好用，但是最近我手机更新到了MIUI12.5了，感觉这个功能真的是太神奇了，有了这个简直吊打一切投屏软件。</p><span id="more"></span><p>这个比那些投屏软件要强大很多，这个是可以直接在电脑上控制手机的，连接上以后电脑上就可以显示手机的屏幕，在手机上能做的在电脑上也可以，包括点击滑动这些，完全是没有问题。</p><p>而且手机可以不用一直亮屏，电脑上也是可以一直显示的，想要复制手机上的文字到电脑简直不要太方便，直接在电脑上就可以完成，以前要从手机复制文字到电脑上还要打开电脑上的QQ或者微信才行，现在有了MIUI+根本就不用了，想要分享一个网址到电脑，就直接在电脑上复制粘贴就可以完成了。</p><p>刷短视频也是可以的，但是必须要网速稳定才行，因为它用到的原理就是同一WiFi下的局域网传输，所以如果WiFi速度不够就会卡。</p><p>好用是很好用但是前提是要有小米手机，小米和Redmi都是有很多款设备支持的，只要是收到可以更新MIUI12.5的都应该是可以的，电脑没有要求，不一定是要用小米的笔记本才可以，我用的台式机也是可以的，而且这个软件也不需要多高的电脑配置都能运行。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 电脑 </tag>
-            
-            <tag> 功能 </tag>
-            
-            <tag> 复制粘贴 </tag>
-            
-            <tag> 手机 </tag>
-            
-            <tag> 笔记本 </tag>
-            
-            <tag> 小米 </tag>
-            
-            <tag> MIUI+ </tag>
-            
-            <tag> MIUI12.5 </tag>
-            
-            <tag> 太神奇 </tag>
-            
-            <tag> 投屏软件 </tag>
-            
-            <tag> 台式机 </tag>
             
         </tags>
       
@@ -17508,6 +17508,45 @@
     
     
     <entry>
+      <title>很多今天还没有完成的事</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/78cd337d/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/78cd337d/</url>
+      
+        <content type="html"><![CDATA[<p>眼看还有几天就要考试了，可是我这进度有点更不上啊，今天本来是要做完一章题库的，结果吃了晚饭以后就拿着手机就离不了手，一看手机就是一个多小时过去了，时间过得真的快啊。</p><span id="more"></span><p>刚开始感觉做完前面的选择题，看一遍后面的主观题还来得及，本来还想着要抄写一遍的，但是连看一遍都没有完成。拿着手机就把时间忘记了，一看就22点30过了，想着还要更新文章，打开电脑但是突然又不知道要写什么。</p><p>于是就随便看了一下网页，这样一看还是不知道该写什么，时间又过去了大概半个小时，眼看就23点过几分了，想着再不写，今天怕是更新不了，于是就想着写写今天的事吧。今天要做的事没有做完，这一天就这样浪费了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 手机 </tag>
+            
+            <tag> 今天 </tag>
+            
+            <tag> 考试 </tag>
+            
+            <tag> 更新文章 </tag>
+            
+            <tag> 浪费 </tag>
+            
+            <tag> 主观题 </tag>
+            
+            <tag> 进度 </tag>
+            
+            <tag> 完成 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>很多人问我要挖狗狗币的教程，我有时间再写</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c39404ee/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c39404ee/</url>
@@ -17543,45 +17582,6 @@
             <tag> 搜索引擎 </tag>
             
             <tag> 逻辑步骤 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>很多今天还没有完成的事</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/78cd337d/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/78cd337d/</url>
-      
-        <content type="html"><![CDATA[<p>眼看还有几天就要考试了，可是我这进度有点更不上啊，今天本来是要做完一章题库的，结果吃了晚饭以后就拿着手机就离不了手，一看手机就是一个多小时过去了，时间过得真的快啊。</p><span id="more"></span><p>刚开始感觉做完前面的选择题，看一遍后面的主观题还来得及，本来还想着要抄写一遍的，但是连看一遍都没有完成。拿着手机就把时间忘记了，一看就22点30过了，想着还要更新文章，打开电脑但是突然又不知道要写什么。</p><p>于是就随便看了一下网页，这样一看还是不知道该写什么，时间又过去了大概半个小时，眼看就23点过几分了，想着再不写，今天怕是更新不了，于是就想着写写今天的事吧。今天要做的事没有做完，这一天就这样浪费了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 手机 </tag>
-            
-            <tag> 考试 </tag>
-            
-            <tag> 今天 </tag>
-            
-            <tag> 更新文章 </tag>
-            
-            <tag> 浪费 </tag>
-            
-            <tag> 主观题 </tag>
-            
-            <tag> 进度 </tag>
-            
-            <tag> 完成 </tag>
             
         </tags>
       
@@ -18000,9 +18000,9 @@
             
             <tag> 文章 </tag>
             
-            <tag> 人工智能 </tag>
-            
             <tag> 抖音 </tag>
+            
+            <tag> 人工智能 </tag>
             
             <tag> 支付宝 </tag>
             
@@ -18229,61 +18229,6 @@
     
     
     <entry>
-      <title>我的mini小主机终于组装好了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d0450d61/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d0450d61/</url>
-      
-        <content type="html"><![CDATA[<p>今天电源适配器终于到了，昨天才买的今天就到了，真的发货速度很快，果然只要配件对装机也不难啊，早知道都这样分开在一家买，那早都已经装好了，插上电源适配器开机成功那一刻还是感觉挺兴奋的，看着主板粉红色的灯下亮起来是真的太漂亮了。</p><span id="more"></span><p>这或许真的就是自己装机的乐趣，比买一台整机那种感觉舒服很多。安装系统虽然也不难，但是我也是费了一点劲的，好开始是想到用那个硬盘分区软件做一个系统启动盘，结果插上U盘启动了只能进那个软件的界面。</p><p>没有办法又只能把显示器连到笔记本电脑，用微软的那个软件重新做了一个win10启动盘，做这个笔记本电脑是很慢的，大概花了一个多小时才做好。做好后就直接把U盘插在mini主机上，我这个主板是可以不用进bios设置然后就直接可以安装系统的，刚一插上去就开始安装了，安装的时候用那个分区软件分的区居然用不了，只好把那个区删了，然后重新分100G来做系统盘，因为我的m.2固态是500G的，所以分100G做系统盘也还很多余量，然后剩下的就是未分配的了，这里未分配的就进系统再分。</p><p>系统安装好了就是等着安装驱动，不知道是网速原因还是上网的人太多了，驱动是下差不多30分钟才安装完，然后就是重启。</p><p>重启以后就是激活了，激活也差点难道我了，还好我笔记本电脑里面还有激活office的那个软件，这个软件也是可以激活系统的，当然直接用U盘传过来安装不了，会被系统自动删除，还好我想到了先安装一个腾讯电脑管家，然后系统自带的安全软件就没有那么强了，电脑管家也是会删除这个软件，但是恢复就可以了，安装好后系统就直接激活了，算是一个不错的惊喜。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 组装 </tag>
-            
-            <tag> 硬盘 </tag>
-            
-            <tag> 配件 </tag>
-            
-            <tag> mini小主机 </tag>
-            
-            <tag> 电源适配器 </tag>
-            
-            <tag> 装机 </tag>
-            
-            <tag> 不难 </tag>
-            
-            <tag> 开机 </tag>
-            
-            <tag> 太漂亮 </tag>
-            
-            <tag> 安装系统 </tag>
-            
-            <tag> win10启动盘 </tag>
-            
-            <tag> m.2固态 </tag>
-            
-            <tag> 安装驱动 </tag>
-            
-            <tag> 分区软件 </tag>
-            
-            <tag> 直接激活 </tag>
-            
-            <tag> 恢复 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>我的mini小主机算是组装完成了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dcfeae6e/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dcfeae6e/</url>
@@ -18373,11 +18318,11 @@
             
             <tag> 一瞬间 </tag>
             
-            <tag> 电源适配器 </tag>
-            
             <tag> mini电脑 </tag>
             
             <tag> 无信号 </tag>
+            
+            <tag> 电源适配器 </tag>
             
             <tag> ATX-DC </tag>
             
@@ -18386,6 +18331,61 @@
             <tag> 星期一 </tag>
             
             <tag> 发货 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的mini小主机终于组装好了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d0450d61/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d0450d61/</url>
+      
+        <content type="html"><![CDATA[<p>今天电源适配器终于到了，昨天才买的今天就到了，真的发货速度很快，果然只要配件对装机也不难啊，早知道都这样分开在一家买，那早都已经装好了，插上电源适配器开机成功那一刻还是感觉挺兴奋的，看着主板粉红色的灯下亮起来是真的太漂亮了。</p><span id="more"></span><p>这或许真的就是自己装机的乐趣，比买一台整机那种感觉舒服很多。安装系统虽然也不难，但是我也是费了一点劲的，好开始是想到用那个硬盘分区软件做一个系统启动盘，结果插上U盘启动了只能进那个软件的界面。</p><p>没有办法又只能把显示器连到笔记本电脑，用微软的那个软件重新做了一个win10启动盘，做这个笔记本电脑是很慢的，大概花了一个多小时才做好。做好后就直接把U盘插在mini主机上，我这个主板是可以不用进bios设置然后就直接可以安装系统的，刚一插上去就开始安装了，安装的时候用那个分区软件分的区居然用不了，只好把那个区删了，然后重新分100G来做系统盘，因为我的m.2固态是500G的，所以分100G做系统盘也还很多余量，然后剩下的就是未分配的了，这里未分配的就进系统再分。</p><p>系统安装好了就是等着安装驱动，不知道是网速原因还是上网的人太多了，驱动是下差不多30分钟才安装完，然后就是重启。</p><p>重启以后就是激活了，激活也差点难道我了，还好我笔记本电脑里面还有激活office的那个软件，这个软件也是可以激活系统的，当然直接用U盘传过来安装不了，会被系统自动删除，还好我想到了先安装一个腾讯电脑管家，然后系统自带的安全软件就没有那么强了，电脑管家也是会删除这个软件，但是恢复就可以了，安装好后系统就直接激活了，算是一个不错的惊喜。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 组装 </tag>
+            
+            <tag> 硬盘 </tag>
+            
+            <tag> 配件 </tag>
+            
+            <tag> mini小主机 </tag>
+            
+            <tag> 电源适配器 </tag>
+            
+            <tag> 装机 </tag>
+            
+            <tag> 不难 </tag>
+            
+            <tag> 开机 </tag>
+            
+            <tag> 太漂亮 </tag>
+            
+            <tag> 安装系统 </tag>
+            
+            <tag> win10启动盘 </tag>
+            
+            <tag> m.2固态 </tag>
+            
+            <tag> 安装驱动 </tag>
+            
+            <tag> 分区软件 </tag>
+            
+            <tag> 直接激活 </tag>
+            
+            <tag> 恢复 </tag>
             
         </tags>
       
@@ -18626,6 +18626,39 @@
     
     
     <entry>
+      <title>找不到写的了，随便更新一篇算了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/396a0ad4/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/396a0ad4/</url>
+      
+        <content type="html"><![CDATA[<p>想着要写点什么，但是越想脑袋里面越混乱，什么都只能想到一个片段，想写成一篇文章都感觉好难，所以就随便写写了，想到什么就写什么就可以了，有的时候想得太多，发觉什么也写不出来，一点都不在状态的那种感觉，处于这种状态就还是不要想了，越想感觉会越乱。</p><span id="more"></span><p>与其多想些无用的还不如就直接动手开始写好了，也许在写的过程中真的才能想到要写些什么，光想是真的一点用都没有，写出来了这是管用的，有时候发觉写得越多，想的问题也理得越顺了。</p><p>所以直接动手写就是最好的，不要先想着要去写些什么，那样只会越想越写不出来，只有开始动笔写了，自己才知道自己要去写些什么东西，要不然就只停留在想的步骤上结果把时间白白的浪费了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 更新 </tag>
+            
+            <tag> 找不到 </tag>
+            
+            <tag> 写些什么 </tag>
+            
+            <tag> 随便 </tag>
+            
+            <tag> 直接 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>把Hexo网站文件转移到固态硬盘，编译速度翻了几倍</title>
       <link href="/Hexo/d68ca6fe/"/>
       <url>/Hexo/d68ca6fe/</url>
@@ -18669,39 +18702,6 @@
             <tag> M.2 NVME </tag>
             
             <tag> 拖累 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>找不到写的了，随便更新一篇算了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/396a0ad4/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/396a0ad4/</url>
-      
-        <content type="html"><![CDATA[<p>想着要写点什么，但是越想脑袋里面越混乱，什么都只能想到一个片段，想写成一篇文章都感觉好难，所以就随便写写了，想到什么就写什么就可以了，有的时候想得太多，发觉什么也写不出来，一点都不在状态的那种感觉，处于这种状态就还是不要想了，越想感觉会越乱。</p><span id="more"></span><p>与其多想些无用的还不如就直接动手开始写好了，也许在写的过程中真的才能想到要写些什么，光想是真的一点用都没有，写出来了这是管用的，有时候发觉写得越多，想的问题也理得越顺了。</p><p>所以直接动手写就是最好的，不要先想着要去写些什么，那样只会越想越写不出来，只有开始动笔写了，自己才知道自己要去写些什么东西，要不然就只停留在想的步骤上结果把时间白白的浪费了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 更新 </tag>
-            
-            <tag> 找不到 </tag>
-            
-            <tag> 写些什么 </tag>
-            
-            <tag> 随便 </tag>
-            
-            <tag> 直接 </tag>
             
         </tags>
       
@@ -19426,9 +19426,9 @@
       
         <tags>
             
-            <tag> 迷人 </tag>
-            
             <tag> 世界 </tag>
+            
+            <tag> 迷人 </tag>
             
             <tag> 太阳 </tag>
             
@@ -19538,45 +19538,6 @@
     
     
     <entry>
-      <title>昨天在淘宝上买了一个充电的打火机，还以为可以用来点蚊香，结果不能</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29136023/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29136023/</url>
-      
-        <content type="html"><![CDATA[<p>昨天买的时候本来就问客服了，那时候是晚上十点过了，可能是她下班了，然后就没有回我，今天一看到她的回复说是不能，不能肯定我就是退款了，她发不发货我不管了，反正我没有收到货。</p><span id="more"></span><p>虽然用的是红包没有花一分钱，但是退款了我又可以用这个红包去买其他东西它不好吗，只能用来点烟有什么用，我又不抽烟，那买回来不等于是电子垃圾了吗。</p><p>这样退款是有点慢的要两天以后平台才会自动退款，反正我是不用管它，到时候退了又用红包买其他东西就可以，客服也是同意退的，快递拦截那是她们的事，只要她没有意见平台就是自动退的，我也不用去操心什么。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 淘宝 </tag>
-            
-            <tag> 充电 </tag>
-            
-            <tag> 打火机 </tag>
-            
-            <tag> 点蚊香 </tag>
-            
-            <tag> 客服 </tag>
-            
-            <tag> 红包 </tag>
-            
-            <tag> 自动退款 </tag>
-            
-            <tag> 快递拦截 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>昨天我把自己的网站同步到Gitee了</title>
       <link href="/Hexo/ceca9b33/"/>
       <url>/Hexo/ceca9b33/</url>
@@ -19614,6 +19575,45 @@
             <tag> 谷歌广告 </tag>
             
             <tag> 审核 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>昨天在淘宝上买了一个充电的打火机，还以为可以用来点蚊香，结果不能</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29136023/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29136023/</url>
+      
+        <content type="html"><![CDATA[<p>昨天买的时候本来就问客服了，那时候是晚上十点过了，可能是她下班了，然后就没有回我，今天一看到她的回复说是不能，不能肯定我就是退款了，她发不发货我不管了，反正我没有收到货。</p><span id="more"></span><p>虽然用的是红包没有花一分钱，但是退款了我又可以用这个红包去买其他东西它不好吗，只能用来点烟有什么用，我又不抽烟，那买回来不等于是电子垃圾了吗。</p><p>这样退款是有点慢的要两天以后平台才会自动退款，反正我是不用管它，到时候退了又用红包买其他东西就可以，客服也是同意退的，快递拦截那是她们的事，只要她没有意见平台就是自动退的，我也不用去操心什么。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 淘宝 </tag>
+            
+            <tag> 充电 </tag>
+            
+            <tag> 打火机 </tag>
+            
+            <tag> 点蚊香 </tag>
+            
+            <tag> 客服 </tag>
+            
+            <tag> 红包 </tag>
+            
+            <tag> 自动退款 </tag>
+            
+            <tag> 快递拦截 </tag>
             
         </tags>
       
@@ -19870,6 +19870,55 @@
     
     
     <entry>
+      <title>最不值得买的电脑</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Infinity/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Infinity/</url>
+      
+        <content type="html"><![CDATA[<p>电脑的种类现在已经越来越多了，有品牌机、自己DIY组装的主机、笔记本电脑、平板电脑、一体机，一体机现在是很少看到了，七八年前好像看到有人买过，现在也没有哪个公司发布和制造一体机了，原因就是没有人买了。</p><span id="more"></span><p>说实在的这种电脑是真的很坑，首先性能很差而且也不支持后期升级，还有携带不方便，和笔记本比起来简直就是一个巨无霸，又大又厚，这种电脑随身携带一点都不方便，就像走到哪里都总是带着一个大显示器一样，还没有现在的迷你主机加一个便携显示器方便，但是自己组装的迷你机又比它的性能强了不只N倍。</p><p>现在这东西已经是老古董了吧，比笔记本出来得晚，笔记本可以说是还活得好好的，一体机早已失去了踪影，在我身边我也只看到一个人买过，当时我都搞不懂他为什么会选择买一体机那种笨重性能差的东西，现在也想不通。</p><p>放着买一台笔记本的性能和那个大家伙也一样啊，难道是为了屏幕大，那笔记本外接显示器也一样啊，估计那东西还不支持外接显示器，而且以前的电脑屏幕大多都是720P的，放在现在看着几十电子垃圾了，送人都没有人要了，最多是只能买个收破烂的按斤称。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电脑 </tag>
+            
+            <tag> 显示器 </tag>
+            
+            <tag> 平板 </tag>
+            
+            <tag> 电子垃圾 </tag>
+            
+            <tag> 笔记本 </tag>
+            
+            <tag> 种类 </tag>
+            
+            <tag> 越来越多 </tag>
+            
+            <tag> 不值得买 </tag>
+            
+            <tag> DIY组装 </tag>
+            
+            <tag> 品牌机 </tag>
+            
+            <tag> 一体机 </tag>
+            
+            <tag> 老古董 </tag>
+            
+            <tag> 720P </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>最近的简书借钻少了，我的排名也自然掉到一万名以外去了</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/ec152e6/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/ec152e6/</url>
@@ -19929,55 +19978,6 @@
             <tag> 指法 </tag>
             
             <tag> 精彩评论 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>最不值得买的电脑</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Infinity/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Infinity/</url>
-      
-        <content type="html"><![CDATA[<p>电脑的种类现在已经越来越多了，有品牌机、自己DIY组装的主机、笔记本电脑、平板电脑、一体机，一体机现在是很少看到了，七八年前好像看到有人买过，现在也没有哪个公司发布和制造一体机了，原因就是没有人买了。</p><span id="more"></span><p>说实在的这种电脑是真的很坑，首先性能很差而且也不支持后期升级，还有携带不方便，和笔记本比起来简直就是一个巨无霸，又大又厚，这种电脑随身携带一点都不方便，就像走到哪里都总是带着一个大显示器一样，还没有现在的迷你主机加一个便携显示器方便，但是自己组装的迷你机又比它的性能强了不只N倍。</p><p>现在这东西已经是老古董了吧，比笔记本出来得晚，笔记本可以说是还活得好好的，一体机早已失去了踪影，在我身边我也只看到一个人买过，当时我都搞不懂他为什么会选择买一体机那种笨重性能差的东西，现在也想不通。</p><p>放着买一台笔记本的性能和那个大家伙也一样啊，难道是为了屏幕大，那笔记本外接显示器也一样啊，估计那东西还不支持外接显示器，而且以前的电脑屏幕大多都是720P的，放在现在看着几十电子垃圾了，送人都没有人要了，最多是只能买个收破烂的按斤称。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 电脑 </tag>
-            
-            <tag> 显示器 </tag>
-            
-            <tag> 平板 </tag>
-            
-            <tag> 电子垃圾 </tag>
-            
-            <tag> 笔记本 </tag>
-            
-            <tag> 种类 </tag>
-            
-            <tag> 越来越多 </tag>
-            
-            <tag> 不值得买 </tag>
-            
-            <tag> DIY组装 </tag>
-            
-            <tag> 品牌机 </tag>
-            
-            <tag> 一体机 </tag>
-            
-            <tag> 老古董 </tag>
-            
-            <tag> 720P </tag>
             
         </tags>
       
@@ -20125,41 +20125,6 @@
     
     
     <entry>
-      <title>本来不想写的还是写下吧</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5fedbe30/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5fedbe30/</url>
-      
-        <content type="html"><![CDATA[<p>真的很烦，休息了这么多天了，公司突然要我星期一去上晚班了，又在微信群里看到一个中介招聘的发招聘信息，一个小时20元，是做绿化环保的，我还是挺想去的，就是这边还没有辞工，早知道上个月就辞工了，现在辞工估计也没有那么快批了，更何况都要我去上班了。</p><span id="more"></span><p>是真的太烦了，不想去原来的这个公司上班了，上个月就上了9天班今天发工资才发1300多块钱，估计这个月也是只有这么多了，真的还不如辞工换个工作了，可是有机会辞工的时候别人又不招人，没有机会辞工时候又有很多人在招了。</p><p>是真的烦了，不知道是辞工了等机会还是接着去以前的公司上班。都说是机会不等人，可是人也很难等机会啊，况且换个地方也不知道是好是坏，有时候人的选择就是这样的茅盾，真的不知道该怎么样去做。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 不想写 </tag>
-            
-            <tag> 辞工 </tag>
-            
-            <tag> 上晚班 </tag>
-            
-            <tag> 绿化环保 </tag>
-            
-            <tag> 公司 </tag>
-            
-            <tag> 烦 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>有的文章平台发不了，还是要发到自己的网站才行</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/eaeba784/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/eaeba784/</url>
@@ -20197,6 +20162,41 @@
             <tag> 广告费 </tag>
             
             <tag> 根据地 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>本来不想写的还是写下吧</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5fedbe30/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5fedbe30/</url>
+      
+        <content type="html"><![CDATA[<p>真的很烦，休息了这么多天了，公司突然要我星期一去上晚班了，又在微信群里看到一个中介招聘的发招聘信息，一个小时20元，是做绿化环保的，我还是挺想去的，就是这边还没有辞工，早知道上个月就辞工了，现在辞工估计也没有那么快批了，更何况都要我去上班了。</p><span id="more"></span><p>是真的太烦了，不想去原来的这个公司上班了，上个月就上了9天班今天发工资才发1300多块钱，估计这个月也是只有这么多了，真的还不如辞工换个工作了，可是有机会辞工的时候别人又不招人，没有机会辞工时候又有很多人在招了。</p><p>是真的烦了，不知道是辞工了等机会还是接着去以前的公司上班。都说是机会不等人，可是人也很难等机会啊，况且换个地方也不知道是好是坏，有时候人的选择就是这样的茅盾，真的不知道该怎么样去做。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 不想写 </tag>
+            
+            <tag> 辞工 </tag>
+            
+            <tag> 上晚班 </tag>
+            
+            <tag> 绿化环保 </tag>
+            
+            <tag> 公司 </tag>
+            
+            <tag> 烦 </tag>
             
         </tags>
       
@@ -20421,6 +20421,49 @@
     
     
     <entry>
+      <title>满十万字了，又是一个值得纪念的里程</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/78c3b959/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/78c3b959/</url>
+      
+        <content type="html"><![CDATA[<p>在简书写作已经半年多的时间了，中间也是有个一段停顿，总之在没有参加日更计划之前写得也是停停顿顿的，虽然参加了日更曾经也有两次错过了日更发文的时间，用了日更卡，但是我还是始终坚持着没有放弃，坚持虽然本就不容易，但是放弃后再重新坚持就会感觉难上加难。</p><span id="more"></span><p>如果自己心里就有一个想要坚持下去的念想，那就不要轻易放弃，坚持每天写个几百字其实不是很难，难的就是要战胜自己不愿意的那种心理，人是动物有时候都想偷个懒，无论是谁都会有这个体验的，这也包括我，如果我每天早上起床就把一天要更新的文章写了，那也就不至于快要到凌晨了文章才写完，一看时间都已经零点十几分了，那就意味着那一天的日更计划是已经失败了。每日更新文章这种事真的得要赶早，有时真的是耽误不得，自己或许觉得时间在自己的眼前过的很慢，但是当自己去做其他事而把这件事忘记了，等到想起来要更文的时候一看时间就已经晚了。</p><p>对于日更这个事没有什么方法和技巧，坚持写就可以了，如果这都坚持不了那还谈什么提高自己写作能力，空口说白话都只能是在纸上谈兵，自己不去写、不去实践、不去刻意的练习，自己对于写作永远提高不了，自己隔的时间越久了，自己感觉就会生疏了。一次放弃到是很爽，只是要想重新来过又得从零开始，时间不是无限的，不是每一件事放弃了都可以重新从零开始，有些东西一旦放弃了就很难再去找到曾经自己熟悉的那种感觉。</p><p>有时候其实我不喜欢定下什么计划，其实如果对于写作和学习自己有个计划是真的很好的一件事，因为如果都按照自己的计划来每天都去坚持完成一点点，那就感觉真的很轻松，不要想着一口气就可以吃掉一个大胖子，那样不仅自己做得痛苦，也没有什么效率。其实坚持对于很多事都很有用，当它成为你的一个习惯了，你就会感觉原来坚持去做一件事其实也是一种快乐。有些事真的不是自己一下子就会喜欢去做的，当坚持久了，自己就感觉熟悉了、感觉习惯了，也许当有一天自己不再坚持了还会让自己感觉内心顿时空落落的了。</p><p>当我感觉自己写到了十万字我会感觉这是一种对于自己的突破，也许如果我坚持写到五十万字的时候，那可能我的写作境界也不只是提升了一个层次，每次突破自己的极限，其实就是给自己最好的成就感。要是自己一开始一个字都没有写就来谈什么写作方法和技巧，或者是去寻找什么样写作方法和技巧，这些其实都不过是徒劳的伤了自己的精力，因为从古至今所有方法、工具、技巧都不过是劳动人民在劳动过程中总结出来的，就如同学习数学一样，数学它是一种逻辑性很强的学科，不是光靠记公式就能过学得通的，好多公式是在纸上通过一步步推演而得出的，这其中的每一步都是环环相扣，而不可能存在凭空产生的东西，所有的事物的产生它都必须是有逻辑性的。</p><p>写作同样是这样，不经过自己的练习不可能一下子就写出一篇几千字的文章，就如太极一样，无极生太极，太极才能生两仪，两仪才能生四象，四象才能生八卦，古人认为的是这世间所有的一切都是由八卦组成的。写作虽然不能说像八卦推演所产生的那样，但是写作却也是从无到有的，是由一个个的文字所组成的，由一个个句子所构成的，都是从小再到大，这完全是符合自然规律的，所以说万事万物的发展无不是从小事开始，由数不清的小事组成的。写作就是这样，无论刚开始能写多少字都必须坚持去写，写得多了不断的突破了自己的极限，那自己的写作方法就已经是一种成功的方法了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 坚持 </tag>
+            
+            <tag> 简书 </tag>
+            
+            <tag> 日更计划 </tag>
+            
+            <tag> 没有放弃 </tag>
+            
+            <tag> 凌晨 </tag>
+            
+            <tag> 纸上谈兵 </tag>
+            
+            <tag> 感觉熟悉 </tag>
+            
+            <tag> 数学 </tag>
+            
+            <tag> 自然规律 </tag>
+            
+            <tag> 小事 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>清新唯美少女的梦与动人的诗集</title>
       <link href="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/37235d42/"/>
       <url>/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/37235d42/</url>
@@ -20474,49 +20517,6 @@
             <tag> 遥远 </tag>
             
             <tag> 青天空梦 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>满十万字了，又是一个值得纪念的里程</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/78c3b959/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/78c3b959/</url>
-      
-        <content type="html"><![CDATA[<p>在简书写作已经半年多的时间了，中间也是有个一段停顿，总之在没有参加日更计划之前写得也是停停顿顿的，虽然参加了日更曾经也有两次错过了日更发文的时间，用了日更卡，但是我还是始终坚持着没有放弃，坚持虽然本就不容易，但是放弃后再重新坚持就会感觉难上加难。</p><span id="more"></span><p>如果自己心里就有一个想要坚持下去的念想，那就不要轻易放弃，坚持每天写个几百字其实不是很难，难的就是要战胜自己不愿意的那种心理，人是动物有时候都想偷个懒，无论是谁都会有这个体验的，这也包括我，如果我每天早上起床就把一天要更新的文章写了，那也就不至于快要到凌晨了文章才写完，一看时间都已经零点十几分了，那就意味着那一天的日更计划是已经失败了。每日更新文章这种事真的得要赶早，有时真的是耽误不得，自己或许觉得时间在自己的眼前过的很慢，但是当自己去做其他事而把这件事忘记了，等到想起来要更文的时候一看时间就已经晚了。</p><p>对于日更这个事没有什么方法和技巧，坚持写就可以了，如果这都坚持不了那还谈什么提高自己写作能力，空口说白话都只能是在纸上谈兵，自己不去写、不去实践、不去刻意的练习，自己对于写作永远提高不了，自己隔的时间越久了，自己感觉就会生疏了。一次放弃到是很爽，只是要想重新来过又得从零开始，时间不是无限的，不是每一件事放弃了都可以重新从零开始，有些东西一旦放弃了就很难再去找到曾经自己熟悉的那种感觉。</p><p>有时候其实我不喜欢定下什么计划，其实如果对于写作和学习自己有个计划是真的很好的一件事，因为如果都按照自己的计划来每天都去坚持完成一点点，那就感觉真的很轻松，不要想着一口气就可以吃掉一个大胖子，那样不仅自己做得痛苦，也没有什么效率。其实坚持对于很多事都很有用，当它成为你的一个习惯了，你就会感觉原来坚持去做一件事其实也是一种快乐。有些事真的不是自己一下子就会喜欢去做的，当坚持久了，自己就感觉熟悉了、感觉习惯了，也许当有一天自己不再坚持了还会让自己感觉内心顿时空落落的了。</p><p>当我感觉自己写到了十万字我会感觉这是一种对于自己的突破，也许如果我坚持写到五十万字的时候，那可能我的写作境界也不只是提升了一个层次，每次突破自己的极限，其实就是给自己最好的成就感。要是自己一开始一个字都没有写就来谈什么写作方法和技巧，或者是去寻找什么样写作方法和技巧，这些其实都不过是徒劳的伤了自己的精力，因为从古至今所有方法、工具、技巧都不过是劳动人民在劳动过程中总结出来的，就如同学习数学一样，数学它是一种逻辑性很强的学科，不是光靠记公式就能过学得通的，好多公式是在纸上通过一步步推演而得出的，这其中的每一步都是环环相扣，而不可能存在凭空产生的东西，所有的事物的产生它都必须是有逻辑性的。</p><p>写作同样是这样，不经过自己的练习不可能一下子就写出一篇几千字的文章，就如太极一样，无极生太极，太极才能生两仪，两仪才能生四象，四象才能生八卦，古人认为的是这世间所有的一切都是由八卦组成的。写作虽然不能说像八卦推演所产生的那样，但是写作却也是从无到有的，是由一个个的文字所组成的，由一个个句子所构成的，都是从小再到大，这完全是符合自然规律的，所以说万事万物的发展无不是从小事开始，由数不清的小事组成的。写作就是这样，无论刚开始能写多少字都必须坚持去写，写得多了不断的突破了自己的极限，那自己的写作方法就已经是一种成功的方法了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 情感美文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 坚持 </tag>
-            
-            <tag> 简书 </tag>
-            
-            <tag> 日更计划 </tag>
-            
-            <tag> 没有放弃 </tag>
-            
-            <tag> 凌晨 </tag>
-            
-            <tag> 纸上谈兵 </tag>
-            
-            <tag> 感觉熟悉 </tag>
-            
-            <tag> 数学 </tag>
-            
-            <tag> 自然规律 </tag>
-            
-            <tag> 小事 </tag>
             
         </tags>
       
@@ -21138,57 +21138,6 @@
     
     
     <entry>
-      <title>电脑上可以免费看电影的软件</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3a21a683/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3a21a683/</url>
-      
-        <content type="html"><![CDATA[<p>这个软件其实很早就有了，上面的电影还是挺多的，除了清晰度最高只有蓝光之外没有其他缺点了，但是它不需要会员是完全免费的，以前是叫电影天堂，是微软应用商店的UWP软件。</p><span id="more"></span><p>后面不知道为什么被微软下架了，但是只要安装过的电脑没有卸载和重装都是有的，后面开发者又重新上架了，改名为Sky电影，在电脑上应用商店一搜就可以找到，安装完之后打开是看不到内容的，只看到一些上映的电影信息，要在查询那里输入sky三个字母，之后打开就是另外一个世界。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3a21a683/Sky%E7%94%B5%E5%BD%B1.jpg"></p><p>这个可以说是一个良心软件了，从电脑安装win10系统以来我就在用的了，有时候感觉在优酷充了会员看的电影都没有这个上面好看，只要不在乎没有4K高清度的可以用这个看，反正是不要会员，想看都可以随时看。</p><p>电影、电视剧、综艺、电视直播都是有的，用了这个想看电视不用安装其他软件都是可以的，有的电影在优爱腾这些平台没有的，上面也可以找到，看电影真的就要这种电影多的，想看什么就点什么，有一种上初中的时候去街上买CD光盘看电影的那种感觉，但是那时候有时花了两元钱看着封面可以，但是买回家放到影碟机里看了才知道很烂，这个软件就不一样了，感觉不好看就重新换一个就是了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 免费 </tag>
-            
-            <tag> 会员 </tag>
-            
-            <tag> 软件 </tag>
-            
-            <tag> 电视剧 </tag>
-            
-            <tag> 电视直播 </tag>
-            
-            <tag> 电脑上 </tag>
-            
-            <tag> 看电影 </tag>
-            
-            <tag> 优酷 </tag>
-            
-            <tag> 挺多 </tag>
-            
-            <tag> 清晰度 </tag>
-            
-            <tag> 蓝光 </tag>
-            
-            <tag> Sky电影 </tag>
-            
-            <tag> 电影天堂 </tag>
-            
-            <tag> 综艺 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>申请头条号的原创又失败了之后感想</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/c71331bd/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/c71331bd/</url>
@@ -21264,11 +21213,11 @@
     
     
     <entry>
-      <title>疫情又严重了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9772c3db/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9772c3db/</url>
+      <title>电脑上可以免费看电影的软件</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3a21a683/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3a21a683/</url>
       
-        <content type="html"><![CDATA[<p>新冠病毒也就是差不多去年这个时候爆发的，现在又开始复发了，最大原因还是因为元旦放假的原因吧，听说石家庄感染的56个人都是参加婚礼感染的，这源头应该有点难查出来了。</p><span id="more"></span><p>这个疫情好像一直都没有断过，只是天气热的时候传染率降低了，现在天气一冷病毒的存活几率就开始变高了，所以冬天还是最需要防止的，至少现在只是局部的，情况还是比去年好很多，因为只要局部不扩散，那全国也没有去年那么举国上下防控的地步。</p><p>现在虽然说已经有疫苗了，但是有效性还是需要待观察的，不是谁说打了疫苗去疫情高风险地区不用做个人防护都可以了，那样感染的机率还是非常大的，做好个人防护，常消毒，看来今还得一战呢。</p>]]></content>
+        <content type="html"><![CDATA[<p>这个软件其实很早就有了，上面的电影还是挺多的，除了清晰度最高只有蓝光之外没有其他缺点了，但是它不需要会员是完全免费的，以前是叫电影天堂，是微软应用商店的UWP软件。</p><span id="more"></span><p>后面不知道为什么被微软下架了，但是只要安装过的电脑没有卸载和重装都是有的，后面开发者又重新上架了，改名为Sky电影，在电脑上应用商店一搜就可以找到，安装完之后打开是看不到内容的，只看到一些上映的电影信息，要在查询那里输入sky三个字母，之后打开就是另外一个世界。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3a21a683/Sky%E7%94%B5%E5%BD%B1.jpg"></p><p>这个可以说是一个良心软件了，从电脑安装win10系统以来我就在用的了，有时候感觉在优酷充了会员看的电影都没有这个上面好看，只要不在乎没有4K高清度的可以用这个看，反正是不要会员，想看都可以随时看。</p><p>电影、电视剧、综艺、电视直播都是有的，用了这个想看电视不用安装其他软件都是可以的，有的电影在优爱腾这些平台没有的，上面也可以找到，看电影真的就要这种电影多的，想看什么就点什么，有一种上初中的时候去街上买CD光盘看电影的那种感觉，但是那时候有时花了两元钱看着封面可以，但是买回家放到影碟机里看了才知道很烂，这个软件就不一样了，感觉不好看就重新换一个就是了。</p>]]></content>
       
       
       <categories>
@@ -21280,19 +21229,33 @@
       
         <tags>
             
-            <tag> 新冠病毒 </tag>
+            <tag> 免费 </tag>
             
-            <tag> 元旦放假 </tag>
+            <tag> 会员 </tag>
             
-            <tag> 存活 </tag>
+            <tag> 软件 </tag>
             
-            <tag> 局部 </tag>
+            <tag> 电视剧 </tag>
             
-            <tag> 防控 </tag>
+            <tag> 电视直播 </tag>
             
-            <tag> 个人防护 </tag>
+            <tag> 电脑上 </tag>
             
-            <tag> 常消毒 </tag>
+            <tag> 看电影 </tag>
+            
+            <tag> 优酷 </tag>
+            
+            <tag> 挺多 </tag>
+            
+            <tag> 清晰度 </tag>
+            
+            <tag> 蓝光 </tag>
+            
+            <tag> Sky电影 </tag>
+            
+            <tag> 电影天堂 </tag>
+            
+            <tag> 综艺 </tag>
             
         </tags>
       
@@ -21319,11 +21282,11 @@
             
             <tag> 白发 </tag>
             
-            <tag> 漫夭 </tag>
+            <tag> 容乐 </tag>
             
             <tag> 宗政无忧 </tag>
             
-            <tag> 容乐 </tag>
+            <tag> 漫夭 </tag>
             
             <tag> 欲望 </tag>
             
@@ -21398,11 +21361,11 @@
     
     
     <entry>
-      <title>看书看到睡着</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/31a44ba7/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/31a44ba7/</url>
+      <title>疫情又严重了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9772c3db/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9772c3db/</url>
       
-        <content type="html"><![CDATA[<p>我不知道为什么老看纸质书就容易睡着，而拿手机看电子书就没有这种感觉。一般看着书几分钟眼睛就睁不开了，要睡一两分钟才会醒来，醒来才看了几行又这样睡着了。</p><span id="more"></span><p>这样反反复复的几次下来就像真的躺床上睡觉了，如果一睡估计又要睡到半夜去了，还好我记得简书上的每日一更的文章还没有写，要是真的去睡估计就忘了。</p><p>还好就是拿着手机写文章居然又没有那么困了，实在是太奇怪了，我都搞不懂这到底是为什么，也不知道为什么会这样，难道是看纸书眼睛会比较累吗。</p><p>还是大脑没有思考就容易困呢，反正就是拿着手机就很清醒了，是一点困意都没有了，还好是拿着手机不困了，不然写文章怕都是要睡着了。</p>]]></content>
+        <content type="html"><![CDATA[<p>新冠病毒也就是差不多去年这个时候爆发的，现在又开始复发了，最大原因还是因为元旦放假的原因吧，听说石家庄感染的56个人都是参加婚礼感染的，这源头应该有点难查出来了。</p><span id="more"></span><p>这个疫情好像一直都没有断过，只是天气热的时候传染率降低了，现在天气一冷病毒的存活几率就开始变高了，所以冬天还是最需要防止的，至少现在只是局部的，情况还是比去年好很多，因为只要局部不扩散，那全国也没有去年那么举国上下防控的地步。</p><p>现在虽然说已经有疫苗了，但是有效性还是需要待观察的，不是谁说打了疫苗去疫情高风险地区不用做个人防护都可以了，那样感染的机率还是非常大的，做好个人防护，常消毒，看来今还得一战呢。</p>]]></content>
       
       
       <categories>
@@ -21414,21 +21377,19 @@
       
         <tags>
             
-            <tag> 看书 </tag>
+            <tag> 新冠病毒 </tag>
             
-            <tag> 思考 </tag>
+            <tag> 元旦放假 </tag>
             
-            <tag> 睡着 </tag>
+            <tag> 存活 </tag>
             
-            <tag> 清醒 </tag>
+            <tag> 局部 </tag>
             
-            <tag> 纸质书 </tag>
+            <tag> 防控 </tag>
             
-            <tag> 电子书 </tag>
+            <tag> 个人防护 </tag>
             
-            <tag> 眼睛 </tag>
-            
-            <tag> 比较累 </tag>
+            <tag> 常消毒 </tag>
             
         </tags>
       
@@ -21518,6 +21479,45 @@
             <tag> 案例 </tag>
             
             <tag> 拆解 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>看书看到睡着</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/31a44ba7/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/31a44ba7/</url>
+      
+        <content type="html"><![CDATA[<p>我不知道为什么老看纸质书就容易睡着，而拿手机看电子书就没有这种感觉。一般看着书几分钟眼睛就睁不开了，要睡一两分钟才会醒来，醒来才看了几行又这样睡着了。</p><span id="more"></span><p>这样反反复复的几次下来就像真的躺床上睡觉了，如果一睡估计又要睡到半夜去了，还好我记得简书上的每日一更的文章还没有写，要是真的去睡估计就忘了。</p><p>还好就是拿着手机写文章居然又没有那么困了，实在是太奇怪了，我都搞不懂这到底是为什么，也不知道为什么会这样，难道是看纸书眼睛会比较累吗。</p><p>还是大脑没有思考就容易困呢，反正就是拿着手机就很清醒了，是一点困意都没有了，还好是拿着手机不困了，不然写文章怕都是要睡着了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 看书 </tag>
+            
+            <tag> 思考 </tag>
+            
+            <tag> 睡着 </tag>
+            
+            <tag> 清醒 </tag>
+            
+            <tag> 纸质书 </tag>
+            
+            <tag> 电子书 </tag>
+            
+            <tag> 眼睛 </tag>
+            
+            <tag> 比较累 </tag>
             
         </tags>
       
@@ -22050,53 +22050,6 @@
     
     
     <entry>
-      <title>紧急救援这部电影还不错</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/42d1fc57/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/42d1fc57/</url>
-      
-        <content type="html"><![CDATA[<p>这是今年我看过最好看的一部电影了，画面特效做得很到位，看的时候有一种惊心动魄的感觉，每一帧都感觉很刺激，看了前一秒就害怕下一秒会有大事发生的感觉。</p><span id="more"></span><p>电影虽然是去年的了，但是这是我第一次看，因为现在才可以在优酷上观看，剧情虽然有的地方感觉有点牵强，但是特效真的做得到位，特别是爆炸的瞬间，感觉就是自己身临现场一样感受到的是爆炸就发生在自己身边一样。</p><p>剧情也有感人的瞬间，但是有的片段感觉就有点多余，无由头的突然就出现那么一段，让人摸不透前因后果，前段剧情没有讲明这个事件的起因，中间来这么一段是上下都衔接不了。</p><p>总的来说就是特效做得很逼真，但是故事情节还是差点料子，故事情节的线条安排明朗一点，那样看起来会让人眼前更加的惊喜。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 惊喜 </tag>
-            
-            <tag> 特效 </tag>
-            
-            <tag> 电影 </tag>
-            
-            <tag> 优酷 </tag>
-            
-            <tag> 故事情节 </tag>
-            
-            <tag> 紧急救援 </tag>
-            
-            <tag> 惊心动魄 </tag>
-            
-            <tag> 每一帧 </tag>
-            
-            <tag> 大事发生 </tag>
-            
-            <tag> 爆炸 </tag>
-            
-            <tag> 逼真 </tag>
-            
-            <tag> 线条 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>米粉卡送了我半年的爱奇艺会员</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/463123e5/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/463123e5/</url>
@@ -22156,6 +22109,53 @@
             <tag> 云服务 </tag>
             
             <tag> 小米渠道 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>紧急救援这部电影还不错</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/42d1fc57/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/42d1fc57/</url>
+      
+        <content type="html"><![CDATA[<p>这是今年我看过最好看的一部电影了，画面特效做得很到位，看的时候有一种惊心动魄的感觉，每一帧都感觉很刺激，看了前一秒就害怕下一秒会有大事发生的感觉。</p><span id="more"></span><p>电影虽然是去年的了，但是这是我第一次看，因为现在才可以在优酷上观看，剧情虽然有的地方感觉有点牵强，但是特效真的做得到位，特别是爆炸的瞬间，感觉就是自己身临现场一样感受到的是爆炸就发生在自己身边一样。</p><p>剧情也有感人的瞬间，但是有的片段感觉就有点多余，无由头的突然就出现那么一段，让人摸不透前因后果，前段剧情没有讲明这个事件的起因，中间来这么一段是上下都衔接不了。</p><p>总的来说就是特效做得很逼真，但是故事情节还是差点料子，故事情节的线条安排明朗一点，那样看起来会让人眼前更加的惊喜。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 惊喜 </tag>
+            
+            <tag> 特效 </tag>
+            
+            <tag> 电影 </tag>
+            
+            <tag> 优酷 </tag>
+            
+            <tag> 故事情节 </tag>
+            
+            <tag> 紧急救援 </tag>
+            
+            <tag> 惊心动魄 </tag>
+            
+            <tag> 每一帧 </tag>
+            
+            <tag> 大事发生 </tag>
+            
+            <tag> 爆炸 </tag>
+            
+            <tag> 逼真 </tag>
+            
+            <tag> 线条 </tag>
             
         </tags>
       
@@ -22510,9 +22510,9 @@
             
             <tag> next主题 </tag>
             
-            <tag> gitee </tag>
-            
             <tag> CNZZ </tag>
+            
+            <tag> gitee </tag>
             
             <tag> 网站 </tag>
             
@@ -23500,104 +23500,6 @@
     
     
     <entry>
-      <title>读《围炉夜话》其九有感</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f84f140c/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f84f140c/</url>
-      
-        <content type="html"><![CDATA[<p>擅长维持生计的人家，长幼有不同的分工做事方法，年老的和年幼的就在家里维持家业，年轻的就可以去外面打拼，勤勤恳恳做好自己分内的工作，这样虽然不能使自己的家庭富裕，但是生活也自然可以过得安安稳稳。</p><span id="more"></span><p>生活有时候没有必要刻意去追求大富大贵，不是自己该得到的怎么去求也求不来，到头来还弄了一身的伤痕累累，倒不如安安稳稳只要能过得下去，那样又有何不可，安稳可以让自己过得舒心，比起整天去追求那些不属于自己能够得到的，要好了很多，比起整天活在担惊受怕之中，安稳生活是比什么都强。</p><p>善于处理事情的人，只看对错是否可行，制定规章制度也不是为了自己的一己之私。私人的事绝不能用公务的方法来解决，假公济私这样做损害他人的利益，同时对自己也没有好处。</p><p>人的私心不可能没有的，但是满足自己私利的同时我们不能去损害别人的利益，私人之间的事情就应该用私人之间的方法来解决，用公事的做法来打压私人的纠纷，那就真的是有一点过分了，这样做本身也是一件极不道德的事，会处理事情的人就是要做到公私分明，赏罚分明才行。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 围炉夜话 </tag>
-            
-            <tag> 维持生计 </tag>
-            
-            <tag> 年老 </tag>
-            
-            <tag> 年幼 </tag>
-            
-            <tag> 安安稳稳 </tag>
-            
-            <tag> 大富大贵 </tag>
-            
-            <tag> 伤痕累累 </tag>
-            
-            <tag> 假公济私 </tag>
-            
-            <tag> 公事 </tag>
-            
-            <tag> 赏罚分明 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>读《围炉夜话》其五有感</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e358563c/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e358563c/</url>
-      
-        <content type="html"><![CDATA[<p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e358563c/%E5%9B%B4%E7%82%89%E5%A4%9C%E8%AF%9D.jpg"></p><span id="more"></span><p>“处事要代人作想，读书须切己用功。”</p><p>为人处世要多站在他人的角度来思考问题，有很多时候自己想得认为是对的，但是站在他人的角度来看待同样的问题，却是有不一样的感受，很多问题都是需要转换思维，用不同的多个角度才能看得透。</p><p>看问题的角度不同所得出来的差异是很大的，自己很多认为自己做得对的事情，其实在他人看来和自己的想法却是天壤之别，看待问题不能只局限于自己的知识层面，要从多方面地去深刻了解之后，那样才能有发言权，也才能对一个问题作出客观的评价。</p><p>有时候说的很多话，自己说的时候虽然是没有什么感觉，但是说者无意听者有心，别人听了感受就不会像自己说得那样轻易的一笔带过，我们说出的每一句话都会经过别人思考和加工，别人的想法里得出来的结论肯定是和我们自己想的不一样了。</p><p>要想跳出我们自己的思维局限，我们还得要多多的去读书，只有书读得多了，那样思维才能更加开阔，看问题的方法也会更加的全面，读书自然是必须要用功才行的，书从简单的文字变成自己脑海里面的知识，要经过自己不断的去感受和领悟，领悟透了知识才会真正的属于自己，如果读了没有给自己带来一点感悟，那书籍还是只属于纸上的文字。</p><p>读书吸收知识的过程没有不辛苦就可以达到的，但是苦尽甘来，自己学得的知识和思维方式，却是真正属于自己的，装在自己的脑海里，别人拿不走，我们却可以享用它给我们带来的价值。</p><p>学习不一样的思维方式，最好的方法就是从书中去领悟，除此之外再无其他可以，他人口中说出来的言语，万不及书中的文字带给人真切，文字可以给人很多去想象的空间，不同的人读同一本书，所读之人所处的心境不一样，得出的结论也是不同的，同一本书，读出不同的世界。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 天壤之别 </tag>
-            
-            <tag> 感受 </tag>
-            
-            <tag> 思考问题 </tag>
-            
-            <tag> 开阔 </tag>
-            
-            <tag> 处事 </tag>
-            
-            <tag> 代人作想 </tag>
-            
-            <tag> 读书 </tag>
-            
-            <tag> 切己用功 </tag>
-            
-            <tag> 角度 </tag>
-            
-            <tag> 差异 </tag>
-            
-            <tag> 听者有心 </tag>
-            
-            <tag> 思维局限 </tag>
-            
-            <tag> 吸收知识 </tag>
-            
-            <tag> 脑海里 </tag>
-            
-            <tag> 言语 </tag>
-            
-            <tag> 同一本书 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>读《围炉夜话》其三有感</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a774ac4f/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a774ac4f/</url>
@@ -23641,6 +23543,49 @@
             <tag> 勤能补拙 </tag>
             
             <tag> 高明 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>读《围炉夜话》其九有感</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f84f140c/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f84f140c/</url>
+      
+        <content type="html"><![CDATA[<p>擅长维持生计的人家，长幼有不同的分工做事方法，年老的和年幼的就在家里维持家业，年轻的就可以去外面打拼，勤勤恳恳做好自己分内的工作，这样虽然不能使自己的家庭富裕，但是生活也自然可以过得安安稳稳。</p><span id="more"></span><p>生活有时候没有必要刻意去追求大富大贵，不是自己该得到的怎么去求也求不来，到头来还弄了一身的伤痕累累，倒不如安安稳稳只要能过得下去，那样又有何不可，安稳可以让自己过得舒心，比起整天去追求那些不属于自己能够得到的，要好了很多，比起整天活在担惊受怕之中，安稳生活是比什么都强。</p><p>善于处理事情的人，只看对错是否可行，制定规章制度也不是为了自己的一己之私。私人的事绝不能用公务的方法来解决，假公济私这样做损害他人的利益，同时对自己也没有好处。</p><p>人的私心不可能没有的，但是满足自己私利的同时我们不能去损害别人的利益，私人之间的事情就应该用私人之间的方法来解决，用公事的做法来打压私人的纠纷，那就真的是有一点过分了，这样做本身也是一件极不道德的事，会处理事情的人就是要做到公私分明，赏罚分明才行。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 围炉夜话 </tag>
+            
+            <tag> 维持生计 </tag>
+            
+            <tag> 年老 </tag>
+            
+            <tag> 年幼 </tag>
+            
+            <tag> 安安稳稳 </tag>
+            
+            <tag> 大富大贵 </tag>
+            
+            <tag> 伤痕累累 </tag>
+            
+            <tag> 假公济私 </tag>
+            
+            <tag> 公事 </tag>
+            
+            <tag> 赏罚分明 </tag>
             
         </tags>
       
@@ -23696,6 +23641,61 @@
             <tag> 透彻 </tag>
             
             <tag> 明明白白 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>读《围炉夜话》其五有感</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e358563c/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e358563c/</url>
+      
+        <content type="html"><![CDATA[<p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e358563c/%E5%9B%B4%E7%82%89%E5%A4%9C%E8%AF%9D.jpg"></p><span id="more"></span><p>“处事要代人作想，读书须切己用功。”</p><p>为人处世要多站在他人的角度来思考问题，有很多时候自己想得认为是对的，但是站在他人的角度来看待同样的问题，却是有不一样的感受，很多问题都是需要转换思维，用不同的多个角度才能看得透。</p><p>看问题的角度不同所得出来的差异是很大的，自己很多认为自己做得对的事情，其实在他人看来和自己的想法却是天壤之别，看待问题不能只局限于自己的知识层面，要从多方面地去深刻了解之后，那样才能有发言权，也才能对一个问题作出客观的评价。</p><p>有时候说的很多话，自己说的时候虽然是没有什么感觉，但是说者无意听者有心，别人听了感受就不会像自己说得那样轻易的一笔带过，我们说出的每一句话都会经过别人思考和加工，别人的想法里得出来的结论肯定是和我们自己想的不一样了。</p><p>要想跳出我们自己的思维局限，我们还得要多多的去读书，只有书读得多了，那样思维才能更加开阔，看问题的方法也会更加的全面，读书自然是必须要用功才行的，书从简单的文字变成自己脑海里面的知识，要经过自己不断的去感受和领悟，领悟透了知识才会真正的属于自己，如果读了没有给自己带来一点感悟，那书籍还是只属于纸上的文字。</p><p>读书吸收知识的过程没有不辛苦就可以达到的，但是苦尽甘来，自己学得的知识和思维方式，却是真正属于自己的，装在自己的脑海里，别人拿不走，我们却可以享用它给我们带来的价值。</p><p>学习不一样的思维方式，最好的方法就是从书中去领悟，除此之外再无其他可以，他人口中说出来的言语，万不及书中的文字带给人真切，文字可以给人很多去想象的空间，不同的人读同一本书，所读之人所处的心境不一样，得出的结论也是不同的，同一本书，读出不同的世界。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 天壤之别 </tag>
+            
+            <tag> 感受 </tag>
+            
+            <tag> 思考问题 </tag>
+            
+            <tag> 开阔 </tag>
+            
+            <tag> 处事 </tag>
+            
+            <tag> 代人作想 </tag>
+            
+            <tag> 读书 </tag>
+            
+            <tag> 切己用功 </tag>
+            
+            <tag> 角度 </tag>
+            
+            <tag> 差异 </tag>
+            
+            <tag> 听者有心 </tag>
+            
+            <tag> 思维局限 </tag>
+            
+            <tag> 吸收知识 </tag>
+            
+            <tag> 脑海里 </tag>
+            
+            <tag> 言语 </tag>
+            
+            <tag> 同一本书 </tag>
             
         </tags>
       
@@ -23898,49 +23898,6 @@
     
     
     <entry>
-      <title>读《阁楼里的女孩》</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e049a85/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e049a85/</url>
-      
-        <content type="html"><![CDATA[<p>《阁楼里的女孩》这本书由美国作家弗吉尼亚.安德鲁斯所写，故事发生于美国宾州格拉斯通的一个梦幻家庭，故事一开头展现出来的看似就是一个普通的美国中产阶级家庭，随着故事的发展却有着跌宕起伏的情节。</p><span id="more"></span><p>故事由卡西这个故事里的小女孩以亲身讲述自己的遭遇和不幸，卡西她父亲是通用电气公司的一名公关部门的职员，她母亲柯琳是一名家庭主妇。卡西她还有个哥哥，后来她妈妈又生下了一对龙凤双胞胎，所有加她一起就是四兄妹。因为她父亲有很高的收入，所以年少的她们看起来衣食无忧。</p><p>但是一场变故改变了这原有的一切，她父亲在33岁生日那天突然出车祸去世了，原本是一家人等着回来给他庆祝生日，可是等来却是警察带来他的死讯。喜事瞬间就变成了丧事，这个变故给了这个家庭不小的打击。</p><p>因为她母亲柯琳从小是出生在一个富裕的庄园主家庭里，所以私奔嫁给她父亲之后没有什么工作技能，更别说要她独自养活四个孩子，而且她家是提前消费的类型，房子和她父亲之前开的汽车都是每个月要还贷才可以维持的，包括家里所有家具都是贷款购买的，每个月如果没有还上就会被债主收回去。</p><p>因为现实的困难，她的母亲能想到的就是回到她外祖父家那里去。因为柯琳和卡西的父亲私奔结婚，她外祖父很生气，所以这个外祖父把柯琳的继承权给取消了。柯琳想要得到她父亲的原谅重新拿回继承权，而一切曲折的遭遇就是来到这个庄园之后开始展开。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 贷款 </tag>
-            
-            <tag> 收入 </tag>
-            
-            <tag> 女孩 </tag>
-            
-            <tag> 阁楼 </tag>
-            
-            <tag> 梦幻家庭 </tag>
-            
-            <tag> 死讯 </tag>
-            
-            <tag> 私奔 </tag>
-            
-            <tag> 庄园 </tag>
-            
-            <tag> 外祖父 </tag>
-            
-            <tag> 继承权 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>读《围炉夜话》其四有感</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/37b7505e/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/37b7505e/</url>
@@ -24045,6 +24002,49 @@
             <tag> 恶小 </tag>
             
             <tag> 不可逆 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>读《阁楼里的女孩》</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e049a85/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e049a85/</url>
+      
+        <content type="html"><![CDATA[<p>《阁楼里的女孩》这本书由美国作家弗吉尼亚.安德鲁斯所写，故事发生于美国宾州格拉斯通的一个梦幻家庭，故事一开头展现出来的看似就是一个普通的美国中产阶级家庭，随着故事的发展却有着跌宕起伏的情节。</p><span id="more"></span><p>故事由卡西这个故事里的小女孩以亲身讲述自己的遭遇和不幸，卡西她父亲是通用电气公司的一名公关部门的职员，她母亲柯琳是一名家庭主妇。卡西她还有个哥哥，后来她妈妈又生下了一对龙凤双胞胎，所有加她一起就是四兄妹。因为她父亲有很高的收入，所以年少的她们看起来衣食无忧。</p><p>但是一场变故改变了这原有的一切，她父亲在33岁生日那天突然出车祸去世了，原本是一家人等着回来给他庆祝生日，可是等来却是警察带来他的死讯。喜事瞬间就变成了丧事，这个变故给了这个家庭不小的打击。</p><p>因为她母亲柯琳从小是出生在一个富裕的庄园主家庭里，所以私奔嫁给她父亲之后没有什么工作技能，更别说要她独自养活四个孩子，而且她家是提前消费的类型，房子和她父亲之前开的汽车都是每个月要还贷才可以维持的，包括家里所有家具都是贷款购买的，每个月如果没有还上就会被债主收回去。</p><p>因为现实的困难，她的母亲能想到的就是回到她外祖父家那里去。因为柯琳和卡西的父亲私奔结婚，她外祖父很生气，所以这个外祖父把柯琳的继承权给取消了。柯琳想要得到她父亲的原谅重新拿回继承权，而一切曲折的遭遇就是来到这个庄园之后开始展开。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 贷款 </tag>
+            
+            <tag> 收入 </tag>
+            
+            <tag> 女孩 </tag>
+            
+            <tag> 阁楼 </tag>
+            
+            <tag> 梦幻家庭 </tag>
+            
+            <tag> 死讯 </tag>
+            
+            <tag> 私奔 </tag>
+            
+            <tag> 庄园 </tag>
+            
+            <tag> 外祖父 </tag>
+            
+            <tag> 继承权 </tag>
             
         </tags>
       
@@ -24627,43 +24627,6 @@
     
     
     <entry>
-      <title>重新安装的这个word版本没有以前那个好用了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e2ba885/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e2ba885/</url>
-      
-        <content type="html"><![CDATA[<p>这个界面我找了半天也没有找到专注模式，还有是界面不能设置成全黑模式了，就是中间编辑区这一块还是白色的了，比以前那个版本好一点的应该是不会出现乱码了，以前用的那个是一段时间界面就会出现乱码，直接要重启word才能看得清楚。</p><span id="more"></span><p>每个版本真的都有好用的地方和不好的地方，既然不能设置全黑也只能将就用着了，毕竟这个都已经是最新版本的了，总比那个2019增强版好用很多，那个是一打开就闪退，这个好点不会了。</p><p>现在用它来写文章也没有遇到特别不好的地方，就是界面不能设置成自己想要的这一点缺点了，另外这个好像也没有文字语音朗读功能了，之前那个版本的我每次写好文章都是会用这个功能朗读一遍，看看那些地方需要改进，这个是没有了，只能自己多看几遍了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 专注模式 </tag>
-            
-            <tag> 重新安装 </tag>
-            
-            <tag> word版本 </tag>
-            
-            <tag> 编辑区 </tag>
-            
-            <tag> 重启word </tag>
-            
-            <tag> 2019增强版 </tag>
-            
-            <tag> 语音朗读 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>重新买的ATX-DC转换板今天才开始发货</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/25f4847e/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/25f4847e/</url>
@@ -24705,6 +24668,43 @@
             <tag> 单独蓝牙 </tag>
             
             <tag> 有线 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>重新安装的这个word版本没有以前那个好用了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e2ba885/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4e2ba885/</url>
+      
+        <content type="html"><![CDATA[<p>这个界面我找了半天也没有找到专注模式，还有是界面不能设置成全黑模式了，就是中间编辑区这一块还是白色的了，比以前那个版本好一点的应该是不会出现乱码了，以前用的那个是一段时间界面就会出现乱码，直接要重启word才能看得清楚。</p><span id="more"></span><p>每个版本真的都有好用的地方和不好的地方，既然不能设置全黑也只能将就用着了，毕竟这个都已经是最新版本的了，总比那个2019增强版好用很多，那个是一打开就闪退，这个好点不会了。</p><p>现在用它来写文章也没有遇到特别不好的地方，就是界面不能设置成自己想要的这一点缺点了，另外这个好像也没有文字语音朗读功能了，之前那个版本的我每次写好文章都是会用这个功能朗读一遍，看看那些地方需要改进，这个是没有了，只能自己多看几遍了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 专注模式 </tag>
+            
+            <tag> 重新安装 </tag>
+            
+            <tag> word版本 </tag>
+            
+            <tag> 编辑区 </tag>
+            
+            <tag> 重启word </tag>
+            
+            <tag> 2019增强版 </tag>
+            
+            <tag> 语音朗读 </tag>
             
         </tags>
       
@@ -24883,6 +24883,47 @@
     
     
     <entry>
+      <title>题库的试题是终于做完了，明天要起早点来去考试了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e2cd592c/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e2cd592c/</url>
+      
+        <content type="html"><![CDATA[<p>今天没有什么事所以一下子就把最后的一套试题做完了，感觉今天做的这一套做得还可以，比前天做的那套正确率要高很多。</p><span id="more"></span><p>今天做的这套单选题只错了三个，多选也只错了两个，照这样的正确率考过应该是没有多大问题的，前面的选择题就可以拿三十多分，后面主观题随便拿个20多分也完全是可以的，反正我是感觉有信心能考过的。</p><p>明天不知道是骑车去考试还是坐公交车，公交车是太难等了，想着还是骑车去吧，骑车去回来的时候方便点，坐公交中午是没有回来的公交车，要走另一条线路太绕了，还要转一路公交车，实在是难等，骑电动车去就是放在外面怕被人偷，有保安在外面看着的应该没有事吧。</p><p>上次看着很多人也是骑电动车去的，上次去考一次是早上一次下午，早上那次回来的时候我坐公交车都坐睡着去。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 公交车 </tag>
+            
+            <tag> 题库 </tag>
+            
+            <tag> 做完 </tag>
+            
+            <tag> 试题 </tag>
+            
+            <tag> 去考试 </tag>
+            
+            <tag> 正确率 </tag>
+            
+            <tag> 有信心 </tag>
+            
+            <tag> 被人偷 </tag>
+            
+            <tag> 坐睡着 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>马上又要到元宵节了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c4e203d2/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c4e203d2/</url>
@@ -24918,47 +24959,6 @@
             <tag> 太甜 </tag>
             
             <tag> 酱油 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>题库的试题是终于做完了，明天要起早点来去考试了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e2cd592c/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e2cd592c/</url>
-      
-        <content type="html"><![CDATA[<p>今天没有什么事所以一下子就把最后的一套试题做完了，感觉今天做的这一套做得还可以，比前天做的那套正确率要高很多。</p><span id="more"></span><p>今天做的这套单选题只错了三个，多选也只错了两个，照这样的正确率考过应该是没有多大问题的，前面的选择题就可以拿三十多分，后面主观题随便拿个20多分也完全是可以的，反正我是感觉有信心能考过的。</p><p>明天不知道是骑车去考试还是坐公交车，公交车是太难等了，想着还是骑车去吧，骑车去回来的时候方便点，坐公交中午是没有回来的公交车，要走另一条线路太绕了，还要转一路公交车，实在是难等，骑电动车去就是放在外面怕被人偷，有保安在外面看着的应该没有事吧。</p><p>上次看着很多人也是骑电动车去的，上次去考一次是早上一次下午，早上那次回来的时候我坐公交车都坐睡着去。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 公交车 </tag>
-            
-            <tag> 题库 </tag>
-            
-            <tag> 做完 </tag>
-            
-            <tag> 试题 </tag>
-            
-            <tag> 去考试 </tag>
-            
-            <tag> 正确率 </tag>
-            
-            <tag> 有信心 </tag>
-            
-            <tag> 被人偷 </tag>
-            
-            <tag> 坐睡着 </tag>
             
         </tags>
       
