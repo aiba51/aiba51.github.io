@@ -4,6 +4,67 @@
   
     
     <entry>
+      <title>HMD-AOSP_Phoenix-13.0刷入谷歌服务</title>
+      <link href="/%E5%AE%89%E5%8D%93%E5%88%B7%E6%9C%BA/589c6f4b/"/>
+      <url>/%E5%AE%89%E5%8D%93%E5%88%B7%E6%9C%BA/589c6f4b/</url>
+      
+        <content type="html"><![CDATA[<p>刷了HMD-AOSP_Phoenix-13.0没有谷歌服务，可以刷先前的PixelExperience-13的boot.img，因为没有recovery分区，而recovery是包含在boot分区里面的，PixelExperience用的是自定义的recovery可以刷入.zip包，卡刷和adb sideload都可以。</p><span id="more"></span><ol><li>提前提取HMD-AOSP_Phoenix-13.0的boot.img。</li><li>提前下载BiTGApps。</li></ol><p>确保手机已经连上电脑adb。</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">adb devices</span></span><br></pre></td></tr></table></figure><p>重启到bootloader刷机模式</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">adb reboot bootloader</span></span><br></pre></td></tr></table></figure><p>刷入PixelExperience的boot.img</p><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fastboot flash <span class="keyword">boot</span> <span class="keyword">boot</span>.img</span><br></pre></td></tr></table></figure><p>不用开机直接进recovery，记住不用开机，开机系统就又坏了，直接命令进。</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">fastboot reboot recovery</span></span><br></pre></td></tr></table></figure><p>手机recovery里选择卡刷或者adb sideload。<br>这里还是不能开机，还需要刷入原来的HMD-AOSP_Phoenix-13.0的boot.img。</p><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fastboot flash <span class="keyword">boot</span> <span class="keyword">boot</span>.img</span><br></pre></td></tr></table></figure><p>如果有面具修补过的就刷修补过的boot.img。</p><p>重启进系统</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">fastboot reboot</span></span><br></pre></td></tr></table></figure><p>重启后发现有谷歌应用商店了，而且数据和root完好，这就是无损刷入谷歌服务。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 安卓刷机 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> HMD </tag>
+            
+            <tag> AOSP </tag>
+            
+            <tag> Phoenix-13 </tag>
+            
+            <tag> 谷歌服务 </tag>
+            
+            <tag> 安卓刷机 </tag>
+            
+            <tag> boot </tag>
+            
+            <tag> PixelExperience </tag>
+            
+            <tag> recovery </tag>
+            
+            <tag> adb </tag>
+            
+            <tag> sideload </tag>
+            
+            <tag> BiTGApps </tag>
+            
+            <tag> zip包 </tag>
+            
+            <tag> devices </tag>
+            
+            <tag> bootloader </tag>
+            
+            <tag> reboot </tag>
+            
+            <tag> fastboot </tag>
+            
+            <tag> flash </tag>
+            
+            <tag> 应用商店 </tag>
+            
+            <tag> root </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>互联网浪潮奔涌的三十年</title>
       <link href="/%E6%95%A3%E6%96%87/7df6ce16/"/>
       <url>/%E6%95%A3%E6%96%87/7df6ce16/</url>
@@ -218,11 +279,11 @@
       
         <tags>
             
+            <tag> root </tag>
+            
             <tag> 移动硬盘 </tag>
             
             <tag> 格式化 </tag>
-            
-            <tag> root </tag>
             
             <tag> 内存卡 </tag>
             
@@ -261,6 +322,14 @@
             
             <tag> Github </tag>
             
+            <tag> bootloader </tag>
+            
+            <tag> reboot </tag>
+            
+            <tag> fastboot </tag>
+            
+            <tag> root </tag>
+            
             <tag> MTK </tag>
             
             <tag> 阳华K8 </tag>
@@ -268,8 +337,6 @@
             <tag> 平板 </tag>
             
             <tag> 提取boot </tag>
-            
-            <tag> root </tag>
             
             <tag> mtkclient </tag>
             
@@ -281,17 +348,11 @@
             
             <tag> 音量上下键 </tag>
             
-            <tag> bootloader </tag>
-            
             <tag> 解锁 </tag>
             
             <tag> 恢复出厂设置 </tag>
             
             <tag> unlock </tag>
-            
-            <tag> fastboot </tag>
-            
-            <tag> reboot </tag>
             
             <tag> boot分区 </tag>
             
@@ -566,7 +627,7 @@
       <link href="/Termux/ad000d0/"/>
       <url>/Termux/ad000d0/</url>
       
-        <content type="html"><![CDATA[<h1 id="Termux-shell界面美化教程"><a href="#Termux-shell界面美化教程" class="headerlink" title="Termux shell界面美化教程"></a>Termux shell界面美化教程</h1><h2 id="1-颜色和字体美化"><a href="#1-颜色和字体美化" class="headerlink" title="1.颜色和字体美化"></a>1.颜色和字体美化</h2><p>该脚本主要使用了 zsh 来替代 bash 作为默认 shell，并且支持色彩和字体样式，同时也激活了外置存储，可以直接访问 SD 卡下的目录。主题默认为 agnoster，颜色样式默认为 Tango，字体默认为 Ubuntu。</p><span id="more"></span><h3 id="脚本克隆和安装"><a href="#脚本克隆和安装" class="headerlink" title="脚本克隆和安装"></a>脚本克隆和安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://gitee.com/aiba51/termux-install.git</span><br><span class="line"><span class="built_in">cd</span> termux-install</span><br><span class="line"><span class="built_in">chmod</span> +x termux-install.sh</span><br><span class="line">./termux-install.sh \n</span><br></pre></td></tr></table></figure><p>安装完成重启<code>termux</code>就可以了</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">exit</span></span><br></pre></td></tr></table></figure><h3 id="设置色彩样式："><a href="#设置色彩样式：" class="headerlink" title="设置色彩样式："></a>设置色彩样式：</h3><p>输入 <code>chcolor</code> 命令更换色彩样式，或者执行 <code>~/.termux/colors.sh</code> 命令</p><h3 id="设置字体"><a href="#设置字体" class="headerlink" title="设置字体:"></a>设置字体:</h3><p>运行 <code>chfont</code> 命令更换字体，或者执行 <code>~/.termux/fonts.sh</code> 命令</p><h2 id="2-zsh-主题配色"><a href="#2-zsh-主题配色" class="headerlink" title="2.zsh 主题配色"></a>2.zsh 主题配色</h2><p>编辑家目录下的.zshrc 配置文件</p><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim <span class="string">.zshrc</span></span><br></pre></td></tr></table></figure><p>第一行可以看到，默认的主题是 <code>agnoster</code> 主题。</p><p>在<code>.oh-my-zsh/themes</code> 目录下放着 <code>oh-my-zsh</code> 所有的主题配置文件，只要将默认的 <code>agnoster</code> 更换为其他的主题文件名即可。</p><p><code>random</code>主题每打开一个会话配色主题都是随机的。</p><h2 id="3-自动补全命令插件autosuggestions安装"><a href="#3-自动补全命令插件autosuggestions安装" class="headerlink" title="3.自动补全命令插件autosuggestions安装"></a>3.自动补全命令插件<code>autosuggestions</code>安装</h2><h3 id="拷贝到-plugins-目录下"><a href="#拷贝到-plugins-目录下" class="headerlink" title="拷贝到 plugins 目录下"></a>拷贝到 plugins 目录下</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:<span class="regexp">//gi</span>tee.com<span class="regexp">/aiba51/</span>zsh-autosuggestions.git <span class="variable">$ZSH_CUSTOM</span><span class="regexp">/plugins/</span>zsh-autosuggestions</span><br></pre></td></tr></table></figure><p>在 <code>~/.zshrc</code> 中配置：</p><figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">plugins</span><span class="operator">=</span>(git zsh-autosuggestions)</span><br></pre></td></tr></table></figure><p>输入 <code>zsh</code> 命令生效配置：</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">zsh</span></span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<h1 id="Termux-shell界面美化教程"><a href="#Termux-shell界面美化教程" class="headerlink" title="Termux shell界面美化教程"></a>Termux shell界面美化教程</h1><h2 id="1-颜色和字体美化"><a href="#1-颜色和字体美化" class="headerlink" title="1.颜色和字体美化"></a>1.颜色和字体美化</h2><p>该脚本主要使用了 zsh 来替代 bash 作为默认 shell，并且支持色彩和字体样式，同时也激活了外置存储，可以直接访问 SD 卡下的目录。主题默认为 agnoster，颜色样式默认为 Tango，字体默认为 Ubuntu。</p><span id="more"></span><h3 id="脚本克隆和安装"><a href="#脚本克隆和安装" class="headerlink" title="脚本克隆和安装"></a>脚本克隆和安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://gitee.com/aiba51/termux-install.git</span><br><span class="line"><span class="built_in">cd</span> termux-install</span><br><span class="line"><span class="built_in">chmod</span> +x termux-install.sh</span><br><span class="line">./termux-install.sh</span><br></pre></td></tr></table></figure><p>安装完成重启<code>termux</code>就可以了</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">exit</span></span><br></pre></td></tr></table></figure><h3 id="设置色彩样式："><a href="#设置色彩样式：" class="headerlink" title="设置色彩样式："></a>设置色彩样式：</h3><p>输入 <code>chcolor</code> 命令更换色彩样式，或者执行 <code>~/.termux/colors.sh</code> 命令</p><h3 id="设置字体"><a href="#设置字体" class="headerlink" title="设置字体:"></a>设置字体:</h3><p>运行 <code>chfont</code> 命令更换字体，或者执行 <code>~/.termux/fonts.sh</code> 命令</p><h2 id="2-zsh-主题配色"><a href="#2-zsh-主题配色" class="headerlink" title="2.zsh 主题配色"></a>2.zsh 主题配色</h2><p>编辑家目录下的.zshrc 配置文件</p><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim <span class="string">.zshrc</span></span><br></pre></td></tr></table></figure><p>第一行可以看到，默认的主题是 <code>agnoster</code> 主题。</p><p>在<code>.oh-my-zsh/themes</code> 目录下放着 <code>oh-my-zsh</code> 所有的主题配置文件，只要将默认的 <code>agnoster</code> 更换为其他的主题文件名即可。</p><p><code>random</code>主题每打开一个会话配色主题都是随机的。</p><h2 id="3-自动补全命令插件autosuggestions安装"><a href="#3-自动补全命令插件autosuggestions安装" class="headerlink" title="3.自动补全命令插件autosuggestions安装"></a>3.自动补全命令插件<code>autosuggestions</code>安装</h2><h3 id="拷贝到-plugins-目录下"><a href="#拷贝到-plugins-目录下" class="headerlink" title="拷贝到 plugins 目录下"></a>拷贝到 plugins 目录下</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:<span class="regexp">//gi</span>tee.com<span class="regexp">/aiba51/</span>zsh-autosuggestions.git <span class="variable">$ZSH_CUSTOM</span><span class="regexp">/plugins/</span>zsh-autosuggestions</span><br></pre></td></tr></table></figure><p>在 <code>~/.zshrc</code> 中配置：</p><figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">plugins</span><span class="operator">=</span>(git zsh-autosuggestions)</span><br></pre></td></tr></table></figure><p>输入 <code>zsh</code> 命令生效配置：</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">zsh</span></span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -1124,11 +1185,11 @@
             
             <tag> Git </tag>
             
-            <tag> 脚本 </tag>
-            
             <tag> shell </tag>
             
             <tag> bash </tag>
+            
+            <tag> 脚本 </tag>
             
             <tag> script </tag>
             
@@ -1196,11 +1257,11 @@
       
         <tags>
             
+            <tag> root </tag>
+            
             <tag> 用户名 </tag>
             
             <tag> 密码 </tag>
-            
-            <tag> root </tag>
             
             <tag> ubuntu </tag>
             
@@ -1917,9 +1978,9 @@
             
             <tag> 思想 </tag>
             
-            <tag> 看书 </tag>
-            
             <tag> 睡不着 </tag>
+            
+            <tag> 看书 </tag>
             
             <tag> 弱点 </tag>
             
@@ -3764,6 +3825,8 @@
       
         <tags>
             
+            <tag> 应用商店 </tag>
+            
             <tag> 电脑 </tag>
             
             <tag> 极光盒子 </tag>
@@ -3771,8 +3834,6 @@
             <tag> 无线投屏 </tag>
             
             <tag> 投屏器 </tag>
-            
-            <tag> 应用商店 </tag>
             
             <tag> 4K极清视频 </tag>
             
@@ -6785,8 +6846,6 @@
             
             <tag> 浏览器 </tag>
             
-            <tag> 刷牙洗脸 </tag>
-            
             <tag> 头痛老病 </tag>
             
             <tag> 珀金一 </tag>
@@ -6794,6 +6853,8 @@
             <tag> 青椒 </tag>
             
             <tag> 蚊香 </tag>
+            
+            <tag> 刷牙洗脸 </tag>
             
         </tags>
       
@@ -7774,9 +7835,9 @@
             
             <tag> 玩手机 </tag>
             
-            <tag> 凉水澡 </tag>
-            
             <tag> 刷牙洗脸 </tag>
+            
+            <tag> 凉水澡 </tag>
             
             <tag> 麻烦 </tag>
             
@@ -11432,53 +11493,6 @@
     
     
     <entry>
-      <title>《白发》全集终于看完了，虽然不是我要的结局但还算完美</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/404bf18a/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/404bf18a/</url>
-      
-        <content type="html"><![CDATA[<p>对于这部剧我是看了很久才看完，也许是更新太慢了所以才看那么久才看完，星期二到星期四每天更新两集，也就是说一个星期只更新六集，追了一个多月也才终于把它看完。</p><span id="more"></span><p>最后的结局相信很多人不用看都已经猜到了，容齐用自己的血为容乐解了天命之毒，容齐为了心爱之人用自己的生命成全了容乐的幸福，他对容乐的这份爱无私而伟大，容乐记起了一切曾经的过往，对容齐从前的恨意也烟消云散荡然无存。</p><p>容乐对容齐的爱及她对容齐的愧疚之情使她久久不愿离开西启。在西启守望已逝去的容齐五年之后，她终究又重新回到了她当年去和亲的地方，只是这一次她归来不再是和亲公主的身份，在城门外迎接她的不再是当年那个对她冷嘲热讽的陈王，而这次是宗政无忧。</p><p>不久之后，宗政无忧成了北临皇帝她自然地也成了北临皇后，她回想起以前的种种过往，在自己记忆中存在的那些人，她觉得自己是幸运的，从前的那些事，从前的那些人都已成为了过去，而当宗政无忧牵着她的手走向皇宫大殿的那一刻，她想的是永远和宗政无忧一直走下去。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 情感美文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 白发 </tag>
-            
-            <tag> 全集 </tag>
-            
-            <tag> 结局 </tag>
-            
-            <tag> 完美 </tag>
-            
-            <tag> 容齐 </tag>
-            
-            <tag> 容乐 </tag>
-            
-            <tag> 天命之毒 </tag>
-            
-            <tag> 烟消云散 </tag>
-            
-            <tag> 宗政无忧 </tag>
-            
-            <tag> 北临皇帝 </tag>
-            
-            <tag> 北临皇后 </tag>
-            
-            <tag> 皇宫大殿 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>《白发》中的启皇容齐才是漫夭的初恋</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/c34fd0/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/c34fd0/</url>
@@ -11499,10 +11513,6 @@
             
             <tag> 容齐 </tag>
             
-            <tag> 天命之毒 </tag>
-            
-            <tag> 宗政无忧 </tag>
-            
             <tag> 漫夭 </tag>
             
             <tag> 初恋 </tag>
@@ -11513,6 +11523,8 @@
             
             <tag> 秦漫 </tag>
             
+            <tag> 天命之毒 </tag>
+            
             <tag> 扶鸢 </tag>
             
             <tag> 林申 </tag>
@@ -11520,6 +11532,8 @@
             <tag> 宗政允赫 </tag>
             
             <tag> 傅筹 </tag>
+            
+            <tag> 宗政无忧 </tag>
             
             <tag> 云贵妃 </tag>
             
@@ -11540,6 +11554,53 @@
             <tag> 恩怨仇恨 </tag>
             
             <tag> 有缘无份 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>《白发》全集终于看完了，虽然不是我要的结局但还算完美</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/404bf18a/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/404bf18a/</url>
+      
+        <content type="html"><![CDATA[<p>对于这部剧我是看了很久才看完，也许是更新太慢了所以才看那么久才看完，星期二到星期四每天更新两集，也就是说一个星期只更新六集，追了一个多月也才终于把它看完。</p><span id="more"></span><p>最后的结局相信很多人不用看都已经猜到了，容齐用自己的血为容乐解了天命之毒，容齐为了心爱之人用自己的生命成全了容乐的幸福，他对容乐的这份爱无私而伟大，容乐记起了一切曾经的过往，对容齐从前的恨意也烟消云散荡然无存。</p><p>容乐对容齐的爱及她对容齐的愧疚之情使她久久不愿离开西启。在西启守望已逝去的容齐五年之后，她终究又重新回到了她当年去和亲的地方，只是这一次她归来不再是和亲公主的身份，在城门外迎接她的不再是当年那个对她冷嘲热讽的陈王，而这次是宗政无忧。</p><p>不久之后，宗政无忧成了北临皇帝她自然地也成了北临皇后，她回想起以前的种种过往，在自己记忆中存在的那些人，她觉得自己是幸运的，从前的那些事，从前的那些人都已成为了过去，而当宗政无忧牵着她的手走向皇宫大殿的那一刻，她想的是永远和宗政无忧一直走下去。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 白发 </tag>
+            
+            <tag> 容齐 </tag>
+            
+            <tag> 天命之毒 </tag>
+            
+            <tag> 宗政无忧 </tag>
+            
+            <tag> 全集 </tag>
+            
+            <tag> 结局 </tag>
+            
+            <tag> 完美 </tag>
+            
+            <tag> 容乐 </tag>
+            
+            <tag> 烟消云散 </tag>
+            
+            <tag> 北临皇帝 </tag>
+            
+            <tag> 北临皇后 </tag>
+            
+            <tag> 皇宫大殿 </tag>
             
         </tags>
       
@@ -11689,6 +11750,41 @@
     
     
     <entry>
+      <title>一年的最后一个月</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/12826749/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/12826749/</url>
+      
+        <content type="html"><![CDATA[<p>如今已经到了12月了，这一年又是这样被浪费掉了，过完这个月就到了2021年了，时间每到这时就觉得突然的变快了许多。</p><span id="more"></span><p>还记得春天的时候只觉得这一年才刚刚开始，如今已是12月，说快不快的这岁月一瞬之间就划了过去。</p><p>就如滑动一根火柴一样，来得瞬时去时也无影，好多年初的想法，也只是成了想法，只留在大脑里面的没有办法去实现的想法，也许是自己想得太过于简单，一年复一年不都是这样走过去了吗，已去的岁月之中从来也没有什么奇迹出现过。</p><p>感叹时光消逝得太快，又愿望未来不及于己，生活总是如此反复着交替着。年复一年日复一日，自己的想法总是的那么千奇百怪。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 一年 </tag>
+            
+            <tag> 最后 </tag>
+            
+            <tag> 变快了 </tag>
+            
+            <tag> 火柴 </tag>
+            
+            <tag> 生活 </tag>
+            
+            <tag> 想法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>一款免费的文件传输系统，青阳网络文件传输系统kiftd</title>
       <link href="/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/8750236c/"/>
       <url>/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/8750236c/</url>
@@ -11724,41 +11820,6 @@
             <tag> MP4 </tag>
             
             <tag> 手机内存空间 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>一年的最后一个月</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/12826749/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/12826749/</url>
-      
-        <content type="html"><![CDATA[<p>如今已经到了12月了，这一年又是这样被浪费掉了，过完这个月就到了2021年了，时间每到这时就觉得突然的变快了许多。</p><span id="more"></span><p>还记得春天的时候只觉得这一年才刚刚开始，如今已是12月，说快不快的这岁月一瞬之间就划了过去。</p><p>就如滑动一根火柴一样，来得瞬时去时也无影，好多年初的想法，也只是成了想法，只留在大脑里面的没有办法去实现的想法，也许是自己想得太过于简单，一年复一年不都是这样走过去了吗，已去的岁月之中从来也没有什么奇迹出现过。</p><p>感叹时光消逝得太快，又愿望未来不及于己，生活总是如此反复着交替着。年复一年日复一日，自己的想法总是的那么千奇百怪。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 一年 </tag>
-            
-            <tag> 最后 </tag>
-            
-            <tag> 变快了 </tag>
-            
-            <tag> 火柴 </tag>
-            
-            <tag> 生活 </tag>
-            
-            <tag> 想法 </tag>
             
         </tags>
       
@@ -12690,43 +12751,6 @@
     
     
     <entry>
-      <title>人力资源管理（一）一考通论述题</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8607dead/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8607dead/</url>
-      
-        <content type="html"><![CDATA[<h2 id="四、论述题"><a href="#四、论述题" class="headerlink" title="四、论述题"></a>四、论述题</h2><p><strong>1.(1P60)试述人力资源管理的发展趋势。</strong></p><p>答:</p><p>(1).人本管理成为人力资源管理的中心思想。</p><p>(2).人力资源管理全面参与组织战略管理过程。</p><p>(3).人力资源管理全球化。</p><p>(4).人力资源管理的重心为知识型员工的管理。</p><p>(5).人力资源管理的新职能是向员工提供客户化的人力资源产品与服务。</p><span id="more"></span><p><strong>2.(9P265)试述影响薪酬水平的宏观因素。</strong></p><p>答:</p><p>(1).劳动生产率水平。员工实际平均薪酬增幅要略低于劳动生产率增幅。</p><p>(2).积累消费水平。国民收人总量既定时,薪酬水平与消费水平成正比。</p><p>(3).政府政策法规调节。主要指财政政策、货币政策、最低工资规定等。</p><p>(4).劳动力市场供求状况。劳动力供大于求,薪酬水平下降;反之亦然。</p><p>(5).物价变动。货币薪酬水平既定,物价上涨会导致实际薪酬水平下降。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 发展趋势 </tag>
-            
-            <tag> 薪酬水平 </tag>
-            
-            <tag> 中心思想 </tag>
-            
-            <tag> 全球化 </tag>
-            
-            <tag> 知识型 </tag>
-            
-            <tag> 宏观因素 </tag>
-            
-            <tag> 劳动力 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>人力资源管理（一）一考通简答题2</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/db252803/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/db252803/</url>
@@ -12770,11 +12794,11 @@
     
     
     <entry>
-      <title>人力资源管理（一）自考通分析说明题1</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d850f6a5/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d850f6a5/</url>
+      <title>人力资源管理（一）一考通论述题</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8607dead/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8607dead/</url>
       
-        <content type="html"><![CDATA[<h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="五、分析说明题"><a href="#五、分析说明题" class="headerlink" title="五、分析说明题"></a>五、分析说明题</h2><p>37.背景资料：</p><p>美国最年轻的医学院——弗吉尼亚理工大学卡里赖恩医学院推行了全新的招生政策。引起热议的焦点是，卡里赖恩医学院并不是严格按照成绩、标准化考试分数，以及一场面试的表现对申请者进行评估，而是让他们参加9轮简短面试，“评估他们的反应速度和团队协作意愿”。该流程的专业名称叫M.M.I.，即多轮微型面试，《纽约时报》称之为“速配型招生”，即在9场8分钟的对话中，面试官会设置一个道德困境，要求申请者现场做出决定，甚至对医疗保健政策发表看法，其目的是考察申请者是怎样的人，而不是他们有多聪明。</p><span id="more"></span><p><strong>问题:<br>　　　根据自己所了解的面试的相关内容，对医学院的多轮微型面试提出自己的建议。(P163~166)</strong></p><p>答:</p><p>(1). 面试是主试者通过与应聘者直接交谈或者置应聘者于某种特定情景中进行观察。从而对其适应职位要求的某些能力、素质和资格条件进行测评的一种方法。</p><p>(2). 面试的步骤一般包括准备、接触、了解背景、询问有关工作问题。向应聘者提供某些信息、结束面试、面试评价等。</p><p>(3). 面试技巧:</p><p>  ①. 面试提问技巧，即面试者要清楚提问的目的，准备好提问提纲，尤其要采用他人能够理解的方式来提问，以避免理解困难。在提问时，一般须遵从先易后难、循序渐进的原则。另外，需注意提问的方式。</p><p>  ②. 面试评价技巧。面试结束时应给应聘者提问的机会，整理好面试记录表。需要注意的是，面试评价要从面试的目的出发，评价项目尽量数量化、可操作化。</p><p>(4). 提高面试效果的对策有:</p><p>  ①. 做好面试前的准备工作;</p><p>  ②. 紧紧围绕面试的目的提问;</p><p>  ③. 对每一个应试者一视同仁，如面试时间的长短和提问的难度应保持一致，不能前紧后松;</p><p>  ④. 营造和谐的气氛;</p><p>  ⑤. 保持良好的互动;</p><p>  ⑥. 防止先入为主;</p><p>  ⑦. 注意非语言行为;</p><p>  ⑧. 防止“与我相似”的心理因素;</p><p>  ⑨. 避免暗示;</p><p>  ⑩. 尽可能采用小组面试。</p>]]></content>
+        <content type="html"><![CDATA[<h2 id="四、论述题"><a href="#四、论述题" class="headerlink" title="四、论述题"></a>四、论述题</h2><p><strong>1.(1P60)试述人力资源管理的发展趋势。</strong></p><p>答:</p><p>(1).人本管理成为人力资源管理的中心思想。</p><p>(2).人力资源管理全面参与组织战略管理过程。</p><p>(3).人力资源管理全球化。</p><p>(4).人力资源管理的重心为知识型员工的管理。</p><p>(5).人力资源管理的新职能是向员工提供客户化的人力资源产品与服务。</p><span id="more"></span><p><strong>2.(9P265)试述影响薪酬水平的宏观因素。</strong></p><p>答:</p><p>(1).劳动生产率水平。员工实际平均薪酬增幅要略低于劳动生产率增幅。</p><p>(2).积累消费水平。国民收人总量既定时,薪酬水平与消费水平成正比。</p><p>(3).政府政策法规调节。主要指财政政策、货币政策、最低工资规定等。</p><p>(4).劳动力市场供求状况。劳动力供大于求,薪酬水平下降;反之亦然。</p><p>(5).物价变动。货币薪酬水平既定,物价上涨会导致实际薪酬水平下降。</p>]]></content>
       
       
       <categories>
@@ -12786,25 +12810,19 @@
       
         <tags>
             
-            <tag> 分析说明 </tag>
+            <tag> 发展趋势 </tag>
             
-            <tag> 微型面试 </tag>
+            <tag> 薪酬水平 </tag>
             
-            <tag> 面试者 </tag>
+            <tag> 中心思想 </tag>
             
-            <tag> 一视同仁 </tag>
+            <tag> 全球化 </tag>
             
-            <tag> 面试 </tag>
+            <tag> 知识型 </tag>
             
-            <tag> 准备工作 </tag>
+            <tag> 宏观因素 </tag>
             
-            <tag> 成绩 </tag>
-            
-            <tag> 焦点 </tag>
-            
-            <tag> 先入为主 </tag>
-            
-            <tag> 互动 </tag>
+            <tag> 劳动力 </tag>
             
         </tags>
       
@@ -12850,57 +12868,6 @@
             <tag> 原则 </tag>
             
             <tag> 心理因素 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>人力资源管理（一）自考通简答题1</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3bf0c43d/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3bf0c43d/</url>
-      
-        <content type="html"><![CDATA[<h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="三、简答题"><a href="#三、简答题" class="headerlink" title="三、简答题"></a>三、简答题</h2><p><strong>31.简述“社会人”假设理论的主要观点和管理措施。(P50~51)</strong></p><p>答:(1). 主要观点:</p><p>   ①. 人类工作的主要动机是社会需要而不是经济需要。</p><p>   ②. 现代工业机械化程度越高，分工越细，会使工作本身变得越单调、越枯燥。因此，人们只能从社会关系上去寻求意义。</p><p>   ③. 人受非正式组织的社会影响比受正式组织的经济诱惑影响更大。</p><p>   ④. 工作积极性取决于管理者对下属需求的满足程度。</p><span id="more"></span><p>  (2). 管理措施:</p><p>   ①. 管理人员在注重完成任务的同时，也要关注人,重视满足人的社会需要,培养员工的归属感。</p><p>   ②. 在实行奖励时，提倡集体奖励制度。</p><p>   ③. 重视非正式组织的作用。</p><p><strong>32.简述工作设计的原则。(P114)</strong></p><p>答:</p><p>  (1). 因事设岗原则。<br>  (2). 系统性原则。<br>  (3). 实用性原则。<br>  (4). 简单化原则。<br>  (5). 匹配原则。</p><p><strong>33.简述人力资源需求预测的具体步骤。(P129)</strong></p><p>答:人力资源需求预测分为现实人力资源需求预测、未来增加人力资源需求预测和未来流失人力资源需求预测,其具体步骤如下:</p><p>  (1). 根据工作分析的结果来确定工作职位编制和人员配置。</p><p>  (2). 进行人力资源盘点，统计出人员的数量(缺编、超编)和质量是否符合工作规范的要求。</p><p>  (3). 与部门管理者讨论上述统计结论，修正统计结论。</p><p>  (4). 确定统计结论为现实人力资源需求。</p><p>  (5). 统计预测期内退休的人员信息。</p><p>  (6). 根据历史数据对未来可能发生的离职情况进行预测。</p><p>  (7). 将上面两个步骤的统计和预测结果进行比较汇总，确定未来可能流失的人力资源。</p><p>  (8). 根据企业发展规划(如引进新产品)确定各部门的工作量。</p><p>  (9). 根据工作量的增长情况确定各部门还需要增加的工作及人员数量，并进行汇总统计。</p><p>  (10). 确定该统计结论为未来增加的人力资源需求。</p><p>  (11). 将现实人力资源需求、未来流失的人力资源需求和未来增加的人力资源需求进行汇总,可预测得到企业整体人力资源需求。</p><p><strong>34.简述人员招募的过程。(P150)</strong></p><p>答:人员招募包括三个步骤:</p><p>  (1). 制定招募计划。</p><p>  (2). 实施招募计划。</p><p>  (3). 招募效果评估。</p><p><strong>35.简述职业生涯早期员工的心理特征。(P300)</strong></p><p>答: </p><p>  (1). 进取心强，具有积极向上、争强好胜的心态。</p><p>  (2). 职业竞争力不断增强，具有做出一番轰轰烈烈事业的心理准备。</p><p>  (3). 开始组建家庭，逐步学习调适家庭和工作的关系。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 人员招募 </tag>
-            
-            <tag> 需求 </tag>
-            
-            <tag> 职业生涯 </tag>
-            
-            <tag> 人力资源 </tag>
-            
-            <tag> “社会人”假设 </tag>
-            
-            <tag> 工作设计 </tag>
-            
-            <tag> 预测 </tag>
-            
-            <tag> 过程 </tag>
-            
-            <tag> 早期 </tag>
-            
-            <tag> 管理措施 </tag>
-            
-            <tag> 观点 </tag>
-            
-            <tag> 实用性 </tag>
-            
-            <tag> 效果评估 </tag>
-            
-            <tag> 匹配原则 </tag>
             
         </tags>
       
@@ -12997,6 +12964,100 @@
             <tag> 思维方式 </tag>
             
             <tag> 显著特征 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>人力资源管理（一）自考通分析说明题1</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d850f6a5/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d850f6a5/</url>
+      
+        <content type="html"><![CDATA[<h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="五、分析说明题"><a href="#五、分析说明题" class="headerlink" title="五、分析说明题"></a>五、分析说明题</h2><p>37.背景资料：</p><p>美国最年轻的医学院——弗吉尼亚理工大学卡里赖恩医学院推行了全新的招生政策。引起热议的焦点是，卡里赖恩医学院并不是严格按照成绩、标准化考试分数，以及一场面试的表现对申请者进行评估，而是让他们参加9轮简短面试，“评估他们的反应速度和团队协作意愿”。该流程的专业名称叫M.M.I.，即多轮微型面试，《纽约时报》称之为“速配型招生”，即在9场8分钟的对话中，面试官会设置一个道德困境，要求申请者现场做出决定，甚至对医疗保健政策发表看法，其目的是考察申请者是怎样的人，而不是他们有多聪明。</p><span id="more"></span><p><strong>问题:<br>　　　根据自己所了解的面试的相关内容，对医学院的多轮微型面试提出自己的建议。(P163~166)</strong></p><p>答:</p><p>(1). 面试是主试者通过与应聘者直接交谈或者置应聘者于某种特定情景中进行观察。从而对其适应职位要求的某些能力、素质和资格条件进行测评的一种方法。</p><p>(2). 面试的步骤一般包括准备、接触、了解背景、询问有关工作问题。向应聘者提供某些信息、结束面试、面试评价等。</p><p>(3). 面试技巧:</p><p>  ①. 面试提问技巧，即面试者要清楚提问的目的，准备好提问提纲，尤其要采用他人能够理解的方式来提问，以避免理解困难。在提问时，一般须遵从先易后难、循序渐进的原则。另外，需注意提问的方式。</p><p>  ②. 面试评价技巧。面试结束时应给应聘者提问的机会，整理好面试记录表。需要注意的是，面试评价要从面试的目的出发，评价项目尽量数量化、可操作化。</p><p>(4). 提高面试效果的对策有:</p><p>  ①. 做好面试前的准备工作;</p><p>  ②. 紧紧围绕面试的目的提问;</p><p>  ③. 对每一个应试者一视同仁，如面试时间的长短和提问的难度应保持一致，不能前紧后松;</p><p>  ④. 营造和谐的气氛;</p><p>  ⑤. 保持良好的互动;</p><p>  ⑥. 防止先入为主;</p><p>  ⑦. 注意非语言行为;</p><p>  ⑧. 防止“与我相似”的心理因素;</p><p>  ⑨. 避免暗示;</p><p>  ⑩. 尽可能采用小组面试。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 分析说明 </tag>
+            
+            <tag> 微型面试 </tag>
+            
+            <tag> 面试者 </tag>
+            
+            <tag> 一视同仁 </tag>
+            
+            <tag> 面试 </tag>
+            
+            <tag> 准备工作 </tag>
+            
+            <tag> 成绩 </tag>
+            
+            <tag> 焦点 </tag>
+            
+            <tag> 先入为主 </tag>
+            
+            <tag> 互动 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>人力资源管理（一）自考通简答题1</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3bf0c43d/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3bf0c43d/</url>
+      
+        <content type="html"><![CDATA[<h1 id="全真模拟演练（一）"><a href="#全真模拟演练（一）" class="headerlink" title="全真模拟演练（一）"></a>全真模拟演练（一）</h1><h2 id="三、简答题"><a href="#三、简答题" class="headerlink" title="三、简答题"></a>三、简答题</h2><p><strong>31.简述“社会人”假设理论的主要观点和管理措施。(P50~51)</strong></p><p>答:(1). 主要观点:</p><p>   ①. 人类工作的主要动机是社会需要而不是经济需要。</p><p>   ②. 现代工业机械化程度越高，分工越细，会使工作本身变得越单调、越枯燥。因此，人们只能从社会关系上去寻求意义。</p><p>   ③. 人受非正式组织的社会影响比受正式组织的经济诱惑影响更大。</p><p>   ④. 工作积极性取决于管理者对下属需求的满足程度。</p><span id="more"></span><p>  (2). 管理措施:</p><p>   ①. 管理人员在注重完成任务的同时，也要关注人,重视满足人的社会需要,培养员工的归属感。</p><p>   ②. 在实行奖励时，提倡集体奖励制度。</p><p>   ③. 重视非正式组织的作用。</p><p><strong>32.简述工作设计的原则。(P114)</strong></p><p>答:</p><p>  (1). 因事设岗原则。<br>  (2). 系统性原则。<br>  (3). 实用性原则。<br>  (4). 简单化原则。<br>  (5). 匹配原则。</p><p><strong>33.简述人力资源需求预测的具体步骤。(P129)</strong></p><p>答:人力资源需求预测分为现实人力资源需求预测、未来增加人力资源需求预测和未来流失人力资源需求预测,其具体步骤如下:</p><p>  (1). 根据工作分析的结果来确定工作职位编制和人员配置。</p><p>  (2). 进行人力资源盘点，统计出人员的数量(缺编、超编)和质量是否符合工作规范的要求。</p><p>  (3). 与部门管理者讨论上述统计结论，修正统计结论。</p><p>  (4). 确定统计结论为现实人力资源需求。</p><p>  (5). 统计预测期内退休的人员信息。</p><p>  (6). 根据历史数据对未来可能发生的离职情况进行预测。</p><p>  (7). 将上面两个步骤的统计和预测结果进行比较汇总，确定未来可能流失的人力资源。</p><p>  (8). 根据企业发展规划(如引进新产品)确定各部门的工作量。</p><p>  (9). 根据工作量的增长情况确定各部门还需要增加的工作及人员数量，并进行汇总统计。</p><p>  (10). 确定该统计结论为未来增加的人力资源需求。</p><p>  (11). 将现实人力资源需求、未来流失的人力资源需求和未来增加的人力资源需求进行汇总,可预测得到企业整体人力资源需求。</p><p><strong>34.简述人员招募的过程。(P150)</strong></p><p>答:人员招募包括三个步骤:</p><p>  (1). 制定招募计划。</p><p>  (2). 实施招募计划。</p><p>  (3). 招募效果评估。</p><p><strong>35.简述职业生涯早期员工的心理特征。(P300)</strong></p><p>答: </p><p>  (1). 进取心强，具有积极向上、争强好胜的心态。</p><p>  (2). 职业竞争力不断增强，具有做出一番轰轰烈烈事业的心理准备。</p><p>  (3). 开始组建家庭，逐步学习调适家庭和工作的关系。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 人员招募 </tag>
+            
+            <tag> 需求 </tag>
+            
+            <tag> 职业生涯 </tag>
+            
+            <tag> 人力资源 </tag>
+            
+            <tag> “社会人”假设 </tag>
+            
+            <tag> 工作设计 </tag>
+            
+            <tag> 预测 </tag>
+            
+            <tag> 过程 </tag>
+            
+            <tag> 早期 </tag>
+            
+            <tag> 管理措施 </tag>
+            
+            <tag> 观点 </tag>
+            
+            <tag> 实用性 </tag>
+            
+            <tag> 效果评估 </tag>
+            
+            <tag> 匹配原则 </tag>
             
         </tags>
       
@@ -13285,6 +13346,41 @@
     
     
     <entry>
+      <title>今天去玩了，外面风景很不错</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/70ef1bc2/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/70ef1bc2/</url>
+      
+        <content type="html"><![CDATA[<p>早上吃了点饺子就出去了，等公交车大概等了半个小时，然后是转了三路公交车才到的这个景点。</p><span id="more"></span><p>这个景点虽然不是什么很有名的景点，但是有座山，也算是珠海最高的山了吧，登山感觉还是挺不错的。</p><p>山上可以看到珠海香洲城区的全部，有一览众山小的感觉，能看到整个城区的全貌。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 公交车 </tag>
+            
+            <tag> 风景 </tag>
+            
+            <tag> 珠海 </tag>
+            
+            <tag> 早上 </tag>
+            
+            <tag> 饺子 </tag>
+            
+            <tag> 城区 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>今天厂里面盘点，放假休息，我又坐公交回去基地</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8cd7043f/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8cd7043f/</url>
@@ -13326,41 +13422,6 @@
             <tag> 被雨淋 </tag>
             
             <tag> 宿舍鞋子 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>今天去玩了，外面风景很不错</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/70ef1bc2/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/70ef1bc2/</url>
-      
-        <content type="html"><![CDATA[<p>早上吃了点饺子就出去了，等公交车大概等了半个小时，然后是转了三路公交车才到的这个景点。</p><span id="more"></span><p>这个景点虽然不是什么很有名的景点，但是有座山，也算是珠海最高的山了吧，登山感觉还是挺不错的。</p><p>山上可以看到珠海香洲城区的全部，有一览众山小的感觉，能看到整个城区的全貌。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 公交车 </tag>
-            
-            <tag> 风景 </tag>
-            
-            <tag> 珠海 </tag>
-            
-            <tag> 早上 </tag>
-            
-            <tag> 饺子 </tag>
-            
-            <tag> 城区 </tag>
             
         </tags>
       
@@ -13689,6 +13750,51 @@
     
     
     <entry>
+      <title>今天是终于完成昨天的目标了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/7f07775c/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/7f07775c/</url>
+      
+        <content type="html"><![CDATA[<p>由于昨天和今天这两章的内容比较少一点，所以完成了昨天留下的，今天也还另外做了一章新的题，这一科总共就10章题，现在已经完成6章了，是已经完成了一半了。</p><span id="more"></span><p>距离考试还有八天的时间，在考试之前把所有题做完是有可能的了，就是没有多余的时间来复习了，这本题库最后面还有4套历年的考试真题，可能真的要一天做两套才能在考试之前完成。</p><p>能不能考过是另外一回事，但是题一定是要做完的，像上次一样的是买的两本试题都没有做完，但是幸好还是过了，所以这次我就没有买试题了，因为买了根本没有时间做，这次的时间也是赶得挺紧的，总之一切都是为了考试的时候轻松一点。</p><p>如果一点题都不做考试的时候就是一脸的懵，根据我这么多次考试的经验来看，考试的题都是我买的这本题库上的，所以能记住点还是有好处的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 经验 </tag>
+            
+            <tag> 内容 </tag>
+            
+            <tag> 考试 </tag>
+            
+            <tag> 今天 </tag>
+            
+            <tag> 终于 </tag>
+            
+            <tag> 昨天 </tag>
+            
+            <tag> 目标 </tag>
+            
+            <tag> 题库 </tag>
+            
+            <tag> 复习 </tag>
+            
+            <tag> 考试真题 </tag>
+            
+            <tag> 赶得挺紧 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>今天是除夕，去菜场买菜去晚了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dd80ab00/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dd80ab00/</url>
@@ -13728,11 +13834,11 @@
     
     
     <entry>
-      <title>今天是终于完成昨天的目标了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/7f07775c/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/7f07775c/</url>
+      <title>今天更新不了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1bd3ffdf/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1bd3ffdf/</url>
       
-        <content type="html"><![CDATA[<p>由于昨天和今天这两章的内容比较少一点，所以完成了昨天留下的，今天也还另外做了一章新的题，这一科总共就10章题，现在已经完成6章了，是已经完成了一半了。</p><span id="more"></span><p>距离考试还有八天的时间，在考试之前把所有题做完是有可能的了，就是没有多余的时间来复习了，这本题库最后面还有4套历年的考试真题，可能真的要一天做两套才能在考试之前完成。</p><p>能不能考过是另外一回事，但是题一定是要做完的，像上次一样的是买的两本试题都没有做完，但是幸好还是过了，所以这次我就没有买试题了，因为买了根本没有时间做，这次的时间也是赶得挺紧的，总之一切都是为了考试的时候轻松一点。</p><p>如果一点题都不做考试的时候就是一脸的懵，根据我这么多次考试的经验来看，考试的题都是我买的这本题库上的，所以能记住点还是有好处的。</p>]]></content>
+        <content type="html"><![CDATA[<p>断更了，忘记写了，都快睡着了，拿起手机才知道今天还没有写，唉也是无法了。事一多就容易忘记了，没有事的时候也没有记得写。</p><span id="more"></span><p>等记得的时候都快忘了，也不知道写什么了，只能随便写写了，每天都记得的今天就突然忘了，记性不好了，只能随便写写了。</p>]]></content>
       
       
       <categories>
@@ -13744,27 +13850,21 @@
       
         <tags>
             
-            <tag> 经验 </tag>
+            <tag> 更新 </tag>
             
-            <tag> 内容 </tag>
+            <tag> 容易忘记 </tag>
             
             <tag> 今天 </tag>
             
-            <tag> 考试 </tag>
+            <tag> 断更 </tag>
             
-            <tag> 终于 </tag>
+            <tag> 睡着了 </tag>
             
-            <tag> 昨天 </tag>
+            <tag> 没有写 </tag>
             
-            <tag> 目标 </tag>
+            <tag> 随便写写 </tag>
             
-            <tag> 题库 </tag>
-            
-            <tag> 复习 </tag>
-            
-            <tag> 考试真题 </tag>
-            
-            <tag> 赶得挺紧 </tag>
+            <tag> 记性不好 </tag>
             
         </tags>
       
@@ -13806,45 +13906,6 @@
             <tag> 随遇而安 </tag>
             
             <tag> 一种乐趣 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>今天更新不了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1bd3ffdf/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1bd3ffdf/</url>
-      
-        <content type="html"><![CDATA[<p>断更了，忘记写了，都快睡着了，拿起手机才知道今天还没有写，唉也是无法了。事一多就容易忘记了，没有事的时候也没有记得写。</p><span id="more"></span><p>等记得的时候都快忘了，也不知道写什么了，只能随便写写了，每天都记得的今天就突然忘了，记性不好了，只能随便写写了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 更新 </tag>
-            
-            <tag> 容易忘记 </tag>
-            
-            <tag> 今天 </tag>
-            
-            <tag> 断更 </tag>
-            
-            <tag> 睡着了 </tag>
-            
-            <tag> 没有写 </tag>
-            
-            <tag> 随便写写 </tag>
-            
-            <tag> 记性不好 </tag>
             
         </tags>
       
@@ -14968,6 +15029,47 @@
     
     
     <entry>
+      <title>利用Hexo和Github搭建属于自己完全免费的网站</title>
+      <link href="/Hexo/a5fd999c/"/>
+      <url>/Hexo/a5fd999c/</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、先在电脑本地实现"><a href="#一、先在电脑本地实现" class="headerlink" title="一、先在电脑本地实现"></a>一、先在电脑本地实现</h1><p>安装Hexo之前需要下载安装：<br>• <a href="http://nodejs.org/" target="_blank" rel="noopener nofollow"><strong>Node.js</strong></a><br>• <a href="http://git-scm.com/" target="_blank" rel="noopener nofollow"><strong>Git</strong></a></p><p>如果您的电脑中已经安装上述必备程序，那么恭喜您！接下来只需要在Git Bash中使用 npm 即可完成 Hexo 的安装。</p><span id="more"></span><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-<span class="keyword">cli</span></span><br></pre></td></tr></table></figure><p>如果没有安装这是<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener nofollow"><strong>Hexo</strong></a>的官网安装教程，这两个程序安装很简单，就不多说了。</p><h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-<span class="keyword">cli</span></span><br></pre></td></tr></table></figure><p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。我这里在D盘新建blog夹。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">hexo init /d/blog</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cd</span> /d/blog</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm install</span></span><br></pre></td></tr></table></figure><h2 id="本地调试"><a href="#本地调试" class="headerlink" title="本地调试"></a>本地调试</h2><p>目前为止，已经搭建好自己的Hexo博客了，但是只能在本机上查看。执行以下命令</p><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo clean</span><br><span class="line"><span class="variable">$ </span>hexo g </span><br><span class="line"><span class="variable">$ </span>hexo s</span><br></pre></td></tr></table></figure><p>然后在浏览器中输入 localhost:4000 就可以看到自己的博客了。</p><p>但是只能在本地查看，如果想让别人也能访问，那么就需要部署到Github上面，下面我们就部署上去。</p><h1 id="二、上传Github"><a href="#二、上传Github" class="headerlink" title="二、上传Github"></a>二、上传Github</h1><p>注册<a href="https://github.com/" target="_blank" rel="noopener nofollow"><strong>Github</strong></a>账户</p><p>前往Github网站，注册一个新用户。注意用户名不要用大写，后面的二级域名要用到，大写的会出问题，用邮箱注册的一定前往邮箱去验证邮件。要不然之后可能会有小问题。</p><h2 id="创建一个新的repository"><a href="#创建一个新的repository" class="headerlink" title="创建一个新的repository"></a>创建一个新的repository</h2><p>在自己的Github主页右下角,创建一个新的repository。比如我的Github用户名为gitzhaoyang，那么我创建的repository的名字应该是 gitzhaoyang.github.io</p><p><strong>这里严重注意:</strong></p><p>一定要以你的Github用户名.github.io创建，创建的类型是必须公开的，不然后面的网页功能不能使用。假如我没有用gitzhaoyang.github.io而是用了mungo.github.io，那么当我浏览器访问博客的时候会出现404错误。这里并不是没有部署成功，而是把它部署在了这里:</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http:<span class="regexp">//gi</span>tzhaoyang.github.io/mungo.github.io</span><br></pre></td></tr></table></figure><p>所以，如果想直接gitzhaoyang.github.io访问，那么就需要和用户名保持一致。题主在这里吃了不小的苦头，最后给Github客服发邮件才知道原因。</p><h2 id="将本地的文件部署（上传）到Github账户中"><a href="#将本地的文件部署（上传）到Github账户中" class="headerlink" title="将本地的文件部署（上传）到Github账户中"></a>将本地的文件部署（上传）到Github账户中</h2><p>安装 hexo-deployer-git。</p><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git <span class="comment">--save</span></span><br></pre></td></tr></table></figure><p>编辑本地Hexo目录下文件_comfig.yml，在最后添加如下代码（在你修改时，把 gitzhaoyang 要替换成你自己的用户名）</p><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">deploy:</span> </span><br><span class="line"><span class="symbol">type:</span> git </span><br><span class="line"><span class="symbol">repository:</span> http:<span class="comment">//github.com/Gitzhaoyang/gitzhaoyang.github.io.git </span></span><br><span class="line"><span class="symbol">branch:</span> master</span><br></pre></td></tr></table></figure><p>.yml文件对格式规范要求很严格，type: repository: branch: 前面有两个空格，冒号后面都有一个空格，不然会提示错误。</p><p>配置文件完成以后就可以部署到Github了</p><p>生成站点文件并推送至远程库。执行</p><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean <span class="meta">&amp;&amp; hexo deploy</span></span><br></pre></td></tr></table></figure><p>命令。前者清除站点文件，后者重新生成站点文件并将之推送到指定的库分支。</p><p>上传完成后就可以通过gitzhaoyang.github.io看到自己的网站了。</p><h1 id="三、申请免费域名"><a href="#三、申请免费域名" class="headerlink" title="三、申请免费域名"></a>三、申请免费域名</h1><p>免费的域名可以到<a href="https://my.freenom.com/" target="_blank" rel="noopener nofollow"><strong>freenom</strong></a>这个网站去注册，注册也是很简单的，先用自己的邮箱注册这个网站，然后再选择自己想要的域名就可以了，这个网站有很多后缀的域名是可以免费使用一年的，比如我的用的是<a href="https://airibi.cf/" target="_blank" rel="noopener"><strong>airibi.cf</strong></a>就是可以直接使用一年的。</p><h1 id="四、域名解析"><a href="#四、域名解析" class="headerlink" title="四、域名解析"></a>四、域名解析</h1><p>域名注册好了以后可以通过<a href="https://www.dnspod.cn/" target="_blank" rel="noopener nofollow"><strong>dnspod</strong></a>这个网站来解析到自己GitHub的网站上，这个网站是属于腾讯的云服务，所以直接用QQ登录就可以了，进入后台以后点击域名解析，再点击添加域名然后里面就会出现两条默认的NS记录，将这两条默认的NS记录复制到刚刚注册域名的<a href="https://my.freenom.com/" target="_blank" rel="noopener nofollow"><strong>freenom</strong></a>这个网站的域名管理那里，找到自己的域名，在解析那里选择DNS记录，把复制过来的两条NS记录添加到这里,刚申请的域名就和这个DNS解析网站连在一起了。</p><p>Ping出你Github网站的二级域名的IP地址，一定要用你ping出的IP地址，因为原来的二级域名就是支持https的，用其他的IP地址可能会解析错误或者用不了https。</p><p>Ping出二级域名的IP地址后在<a href="https://www.dnspod.cn/" target="_blank" rel="noopener nofollow"><strong>dnspod</strong></a>这个网站上添加两条A记录，一条是带www的一条是不带的，记录值都是你ping出来的IP地址，以后想要通过网站SEO验证比如谷歌站长平台，也同样可以在这里添加TXT记录就可以。</p><p>解析完成后，在Github你的仓库后台添加你的域名，如果强制使用https那里还不能打勾，那就需要在等几分钟，说明解析还没有完成，解析完成后那里就可以打勾强制使用https了，并且是带有证书的，到这里域名解析完成可以用你的域名来访问你的网站了。</p><h1 id="五、添加CNAME文件"><a href="#五、添加CNAME文件" class="headerlink" title="五、添加CNAME文件"></a>五、添加CNAME文件</h1><p>在本地网站目录source文件夹里添加CNAME文件，这个CNAME文件在你添加域名的时候就会自动添加到你Github的网站根目录里，但是为方便可以把它克隆或者下载下来放到source文件夹里，或者自己在这个文件下自己创建这个文件，里面放上你的域名也是可以的，这样做每次更新网站，这个文件就不会被覆盖了，也不用每次添加域名就能访问了。</p><p>到这里免费的网站就已经搭建完成了，后面就是安装主题和修改配置文件了，这里的内容很细也很分散，我有机会再写另外的一篇。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Github </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 网站 </tag>
+            
+            <tag> 搭建 </tag>
+            
+            <tag> 完全免费 </tag>
+            
+            <tag> 上传 </tag>
+            
+            <tag> 免费域名 </tag>
+            
+            <tag> 域名解析 </tag>
+            
+            <tag> CNAME文件 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>刚上线的一部古装剧《长安十二时辰》，我看了五分钟就睡着了</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/5dc8afdf/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/5dc8afdf/</url>
@@ -15021,47 +15123,6 @@
             <tag> 感染力 </tag>
             
             <tag> 烂剧 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>利用Hexo和Github搭建属于自己完全免费的网站</title>
-      <link href="/Hexo/a5fd999c/"/>
-      <url>/Hexo/a5fd999c/</url>
-      
-        <content type="html"><![CDATA[<h1 id="一、先在电脑本地实现"><a href="#一、先在电脑本地实现" class="headerlink" title="一、先在电脑本地实现"></a>一、先在电脑本地实现</h1><p>安装Hexo之前需要下载安装：<br>• <a href="http://nodejs.org/" target="_blank" rel="noopener nofollow"><strong>Node.js</strong></a><br>• <a href="http://git-scm.com/" target="_blank" rel="noopener nofollow"><strong>Git</strong></a></p><p>如果您的电脑中已经安装上述必备程序，那么恭喜您！接下来只需要在Git Bash中使用 npm 即可完成 Hexo 的安装。</p><span id="more"></span><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-<span class="keyword">cli</span></span><br></pre></td></tr></table></figure><p>如果没有安装这是<a href="https://hexo.io/zh-cn/docs/" target="_blank" rel="noopener nofollow"><strong>Hexo</strong></a>的官网安装教程，这两个程序安装很简单，就不多说了。</p><h2 id="安装-Hexo"><a href="#安装-Hexo" class="headerlink" title="安装 Hexo"></a>安装 Hexo</h2><p>所有必备的应用程序安装完成后，即可使用 npm 安装 Hexo。</p><figure class="highlight avrasm"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-<span class="keyword">cli</span></span><br></pre></td></tr></table></figure><p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。我这里在D盘新建blog夹。</p><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">hexo init /d/blog</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash"><span class="built_in">cd</span> /d/blog</span></span><br><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm install</span></span><br></pre></td></tr></table></figure><h2 id="本地调试"><a href="#本地调试" class="headerlink" title="本地调试"></a>本地调试</h2><p>目前为止，已经搭建好自己的Hexo博客了，但是只能在本机上查看。执行以下命令</p><figure class="highlight crystal"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>hexo clean</span><br><span class="line"><span class="variable">$ </span>hexo g </span><br><span class="line"><span class="variable">$ </span>hexo s</span><br></pre></td></tr></table></figure><p>然后在浏览器中输入 localhost:4000 就可以看到自己的博客了。</p><p>但是只能在本地查看，如果想让别人也能访问，那么就需要部署到Github上面，下面我们就部署上去。</p><h1 id="二、上传Github"><a href="#二、上传Github" class="headerlink" title="二、上传Github"></a>二、上传Github</h1><p>注册<a href="https://github.com/" target="_blank" rel="noopener nofollow"><strong>Github</strong></a>账户</p><p>前往Github网站，注册一个新用户。注意用户名不要用大写，后面的二级域名要用到，大写的会出问题，用邮箱注册的一定前往邮箱去验证邮件。要不然之后可能会有小问题。</p><h2 id="创建一个新的repository"><a href="#创建一个新的repository" class="headerlink" title="创建一个新的repository"></a>创建一个新的repository</h2><p>在自己的Github主页右下角,创建一个新的repository。比如我的Github用户名为gitzhaoyang，那么我创建的repository的名字应该是 gitzhaoyang.github.io</p><p><strong>这里严重注意:</strong></p><p>一定要以你的Github用户名.github.io创建，创建的类型是必须公开的，不然后面的网页功能不能使用。假如我没有用gitzhaoyang.github.io而是用了mungo.github.io，那么当我浏览器访问博客的时候会出现404错误。这里并不是没有部署成功，而是把它部署在了这里:</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http:<span class="regexp">//gi</span>tzhaoyang.github.io/mungo.github.io</span><br></pre></td></tr></table></figure><p>所以，如果想直接gitzhaoyang.github.io访问，那么就需要和用户名保持一致。题主在这里吃了不小的苦头，最后给Github客服发邮件才知道原因。</p><h2 id="将本地的文件部署（上传）到Github账户中"><a href="#将本地的文件部署（上传）到Github账户中" class="headerlink" title="将本地的文件部署（上传）到Github账户中"></a>将本地的文件部署（上传）到Github账户中</h2><p>安装 hexo-deployer-git。</p><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-deployer-git <span class="comment">--save</span></span><br></pre></td></tr></table></figure><p>编辑本地Hexo目录下文件_comfig.yml，在最后添加如下代码（在你修改时，把 gitzhaoyang 要替换成你自己的用户名）</p><figure class="highlight dts"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">deploy:</span> </span><br><span class="line"><span class="symbol">type:</span> git </span><br><span class="line"><span class="symbol">repository:</span> http:<span class="comment">//github.com/Gitzhaoyang/gitzhaoyang.github.io.git </span></span><br><span class="line"><span class="symbol">branch:</span> master</span><br></pre></td></tr></table></figure><p>.yml文件对格式规范要求很严格，type: repository: branch: 前面有两个空格，冒号后面都有一个空格，不然会提示错误。</p><p>配置文件完成以后就可以部署到Github了</p><p>生成站点文件并推送至远程库。执行</p><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean <span class="meta">&amp;&amp; hexo deploy</span></span><br></pre></td></tr></table></figure><p>命令。前者清除站点文件，后者重新生成站点文件并将之推送到指定的库分支。</p><p>上传完成后就可以通过gitzhaoyang.github.io看到自己的网站了。</p><h1 id="三、申请免费域名"><a href="#三、申请免费域名" class="headerlink" title="三、申请免费域名"></a>三、申请免费域名</h1><p>免费的域名可以到<a href="https://my.freenom.com/" target="_blank" rel="noopener nofollow"><strong>freenom</strong></a>这个网站去注册，注册也是很简单的，先用自己的邮箱注册这个网站，然后再选择自己想要的域名就可以了，这个网站有很多后缀的域名是可以免费使用一年的，比如我的用的是<a href="https://airibi.cf/" target="_blank" rel="noopener"><strong>airibi.cf</strong></a>就是可以直接使用一年的。</p><h1 id="四、域名解析"><a href="#四、域名解析" class="headerlink" title="四、域名解析"></a>四、域名解析</h1><p>域名注册好了以后可以通过<a href="https://www.dnspod.cn/" target="_blank" rel="noopener nofollow"><strong>dnspod</strong></a>这个网站来解析到自己GitHub的网站上，这个网站是属于腾讯的云服务，所以直接用QQ登录就可以了，进入后台以后点击域名解析，再点击添加域名然后里面就会出现两条默认的NS记录，将这两条默认的NS记录复制到刚刚注册域名的<a href="https://my.freenom.com/" target="_blank" rel="noopener nofollow"><strong>freenom</strong></a>这个网站的域名管理那里，找到自己的域名，在解析那里选择DNS记录，把复制过来的两条NS记录添加到这里,刚申请的域名就和这个DNS解析网站连在一起了。</p><p>Ping出你Github网站的二级域名的IP地址，一定要用你ping出的IP地址，因为原来的二级域名就是支持https的，用其他的IP地址可能会解析错误或者用不了https。</p><p>Ping出二级域名的IP地址后在<a href="https://www.dnspod.cn/" target="_blank" rel="noopener nofollow"><strong>dnspod</strong></a>这个网站上添加两条A记录，一条是带www的一条是不带的，记录值都是你ping出来的IP地址，以后想要通过网站SEO验证比如谷歌站长平台，也同样可以在这里添加TXT记录就可以。</p><p>解析完成后，在Github你的仓库后台添加你的域名，如果强制使用https那里还不能打勾，那就需要在等几分钟，说明解析还没有完成，解析完成后那里就可以打勾强制使用https了，并且是带有证书的，到这里域名解析完成可以用你的域名来访问你的网站了。</p><h1 id="五、添加CNAME文件"><a href="#五、添加CNAME文件" class="headerlink" title="五、添加CNAME文件"></a>五、添加CNAME文件</h1><p>在本地网站目录source文件夹里添加CNAME文件，这个CNAME文件在你添加域名的时候就会自动添加到你Github的网站根目录里，但是为方便可以把它克隆或者下载下来放到source文件夹里，或者自己在这个文件下自己创建这个文件，里面放上你的域名也是可以的，这样做每次更新网站，这个文件就不会被覆盖了，也不用每次添加域名就能访问了。</p><p>到这里免费的网站就已经搭建完成了，后面就是安装主题和修改配置文件了，这里的内容很细也很分散，我有机会再写另外的一篇。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Github </tag>
-            
-            <tag> Hexo </tag>
-            
-            <tag> 网站 </tag>
-            
-            <tag> 搭建 </tag>
-            
-            <tag> 完全免费 </tag>
-            
-            <tag> 上传 </tag>
-            
-            <tag> 免费域名 </tag>
-            
-            <tag> 域名解析 </tag>
-            
-            <tag> CNAME文件 </tag>
             
         </tags>
       
@@ -16044,55 +16105,6 @@
     
     
     <entry>
-      <title>在电脑上免费安装Office2021</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6ea82b0e/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6ea82b0e/</url>
-      
-        <content type="html"><![CDATA[<p>现在的Office办公软件已经更新到2021版本了，而在没有安装这个版本之前我还用着Office2016，连2019都没有用上，而我安装这个版本是失败了几次才安装上的，之前安装过2019版本，但是尝试过几次之后都以失败告终了，这次安装2021虽然是失败过几次，但是最终还是安装成功了。</p><span id="more"></span><p>不得不说这个版本和2016真的是有很大的不同了，最明显的就是全黑模式支持了，我用的Word以前是虽然可以调成成黑色的，但是只有边框可以是黑色的，这次这个版本是可以全黑，连编辑文字这里也是全黑了，这个是真的很爽了，在上面写文章很久也不会感觉眼睛累了。</p><p>经过我的一番修改现在的word就是最好的用来码字的工具了，之前一直都安装失败最主要的就是没有把旧版的卸载后清除激活信息，导致重新安装新版的还是会自动激活成以前的版本的，但是自从我用了Office Tool Plus这个工具以后就不一样了，用这个刚开始我也是不会用，所以才安装失败了几次才成功。</p><p>第一次是用这个安装了Office2021结果一激活还是变成2016了真的是一夜回到解放前的那种感觉，还有一次是把之前的安装的密钥也卸载了，但是却不知道怎么激活，在网上找了别人的密钥来激活，激活后发现是2019版本，而我安装的是2021，激活那里就有一个提示升级，但是点击升级又升级不了，感觉也是很无法了，最后又是重新卸载了。</p><p>卸载后又再一次重新部署安装，这次才算是真的安装成功了，而激活的方法也是很简单，就是直接安装许可证书就可以了，这次才真的让我感觉到了一丝的惊喜，什么密钥激活那些根本就不需要，只要用这个工具安装了许可证书就是自动激活的了，这最新版本用着就是舒服。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 安装 </tag>
-            
-            <tag> Office2021 </tag>
-            
-            <tag> 免费 </tag>
-            
-            <tag> 电脑上 </tag>
-            
-            <tag> office2016 </tag>
-            
-            <tag> 办公软件 </tag>
-            
-            <tag> 安装成功 </tag>
-            
-            <tag> 黑色 </tag>
-            
-            <tag> 卸载后 </tag>
-            
-            <tag> 激活信息 </tag>
-            
-            <tag> 密钥激活 </tag>
-            
-            <tag> 提示升级 </tag>
-            
-            <tag> 许可证书 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>在电脑上用安卓模拟器玩游戏，居然也不卡</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8946f069/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8946f069/</url>
@@ -16138,6 +16150,55 @@
             <tag> 狂野飙车9 </tag>
             
             <tag> 王者荣耀 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>在电脑上免费安装Office2021</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6ea82b0e/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6ea82b0e/</url>
+      
+        <content type="html"><![CDATA[<p>现在的Office办公软件已经更新到2021版本了，而在没有安装这个版本之前我还用着Office2016，连2019都没有用上，而我安装这个版本是失败了几次才安装上的，之前安装过2019版本，但是尝试过几次之后都以失败告终了，这次安装2021虽然是失败过几次，但是最终还是安装成功了。</p><span id="more"></span><p>不得不说这个版本和2016真的是有很大的不同了，最明显的就是全黑模式支持了，我用的Word以前是虽然可以调成成黑色的，但是只有边框可以是黑色的，这次这个版本是可以全黑，连编辑文字这里也是全黑了，这个是真的很爽了，在上面写文章很久也不会感觉眼睛累了。</p><p>经过我的一番修改现在的word就是最好的用来码字的工具了，之前一直都安装失败最主要的就是没有把旧版的卸载后清除激活信息，导致重新安装新版的还是会自动激活成以前的版本的，但是自从我用了Office Tool Plus这个工具以后就不一样了，用这个刚开始我也是不会用，所以才安装失败了几次才成功。</p><p>第一次是用这个安装了Office2021结果一激活还是变成2016了真的是一夜回到解放前的那种感觉，还有一次是把之前的安装的密钥也卸载了，但是却不知道怎么激活，在网上找了别人的密钥来激活，激活后发现是2019版本，而我安装的是2021，激活那里就有一个提示升级，但是点击升级又升级不了，感觉也是很无法了，最后又是重新卸载了。</p><p>卸载后又再一次重新部署安装，这次才算是真的安装成功了，而激活的方法也是很简单，就是直接安装许可证书就可以了，这次才真的让我感觉到了一丝的惊喜，什么密钥激活那些根本就不需要，只要用这个工具安装了许可证书就是自动激活的了，这最新版本用着就是舒服。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 安装 </tag>
+            
+            <tag> Office2021 </tag>
+            
+            <tag> 免费 </tag>
+            
+            <tag> 电脑上 </tag>
+            
+            <tag> office2016 </tag>
+            
+            <tag> 办公软件 </tag>
+            
+            <tag> 安装成功 </tag>
+            
+            <tag> 黑色 </tag>
+            
+            <tag> 卸载后 </tag>
+            
+            <tag> 激活信息 </tag>
+            
+            <tag> 密钥激活 </tag>
+            
+            <tag> 提示升级 </tag>
+            
+            <tag> 许可证书 </tag>
             
         </tags>
       
@@ -16356,57 +16417,6 @@
     
     
     <entry>
-      <title>坚持每天都写就是一种好的写作方法</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/a6429f26/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/a6429f26/</url>
-      
-        <content type="html"><![CDATA[<p>这世上的事只要坚持去做了都会变得简单很多，有些事本不是很难但是只有少数人成功了，别人为什么能够成功呢，那是因为人家坚持了，而很多人没有坚持下去就中途败退下来了。</p><span id="more"></span><p>当把每天的坚持当成一个习惯的时候其实就是在向着成功的目标靠近了一点点了，所以说对于写作这事来说只有坚持才能够成功，不坚持每天都写，想要写得很好就真的很难了。</p><p>只要每天都坚持更新一篇文章，那只要能坚持下来都已经是一件难得的事了，有些事真的靠的就是坚持才能成功，当自己写文章想了半天还写不出来的时候，就要在自己的身上找一找原因了，自己为什么写不出来了，是自己很笨吗？其实这些都不是，而真正的原因是自己没有认真的坚持去做一件事。</p><p>好多事其实只要坚持了就算不成功也会有一种成就感了，因为自己去坚持过了，重视过程比重视结果会好很多。人生在世有时候真的不要那么的重视结果，如果一味的重视结果那人活在这个世上就真的一点意义都没有了，因为生老病死是人类怎么也逃不掉的结果。每个人都会死，这就是人的最终结果，但是没有人会去真正的在乎人的这个结果。人活着其实都只是在享受这个过程，至于结果都是痛苦的，没有多少人愿意去想的。</p><p>坚持其实就是人在生活着的过程中去享受这个过程，写作就是这样的坚持就是一个享受乐趣的过程，就像玩游戏一样明知道游戏也会有结束的时候，那为什么很多人还愿意去玩呢，其实就是因为享受这个过程，因为享受过程可以让人觉得快乐，其实也就这么简单的一个道理。</p><p>坚持每天都写一篇文章，我想是没有不会坚持的人，只有不愿意去坚持的人，坚持其实也是种乐趣的，这种乐趣只有坚持过的人才懂得，没有坚持下来的人看不到别人看见的风景，以五十步笑百步的人那更是不可取。</p><p>因为坚持了，这才会懂得坚持的意义和快乐，而这快乐有过努力的过程，自然就会让自己感到无上的成就感在里面，所以每个人只要坚持了，都会自然的得到这难得的快乐。</p><p>坚持每天都写就是一种在满足自我的精神世界，当自己一直坚持就不会有那种失落感，一旦自己放弃了失落感就会随之而来，让自己措手不及，所以不要放弃，对于写作这东西只要坚持写就对了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 情感美文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 坚持 </tag>
-            
-            <tag> 乐趣 </tag>
-            
-            <tag> 成功 </tag>
-            
-            <tag> 痛苦 </tag>
-            
-            <tag> 写作方法 </tag>
-            
-            <tag> 简单 </tag>
-            
-            <tag> 每天都写 </tag>
-            
-            <tag> 中途败退 </tag>
-            
-            <tag> 坚持去做 </tag>
-            
-            <tag> 逃不掉 </tag>
-            
-            <tag> 享受过程 </tag>
-            
-            <tag> 快乐 </tag>
-            
-            <tag> 放弃 </tag>
-            
-            <tag> 失落感 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>墨茶走了，他却是我们自己最真实的一面</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1d3ff104/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1d3ff104/</url>
@@ -16555,6 +16565,57 @@
             <tag> 朵朵小花 </tag>
             
             <tag> 一缕幽香 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>坚持每天都写就是一种好的写作方法</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/a6429f26/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/a6429f26/</url>
+      
+        <content type="html"><![CDATA[<p>这世上的事只要坚持去做了都会变得简单很多，有些事本不是很难但是只有少数人成功了，别人为什么能够成功呢，那是因为人家坚持了，而很多人没有坚持下去就中途败退下来了。</p><span id="more"></span><p>当把每天的坚持当成一个习惯的时候其实就是在向着成功的目标靠近了一点点了，所以说对于写作这事来说只有坚持才能够成功，不坚持每天都写，想要写得很好就真的很难了。</p><p>只要每天都坚持更新一篇文章，那只要能坚持下来都已经是一件难得的事了，有些事真的靠的就是坚持才能成功，当自己写文章想了半天还写不出来的时候，就要在自己的身上找一找原因了，自己为什么写不出来了，是自己很笨吗？其实这些都不是，而真正的原因是自己没有认真的坚持去做一件事。</p><p>好多事其实只要坚持了就算不成功也会有一种成就感了，因为自己去坚持过了，重视过程比重视结果会好很多。人生在世有时候真的不要那么的重视结果，如果一味的重视结果那人活在这个世上就真的一点意义都没有了，因为生老病死是人类怎么也逃不掉的结果。每个人都会死，这就是人的最终结果，但是没有人会去真正的在乎人的这个结果。人活着其实都只是在享受这个过程，至于结果都是痛苦的，没有多少人愿意去想的。</p><p>坚持其实就是人在生活着的过程中去享受这个过程，写作就是这样的坚持就是一个享受乐趣的过程，就像玩游戏一样明知道游戏也会有结束的时候，那为什么很多人还愿意去玩呢，其实就是因为享受这个过程，因为享受过程可以让人觉得快乐，其实也就这么简单的一个道理。</p><p>坚持每天都写一篇文章，我想是没有不会坚持的人，只有不愿意去坚持的人，坚持其实也是种乐趣的，这种乐趣只有坚持过的人才懂得，没有坚持下来的人看不到别人看见的风景，以五十步笑百步的人那更是不可取。</p><p>因为坚持了，这才会懂得坚持的意义和快乐，而这快乐有过努力的过程，自然就会让自己感到无上的成就感在里面，所以每个人只要坚持了，都会自然的得到这难得的快乐。</p><p>坚持每天都写就是一种在满足自我的精神世界，当自己一直坚持就不会有那种失落感，一旦自己放弃了失落感就会随之而来，让自己措手不及，所以不要放弃，对于写作这东西只要坚持写就对了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 坚持 </tag>
+            
+            <tag> 乐趣 </tag>
+            
+            <tag> 成功 </tag>
+            
+            <tag> 痛苦 </tag>
+            
+            <tag> 写作方法 </tag>
+            
+            <tag> 简单 </tag>
+            
+            <tag> 每天都写 </tag>
+            
+            <tag> 中途败退 </tag>
+            
+            <tag> 坚持去做 </tag>
+            
+            <tag> 逃不掉 </tag>
+            
+            <tag> 享受过程 </tag>
+            
+            <tag> 快乐 </tag>
+            
+            <tag> 放弃 </tag>
+            
+            <tag> 失落感 </tag>
             
         </tags>
       
@@ -17152,6 +17213,43 @@
     
     
     <entry>
+      <title>小说今天一章写不完了，还是来一篇日更好了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c7fd72d/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c7fd72d/</url>
+      
+        <content type="html"><![CDATA[<p>我从昨天开始写小说，昨天一下子写了四千多字，今天就是写不出来了，眼看都已经快到二十三点四十了，于是就想到我必须要在简书发一篇日更了，一看我也知道没有多少给我的时间了，毕竟这简书的日更不能断啊，就算是来个四五百字的我也要把它补上才行，我什么也不用想了，打开Word的文件菜单快速的新建一个文档，我想我这时是真什么都不用想了，想到什么就写什么，再想就真的没有时间了。</p><span id="more"></span><p>小说还没有写好是肯定不能发上去的了，连有些语句都还不通顺，自己都还没有看过一遍，怎么可能发上去呢，小说这篇日更过了后明天接着写。我这时是真的在和时间赛跑，语句不通也没有办法，我是想先发上去再慢慢的修改了。</p><p>说快也不太快，但也不是很慢，一下就两段了，我这不是水文，这只是一篇和时间赛跑的急切之作，时间在一分一秒的过去，我看了下字数也有三百多了，其实现在发上去日更的标准已经达到了，不管了，再写两分钟就发，忙起来那标准什么的我已经记不得了，算了应该够了，就写这么多，不写了，我赶紧发吧。</p><p><strong>发文后的感想：只能说赶得真好，赶上了最后的末班车，还好今天没有掉队。</strong>👌</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Word </tag>
+            
+            <tag> 简书 </tag>
+            
+            <tag> 小说 </tag>
+            
+            <tag> 日更 </tag>
+            
+            <tag> 发文 </tag>
+            
+            <tag> 时间赛跑 </tag>
+            
+            <tag> 明天 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>小米研发出了隔空充电技术，再也不怕没有充电线了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/690f7b38/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/690f7b38/</url>
@@ -17183,43 +17281,6 @@
             <tag> 研发实力 </tag>
             
             <tag> 核心技术 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>小说今天一章写不完了，还是来一篇日更好了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c7fd72d/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c7fd72d/</url>
-      
-        <content type="html"><![CDATA[<p>我从昨天开始写小说，昨天一下子写了四千多字，今天就是写不出来了，眼看都已经快到二十三点四十了，于是就想到我必须要在简书发一篇日更了，一看我也知道没有多少给我的时间了，毕竟这简书的日更不能断啊，就算是来个四五百字的我也要把它补上才行，我什么也不用想了，打开Word的文件菜单快速的新建一个文档，我想我这时是真什么都不用想了，想到什么就写什么，再想就真的没有时间了。</p><span id="more"></span><p>小说还没有写好是肯定不能发上去的了，连有些语句都还不通顺，自己都还没有看过一遍，怎么可能发上去呢，小说这篇日更过了后明天接着写。我这时是真的在和时间赛跑，语句不通也没有办法，我是想先发上去再慢慢的修改了。</p><p>说快也不太快，但也不是很慢，一下就两段了，我这不是水文，这只是一篇和时间赛跑的急切之作，时间在一分一秒的过去，我看了下字数也有三百多了，其实现在发上去日更的标准已经达到了，不管了，再写两分钟就发，忙起来那标准什么的我已经记不得了，算了应该够了，就写这么多，不写了，我赶紧发吧。</p><p><strong>发文后的感想：只能说赶得真好，赶上了最后的末班车，还好今天没有掉队。</strong>👌</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Word </tag>
-            
-            <tag> 简书 </tag>
-            
-            <tag> 小说 </tag>
-            
-            <tag> 日更 </tag>
-            
-            <tag> 发文 </tag>
-            
-            <tag> 时间赛跑 </tag>
-            
-            <tag> 明天 </tag>
             
         </tags>
       
@@ -17508,45 +17569,6 @@
     
     
     <entry>
-      <title>很多今天还没有完成的事</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/78cd337d/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/78cd337d/</url>
-      
-        <content type="html"><![CDATA[<p>眼看还有几天就要考试了，可是我这进度有点更不上啊，今天本来是要做完一章题库的，结果吃了晚饭以后就拿着手机就离不了手，一看手机就是一个多小时过去了，时间过得真的快啊。</p><span id="more"></span><p>刚开始感觉做完前面的选择题，看一遍后面的主观题还来得及，本来还想着要抄写一遍的，但是连看一遍都没有完成。拿着手机就把时间忘记了，一看就22点30过了，想着还要更新文章，打开电脑但是突然又不知道要写什么。</p><p>于是就随便看了一下网页，这样一看还是不知道该写什么，时间又过去了大概半个小时，眼看就23点过几分了，想着再不写，今天怕是更新不了，于是就想着写写今天的事吧。今天要做的事没有做完，这一天就这样浪费了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 手机 </tag>
-            
-            <tag> 今天 </tag>
-            
-            <tag> 考试 </tag>
-            
-            <tag> 更新文章 </tag>
-            
-            <tag> 浪费 </tag>
-            
-            <tag> 主观题 </tag>
-            
-            <tag> 进度 </tag>
-            
-            <tag> 完成 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>很多人问我要挖狗狗币的教程，我有时间再写</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c39404ee/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c39404ee/</url>
@@ -17582,6 +17604,45 @@
             <tag> 搜索引擎 </tag>
             
             <tag> 逻辑步骤 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>很多今天还没有完成的事</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/78cd337d/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/78cd337d/</url>
+      
+        <content type="html"><![CDATA[<p>眼看还有几天就要考试了，可是我这进度有点更不上啊，今天本来是要做完一章题库的，结果吃了晚饭以后就拿着手机就离不了手，一看手机就是一个多小时过去了，时间过得真的快啊。</p><span id="more"></span><p>刚开始感觉做完前面的选择题，看一遍后面的主观题还来得及，本来还想着要抄写一遍的，但是连看一遍都没有完成。拿着手机就把时间忘记了，一看就22点30过了，想着还要更新文章，打开电脑但是突然又不知道要写什么。</p><p>于是就随便看了一下网页，这样一看还是不知道该写什么，时间又过去了大概半个小时，眼看就23点过几分了，想着再不写，今天怕是更新不了，于是就想着写写今天的事吧。今天要做的事没有做完，这一天就这样浪费了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 手机 </tag>
+            
+            <tag> 考试 </tag>
+            
+            <tag> 今天 </tag>
+            
+            <tag> 更新文章 </tag>
+            
+            <tag> 浪费 </tag>
+            
+            <tag> 主观题 </tag>
+            
+            <tag> 进度 </tag>
+            
+            <tag> 完成 </tag>
             
         </tags>
       
@@ -18085,6 +18146,61 @@
     
     
     <entry>
+      <title>我的mini小主机终于组装好了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d0450d61/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d0450d61/</url>
+      
+        <content type="html"><![CDATA[<p>今天电源适配器终于到了，昨天才买的今天就到了，真的发货速度很快，果然只要配件对装机也不难啊，早知道都这样分开在一家买，那早都已经装好了，插上电源适配器开机成功那一刻还是感觉挺兴奋的，看着主板粉红色的灯下亮起来是真的太漂亮了。</p><span id="more"></span><p>这或许真的就是自己装机的乐趣，比买一台整机那种感觉舒服很多。安装系统虽然也不难，但是我也是费了一点劲的，好开始是想到用那个硬盘分区软件做一个系统启动盘，结果插上U盘启动了只能进那个软件的界面。</p><p>没有办法又只能把显示器连到笔记本电脑，用微软的那个软件重新做了一个win10启动盘，做这个笔记本电脑是很慢的，大概花了一个多小时才做好。做好后就直接把U盘插在mini主机上，我这个主板是可以不用进bios设置然后就直接可以安装系统的，刚一插上去就开始安装了，安装的时候用那个分区软件分的区居然用不了，只好把那个区删了，然后重新分100G来做系统盘，因为我的m.2固态是500G的，所以分100G做系统盘也还很多余量，然后剩下的就是未分配的了，这里未分配的就进系统再分。</p><p>系统安装好了就是等着安装驱动，不知道是网速原因还是上网的人太多了，驱动是下差不多30分钟才安装完，然后就是重启。</p><p>重启以后就是激活了，激活也差点难道我了，还好我笔记本电脑里面还有激活office的那个软件，这个软件也是可以激活系统的，当然直接用U盘传过来安装不了，会被系统自动删除，还好我想到了先安装一个腾讯电脑管家，然后系统自带的安全软件就没有那么强了，电脑管家也是会删除这个软件，但是恢复就可以了，安装好后系统就直接激活了，算是一个不错的惊喜。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 组装 </tag>
+            
+            <tag> 硬盘 </tag>
+            
+            <tag> 配件 </tag>
+            
+            <tag> mini小主机 </tag>
+            
+            <tag> 电源适配器 </tag>
+            
+            <tag> 装机 </tag>
+            
+            <tag> 不难 </tag>
+            
+            <tag> 开机 </tag>
+            
+            <tag> 太漂亮 </tag>
+            
+            <tag> 安装系统 </tag>
+            
+            <tag> win10启动盘 </tag>
+            
+            <tag> m.2固态 </tag>
+            
+            <tag> 安装驱动 </tag>
+            
+            <tag> 分区软件 </tag>
+            
+            <tag> 直接激活 </tag>
+            
+            <tag> 恢复 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>我在简书写作的这些日子</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/9b55eefb/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/9b55eefb/</url>
@@ -18229,6 +18345,49 @@
     
     
     <entry>
+      <title>我的mini电脑还是没有弄好</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/38f4187b/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/38f4187b/</url>
+      
+        <content type="html"><![CDATA[<p>本来就快弄好了的，结果插到显示器上显示无信号，害我弄了很大半天，到天快发黑的时候我问买机箱的那家客服，它才找了他们的技术员给我看了下，原来是他们卖的那个转换板有问题。</p><span id="more"></span><p>本来CPU供电那里是要接8pin供电的结果他们发来的那个转换板上的只是4pin供电，所以CPU是根本没有供上电，真的是害我弄了大半天，早知道就只在他家买机箱就算了，在其他家买转换板肯定是比在他家买好，我买的电源适配器就是在别家买的，一拿来就可以用。</p><p>后面又说要让我从新在他家拍一个250w的ATX-DC转换板，没有办法了有得花钱从新拍一个，前面那个说是可以退款69，这样还好了，比去其他家买划算点了，只是希望不要发错了，再发来用不了我直接是要投诉他家了，花了钱还得到不舒服的感觉，这种感受是没有人愿意的。</p><p>还要等到星期一才给我发货，这几天我又得等了，那种期待奇迹一瞬间出现的感觉就这样被消磨掉了，要是他发的转换板没有问题那现在我的新电脑都已经用上了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 显示器 </tag>
+            
+            <tag> 不舒服 </tag>
+            
+            <tag> 电源适配器 </tag>
+            
+            <tag> 一瞬间 </tag>
+            
+            <tag> mini电脑 </tag>
+            
+            <tag> 无信号 </tag>
+            
+            <tag> ATX-DC </tag>
+            
+            <tag> 转换板 </tag>
+            
+            <tag> 星期一 </tag>
+            
+            <tag> 发货 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>我的mini小主机算是组装完成了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dcfeae6e/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dcfeae6e/</url>
@@ -18288,104 +18447,6 @@
             <tag> 机械硬盘 </tag>
             
             <tag> 爆满 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>我的mini电脑还是没有弄好</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/38f4187b/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/38f4187b/</url>
-      
-        <content type="html"><![CDATA[<p>本来就快弄好了的，结果插到显示器上显示无信号，害我弄了很大半天，到天快发黑的时候我问买机箱的那家客服，它才找了他们的技术员给我看了下，原来是他们卖的那个转换板有问题。</p><span id="more"></span><p>本来CPU供电那里是要接8pin供电的结果他们发来的那个转换板上的只是4pin供电，所以CPU是根本没有供上电，真的是害我弄了大半天，早知道就只在他家买机箱就算了，在其他家买转换板肯定是比在他家买好，我买的电源适配器就是在别家买的，一拿来就可以用。</p><p>后面又说要让我从新在他家拍一个250w的ATX-DC转换板，没有办法了有得花钱从新拍一个，前面那个说是可以退款69，这样还好了，比去其他家买划算点了，只是希望不要发错了，再发来用不了我直接是要投诉他家了，花了钱还得到不舒服的感觉，这种感受是没有人愿意的。</p><p>还要等到星期一才给我发货，这几天我又得等了，那种期待奇迹一瞬间出现的感觉就这样被消磨掉了，要是他发的转换板没有问题那现在我的新电脑都已经用上了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 显示器 </tag>
-            
-            <tag> 不舒服 </tag>
-            
-            <tag> 一瞬间 </tag>
-            
-            <tag> mini电脑 </tag>
-            
-            <tag> 无信号 </tag>
-            
-            <tag> 电源适配器 </tag>
-            
-            <tag> ATX-DC </tag>
-            
-            <tag> 转换板 </tag>
-            
-            <tag> 星期一 </tag>
-            
-            <tag> 发货 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>我的mini小主机终于组装好了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d0450d61/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d0450d61/</url>
-      
-        <content type="html"><![CDATA[<p>今天电源适配器终于到了，昨天才买的今天就到了，真的发货速度很快，果然只要配件对装机也不难啊，早知道都这样分开在一家买，那早都已经装好了，插上电源适配器开机成功那一刻还是感觉挺兴奋的，看着主板粉红色的灯下亮起来是真的太漂亮了。</p><span id="more"></span><p>这或许真的就是自己装机的乐趣，比买一台整机那种感觉舒服很多。安装系统虽然也不难，但是我也是费了一点劲的，好开始是想到用那个硬盘分区软件做一个系统启动盘，结果插上U盘启动了只能进那个软件的界面。</p><p>没有办法又只能把显示器连到笔记本电脑，用微软的那个软件重新做了一个win10启动盘，做这个笔记本电脑是很慢的，大概花了一个多小时才做好。做好后就直接把U盘插在mini主机上，我这个主板是可以不用进bios设置然后就直接可以安装系统的，刚一插上去就开始安装了，安装的时候用那个分区软件分的区居然用不了，只好把那个区删了，然后重新分100G来做系统盘，因为我的m.2固态是500G的，所以分100G做系统盘也还很多余量，然后剩下的就是未分配的了，这里未分配的就进系统再分。</p><p>系统安装好了就是等着安装驱动，不知道是网速原因还是上网的人太多了，驱动是下差不多30分钟才安装完，然后就是重启。</p><p>重启以后就是激活了，激活也差点难道我了，还好我笔记本电脑里面还有激活office的那个软件，这个软件也是可以激活系统的，当然直接用U盘传过来安装不了，会被系统自动删除，还好我想到了先安装一个腾讯电脑管家，然后系统自带的安全软件就没有那么强了，电脑管家也是会删除这个软件，但是恢复就可以了，安装好后系统就直接激活了，算是一个不错的惊喜。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 组装 </tag>
-            
-            <tag> 硬盘 </tag>
-            
-            <tag> 配件 </tag>
-            
-            <tag> mini小主机 </tag>
-            
-            <tag> 电源适配器 </tag>
-            
-            <tag> 装机 </tag>
-            
-            <tag> 不难 </tag>
-            
-            <tag> 开机 </tag>
-            
-            <tag> 太漂亮 </tag>
-            
-            <tag> 安装系统 </tag>
-            
-            <tag> win10启动盘 </tag>
-            
-            <tag> m.2固态 </tag>
-            
-            <tag> 安装驱动 </tag>
-            
-            <tag> 分区软件 </tag>
-            
-            <tag> 直接激活 </tag>
-            
-            <tag> 恢复 </tag>
             
         </tags>
       
@@ -18969,9 +19030,9 @@
             
             <tag> 凉快 </tag>
             
-            <tag> 继续 </tag>
-            
             <tag> 宿舍 </tag>
+            
+            <tag> 继续 </tag>
             
             <tag> 绿叶葱葱 </tag>
             
@@ -19262,111 +19323,6 @@
     
     
     <entry>
-      <title>春夏之交最是适合去杭州看美景的时节</title>
-      <link href="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/"/>
-      <url>/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/</url>
-      
-        <content type="html"><![CDATA[<p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%821.jpg"></p><span id="more"></span><center><h1 id="（一）"><a href="#（一）" class="headerlink" title="（一）"></a>（一）</h1></center><center><p>在水里漏出一只小蛙的天<br>洒下人相思的织女<br>那些贪睡的人们在广场上走</p><p>那时候月儿照着我憨情微笑<br>西落的太阳照见山顶<br>在现实的世界上</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%822.jpg"></p><center><h1 id="（二）"><a href="#（二）" class="headerlink" title="（二）"></a>（二）</h1></center><center><p>何如天空有无边际的海洋<br>惨黑之墓侧孤寂的人世遭逢<br>展开在这样的天空里飞</p><p>回身时候忽然从无语里<br>你给我的生命之海洋<br>不知世界就在我的怀里</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%823.jpg"></p><center><h1 id="（三）"><a href="#（三）" class="headerlink" title="（三）"></a>（三）</h1></center><center><p>直敲到漆黑的天空上飞落<br>注视着装饰着动人的心的力量<br>写着幸福的人们的哀愁<br>涌现了无量数理想的水宫追逐</p><p>回想到世界的主宰<br>感到人生的美好了<br>点滴着在我心里的人们一样<br>那太阳却成为一个可爱的人</p><p>是人们不敢为我的悲哀<br>这时候我还是安乐的家园吗<br>只记从梦里惊醒<br>昨夜入梦依稀是在水波上<br>留梦中开出花来<br>中途逢着水面的落伍</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%824.jpg"></p><center><h1 id="（四）"><a href="#（四）" class="headerlink" title="（四）"></a>（四）</h1></center><center><p>如有人来到街头<br>远望这广阔天空的幻灭<br>倘生命无有美丽的希望<br>但是她是人间的一切</p><p>谁问这一息的残秋的梦寐<br>发觉了梦中甜美的爱情<br>注视着装饰着动人的心的力量<br>一条的流水忽然照着它们</p><p>四野里无人往来的历史<br>犹如人们的悲哀<br>只是主人的心远而且凄冷的心<br>永笼不住生命的笑<br>飘浮在水心追逐<br>给我生命的花瓣</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%825.jpg"></p><center><h1 id="（五）"><a href="#（五）" class="headerlink" title="（五）"></a>（五）</h1></center><center><p>江水有一个无人的小生<br>孤独无不适于诞生的梦里<br>与泪泉的水流诉述衷情<br>毕竟是一个诗人自己的心</p><p>我走进了你的幻梦的道儿<br>不知世界听见了热烈的风光<br>正是海水相对着新生的太阳<br>我们唱了听者只枯萎的梦境啊</p><p>她在水上看小花的开花<br>不献爱与天空的小鸟<br>我要梦见你的翅膀</p><p>我们扮演着世界中的一角<br>早晨的太阳照过我的梦<br>窗外的天空做了一个梦</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%826.jpg"></p><center><h1 id="（六）"><a href="#（六）" class="headerlink" title="（六）"></a>（六）</h1></center><center><p>它们的梦是怎样的感觉<br>孤独无不适于诞生的梦里<br>檐前影子的人们已在荒漠之中</p><p>溪水也不回头去了<br>都可挥洒出神的梦中的人们<br>撒在流水里荡漾</p><p>华山下的江水一去不返<br>在世界我不敢引起我的爱人</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%827.jpg"></p><center><h1 id="（七）"><a href="#（七）" class="headerlink" title="（七）"></a>（七）</h1></center><center><p>不认识的人们的色彩<br>我们踏着太阳翻身的颜色<br>我不懂得天空的云<br>也被水穿过我的眼泪</p><p>在恋梦中我才知道<br>但如今知道了生命的原故<br>何如天空不敢回头<br>充满了美丽星花的人们在飞</p><p>你撒向天空的小墨点<br>如今万人都应该翻译作沉沦<br>那被关街门外的天空消灭<br>泉水也不敢断定<br>只有我在天空梦的树巅<br>看着太阳照在他的面前</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%828.jpg"></p><center><h1 id="（八）"><a href="#（八）" class="headerlink" title="（八）"></a>（八）</h1></center><center><p>狂舞天空的寂寞<br>用鲜艳美丽的太阳晒得黄黄<br>也如在水中看见它面上的星<br>却收不起那水心的世界</p><p>除了梦中的人已消去<br>屏气的人也太无聊了<br>大海不能告诉的人生的意义<br>我们觉着了我们生命的光明</p><p>那树荫下的雨水的绿<br>有些人都夸奖夜凉甜美<br>流水袅袅的篆烟</p><p>说甚么世界的主宰<br>惨黑之墓侧孤寂的人世遭逢<br>她已存在我的梦上</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%829.jpg"></p><center><h1 id="（九）"><a href="#（九）" class="headerlink" title="（九）"></a>（九）</h1></center><center><p>蜿蜒在漆黑的天空里发亮<br>溪水桥上的山路<br>忽然使人们模糊得不分明了<br>凭着无生的水晶的谐乐</p><p>遨游于寂寞的梦境里<br>沉静的海水滴在我的心里<br>求宥于我的圣人是天空的刀子<br>恋人们有泪不敢迫视</p><p>立在太阳的光华<br>谁知你生命流中<br>人们忘记了自己的世界的一切<br>家里有人在梦中</p><p>看人们看不见天上的月桂<br>柔嫩喜悦水光从天际飞行</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%8210.jpg"></p><center><h1 id="（十）"><a href="#（十）" class="headerlink" title="（十）"></a>（十）</h1></center><center><p>亲爱的诗人的微笑<br>沉沉的世界不是这无声的村庄<br>恋人们早已凝结了他们的主人<br>只觉得一世界的声音啊</p><p>流水袅袅的篆烟<br>好看着水面上的光明<br>如此的沉沦在人间动转<br>深吻沅江之水滴在地上</p><p>有人不住在这人世间梦景<br>安栖于爱人的梦境<br>那红叶是生命中的谎语<br>斗争的人们的理想<br>将往梦幻是在迷惘的梦里<br>天上无有闪到天空的摇动</p></center>]]></content>
-      
-      
-      <categories>
-          
-          <category> 诗和远方 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 人们 </tag>
-            
-            <tag> 人生 </tag>
-            
-            <tag> 意义 </tag>
-            
-            <tag> 梦境 </tag>
-            
-            <tag> 天空 </tag>
-            
-            <tag> 诉述衷情 </tag>
-            
-            <tag> 流水 </tag>
-            
-            <tag> 微笑 </tag>
-            
-            <tag> 家园 </tag>
-            
-            <tag> 小花 </tag>
-            
-            <tag> 开花 </tag>
-            
-            <tag> 梦景 </tag>
-            
-            <tag> 人世 </tag>
-            
-            <tag> 春夏之交 </tag>
-            
-            <tag> 杭州 </tag>
-            
-            <tag> 美景 </tag>
-            
-            <tag> 时节 </tag>
-            
-            <tag> 相思 </tag>
-            
-            <tag> 织女 </tag>
-            
-            <tag> 现实 </tag>
-            
-            <tag> 世界上 </tag>
-            
-            <tag> 无边际 </tag>
-            
-            <tag> 海洋 </tag>
-            
-            <tag> 哀愁 </tag>
-            
-            <tag> 可爱 </tag>
-            
-            <tag> 安乐 </tag>
-            
-            <tag> 远望 </tag>
-            
-            <tag> 残秋 </tag>
-            
-            <tag> 梦寐 </tag>
-            
-            <tag> 往来 </tag>
-            
-            <tag> 历史 </tag>
-            
-            <tag> 水流 </tag>
-            
-            <tag> 荒漠之中 </tag>
-            
-            <tag> 太阳翻身 </tag>
-            
-            <tag> 不敢断定 </tag>
-            
-            <tag> 遭逢 </tag>
-            
-            <tag> 漆黑 </tag>
-            
-            <tag> 寂寞 </tag>
-            
-            <tag> 诗人 </tag>
-            
-            <tag> 袅袅 </tag>
-            
-            <tag> 人世间 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>春天虽然到了，但却不知路在何方</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c977f3e7/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c977f3e7/</url>
@@ -19499,6 +19455,111 @@
     
     
     <entry>
+      <title>春夏之交最是适合去杭州看美景的时节</title>
+      <link href="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/"/>
+      <url>/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/</url>
+      
+        <content type="html"><![CDATA[<p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%821.jpg"></p><span id="more"></span><center><h1 id="（一）"><a href="#（一）" class="headerlink" title="（一）"></a>（一）</h1></center><center><p>在水里漏出一只小蛙的天<br>洒下人相思的织女<br>那些贪睡的人们在广场上走</p><p>那时候月儿照着我憨情微笑<br>西落的太阳照见山顶<br>在现实的世界上</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%822.jpg"></p><center><h1 id="（二）"><a href="#（二）" class="headerlink" title="（二）"></a>（二）</h1></center><center><p>何如天空有无边际的海洋<br>惨黑之墓侧孤寂的人世遭逢<br>展开在这样的天空里飞</p><p>回身时候忽然从无语里<br>你给我的生命之海洋<br>不知世界就在我的怀里</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%823.jpg"></p><center><h1 id="（三）"><a href="#（三）" class="headerlink" title="（三）"></a>（三）</h1></center><center><p>直敲到漆黑的天空上飞落<br>注视着装饰着动人的心的力量<br>写着幸福的人们的哀愁<br>涌现了无量数理想的水宫追逐</p><p>回想到世界的主宰<br>感到人生的美好了<br>点滴着在我心里的人们一样<br>那太阳却成为一个可爱的人</p><p>是人们不敢为我的悲哀<br>这时候我还是安乐的家园吗<br>只记从梦里惊醒<br>昨夜入梦依稀是在水波上<br>留梦中开出花来<br>中途逢着水面的落伍</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%824.jpg"></p><center><h1 id="（四）"><a href="#（四）" class="headerlink" title="（四）"></a>（四）</h1></center><center><p>如有人来到街头<br>远望这广阔天空的幻灭<br>倘生命无有美丽的希望<br>但是她是人间的一切</p><p>谁问这一息的残秋的梦寐<br>发觉了梦中甜美的爱情<br>注视着装饰着动人的心的力量<br>一条的流水忽然照着它们</p><p>四野里无人往来的历史<br>犹如人们的悲哀<br>只是主人的心远而且凄冷的心<br>永笼不住生命的笑<br>飘浮在水心追逐<br>给我生命的花瓣</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%825.jpg"></p><center><h1 id="（五）"><a href="#（五）" class="headerlink" title="（五）"></a>（五）</h1></center><center><p>江水有一个无人的小生<br>孤独无不适于诞生的梦里<br>与泪泉的水流诉述衷情<br>毕竟是一个诗人自己的心</p><p>我走进了你的幻梦的道儿<br>不知世界听见了热烈的风光<br>正是海水相对着新生的太阳<br>我们唱了听者只枯萎的梦境啊</p><p>她在水上看小花的开花<br>不献爱与天空的小鸟<br>我要梦见你的翅膀</p><p>我们扮演着世界中的一角<br>早晨的太阳照过我的梦<br>窗外的天空做了一个梦</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%826.jpg"></p><center><h1 id="（六）"><a href="#（六）" class="headerlink" title="（六）"></a>（六）</h1></center><center><p>它们的梦是怎样的感觉<br>孤独无不适于诞生的梦里<br>檐前影子的人们已在荒漠之中</p><p>溪水也不回头去了<br>都可挥洒出神的梦中的人们<br>撒在流水里荡漾</p><p>华山下的江水一去不返<br>在世界我不敢引起我的爱人</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%827.jpg"></p><center><h1 id="（七）"><a href="#（七）" class="headerlink" title="（七）"></a>（七）</h1></center><center><p>不认识的人们的色彩<br>我们踏着太阳翻身的颜色<br>我不懂得天空的云<br>也被水穿过我的眼泪</p><p>在恋梦中我才知道<br>但如今知道了生命的原故<br>何如天空不敢回头<br>充满了美丽星花的人们在飞</p><p>你撒向天空的小墨点<br>如今万人都应该翻译作沉沦<br>那被关街门外的天空消灭<br>泉水也不敢断定<br>只有我在天空梦的树巅<br>看着太阳照在他的面前</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%828.jpg"></p><center><h1 id="（八）"><a href="#（八）" class="headerlink" title="（八）"></a>（八）</h1></center><center><p>狂舞天空的寂寞<br>用鲜艳美丽的太阳晒得黄黄<br>也如在水中看见它面上的星<br>却收不起那水心的世界</p><p>除了梦中的人已消去<br>屏气的人也太无聊了<br>大海不能告诉的人生的意义<br>我们觉着了我们生命的光明</p><p>那树荫下的雨水的绿<br>有些人都夸奖夜凉甜美<br>流水袅袅的篆烟</p><p>说甚么世界的主宰<br>惨黑之墓侧孤寂的人世遭逢<br>她已存在我的梦上</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%829.jpg"></p><center><h1 id="（九）"><a href="#（九）" class="headerlink" title="（九）"></a>（九）</h1></center><center><p>蜿蜒在漆黑的天空里发亮<br>溪水桥上的山路<br>忽然使人们模糊得不分明了<br>凭着无生的水晶的谐乐</p><p>遨游于寂寞的梦境里<br>沉静的海水滴在我的心里<br>求宥于我的圣人是天空的刀子<br>恋人们有泪不敢迫视</p><p>立在太阳的光华<br>谁知你生命流中<br>人们忘记了自己的世界的一切<br>家里有人在梦中</p><p>看人们看不见天上的月桂<br>柔嫩喜悦水光从天际飞行</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%8210.jpg"></p><center><h1 id="（十）"><a href="#（十）" class="headerlink" title="（十）"></a>（十）</h1></center><center><p>亲爱的诗人的微笑<br>沉沉的世界不是这无声的村庄<br>恋人们早已凝结了他们的主人<br>只觉得一世界的声音啊</p><p>流水袅袅的篆烟<br>好看着水面上的光明<br>如此的沉沦在人间动转<br>深吻沅江之水滴在地上</p><p>有人不住在这人世间梦景<br>安栖于爱人的梦境<br>那红叶是生命中的谎语<br>斗争的人们的理想<br>将往梦幻是在迷惘的梦里<br>天上无有闪到天空的摇动</p></center>]]></content>
+      
+      
+      <categories>
+          
+          <category> 诗和远方 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 人们 </tag>
+            
+            <tag> 人生 </tag>
+            
+            <tag> 意义 </tag>
+            
+            <tag> 梦境 </tag>
+            
+            <tag> 天空 </tag>
+            
+            <tag> 诉述衷情 </tag>
+            
+            <tag> 流水 </tag>
+            
+            <tag> 微笑 </tag>
+            
+            <tag> 家园 </tag>
+            
+            <tag> 小花 </tag>
+            
+            <tag> 开花 </tag>
+            
+            <tag> 梦景 </tag>
+            
+            <tag> 人世 </tag>
+            
+            <tag> 春夏之交 </tag>
+            
+            <tag> 杭州 </tag>
+            
+            <tag> 美景 </tag>
+            
+            <tag> 时节 </tag>
+            
+            <tag> 相思 </tag>
+            
+            <tag> 织女 </tag>
+            
+            <tag> 现实 </tag>
+            
+            <tag> 世界上 </tag>
+            
+            <tag> 无边际 </tag>
+            
+            <tag> 海洋 </tag>
+            
+            <tag> 哀愁 </tag>
+            
+            <tag> 可爱 </tag>
+            
+            <tag> 安乐 </tag>
+            
+            <tag> 远望 </tag>
+            
+            <tag> 残秋 </tag>
+            
+            <tag> 梦寐 </tag>
+            
+            <tag> 往来 </tag>
+            
+            <tag> 历史 </tag>
+            
+            <tag> 水流 </tag>
+            
+            <tag> 荒漠之中 </tag>
+            
+            <tag> 太阳翻身 </tag>
+            
+            <tag> 不敢断定 </tag>
+            
+            <tag> 遭逢 </tag>
+            
+            <tag> 漆黑 </tag>
+            
+            <tag> 寂寞 </tag>
+            
+            <tag> 诗人 </tag>
+            
+            <tag> 袅袅 </tag>
+            
+            <tag> 人世间 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>昨天买的4pin一分二转接线今天到了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/885df388/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/885df388/</url>
@@ -19530,51 +19591,6 @@
             <tag> 调速 </tag>
             
             <tag> 绝缘胶布 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>昨天我把自己的网站同步到Gitee了</title>
-      <link href="/Hexo/ceca9b33/"/>
-      <url>/Hexo/ceca9b33/</url>
-      
-        <content type="html"><![CDATA[<p>之前就有看到过别人说可以把Hexo搭建的网站同步到Github和Gitee两个平台，说是Gitee在国内的访问速度比较快，但是一直都没有去做过，这段时间有空去码云把以前的账号重新登陆了，还开通了免费的企业版。</p><span id="more"></span><p>免费的企业版比个人版好的就是空间的域名能够自定义的比个人版要好点，个人版好的都被人抢完了。</p><p>我用自己注册的域名来做这个空间域名感觉还是很不错的，因为很简短才四个字母，这些都是越短越好记。</p><p>Gitee不好的就是自定义域名要钱，还有每次更新都要去点一次那个更新按钮，不过我也没有多余的域名，就先用着给的空间域名吧，这种空间域名其实也是可以被搜索引擎收录的，我用必应搜了下很多用这种域名的只要内容好也被收录了，但是百度就没有收录的。</p><p>免费的也不需要那么多了，反正就当个备用好了，要是真的想搞谷歌广告那些，还是用Github自己买个域名来绑定会比较好，二级域名可能弄不了谷歌广告，我以前记得我用免费的域名都不行，还是自己买了个域名来换了才审核通过了。</p><p>速度的话电脑上访问感觉没有快多少，手机浏览器上感觉会快一点。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Github </tag>
-            
-            <tag> Hexo </tag>
-            
-            <tag> gitee </tag>
-            
-            <tag> 免费 </tag>
-            
-            <tag> 浏览器 </tag>
-            
-            <tag> 网站 </tag>
-            
-            <tag> 搜索引擎 </tag>
-            
-            <tag> 企业版 </tag>
-            
-            <tag> 空间域名 </tag>
-            
-            <tag> 谷歌广告 </tag>
-            
-            <tag> 审核 </tag>
             
         </tags>
       
@@ -19622,47 +19638,43 @@
     
     
     <entry>
-      <title>昨晚下了一晚上的雨，雨声一直响睡不着</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c36b9d6b/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c36b9d6b/</url>
+      <title>昨天我把自己的网站同步到Gitee了</title>
+      <link href="/Hexo/ceca9b33/"/>
+      <url>/Hexo/ceca9b33/</url>
       
-        <content type="html"><![CDATA[<p>昨晚感觉暖和了就洗了一个冷水澡，但是水还是很冰的，很久几个月都没有用冷水洗澡了，是感觉有点不习惯了，确实感觉也是有点冰的。</p><span id="more"></span><p>洗完了把头发用吹风机吹干了，是准备睡觉的，但是又因为全身都清醒了怎么也睡不着，不一会儿就听到外面下雨的沙沙声，然后就好像下了一晚上都没有停过，下的好像也不大，就中雨的程度，但是听着雨水滴落的声音还是很响。</p><p>睡不着就拿着平板电脑玩了一下游戏，玩着玩着就到两点过了，也感觉是有点困了，然后就睡到八点过，听着闹钟响了，但是还是醒不来，是感觉真的很困。</p><p>睡到九点过的时候才感觉清醒点了，然后记得昨天在买菜平台买了一些鸡蛋和土豆和一个京包菜，就洗脸了就下去拿，去拿才知道土豆和这个菜没有，就说会自动给我退款了，我自己不能申请退的，他们那里才可以退，因为是平台缺货了，到下午两点过就退回到微信了。</p><p>还有昨天也在另外一个买菜平台买了十把面条，因为比超市里面便宜很多，所以就决定多买点，又因为满四十五就可以用九块钱的优惠券，所以买下来一把才到四块钱，应该够我吃两个月了，中午去拿还没有到，但是在平台上看着是到了，去了人家说还没有，又下午四点过去拿才拿到。</p>]]></content>
+        <content type="html"><![CDATA[<p>之前就有看到过别人说可以把Hexo搭建的网站同步到Github和Gitee两个平台，说是Gitee在国内的访问速度比较快，但是一直都没有去做过，这段时间有空去码云把以前的账号重新登陆了，还开通了免费的企业版。</p><span id="more"></span><p>免费的企业版比个人版好的就是空间的域名能够自定义的比个人版要好点，个人版好的都被人抢完了。</p><p>我用自己注册的域名来做这个空间域名感觉还是很不错的，因为很简短才四个字母，这些都是越短越好记。</p><p>Gitee不好的就是自定义域名要钱，还有每次更新都要去点一次那个更新按钮，不过我也没有多余的域名，就先用着给的空间域名吧，这种空间域名其实也是可以被搜索引擎收录的，我用必应搜了下很多用这种域名的只要内容好也被收录了，但是百度就没有收录的。</p><p>免费的也不需要那么多了，反正就当个备用好了，要是真的想搞谷歌广告那些，还是用Github自己买个域名来绑定会比较好，二级域名可能弄不了谷歌广告，我以前记得我用免费的域名都不行，还是自己买了个域名来换了才审核通过了。</p><p>速度的话电脑上访问感觉没有快多少，手机浏览器上感觉会快一点。</p>]]></content>
       
       
       <categories>
           
-          <category> 日常记录 </category>
+          <category> Hexo </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 买菜平台 </tag>
+            <tag> Github </tag>
             
-            <tag> 优惠券 </tag>
+            <tag> Hexo </tag>
             
-            <tag> 冷水澡 </tag>
+            <tag> gitee </tag>
             
-            <tag> 平板电脑 </tag>
+            <tag> 免费 </tag>
             
-            <tag> 昨晚 </tag>
+            <tag> 浏览器 </tag>
             
-            <tag> 一晚上 </tag>
+            <tag> 网站 </tag>
             
-            <tag> 雨声 </tag>
+            <tag> 搜索引擎 </tag>
             
-            <tag> 暖和 </tag>
+            <tag> 企业版 </tag>
             
-            <tag> 不习惯 </tag>
+            <tag> 空间域名 </tag>
             
-            <tag> 沙沙声 </tag>
+            <tag> 谷歌广告 </tag>
             
-            <tag> 雨水滴落 </tag>
-            
-            <tag> 鸡蛋 </tag>
-            
-            <tag> 申请退 </tag>
+            <tag> 审核 </tag>
             
         </tags>
       
@@ -19782,6 +19794,55 @@
             <tag> 注意 </tag>
             
             <tag> 心急 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>昨晚下了一晚上的雨，雨声一直响睡不着</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c36b9d6b/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c36b9d6b/</url>
+      
+        <content type="html"><![CDATA[<p>昨晚感觉暖和了就洗了一个冷水澡，但是水还是很冰的，很久几个月都没有用冷水洗澡了，是感觉有点不习惯了，确实感觉也是有点冰的。</p><span id="more"></span><p>洗完了把头发用吹风机吹干了，是准备睡觉的，但是又因为全身都清醒了怎么也睡不着，不一会儿就听到外面下雨的沙沙声，然后就好像下了一晚上都没有停过，下的好像也不大，就中雨的程度，但是听着雨水滴落的声音还是很响。</p><p>睡不着就拿着平板电脑玩了一下游戏，玩着玩着就到两点过了，也感觉是有点困了，然后就睡到八点过，听着闹钟响了，但是还是醒不来，是感觉真的很困。</p><p>睡到九点过的时候才感觉清醒点了，然后记得昨天在买菜平台买了一些鸡蛋和土豆和一个京包菜，就洗脸了就下去拿，去拿才知道土豆和这个菜没有，就说会自动给我退款了，我自己不能申请退的，他们那里才可以退，因为是平台缺货了，到下午两点过就退回到微信了。</p><p>还有昨天也在另外一个买菜平台买了十把面条，因为比超市里面便宜很多，所以就决定多买点，又因为满四十五就可以用九块钱的优惠券，所以买下来一把才到四块钱，应该够我吃两个月了，中午去拿还没有到，但是在平台上看着是到了，去了人家说还没有，又下午四点过去拿才拿到。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 买菜平台 </tag>
+            
+            <tag> 优惠券 </tag>
+            
+            <tag> 冷水澡 </tag>
+            
+            <tag> 平板电脑 </tag>
+            
+            <tag> 昨晚 </tag>
+            
+            <tag> 一晚上 </tag>
+            
+            <tag> 雨声 </tag>
+            
+            <tag> 暖和 </tag>
+            
+            <tag> 不习惯 </tag>
+            
+            <tag> 沙沙声 </tag>
+            
+            <tag> 雨水滴落 </tag>
+            
+            <tag> 鸡蛋 </tag>
+            
+            <tag> 申请退 </tag>
             
         </tags>
       
@@ -20125,6 +20186,41 @@
     
     
     <entry>
+      <title>本来不想写的还是写下吧</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5fedbe30/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5fedbe30/</url>
+      
+        <content type="html"><![CDATA[<p>真的很烦，休息了这么多天了，公司突然要我星期一去上晚班了，又在微信群里看到一个中介招聘的发招聘信息，一个小时20元，是做绿化环保的，我还是挺想去的，就是这边还没有辞工，早知道上个月就辞工了，现在辞工估计也没有那么快批了，更何况都要我去上班了。</p><span id="more"></span><p>是真的太烦了，不想去原来的这个公司上班了，上个月就上了9天班今天发工资才发1300多块钱，估计这个月也是只有这么多了，真的还不如辞工换个工作了，可是有机会辞工的时候别人又不招人，没有机会辞工时候又有很多人在招了。</p><p>是真的烦了，不知道是辞工了等机会还是接着去以前的公司上班。都说是机会不等人，可是人也很难等机会啊，况且换个地方也不知道是好是坏，有时候人的选择就是这样的茅盾，真的不知道该怎么样去做。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 不想写 </tag>
+            
+            <tag> 辞工 </tag>
+            
+            <tag> 上晚班 </tag>
+            
+            <tag> 绿化环保 </tag>
+            
+            <tag> 公司 </tag>
+            
+            <tag> 烦 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>有的文章平台发不了，还是要发到自己的网站才行</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/eaeba784/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/eaeba784/</url>
@@ -20162,41 +20258,6 @@
             <tag> 广告费 </tag>
             
             <tag> 根据地 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>本来不想写的还是写下吧</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5fedbe30/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5fedbe30/</url>
-      
-        <content type="html"><![CDATA[<p>真的很烦，休息了这么多天了，公司突然要我星期一去上晚班了，又在微信群里看到一个中介招聘的发招聘信息，一个小时20元，是做绿化环保的，我还是挺想去的，就是这边还没有辞工，早知道上个月就辞工了，现在辞工估计也没有那么快批了，更何况都要我去上班了。</p><span id="more"></span><p>是真的太烦了，不想去原来的这个公司上班了，上个月就上了9天班今天发工资才发1300多块钱，估计这个月也是只有这么多了，真的还不如辞工换个工作了，可是有机会辞工的时候别人又不招人，没有机会辞工时候又有很多人在招了。</p><p>是真的烦了，不知道是辞工了等机会还是接着去以前的公司上班。都说是机会不等人，可是人也很难等机会啊，况且换个地方也不知道是好是坏，有时候人的选择就是这样的茅盾，真的不知道该怎么样去做。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 不想写 </tag>
-            
-            <tag> 辞工 </tag>
-            
-            <tag> 上晚班 </tag>
-            
-            <tag> 绿化环保 </tag>
-            
-            <tag> 公司 </tag>
-            
-            <tag> 烦 </tag>
             
         </tags>
       
@@ -20421,49 +20482,6 @@
     
     
     <entry>
-      <title>满十万字了，又是一个值得纪念的里程</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/78c3b959/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/78c3b959/</url>
-      
-        <content type="html"><![CDATA[<p>在简书写作已经半年多的时间了，中间也是有个一段停顿，总之在没有参加日更计划之前写得也是停停顿顿的，虽然参加了日更曾经也有两次错过了日更发文的时间，用了日更卡，但是我还是始终坚持着没有放弃，坚持虽然本就不容易，但是放弃后再重新坚持就会感觉难上加难。</p><span id="more"></span><p>如果自己心里就有一个想要坚持下去的念想，那就不要轻易放弃，坚持每天写个几百字其实不是很难，难的就是要战胜自己不愿意的那种心理，人是动物有时候都想偷个懒，无论是谁都会有这个体验的，这也包括我，如果我每天早上起床就把一天要更新的文章写了，那也就不至于快要到凌晨了文章才写完，一看时间都已经零点十几分了，那就意味着那一天的日更计划是已经失败了。每日更新文章这种事真的得要赶早，有时真的是耽误不得，自己或许觉得时间在自己的眼前过的很慢，但是当自己去做其他事而把这件事忘记了，等到想起来要更文的时候一看时间就已经晚了。</p><p>对于日更这个事没有什么方法和技巧，坚持写就可以了，如果这都坚持不了那还谈什么提高自己写作能力，空口说白话都只能是在纸上谈兵，自己不去写、不去实践、不去刻意的练习，自己对于写作永远提高不了，自己隔的时间越久了，自己感觉就会生疏了。一次放弃到是很爽，只是要想重新来过又得从零开始，时间不是无限的，不是每一件事放弃了都可以重新从零开始，有些东西一旦放弃了就很难再去找到曾经自己熟悉的那种感觉。</p><p>有时候其实我不喜欢定下什么计划，其实如果对于写作和学习自己有个计划是真的很好的一件事，因为如果都按照自己的计划来每天都去坚持完成一点点，那就感觉真的很轻松，不要想着一口气就可以吃掉一个大胖子，那样不仅自己做得痛苦，也没有什么效率。其实坚持对于很多事都很有用，当它成为你的一个习惯了，你就会感觉原来坚持去做一件事其实也是一种快乐。有些事真的不是自己一下子就会喜欢去做的，当坚持久了，自己就感觉熟悉了、感觉习惯了，也许当有一天自己不再坚持了还会让自己感觉内心顿时空落落的了。</p><p>当我感觉自己写到了十万字我会感觉这是一种对于自己的突破，也许如果我坚持写到五十万字的时候，那可能我的写作境界也不只是提升了一个层次，每次突破自己的极限，其实就是给自己最好的成就感。要是自己一开始一个字都没有写就来谈什么写作方法和技巧，或者是去寻找什么样写作方法和技巧，这些其实都不过是徒劳的伤了自己的精力，因为从古至今所有方法、工具、技巧都不过是劳动人民在劳动过程中总结出来的，就如同学习数学一样，数学它是一种逻辑性很强的学科，不是光靠记公式就能过学得通的，好多公式是在纸上通过一步步推演而得出的，这其中的每一步都是环环相扣，而不可能存在凭空产生的东西，所有的事物的产生它都必须是有逻辑性的。</p><p>写作同样是这样，不经过自己的练习不可能一下子就写出一篇几千字的文章，就如太极一样，无极生太极，太极才能生两仪，两仪才能生四象，四象才能生八卦，古人认为的是这世间所有的一切都是由八卦组成的。写作虽然不能说像八卦推演所产生的那样，但是写作却也是从无到有的，是由一个个的文字所组成的，由一个个句子所构成的，都是从小再到大，这完全是符合自然规律的，所以说万事万物的发展无不是从小事开始，由数不清的小事组成的。写作就是这样，无论刚开始能写多少字都必须坚持去写，写得多了不断的突破了自己的极限，那自己的写作方法就已经是一种成功的方法了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 情感美文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 坚持 </tag>
-            
-            <tag> 简书 </tag>
-            
-            <tag> 日更计划 </tag>
-            
-            <tag> 没有放弃 </tag>
-            
-            <tag> 凌晨 </tag>
-            
-            <tag> 纸上谈兵 </tag>
-            
-            <tag> 感觉熟悉 </tag>
-            
-            <tag> 数学 </tag>
-            
-            <tag> 自然规律 </tag>
-            
-            <tag> 小事 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>清新唯美少女的梦与动人的诗集</title>
       <link href="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/37235d42/"/>
       <url>/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/37235d42/</url>
@@ -20517,6 +20535,49 @@
             <tag> 遥远 </tag>
             
             <tag> 青天空梦 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>满十万字了，又是一个值得纪念的里程</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/78c3b959/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/78c3b959/</url>
+      
+        <content type="html"><![CDATA[<p>在简书写作已经半年多的时间了，中间也是有个一段停顿，总之在没有参加日更计划之前写得也是停停顿顿的，虽然参加了日更曾经也有两次错过了日更发文的时间，用了日更卡，但是我还是始终坚持着没有放弃，坚持虽然本就不容易，但是放弃后再重新坚持就会感觉难上加难。</p><span id="more"></span><p>如果自己心里就有一个想要坚持下去的念想，那就不要轻易放弃，坚持每天写个几百字其实不是很难，难的就是要战胜自己不愿意的那种心理，人是动物有时候都想偷个懒，无论是谁都会有这个体验的，这也包括我，如果我每天早上起床就把一天要更新的文章写了，那也就不至于快要到凌晨了文章才写完，一看时间都已经零点十几分了，那就意味着那一天的日更计划是已经失败了。每日更新文章这种事真的得要赶早，有时真的是耽误不得，自己或许觉得时间在自己的眼前过的很慢，但是当自己去做其他事而把这件事忘记了，等到想起来要更文的时候一看时间就已经晚了。</p><p>对于日更这个事没有什么方法和技巧，坚持写就可以了，如果这都坚持不了那还谈什么提高自己写作能力，空口说白话都只能是在纸上谈兵，自己不去写、不去实践、不去刻意的练习，自己对于写作永远提高不了，自己隔的时间越久了，自己感觉就会生疏了。一次放弃到是很爽，只是要想重新来过又得从零开始，时间不是无限的，不是每一件事放弃了都可以重新从零开始，有些东西一旦放弃了就很难再去找到曾经自己熟悉的那种感觉。</p><p>有时候其实我不喜欢定下什么计划，其实如果对于写作和学习自己有个计划是真的很好的一件事，因为如果都按照自己的计划来每天都去坚持完成一点点，那就感觉真的很轻松，不要想着一口气就可以吃掉一个大胖子，那样不仅自己做得痛苦，也没有什么效率。其实坚持对于很多事都很有用，当它成为你的一个习惯了，你就会感觉原来坚持去做一件事其实也是一种快乐。有些事真的不是自己一下子就会喜欢去做的，当坚持久了，自己就感觉熟悉了、感觉习惯了，也许当有一天自己不再坚持了还会让自己感觉内心顿时空落落的了。</p><p>当我感觉自己写到了十万字我会感觉这是一种对于自己的突破，也许如果我坚持写到五十万字的时候，那可能我的写作境界也不只是提升了一个层次，每次突破自己的极限，其实就是给自己最好的成就感。要是自己一开始一个字都没有写就来谈什么写作方法和技巧，或者是去寻找什么样写作方法和技巧，这些其实都不过是徒劳的伤了自己的精力，因为从古至今所有方法、工具、技巧都不过是劳动人民在劳动过程中总结出来的，就如同学习数学一样，数学它是一种逻辑性很强的学科，不是光靠记公式就能过学得通的，好多公式是在纸上通过一步步推演而得出的，这其中的每一步都是环环相扣，而不可能存在凭空产生的东西，所有的事物的产生它都必须是有逻辑性的。</p><p>写作同样是这样，不经过自己的练习不可能一下子就写出一篇几千字的文章，就如太极一样，无极生太极，太极才能生两仪，两仪才能生四象，四象才能生八卦，古人认为的是这世间所有的一切都是由八卦组成的。写作虽然不能说像八卦推演所产生的那样，但是写作却也是从无到有的，是由一个个的文字所组成的，由一个个句子所构成的，都是从小再到大，这完全是符合自然规律的，所以说万事万物的发展无不是从小事开始，由数不清的小事组成的。写作就是这样，无论刚开始能写多少字都必须坚持去写，写得多了不断的突破了自己的极限，那自己的写作方法就已经是一种成功的方法了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 坚持 </tag>
+            
+            <tag> 简书 </tag>
+            
+            <tag> 日更计划 </tag>
+            
+            <tag> 没有放弃 </tag>
+            
+            <tag> 凌晨 </tag>
+            
+            <tag> 纸上谈兵 </tag>
+            
+            <tag> 感觉熟悉 </tag>
+            
+            <tag> 数学 </tag>
+            
+            <tag> 自然规律 </tag>
+            
+            <tag> 小事 </tag>
             
         </tags>
       
@@ -21282,11 +21343,11 @@
             
             <tag> 白发 </tag>
             
-            <tag> 容乐 </tag>
+            <tag> 漫夭 </tag>
             
             <tag> 宗政无忧 </tag>
             
-            <tag> 漫夭 </tag>
+            <tag> 容乐 </tag>
             
             <tag> 欲望 </tag>
             
@@ -21830,45 +21891,6 @@
     
     
     <entry>
-      <title>社区团购的坑，第一次能买到点便宜的第二次就不行了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a5982df5/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a5982df5/</url>
-      
-        <content type="html"><![CDATA[<p>我第一次在美团上买了橙子才花了一分钱感觉还可以，但是昨天又买一斤土豆还有一斤鸡胸肉和一份水饺，结果今天去拿货等到晚上才到，去拿了几次都没有送过来，这还不是最坑的，最坑的是土豆居然那么小一个，在种在农村里都不是用来吃的，果然是真的便宜没有好货，这句话在这里真正的得到验证了。</p><span id="more"></span><p>还有那个鸡胸肉一斤鸡胸肉能够拧出半斤水来，比我以前在另一个平台买的差远了，好像里面就是注水了的，而且吃起来一点鸡肉的味道都没有，就和合成的鸡肉一样，刚开始做那些平台确实是认真做的，后面这些完全就是为了打价格战，品质非常差，也不怕砸了自己的招牌了，比淘宝买东西还不如，淘宝卖家怕你给差评还发好的，这些平台你连差评都没有地方给，反正都是继续坑下一个。</p><p>水饺是其他的都到了那个就没有货，我也是醉了，就是看着这个水饺可以才一起买的。价格便宜的那种是带包装的反正就是不发货，等到你去拿的时候才说没有货，然后就让退款，没有货为什么还要上架，完全就是为了吸引消费者的眼球，因为这些带包装的价格和品质都一样，从中不可能做手脚来赚利润，不用怎么包装没有统一规格的这种就不一样了。</p><p>一般的带包装有一定规格的，要么就是买的时候刚付完款他就给你退款了，今天早上我就遇到一次，搞得我莫名其妙，而且上面退款原因也没有。还有一种就是一起买的几样，带包装有一定规格的其他到了有货那个就是没有，多多买菜和美团都遇到过一次了，以后买还是要擦亮眼睛了，我发觉如果只单独买那一样估计也是秒退的，不发货还挂在上面干嘛，而且还显示再买一单，这不是有问题吗，总结出来就只有一句话，挂羊头买狗肉，真的再贴切不过了。</p><p>社区团购前年2019年的大概12月就开始在同程上买过了，那些虽然是斤两差了一些，但是品质有保证，也没有不发货的情况，后面的这些是什么鬼真的搞不清楚。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 社区团购 </tag>
-            
-            <tag> 平台 </tag>
-            
-            <tag> 第二次 </tag>
-            
-            <tag> 鸡胸肉 </tag>
-            
-            <tag> 半斤水 </tag>
-            
-            <tag> 赚利润 </tag>
-            
-            <tag> 秒退 </tag>
-            
-            <tag> 不发货 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>窗外下起了雨，这雨如同下在我的心里</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/36057a56/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/36057a56/</url>
@@ -21924,6 +21946,45 @@
             <tag> 顺水而流 </tag>
             
             <tag> 逃离苦海 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>社区团购的坑，第一次能买到点便宜的第二次就不行了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a5982df5/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a5982df5/</url>
+      
+        <content type="html"><![CDATA[<p>我第一次在美团上买了橙子才花了一分钱感觉还可以，但是昨天又买一斤土豆还有一斤鸡胸肉和一份水饺，结果今天去拿货等到晚上才到，去拿了几次都没有送过来，这还不是最坑的，最坑的是土豆居然那么小一个，在种在农村里都不是用来吃的，果然是真的便宜没有好货，这句话在这里真正的得到验证了。</p><span id="more"></span><p>还有那个鸡胸肉一斤鸡胸肉能够拧出半斤水来，比我以前在另一个平台买的差远了，好像里面就是注水了的，而且吃起来一点鸡肉的味道都没有，就和合成的鸡肉一样，刚开始做那些平台确实是认真做的，后面这些完全就是为了打价格战，品质非常差，也不怕砸了自己的招牌了，比淘宝买东西还不如，淘宝卖家怕你给差评还发好的，这些平台你连差评都没有地方给，反正都是继续坑下一个。</p><p>水饺是其他的都到了那个就没有货，我也是醉了，就是看着这个水饺可以才一起买的。价格便宜的那种是带包装的反正就是不发货，等到你去拿的时候才说没有货，然后就让退款，没有货为什么还要上架，完全就是为了吸引消费者的眼球，因为这些带包装的价格和品质都一样，从中不可能做手脚来赚利润，不用怎么包装没有统一规格的这种就不一样了。</p><p>一般的带包装有一定规格的，要么就是买的时候刚付完款他就给你退款了，今天早上我就遇到一次，搞得我莫名其妙，而且上面退款原因也没有。还有一种就是一起买的几样，带包装有一定规格的其他到了有货那个就是没有，多多买菜和美团都遇到过一次了，以后买还是要擦亮眼睛了，我发觉如果只单独买那一样估计也是秒退的，不发货还挂在上面干嘛，而且还显示再买一单，这不是有问题吗，总结出来就只有一句话，挂羊头买狗肉，真的再贴切不过了。</p><p>社区团购前年2019年的大概12月就开始在同程上买过了，那些虽然是斤两差了一些，但是品质有保证，也没有不发货的情况，后面的这些是什么鬼真的搞不清楚。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 社区团购 </tag>
+            
+            <tag> 平台 </tag>
+            
+            <tag> 第二次 </tag>
+            
+            <tag> 鸡胸肉 </tag>
+            
+            <tag> 半斤水 </tag>
+            
+            <tag> 赚利润 </tag>
+            
+            <tag> 秒退 </tag>
+            
+            <tag> 不发货 </tag>
             
         </tags>
       
@@ -22229,9 +22290,9 @@
             
             <tag> 适配器 </tag>
             
-            <tag> 一波三折 </tag>
-            
             <tag> 转换板 </tag>
+            
+            <tag> 一波三折 </tag>
             
             <tag> 距离 </tag>
             
@@ -22362,13 +22423,13 @@
             
             <tag> 小鸟 </tag>
             
+            <tag> 梦里 </tag>
+            
             <tag> 相思 </tag>
             
             <tag> 历史 </tag>
             
             <tag> 寂寞 </tag>
-            
-            <tag> 梦里 </tag>
             
             <tag> 梦里醒来 </tag>
             
@@ -22888,45 +22949,6 @@
     
     
     <entry>
-      <title>苹果12之后小米11也不带充电器了</title>
-      <link href="/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/ddb76ed1/"/>
-      <url>/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/ddb76ed1/</url>
-      
-        <content type="html"><![CDATA[<p>以前买过小米10的还可以用小米10的充电器，如果没有的还是要得重新买，因为小米10的充电器是带快充功能的，以前的安卓手机的好多充电器都是不能快充的，本身手机就带有快充功能，如果用的不是带有快充的充电器，那这个功能就相当于没有，充电速度就会明显变慢。</p><span id="more"></span><p>如果打算买小米11了，而手里又没有快充充电头的还是得重新买一个，其实充电头这个东西多了感觉也没有什么用，但是得认清一个事实就是手机的充电速度是越来越快的，自然也要新的充电头跟上才行，如果手机已经有超级快充功能了，而还用一个普通的没有快充的充电头，那快充的使用体验基本上没有。</p><p>虽然减少充电头是为了环保，但是充电技术是在不停的升级的啊，淘汰的都是充电比较慢的充电头，要解决这个环保和新技术的问题是两难的除非通过新的充电设备来代替，可以几年不用换向后兼容那种，不发充电头这个方案似乎是无解的。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 互联网科技 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 安卓手机 </tag>
-            
-            <tag> 小米11 </tag>
-            
-            <tag> 小米10 </tag>
-            
-            <tag> 充电器 </tag>
-            
-            <tag> 苹果12 </tag>
-            
-            <tag> 快充 </tag>
-            
-            <tag> 充电头 </tag>
-            
-            <tag> 环保 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>苹果ID改地区，图文详解</title>
       <link href="/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/8042b2bd/"/>
       <url>/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/8042b2bd/</url>
@@ -22976,6 +22998,45 @@
     
     
     <entry>
+      <title>苹果12之后小米11也不带充电器了</title>
+      <link href="/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/ddb76ed1/"/>
+      <url>/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/ddb76ed1/</url>
+      
+        <content type="html"><![CDATA[<p>以前买过小米10的还可以用小米10的充电器，如果没有的还是要得重新买，因为小米10的充电器是带快充功能的，以前的安卓手机的好多充电器都是不能快充的，本身手机就带有快充功能，如果用的不是带有快充的充电器，那这个功能就相当于没有，充电速度就会明显变慢。</p><span id="more"></span><p>如果打算买小米11了，而手里又没有快充充电头的还是得重新买一个，其实充电头这个东西多了感觉也没有什么用，但是得认清一个事实就是手机的充电速度是越来越快的，自然也要新的充电头跟上才行，如果手机已经有超级快充功能了，而还用一个普通的没有快充的充电头，那快充的使用体验基本上没有。</p><p>虽然减少充电头是为了环保，但是充电技术是在不停的升级的啊，淘汰的都是充电比较慢的充电头，要解决这个环保和新技术的问题是两难的除非通过新的充电设备来代替，可以几年不用换向后兼容那种，不发充电头这个方案似乎是无解的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 互联网科技 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 安卓手机 </tag>
+            
+            <tag> 小米11 </tag>
+            
+            <tag> 小米10 </tag>
+            
+            <tag> 充电器 </tag>
+            
+            <tag> 苹果12 </tag>
+            
+            <tag> 快充 </tag>
+            
+            <tag> 充电头 </tag>
+            
+            <tag> 环保 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>蓝叠64位这个应该是最流畅的模拟器了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b7442738/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b7442738/</url>
@@ -23009,6 +23070,55 @@
             <tag> 机型设置 </tag>
             
             <tag> 发挥出 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>装了一台电脑还是只觉得玩网页小游戏比较香</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6673a22f/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6673a22f/</url>
+      
+        <content type="html"><![CDATA[<p>组装了一台台式迷你机，刚开始还想着玩一下原神这样的网络游戏，玩了几天后面就是再也没有玩过了，玩着都感觉没有什么兴趣了，而且还浪费很多时间，就不要说充钱了，我玩网络游戏就从来没有充过钱，顶多是在上面花点时间都算是可以的了。</p><span id="more"></span><p>本来刚组装电脑的时候总觉得是要用来玩什么网络游戏的，想着也要把电脑配置加到好点才行，后面玩了几天是真的发觉没有什么必要，因为那些游戏顶多玩了几次就再也不想去玩了。</p><p>不得不说最后还是用来玩网页游戏比较香，但是其实笔记本电脑也是可以玩的，只不过是台式机的散热比笔记本好，当然就不会出现像笔记本的突然就死机或者关机了。</p><p>当然还是网页游戏玩着没有那么累，想玩就玩一下就可以了，而且玩一段时间到一定等级还可以赚个几毛钱，虽然赚的钱不多，但是不用花钱玩游戏，还可以赚个几毛钱感觉还是挺不错的，就当是给自己一个奖励，对于戒游戏也是很有帮助。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电脑 </tag>
+            
+            <tag> 兴趣 </tag>
+            
+            <tag> 小游戏 </tag>
+            
+            <tag> 比较香 </tag>
+            
+            <tag> 台式迷你机 </tag>
+            
+            <tag> LOL </tag>
+            
+            <tag> 网络游戏 </tag>
+            
+            <tag> 花点时间 </tag>
+            
+            <tag> 组装电脑 </tag>
+            
+            <tag> 网页游戏 </tag>
+            
+            <tag> 赚个几毛钱 </tag>
+            
+            <tag> 奖励 </tag>
+            
+            <tag> 戒游戏 </tag>
             
         </tags>
       
@@ -23081,55 +23191,6 @@
             <tag> 癌症 </tag>
             
             <tag> 病来如山倒 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>装了一台电脑还是只觉得玩网页小游戏比较香</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6673a22f/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6673a22f/</url>
-      
-        <content type="html"><![CDATA[<p>组装了一台台式迷你机，刚开始还想着玩一下原神这样的网络游戏，玩了几天后面就是再也没有玩过了，玩着都感觉没有什么兴趣了，而且还浪费很多时间，就不要说充钱了，我玩网络游戏就从来没有充过钱，顶多是在上面花点时间都算是可以的了。</p><span id="more"></span><p>本来刚组装电脑的时候总觉得是要用来玩什么网络游戏的，想着也要把电脑配置加到好点才行，后面玩了几天是真的发觉没有什么必要，因为那些游戏顶多玩了几次就再也不想去玩了。</p><p>不得不说最后还是用来玩网页游戏比较香，但是其实笔记本电脑也是可以玩的，只不过是台式机的散热比笔记本好，当然就不会出现像笔记本的突然就死机或者关机了。</p><p>当然还是网页游戏玩着没有那么累，想玩就玩一下就可以了，而且玩一段时间到一定等级还可以赚个几毛钱，虽然赚的钱不多，但是不用花钱玩游戏，还可以赚个几毛钱感觉还是挺不错的，就当是给自己一个奖励，对于戒游戏也是很有帮助。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 电脑 </tag>
-            
-            <tag> 兴趣 </tag>
-            
-            <tag> 小游戏 </tag>
-            
-            <tag> 比较香 </tag>
-            
-            <tag> 台式迷你机 </tag>
-            
-            <tag> LOL </tag>
-            
-            <tag> 网络游戏 </tag>
-            
-            <tag> 花点时间 </tag>
-            
-            <tag> 组装电脑 </tag>
-            
-            <tag> 网页游戏 </tag>
-            
-            <tag> 赚个几毛钱 </tag>
-            
-            <tag> 奖励 </tag>
-            
-            <tag> 戒游戏 </tag>
             
         </tags>
       
@@ -23232,45 +23293,6 @@
     
     
     <entry>
-      <title>记录自己真实的梦境:我昨晚做了两个梦，后面一个让我感到很害怕</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/</url>
-      
-        <content type="html"><![CDATA[<p>昨晚做了两个梦，第一个是梦到两个自己从未见过的女孩，梦到自己突然回到了高中时期，梦里两个女孩是和我同班的，而且离我家不是太远，一个感觉很真实，而另外一个我感觉很模糊。</p><span id="more"></span><p>真实的这个每天放学后，我都要跟着她后面走很长一段路，直到快要走到她家对面，我只能远远的看着她，我离她家对面的中间是一条河沟，看着不远，其实实际距离是非常的远，因为我站在她家对面，中间的河沟是一个U弧形的，要从我这边走下去，然后又从她家那边走上去，这种地方我现实中是见到过的，不知道为何会出现在我的梦里，而是且时间地点也是错误的。我只能远远的在对面看着她消失在我的视野里，但是我却就是不敢跟她表白，说我喜欢她。</p><p>第二个梦是梦到自己去一个厂里上班，也不知自己怎么就没有衣服穿了，别人就随便给了我一件，我也不看是不是女人穿的，自己就胡乱穿在身上了，后来遇到厂里一个上了年纪的女人，说我身上穿的那件衣服，是一个已经逝去的女人穿的，还告诉我那个女人的名字叫邓红，说她已经病逝一年多了。我他妈顿时就是毛骨悚然，在梦中我都感到害怕了，我怎么就穿着死去女人的衣服，难怪那衣服上还有女人的味道，我顿时就被吓惊醒了，这太恐怖了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 厂里上班 </tag>
-            
-            <tag> 衣服 </tag>
-            
-            <tag> 真实 </tag>
-            
-            <tag> 两个梦 </tag>
-            
-            <tag> 同班 </tag>
-            
-            <tag> 河沟 </tag>
-            
-            <tag> 吓惊醒了 </tag>
-            
-            <tag> 太恐怖了 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>记录自己的梦境：在梦里我回到了自己读初中的那个学校</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ab9a4404/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ab9a4404/</url>
@@ -23318,6 +23340,45 @@
             <tag> 梦醒了 </tag>
             
             <tag> 天亮了 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>记录自己真实的梦境:我昨晚做了两个梦，后面一个让我感到很害怕</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/</url>
+      
+        <content type="html"><![CDATA[<p>昨晚做了两个梦，第一个是梦到两个自己从未见过的女孩，梦到自己突然回到了高中时期，梦里两个女孩是和我同班的，而且离我家不是太远，一个感觉很真实，而另外一个我感觉很模糊。</p><span id="more"></span><p>真实的这个每天放学后，我都要跟着她后面走很长一段路，直到快要走到她家对面，我只能远远的看着她，我离她家对面的中间是一条河沟，看着不远，其实实际距离是非常的远，因为我站在她家对面，中间的河沟是一个U弧形的，要从我这边走下去，然后又从她家那边走上去，这种地方我现实中是见到过的，不知道为何会出现在我的梦里，而是且时间地点也是错误的。我只能远远的在对面看着她消失在我的视野里，但是我却就是不敢跟她表白，说我喜欢她。</p><p>第二个梦是梦到自己去一个厂里上班，也不知自己怎么就没有衣服穿了，别人就随便给了我一件，我也不看是不是女人穿的，自己就胡乱穿在身上了，后来遇到厂里一个上了年纪的女人，说我身上穿的那件衣服，是一个已经逝去的女人穿的，还告诉我那个女人的名字叫邓红，说她已经病逝一年多了。我他妈顿时就是毛骨悚然，在梦中我都感到害怕了，我怎么就穿着死去女人的衣服，难怪那衣服上还有女人的味道，我顿时就被吓惊醒了，这太恐怖了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 厂里上班 </tag>
+            
+            <tag> 衣服 </tag>
+            
+            <tag> 真实 </tag>
+            
+            <tag> 两个梦 </tag>
+            
+            <tag> 同班 </tag>
+            
+            <tag> 河沟 </tag>
+            
+            <tag> 吓惊醒了 </tag>
+            
+            <tag> 太恐怖了 </tag>
             
         </tags>
       
@@ -23649,6 +23710,59 @@
     
     
     <entry>
+      <title>读《围炉夜话》其八有感</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f6e5d615/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f6e5d615/</url>
+      
+        <content type="html"><![CDATA[<p>教育小孩应该要态度严厉，宠爱和太过于溺爱对小孩都是没有好处的，只有严厉的教育才能锻炼出小孩子的独立性，毕竟如今的社会是复杂多变的，那种长大后，依然还是巨婴的人是很难在社会上生存的，严厉的教育可以培养出孩子的独立性和自信心。</p><span id="more"></span><p>对小孩太过于溺爱那样反而是害了他自己，对于小孩子想要什么都千依百顺地去满足，那样一旦他长大后得不到自己想要的就会走入犯罪的深渊，所以有小孩的父母当要引以为戒。</p><p>然而对待小人我们要以一种尊敬的心态去对待他们，他们虽然有不好的地方，但是从他们身上还是有我们值得去学习的，如果老是用一种奇特的眼光去看待他们那是要不得的，我们要想引他们向善，就得先让他们觉得我们对他们没有恶意。</p><p>只有他们觉得我们是对他们是好的，那样他们才能走向善的一面，只有种下的是善的种子结出来的才是善果，如果我们自己都没有善意，那小人他们怎么又会被我们感化呢，如果我们对他人没有善意，那种下的种子，结出来的自然也还是恶果。</p><p>想要引人向善，我们自己的言行就首先得是善的，我们要对恶人行善，那样这个世界才会结出来更多的善果，我们对待小人要有一种敬畏之心，才能用我们的行动，我们的善来唤醒他们沉睡的良知，要多怀敬畏之心，才能让他人走向正途。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 围炉夜话 </tag>
+            
+            <tag> 教育小孩 </tag>
+            
+            <tag> 态度严厉 </tag>
+            
+            <tag> 宠爱 </tag>
+            
+            <tag> 溺爱 </tag>
+            
+            <tag> 独立性 </tag>
+            
+            <tag> 复杂多变 </tag>
+            
+            <tag> 自信心 </tag>
+            
+            <tag> 犯罪 </tag>
+            
+            <tag> 引以为戒 </tag>
+            
+            <tag> 对待小人 </tag>
+            
+            <tag> 奇特 </tag>
+            
+            <tag> 善果 </tag>
+            
+            <tag> 敬畏之心 </tag>
+            
+            <tag> 正途 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>读《围炉夜话》其五有感</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e358563c/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e358563c/</url>
@@ -23696,59 +23810,6 @@
             <tag> 言语 </tag>
             
             <tag> 同一本书 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>读《围炉夜话》其八有感</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f6e5d615/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f6e5d615/</url>
-      
-        <content type="html"><![CDATA[<p>教育小孩应该要态度严厉，宠爱和太过于溺爱对小孩都是没有好处的，只有严厉的教育才能锻炼出小孩子的独立性，毕竟如今的社会是复杂多变的，那种长大后，依然还是巨婴的人是很难在社会上生存的，严厉的教育可以培养出孩子的独立性和自信心。</p><span id="more"></span><p>对小孩太过于溺爱那样反而是害了他自己，对于小孩子想要什么都千依百顺地去满足，那样一旦他长大后得不到自己想要的就会走入犯罪的深渊，所以有小孩的父母当要引以为戒。</p><p>然而对待小人我们要以一种尊敬的心态去对待他们，他们虽然有不好的地方，但是从他们身上还是有我们值得去学习的，如果老是用一种奇特的眼光去看待他们那是要不得的，我们要想引他们向善，就得先让他们觉得我们对他们没有恶意。</p><p>只有他们觉得我们是对他们是好的，那样他们才能走向善的一面，只有种下的是善的种子结出来的才是善果，如果我们自己都没有善意，那小人他们怎么又会被我们感化呢，如果我们对他人没有善意，那种下的种子，结出来的自然也还是恶果。</p><p>想要引人向善，我们自己的言行就首先得是善的，我们要对恶人行善，那样这个世界才会结出来更多的善果，我们对待小人要有一种敬畏之心，才能用我们的行动，我们的善来唤醒他们沉睡的良知，要多怀敬畏之心，才能让他人走向正途。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 围炉夜话 </tag>
-            
-            <tag> 教育小孩 </tag>
-            
-            <tag> 态度严厉 </tag>
-            
-            <tag> 宠爱 </tag>
-            
-            <tag> 溺爱 </tag>
-            
-            <tag> 独立性 </tag>
-            
-            <tag> 复杂多变 </tag>
-            
-            <tag> 自信心 </tag>
-            
-            <tag> 犯罪 </tag>
-            
-            <tag> 引以为戒 </tag>
-            
-            <tag> 对待小人 </tag>
-            
-            <tag> 奇特 </tag>
-            
-            <tag> 善果 </tag>
-            
-            <tag> 敬畏之心 </tag>
-            
-            <tag> 正途 </tag>
             
         </tags>
       
@@ -23898,6 +23959,49 @@
     
     
     <entry>
+      <title>读《阁楼里的女孩》</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e049a85/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e049a85/</url>
+      
+        <content type="html"><![CDATA[<p>《阁楼里的女孩》这本书由美国作家弗吉尼亚.安德鲁斯所写，故事发生于美国宾州格拉斯通的一个梦幻家庭，故事一开头展现出来的看似就是一个普通的美国中产阶级家庭，随着故事的发展却有着跌宕起伏的情节。</p><span id="more"></span><p>故事由卡西这个故事里的小女孩以亲身讲述自己的遭遇和不幸，卡西她父亲是通用电气公司的一名公关部门的职员，她母亲柯琳是一名家庭主妇。卡西她还有个哥哥，后来她妈妈又生下了一对龙凤双胞胎，所有加她一起就是四兄妹。因为她父亲有很高的收入，所以年少的她们看起来衣食无忧。</p><p>但是一场变故改变了这原有的一切，她父亲在33岁生日那天突然出车祸去世了，原本是一家人等着回来给他庆祝生日，可是等来却是警察带来他的死讯。喜事瞬间就变成了丧事，这个变故给了这个家庭不小的打击。</p><p>因为她母亲柯琳从小是出生在一个富裕的庄园主家庭里，所以私奔嫁给她父亲之后没有什么工作技能，更别说要她独自养活四个孩子，而且她家是提前消费的类型，房子和她父亲之前开的汽车都是每个月要还贷才可以维持的，包括家里所有家具都是贷款购买的，每个月如果没有还上就会被债主收回去。</p><p>因为现实的困难，她的母亲能想到的就是回到她外祖父家那里去。因为柯琳和卡西的父亲私奔结婚，她外祖父很生气，所以这个外祖父把柯琳的继承权给取消了。柯琳想要得到她父亲的原谅重新拿回继承权，而一切曲折的遭遇就是来到这个庄园之后开始展开。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 贷款 </tag>
+            
+            <tag> 收入 </tag>
+            
+            <tag> 女孩 </tag>
+            
+            <tag> 阁楼 </tag>
+            
+            <tag> 梦幻家庭 </tag>
+            
+            <tag> 死讯 </tag>
+            
+            <tag> 私奔 </tag>
+            
+            <tag> 庄园 </tag>
+            
+            <tag> 外祖父 </tag>
+            
+            <tag> 继承权 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>读《围炉夜话》其四有感</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/37b7505e/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/37b7505e/</url>
@@ -23961,6 +24065,53 @@
     
     
     <entry>
+      <title>赌王去世，他的家产如何分割？</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/35e8dbf5/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/35e8dbf5/</url>
+      
+        <content type="html"><![CDATA[<p>一代赌王何鸿燊于2020年5月26日在香港养和医院逝世，享年98岁。近年关于赌王家族的5000亿家产如何分配一直争议不断，网络上和坊间也是传得纷纷扰扰，让人不知所以然。</p><span id="more"></span><p>他的家产和家族的富裕程度香港和澳门两地无人不知无人不晓，他一生4个老婆，17个子女。</p><p>第一个原配妻子黎婉华，曾是澳门第一美人，生下1男三女，其中一男何猷光1981年在葡萄牙遭遇车祸去世。2004年，黎婉华去世。</p><p>第二太太蓝琼缨，1957年开始蓝琼缨始终陪伴在“赌王”身旁，经常出席一些社交和慈善活动，蓝琼缨为何鸿燊生了1男4女。</p><p>第三太太陈婉珍，1985年何鸿燊在香港给陈婉珍买了豪宅，并公开纳她为第三房太太，陈婉珍为何鸿燊生了1男2女。</p><p>第四太太梁安琪，1986年，何鸿燊在一次舞会上认识了比自己小39岁的广州姑娘（祖籍广东三水）梁安琪。之后，梁安琪成为何鸿燊的固定舞伴，被安排到何家赌场账房做文员，还开了一家舞蹈学校，自己当老师。</p><p>1989年，梁安琪正式成为“四太太”，梁安琪为何鸿燊生了3男2女。其中最小的儿子何猷佳一直是个谜，有的人说10岁时已经夭折，也有的人说他是个智障，所以一直没有公开露面。</p><p>除去已经去世的最大的儿子何猷光和最小的儿子何猷佳外，能分到家产的包括3个太太和15个子女，究竟谁能分得最多，那就要看赌王生前的遗嘱上怎么写了，但是始终免不了一场家产分割之争的大战。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 澳门 </tag>
+            
+            <tag> 赌王 </tag>
+            
+            <tag> 家产 </tag>
+            
+            <tag> 分割 </tag>
+            
+            <tag> 何鸿燊 </tag>
+            
+            <tag> 黎婉华 </tag>
+            
+            <tag> 第一美人 </tag>
+            
+            <tag> 蓝琼缨 </tag>
+            
+            <tag> 陈婉珍 </tag>
+            
+            <tag> 梁安琪 </tag>
+            
+            <tag> 何猷光 </tag>
+            
+            <tag> 何猷佳 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>读围炉夜话其一有感</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/cdfc97e/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/cdfc97e/</url>
@@ -24002,96 +24153,6 @@
             <tag> 恶小 </tag>
             
             <tag> 不可逆 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>读《阁楼里的女孩》</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e049a85/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e049a85/</url>
-      
-        <content type="html"><![CDATA[<p>《阁楼里的女孩》这本书由美国作家弗吉尼亚.安德鲁斯所写，故事发生于美国宾州格拉斯通的一个梦幻家庭，故事一开头展现出来的看似就是一个普通的美国中产阶级家庭，随着故事的发展却有着跌宕起伏的情节。</p><span id="more"></span><p>故事由卡西这个故事里的小女孩以亲身讲述自己的遭遇和不幸，卡西她父亲是通用电气公司的一名公关部门的职员，她母亲柯琳是一名家庭主妇。卡西她还有个哥哥，后来她妈妈又生下了一对龙凤双胞胎，所有加她一起就是四兄妹。因为她父亲有很高的收入，所以年少的她们看起来衣食无忧。</p><p>但是一场变故改变了这原有的一切，她父亲在33岁生日那天突然出车祸去世了，原本是一家人等着回来给他庆祝生日，可是等来却是警察带来他的死讯。喜事瞬间就变成了丧事，这个变故给了这个家庭不小的打击。</p><p>因为她母亲柯琳从小是出生在一个富裕的庄园主家庭里，所以私奔嫁给她父亲之后没有什么工作技能，更别说要她独自养活四个孩子，而且她家是提前消费的类型，房子和她父亲之前开的汽车都是每个月要还贷才可以维持的，包括家里所有家具都是贷款购买的，每个月如果没有还上就会被债主收回去。</p><p>因为现实的困难，她的母亲能想到的就是回到她外祖父家那里去。因为柯琳和卡西的父亲私奔结婚，她外祖父很生气，所以这个外祖父把柯琳的继承权给取消了。柯琳想要得到她父亲的原谅重新拿回继承权，而一切曲折的遭遇就是来到这个庄园之后开始展开。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 贷款 </tag>
-            
-            <tag> 收入 </tag>
-            
-            <tag> 女孩 </tag>
-            
-            <tag> 阁楼 </tag>
-            
-            <tag> 梦幻家庭 </tag>
-            
-            <tag> 死讯 </tag>
-            
-            <tag> 私奔 </tag>
-            
-            <tag> 庄园 </tag>
-            
-            <tag> 外祖父 </tag>
-            
-            <tag> 继承权 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>赌王去世，他的家产如何分割？</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/35e8dbf5/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/35e8dbf5/</url>
-      
-        <content type="html"><![CDATA[<p>一代赌王何鸿燊于2020年5月26日在香港养和医院逝世，享年98岁。近年关于赌王家族的5000亿家产如何分配一直争议不断，网络上和坊间也是传得纷纷扰扰，让人不知所以然。</p><span id="more"></span><p>他的家产和家族的富裕程度香港和澳门两地无人不知无人不晓，他一生4个老婆，17个子女。</p><p>第一个原配妻子黎婉华，曾是澳门第一美人，生下1男三女，其中一男何猷光1981年在葡萄牙遭遇车祸去世。2004年，黎婉华去世。</p><p>第二太太蓝琼缨，1957年开始蓝琼缨始终陪伴在“赌王”身旁，经常出席一些社交和慈善活动，蓝琼缨为何鸿燊生了1男4女。</p><p>第三太太陈婉珍，1985年何鸿燊在香港给陈婉珍买了豪宅，并公开纳她为第三房太太，陈婉珍为何鸿燊生了1男2女。</p><p>第四太太梁安琪，1986年，何鸿燊在一次舞会上认识了比自己小39岁的广州姑娘（祖籍广东三水）梁安琪。之后，梁安琪成为何鸿燊的固定舞伴，被安排到何家赌场账房做文员，还开了一家舞蹈学校，自己当老师。</p><p>1989年，梁安琪正式成为“四太太”，梁安琪为何鸿燊生了3男2女。其中最小的儿子何猷佳一直是个谜，有的人说10岁时已经夭折，也有的人说他是个智障，所以一直没有公开露面。</p><p>除去已经去世的最大的儿子何猷光和最小的儿子何猷佳外，能分到家产的包括3个太太和15个子女，究竟谁能分得最多，那就要看赌王生前的遗嘱上怎么写了，但是始终免不了一场家产分割之争的大战。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 澳门 </tag>
-            
-            <tag> 赌王 </tag>
-            
-            <tag> 家产 </tag>
-            
-            <tag> 分割 </tag>
-            
-            <tag> 何鸿燊 </tag>
-            
-            <tag> 黎婉华 </tag>
-            
-            <tag> 第一美人 </tag>
-            
-            <tag> 蓝琼缨 </tag>
-            
-            <tag> 陈婉珍 </tag>
-            
-            <tag> 梁安琪 </tag>
-            
-            <tag> 何猷光 </tag>
-            
-            <tag> 何猷佳 </tag>
             
         </tags>
       
@@ -24309,130 +24370,6 @@
     
     
     <entry>
-      <title>迷你电脑主机的好处</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5c1dd71a/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5c1dd71a/</url>
-      
-        <content type="html"><![CDATA[<p>迷你电脑的好处还是有很多的，第一个就是放在桌面不占地方，比起我以前那个15.6寸的笔记本电脑我自己装的这个3.2L的迷你主机是占桌面的位置少了很多，以前放一个笔记本电脑基本上放不了键盘和鼠标了。</p><span id="more"></span><p>现在是真的好了很多，不仅桌面可以放鼠标和键盘了，而且还有很多空余的空间，以前的笔记本加个散热器在底下差点是连外接的显示器都放不下，我用的桌子是很窄的，加上房间的空间也不大，所以自己组装电脑的时候首先就是要考虑空间的问题，如果弄一个大的主机根本就放不下，桌面上放不下，桌底下更没有空间放。</p><p>所以选择迷你ITX的小机箱对于我来说真的很重要，小机箱除了装不下显卡以外和大机箱的电脑也没有什么性能上的差距，但是大机箱要加一个显卡虽说性能提升了，同时预算也是跟着增加的，最主要的就是现在的显卡真的很贵，所以用小机箱弄一个带核显的处理器是真的很不错的选择。</p><p>要说性能一般的腾讯的网络游戏也都能玩了，反正也非常适合不怎么玩游戏的，要偶尔玩一下英雄联盟这些游戏一点问题都没有，要说大型单机游戏我是没有玩过，连吃鸡都要花钱去买，所以我是不会去玩的了。</p><p>连腾讯的网游我安装了都很少去玩，因为感觉玩游戏时间过得太快了，而玩游戏花了很多时间就没有多余的时间去做其他的了，真的是有时候无聊的时候才去玩一下。其实我用电脑最大的乐趣还是用键盘打字感觉比较爽，所以我用电脑都是喜欢用来写文章多一点，便携小巧不占地方这样的电脑对于我说真的很匹配我的需求。</p><p>我现在用这个电脑基本上很多时间只是用来上网，相信很多人其实都一样，买电脑或者自己组装电脑的时候都是想着要能玩英雄联盟这样的游戏才行，好像不能玩这个游戏的电脑都称不上是真正的电脑一样，我买电脑也是有过这样的考虑的，至少在我组装这台迷你机之前选处理器我是要先看测评到底能不能玩英雄联盟才行，但其实这个是一个伪需求，因为电脑组装好以后也只玩了几盘感觉就没有什么意思了，还是最多的是用来写些文章和上网，逛贴吧和知乎这些网站。虽然感觉电脑是比以前的快了很多，但是也感觉做的事也只是一些不需要太高配置的电脑都可以做的，作为一个办公来说的电脑真的有时候会感觉有性能过剩这种感觉。</p><p>也许是用不到的原因吧，但是如果自己要用到的那些功能的时候可能又会感觉自己的电脑性能有点不足了，所以才会有那么多需要给电脑做性能分类的比如只用来办公的，用来玩游戏的，和用来做视频剪辑一类的，但是性能越好的电脑能做的事越多这是无可厚非的，只不过当前的需求代表了当下的一个选择标准而已。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 笔记本电脑 </tag>
-            
-            <tag> 玩游戏 </tag>
-            
-            <tag> 显卡 </tag>
-            
-            <tag> 视频剪辑 </tag>
-            
-            <tag> 键盘 </tag>
-            
-            <tag> 好处 </tag>
-            
-            <tag> 腾讯 </tag>
-            
-            <tag> 键盘打字 </tag>
-            
-            <tag> 英雄联盟 </tag>
-            
-            <tag> 鼠标 </tag>
-            
-            <tag> 迷你机 </tag>
-            
-            <tag> 组装电脑 </tag>
-            
-            <tag> 贴吧 </tag>
-            
-            <tag> 迷你电脑 </tag>
-            
-            <tag> 主机 </tag>
-            
-            <tag> 3.2L </tag>
-            
-            <tag> 空间 </tag>
-            
-            <tag> 迷你ITX </tag>
-            
-            <tag> 伪需求 </tag>
-            
-            <tag> 知乎 </tag>
-            
-            <tag> 性能过剩 </tag>
-            
-            <tag> 办公 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>那些在QQ上求赞的女人是什么心态</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/77b8b612/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/77b8b612/</url>
-      
-        <content type="html"><![CDATA[<p>本来是不想写这个题目的，但是今天突然看到一个女的发信息给我说要我赞她十次她就回赞我一次，我当时就想笑了，我是缺她那一次赞吗，再说也不公平啊，我赞她十次她也应该赞我十次才对，现在的社会应该是男女公平才对啊，为什么她认为她是女人，我就多赞她几下，要让我多付出一点。</p><span id="more"></span><p>虽然我的QQ个人主页上也是有三千多赞了，但我是真的不在乎别人赞不赞我的问题，如果是我写来发在平台上的文章赞得越多，那我肯定是高兴的，因为这样我文章就可以成为热文可以被更多的人看到，但是QQ个人主页那里赞得再多，也是没有什么用的，赞得再多别人如果不打开你自己的主页谁又会看到。</p><p>我赞别人也是无聊的时候顺手点一下而已，但是真的没有要发消息去让别人来赞我的意思，不知道那些喜欢让别人给她点赞的人原因是什么，反正我看不懂，难道是赞得越多自己就可以成为网红吗。我记得还在QQ空间上看到有人卖刷赞，说多少钱刷多少赞，这就有点让我想笑了，就这么个赞真的有必要花钱去刷吗？</p><p>点开那个女人的QQ上的主页我特意留意了她的年龄上面写着五十了，这个年龄的女人对于这些应该不看得那么重了才对，这不是都是小孩子玩意吗，对于她是怎么加我的或者是我怎么加她的这里我就不清楚了，也不想去回忆，也不做过多的讨论。QQ上一直都是年轻人比较多，因为不像微信一样要用手机号才能注册。那为什么一个五十多岁的女人还要要求别人赞她，是虚荣心在作祟吗？还是真的太无聊？这一切都好像就是个未解之谜，我也不知道答案到底是什么。</p><p>说到QQ上的赞这个功能也有好多年了，记得几年前还有身边的朋友去淘宝上买赞，那时候我就不以为然，认为这个东西是一点卵用都没有，怎么还要花钱去买，是钱多没有地方花了吗？但是这是人家的消费自由我也没有必要去反对什么，我也不需要去劝说人家要怎么怎么样，那还真的还没有什么必要，我自己感觉不值得，人家自己认为值得那就行了，每个人的价值观都是千差万别的，不一定都要符合自己思维的才是对的，就是因为个体差异的不同才会有这世界的多姿多彩。</p><p>要说那些在QQ上求赞的女人是什么心态我真的不清楚，因为我对于自己认为没有价值的东西我就很少去研究，我这样写出来我也只是写下我对这些事的感受，因为我的想法不能代表她的看法，我也不是她，也不是她肚子里的蛔虫，怎么可能知道她们所想的、她们心态是怎样的。虽然人在某些时刻确实是可以换位思考的，但我不想，换到她的位置来想我也想不到什么合适的答案，我能想到的还是我自己的想法，所以我写出来的也是这样。</p><p>对于我来说我真的不想去研究一些对自己没有价值的东西，特别是这些无聊的，既然人家喜欢别人对她的点赞，那我点了就是，我点这个东西我可能点的时候都是不计其数的，直到点到不能点为止就不点了，这个说起来真的有点无聊，和小孩子玩的游戏一样了。反正我点了就是了，她给不给我点赞也无所谓，我真的对这种无价值无意义的东西不会去在乎，我这样写下来就是写下自己的感受，完全没有其他别的意思。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 情感美文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 答案 </tag>
-            
-            <tag> 题目 </tag>
-            
-            <tag> 淘宝 </tag>
-            
-            <tag> QQ </tag>
-            
-            <tag> 个人主页 </tag>
-            
-            <tag> 网红 </tag>
-            
-            <tag> 点赞 </tag>
-            
-            <tag> 女人 </tag>
-            
-            <tag> 求赞 </tag>
-            
-            <tag> 心态 </tag>
-            
-            <tag> 回赞 </tag>
-            
-            <tag> 男女公平 </tag>
-            
-            <tag> QQ空间 </tag>
-            
-            <tag> 年龄 </tag>
-            
-            <tag> 年轻人 </tag>
-            
-            <tag> 虚荣心 </tag>
-            
-            <tag> 多姿多彩 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>那些过年给你群发消息的微信好友，他们的朋友圈100个人都没有</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/47519b03/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/47519b03/</url>
@@ -24543,6 +24480,73 @@
     
     
     <entry>
+      <title>迷你电脑主机的好处</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5c1dd71a/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5c1dd71a/</url>
+      
+        <content type="html"><![CDATA[<p>迷你电脑的好处还是有很多的，第一个就是放在桌面不占地方，比起我以前那个15.6寸的笔记本电脑我自己装的这个3.2L的迷你主机是占桌面的位置少了很多，以前放一个笔记本电脑基本上放不了键盘和鼠标了。</p><span id="more"></span><p>现在是真的好了很多，不仅桌面可以放鼠标和键盘了，而且还有很多空余的空间，以前的笔记本加个散热器在底下差点是连外接的显示器都放不下，我用的桌子是很窄的，加上房间的空间也不大，所以自己组装电脑的时候首先就是要考虑空间的问题，如果弄一个大的主机根本就放不下，桌面上放不下，桌底下更没有空间放。</p><p>所以选择迷你ITX的小机箱对于我来说真的很重要，小机箱除了装不下显卡以外和大机箱的电脑也没有什么性能上的差距，但是大机箱要加一个显卡虽说性能提升了，同时预算也是跟着增加的，最主要的就是现在的显卡真的很贵，所以用小机箱弄一个带核显的处理器是真的很不错的选择。</p><p>要说性能一般的腾讯的网络游戏也都能玩了，反正也非常适合不怎么玩游戏的，要偶尔玩一下英雄联盟这些游戏一点问题都没有，要说大型单机游戏我是没有玩过，连吃鸡都要花钱去买，所以我是不会去玩的了。</p><p>连腾讯的网游我安装了都很少去玩，因为感觉玩游戏时间过得太快了，而玩游戏花了很多时间就没有多余的时间去做其他的了，真的是有时候无聊的时候才去玩一下。其实我用电脑最大的乐趣还是用键盘打字感觉比较爽，所以我用电脑都是喜欢用来写文章多一点，便携小巧不占地方这样的电脑对于我说真的很匹配我的需求。</p><p>我现在用这个电脑基本上很多时间只是用来上网，相信很多人其实都一样，买电脑或者自己组装电脑的时候都是想着要能玩英雄联盟这样的游戏才行，好像不能玩这个游戏的电脑都称不上是真正的电脑一样，我买电脑也是有过这样的考虑的，至少在我组装这台迷你机之前选处理器我是要先看测评到底能不能玩英雄联盟才行，但其实这个是一个伪需求，因为电脑组装好以后也只玩了几盘感觉就没有什么意思了，还是最多的是用来写些文章和上网，逛贴吧和知乎这些网站。虽然感觉电脑是比以前的快了很多，但是也感觉做的事也只是一些不需要太高配置的电脑都可以做的，作为一个办公来说的电脑真的有时候会感觉有性能过剩这种感觉。</p><p>也许是用不到的原因吧，但是如果自己要用到的那些功能的时候可能又会感觉自己的电脑性能有点不足了，所以才会有那么多需要给电脑做性能分类的比如只用来办公的，用来玩游戏的，和用来做视频剪辑一类的，但是性能越好的电脑能做的事越多这是无可厚非的，只不过当前的需求代表了当下的一个选择标准而已。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 笔记本电脑 </tag>
+            
+            <tag> 玩游戏 </tag>
+            
+            <tag> 显卡 </tag>
+            
+            <tag> 视频剪辑 </tag>
+            
+            <tag> 键盘 </tag>
+            
+            <tag> 好处 </tag>
+            
+            <tag> 腾讯 </tag>
+            
+            <tag> 键盘打字 </tag>
+            
+            <tag> 英雄联盟 </tag>
+            
+            <tag> 鼠标 </tag>
+            
+            <tag> 迷你机 </tag>
+            
+            <tag> 组装电脑 </tag>
+            
+            <tag> 贴吧 </tag>
+            
+            <tag> 迷你电脑 </tag>
+            
+            <tag> 主机 </tag>
+            
+            <tag> 3.2L </tag>
+            
+            <tag> 空间 </tag>
+            
+            <tag> 迷你ITX </tag>
+            
+            <tag> 伪需求 </tag>
+            
+            <tag> 知乎 </tag>
+            
+            <tag> 性能过剩 </tag>
+            
+            <tag> 办公 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>郑爽代孕弃养和普通人有关系吗</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/70cfdcf4/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/70cfdcf4/</url>
@@ -24580,6 +24584,63 @@
             <tag> 幼稚 </tag>
             
             <tag> 劣根性 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>那些在QQ上求赞的女人是什么心态</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/77b8b612/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/77b8b612/</url>
+      
+        <content type="html"><![CDATA[<p>本来是不想写这个题目的，但是今天突然看到一个女的发信息给我说要我赞她十次她就回赞我一次，我当时就想笑了，我是缺她那一次赞吗，再说也不公平啊，我赞她十次她也应该赞我十次才对，现在的社会应该是男女公平才对啊，为什么她认为她是女人，我就多赞她几下，要让我多付出一点。</p><span id="more"></span><p>虽然我的QQ个人主页上也是有三千多赞了，但我是真的不在乎别人赞不赞我的问题，如果是我写来发在平台上的文章赞得越多，那我肯定是高兴的，因为这样我文章就可以成为热文可以被更多的人看到，但是QQ个人主页那里赞得再多，也是没有什么用的，赞得再多别人如果不打开你自己的主页谁又会看到。</p><p>我赞别人也是无聊的时候顺手点一下而已，但是真的没有要发消息去让别人来赞我的意思，不知道那些喜欢让别人给她点赞的人原因是什么，反正我看不懂，难道是赞得越多自己就可以成为网红吗。我记得还在QQ空间上看到有人卖刷赞，说多少钱刷多少赞，这就有点让我想笑了，就这么个赞真的有必要花钱去刷吗？</p><p>点开那个女人的QQ上的主页我特意留意了她的年龄上面写着五十了，这个年龄的女人对于这些应该不看得那么重了才对，这不是都是小孩子玩意吗，对于她是怎么加我的或者是我怎么加她的这里我就不清楚了，也不想去回忆，也不做过多的讨论。QQ上一直都是年轻人比较多，因为不像微信一样要用手机号才能注册。那为什么一个五十多岁的女人还要要求别人赞她，是虚荣心在作祟吗？还是真的太无聊？这一切都好像就是个未解之谜，我也不知道答案到底是什么。</p><p>说到QQ上的赞这个功能也有好多年了，记得几年前还有身边的朋友去淘宝上买赞，那时候我就不以为然，认为这个东西是一点卵用都没有，怎么还要花钱去买，是钱多没有地方花了吗？但是这是人家的消费自由我也没有必要去反对什么，我也不需要去劝说人家要怎么怎么样，那还真的还没有什么必要，我自己感觉不值得，人家自己认为值得那就行了，每个人的价值观都是千差万别的，不一定都要符合自己思维的才是对的，就是因为个体差异的不同才会有这世界的多姿多彩。</p><p>要说那些在QQ上求赞的女人是什么心态我真的不清楚，因为我对于自己认为没有价值的东西我就很少去研究，我这样写出来我也只是写下我对这些事的感受，因为我的想法不能代表她的看法，我也不是她，也不是她肚子里的蛔虫，怎么可能知道她们所想的、她们心态是怎样的。虽然人在某些时刻确实是可以换位思考的，但我不想，换到她的位置来想我也想不到什么合适的答案，我能想到的还是我自己的想法，所以我写出来的也是这样。</p><p>对于我来说我真的不想去研究一些对自己没有价值的东西，特别是这些无聊的，既然人家喜欢别人对她的点赞，那我点了就是，我点这个东西我可能点的时候都是不计其数的，直到点到不能点为止就不点了，这个说起来真的有点无聊，和小孩子玩的游戏一样了。反正我点了就是了，她给不给我点赞也无所谓，我真的对这种无价值无意义的东西不会去在乎，我这样写下来就是写下自己的感受，完全没有其他别的意思。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 答案 </tag>
+            
+            <tag> 题目 </tag>
+            
+            <tag> 淘宝 </tag>
+            
+            <tag> QQ </tag>
+            
+            <tag> 个人主页 </tag>
+            
+            <tag> 网红 </tag>
+            
+            <tag> 点赞 </tag>
+            
+            <tag> 女人 </tag>
+            
+            <tag> 求赞 </tag>
+            
+            <tag> 心态 </tag>
+            
+            <tag> 回赞 </tag>
+            
+            <tag> 男女公平 </tag>
+            
+            <tag> QQ空间 </tag>
+            
+            <tag> 年龄 </tag>
+            
+            <tag> 年轻人 </tag>
+            
+            <tag> 虚荣心 </tag>
+            
+            <tag> 多姿多彩 </tag>
             
         </tags>
       

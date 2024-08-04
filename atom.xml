@@ -6,7 +6,7 @@
   <link href="https://aixz.xyz/atom.xml" rel="self"/>
   
   <link href="https://aixz.xyz/"/>
-  <updated>2024-04-22T08:33:48.000Z</updated>
+  <updated>2024-08-04T04:38:37.000Z</updated>
   <id>https://aixz.xyz/</id>
   
   <author>
@@ -15,6 +15,63 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>HMD-AOSP_Phoenix-13.0刷入谷歌服务</title>
+    <link href="https://aixz.xyz/%E5%AE%89%E5%8D%93%E5%88%B7%E6%9C%BA/589c6f4b/"/>
+    <id>https://aixz.xyz/%E5%AE%89%E5%8D%93%E5%88%B7%E6%9C%BA/589c6f4b/</id>
+    <published>2024-08-04T04:38:37.000Z</published>
+    <updated>2024-08-04T04:38:37.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>刷了HMD-AOSP_Phoenix-13.0没有谷歌服务，可以刷先前的PixelExperience-13的boot.img，因为没有recovery分区，而recovery是包含在boot分区里面的，PixelExperience用的是自定义的recovery可以刷入.zip包，卡刷和adb sideload都可以。</p><span id="more"></span><ol><li>提前提取HMD-AOSP_Phoenix-13.0的boot.img。</li><li>提前下载BiTGApps。</li></ol><p>确保手机已经连上电脑adb。</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">adb devices</span></span><br></pre></td></tr></table></figure><p>重启到bootloader刷机模式</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">adb reboot bootloader</span></span><br></pre></td></tr></table></figure><p>刷入PixelExperience的boot.img</p><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fastboot flash <span class="keyword">boot</span> <span class="keyword">boot</span>.img</span><br></pre></td></tr></table></figure><p>不用开机直接进recovery，记住不用开机，开机系统就又坏了，直接命令进。</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">fastboot reboot recovery</span></span><br></pre></td></tr></table></figure><p>手机recovery里选择卡刷或者adb sideload。<br>这里还是不能开机，还需要刷入原来的HMD-AOSP_Phoenix-13.0的boot.img。</p><figure class="highlight stata"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">fastboot flash <span class="keyword">boot</span> <span class="keyword">boot</span>.img</span><br></pre></td></tr></table></figure><p>如果有面具修补过的就刷修补过的boot.img。</p><p>重启进系统</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">fastboot reboot</span></span><br></pre></td></tr></table></figure><p>重启后发现有谷歌应用商店了，而且数据和root完好，这就是无损刷入谷歌服务。</p>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;刷了HMD-AOSP_Phoenix-13.0没有谷歌服务，可以刷先前的PixelExperience-13的boot.img，因为没有recovery分区，而recovery是包含在boot分区里面的，PixelExperience用的是自定义的recovery可以刷入.zip包，卡刷和adb sideload都可以。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="安卓刷机" scheme="https://aixz.xyz/categories/%E5%AE%89%E5%8D%93%E5%88%B7%E6%9C%BA/"/>
+    
+    
+    <category term="HMD" scheme="https://aixz.xyz/tags/HMD/"/>
+    
+    <category term="AOSP" scheme="https://aixz.xyz/tags/AOSP/"/>
+    
+    <category term="Phoenix-13" scheme="https://aixz.xyz/tags/Phoenix-13/"/>
+    
+    <category term="谷歌服务" scheme="https://aixz.xyz/tags/%E8%B0%B7%E6%AD%8C%E6%9C%8D%E5%8A%A1/"/>
+    
+    <category term="安卓刷机" scheme="https://aixz.xyz/tags/%E5%AE%89%E5%8D%93%E5%88%B7%E6%9C%BA/"/>
+    
+    <category term="boot" scheme="https://aixz.xyz/tags/boot/"/>
+    
+    <category term="PixelExperience" scheme="https://aixz.xyz/tags/PixelExperience/"/>
+    
+    <category term="recovery" scheme="https://aixz.xyz/tags/recovery/"/>
+    
+    <category term="adb" scheme="https://aixz.xyz/tags/adb/"/>
+    
+    <category term="sideload" scheme="https://aixz.xyz/tags/sideload/"/>
+    
+    <category term="BiTGApps" scheme="https://aixz.xyz/tags/BiTGApps/"/>
+    
+    <category term="zip包" scheme="https://aixz.xyz/tags/zip%E5%8C%85/"/>
+    
+    <category term="devices" scheme="https://aixz.xyz/tags/devices/"/>
+    
+    <category term="bootloader" scheme="https://aixz.xyz/tags/bootloader/"/>
+    
+    <category term="reboot" scheme="https://aixz.xyz/tags/reboot/"/>
+    
+    <category term="fastboot" scheme="https://aixz.xyz/tags/fastboot/"/>
+    
+    <category term="flash" scheme="https://aixz.xyz/tags/flash/"/>
+    
+    <category term="应用商店" scheme="https://aixz.xyz/tags/%E5%BA%94%E7%94%A8%E5%95%86%E5%BA%97/"/>
+    
+    <category term="root" scheme="https://aixz.xyz/tags/root/"/>
+    
+  </entry>
   
   <entry>
     <title>互联网浪潮奔涌的三十年</title>
@@ -215,11 +272,11 @@
     <category term="Termux" scheme="https://aixz.xyz/categories/Termux/"/>
     
     
+    <category term="root" scheme="https://aixz.xyz/tags/root/"/>
+    
     <category term="移动硬盘" scheme="https://aixz.xyz/tags/%E7%A7%BB%E5%8A%A8%E7%A1%AC%E7%9B%98/"/>
     
     <category term="格式化" scheme="https://aixz.xyz/tags/%E6%A0%BC%E5%BC%8F%E5%8C%96/"/>
-    
-    <category term="root" scheme="https://aixz.xyz/tags/root/"/>
     
     <category term="内存卡" scheme="https://aixz.xyz/tags/%E5%86%85%E5%AD%98%E5%8D%A1/"/>
     
@@ -254,6 +311,14 @@
     
     <category term="Github" scheme="https://aixz.xyz/tags/Github/"/>
     
+    <category term="bootloader" scheme="https://aixz.xyz/tags/bootloader/"/>
+    
+    <category term="reboot" scheme="https://aixz.xyz/tags/reboot/"/>
+    
+    <category term="fastboot" scheme="https://aixz.xyz/tags/fastboot/"/>
+    
+    <category term="root" scheme="https://aixz.xyz/tags/root/"/>
+    
     <category term="MTK" scheme="https://aixz.xyz/tags/MTK/"/>
     
     <category term="阳华K8" scheme="https://aixz.xyz/tags/%E9%98%B3%E5%8D%8EK8/"/>
@@ -261,8 +326,6 @@
     <category term="平板" scheme="https://aixz.xyz/tags/%E5%B9%B3%E6%9D%BF/"/>
     
     <category term="提取boot" scheme="https://aixz.xyz/tags/%E6%8F%90%E5%8F%96boot/"/>
-    
-    <category term="root" scheme="https://aixz.xyz/tags/root/"/>
     
     <category term="mtkclient" scheme="https://aixz.xyz/tags/mtkclient/"/>
     
@@ -274,17 +337,11 @@
     
     <category term="音量上下键" scheme="https://aixz.xyz/tags/%E9%9F%B3%E9%87%8F%E4%B8%8A%E4%B8%8B%E9%94%AE/"/>
     
-    <category term="bootloader" scheme="https://aixz.xyz/tags/bootloader/"/>
-    
     <category term="解锁" scheme="https://aixz.xyz/tags/%E8%A7%A3%E9%94%81/"/>
     
     <category term="恢复出厂设置" scheme="https://aixz.xyz/tags/%E6%81%A2%E5%A4%8D%E5%87%BA%E5%8E%82%E8%AE%BE%E7%BD%AE/"/>
     
     <category term="unlock" scheme="https://aixz.xyz/tags/unlock/"/>
-    
-    <category term="fastboot" scheme="https://aixz.xyz/tags/fastboot/"/>
-    
-    <category term="reboot" scheme="https://aixz.xyz/tags/reboot/"/>
     
     <category term="boot分区" scheme="https://aixz.xyz/tags/boot%E5%88%86%E5%8C%BA/"/>
     
@@ -533,7 +590,7 @@
     <published>2023-03-11T04:27:23.000Z</published>
     <updated>2023-03-11T04:27:23.000Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Termux-shell界面美化教程"><a href="#Termux-shell界面美化教程" class="headerlink" title="Termux shell界面美化教程"></a>Termux shell界面美化教程</h1><h2 id="1-颜色和字体美化"><a href="#1-颜色和字体美化" class="headerlink" title="1.颜色和字体美化"></a>1.颜色和字体美化</h2><p>该脚本主要使用了 zsh 来替代 bash 作为默认 shell，并且支持色彩和字体样式，同时也激活了外置存储，可以直接访问 SD 卡下的目录。主题默认为 agnoster，颜色样式默认为 Tango，字体默认为 Ubuntu。</p><span id="more"></span><h3 id="脚本克隆和安装"><a href="#脚本克隆和安装" class="headerlink" title="脚本克隆和安装"></a>脚本克隆和安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://gitee.com/aiba51/termux-install.git</span><br><span class="line"><span class="built_in">cd</span> termux-install</span><br><span class="line"><span class="built_in">chmod</span> +x termux-install.sh</span><br><span class="line">./termux-install.sh \n</span><br></pre></td></tr></table></figure><p>安装完成重启<code>termux</code>就可以了</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">exit</span></span><br></pre></td></tr></table></figure><h3 id="设置色彩样式："><a href="#设置色彩样式：" class="headerlink" title="设置色彩样式："></a>设置色彩样式：</h3><p>输入 <code>chcolor</code> 命令更换色彩样式，或者执行 <code>~/.termux/colors.sh</code> 命令</p><h3 id="设置字体"><a href="#设置字体" class="headerlink" title="设置字体:"></a>设置字体:</h3><p>运行 <code>chfont</code> 命令更换字体，或者执行 <code>~/.termux/fonts.sh</code> 命令</p><h2 id="2-zsh-主题配色"><a href="#2-zsh-主题配色" class="headerlink" title="2.zsh 主题配色"></a>2.zsh 主题配色</h2><p>编辑家目录下的.zshrc 配置文件</p><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim <span class="string">.zshrc</span></span><br></pre></td></tr></table></figure><p>第一行可以看到，默认的主题是 <code>agnoster</code> 主题。</p><p>在<code>.oh-my-zsh/themes</code> 目录下放着 <code>oh-my-zsh</code> 所有的主题配置文件，只要将默认的 <code>agnoster</code> 更换为其他的主题文件名即可。</p><p><code>random</code>主题每打开一个会话配色主题都是随机的。</p><h2 id="3-自动补全命令插件autosuggestions安装"><a href="#3-自动补全命令插件autosuggestions安装" class="headerlink" title="3.自动补全命令插件autosuggestions安装"></a>3.自动补全命令插件<code>autosuggestions</code>安装</h2><h3 id="拷贝到-plugins-目录下"><a href="#拷贝到-plugins-目录下" class="headerlink" title="拷贝到 plugins 目录下"></a>拷贝到 plugins 目录下</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:<span class="regexp">//gi</span>tee.com<span class="regexp">/aiba51/</span>zsh-autosuggestions.git <span class="variable">$ZSH_CUSTOM</span><span class="regexp">/plugins/</span>zsh-autosuggestions</span><br></pre></td></tr></table></figure><p>在 <code>~/.zshrc</code> 中配置：</p><figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">plugins</span><span class="operator">=</span>(git zsh-autosuggestions)</span><br></pre></td></tr></table></figure><p>输入 <code>zsh</code> 命令生效配置：</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">zsh</span></span><br></pre></td></tr></table></figure>]]></content>
+    <content type="html"><![CDATA[<h1 id="Termux-shell界面美化教程"><a href="#Termux-shell界面美化教程" class="headerlink" title="Termux shell界面美化教程"></a>Termux shell界面美化教程</h1><h2 id="1-颜色和字体美化"><a href="#1-颜色和字体美化" class="headerlink" title="1.颜色和字体美化"></a>1.颜色和字体美化</h2><p>该脚本主要使用了 zsh 来替代 bash 作为默认 shell，并且支持色彩和字体样式，同时也激活了外置存储，可以直接访问 SD 卡下的目录。主题默认为 agnoster，颜色样式默认为 Tango，字体默认为 Ubuntu。</p><span id="more"></span><h3 id="脚本克隆和安装"><a href="#脚本克隆和安装" class="headerlink" title="脚本克隆和安装"></a>脚本克隆和安装</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> https://gitee.com/aiba51/termux-install.git</span><br><span class="line"><span class="built_in">cd</span> termux-install</span><br><span class="line"><span class="built_in">chmod</span> +x termux-install.sh</span><br><span class="line">./termux-install.sh</span><br></pre></td></tr></table></figure><p>安装完成重启<code>termux</code>就可以了</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">exit</span></span><br></pre></td></tr></table></figure><h3 id="设置色彩样式："><a href="#设置色彩样式：" class="headerlink" title="设置色彩样式："></a>设置色彩样式：</h3><p>输入 <code>chcolor</code> 命令更换色彩样式，或者执行 <code>~/.termux/colors.sh</code> 命令</p><h3 id="设置字体"><a href="#设置字体" class="headerlink" title="设置字体:"></a>设置字体:</h3><p>运行 <code>chfont</code> 命令更换字体，或者执行 <code>~/.termux/fonts.sh</code> 命令</p><h2 id="2-zsh-主题配色"><a href="#2-zsh-主题配色" class="headerlink" title="2.zsh 主题配色"></a>2.zsh 主题配色</h2><p>编辑家目录下的.zshrc 配置文件</p><figure class="highlight jboss-cli"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim <span class="string">.zshrc</span></span><br></pre></td></tr></table></figure><p>第一行可以看到，默认的主题是 <code>agnoster</code> 主题。</p><p>在<code>.oh-my-zsh/themes</code> 目录下放着 <code>oh-my-zsh</code> 所有的主题配置文件，只要将默认的 <code>agnoster</code> 更换为其他的主题文件名即可。</p><p><code>random</code>主题每打开一个会话配色主题都是随机的。</p><h2 id="3-自动补全命令插件autosuggestions安装"><a href="#3-自动补全命令插件autosuggestions安装" class="headerlink" title="3.自动补全命令插件autosuggestions安装"></a>3.自动补全命令插件<code>autosuggestions</code>安装</h2><h3 id="拷贝到-plugins-目录下"><a href="#拷贝到-plugins-目录下" class="headerlink" title="拷贝到 plugins 目录下"></a>拷贝到 plugins 目录下</h3><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clone https:<span class="regexp">//gi</span>tee.com<span class="regexp">/aiba51/</span>zsh-autosuggestions.git <span class="variable">$ZSH_CUSTOM</span><span class="regexp">/plugins/</span>zsh-autosuggestions</span><br></pre></td></tr></table></figure><p>在 <code>~/.zshrc</code> 中配置：</p><figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">plugins</span><span class="operator">=</span>(git zsh-autosuggestions)</span><br></pre></td></tr></table></figure><p>输入 <code>zsh</code> 命令生效配置：</p><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">zsh</span></span><br></pre></td></tr></table></figure>]]></content>
     
     
     <summary type="html">&lt;h1 id=&quot;Termux-shell界面美化教程&quot;&gt;&lt;a href=&quot;#Termux-shell界面美化教程&quot; class=&quot;headerlink&quot; title=&quot;Termux shell界面美化教程&quot;&gt;&lt;/a&gt;Termux shell界面美化教程&lt;/h1&gt;&lt;h2 id=&quot;1-颜色和字体美化&quot;&gt;&lt;a href=&quot;#1-颜色和字体美化&quot; class=&quot;headerlink&quot; title=&quot;1.颜色和字体美化&quot;&gt;&lt;/a&gt;1.颜色和字体美化&lt;/h2&gt;&lt;p&gt;该脚本主要使用了 zsh 来替代 bash 作为默认 shell，并且支持色彩和字体样式，同时也激活了外置存储，可以直接访问 SD 卡下的目录。主题默认为 agnoster，颜色样式默认为 Tango，字体默认为 Ubuntu。&lt;/p&gt;</summary>
@@ -763,38 +820,6 @@
     <category term="源泉" scheme="https://aixz.xyz/tags/%E6%BA%90%E6%B3%89/"/>
     
     <category term="境界" scheme="https://aixz.xyz/tags/%E5%A2%83%E7%95%8C/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>做感兴趣的事</title>
-    <link href="https://aixz.xyz/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/b04d1c7a/"/>
-    <id>https://aixz.xyz/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/b04d1c7a/</id>
-    <published>2023-02-05T10:40:04.000Z</published>
-    <updated>2023-02-05T10:40:04.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>作文题：</strong></p><p>孔子说：“知之者不如好之者，好之者不如乐之者。”爱因斯坦说：“兴趣是最好的老师。”</p><p>兴趣产生热爱，兴趣产生动力，兴趣创造愉悦，兴趣创造成功。</p><p>根据以上材料，写一篇不少于800字的文章，题目自拟，除诗歌外，文体不限。</p><span id="more"></span><p>有时候可能自己想要做的事会有很多，但是我们只能抓住自己感兴趣的去做，因为除了自己感兴趣的事以外，其他的是很难坚持下去的。只有自己觉得有兴趣的事那样做起来才不会觉得太枯燥乏味，也才能坚持得更久。</p><p>有些事可能对自己是很重要的，但是不是自己感兴趣的，那就有可能只是三分钟热度，再怎么看起来重要，最终也不过是白白浪费力气的，因为自己没有兴趣，自然是不会付出多少精力去完成它的，这样肯定是可以提前想到结果是不了了之的。</p><p>一个人对一件事感兴趣了是可以不怕困难与挑战的，无论遇到多大的困难也总是会想方设法的去解决的，做自己感兴趣的事自然是会获得满足和成就感。</p><p>因为有了兴趣，便不会觉得烦闷，总是会孜孜以求的去做好它，精神上自己感觉愉悦，身体也不会有压力，身心也是放松的不会觉得疲惫。</p><p>做自己感兴趣的事，做自己喜欢的事，这样会做得更好，把一件看似很简单的事做好，有时候细节是很重要的，就像下棋一样，一旦其中一步走错，那整盘棋也没有再赢的可能了，无论用多少步去补，那都是很难再补得回来的。然而能把某个细节做好是要考验人的专注程度的，而如果没有兴趣那又怎么可能会去专注呢？</p><p>所以说趁时光犹在，去做自己喜欢、自己感兴趣的事吧，不让自己往后觉得后悔，相信自己的选择，自己觉得感兴趣的就对了。</p><p>都说兴趣是最好的老师，但是很多时候对什么东西都提不起兴趣，这其实也是一件很犯难的事情。也许兴趣爱好这东西并不是说先天就有的，它都是后天培养起来的，既然是可以后天培养的东西，那也没有什么犯难的了，无非就是多学、多看、多感受，经历得多了，自然也能找到自己的兴趣所在了。</p><p>既然已经是对一件事情产生浓厚兴趣了的，那就要一心一意的去做好，那样才是对自己最好的交代。一件自己感兴趣的事还没有做完，又突然对另外一件事情感兴趣，看似对什么事情都感兴趣，多了之后便就对什么事情都会变得无趣。</p><p>兴趣自然是有好的，那肯定是也有不好的，好的兴趣是人成功的动力和方向。而坏的则是会把人带入罪恶的深渊，让人无法回头，所以对兴趣的好坏，要有一个分辨的能力，好的就培养，不好的就应该抛弃。</p>]]></content>
-    
-    
-    <summary type="html">&lt;p&gt;&lt;strong&gt;作文题：&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;孔子说：“知之者不如好之者，好之者不如乐之者。”爱因斯坦说：“兴趣是最好的老师。”&lt;/p&gt;
-&lt;p&gt;兴趣产生热爱，兴趣产生动力，兴趣创造愉悦，兴趣创造成功。&lt;/p&gt;
-&lt;p&gt;根据以上材料，写一篇不少于800字的文章，题目自拟，除诗歌外，文体不限。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="作文练习" scheme="https://aixz.xyz/categories/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/"/>
-    
-    
-    <category term="坚持" scheme="https://aixz.xyz/tags/%E5%9D%9A%E6%8C%81/"/>
-    
-    <category term="兴趣" scheme="https://aixz.xyz/tags/%E5%85%B4%E8%B6%A3/"/>
-    
-    <category term="作文题" scheme="https://aixz.xyz/tags/%E4%BD%9C%E6%96%87%E9%A2%98/"/>
-    
-    <category term="孔子" scheme="https://aixz.xyz/tags/%E5%AD%94%E5%AD%90/"/>
-    
-    <category term="爱因斯坦" scheme="https://aixz.xyz/tags/%E7%88%B1%E5%9B%A0%E6%96%AF%E5%9D%A6/"/>
     
   </entry>
   
