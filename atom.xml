@@ -309,8 +309,6 @@
     <category term="MTK" scheme="https://aixz.xyz/categories/MTK/"/>
     
     
-    <category term="Github" scheme="https://aixz.xyz/tags/Github/"/>
-    
     <category term="bootloader" scheme="https://aixz.xyz/tags/bootloader/"/>
     
     <category term="reboot" scheme="https://aixz.xyz/tags/reboot/"/>
@@ -318,6 +316,8 @@
     <category term="fastboot" scheme="https://aixz.xyz/tags/fastboot/"/>
     
     <category term="root" scheme="https://aixz.xyz/tags/root/"/>
+    
+    <category term="Github" scheme="https://aixz.xyz/tags/Github/"/>
     
     <category term="MTK" scheme="https://aixz.xyz/tags/MTK/"/>
     
