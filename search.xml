@@ -10570,8 +10570,6 @@
             
             <tag> 蓝牙音箱 </tag>
             
-            <tag> 浪费 </tag>
-            
             <tag> 两件事 </tag>
             
             <tag> 太频繁 </tag>
@@ -10581,6 +10579,8 @@
             <tag> 感觉累 </tag>
             
             <tag> 更新文章 </tag>
+            
+            <tag> 浪费 </tag>
             
         </tags>
       
@@ -11095,49 +11095,6 @@
     
     
     <entry>
-      <title>Hexo在数据文件夹里添加谷歌和百度站点验证</title>
-      <link href="/Hexo/228e7a34/"/>
-      <url>/Hexo/228e7a34/</url>
-      
-        <content type="html"><![CDATA[<p>首先在<code>source</code>文件夹下新建一个<code>_data</code>文件夹，已经建过的这一步就可以略过。然后在next配置文件里面把<code>custom_file_path</code>下面的<code>head</code>前的注释去掉。</p><span id="more"></span><p>复制下<code>_data</code>后面的<code>head.njk</code>文件名，在<code>_data</code>文件夹里面新建一个<code>head.njk</code>文件，在谷歌获得的<code>html</code>标签文件到这里面，百度也是一样。</p><p>我开始第一次是用文件验证可以，第二次我用Gitee的二级域名再用文件验证的方式就不行了，但是我用Gitee的二级域名用的标签验证是可以的，所以还是直接用标签验证的这种方法比较可靠，百度和谷歌我都用的Gitee的二级域名验证成功了，就等着被收录就可以了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-            <tag> 数据文件夹 </tag>
-            
-            <tag> 谷歌 </tag>
-            
-            <tag> 百度 </tag>
-            
-            <tag> source </tag>
-            
-            <tag> next配置 </tag>
-            
-            <tag> html标签 </tag>
-            
-            <tag> gitee </tag>
-            
-            <tag> 二级域名 </tag>
-            
-            <tag> 收录 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hexo换电脑更新，能推送上去了才算迁移成功</title>
       <link href="/Hexo/3e845146/"/>
       <url>/Hexo/3e845146/</url>
@@ -11160,11 +11117,11 @@
             
             <tag> Hexo </tag>
             
-            <tag> gitee </tag>
-            
             <tag> 推送 </tag>
             
             <tag> 迁移 </tag>
+            
+            <tag> gitee </tag>
             
             <tag> 思路 </tag>
             
@@ -11354,9 +11311,9 @@
             
             <tag> 配置文件 </tag>
             
-            <tag> gitee </tag>
-            
             <tag> 推送 </tag>
+            
+            <tag> gitee </tag>
             
             <tag> win10 </tag>
             
@@ -11460,37 +11417,6 @@
     
     
     <entry>
-      <title>Hello World</title>
-      <link href="/Hexo/4a17b156/"/>
-      <url>/Hexo/4a17b156/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo<i class="fa fa-external-link-alt"></i></span>! This is your very first post. Check <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv">documentation<i class="fa fa-external-link-alt"></i></span> for more info. If you get any problems when using Hexo, you can find the answer in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=">troubleshooting<i class="fa fa-external-link-alt"></i></span> or you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==">GitHub<i class="fa fa-external-link-alt"></i></span>.</p><span id="more"></span><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s">Writing<i class="fa fa-external-link-alt"></i></span></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=">Server<i class="fa fa-external-link-alt"></i></span></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s">Generating<i class="fa fa-external-link-alt"></i></span></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZGVwbG95bWVudC5odG1s">Deployment<i class="fa fa-external-link-alt"></i></span></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 文章 </tag>
-            
-            <tag> 你好 </tag>
-            
-            <tag> 世界 </tag>
-            
-            <tag> 第一篇 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>mini主机的性能和比笔记本电脑比起来还是要强上不少</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a3573799/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a3573799/</url>
@@ -11534,6 +11460,37 @@
             <tag> 小背包 </tag>
             
             <tag> 处理器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/Hexo/4a17b156/"/>
+      <url>/Hexo/4a17b156/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo<i class="fa fa-external-link-alt"></i></span>! This is your very first post. Check <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv">documentation<i class="fa fa-external-link-alt"></i></span> for more info. If you get any problems when using Hexo, you can find the answer in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=">troubleshooting<i class="fa fa-external-link-alt"></i></span> or you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==">GitHub<i class="fa fa-external-link-alt"></i></span>.</p><span id="more"></span><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s">Writing<i class="fa fa-external-link-alt"></i></span></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=">Server<i class="fa fa-external-link-alt"></i></span></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s">Generating<i class="fa fa-external-link-alt"></i></span></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZGVwbG95bWVudC5odG1s">Deployment<i class="fa fa-external-link-alt"></i></span></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 文章 </tag>
+            
+            <tag> 你好 </tag>
+            
+            <tag> 世界 </tag>
+            
+            <tag> 第一篇 </tag>
             
         </tags>
       
@@ -11611,6 +11568,53 @@
     
     
     <entry>
+      <title>《白发》全集终于看完了，虽然不是我要的结局但还算完美</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/404bf18a/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/404bf18a/</url>
+      
+        <content type="html"><![CDATA[<p>对于这部剧我是看了很久才看完，也许是更新太慢了所以才看那么久才看完，星期二到星期四每天更新两集，也就是说一个星期只更新六集，追了一个多月也才终于把它看完。</p><span id="more"></span><p>最后的结局相信很多人不用看都已经猜到了，容齐用自己的血为容乐解了天命之毒，容齐为了心爱之人用自己的生命成全了容乐的幸福，他对容乐的这份爱无私而伟大，容乐记起了一切曾经的过往，对容齐从前的恨意也烟消云散荡然无存。</p><p>容乐对容齐的爱及她对容齐的愧疚之情使她久久不愿离开西启。在西启守望已逝去的容齐五年之后，她终究又重新回到了她当年去和亲的地方，只是这一次她归来不再是和亲公主的身份，在城门外迎接她的不再是当年那个对她冷嘲热讽的陈王，而这次是宗政无忧。</p><p>不久之后，宗政无忧成了北临皇帝她自然地也成了北临皇后，她回想起以前的种种过往，在自己记忆中存在的那些人，她觉得自己是幸运的，从前的那些事，从前的那些人都已成为了过去，而当宗政无忧牵着她的手走向皇宫大殿的那一刻，她想的是永远和宗政无忧一直走下去。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 白发 </tag>
+            
+            <tag> 容齐 </tag>
+            
+            <tag> 天命之毒 </tag>
+            
+            <tag> 宗政无忧 </tag>
+            
+            <tag> 全集 </tag>
+            
+            <tag> 结局 </tag>
+            
+            <tag> 完美 </tag>
+            
+            <tag> 容乐 </tag>
+            
+            <tag> 烟消云散 </tag>
+            
+            <tag> 北临皇帝 </tag>
+            
+            <tag> 北临皇后 </tag>
+            
+            <tag> 皇宫大殿 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>《红楼梦》晴雯之死</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/215f096a/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/215f096a/</url>
@@ -11670,84 +11674,41 @@
     
     
     <entry>
-      <title>《金刚川》真的是一部战争电影的佳作</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/af2caa05/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/af2caa05/</url>
+      <title>Hexo在数据文件夹里添加谷歌和百度站点验证</title>
+      <link href="/Hexo/228e7a34/"/>
+      <url>/Hexo/228e7a34/</url>
       
-        <content type="html"><![CDATA[<p>拍摄风格延续了《八佰》的很多地方，总的来说还是很不错的，开辟了国产战争电影的另一个流派。让人感觉不好的地方就是有些镜头晃得太快，看着有点头晕，里面的人物刻画得很真实，展现出了军人铁血一般的形象。</p><span id="more"></span><p>最让人感动的就是张译饰演的张飞了，被炸只剩一只脚和一只手了，依然还是要把敌人的侦察机打下来，隐蔽的高炮阵地被敌人炸毁了，就又忍着伤痛换到原先的那个高炮阵地去，最终一炮把敌人侦察机给打下来了。</p><p>最后桥被敌人用燃烧弹全部烧毁了，只能是用人桥的方式来通过金刚川，这一幕表现出了中国人民志愿军不怕牺牲的精神，如果不能及时过桥，那对战争的胜负是有很大影响的，就如里面的敌军飞行员说的那样，我们过去了金城就是他们的地狱，我们没有过去那金城就是我们的地狱。</p>]]></content>
+        <content type="html"><![CDATA[<p>首先在<code>source</code>文件夹下新建一个<code>_data</code>文件夹，已经建过的这一步就可以略过。然后在next配置文件里面把<code>custom_file_path</code>下面的<code>head</code>前的注释去掉。</p><span id="more"></span><p>复制下<code>_data</code>后面的<code>head.njk</code>文件名，在<code>_data</code>文件夹里面新建一个<code>head.njk</code>文件，在谷歌获得的<code>html</code>标签文件到这里面，百度也是一样。</p><p>我开始第一次是用文件验证可以，第二次我用Gitee的二级域名再用文件验证的方式就不行了，但是我用Gitee的二级域名用的标签验证是可以的，所以还是直接用标签验证的这种方法比较可靠，百度和谷歌我都用的Gitee的二级域名验证成功了，就等着被收录就可以了。</p>]]></content>
       
       
       <categories>
           
-          <category> 日常记录 </category>
+          <category> Hexo </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 金刚川 </tag>
+            <tag> Hexo </tag>
             
-            <tag> 战争电影 </tag>
+            <tag> gitee </tag>
             
-            <tag> 八佰 </tag>
+            <tag> 数据文件夹 </tag>
             
-            <tag> 国产 </tag>
+            <tag> 谷歌 </tag>
             
-            <tag> 高炮 </tag>
+            <tag> 百度 </tag>
             
-            <tag> 流派 </tag>
+            <tag> source </tag>
             
-            <tag> 人物刻画 </tag>
+            <tag> next配置 </tag>
             
-            <tag> 地狱 </tag>
+            <tag> html标签 </tag>
             
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>《白发》全集终于看完了，虽然不是我要的结局但还算完美</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/404bf18a/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/404bf18a/</url>
-      
-        <content type="html"><![CDATA[<p>对于这部剧我是看了很久才看完，也许是更新太慢了所以才看那么久才看完，星期二到星期四每天更新两集，也就是说一个星期只更新六集，追了一个多月也才终于把它看完。</p><span id="more"></span><p>最后的结局相信很多人不用看都已经猜到了，容齐用自己的血为容乐解了天命之毒，容齐为了心爱之人用自己的生命成全了容乐的幸福，他对容乐的这份爱无私而伟大，容乐记起了一切曾经的过往，对容齐从前的恨意也烟消云散荡然无存。</p><p>容乐对容齐的爱及她对容齐的愧疚之情使她久久不愿离开西启。在西启守望已逝去的容齐五年之后，她终究又重新回到了她当年去和亲的地方，只是这一次她归来不再是和亲公主的身份，在城门外迎接她的不再是当年那个对她冷嘲热讽的陈王，而这次是宗政无忧。</p><p>不久之后，宗政无忧成了北临皇帝她自然地也成了北临皇后，她回想起以前的种种过往，在自己记忆中存在的那些人，她觉得自己是幸运的，从前的那些事，从前的那些人都已成为了过去，而当宗政无忧牵着她的手走向皇宫大殿的那一刻，她想的是永远和宗政无忧一直走下去。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 情感美文 </category>
-          
-      </categories>
-      
-      
-        <tags>
+            <tag> 二级域名 </tag>
             
-            <tag> 白发 </tag>
-            
-            <tag> 容齐 </tag>
-            
-            <tag> 天命之毒 </tag>
-            
-            <tag> 宗政无忧 </tag>
-            
-            <tag> 全集 </tag>
-            
-            <tag> 结局 </tag>
-            
-            <tag> 完美 </tag>
-            
-            <tag> 容乐 </tag>
-            
-            <tag> 烟消云散 </tag>
-            
-            <tag> 北临皇帝 </tag>
-            
-            <tag> 北临皇后 </tag>
-            
-            <tag> 皇宫大殿 </tag>
+            <tag> 收录 </tag>
             
         </tags>
       
@@ -11869,6 +11830,45 @@
             <tag> MP4 </tag>
             
             <tag> 手机内存空间 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>不想写关键是还不知道写什么了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2e384f7e/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2e384f7e/</url>
+      
+        <content type="html"><![CDATA[<p>真的有时候感觉写100多个字都很难，关键是自己一时之间找不到写的方向了。这个时候感觉要写什么都很困难，越是感觉越急越是想不起来自己该写什么。</p><span id="more"></span><p>真的就是这样感觉很难，但是又不得不逼自己写一点，就算想不起来也得写。想不起来写什么那就漫无目的写了，反正都是写作，写作不一定是要有一个目标才去写的，而是在写的过程中慢慢的发现自己到底该写的是什么。</p><p>写作本来就是用来记录生活的一种工具，千万不要把写作想得太过于高大上了，就是用文字来记录事件而已，自己想到的写下来就是为了把这个想法记录下来，不让以后自己突然就搞忘记了，写作也就是这么简单随意。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 文字 </tag>
+            
+            <tag> 想法 </tag>
+            
+            <tag> 不想写 </tag>
+            
+            <tag> 写什么 </tag>
+            
+            <tag> 方向 </tag>
+            
+            <tag> 写作 </tag>
+            
+            <tag> 发现 </tag>
+            
+            <tag> 记录 </tag>
             
         </tags>
       
@@ -12096,11 +12096,11 @@
     
     
     <entry>
-      <title>不想写关键是还不知道写什么了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2e384f7e/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2e384f7e/</url>
+      <title>《金刚川》真的是一部战争电影的佳作</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/af2caa05/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/af2caa05/</url>
       
-        <content type="html"><![CDATA[<p>真的有时候感觉写100多个字都很难，关键是自己一时之间找不到写的方向了。这个时候感觉要写什么都很困难，越是感觉越急越是想不起来自己该写什么。</p><span id="more"></span><p>真的就是这样感觉很难，但是又不得不逼自己写一点，就算想不起来也得写。想不起来写什么那就漫无目的写了，反正都是写作，写作不一定是要有一个目标才去写的，而是在写的过程中慢慢的发现自己到底该写的是什么。</p><p>写作本来就是用来记录生活的一种工具，千万不要把写作想得太过于高大上了，就是用文字来记录事件而已，自己想到的写下来就是为了把这个想法记录下来，不让以后自己突然就搞忘记了，写作也就是这么简单随意。</p>]]></content>
+        <content type="html"><![CDATA[<p>拍摄风格延续了《八佰》的很多地方，总的来说还是很不错的，开辟了国产战争电影的另一个流派。让人感觉不好的地方就是有些镜头晃得太快，看着有点头晕，里面的人物刻画得很真实，展现出了军人铁血一般的形象。</p><span id="more"></span><p>最让人感动的就是张译饰演的张飞了，被炸只剩一只脚和一只手了，依然还是要把敌人的侦察机打下来，隐蔽的高炮阵地被敌人炸毁了，就又忍着伤痛换到原先的那个高炮阵地去，最终一炮把敌人侦察机给打下来了。</p><p>最后桥被敌人用燃烧弹全部烧毁了，只能是用人桥的方式来通过金刚川，这一幕表现出了中国人民志愿军不怕牺牲的精神，如果不能及时过桥，那对战争的胜负是有很大影响的，就如里面的敌军飞行员说的那样，我们过去了金城就是他们的地狱，我们没有过去那金城就是我们的地狱。</p>]]></content>
       
       
       <categories>
@@ -12112,21 +12112,21 @@
       
         <tags>
             
-            <tag> 文字 </tag>
+            <tag> 金刚川 </tag>
             
-            <tag> 想法 </tag>
+            <tag> 战争电影 </tag>
             
-            <tag> 不想写 </tag>
+            <tag> 八佰 </tag>
             
-            <tag> 写什么 </tag>
+            <tag> 国产 </tag>
             
-            <tag> 方向 </tag>
+            <tag> 高炮 </tag>
             
-            <tag> 写作 </tag>
+            <tag> 流派 </tag>
             
-            <tag> 发现 </tag>
+            <tag> 人物刻画 </tag>
             
-            <tag> 记录 </tag>
+            <tag> 地狱 </tag>
             
         </tags>
       
@@ -12690,6 +12690,59 @@
     
     
     <entry>
+      <title>人力资源管理（一）一考通简答题1</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/422c79b9/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/422c79b9/</url>
+      
+        <content type="html"><![CDATA[<h2 id="三、简答题"><a href="#三、简答题" class="headerlink" title="三、简答题"></a>三、简答题</h2><p><strong>31.(2P86)简述亚当斯公平理论界定的员工由于不公平感而产生的可能行为。</strong></p><p>答: </p><p>(1).改变投人。</p><p>(2).改变产出。</p><p>(3).认知扭曲。</p><p>(4).离开。</p><p>(5).作用于他人。</p><p>(6).改变比较对象。</p><span id="more"></span><p><strong>32.(4P144)简述人力资源战略规划编制的层次。</strong></p><p>答: </p><p>(1).长期战略性人力资源战略规划。</p><p>(2).短期经营性人力资源战略规划。</p><p>(3).人力资源战略规划的实施、控制与评价。</p><p><strong>33.(6P191)简述无领导小组讨论中对被测评者评分的标准。</strong></p><p>答: </p><p>(1).发言次数的多少。</p><p>(2).是否善于提出新的见解和方案、敢于发表不同意见、支持或肯定别人的意见、坚持自己的正确意见。</p><p>(3).是否善于消除紧张气氛、说服别人、调节争议问题。</p><p>(4).创造一个使不愿开口的人也想发言的气氛,把众人的意见引向一致。</p><p>(5).能否倾听他人的意见,是否尊重他人，是否侵犯他人的发言权等。</p><p><strong>34.(7P209)简述员工培训需求分析的层次。</strong></p><p>答：</p><p>(1).组织层次。</p><p>(2).岗位层次。</p><p>(3).个人层次。</p><p><strong>35.(9P270)简述薪酬结构的类型。</strong></p><p>答：</p><p>(1).以员工岗位为基础的薪酬结构。包括居于岗位内容的薪酬结构和基于岗位价值的薪酬结构。</p><p>(2).基于任职者的薪酬结构。包括基于任职者技能的薪酬结构和基于任职者能力的薪酬结构。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 岗位 </tag>
+            
+            <tag> 公平理论 </tag>
+            
+            <tag> 人力资源 </tag>
+            
+            <tag> 战略规划 </tag>
+            
+            <tag> 编制 </tag>
+            
+            <tag> 无领导 </tag>
+            
+            <tag> 小组讨论 </tag>
+            
+            <tag> 员工培训 </tag>
+            
+            <tag> 需求分析 </tag>
+            
+            <tag> 薪酬结构 </tag>
+            
+            <tag> 类型 </tag>
+            
+            <tag> 亚当斯 </tag>
+            
+            <tag> 经营性 </tag>
+            
+            <tag> 发言 </tag>
+            
+            <tag> 测评者 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>人力资源管理（一）一考通案例分析题2</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2fdc7711/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2fdc7711/</url>
@@ -12739,59 +12792,6 @@
             <tag> 最佳效果 </tag>
             
             <tag> 真诚 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>人力资源管理（一）一考通简答题1</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/422c79b9/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/422c79b9/</url>
-      
-        <content type="html"><![CDATA[<h2 id="三、简答题"><a href="#三、简答题" class="headerlink" title="三、简答题"></a>三、简答题</h2><p><strong>31.(2P86)简述亚当斯公平理论界定的员工由于不公平感而产生的可能行为。</strong></p><p>答: </p><p>(1).改变投人。</p><p>(2).改变产出。</p><p>(3).认知扭曲。</p><p>(4).离开。</p><p>(5).作用于他人。</p><p>(6).改变比较对象。</p><span id="more"></span><p><strong>32.(4P144)简述人力资源战略规划编制的层次。</strong></p><p>答: </p><p>(1).长期战略性人力资源战略规划。</p><p>(2).短期经营性人力资源战略规划。</p><p>(3).人力资源战略规划的实施、控制与评价。</p><p><strong>33.(6P191)简述无领导小组讨论中对被测评者评分的标准。</strong></p><p>答: </p><p>(1).发言次数的多少。</p><p>(2).是否善于提出新的见解和方案、敢于发表不同意见、支持或肯定别人的意见、坚持自己的正确意见。</p><p>(3).是否善于消除紧张气氛、说服别人、调节争议问题。</p><p>(4).创造一个使不愿开口的人也想发言的气氛,把众人的意见引向一致。</p><p>(5).能否倾听他人的意见,是否尊重他人，是否侵犯他人的发言权等。</p><p><strong>34.(7P209)简述员工培训需求分析的层次。</strong></p><p>答：</p><p>(1).组织层次。</p><p>(2).岗位层次。</p><p>(3).个人层次。</p><p><strong>35.(9P270)简述薪酬结构的类型。</strong></p><p>答：</p><p>(1).以员工岗位为基础的薪酬结构。包括居于岗位内容的薪酬结构和基于岗位价值的薪酬结构。</p><p>(2).基于任职者的薪酬结构。包括基于任职者技能的薪酬结构和基于任职者能力的薪酬结构。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 岗位 </tag>
-            
-            <tag> 公平理论 </tag>
-            
-            <tag> 人力资源 </tag>
-            
-            <tag> 战略规划 </tag>
-            
-            <tag> 编制 </tag>
-            
-            <tag> 无领导 </tag>
-            
-            <tag> 小组讨论 </tag>
-            
-            <tag> 员工培训 </tag>
-            
-            <tag> 需求分析 </tag>
-            
-            <tag> 薪酬结构 </tag>
-            
-            <tag> 类型 </tag>
-            
-            <tag> 亚当斯 </tag>
-            
-            <tag> 经营性 </tag>
-            
-            <tag> 发言 </tag>
-            
-            <tag> 测评者 </tag>
             
         </tags>
       
@@ -13372,6 +13372,8 @@
             
             <tag> 优惠券 </tag>
             
+            <tag> 浪费 </tag>
+            
             <tag> 做题任务 </tag>
             
             <tag> 太难了 </tag>
@@ -13379,8 +13381,6 @@
             <tag> 兴趣 </tag>
             
             <tag> 播放量 </tag>
-            
-            <tag> 浪费 </tag>
             
             <tag> 橙心优选 </tag>
             
@@ -14112,6 +14112,45 @@
     
     
     <entry>
+      <title>今天虽然放假也没有出去玩</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4cca1562/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4cca1562/</url>
+      
+        <content type="html"><![CDATA[<p>话说我放假也不是才有今天，我都已经被公司放假两个星期了，我这附近实在是没有什么好玩的，所以也懒得出去玩了，感觉一天就玩下手机都过得很快了。</p><span id="more"></span><p>明天是放假的第二天了，还是要出去玩下了，从四月份到现在都没有去过海边玩了，有空还是要去海边玩下，看看大海心情都会好很多。</p><p>天天宅在家里也不好，出去有美女看感觉还是挺不错的，这也是给自己一个出去玩的理由啊。</p><p>最近珠海发了两张优惠券给我，第一张还不知道怎么用，今天又被抽中了一张。两张都是50的，满40减10，满80减20，被分成了三张，这样搞都不知道要买什么才能用掉，要全部用掉我还得自己花三百块钱才能用完。</p><p>这个关键的是不是每个店都可以用，在支付宝上看到的附近能用的大多是餐饮店，像肯德基和麦当劳之类的，想了我还是去吃一顿肯德基吧，反正也没有吃过，这券是真的不太实用。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 放假 </tag>
+            
+            <tag> 优惠券 </tag>
+            
+            <tag> 手机 </tag>
+            
+            <tag> 出去玩 </tag>
+            
+            <tag> 四月份 </tag>
+            
+            <tag> 美女 </tag>
+            
+            <tag> 支付宝 </tag>
+            
+            <tag> 肯德基 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>今天记得更新，昨天搞忘记了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9ebd585d/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9ebd585d/</url>
@@ -14145,80 +14184,6 @@
             <tag> 甲醛 </tag>
             
             <tag> 房租 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>今天还可以做了很多题，明天继续努力</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5317c220/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5317c220/</url>
-      
-        <content type="html"><![CDATA[<p>把昨天没有做完的主观题今天是把他抄写完了一遍了，做完了昨天的今天又重开始了一章新的了，新的做完前面的选择题了，这一章的选择题比上一章要多很多。</p><span id="more"></span><p>特别是单选题上一章才20多道，这一章居然有50多道，真的是把我吓坏了，还好今天是把单选题和多选题都做完了，还把后面的简答题也抄了5道题。</p><p>感觉今天的状态是要比昨天好一点，昨天是一章题都没有完成，今天就是相当于完成一章了吧，明天要把这一章做完再做一章新的，那样跟上进度才会没有问题了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 很多题 </tag>
-            
-            <tag> 继续努力 </tag>
-            
-            <tag> 主观题 </tag>
-            
-            <tag> 选择题 </tag>
-            
-            <tag> 单选题 </tag>
-            
-            <tag> 进度 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>今天虽然放假也没有出去玩</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4cca1562/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4cca1562/</url>
-      
-        <content type="html"><![CDATA[<p>话说我放假也不是才有今天，我都已经被公司放假两个星期了，我这附近实在是没有什么好玩的，所以也懒得出去玩了，感觉一天就玩下手机都过得很快了。</p><span id="more"></span><p>明天是放假的第二天了，还是要出去玩下了，从四月份到现在都没有去过海边玩了，有空还是要去海边玩下，看看大海心情都会好很多。</p><p>天天宅在家里也不好，出去有美女看感觉还是挺不错的，这也是给自己一个出去玩的理由啊。</p><p>最近珠海发了两张优惠券给我，第一张还不知道怎么用，今天又被抽中了一张。两张都是50的，满40减10，满80减20，被分成了三张，这样搞都不知道要买什么才能用掉，要全部用掉我还得自己花三百块钱才能用完。</p><p>这个关键的是不是每个店都可以用，在支付宝上看到的附近能用的大多是餐饮店，像肯德基和麦当劳之类的，想了我还是去吃一顿肯德基吧，反正也没有吃过，这券是真的不太实用。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 放假 </tag>
-            
-            <tag> 优惠券 </tag>
-            
-            <tag> 手机 </tag>
-            
-            <tag> 出去玩 </tag>
-            
-            <tag> 四月份 </tag>
-            
-            <tag> 美女 </tag>
-            
-            <tag> 支付宝 </tag>
-            
-            <tag> 肯德基 </tag>
             
         </tags>
       
@@ -14490,9 +14455,9 @@
             
             <tag> 喜欢 </tag>
             
-            <tag> 推广 </tag>
-            
             <tag> 成就感 </tag>
+            
+            <tag> 推广 </tag>
             
             <tag> 收益 </tag>
             
@@ -14793,9 +14758,9 @@
             
             <tag> 世界 </tag>
             
-            <tag> 心情 </tag>
-            
             <tag> 写作 </tag>
+            
+            <tag> 心情 </tag>
             
             <tag> 幸福 </tag>
             
@@ -14871,6 +14836,49 @@
     
     
     <entry>
+      <title>写微信公众号以来第一次遇到金主打赏</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c0b0a06b/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c0b0a06b/</url>
+      
+        <content type="html"><![CDATA[<p>前几天在微信公众号发了一篇文章，当然其他平台也同时发了，只是其他平台都是没有人打赏，但是发在微信公众号是有人打赏的，以前收到的打赏最多也就一次5块钱，其余的都是打赏一两块钱的，但是这次真的不一样，我想我是真的遇到金主了。</p><span id="more"></span><p>看到微信上面发来的打赏提醒，我都感觉惊喜，是又惊又喜的感觉，感到惊喜的原因当然是之前从没有收到过这么多打赏过，同一人前后连续三次共打赏了30元，以前我是真的不敢想象的事，原来我的一篇文章，还可以居然这么有价值。</p><p>同时自然也要感谢打赏金主们的大力支持，因为有你们的支持，有源之水才会造就有木之本，同时也才会让我创作出更多有价值的文章。</p><p>当然价值是他人觉得有，不一定是我认为有的才是，当下是几乎人人都处于大环境焦虑之中，只有是能引起他人共鸣的东西，那这个对于别人来说就是价值，肯定就会有人愿意花钱去进一步的了解。</p><p>这其实也就是知识的所谓价值，只要自己掌握了多数人不知道的东西，那这个就是等于知识的无价之宝，能用文字表达出来的，只是藏在我脑海中的冰山一角，别人要想了解更多，自然是会愿意去花钱的。知识在于我的掌控之中，只要我想，它就自然可以变成别人的一种消费形式，因为它确实是对处于困惑之中的人们带来很大的帮助。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 微信公众号 </tag>
+            
+            <tag> 金主打赏 </tag>
+            
+            <tag> 一两块钱 </tag>
+            
+            <tag> 打赏提醒 </tag>
+            
+            <tag> 共鸣 </tag>
+            
+            <tag> 脑海中 </tag>
+            
+            <tag> 冰山一角 </tag>
+            
+            <tag> 掌控之中 </tag>
+            
+            <tag> 帮助 </tag>
+            
+            <tag> 大力支持 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>写作的动力来源于生活</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b21d3bc4/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b21d3bc4/</url>
@@ -14916,6 +14924,41 @@
     
     
     <entry>
+      <title>冬天最值得看的一部电影，《雪暴》</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ffbd8c36/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ffbd8c36/</url>
+      
+        <content type="html"><![CDATA[<p>昨晚上看了一部电影，名字叫雪暴，讲的是三个劫匪和警察对决的事。全片几乎都是被雪覆盖的场景，一开始就是三个劫匪，劫了一辆警察从金矿开出的运金车。</p><span id="more"></span><p>然后半路上遇到了去山上巡逻的两个警察，其中一个警察下车去查看劫匪的车时发现了劫匪的装金条的箱子，在和劫匪拔枪互射中被劫匪击中。另外一个警察在车里没有被劫匪击中，但是被打下到山沟里，辛运逃过了一劫。</p><p>里面的雪景做得可以，特别是雪暴来临时风雪交加的场景感觉很真实。大雪朦朦中，冬天风雪交加的对决，给人带来了比较震撼的视觉冲击力。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电影 </tag>
+            
+            <tag> 雪暴 </tag>
+            
+            <tag> 金矿 </tag>
+            
+            <tag> 对决 </tag>
+            
+            <tag> 劫匪 </tag>
+            
+            <tag> 大雪 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>写公众号粉丝越来越少了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4733806/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4733806/</url>
@@ -14949,84 +14992,6 @@
             <tag> 菜单 </tag>
             
             <tag> 粉丝 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>写微信公众号以来第一次遇到金主打赏</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c0b0a06b/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c0b0a06b/</url>
-      
-        <content type="html"><![CDATA[<p>前几天在微信公众号发了一篇文章，当然其他平台也同时发了，只是其他平台都是没有人打赏，但是发在微信公众号是有人打赏的，以前收到的打赏最多也就一次5块钱，其余的都是打赏一两块钱的，但是这次真的不一样，我想我是真的遇到金主了。</p><span id="more"></span><p>看到微信上面发来的打赏提醒，我都感觉惊喜，是又惊又喜的感觉，感到惊喜的原因当然是之前从没有收到过这么多打赏过，同一人前后连续三次共打赏了30元，以前我是真的不敢想象的事，原来我的一篇文章，还可以居然这么有价值。</p><p>同时自然也要感谢打赏金主们的大力支持，因为有你们的支持，有源之水才会造就有木之本，同时也才会让我创作出更多有价值的文章。</p><p>当然价值是他人觉得有，不一定是我认为有的才是，当下是几乎人人都处于大环境焦虑之中，只有是能引起他人共鸣的东西，那这个对于别人来说就是价值，肯定就会有人愿意花钱去进一步的了解。</p><p>这其实也就是知识的所谓价值，只要自己掌握了多数人不知道的东西，那这个就是等于知识的无价之宝，能用文字表达出来的，只是藏在我脑海中的冰山一角，别人要想了解更多，自然是会愿意去花钱的。知识在于我的掌控之中，只要我想，它就自然可以变成别人的一种消费形式，因为它确实是对处于困惑之中的人们带来很大的帮助。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 微信公众号 </tag>
-            
-            <tag> 金主打赏 </tag>
-            
-            <tag> 一两块钱 </tag>
-            
-            <tag> 打赏提醒 </tag>
-            
-            <tag> 共鸣 </tag>
-            
-            <tag> 脑海中 </tag>
-            
-            <tag> 冰山一角 </tag>
-            
-            <tag> 掌控之中 </tag>
-            
-            <tag> 帮助 </tag>
-            
-            <tag> 大力支持 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>冬天最值得看的一部电影，《雪暴》</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ffbd8c36/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ffbd8c36/</url>
-      
-        <content type="html"><![CDATA[<p>昨晚上看了一部电影，名字叫雪暴，讲的是三个劫匪和警察对决的事。全片几乎都是被雪覆盖的场景，一开始就是三个劫匪，劫了一辆警察从金矿开出的运金车。</p><span id="more"></span><p>然后半路上遇到了去山上巡逻的两个警察，其中一个警察下车去查看劫匪的车时发现了劫匪的装金条的箱子，在和劫匪拔枪互射中被劫匪击中。另外一个警察在车里没有被劫匪击中，但是被打下到山沟里，辛运逃过了一劫。</p><p>里面的雪景做得可以，特别是雪暴来临时风雪交加的场景感觉很真实。大雪朦朦中，冬天风雪交加的对决，给人带来了比较震撼的视觉冲击力。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 电影 </tag>
-            
-            <tag> 雪暴 </tag>
-            
-            <tag> 金矿 </tag>
-            
-            <tag> 对决 </tag>
-            
-            <tag> 劫匪 </tag>
-            
-            <tag> 大雪 </tag>
             
         </tags>
       
@@ -15180,6 +15145,39 @@
     
     
     <entry>
+      <title>利用电脑上的安卓模拟器来玩手机游戏赚钱</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/866b8bf1/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/866b8bf1/</url>
+      
+        <content type="html"><![CDATA[<p>玩手机游戏可以赚钱这我已经是尝试过了的，但手机的内存毕竟是比较有限的，所以我就想到用电脑的安卓模拟器来玩，电脑上都是几百G的硬盘比起手机上来说那是大了很多了。</p><span id="more"></span><p>这里我安装的是蓝叠模拟器，这个模拟器的兼容性比较好，大多数的安卓应用都是支持的，并且现在蓝叠4已经是用到安卓7的内核了，比起一般模拟器是要流畅了很多，这个最新版本的要在蓝叠的官网上才能下载到，我昨天用腾讯电脑管家下载的不是最新的，后面我又把它卸载了，重新在他官网上下载了最新版本的，之前那个是蓝叠3，后面下载的这个才是最新的蓝叠4。</p><p>模拟器安装好后还要在上面安装一个安卓软件手游赚，可以用电脑在浏览器他的官网下载，下载的时候直接选择用蓝叠打开就可以直接安装到模拟器上了。</p><p>这个软件他上面玩个游戏十多分钟就可以赚0.5元，满10元就可以提现到支付宝和微信，比起写文章还是要好很多，文章赚0.5元在头条上需要5000的阅读量，有时候花了一两个小时写一篇一两千字的文章，说不定阅读量都才只有几百个。</p><p>就先写这么多吧，我会把这上面的链接放在下面。</p><p><a href="https://www.bluestacks.cn" target="_blank" rel="noopener nofollow"><strong>蓝叠官网</strong></a></p><p><a href="http://www.shouyouzhuan.net/?ts=760987" target="_blank" rel="noopener nofollow"><strong>手游赚官网</strong></a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 赚钱 </tag>
+            
+            <tag> 安卓模拟器 </tag>
+            
+            <tag> 手机游戏 </tag>
+            
+            <tag> 蓝叠4 </tag>
+            
+            <tag> 手游赚 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>利用微博，微店，和自己的网站来做搜索引擎优化</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5736d4b4/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5736d4b4/</url>
@@ -15221,39 +15219,6 @@
             <tag> 新高度 </tag>
             
             <tag> 熊掌号 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>利用电脑上的安卓模拟器来玩手机游戏赚钱</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/866b8bf1/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/866b8bf1/</url>
-      
-        <content type="html"><![CDATA[<p>玩手机游戏可以赚钱这我已经是尝试过了的，但手机的内存毕竟是比较有限的，所以我就想到用电脑的安卓模拟器来玩，电脑上都是几百G的硬盘比起手机上来说那是大了很多了。</p><span id="more"></span><p>这里我安装的是蓝叠模拟器，这个模拟器的兼容性比较好，大多数的安卓应用都是支持的，并且现在蓝叠4已经是用到安卓7的内核了，比起一般模拟器是要流畅了很多，这个最新版本的要在蓝叠的官网上才能下载到，我昨天用腾讯电脑管家下载的不是最新的，后面我又把它卸载了，重新在他官网上下载了最新版本的，之前那个是蓝叠3，后面下载的这个才是最新的蓝叠4。</p><p>模拟器安装好后还要在上面安装一个安卓软件手游赚，可以用电脑在浏览器他的官网下载，下载的时候直接选择用蓝叠打开就可以直接安装到模拟器上了。</p><p>这个软件他上面玩个游戏十多分钟就可以赚0.5元，满10元就可以提现到支付宝和微信，比起写文章还是要好很多，文章赚0.5元在头条上需要5000的阅读量，有时候花了一两个小时写一篇一两千字的文章，说不定阅读量都才只有几百个。</p><p>就先写这么多吧，我会把这上面的链接放在下面。</p><p><a href="https://www.bluestacks.cn" target="_blank" rel="noopener nofollow"><strong>蓝叠官网</strong></a></p><p><a href="http://www.shouyouzhuan.net/?ts=760987" target="_blank" rel="noopener nofollow"><strong>手游赚官网</strong></a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 赚钱 </tag>
-            
-            <tag> 安卓模拟器 </tag>
-            
-            <tag> 手机游戏 </tag>
-            
-            <tag> 蓝叠4 </tag>
-            
-            <tag> 手游赚 </tag>
             
         </tags>
       
@@ -16066,6 +16031,47 @@
     
     
     <entry>
+      <title>在淘宝上买的那个香茅防蚊虫凝胶一点用都没有</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6cb6ef8a/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6cb6ef8a/</url>
+      
+        <content type="html"><![CDATA[<p>虽然是只花了几毛钱在淘宝特价版买的，但是真的一点用都没有，把盖子打开蚊子一样的很多，还是要点蚊香才有用，这香茅凝胶要是有用，做蚊香的厂家还不也生产出来了，关键是它真的一点用都没有。</p><span id="more"></span><p>电蚊香液我是没有用过，不知道用起来怎么样，但是看网上说的是没有蚊香安全，因为会把飞沫吸到呼吸道里面去，我没有用过是不是这样，我不清楚，但是我觉得最好的就是点蚊香，这个我关着门窗都感觉没有事。</p><p>每天都要点蚊香一个打火机没有多久气就用完了，去超市买还要一块钱一个，看淘宝上便宜很多，我看着有那种充电就可以点烟的，不知道买来点蚊香怎么样，不知道还要充气不要。看着才几块钱的就买一个来试一下，用了淘宝特价版新人红包是一分钱都不要，不好用也不亏什么，就等到货试试看吧。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 淘宝 </tag>
+            
+            <tag> 蚊香 </tag>
+            
+            <tag> 香茅防蚊虫 </tag>
+            
+            <tag> 凝胶 </tag>
+            
+            <tag> 淘宝特价版 </tag>
+            
+            <tag> 电蚊香液 </tag>
+            
+            <tag> 点烟 </tag>
+            
+            <tag> 充电 </tag>
+            
+            <tag> 新人红包 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>在电脑上一边自动刷快手，一边写文章</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/63d8d42c/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/63d8d42c/</url>
@@ -16105,47 +16111,6 @@
             <tag> 敲击 </tag>
             
             <tag> 电脑风扇 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>在淘宝上买的那个香茅防蚊虫凝胶一点用都没有</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6cb6ef8a/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6cb6ef8a/</url>
-      
-        <content type="html"><![CDATA[<p>虽然是只花了几毛钱在淘宝特价版买的，但是真的一点用都没有，把盖子打开蚊子一样的很多，还是要点蚊香才有用，这香茅凝胶要是有用，做蚊香的厂家还不也生产出来了，关键是它真的一点用都没有。</p><span id="more"></span><p>电蚊香液我是没有用过，不知道用起来怎么样，但是看网上说的是没有蚊香安全，因为会把飞沫吸到呼吸道里面去，我没有用过是不是这样，我不清楚，但是我觉得最好的就是点蚊香，这个我关着门窗都感觉没有事。</p><p>每天都要点蚊香一个打火机没有多久气就用完了，去超市买还要一块钱一个，看淘宝上便宜很多，我看着有那种充电就可以点烟的，不知道买来点蚊香怎么样，不知道还要充气不要。看着才几块钱的就买一个来试一下，用了淘宝特价版新人红包是一分钱都不要，不好用也不亏什么，就等到货试试看吧。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 淘宝 </tag>
-            
-            <tag> 蚊香 </tag>
-            
-            <tag> 香茅防蚊虫 </tag>
-            
-            <tag> 凝胶 </tag>
-            
-            <tag> 淘宝特价版 </tag>
-            
-            <tag> 电蚊香液 </tag>
-            
-            <tag> 点烟 </tag>
-            
-            <tag> 充电 </tag>
-            
-            <tag> 新人红包 </tag>
             
         </tags>
       
@@ -16970,53 +16935,6 @@
     
     
     <entry>
-      <title>如何通过用短视频平台来赚钱</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/425acf9a/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/425acf9a/</url>
-      
-        <content type="html"><![CDATA[<p>用短视频平台来赚钱理论上是可以的，但是要做起来却是有点难，最容易的就是直接刷短视频领金币，然后每天零点后系统自动兑换成可以提现的，但是赚不了多少，刷一天最多只能赚两块钱。</p><span id="more"></span><p>这样的平台很多，比如抖音极速版，快手也可以，但是有些账号没有这个功能，快手极速版也可以，但是都只能赚几块钱。</p><p>另外就是带货了，抖音要500个粉丝才可以，所以新手根本没有机会，再说了还要交500的保证金，也不适合新手玩，快手还好，没有粉丝限制，零个粉丝也照样可以开通快手小店，货源淘宝、京东的都有，发视频的时候就可以带上了，有人买就有佣金，但有没有人买是未知数，因为我也没有卖出去过，另外快手直接带淘宝联盟的也是要交500的保证金。</p><p>还有就是做直播了，直播游戏或者真人直播都可以，直播好像抖音看的人要多一点，我直播一下还有人送礼，快手基本上直播没有人看，抖音直播那个音符什么的满一元就可以提现。</p><p>能赚是能赚，但是赚不了多少，不要相信那些说月入上万的根本不可能，那些抖音直播上说自己一场直播赚多少的，其实就是为了卖他自己的课程，在咸鱼上可能卖5块钱都没有人看，他可以放在抖音上卖90多，其实买了一点用都没有，还为他增加收入，他开始的那些流水估计是刷的，后面买课程的人多了就是真的了，这都是套路来的。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 流水 </tag>
-            
-            <tag> 短视频 </tag>
-            
-            <tag> 快手 </tag>
-            
-            <tag> 赚钱 </tag>
-            
-            <tag> 直播 </tag>
-            
-            <tag> 理论上 </tag>
-            
-            <tag> 提现 </tag>
-            
-            <tag> 抖音极速版 </tag>
-            
-            <tag> 淘宝联盟 </tag>
-            
-            <tag> 保证金 </tag>
-            
-            <tag> 课程 </tag>
-            
-            <tag> 咸鱼 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>如何学会搭建一个属于自己的网站？</title>
       <link href="/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/f4279545/"/>
       <url>/%E4%BA%92%E8%81%94%E7%BD%91%E7%A7%91%E6%8A%80/f4279545/</url>
@@ -17068,6 +16986,53 @@
             <tag> AWS </tag>
             
             <tag> 云服务器 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何通过用短视频平台来赚钱</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/425acf9a/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/425acf9a/</url>
+      
+        <content type="html"><![CDATA[<p>用短视频平台来赚钱理论上是可以的，但是要做起来却是有点难，最容易的就是直接刷短视频领金币，然后每天零点后系统自动兑换成可以提现的，但是赚不了多少，刷一天最多只能赚两块钱。</p><span id="more"></span><p>这样的平台很多，比如抖音极速版，快手也可以，但是有些账号没有这个功能，快手极速版也可以，但是都只能赚几块钱。</p><p>另外就是带货了，抖音要500个粉丝才可以，所以新手根本没有机会，再说了还要交500的保证金，也不适合新手玩，快手还好，没有粉丝限制，零个粉丝也照样可以开通快手小店，货源淘宝、京东的都有，发视频的时候就可以带上了，有人买就有佣金，但有没有人买是未知数，因为我也没有卖出去过，另外快手直接带淘宝联盟的也是要交500的保证金。</p><p>还有就是做直播了，直播游戏或者真人直播都可以，直播好像抖音看的人要多一点，我直播一下还有人送礼，快手基本上直播没有人看，抖音直播那个音符什么的满一元就可以提现。</p><p>能赚是能赚，但是赚不了多少，不要相信那些说月入上万的根本不可能，那些抖音直播上说自己一场直播赚多少的，其实就是为了卖他自己的课程，在咸鱼上可能卖5块钱都没有人看，他可以放在抖音上卖90多，其实买了一点用都没有，还为他增加收入，他开始的那些流水估计是刷的，后面买课程的人多了就是真的了，这都是套路来的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 流水 </tag>
+            
+            <tag> 短视频 </tag>
+            
+            <tag> 快手 </tag>
+            
+            <tag> 赚钱 </tag>
+            
+            <tag> 直播 </tag>
+            
+            <tag> 理论上 </tag>
+            
+            <tag> 提现 </tag>
+            
+            <tag> 抖音极速版 </tag>
+            
+            <tag> 淘宝联盟 </tag>
+            
+            <tag> 保证金 </tag>
+            
+            <tag> 课程 </tag>
+            
+            <tag> 咸鱼 </tag>
             
         </tags>
       
@@ -17683,15 +17648,15 @@
             
             <tag> 今天 </tag>
             
-            <tag> 浪费 </tag>
-            
             <tag> 更新文章 </tag>
             
-            <tag> 主观题 </tag>
+            <tag> 浪费 </tag>
+            
+            <tag> 完成 </tag>
             
             <tag> 进度 </tag>
             
-            <tag> 完成 </tag>
+            <tag> 主观题 </tag>
             
         </tags>
       
@@ -18213,11 +18178,11 @@
             
             <tag> 文章 </tag>
             
-            <tag> 简书 </tag>
-            
             <tag> 写什么 </tag>
             
             <tag> 写作 </tag>
+            
+            <tag> 简书 </tag>
             
             <tag> 抽奖 </tag>
             
@@ -18339,61 +18304,6 @@
     
     
     <entry>
-      <title>我的mini小主机终于组装好了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d0450d61/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d0450d61/</url>
-      
-        <content type="html"><![CDATA[<p>今天电源适配器终于到了，昨天才买的今天就到了，真的发货速度很快，果然只要配件对装机也不难啊，早知道都这样分开在一家买，那早都已经装好了，插上电源适配器开机成功那一刻还是感觉挺兴奋的，看着主板粉红色的灯下亮起来是真的太漂亮了。</p><span id="more"></span><p>这或许真的就是自己装机的乐趣，比买一台整机那种感觉舒服很多。安装系统虽然也不难，但是我也是费了一点劲的，好开始是想到用那个硬盘分区软件做一个系统启动盘，结果插上U盘启动了只能进那个软件的界面。</p><p>没有办法又只能把显示器连到笔记本电脑，用微软的那个软件重新做了一个win10启动盘，做这个笔记本电脑是很慢的，大概花了一个多小时才做好。做好后就直接把U盘插在mini主机上，我这个主板是可以不用进bios设置然后就直接可以安装系统的，刚一插上去就开始安装了，安装的时候用那个分区软件分的区居然用不了，只好把那个区删了，然后重新分100G来做系统盘，因为我的m.2固态是500G的，所以分100G做系统盘也还很多余量，然后剩下的就是未分配的了，这里未分配的就进系统再分。</p><p>系统安装好了就是等着安装驱动，不知道是网速原因还是上网的人太多了，驱动是下差不多30分钟才安装完，然后就是重启。</p><p>重启以后就是激活了，激活也差点难道我了，还好我笔记本电脑里面还有激活office的那个软件，这个软件也是可以激活系统的，当然直接用U盘传过来安装不了，会被系统自动删除，还好我想到了先安装一个腾讯电脑管家，然后系统自带的安全软件就没有那么强了，电脑管家也是会删除这个软件，但是恢复就可以了，安装好后系统就直接激活了，算是一个不错的惊喜。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 组装 </tag>
-            
-            <tag> 硬盘 </tag>
-            
-            <tag> 配件 </tag>
-            
-            <tag> mini小主机 </tag>
-            
-            <tag> 电源适配器 </tag>
-            
-            <tag> 装机 </tag>
-            
-            <tag> 不难 </tag>
-            
-            <tag> 开机 </tag>
-            
-            <tag> 太漂亮 </tag>
-            
-            <tag> 安装系统 </tag>
-            
-            <tag> win10启动盘 </tag>
-            
-            <tag> m.2固态 </tag>
-            
-            <tag> 安装驱动 </tag>
-            
-            <tag> 分区软件 </tag>
-            
-            <tag> 直接激活 </tag>
-            
-            <tag> 恢复 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>我的mini小主机算是组装完成了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dcfeae6e/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dcfeae6e/</url>
@@ -18453,6 +18363,61 @@
             <tag> 机械硬盘 </tag>
             
             <tag> 爆满 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的mini小主机终于组装好了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d0450d61/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d0450d61/</url>
+      
+        <content type="html"><![CDATA[<p>今天电源适配器终于到了，昨天才买的今天就到了，真的发货速度很快，果然只要配件对装机也不难啊，早知道都这样分开在一家买，那早都已经装好了，插上电源适配器开机成功那一刻还是感觉挺兴奋的，看着主板粉红色的灯下亮起来是真的太漂亮了。</p><span id="more"></span><p>这或许真的就是自己装机的乐趣，比买一台整机那种感觉舒服很多。安装系统虽然也不难，但是我也是费了一点劲的，好开始是想到用那个硬盘分区软件做一个系统启动盘，结果插上U盘启动了只能进那个软件的界面。</p><p>没有办法又只能把显示器连到笔记本电脑，用微软的那个软件重新做了一个win10启动盘，做这个笔记本电脑是很慢的，大概花了一个多小时才做好。做好后就直接把U盘插在mini主机上，我这个主板是可以不用进bios设置然后就直接可以安装系统的，刚一插上去就开始安装了，安装的时候用那个分区软件分的区居然用不了，只好把那个区删了，然后重新分100G来做系统盘，因为我的m.2固态是500G的，所以分100G做系统盘也还很多余量，然后剩下的就是未分配的了，这里未分配的就进系统再分。</p><p>系统安装好了就是等着安装驱动，不知道是网速原因还是上网的人太多了，驱动是下差不多30分钟才安装完，然后就是重启。</p><p>重启以后就是激活了，激活也差点难道我了，还好我笔记本电脑里面还有激活office的那个软件，这个软件也是可以激活系统的，当然直接用U盘传过来安装不了，会被系统自动删除，还好我想到了先安装一个腾讯电脑管家，然后系统自带的安全软件就没有那么强了，电脑管家也是会删除这个软件，但是恢复就可以了，安装好后系统就直接激活了，算是一个不错的惊喜。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 组装 </tag>
+            
+            <tag> 硬盘 </tag>
+            
+            <tag> 配件 </tag>
+            
+            <tag> mini小主机 </tag>
+            
+            <tag> 电源适配器 </tag>
+            
+            <tag> 装机 </tag>
+            
+            <tag> 不难 </tag>
+            
+            <tag> 开机 </tag>
+            
+            <tag> 太漂亮 </tag>
+            
+            <tag> 安装系统 </tag>
+            
+            <tag> win10启动盘 </tag>
+            
+            <tag> m.2固态 </tag>
+            
+            <tag> 安装驱动 </tag>
+            
+            <tag> 分区软件 </tag>
+            
+            <tag> 直接激活 </tag>
+            
+            <tag> 恢复 </tag>
             
         </tags>
       
@@ -18579,6 +18544,55 @@
     
     
     <entry>
+      <title>手机也可以用来挖狗狗币了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3671de8f/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3671de8f/</url>
+      
+        <content type="html"><![CDATA[<p>手机上可以安装一个叫Termux的软件，而这个软件它其实是一个很小的操作系统，在它上面是可以通过命令来安装其他环境的，可以实现python、Ubuntu等这些环境的安装，当然挖矿软件用到的就只是Ubuntu的系统环境。</p><span id="more"></span><p>只要在上面安装Ubuntu的系统环境以后，那手机自然也是可以像电脑一样安装挖矿软件实现挖矿了，只不过想要实现确实是有点难，因为在手机上面要实现这个用的全是命令来安装，不像电脑是用的图形界面那么简单。</p><p>当然如果是有别人的教程，按照教程一步步来也不算太难，但是全部都是在手机上操作，要输入每条命令也不是那么容易，最好的就是把别人的教程先复制过来，然后一条条的复制到命令行窗口，这样虽然也没有用电脑键盘舒服，但是要比用手机一个个字母输入要好很多了。</p><p>当然也还有其他的做法，那就是用电脑键盘来输入，当然手机现在都是可以连接蓝牙键盘的了，直接连接蓝牙键盘也可以。也还可以用MIUI+这个同步共享软件，把手机屏幕直接投到电脑显示屏上，这样不仅看得清楚了，而且直接用电脑键盘输入也更加的方便了。</p><p>能是能挖矿，但是挖的速度和电脑比起来是要差很远的，而且手机长期高负荷运转也很容易发热死机，而且这个只能用在安卓系统的手机，苹果手机不行的，只能说是体验一下，不推荐真的用手机来挖矿。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 安装 </tag>
+            
+            <tag> Termux </tag>
+            
+            <tag> 手机 </tag>
+            
+            <tag> 教程 </tag>
+            
+            <tag> 挖狗狗币 </tag>
+            
+            <tag> ubuntu </tag>
+            
+            <tag> 安卓系统 </tag>
+            
+            <tag> python </tag>
+            
+            <tag> 操作系统 </tag>
+            
+            <tag> 系统环境 </tag>
+            
+            <tag> 挖矿 </tag>
+            
+            <tag> 图形界面 </tag>
+            
+            <tag> 电脑键盘 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>我那些年的高中记忆</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/8e20c410/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/8e20c410/</url>
@@ -18636,55 +18650,6 @@
             <tag> 高三毕业 </tag>
             
             <tag> 浮现 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>手机也可以用来挖狗狗币了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3671de8f/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3671de8f/</url>
-      
-        <content type="html"><![CDATA[<p>手机上可以安装一个叫Termux的软件，而这个软件它其实是一个很小的操作系统，在它上面是可以通过命令来安装其他环境的，可以实现python、Ubuntu等这些环境的安装，当然挖矿软件用到的就只是Ubuntu的系统环境。</p><span id="more"></span><p>只要在上面安装Ubuntu的系统环境以后，那手机自然也是可以像电脑一样安装挖矿软件实现挖矿了，只不过想要实现确实是有点难，因为在手机上面要实现这个用的全是命令来安装，不像电脑是用的图形界面那么简单。</p><p>当然如果是有别人的教程，按照教程一步步来也不算太难，但是全部都是在手机上操作，要输入每条命令也不是那么容易，最好的就是把别人的教程先复制过来，然后一条条的复制到命令行窗口，这样虽然也没有用电脑键盘舒服，但是要比用手机一个个字母输入要好很多了。</p><p>当然也还有其他的做法，那就是用电脑键盘来输入，当然手机现在都是可以连接蓝牙键盘的了，直接连接蓝牙键盘也可以。也还可以用MIUI+这个同步共享软件，把手机屏幕直接投到电脑显示屏上，这样不仅看得清楚了，而且直接用电脑键盘输入也更加的方便了。</p><p>能是能挖矿，但是挖的速度和电脑比起来是要差很远的，而且手机长期高负荷运转也很容易发热死机，而且这个只能用在安卓系统的手机，苹果手机不行的，只能说是体验一下，不推荐真的用手机来挖矿。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 安装 </tag>
-            
-            <tag> Termux </tag>
-            
-            <tag> 手机 </tag>
-            
-            <tag> 教程 </tag>
-            
-            <tag> 挖狗狗币 </tag>
-            
-            <tag> ubuntu </tag>
-            
-            <tag> 安卓系统 </tag>
-            
-            <tag> python </tag>
-            
-            <tag> 操作系统 </tag>
-            
-            <tag> 系统环境 </tag>
-            
-            <tag> 挖矿 </tag>
-            
-            <tag> 图形界面 </tag>
-            
-            <tag> 电脑键盘 </tag>
             
         </tags>
       
@@ -19372,111 +19337,6 @@
     
     
     <entry>
-      <title>春夏之交最是适合去杭州看美景的时节</title>
-      <link href="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/"/>
-      <url>/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/</url>
-      
-        <content type="html"><![CDATA[<p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%821.jpg"></p><span id="more"></span><center><h1 id="（一）"><a href="#（一）" class="headerlink" title="（一）"></a>（一）</h1></center><center><p>在水里漏出一只小蛙的天<br>洒下人相思的织女<br>那些贪睡的人们在广场上走</p><p>那时候月儿照着我憨情微笑<br>西落的太阳照见山顶<br>在现实的世界上</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%822.jpg"></p><center><h1 id="（二）"><a href="#（二）" class="headerlink" title="（二）"></a>（二）</h1></center><center><p>何如天空有无边际的海洋<br>惨黑之墓侧孤寂的人世遭逢<br>展开在这样的天空里飞</p><p>回身时候忽然从无语里<br>你给我的生命之海洋<br>不知世界就在我的怀里</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%823.jpg"></p><center><h1 id="（三）"><a href="#（三）" class="headerlink" title="（三）"></a>（三）</h1></center><center><p>直敲到漆黑的天空上飞落<br>注视着装饰着动人的心的力量<br>写着幸福的人们的哀愁<br>涌现了无量数理想的水宫追逐</p><p>回想到世界的主宰<br>感到人生的美好了<br>点滴着在我心里的人们一样<br>那太阳却成为一个可爱的人</p><p>是人们不敢为我的悲哀<br>这时候我还是安乐的家园吗<br>只记从梦里惊醒<br>昨夜入梦依稀是在水波上<br>留梦中开出花来<br>中途逢着水面的落伍</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%824.jpg"></p><center><h1 id="（四）"><a href="#（四）" class="headerlink" title="（四）"></a>（四）</h1></center><center><p>如有人来到街头<br>远望这广阔天空的幻灭<br>倘生命无有美丽的希望<br>但是她是人间的一切</p><p>谁问这一息的残秋的梦寐<br>发觉了梦中甜美的爱情<br>注视着装饰着动人的心的力量<br>一条的流水忽然照着它们</p><p>四野里无人往来的历史<br>犹如人们的悲哀<br>只是主人的心远而且凄冷的心<br>永笼不住生命的笑<br>飘浮在水心追逐<br>给我生命的花瓣</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%825.jpg"></p><center><h1 id="（五）"><a href="#（五）" class="headerlink" title="（五）"></a>（五）</h1></center><center><p>江水有一个无人的小生<br>孤独无不适于诞生的梦里<br>与泪泉的水流诉述衷情<br>毕竟是一个诗人自己的心</p><p>我走进了你的幻梦的道儿<br>不知世界听见了热烈的风光<br>正是海水相对着新生的太阳<br>我们唱了听者只枯萎的梦境啊</p><p>她在水上看小花的开花<br>不献爱与天空的小鸟<br>我要梦见你的翅膀</p><p>我们扮演着世界中的一角<br>早晨的太阳照过我的梦<br>窗外的天空做了一个梦</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%826.jpg"></p><center><h1 id="（六）"><a href="#（六）" class="headerlink" title="（六）"></a>（六）</h1></center><center><p>它们的梦是怎样的感觉<br>孤独无不适于诞生的梦里<br>檐前影子的人们已在荒漠之中</p><p>溪水也不回头去了<br>都可挥洒出神的梦中的人们<br>撒在流水里荡漾</p><p>华山下的江水一去不返<br>在世界我不敢引起我的爱人</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%827.jpg"></p><center><h1 id="（七）"><a href="#（七）" class="headerlink" title="（七）"></a>（七）</h1></center><center><p>不认识的人们的色彩<br>我们踏着太阳翻身的颜色<br>我不懂得天空的云<br>也被水穿过我的眼泪</p><p>在恋梦中我才知道<br>但如今知道了生命的原故<br>何如天空不敢回头<br>充满了美丽星花的人们在飞</p><p>你撒向天空的小墨点<br>如今万人都应该翻译作沉沦<br>那被关街门外的天空消灭<br>泉水也不敢断定<br>只有我在天空梦的树巅<br>看着太阳照在他的面前</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%828.jpg"></p><center><h1 id="（八）"><a href="#（八）" class="headerlink" title="（八）"></a>（八）</h1></center><center><p>狂舞天空的寂寞<br>用鲜艳美丽的太阳晒得黄黄<br>也如在水中看见它面上的星<br>却收不起那水心的世界</p><p>除了梦中的人已消去<br>屏气的人也太无聊了<br>大海不能告诉的人生的意义<br>我们觉着了我们生命的光明</p><p>那树荫下的雨水的绿<br>有些人都夸奖夜凉甜美<br>流水袅袅的篆烟</p><p>说甚么世界的主宰<br>惨黑之墓侧孤寂的人世遭逢<br>她已存在我的梦上</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%829.jpg"></p><center><h1 id="（九）"><a href="#（九）" class="headerlink" title="（九）"></a>（九）</h1></center><center><p>蜿蜒在漆黑的天空里发亮<br>溪水桥上的山路<br>忽然使人们模糊得不分明了<br>凭着无生的水晶的谐乐</p><p>遨游于寂寞的梦境里<br>沉静的海水滴在我的心里<br>求宥于我的圣人是天空的刀子<br>恋人们有泪不敢迫视</p><p>立在太阳的光华<br>谁知你生命流中<br>人们忘记了自己的世界的一切<br>家里有人在梦中</p><p>看人们看不见天上的月桂<br>柔嫩喜悦水光从天际飞行</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%8210.jpg"></p><center><h1 id="（十）"><a href="#（十）" class="headerlink" title="（十）"></a>（十）</h1></center><center><p>亲爱的诗人的微笑<br>沉沉的世界不是这无声的村庄<br>恋人们早已凝结了他们的主人<br>只觉得一世界的声音啊</p><p>流水袅袅的篆烟<br>好看着水面上的光明<br>如此的沉沦在人间动转<br>深吻沅江之水滴在地上</p><p>有人不住在这人世间梦景<br>安栖于爱人的梦境<br>那红叶是生命中的谎语<br>斗争的人们的理想<br>将往梦幻是在迷惘的梦里<br>天上无有闪到天空的摇动</p></center>]]></content>
-      
-      
-      <categories>
-          
-          <category> 诗和远方 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 人们 </tag>
-            
-            <tag> 人生 </tag>
-            
-            <tag> 意义 </tag>
-            
-            <tag> 梦境 </tag>
-            
-            <tag> 天空 </tag>
-            
-            <tag> 诉述衷情 </tag>
-            
-            <tag> 家园 </tag>
-            
-            <tag> 流水 </tag>
-            
-            <tag> 微笑 </tag>
-            
-            <tag> 小花 </tag>
-            
-            <tag> 开花 </tag>
-            
-            <tag> 梦景 </tag>
-            
-            <tag> 人世 </tag>
-            
-            <tag> 春夏之交 </tag>
-            
-            <tag> 杭州 </tag>
-            
-            <tag> 美景 </tag>
-            
-            <tag> 时节 </tag>
-            
-            <tag> 相思 </tag>
-            
-            <tag> 织女 </tag>
-            
-            <tag> 现实 </tag>
-            
-            <tag> 世界上 </tag>
-            
-            <tag> 无边际 </tag>
-            
-            <tag> 海洋 </tag>
-            
-            <tag> 哀愁 </tag>
-            
-            <tag> 可爱 </tag>
-            
-            <tag> 安乐 </tag>
-            
-            <tag> 远望 </tag>
-            
-            <tag> 残秋 </tag>
-            
-            <tag> 梦寐 </tag>
-            
-            <tag> 往来 </tag>
-            
-            <tag> 历史 </tag>
-            
-            <tag> 水流 </tag>
-            
-            <tag> 荒漠之中 </tag>
-            
-            <tag> 太阳翻身 </tag>
-            
-            <tag> 不敢断定 </tag>
-            
-            <tag> 遭逢 </tag>
-            
-            <tag> 漆黑 </tag>
-            
-            <tag> 寂寞 </tag>
-            
-            <tag> 诗人 </tag>
-            
-            <tag> 袅袅 </tag>
-            
-            <tag> 人世间 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>春天虽然到了，但却不知路在何方</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c977f3e7/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c977f3e7/</url>
@@ -19601,6 +19461,111 @@
             <tag> 衣裳 </tag>
             
             <tag> 树荫下 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>春夏之交最是适合去杭州看美景的时节</title>
+      <link href="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/"/>
+      <url>/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/</url>
+      
+        <content type="html"><![CDATA[<p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%821.jpg"></p><span id="more"></span><center><h1 id="（一）"><a href="#（一）" class="headerlink" title="（一）"></a>（一）</h1></center><center><p>在水里漏出一只小蛙的天<br>洒下人相思的织女<br>那些贪睡的人们在广场上走</p><p>那时候月儿照着我憨情微笑<br>西落的太阳照见山顶<br>在现实的世界上</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%822.jpg"></p><center><h1 id="（二）"><a href="#（二）" class="headerlink" title="（二）"></a>（二）</h1></center><center><p>何如天空有无边际的海洋<br>惨黑之墓侧孤寂的人世遭逢<br>展开在这样的天空里飞</p><p>回身时候忽然从无语里<br>你给我的生命之海洋<br>不知世界就在我的怀里</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%823.jpg"></p><center><h1 id="（三）"><a href="#（三）" class="headerlink" title="（三）"></a>（三）</h1></center><center><p>直敲到漆黑的天空上飞落<br>注视着装饰着动人的心的力量<br>写着幸福的人们的哀愁<br>涌现了无量数理想的水宫追逐</p><p>回想到世界的主宰<br>感到人生的美好了<br>点滴着在我心里的人们一样<br>那太阳却成为一个可爱的人</p><p>是人们不敢为我的悲哀<br>这时候我还是安乐的家园吗<br>只记从梦里惊醒<br>昨夜入梦依稀是在水波上<br>留梦中开出花来<br>中途逢着水面的落伍</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%824.jpg"></p><center><h1 id="（四）"><a href="#（四）" class="headerlink" title="（四）"></a>（四）</h1></center><center><p>如有人来到街头<br>远望这广阔天空的幻灭<br>倘生命无有美丽的希望<br>但是她是人间的一切</p><p>谁问这一息的残秋的梦寐<br>发觉了梦中甜美的爱情<br>注视着装饰着动人的心的力量<br>一条的流水忽然照着它们</p><p>四野里无人往来的历史<br>犹如人们的悲哀<br>只是主人的心远而且凄冷的心<br>永笼不住生命的笑<br>飘浮在水心追逐<br>给我生命的花瓣</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%825.jpg"></p><center><h1 id="（五）"><a href="#（五）" class="headerlink" title="（五）"></a>（五）</h1></center><center><p>江水有一个无人的小生<br>孤独无不适于诞生的梦里<br>与泪泉的水流诉述衷情<br>毕竟是一个诗人自己的心</p><p>我走进了你的幻梦的道儿<br>不知世界听见了热烈的风光<br>正是海水相对着新生的太阳<br>我们唱了听者只枯萎的梦境啊</p><p>她在水上看小花的开花<br>不献爱与天空的小鸟<br>我要梦见你的翅膀</p><p>我们扮演着世界中的一角<br>早晨的太阳照过我的梦<br>窗外的天空做了一个梦</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%826.jpg"></p><center><h1 id="（六）"><a href="#（六）" class="headerlink" title="（六）"></a>（六）</h1></center><center><p>它们的梦是怎样的感觉<br>孤独无不适于诞生的梦里<br>檐前影子的人们已在荒漠之中</p><p>溪水也不回头去了<br>都可挥洒出神的梦中的人们<br>撒在流水里荡漾</p><p>华山下的江水一去不返<br>在世界我不敢引起我的爱人</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%827.jpg"></p><center><h1 id="（七）"><a href="#（七）" class="headerlink" title="（七）"></a>（七）</h1></center><center><p>不认识的人们的色彩<br>我们踏着太阳翻身的颜色<br>我不懂得天空的云<br>也被水穿过我的眼泪</p><p>在恋梦中我才知道<br>但如今知道了生命的原故<br>何如天空不敢回头<br>充满了美丽星花的人们在飞</p><p>你撒向天空的小墨点<br>如今万人都应该翻译作沉沦<br>那被关街门外的天空消灭<br>泉水也不敢断定<br>只有我在天空梦的树巅<br>看着太阳照在他的面前</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%828.jpg"></p><center><h1 id="（八）"><a href="#（八）" class="headerlink" title="（八）"></a>（八）</h1></center><center><p>狂舞天空的寂寞<br>用鲜艳美丽的太阳晒得黄黄<br>也如在水中看见它面上的星<br>却收不起那水心的世界</p><p>除了梦中的人已消去<br>屏气的人也太无聊了<br>大海不能告诉的人生的意义<br>我们觉着了我们生命的光明</p><p>那树荫下的雨水的绿<br>有些人都夸奖夜凉甜美<br>流水袅袅的篆烟</p><p>说甚么世界的主宰<br>惨黑之墓侧孤寂的人世遭逢<br>她已存在我的梦上</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%829.jpg"></p><center><h1 id="（九）"><a href="#（九）" class="headerlink" title="（九）"></a>（九）</h1></center><center><p>蜿蜒在漆黑的天空里发亮<br>溪水桥上的山路<br>忽然使人们模糊得不分明了<br>凭着无生的水晶的谐乐</p><p>遨游于寂寞的梦境里<br>沉静的海水滴在我的心里<br>求宥于我的圣人是天空的刀子<br>恋人们有泪不敢迫视</p><p>立在太阳的光华<br>谁知你生命流中<br>人们忘记了自己的世界的一切<br>家里有人在梦中</p><p>看人们看不见天上的月桂<br>柔嫩喜悦水光从天际飞行</p></center><p><img data-src="/%E8%AF%97%E5%92%8C%E8%BF%9C%E6%96%B9/7b4f2c1d/%E6%98%A5%E5%A4%8F%E4%B9%8B%E4%BA%A4%E6%9C%80%E6%98%AF%E9%80%82%E5%90%88%E5%8E%BB%E6%9D%AD%E5%B7%9E%E7%9C%8B%E7%BE%8E%E6%99%AF%E7%9A%84%E6%97%B6%E8%8A%8210.jpg"></p><center><h1 id="（十）"><a href="#（十）" class="headerlink" title="（十）"></a>（十）</h1></center><center><p>亲爱的诗人的微笑<br>沉沉的世界不是这无声的村庄<br>恋人们早已凝结了他们的主人<br>只觉得一世界的声音啊</p><p>流水袅袅的篆烟<br>好看着水面上的光明<br>如此的沉沦在人间动转<br>深吻沅江之水滴在地上</p><p>有人不住在这人世间梦景<br>安栖于爱人的梦境<br>那红叶是生命中的谎语<br>斗争的人们的理想<br>将往梦幻是在迷惘的梦里<br>天上无有闪到天空的摇动</p></center>]]></content>
+      
+      
+      <categories>
+          
+          <category> 诗和远方 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 人们 </tag>
+            
+            <tag> 人生 </tag>
+            
+            <tag> 意义 </tag>
+            
+            <tag> 梦境 </tag>
+            
+            <tag> 天空 </tag>
+            
+            <tag> 诉述衷情 </tag>
+            
+            <tag> 流水 </tag>
+            
+            <tag> 微笑 </tag>
+            
+            <tag> 家园 </tag>
+            
+            <tag> 小花 </tag>
+            
+            <tag> 开花 </tag>
+            
+            <tag> 梦景 </tag>
+            
+            <tag> 人世 </tag>
+            
+            <tag> 春夏之交 </tag>
+            
+            <tag> 杭州 </tag>
+            
+            <tag> 美景 </tag>
+            
+            <tag> 时节 </tag>
+            
+            <tag> 相思 </tag>
+            
+            <tag> 织女 </tag>
+            
+            <tag> 现实 </tag>
+            
+            <tag> 世界上 </tag>
+            
+            <tag> 无边际 </tag>
+            
+            <tag> 海洋 </tag>
+            
+            <tag> 哀愁 </tag>
+            
+            <tag> 可爱 </tag>
+            
+            <tag> 安乐 </tag>
+            
+            <tag> 远望 </tag>
+            
+            <tag> 残秋 </tag>
+            
+            <tag> 梦寐 </tag>
+            
+            <tag> 往来 </tag>
+            
+            <tag> 历史 </tag>
+            
+            <tag> 水流 </tag>
+            
+            <tag> 荒漠之中 </tag>
+            
+            <tag> 太阳翻身 </tag>
+            
+            <tag> 不敢断定 </tag>
+            
+            <tag> 遭逢 </tag>
+            
+            <tag> 漆黑 </tag>
+            
+            <tag> 寂寞 </tag>
+            
+            <tag> 诗人 </tag>
+            
+            <tag> 袅袅 </tag>
+            
+            <tag> 人世间 </tag>
             
         </tags>
       
@@ -19781,6 +19746,45 @@
     
     
     <entry>
+      <title>昨晚喝酒了，以为今天考试过不了，结果还是过了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/59f9dff9/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/59f9dff9/</url>
+      
+        <content type="html"><![CDATA[<p>昨天晚上坐公交车回来后，在下公交车的站台路边超市买了一瓶酒，还有一个酒杯和一包麻辣鱼，总共花了17块钱。其实想喝酒的原因可能是去镇上逛了一圈什么也没有买到心情有点失落，再加上身体也感觉有点累了，所以就想喝杯酒来解解乏。</p><span id="more"></span><p>酒确实是个好东西喝了就一觉睡到早上闹钟响了，但也有不好的就是容易伤记忆，也许昨天记得的东西，今天晚上喝了点酒明天就会不记得了。</p><p>但是还好，今天考试的东西本来就不是很难，只要七十分就可以通过了，所以只要多看几遍昨天记的笔记一般都是可以通过的。我也是有些忘记了的，当考试的时候就怎么也记不起来，但是也不是要求满分，所以就算有些记不起来也是能通过的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 考试 </tag>
+            
+            <tag> 超市 </tag>
+            
+            <tag> 昨天晚上 </tag>
+            
+            <tag> 想喝酒 </tag>
+            
+            <tag> 解乏 </tag>
+            
+            <tag> 闹钟响了 </tag>
+            
+            <tag> 要求满分 </tag>
+            
+            <tag> 能通过 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>昨晚断电一下子，来电后电脑开不了机</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c983425/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c983425/</url>
@@ -19816,45 +19820,6 @@
             <tag> 正常开机 </tag>
             
             <tag> 重新写 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>昨晚喝酒了，以为今天考试过不了，结果还是过了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/59f9dff9/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/59f9dff9/</url>
-      
-        <content type="html"><![CDATA[<p>昨天晚上坐公交车回来后，在下公交车的站台路边超市买了一瓶酒，还有一个酒杯和一包麻辣鱼，总共花了17块钱。其实想喝酒的原因可能是去镇上逛了一圈什么也没有买到心情有点失落，再加上身体也感觉有点累了，所以就想喝杯酒来解解乏。</p><span id="more"></span><p>酒确实是个好东西喝了就一觉睡到早上闹钟响了，但也有不好的就是容易伤记忆，也许昨天记得的东西，今天晚上喝了点酒明天就会不记得了。</p><p>但是还好，今天考试的东西本来就不是很难，只要七十分就可以通过了，所以只要多看几遍昨天记的笔记一般都是可以通过的。我也是有些忘记了的，当考试的时候就怎么也记不起来，但是也不是要求满分，所以就算有些记不起来也是能通过的。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 考试 </tag>
-            
-            <tag> 超市 </tag>
-            
-            <tag> 昨天晚上 </tag>
-            
-            <tag> 想喝酒 </tag>
-            
-            <tag> 解乏 </tag>
-            
-            <tag> 闹钟响了 </tag>
-            
-            <tag> 要求满分 </tag>
-            
-            <tag> 能通过 </tag>
             
         </tags>
       
@@ -20045,9 +20010,9 @@
       
         <tags>
             
-            <tag> 简书 </tag>
-            
             <tag> 写作 </tag>
+            
+            <tag> 简书 </tag>
             
             <tag> 抽奖 </tag>
             
@@ -21248,6 +21213,57 @@
     
     
     <entry>
+      <title>电脑上可以免费看电影的软件</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3a21a683/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3a21a683/</url>
+      
+        <content type="html"><![CDATA[<p>这个软件其实很早就有了，上面的电影还是挺多的，除了清晰度最高只有蓝光之外没有其他缺点了，但是它不需要会员是完全免费的，以前是叫电影天堂，是微软应用商店的UWP软件。</p><span id="more"></span><p>后面不知道为什么被微软下架了，但是只要安装过的电脑没有卸载和重装都是有的，后面开发者又重新上架了，改名为Sky电影，在电脑上应用商店一搜就可以找到，安装完之后打开是看不到内容的，只看到一些上映的电影信息，要在查询那里输入sky三个字母，之后打开就是另外一个世界。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3a21a683/Sky%E7%94%B5%E5%BD%B1.jpg"></p><p>这个可以说是一个良心软件了，从电脑安装win10系统以来我就在用的了，有时候感觉在优酷充了会员看的电影都没有这个上面好看，只要不在乎没有4K高清度的可以用这个看，反正是不要会员，想看都可以随时看。</p><p>电影、电视剧、综艺、电视直播都是有的，用了这个想看电视不用安装其他软件都是可以的，有的电影在优爱腾这些平台没有的，上面也可以找到，看电影真的就要这种电影多的，想看什么就点什么，有一种上初中的时候去街上买CD光盘看电影的那种感觉，但是那时候有时花了两元钱看着封面可以，但是买回家放到影碟机里看了才知道很烂，这个软件就不一样了，感觉不好看就重新换一个就是了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 免费 </tag>
+            
+            <tag> 会员 </tag>
+            
+            <tag> 软件 </tag>
+            
+            <tag> 电视剧 </tag>
+            
+            <tag> 电视直播 </tag>
+            
+            <tag> 电脑上 </tag>
+            
+            <tag> 看电影 </tag>
+            
+            <tag> 优酷 </tag>
+            
+            <tag> 挺多 </tag>
+            
+            <tag> 清晰度 </tag>
+            
+            <tag> 蓝光 </tag>
+            
+            <tag> Sky电影 </tag>
+            
+            <tag> 电影天堂 </tag>
+            
+            <tag> 综艺 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>申请头条号的原创又失败了之后感想</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/c71331bd/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/c71331bd/</url>
@@ -21323,57 +21339,6 @@
     
     
     <entry>
-      <title>电脑上可以免费看电影的软件</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3a21a683/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3a21a683/</url>
-      
-        <content type="html"><![CDATA[<p>这个软件其实很早就有了，上面的电影还是挺多的，除了清晰度最高只有蓝光之外没有其他缺点了，但是它不需要会员是完全免费的，以前是叫电影天堂，是微软应用商店的UWP软件。</p><span id="more"></span><p>后面不知道为什么被微软下架了，但是只要安装过的电脑没有卸载和重装都是有的，后面开发者又重新上架了，改名为Sky电影，在电脑上应用商店一搜就可以找到，安装完之后打开是看不到内容的，只看到一些上映的电影信息，要在查询那里输入sky三个字母，之后打开就是另外一个世界。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3a21a683/Sky%E7%94%B5%E5%BD%B1.jpg"></p><p>这个可以说是一个良心软件了，从电脑安装win10系统以来我就在用的了，有时候感觉在优酷充了会员看的电影都没有这个上面好看，只要不在乎没有4K高清度的可以用这个看，反正是不要会员，想看都可以随时看。</p><p>电影、电视剧、综艺、电视直播都是有的，用了这个想看电视不用安装其他软件都是可以的，有的电影在优爱腾这些平台没有的，上面也可以找到，看电影真的就要这种电影多的，想看什么就点什么，有一种上初中的时候去街上买CD光盘看电影的那种感觉，但是那时候有时花了两元钱看着封面可以，但是买回家放到影碟机里看了才知道很烂，这个软件就不一样了，感觉不好看就重新换一个就是了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 免费 </tag>
-            
-            <tag> 会员 </tag>
-            
-            <tag> 软件 </tag>
-            
-            <tag> 电视剧 </tag>
-            
-            <tag> 电视直播 </tag>
-            
-            <tag> 电脑上 </tag>
-            
-            <tag> 看电影 </tag>
-            
-            <tag> 优酷 </tag>
-            
-            <tag> 挺多 </tag>
-            
-            <tag> 清晰度 </tag>
-            
-            <tag> 蓝光 </tag>
-            
-            <tag> Sky电影 </tag>
-            
-            <tag> 电影天堂 </tag>
-            
-            <tag> 综艺 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>电视剧《白发》和小说《白发皇妃》的区别</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/2f437ad2/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/2f437ad2/</url>
@@ -21406,9 +21371,9 @@
             
             <tag> 小说 </tag>
             
-            <tag> 微信读书 </tag>
-            
             <tag> 漏洞 </tag>
+            
+            <tag> 微信读书 </tag>
             
             <tag> 听雪楼 </tag>
             
@@ -21940,45 +21905,6 @@
     
     
     <entry>
-      <title>社区团购的坑，第一次能买到点便宜的第二次就不行了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a5982df5/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a5982df5/</url>
-      
-        <content type="html"><![CDATA[<p>我第一次在美团上买了橙子才花了一分钱感觉还可以，但是昨天又买一斤土豆还有一斤鸡胸肉和一份水饺，结果今天去拿货等到晚上才到，去拿了几次都没有送过来，这还不是最坑的，最坑的是土豆居然那么小一个，在种在农村里都不是用来吃的，果然是真的便宜没有好货，这句话在这里真正的得到验证了。</p><span id="more"></span><p>还有那个鸡胸肉一斤鸡胸肉能够拧出半斤水来，比我以前在另一个平台买的差远了，好像里面就是注水了的，而且吃起来一点鸡肉的味道都没有，就和合成的鸡肉一样，刚开始做那些平台确实是认真做的，后面这些完全就是为了打价格战，品质非常差，也不怕砸了自己的招牌了，比淘宝买东西还不如，淘宝卖家怕你给差评还发好的，这些平台你连差评都没有地方给，反正都是继续坑下一个。</p><p>水饺是其他的都到了那个就没有货，我也是醉了，就是看着这个水饺可以才一起买的。价格便宜的那种是带包装的反正就是不发货，等到你去拿的时候才说没有货，然后就让退款，没有货为什么还要上架，完全就是为了吸引消费者的眼球，因为这些带包装的价格和品质都一样，从中不可能做手脚来赚利润，不用怎么包装没有统一规格的这种就不一样了。</p><p>一般的带包装有一定规格的，要么就是买的时候刚付完款他就给你退款了，今天早上我就遇到一次，搞得我莫名其妙，而且上面退款原因也没有。还有一种就是一起买的几样，带包装有一定规格的其他到了有货那个就是没有，多多买菜和美团都遇到过一次了，以后买还是要擦亮眼睛了，我发觉如果只单独买那一样估计也是秒退的，不发货还挂在上面干嘛，而且还显示再买一单，这不是有问题吗，总结出来就只有一句话，挂羊头买狗肉，真的再贴切不过了。</p><p>社区团购前年2019年的大概12月就开始在同程上买过了，那些虽然是斤两差了一些，但是品质有保证，也没有不发货的情况，后面的这些是什么鬼真的搞不清楚。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 社区团购 </tag>
-            
-            <tag> 平台 </tag>
-            
-            <tag> 第二次 </tag>
-            
-            <tag> 鸡胸肉 </tag>
-            
-            <tag> 半斤水 </tag>
-            
-            <tag> 赚利润 </tag>
-            
-            <tag> 秒退 </tag>
-            
-            <tag> 不发货 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>窗外下起了雨，这雨如同下在我的心里</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/36057a56/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/36057a56/</url>
@@ -22034,6 +21960,45 @@
             <tag> 顺水而流 </tag>
             
             <tag> 逃离苦海 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>社区团购的坑，第一次能买到点便宜的第二次就不行了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a5982df5/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a5982df5/</url>
+      
+        <content type="html"><![CDATA[<p>我第一次在美团上买了橙子才花了一分钱感觉还可以，但是昨天又买一斤土豆还有一斤鸡胸肉和一份水饺，结果今天去拿货等到晚上才到，去拿了几次都没有送过来，这还不是最坑的，最坑的是土豆居然那么小一个，在种在农村里都不是用来吃的，果然是真的便宜没有好货，这句话在这里真正的得到验证了。</p><span id="more"></span><p>还有那个鸡胸肉一斤鸡胸肉能够拧出半斤水来，比我以前在另一个平台买的差远了，好像里面就是注水了的，而且吃起来一点鸡肉的味道都没有，就和合成的鸡肉一样，刚开始做那些平台确实是认真做的，后面这些完全就是为了打价格战，品质非常差，也不怕砸了自己的招牌了，比淘宝买东西还不如，淘宝卖家怕你给差评还发好的，这些平台你连差评都没有地方给，反正都是继续坑下一个。</p><p>水饺是其他的都到了那个就没有货，我也是醉了，就是看着这个水饺可以才一起买的。价格便宜的那种是带包装的反正就是不发货，等到你去拿的时候才说没有货，然后就让退款，没有货为什么还要上架，完全就是为了吸引消费者的眼球，因为这些带包装的价格和品质都一样，从中不可能做手脚来赚利润，不用怎么包装没有统一规格的这种就不一样了。</p><p>一般的带包装有一定规格的，要么就是买的时候刚付完款他就给你退款了，今天早上我就遇到一次，搞得我莫名其妙，而且上面退款原因也没有。还有一种就是一起买的几样，带包装有一定规格的其他到了有货那个就是没有，多多买菜和美团都遇到过一次了，以后买还是要擦亮眼睛了，我发觉如果只单独买那一样估计也是秒退的，不发货还挂在上面干嘛，而且还显示再买一单，这不是有问题吗，总结出来就只有一句话，挂羊头买狗肉，真的再贴切不过了。</p><p>社区团购前年2019年的大概12月就开始在同程上买过了，那些虽然是斤两差了一些，但是品质有保证，也没有不发货的情况，后面的这些是什么鬼真的搞不清楚。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 社区团购 </tag>
+            
+            <tag> 平台 </tag>
+            
+            <tag> 第二次 </tag>
+            
+            <tag> 鸡胸肉 </tag>
+            
+            <tag> 半斤水 </tag>
+            
+            <tag> 赚利润 </tag>
+            
+            <tag> 秒退 </tag>
+            
+            <tag> 不发货 </tag>
             
         </tags>
       
@@ -22274,47 +22239,6 @@
     
     
     <entry>
-      <title>练习写作的方法就是每日坚持日更</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c9bc365f/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c9bc365f/</url>
-      
-        <content type="html"><![CDATA[<p>我自从参加写作日更挑战已经坚持了七天了，但是比起很多大佬已经坚持日更挑战几百天的来说，我这也只能算是九牛一毛，日更挑战的要求不难，也就是每天都发超过一百字就可以了，关键是在于行动。</p><span id="more"></span><p>想要让自己对写更加熟练，就只有不停的练习写，写作本身就是熟能生巧的东西，就和人学说话一样的，刚开始的时候说第一句话会感觉很难，但是说多了就顺口成章了，大脑里面想的都能通过自己嘴表达出来，这就是语言的魅力，熟练了就容易了很多；写作同样如此的，练得多了自然就会写了，写多了自然就可以把自己内心的想法顺畅地写出来。</p><p>坚持日更每天虽然只是几百字，但是10天就是几千，百天就是几万了，一年坚持下来写上十万字也是完全没有问题的。</p><p>几百字的数量就相当于写篇日记而已，还没有初中生写一篇作文多呢，他们一篇作文都是要写八百字才可以。</p><p>日更的要求不难，重要的是每日坚持，就和寺庙里的和尚一样每天准时敲钟，保持初心不变，不管风里雨里每天都坚持强迫自己去写，去思考。</p><p>有时候感觉写作很痛苦，自己不想去写，但其实一旦开始写就没有那么难了，当自己走出第一步，后面的每一步其实都很容易了。</p><p>风里雨里每日坚持写，这就是最大的收获。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 方法 </tag>
-            
-            <tag> 练习写作 </tag>
-            
-            <tag> 关键 </tag>
-            
-            <tag> 收获 </tag>
-            
-            <tag> 每日 </tag>
-            
-            <tag> 坚持日更 </tag>
-            
-            <tag> 行动 </tag>
-            
-            <tag> 顺口成章 </tag>
-            
-            <tag> 一篇作文 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>组装一台mini主机真的是一波三折</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1ac42388/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1ac42388/</url>
@@ -22401,6 +22325,47 @@
     
     
     <entry>
+      <title>练习写作的方法就是每日坚持日更</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c9bc365f/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c9bc365f/</url>
+      
+        <content type="html"><![CDATA[<p>我自从参加写作日更挑战已经坚持了七天了，但是比起很多大佬已经坚持日更挑战几百天的来说，我这也只能算是九牛一毛，日更挑战的要求不难，也就是每天都发超过一百字就可以了，关键是在于行动。</p><span id="more"></span><p>想要让自己对写更加熟练，就只有不停的练习写，写作本身就是熟能生巧的东西，就和人学说话一样的，刚开始的时候说第一句话会感觉很难，但是说多了就顺口成章了，大脑里面想的都能通过自己嘴表达出来，这就是语言的魅力，熟练了就容易了很多；写作同样如此的，练得多了自然就会写了，写多了自然就可以把自己内心的想法顺畅地写出来。</p><p>坚持日更每天虽然只是几百字，但是10天就是几千，百天就是几万了，一年坚持下来写上十万字也是完全没有问题的。</p><p>几百字的数量就相当于写篇日记而已，还没有初中生写一篇作文多呢，他们一篇作文都是要写八百字才可以。</p><p>日更的要求不难，重要的是每日坚持，就和寺庙里的和尚一样每天准时敲钟，保持初心不变，不管风里雨里每天都坚持强迫自己去写，去思考。</p><p>有时候感觉写作很痛苦，自己不想去写，但其实一旦开始写就没有那么难了，当自己走出第一步，后面的每一步其实都很容易了。</p><p>风里雨里每日坚持写，这就是最大的收获。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 方法 </tag>
+            
+            <tag> 练习写作 </tag>
+            
+            <tag> 关键 </tag>
+            
+            <tag> 收获 </tag>
+            
+            <tag> 每日 </tag>
+            
+            <tag> 坚持日更 </tag>
+            
+            <tag> 行动 </tag>
+            
+            <tag> 顺口成章 </tag>
+            
+            <tag> 一篇作文 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>给自己的域名续费</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9994d520/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9994d520/</url>
@@ -22430,6 +22395,51 @@
             <tag> 域名续费 </tag>
             
             <tag> 国家域名 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>网上购物省钱方法</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/889f67f5/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/889f67f5/</url>
+      
+        <content type="html"><![CDATA[<p>我首先发现的是淘宝联盟，这个是为淘宝推广商品的一个平台，以前学做淘宝客网站时候我就知道了。</p><span id="more"></span><p>那时候只知道在自己网站上推广商品可以赚钱，其实在其他平台上发链接也是可以的，QQ，微博都可以，这个是有个手机APP的，选好自己在淘宝要买的商品，然后加入收藏夹，在淘宝联盟的收藏夹里面就可以找到。</p><p>然后就是像推广给别人那样，复制推广链接或者淘口令，然后有重新打开淘宝，淘宝就会自动识别这个淘口令，这里就下单就可以自己获得佣金了。</p><p>只要参加了淘宝客推广活动商家的商品都可以拿到佣金，分享给别人不一定有人买，但是自己买还是可以回点血的。</p><p>要下单付款的时候先不着急付款，打开一淘用一淘来付款，这样有一淘立减，又可以多少省一点，淘宝和天猫的商品都是可以在一淘付款的，只要加入购物车就可以在一淘找到。</p><p>最主要的就是要复制淘口令然后加入购物车这里，之前已经加入购物车的必须还得再加入一次，不然佣金无效的，付款在一淘付款的时候再把多加的减掉，不然只买一件的，买了两件那也麻烦。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 微博 </tag>
+            
+            <tag> 赚钱 </tag>
+            
+            <tag> 省钱 </tag>
+            
+            <tag> 淘宝联盟 </tag>
+            
+            <tag> 网购 </tag>
+            
+            <tag> 推广商品 </tag>
+            
+            <tag> 推广链接 </tag>
+            
+            <tag> 淘口令 </tag>
+            
+            <tag> 回点血 </tag>
+            
+            <tag> 一淘 </tag>
+            
+            <tag> 佣金 </tag>
             
         </tags>
       
@@ -22472,13 +22482,13 @@
             
             <tag> 小鸟 </tag>
             
+            <tag> 梦里 </tag>
+            
             <tag> 相思 </tag>
             
             <tag> 历史 </tag>
             
             <tag> 寂寞 </tag>
-            
-            <tag> 梦里 </tag>
             
             <tag> 梦里醒来 </tag>
             
@@ -22594,51 +22604,6 @@
             <tag> master </tag>
             
             <tag> 升级 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>网上购物省钱方法</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/889f67f5/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/889f67f5/</url>
-      
-        <content type="html"><![CDATA[<p>我首先发现的是淘宝联盟，这个是为淘宝推广商品的一个平台，以前学做淘宝客网站时候我就知道了。</p><span id="more"></span><p>那时候只知道在自己网站上推广商品可以赚钱，其实在其他平台上发链接也是可以的，QQ，微博都可以，这个是有个手机APP的，选好自己在淘宝要买的商品，然后加入收藏夹，在淘宝联盟的收藏夹里面就可以找到。</p><p>然后就是像推广给别人那样，复制推广链接或者淘口令，然后有重新打开淘宝，淘宝就会自动识别这个淘口令，这里就下单就可以自己获得佣金了。</p><p>只要参加了淘宝客推广活动商家的商品都可以拿到佣金，分享给别人不一定有人买，但是自己买还是可以回点血的。</p><p>要下单付款的时候先不着急付款，打开一淘用一淘来付款，这样有一淘立减，又可以多少省一点，淘宝和天猫的商品都是可以在一淘付款的，只要加入购物车就可以在一淘找到。</p><p>最主要的就是要复制淘口令然后加入购物车这里，之前已经加入购物车的必须还得再加入一次，不然佣金无效的，付款在一淘付款的时候再把多加的减掉，不然只买一件的，买了两件那也麻烦。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 微博 </tag>
-            
-            <tag> 赚钱 </tag>
-            
-            <tag> 省钱 </tag>
-            
-            <tag> 淘宝联盟 </tag>
-            
-            <tag> 网购 </tag>
-            
-            <tag> 推广商品 </tag>
-            
-            <tag> 推广链接 </tag>
-            
-            <tag> 淘口令 </tag>
-            
-            <tag> 回点血 </tag>
-            
-            <tag> 一淘 </tag>
-            
-            <tag> 佣金 </tag>
             
         </tags>
       
@@ -23397,45 +23362,6 @@
     
     
     <entry>
-      <title>记录自己真实的梦境:我昨晚做了两个梦，后面一个让我感到很害怕</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/</url>
-      
-        <content type="html"><![CDATA[<p>昨晚做了两个梦，第一个是梦到两个自己从未见过的女孩，梦到自己突然回到了高中时期，梦里两个女孩是和我同班的，而且离我家不是太远，一个感觉很真实，而另外一个我感觉很模糊。</p><span id="more"></span><p>真实的这个每天放学后，我都要跟着她后面走很长一段路，直到快要走到她家对面，我只能远远的看着她，我离她家对面的中间是一条河沟，看着不远，其实实际距离是非常的远，因为我站在她家对面，中间的河沟是一个U弧形的，要从我这边走下去，然后又从她家那边走上去，这种地方我现实中是见到过的，不知道为何会出现在我的梦里，而是且时间地点也是错误的。我只能远远的在对面看着她消失在我的视野里，但是我却就是不敢跟她表白，说我喜欢她。</p><p>第二个梦是梦到自己去一个厂里上班，也不知自己怎么就没有衣服穿了，别人就随便给了我一件，我也不看是不是女人穿的，自己就胡乱穿在身上了，后来遇到厂里一个上了年纪的女人，说我身上穿的那件衣服，是一个已经逝去的女人穿的，还告诉我那个女人的名字叫邓红，说她已经病逝一年多了。我他妈顿时就是毛骨悚然，在梦中我都感到害怕了，我怎么就穿着死去女人的衣服，难怪那衣服上还有女人的味道，我顿时就被吓惊醒了，这太恐怖了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 厂里上班 </tag>
-            
-            <tag> 衣服 </tag>
-            
-            <tag> 真实 </tag>
-            
-            <tag> 两个梦 </tag>
-            
-            <tag> 同班 </tag>
-            
-            <tag> 河沟 </tag>
-            
-            <tag> 吓惊醒了 </tag>
-            
-            <tag> 太恐怖了 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>试用一款清僵尸粉的软件</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/992367e2/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/992367e2/</url>
@@ -23477,11 +23403,11 @@
     
     
     <entry>
-      <title>读《围炉夜话》其三有感</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a774ac4f/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a774ac4f/</url>
+      <title>记录自己真实的梦境:我昨晚做了两个梦，后面一个让我感到很害怕</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/</url>
       
-        <content type="html"><![CDATA[<p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a774ac4f/%E5%9B%B4%E7%82%89%E5%A4%9C%E8%AF%9D.jpg"></p><span id="more"></span><blockquote><p>原文：贫无可奈惟求俭，拙亦何妨只要勤。</p></blockquote><p>当没有其他更好的方法来改变自己贫穷状况的时候，节俭就是唯一最好的方法。金钱上面的贫穷自己一时难以改变，但是精神方面却是可以的，面对自身的状况要以一种安贫乐道的心态去坦然处之，急功近利的想法对自身没有益处，这种思维如果想得太过火了，最终还有可能将自己带入不归的歧途。</p><blockquote><p>穷则独善其身，达则兼济天下。</p></blockquote><p>无论是贫穷或者富贵，都应当要有自己的不同处世之道。人在贫困之中久了自然是可以苦其心志，多读书和学习知识丰富自身的修为，成为精神层面的富有者，这境界难道不是富人所要追求的吗？</p><p>平心静气没有烦恼，当自己富有之时，金钱没有必要看得太重了，因为欲望的深渊永远都是一个无底洞，一个人精神层面的贫穷永远也不可能用金钱来弥补，金钱它带给人的终究是一种物质，和自己所要追求修为的最高境界它是没有必然联系的。</p><p>乐善好施多帮助有需要的人，比用更多的金钱来填补自己的空虚精神世界更有价值。人为什么而活，虽然一直以来都是人们所不停探求的答案，也是一直没有找到确切的答案，但是却有一个否定的答案，那就是不单为了金钱而活着。</p><p>中国古代被称为商圣的第一人范蠡曾几度散尽家财，而又几度忽而所得，他会赚钱，而他又会用赚来的钱去帮助有需要的人，他能赚钱但他却没有独揽天下财富的野心，所以他自然可以成为圣人，他的品行修为是比那些终身为金钱所奴役的人要高出了许多。</p><p>聪明与否对一个人的修为真的不是很大，勤能补拙这话说得是很有道理的，世上的聪明人有很多但是成功了又有多少呢，很多人自认为自己有多聪明，殊不知山外还有山，人外还有人，比自己高明的人世上还有很多，有的时候太自以为是，就是聪明反被聪明误，保持低调而平和的心态，不断去上下探索未知的世界，只有这样的人才能成为真正的聪明人、圣人。</p>]]></content>
+        <content type="html"><![CDATA[<p>昨晚做了两个梦，第一个是梦到两个自己从未见过的女孩，梦到自己突然回到了高中时期，梦里两个女孩是和我同班的，而且离我家不是太远，一个感觉很真实，而另外一个我感觉很模糊。</p><span id="more"></span><p>真实的这个每天放学后，我都要跟着她后面走很长一段路，直到快要走到她家对面，我只能远远的看着她，我离她家对面的中间是一条河沟，看着不远，其实实际距离是非常的远，因为我站在她家对面，中间的河沟是一个U弧形的，要从我这边走下去，然后又从她家那边走上去，这种地方我现实中是见到过的，不知道为何会出现在我的梦里，而是且时间地点也是错误的。我只能远远的在对面看着她消失在我的视野里，但是我却就是不敢跟她表白，说我喜欢她。</p><p>第二个梦是梦到自己去一个厂里上班，也不知自己怎么就没有衣服穿了，别人就随便给了我一件，我也不看是不是女人穿的，自己就胡乱穿在身上了，后来遇到厂里一个上了年纪的女人，说我身上穿的那件衣服，是一个已经逝去的女人穿的，还告诉我那个女人的名字叫邓红，说她已经病逝一年多了。我他妈顿时就是毛骨悚然，在梦中我都感到害怕了，我怎么就穿着死去女人的衣服，难怪那衣服上还有女人的味道，我顿时就被吓惊醒了，这太恐怖了。</p>]]></content>
       
       
       <categories>
@@ -23493,33 +23419,58 @@
       
         <tags>
             
-            <tag> 欲望 </tag>
+            <tag> 厂里上班 </tag>
             
-            <tag> 独善其身 </tag>
+            <tag> 衣服 </tag>
             
-            <tag> 围炉夜话 </tag>
+            <tag> 真实 </tag>
             
-            <tag> 贫穷状况 </tag>
+            <tag> 两个梦 </tag>
             
-            <tag> 节俭 </tag>
+            <tag> 同班 </tag>
             
-            <tag> 急功近利 </tag>
+            <tag> 河沟 </tag>
             
-            <tag> 兼济天下 </tag>
+            <tag> 吓惊醒了 </tag>
             
-            <tag> 富贵 </tag>
+            <tag> 太恐怖了 </tag>
             
-            <tag> 苦其心志 </tag>
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>说是不用排队的，结果人很多</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2fad63c5/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2fad63c5/</url>
+      
+        <content type="html"><![CDATA[<p>今天去打疫苗，那个大喇叭里面说的是不用排队的，结果去了人很多，我去的时候就已经排了四排了，后面那个公交车还在一车一车的拉人过来，还好我是骑电动车去的，要是等公交车不知道要等多久。</p><span id="more"></span><p>坐公交车是去的时候要等，来的时候也是要等，再说了那么多人去卫生院，肯定是要等的时间比平时长了。自己骑电动车去就快了，十多分钟就到了。</p><p>除了要在外面排队很长时间之外，进去了还是很快的，一会就打好了，打好了还要在里面观察半个小时，到了那个医师写在单上的时间就可以走了。</p><p>感觉除了打的时候痛一点外，手感觉有点麻木之外，好像也没有什么副作用，打了还是要继续戴口罩的，因为还是不能保证百分百的有效。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
             
-            <tag> 深渊 </tag>
+            <tag> 结果 </tag>
             
-            <tag> 金钱 </tag>
+            <tag> 骑电动车 </tag>
             
-            <tag> 几度 </tag>
+            <tag> 观察 </tag>
             
-            <tag> 勤能补拙 </tag>
+            <tag> 打疫苗 </tag>
             
-            <tag> 高明 </tag>
+            <tag> 不用排队 </tag>
+            
+            <tag> 戴口罩 </tag>
+            
+            <tag> 坐公交车 </tag>
             
         </tags>
       
@@ -23577,43 +23528,6 @@
     
     
     <entry>
-      <title>说是不用排队的，结果人很多</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2fad63c5/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2fad63c5/</url>
-      
-        <content type="html"><![CDATA[<p>今天去打疫苗，那个大喇叭里面说的是不用排队的，结果去了人很多，我去的时候就已经排了四排了，后面那个公交车还在一车一车的拉人过来，还好我是骑电动车去的，要是等公交车不知道要等多久。</p><span id="more"></span><p>坐公交车是去的时候要等，来的时候也是要等，再说了那么多人去卫生院，肯定是要等的时间比平时长了。自己骑电动车去就快了，十多分钟就到了。</p><p>除了要在外面排队很长时间之外，进去了还是很快的，一会就打好了，打好了还要在里面观察半个小时，到了那个医师写在单上的时间就可以走了。</p><p>感觉除了打的时候痛一点外，手感觉有点麻木之外，好像也没有什么副作用，打了还是要继续戴口罩的，因为还是不能保证百分百的有效。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 结果 </tag>
-            
-            <tag> 骑电动车 </tag>
-            
-            <tag> 观察 </tag>
-            
-            <tag> 打疫苗 </tag>
-            
-            <tag> 不用排队 </tag>
-            
-            <tag> 戴口罩 </tag>
-            
-            <tag> 坐公交车 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>读《围炉夜话》其七有感</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/304f301/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/304f301/</url>
@@ -23634,8 +23548,6 @@
             
             <tag> 围炉夜话 </tag>
             
-            <tag> 金钱 </tag>
-            
             <tag> 人人 </tag>
             
             <tag> 口才极佳 </tag>
@@ -23650,9 +23562,62 @@
             
             <tag> 丧命 </tag>
             
+            <tag> 金钱 </tag>
+            
             <tag> 平常之心 </tag>
             
             <tag> 执迷 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>读《围炉夜话》其三有感</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a774ac4f/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a774ac4f/</url>
+      
+        <content type="html"><![CDATA[<p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a774ac4f/%E5%9B%B4%E7%82%89%E5%A4%9C%E8%AF%9D.jpg"></p><span id="more"></span><blockquote><p>原文：贫无可奈惟求俭，拙亦何妨只要勤。</p></blockquote><p>当没有其他更好的方法来改变自己贫穷状况的时候，节俭就是唯一最好的方法。金钱上面的贫穷自己一时难以改变，但是精神方面却是可以的，面对自身的状况要以一种安贫乐道的心态去坦然处之，急功近利的想法对自身没有益处，这种思维如果想得太过火了，最终还有可能将自己带入不归的歧途。</p><blockquote><p>穷则独善其身，达则兼济天下。</p></blockquote><p>无论是贫穷或者富贵，都应当要有自己的不同处世之道。人在贫困之中久了自然是可以苦其心志，多读书和学习知识丰富自身的修为，成为精神层面的富有者，这境界难道不是富人所要追求的吗？</p><p>平心静气没有烦恼，当自己富有之时，金钱没有必要看得太重了，因为欲望的深渊永远都是一个无底洞，一个人精神层面的贫穷永远也不可能用金钱来弥补，金钱它带给人的终究是一种物质，和自己所要追求修为的最高境界它是没有必然联系的。</p><p>乐善好施多帮助有需要的人，比用更多的金钱来填补自己的空虚精神世界更有价值。人为什么而活，虽然一直以来都是人们所不停探求的答案，也是一直没有找到确切的答案，但是却有一个否定的答案，那就是不单为了金钱而活着。</p><p>中国古代被称为商圣的第一人范蠡曾几度散尽家财，而又几度忽而所得，他会赚钱，而他又会用赚来的钱去帮助有需要的人，他能赚钱但他却没有独揽天下财富的野心，所以他自然可以成为圣人，他的品行修为是比那些终身为金钱所奴役的人要高出了许多。</p><p>聪明与否对一个人的修为真的不是很大，勤能补拙这话说得是很有道理的，世上的聪明人有很多但是成功了又有多少呢，很多人自认为自己有多聪明，殊不知山外还有山，人外还有人，比自己高明的人世上还有很多，有的时候太自以为是，就是聪明反被聪明误，保持低调而平和的心态，不断去上下探索未知的世界，只有这样的人才能成为真正的聪明人、圣人。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 欲望 </tag>
+            
+            <tag> 独善其身 </tag>
+            
+            <tag> 围炉夜话 </tag>
+            
+            <tag> 金钱 </tag>
+            
+            <tag> 贫穷状况 </tag>
+            
+            <tag> 节俭 </tag>
+            
+            <tag> 急功近利 </tag>
+            
+            <tag> 兼济天下 </tag>
+            
+            <tag> 富贵 </tag>
+            
+            <tag> 苦其心志 </tag>
+            
+            <tag> 深渊 </tag>
+            
+            <tag> 几度 </tag>
+            
+            <tag> 勤能补拙 </tag>
+            
+            <tag> 高明 </tag>
             
         </tags>
       
@@ -23867,6 +23832,45 @@
     
     
     <entry>
+      <title>读《围炉夜话》其十一有感</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/7192143c/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/7192143c/</url>
+      
+        <content type="html"><![CDATA[<p>如今的社会风气变得拜金奢侈荒淫，并且还在变本加厉毫无底线地进行着，必须要有更多懂得古朴之风的人，才能改善当下的奢靡风气。</p><span id="more"></span><p>奢侈荒淫会使一个人失去刚毅之心，放在一个国家来看，如果人人都这样，必会成为衰亡的祸根，自然会兵戈相见，天下大乱，人要做到无欲则刚，人人都行正道归途，那国家自然才能昌盛和强大，不好的风气不仅毁人更是毁人心志。</p><p>如果每个人的心态都已经到了丧失廉耻的地步，那离道德本质的消亡也自然不远了，人人都希望有一个道德高尚的圣人来改变这一切，那他的功绩自然可以与日月同齐。</p><p>人人其实都有廉耻之心，但是我们不仅要做到自律，更还要有胸怀天下为己任之心，要以自己的所言所行去感化、去唤醒人的良知，做这样的事，比治病救人还要功劳更大。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 围炉夜话 </tag>
+            
+            <tag> 社会风气 </tag>
+            
+            <tag> 拜金奢侈 </tag>
+            
+            <tag> 毫无底线 </tag>
+            
+            <tag> 古朴之风 </tag>
+            
+            <tag> 强大 </tag>
+            
+            <tag> 廉耻 </tag>
+            
+            <tag> 良知 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>读《围炉夜话》其六有感</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9535e32f/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9535e32f/</url>
@@ -23906,45 +23910,6 @@
             <tag> 胸襟 </tag>
             
             <tag> 宽恕他人 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>读《围炉夜话》其十一有感</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/7192143c/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/7192143c/</url>
-      
-        <content type="html"><![CDATA[<p>如今的社会风气变得拜金奢侈荒淫，并且还在变本加厉毫无底线地进行着，必须要有更多懂得古朴之风的人，才能改善当下的奢靡风气。</p><span id="more"></span><p>奢侈荒淫会使一个人失去刚毅之心，放在一个国家来看，如果人人都这样，必会成为衰亡的祸根，自然会兵戈相见，天下大乱，人要做到无欲则刚，人人都行正道归途，那国家自然才能昌盛和强大，不好的风气不仅毁人更是毁人心志。</p><p>如果每个人的心态都已经到了丧失廉耻的地步，那离道德本质的消亡也自然不远了，人人都希望有一个道德高尚的圣人来改变这一切，那他的功绩自然可以与日月同齐。</p><p>人人其实都有廉耻之心，但是我们不仅要做到自律，更还要有胸怀天下为己任之心，要以自己的所言所行去感化、去唤醒人的良知，做这样的事，比治病救人还要功劳更大。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 围炉夜话 </tag>
-            
-            <tag> 社会风气 </tag>
-            
-            <tag> 拜金奢侈 </tag>
-            
-            <tag> 毫无底线 </tag>
-            
-            <tag> 古朴之风 </tag>
-            
-            <tag> 强大 </tag>
-            
-            <tag> 廉耻 </tag>
-            
-            <tag> 良知 </tag>
             
         </tags>
       
@@ -24245,6 +24210,43 @@
     
     
     <entry>
+      <title>还是把虚拟机里的黑苹果系统删掉了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5f331bc2/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5f331bc2/</url>
+      
+        <content type="html"><![CDATA[<p>本来是想用来安装一个软件到iPad上结果发现不行，分明还有20多G的硬盘空间。</p><span id="more"></span><p>但是就是安装不了Xcode，提示硬盘空间不足，那好吧根本的目的都达不到，想着这系统也没有什么用，又卡还占硬盘空间，所以干脆就删掉好了。</p><p>还好只是安装在虚拟机上想卸载就卸载了，要是安装在电脑上还不好卸载，那卸载可能就比较麻烦了。</p><p>虚拟机就是有这点好处，装在里面的系统不想用就直接删掉就可以了，真的还是感觉非常方便。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 安装 </tag>
+            
+            <tag> iPad </tag>
+            
+            <tag> 麻烦 </tag>
+            
+            <tag> 卸载 </tag>
+            
+            <tag> 虚拟机 </tag>
+            
+            <tag> 硬盘空间 </tag>
+            
+            <tag> 黑苹果 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>过年都没有出去玩，明天想出去玩下了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/160823dd/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/160823dd/</url>
@@ -24317,43 +24319,6 @@
             <tag> 防疫要求 </tag>
             
             <tag> 距离远 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>还是把虚拟机里的黑苹果系统删掉了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5f331bc2/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5f331bc2/</url>
-      
-        <content type="html"><![CDATA[<p>本来是想用来安装一个软件到iPad上结果发现不行，分明还有20多G的硬盘空间。</p><span id="more"></span><p>但是就是安装不了Xcode，提示硬盘空间不足，那好吧根本的目的都达不到，想着这系统也没有什么用，又卡还占硬盘空间，所以干脆就删掉好了。</p><p>还好只是安装在虚拟机上想卸载就卸载了，要是安装在电脑上还不好卸载，那卸载可能就比较麻烦了。</p><p>虚拟机就是有这点好处，装在里面的系统不想用就直接删掉就可以了，真的还是感觉非常方便。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 安装 </tag>
-            
-            <tag> iPad </tag>
-            
-            <tag> 麻烦 </tag>
-            
-            <tag> 卸载 </tag>
-            
-            <tag> 虚拟机 </tag>
-            
-            <tag> 硬盘空间 </tag>
-            
-            <tag> 黑苹果 </tag>
             
         </tags>
       
@@ -24602,6 +24567,51 @@
     
     
     <entry>
+      <title>郑爽代孕弃养和普通人有关系吗</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/70cfdcf4/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/70cfdcf4/</url>
+      
+        <content type="html"><![CDATA[<p>现在一打开百度还有浏览器就是这个新闻，为什么很多媒体喜欢去写这个，这个和普通人有关系吗，以为这个和明星有关的热点就一定会有人去看了，这种想法未免有点幼稚了吧，还有多少人真的还活在那个追星的年代吗，娱乐圈的新闻和普通人民大众有什么关系。</p><span id="more"></span><p>我怀疑很多人是找不到写的话题了，以为写这个就有很多人去关注，谁去稀罕看这个，我关心的只是和我利益有关的事情，娱乐至死的概念不是真的就存在，多写点和普通人民大众有关的事不好吗，总是要把那些娱乐圈的破事拿出来水，看着就很反感。</p><p>还有又有的写别人谁和谁又没有结婚就生孩子，别人愿意生那是人家两个人的事，当吃瓜群众看热闹真的很好吗，还是和鲁迅先生小说里写的一样没有改变喜欢看热闹的劣根性，这可是都已经过了差不多一百年了，难道人的思想还是改变不了吗，难怪会永远的活在旧思维里，社会是解放了，只是思想还是旧的思想，似乎真的没有得到过改造。</p><p>现在很多自媒体都是这样找不到热点都下想制造一个出来，当然有了就去拼命的抓重点去写，可是要知道这种娱乐圈的破事真的没有几个人去看，那是他人的生活，和我普通大众没有关系，普通大众和这些明星根本就不是一个阶层的人，是想把这个留给我们下层人士一个笑料吗，可是这并不搞笑啊。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 百度 </tag>
+            
+            <tag> 浏览器 </tag>
+            
+            <tag> 普通人 </tag>
+            
+            <tag> 结婚 </tag>
+            
+            <tag> 重点 </tag>
+            
+            <tag> 笑料 </tag>
+            
+            <tag> 郑爽 </tag>
+            
+            <tag> 代孕弃养 </tag>
+            
+            <tag> 热点 </tag>
+            
+            <tag> 幼稚 </tag>
+            
+            <tag> 劣根性 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>那些鼓吹自己月入上万的人教你做自媒体，你以为他真的很赚钱，他是在砸自己的饭碗吗？</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/50ba3b1c/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/50ba3b1c/</url>
@@ -24645,51 +24655,6 @@
             <tag> 专攻 </tag>
             
             <tag> 鱼和熊掌 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>郑爽代孕弃养和普通人有关系吗</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/70cfdcf4/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/70cfdcf4/</url>
-      
-        <content type="html"><![CDATA[<p>现在一打开百度还有浏览器就是这个新闻，为什么很多媒体喜欢去写这个，这个和普通人有关系吗，以为这个和明星有关的热点就一定会有人去看了，这种想法未免有点幼稚了吧，还有多少人真的还活在那个追星的年代吗，娱乐圈的新闻和普通人民大众有什么关系。</p><span id="more"></span><p>我怀疑很多人是找不到写的话题了，以为写这个就有很多人去关注，谁去稀罕看这个，我关心的只是和我利益有关的事情，娱乐至死的概念不是真的就存在，多写点和普通人民大众有关的事不好吗，总是要把那些娱乐圈的破事拿出来水，看着就很反感。</p><p>还有又有的写别人谁和谁又没有结婚就生孩子，别人愿意生那是人家两个人的事，当吃瓜群众看热闹真的很好吗，还是和鲁迅先生小说里写的一样没有改变喜欢看热闹的劣根性，这可是都已经过了差不多一百年了，难道人的思想还是改变不了吗，难怪会永远的活在旧思维里，社会是解放了，只是思想还是旧的思想，似乎真的没有得到过改造。</p><p>现在很多自媒体都是这样找不到热点都下想制造一个出来，当然有了就去拼命的抓重点去写，可是要知道这种娱乐圈的破事真的没有几个人去看，那是他人的生活，和我普通大众没有关系，普通大众和这些明星根本就不是一个阶层的人，是想把这个留给我们下层人士一个笑料吗，可是这并不搞笑啊。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 百度 </tag>
-            
-            <tag> 浏览器 </tag>
-            
-            <tag> 普通人 </tag>
-            
-            <tag> 结婚 </tag>
-            
-            <tag> 重点 </tag>
-            
-            <tag> 笑料 </tag>
-            
-            <tag> 郑爽 </tag>
-            
-            <tag> 代孕弃养 </tag>
-            
-            <tag> 热点 </tag>
-            
-            <tag> 幼稚 </tag>
-            
-            <tag> 劣根性 </tag>
             
         </tags>
       
@@ -25112,6 +25077,41 @@
             <tag> 经常骑 </tag>
             
             <tag> 锂电池 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>今天还可以做了很多题，明天继续努力</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5317c220/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5317c220/</url>
+      
+        <content type="html"><![CDATA[<p>把昨天没有做完的主观题今天是把他抄写完了一遍了，做完了昨天的今天又重开始了一章新的了，新的做完前面的选择题了，这一章的选择题比上一章要多很多。</p><span id="more"></span><p>特别是单选题上一章才20多道，这一章居然有50多道，真的是把我吓坏了，还好今天是把单选题和多选题都做完了，还把后面的简答题也抄了5道题。</p><p>感觉今天的状态是要比昨天好一点，昨天是一章题都没有完成，今天就是相当于完成一章了吧，明天要把这一章做完再做一章新的，那样跟上进度才会没有问题了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 选择题 </tag>
+            
+            <tag> 进度 </tag>
+            
+            <tag> 主观题 </tag>
+            
+            <tag> 很多题 </tag>
+            
+            <tag> 继续努力 </tag>
+            
+            <tag> 单选题 </tag>
             
         </tags>
       
