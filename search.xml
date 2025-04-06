@@ -10515,6 +10515,8 @@
             
             <tag> Hexo </tag>
             
+            <tag> next主题 </tag>
+            
             <tag> 模板文件 </tag>
             
             <tag> 自动 </tag>
@@ -10522,8 +10524,6 @@
             <tag> 添加标题 </tag>
             
             <tag> 日期 </tag>
-            
-            <tag> next主题 </tag>
             
             <tag> 安装 </tag>
             
@@ -11041,9 +11041,9 @@
             
             <tag> Hexo </tag>
             
-            <tag> next主题 </tag>
-            
             <tag> 主题配置 </tag>
+            
+            <tag> next主题 </tag>
             
             <tag> 代替主题 </tag>
             
@@ -11460,6 +11460,37 @@
     
     
     <entry>
+      <title>Hello World</title>
+      <link href="/Hexo/4a17b156/"/>
+      <url>/Hexo/4a17b156/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo<i class="fa fa-external-link-alt"></i></span>! This is your very first post. Check <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv">documentation<i class="fa fa-external-link-alt"></i></span> for more info. If you get any problems when using Hexo, you can find the answer in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=">troubleshooting<i class="fa fa-external-link-alt"></i></span> or you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==">GitHub<i class="fa fa-external-link-alt"></i></span>.</p><span id="more"></span><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s">Writing<i class="fa fa-external-link-alt"></i></span></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=">Server<i class="fa fa-external-link-alt"></i></span></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s">Generating<i class="fa fa-external-link-alt"></i></span></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZGVwbG95bWVudC5odG1s">Deployment<i class="fa fa-external-link-alt"></i></span></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 文章 </tag>
+            
+            <tag> 你好 </tag>
+            
+            <tag> 世界 </tag>
+            
+            <tag> 第一篇 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>mini主机的性能和比笔记本电脑比起来还是要强上不少</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a3573799/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a3573799/</url>
@@ -11503,37 +11534,6 @@
             <tag> 小背包 </tag>
             
             <tag> 处理器 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/Hexo/4a17b156/"/>
-      <url>/Hexo/4a17b156/</url>
-      
-        <content type="html"><![CDATA[<p>Welcome to <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvLw==">Hexo<i class="fa fa-external-link-alt"></i></span>! This is your very first post. Check <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mv">documentation<i class="fa fa-external-link-alt"></i></span> for more info. If you get any problems when using Hexo, you can find the answer in <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvdHJvdWJsZXNob290aW5nLmh0bWw=">troubleshooting<i class="fa fa-external-link-alt"></i></span> or you can ask me on <span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2hleG9qcy9oZXhvL2lzc3Vlcw==">GitHub<i class="fa fa-external-link-alt"></i></span>.</p><span id="more"></span><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvd3JpdGluZy5odG1s">Writing<i class="fa fa-external-link-alt"></i></span></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3Mvc2VydmVyLmh0bWw=">Server<i class="fa fa-external-link-alt"></i></span></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZ2VuZXJhdGluZy5odG1s">Generating<i class="fa fa-external-link-alt"></i></span></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlvL2RvY3MvZGVwbG95bWVudC5odG1s">Deployment<i class="fa fa-external-link-alt"></i></span></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 文章 </tag>
-            
-            <tag> 你好 </tag>
-            
-            <tag> 世界 </tag>
-            
-            <tag> 第一篇 </tag>
             
         </tags>
       
@@ -12843,6 +12843,43 @@
     
     
     <entry>
+      <title>人力资源管理（一）一考通论述题</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8607dead/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8607dead/</url>
+      
+        <content type="html"><![CDATA[<h2 id="四、论述题"><a href="#四、论述题" class="headerlink" title="四、论述题"></a>四、论述题</h2><p><strong>1.(1P60)试述人力资源管理的发展趋势。</strong></p><p>答:</p><p>(1).人本管理成为人力资源管理的中心思想。</p><p>(2).人力资源管理全面参与组织战略管理过程。</p><p>(3).人力资源管理全球化。</p><p>(4).人力资源管理的重心为知识型员工的管理。</p><p>(5).人力资源管理的新职能是向员工提供客户化的人力资源产品与服务。</p><span id="more"></span><p><strong>2.(9P265)试述影响薪酬水平的宏观因素。</strong></p><p>答:</p><p>(1).劳动生产率水平。员工实际平均薪酬增幅要略低于劳动生产率增幅。</p><p>(2).积累消费水平。国民收人总量既定时,薪酬水平与消费水平成正比。</p><p>(3).政府政策法规调节。主要指财政政策、货币政策、最低工资规定等。</p><p>(4).劳动力市场供求状况。劳动力供大于求,薪酬水平下降;反之亦然。</p><p>(5).物价变动。货币薪酬水平既定,物价上涨会导致实际薪酬水平下降。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 发展趋势 </tag>
+            
+            <tag> 薪酬水平 </tag>
+            
+            <tag> 中心思想 </tag>
+            
+            <tag> 全球化 </tag>
+            
+            <tag> 知识型 </tag>
+            
+            <tag> 宏观因素 </tag>
+            
+            <tag> 劳动力 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>人力资源管理（一）自考通分析说明题1</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d850f6a5/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d850f6a5/</url>
@@ -12878,43 +12915,6 @@
             <tag> 先入为主 </tag>
             
             <tag> 互动 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>人力资源管理（一）一考通论述题</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8607dead/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8607dead/</url>
-      
-        <content type="html"><![CDATA[<h2 id="四、论述题"><a href="#四、论述题" class="headerlink" title="四、论述题"></a>四、论述题</h2><p><strong>1.(1P60)试述人力资源管理的发展趋势。</strong></p><p>答:</p><p>(1).人本管理成为人力资源管理的中心思想。</p><p>(2).人力资源管理全面参与组织战略管理过程。</p><p>(3).人力资源管理全球化。</p><p>(4).人力资源管理的重心为知识型员工的管理。</p><p>(5).人力资源管理的新职能是向员工提供客户化的人力资源产品与服务。</p><span id="more"></span><p><strong>2.(9P265)试述影响薪酬水平的宏观因素。</strong></p><p>答:</p><p>(1).劳动生产率水平。员工实际平均薪酬增幅要略低于劳动生产率增幅。</p><p>(2).积累消费水平。国民收人总量既定时,薪酬水平与消费水平成正比。</p><p>(3).政府政策法规调节。主要指财政政策、货币政策、最低工资规定等。</p><p>(4).劳动力市场供求状况。劳动力供大于求,薪酬水平下降;反之亦然。</p><p>(5).物价变动。货币薪酬水平既定,物价上涨会导致实际薪酬水平下降。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 发展趋势 </tag>
-            
-            <tag> 薪酬水平 </tag>
-            
-            <tag> 中心思想 </tag>
-            
-            <tag> 全球化 </tag>
-            
-            <tag> 知识型 </tag>
-            
-            <tag> 宏观因素 </tag>
-            
-            <tag> 劳动力 </tag>
             
         </tags>
       
@@ -13633,43 +13633,6 @@
     
     
     <entry>
-      <title>今天天气感觉很热了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f92813f7/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f92813f7/</url>
-      
-        <content type="html"><![CDATA[<p>珠海这边的天气感觉又到了要开空调的时候了，热得满身是汗了，出去玩了下回来也是满身的汗。</p><span id="more"></span><p>坐在家里玩手机也是，真的是快到了要开空调的季节了吗，我想应该是了吧，而且现在晚上蚊子也很多了。</p><p>这个已经季节已经是可以洗冷水澡了，感觉如果吹点风就会感觉好点，不然真的是要被热死了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 天气 </tag>
-            
-            <tag> 热 </tag>
-            
-            <tag> 空调 </tag>
-            
-            <tag> 满身 </tag>
-            
-            <tag> 汗 </tag>
-            
-            <tag> 冷水澡 </tag>
-            
-            <tag> 热死了 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>今天天气很热，到晚上就下雨了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/683954e9/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/683954e9/</url>
@@ -13703,6 +13666,43 @@
             <tag> 淅淅沥沥 </tag>
             
             <tag> 凉快 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>今天天气感觉很热了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f92813f7/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f92813f7/</url>
+      
+        <content type="html"><![CDATA[<p>珠海这边的天气感觉又到了要开空调的时候了，热得满身是汗了，出去玩了下回来也是满身的汗。</p><span id="more"></span><p>坐在家里玩手机也是，真的是快到了要开空调的季节了吗，我想应该是了吧，而且现在晚上蚊子也很多了。</p><p>这个已经季节已经是可以洗冷水澡了，感觉如果吹点风就会感觉好点，不然真的是要被热死了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 天气 </tag>
+            
+            <tag> 热 </tag>
+            
+            <tag> 空调 </tag>
+            
+            <tag> 满身 </tag>
+            
+            <tag> 汗 </tag>
+            
+            <tag> 冷水澡 </tag>
+            
+            <tag> 热死了 </tag>
             
         </tags>
       
@@ -13799,45 +13799,6 @@
     
     
     <entry>
-      <title>今天是除夕，去菜场买菜去晚了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dd80ab00/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dd80ab00/</url>
-      
-        <content type="html"><![CDATA[<p>我下午三点钟去的买肉的都没有了，只剩两个卖菜的了，没有其他选择了就只好买了些豌豆角了，然后又去那下面一点的一个超市买了一点肉，青椒也还有的就买点肉来炒豌豆角好了，过年了去超市买东西的人还挺多，付款的时候还都得排队了，不过超市里的肉比市场的要贵了不少，因为我是骑着电动车去的所以也不用什么购物袋了，那样还得花几毛钱。</p><span id="more"></span><p>回来后把家里的垃圾全丢了，还把地上用拖耙弄一下，新年里就该得有一个新气象啊，什么都焕然一新才好啊，弄好了也是接着忙了，因为都已经快5点钟了，所以也是到做饭吃的时候了。</p><p>过了大概半个小时左右，饭做好了我菜也炒好了，然后就是一个人自己吃饭了，吃完饭就是看春晚了，用的以前买的电视盒子看，刚开始用的那个蜂蜜直播看的，清晰度很差，后面我退出了，又用酷喵看了，还是这个比较高清，有1080P的选项，4K的不知道在哪里看，用的1080P的显示器看1080的感觉也很清晰了，现在就是用平板电脑边看春晚边写文了，因为要用显示器看春晚，所以就不能用电脑写了，还好有智能盒子不然还不知道怎么看春晚了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 超市 </tag>
-            
-            <tag> 买菜 </tag>
-            
-            <tag> 除夕 </tag>
-            
-            <tag> 菜场 </tag>
-            
-            <tag> 豌豆角 </tag>
-            
-            <tag> 直播 </tag>
-            
-            <tag> 春晚 </tag>
-            
-            <tag> 酷喵 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>今天是终于完成昨天的目标了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/7f07775c/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/7f07775c/</url>
@@ -13875,6 +13836,45 @@
             <tag> 考试真题 </tag>
             
             <tag> 赶得挺紧 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>今天是除夕，去菜场买菜去晚了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dd80ab00/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dd80ab00/</url>
+      
+        <content type="html"><![CDATA[<p>我下午三点钟去的买肉的都没有了，只剩两个卖菜的了，没有其他选择了就只好买了些豌豆角了，然后又去那下面一点的一个超市买了一点肉，青椒也还有的就买点肉来炒豌豆角好了，过年了去超市买东西的人还挺多，付款的时候还都得排队了，不过超市里的肉比市场的要贵了不少，因为我是骑着电动车去的所以也不用什么购物袋了，那样还得花几毛钱。</p><span id="more"></span><p>回来后把家里的垃圾全丢了，还把地上用拖耙弄一下，新年里就该得有一个新气象啊，什么都焕然一新才好啊，弄好了也是接着忙了，因为都已经快5点钟了，所以也是到做饭吃的时候了。</p><p>过了大概半个小时左右，饭做好了我菜也炒好了，然后就是一个人自己吃饭了，吃完饭就是看春晚了，用的以前买的电视盒子看，刚开始用的那个蜂蜜直播看的，清晰度很差，后面我退出了，又用酷喵看了，还是这个比较高清，有1080P的选项，4K的不知道在哪里看，用的1080P的显示器看1080的感觉也很清晰了，现在就是用平板电脑边看春晚边写文了，因为要用显示器看春晚，所以就不能用电脑写了，还好有智能盒子不然还不知道怎么看春晚了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 超市 </tag>
+            
+            <tag> 买菜 </tag>
+            
+            <tag> 除夕 </tag>
+            
+            <tag> 菜场 </tag>
+            
+            <tag> 豌豆角 </tag>
+            
+            <tag> 直播 </tag>
+            
+            <tag> 春晚 </tag>
+            
+            <tag> 酷喵 </tag>
             
         </tags>
       
@@ -14227,53 +14227,6 @@
     
     
     <entry>
-      <title>使用Word邮件合并功能一键给学生家长发成绩单</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c1fb18dc/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c1fb18dc/</url>
-      
-        <content type="html"><![CDATA[<p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c1fb18dc/%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2%E5%9B%BE.jpg" alt="文章封面图"></p><span id="more"></span><p>首先用Excel创建一个学生成绩单表格，如下图。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c1fb18dc/%E4%BD%BF%E7%94%A8word%E9%82%AE%E4%BB%B6%E5%90%88%E5%B9%B6%E5%8A%9F%E8%83%BD%E4%B8%80%E9%94%AE%E7%BB%99%E5%AD%A6%E7%94%9F%E5%AE%B6%E9%95%BF%E5%8F%91%E6%88%90%E7%BB%A9%E5%8D%951.jpg" alt="使用word邮件合并功能一键给学生家长发成绩单1"></p><p>表格创建完成后，再打开word创建一个信函文件，并选择“邮件——开始邮件合并——选择收件人”选择刚刚创建好的表格文件，如下图。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c1fb18dc/%E4%BD%BF%E7%94%A8word%E9%82%AE%E4%BB%B6%E5%90%88%E5%B9%B6%E5%8A%9F%E8%83%BD%E4%B8%80%E9%94%AE%E7%BB%99%E5%AD%A6%E7%94%9F%E5%AE%B6%E9%95%BF%E5%8F%91%E6%88%90%E7%BB%A9%E5%8D%952.jpg" alt="使用word邮件合并功能一键给学生家长发成绩单2"></p><p>我上图是已经选择了表格数据并且插入了合并域和创建了规则，所以上图会有家长姓名和学生姓名等信息。</p><p>下面就是如何插入这些信息，选择“邮件——编写和插入域——插入合并域”，先选择家长姓名。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c1fb18dc/%E4%BD%BF%E7%94%A8word%E9%82%AE%E4%BB%B6%E5%90%88%E5%B9%B6%E5%8A%9F%E8%83%BD%E4%B8%80%E9%94%AE%E7%BB%99%E5%AD%A6%E7%94%9F%E5%AE%B6%E9%95%BF%E5%8F%91%E6%88%90%E7%BB%A9%E5%8D%953.jpg" alt="使用word邮件合并功能一键给学生家长发成绩单3"></p><p>插入家长姓名后，要在后面添加一条规则，当家长是性别是男性的时候就在名字后面跟上先生，如果家长性别是女性的时候就在姓名后面跟上女士，这里选择“规则”选项卡中的“如果…那么…否则（I）”如下图所示。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c1fb18dc/%E4%BD%BF%E7%94%A8word%E9%82%AE%E4%BB%B6%E5%90%88%E5%B9%B6%E5%8A%9F%E8%83%BD%E4%B8%80%E9%94%AE%E7%BB%99%E5%AD%A6%E7%94%9F%E5%AE%B6%E9%95%BF%E5%8F%91%E6%88%90%E7%BB%A9%E5%8D%954.jpg" alt="使用word邮件合并功能一键给学生家长发成绩单4"></p><p>规则创建里的内容如下图，点击确定后就创建规则完成。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c1fb18dc/%E4%BD%BF%E7%94%A8word%E9%82%AE%E4%BB%B6%E5%90%88%E5%B9%B6%E5%8A%9F%E8%83%BD%E4%B8%80%E9%94%AE%E7%BB%99%E5%AD%A6%E7%94%9F%E5%AE%B6%E9%95%BF%E5%8F%91%E6%88%90%E7%BB%A9%E5%8D%955.jpg" alt="使用word邮件合并功能一键给学生家长发成绩单5"></p><p>规则创建完成后，依次从“插入合并域”添加学生学号，学生姓名，各科成绩，添加完成后如下图。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c1fb18dc/%E4%BD%BF%E7%94%A8word%E9%82%AE%E4%BB%B6%E5%90%88%E5%B9%B6%E5%8A%9F%E8%83%BD%E4%B8%80%E9%94%AE%E7%BB%99%E5%AD%A6%E7%94%9F%E5%AE%B6%E9%95%BF%E5%8F%91%E6%88%90%E7%BB%A9%E5%8D%956.jpg" alt="使用word邮件合并功能一键给学生家长发成绩单6"></p><p>选择“预览结果”如下图。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c1fb18dc/%E4%BD%BF%E7%94%A8word%E9%82%AE%E4%BB%B6%E5%90%88%E5%B9%B6%E5%8A%9F%E8%83%BD%E4%B8%80%E9%94%AE%E7%BB%99%E5%AD%A6%E7%94%9F%E5%AE%B6%E9%95%BF%E5%8F%91%E6%88%90%E7%BB%A9%E5%8D%957.jpg" alt="使用word邮件合并功能一键给学生家长发成绩单7"></p><p>选择完成选项卡中的“完成并合并”按钮，选择“发送电子邮件”，弹出如下图对话框。收件人选择家长邮箱，主题行为学生成绩单，邮件格式默认就可以，点击确定，就开始调用outlook开始发送邮件了。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c1fb18dc/%E4%BD%BF%E7%94%A8word%E9%82%AE%E4%BB%B6%E5%90%88%E5%B9%B6%E5%8A%9F%E8%83%BD%E4%B8%80%E9%94%AE%E7%BB%99%E5%AD%A6%E7%94%9F%E5%AE%B6%E9%95%BF%E5%8F%91%E6%88%90%E7%BB%A9%E5%8D%958.jpg" alt="使用word邮件合并功能一键给学生家长发成绩单8"></p><p>打开outlook可以看到已发送的邮件，如下图。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c1fb18dc/%E4%BD%BF%E7%94%A8word%E9%82%AE%E4%BB%B6%E5%90%88%E5%B9%B6%E5%8A%9F%E8%83%BD%E4%B8%80%E9%94%AE%E7%BB%99%E5%AD%A6%E7%94%9F%E5%AE%B6%E9%95%BF%E5%8F%91%E6%88%90%E7%BB%A9%E5%8D%959.jpg" alt="使用word邮件合并功能一键给学生家长发成绩单9"></p><p>总结：利用邮件合并功能，可以做到邮件群发，快速而且很方便，还可以利用这个功能来快速制作准考证，邀请函等。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 功能 </tag>
-            
-            <tag> Word </tag>
-            
-            <tag> 邮件合并 </tag>
-            
-            <tag> 一键 </tag>
-            
-            <tag> 学生家长 </tag>
-            
-            <tag> 发成绩单 </tag>
-            
-            <tag> Excel </tag>
-            
-            <tag> 信函文件 </tag>
-            
-            <tag> 合并域 </tag>
-            
-            <tag> 邮件群发 </tag>
-            
-            <tag> 制作准考证 </tag>
-            
-            <tag> 邀请函 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>做小时工住的宿舍真的垃圾</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b598be07/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/b598be07/</url>
@@ -14313,51 +14266,45 @@
     
     
     <entry>
-      <title>做自媒体最基础的就是要会写作</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/82f51e6b/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/82f51e6b/</url>
+      <title>使用Word邮件合并功能一键给学生家长发成绩单</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c1fb18dc/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c1fb18dc/</url>
       
-        <content type="html"><![CDATA[<p>会写作可以说是做自媒体最基础的入门课程，而写作是没有人可以教得会的，只有通过不断的练习，也只有通过不断的练习自己写出的句子才会越来越通顺，自己想到什么就可以写出什么来，对于写不好或者刚接触写作的人来说一个句子可能都要想半天，甚至是写了又删，删了又写，一直就这样的循环着是根本写不出一篇文章来的。</p><span id="more"></span><p>写作就和说话一样，你说错话了别人一样会笑你，说错话了你还不能反悔，什么“君子一言，驷马难追，口无遮拦，说话不经过大脑”这些描述都是说一个人要谨言慎行，然而写文章却不一样，只要是写错了还是可以改，只要写出来的东西自己认为不是表达自己要说的话，那都是可以改过来的。</p><p>写作是真的没有那么难，至少现在是真的没有那么难了，现在的手机电脑都很普及了，只要会在手机上打字聊天都能学会写作，以前是还要一支笔一张纸，现在都不需要了。现在的我们每天在网上聊天评论，其实都可以算是在练习写作，只是你没有特别的意识去将你写下的这些文字组织起来，当然没有组织起来的这些文字碎片也不能称为你写出来的作品，就是因为如此有很多人才会感觉写作很难，那其实只是你没有用心，等你用心了一切都会自然而然的水到渠成。</p><p>写作的灵感本身就是来源于生活的，只要你还活在生活中那你就会有写的，只是有些人平时聊家常碎碎念很厉害，你要是让他写出来他就无从下笔，不知道从何说起了。话多有时候还真的不如写出一篇思想深刻的文章来更让人信服，文字的力量有时候比语言更能打动人心，所以能说的都尽量用写，你写不出来，在别人面前说什么都没有文字表达得更深刻。只有思想深刻，经过你自己思考的东西别人才会认可，也才能打动别人的心思，也才能让人容易记住，还记得很牢固而不容易忘记。让人记得不深刻，不能打动人心的东西都是表面的虚华，华而不实的东西给人就不是真实的感受，不真实的感受带给人的是没有一点用处的东西。</p><p>只要坚持每天都写几百字，那只要不多久对于你来说写个七八百字的都可以很轻松了，不要因为没有写作素材就认为找不到写的了，生活中的每件小事其实都可以写出来，只是有的人不愿意表达罢了。连文字都不愿意表达自我的人是真正内向的人，这种人一般不想让人了解自己的生活，更不可能让人了解自己的内心世界。写作必须要让文字从你的内心世界里走出来，不这样永远都写不出自己的东西。也许你写出来的东西别人会不喜欢，但又有什么关系，那本来就是真实的自己，你连自己都认识不清楚，又怎么去认识他人，了解他人的世界，你得先让你的想法从你的世界里走出来。</p><p>写作从来就不是什么难事，坚持用心就可以做到，你能看到的那些高谈阔论的文章也是别人通过不断的练习才能写得出来的，刚开始也不要因为没有写得有别人写的好而自卑，这真的没有必要用来打击自己。他人写得好也是从你这初级步奏起步的，别人都是经过风风雨雨的才能走出来，自己又害怕什么，你越害怕你就越是弱者，你只有真正战胜自己心里的恐惧、自卑、不安，这样你才能成为写作的高手。</p><p>对于不会写作，想步入这个自媒体又不是那么的容易，因为写作已经是最简单不过了，它是不需要去学习的，它不是一门高超的技术，要说学习写作你只要上完初中都已经全部学过了，你缺少的是练习而不是所谓的写作方法和技巧。我这是一篇自我写作思想深刻总结的文章，希望对于要学习写作继而做好自媒体的人有所帮助。</p>]]></content>
+        <content type="html"><![CDATA[<p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c1fb18dc/%E6%96%87%E7%AB%A0%E5%B0%81%E9%9D%A2%E5%9B%BE.jpg" alt="文章封面图"></p><span id="more"></span><p>首先用Excel创建一个学生成绩单表格，如下图。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c1fb18dc/%E4%BD%BF%E7%94%A8word%E9%82%AE%E4%BB%B6%E5%90%88%E5%B9%B6%E5%8A%9F%E8%83%BD%E4%B8%80%E9%94%AE%E7%BB%99%E5%AD%A6%E7%94%9F%E5%AE%B6%E9%95%BF%E5%8F%91%E6%88%90%E7%BB%A9%E5%8D%951.jpg" alt="使用word邮件合并功能一键给学生家长发成绩单1"></p><p>表格创建完成后，再打开word创建一个信函文件，并选择“邮件——开始邮件合并——选择收件人”选择刚刚创建好的表格文件，如下图。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c1fb18dc/%E4%BD%BF%E7%94%A8word%E9%82%AE%E4%BB%B6%E5%90%88%E5%B9%B6%E5%8A%9F%E8%83%BD%E4%B8%80%E9%94%AE%E7%BB%99%E5%AD%A6%E7%94%9F%E5%AE%B6%E9%95%BF%E5%8F%91%E6%88%90%E7%BB%A9%E5%8D%952.jpg" alt="使用word邮件合并功能一键给学生家长发成绩单2"></p><p>我上图是已经选择了表格数据并且插入了合并域和创建了规则，所以上图会有家长姓名和学生姓名等信息。</p><p>下面就是如何插入这些信息，选择“邮件——编写和插入域——插入合并域”，先选择家长姓名。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c1fb18dc/%E4%BD%BF%E7%94%A8word%E9%82%AE%E4%BB%B6%E5%90%88%E5%B9%B6%E5%8A%9F%E8%83%BD%E4%B8%80%E9%94%AE%E7%BB%99%E5%AD%A6%E7%94%9F%E5%AE%B6%E9%95%BF%E5%8F%91%E6%88%90%E7%BB%A9%E5%8D%953.jpg" alt="使用word邮件合并功能一键给学生家长发成绩单3"></p><p>插入家长姓名后，要在后面添加一条规则，当家长是性别是男性的时候就在名字后面跟上先生，如果家长性别是女性的时候就在姓名后面跟上女士，这里选择“规则”选项卡中的“如果…那么…否则（I）”如下图所示。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c1fb18dc/%E4%BD%BF%E7%94%A8word%E9%82%AE%E4%BB%B6%E5%90%88%E5%B9%B6%E5%8A%9F%E8%83%BD%E4%B8%80%E9%94%AE%E7%BB%99%E5%AD%A6%E7%94%9F%E5%AE%B6%E9%95%BF%E5%8F%91%E6%88%90%E7%BB%A9%E5%8D%954.jpg" alt="使用word邮件合并功能一键给学生家长发成绩单4"></p><p>规则创建里的内容如下图，点击确定后就创建规则完成。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c1fb18dc/%E4%BD%BF%E7%94%A8word%E9%82%AE%E4%BB%B6%E5%90%88%E5%B9%B6%E5%8A%9F%E8%83%BD%E4%B8%80%E9%94%AE%E7%BB%99%E5%AD%A6%E7%94%9F%E5%AE%B6%E9%95%BF%E5%8F%91%E6%88%90%E7%BB%A9%E5%8D%955.jpg" alt="使用word邮件合并功能一键给学生家长发成绩单5"></p><p>规则创建完成后，依次从“插入合并域”添加学生学号，学生姓名，各科成绩，添加完成后如下图。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c1fb18dc/%E4%BD%BF%E7%94%A8word%E9%82%AE%E4%BB%B6%E5%90%88%E5%B9%B6%E5%8A%9F%E8%83%BD%E4%B8%80%E9%94%AE%E7%BB%99%E5%AD%A6%E7%94%9F%E5%AE%B6%E9%95%BF%E5%8F%91%E6%88%90%E7%BB%A9%E5%8D%956.jpg" alt="使用word邮件合并功能一键给学生家长发成绩单6"></p><p>选择“预览结果”如下图。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c1fb18dc/%E4%BD%BF%E7%94%A8word%E9%82%AE%E4%BB%B6%E5%90%88%E5%B9%B6%E5%8A%9F%E8%83%BD%E4%B8%80%E9%94%AE%E7%BB%99%E5%AD%A6%E7%94%9F%E5%AE%B6%E9%95%BF%E5%8F%91%E6%88%90%E7%BB%A9%E5%8D%957.jpg" alt="使用word邮件合并功能一键给学生家长发成绩单7"></p><p>选择完成选项卡中的“完成并合并”按钮，选择“发送电子邮件”，弹出如下图对话框。收件人选择家长邮箱，主题行为学生成绩单，邮件格式默认就可以，点击确定，就开始调用outlook开始发送邮件了。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c1fb18dc/%E4%BD%BF%E7%94%A8word%E9%82%AE%E4%BB%B6%E5%90%88%E5%B9%B6%E5%8A%9F%E8%83%BD%E4%B8%80%E9%94%AE%E7%BB%99%E5%AD%A6%E7%94%9F%E5%AE%B6%E9%95%BF%E5%8F%91%E6%88%90%E7%BB%A9%E5%8D%958.jpg" alt="使用word邮件合并功能一键给学生家长发成绩单8"></p><p>打开outlook可以看到已发送的邮件，如下图。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c1fb18dc/%E4%BD%BF%E7%94%A8word%E9%82%AE%E4%BB%B6%E5%90%88%E5%B9%B6%E5%8A%9F%E8%83%BD%E4%B8%80%E9%94%AE%E7%BB%99%E5%AD%A6%E7%94%9F%E5%AE%B6%E9%95%BF%E5%8F%91%E6%88%90%E7%BB%A9%E5%8D%959.jpg" alt="使用word邮件合并功能一键给学生家长发成绩单9"></p><p>总结：利用邮件合并功能，可以做到邮件群发，快速而且很方便，还可以利用这个功能来快速制作准考证，邀请函等。</p>]]></content>
       
       
       <categories>
           
-          <category> 情感美文 </category>
+          <category> 日常记录 </category>
           
       </categories>
       
       
         <tags>
             
-            <tag> 写作 </tag>
+            <tag> 功能 </tag>
             
-            <tag> 感受 </tag>
+            <tag> Word </tag>
             
-            <tag> 自媒体 </tag>
+            <tag> 邮件合并 </tag>
             
-            <tag> 最基础 </tag>
+            <tag> 一键 </tag>
             
-            <tag> 入门课程 </tag>
+            <tag> 学生家长 </tag>
             
-            <tag> 接触写作 </tag>
+            <tag> 发成绩单 </tag>
             
-            <tag> 说错话 </tag>
+            <tag> Excel </tag>
             
-            <tag> 手机电脑 </tag>
+            <tag> 信函文件 </tag>
             
-            <tag> 文字碎片 </tag>
+            <tag> 合并域 </tag>
             
-            <tag> 写作很难 </tag>
+            <tag> 邮件群发 </tag>
             
-            <tag> 碎碎念 </tag>
+            <tag> 制作准考证 </tag>
             
-            <tag> 不愿意 </tag>
-            
-            <tag> 坚持用心 </tag>
-            
-            <tag> 弱者 </tag>
-            
-            <tag> 写作方法 </tag>
+            <tag> 邀请函 </tag>
             
         </tags>
       
@@ -14559,6 +14506,59 @@
     
     
     <entry>
+      <title>做自媒体最基础的就是要会写作</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/82f51e6b/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/82f51e6b/</url>
+      
+        <content type="html"><![CDATA[<p>会写作可以说是做自媒体最基础的入门课程，而写作是没有人可以教得会的，只有通过不断的练习，也只有通过不断的练习自己写出的句子才会越来越通顺，自己想到什么就可以写出什么来，对于写不好或者刚接触写作的人来说一个句子可能都要想半天，甚至是写了又删，删了又写，一直就这样的循环着是根本写不出一篇文章来的。</p><span id="more"></span><p>写作就和说话一样，你说错话了别人一样会笑你，说错话了你还不能反悔，什么“君子一言，驷马难追，口无遮拦，说话不经过大脑”这些描述都是说一个人要谨言慎行，然而写文章却不一样，只要是写错了还是可以改，只要写出来的东西自己认为不是表达自己要说的话，那都是可以改过来的。</p><p>写作是真的没有那么难，至少现在是真的没有那么难了，现在的手机电脑都很普及了，只要会在手机上打字聊天都能学会写作，以前是还要一支笔一张纸，现在都不需要了。现在的我们每天在网上聊天评论，其实都可以算是在练习写作，只是你没有特别的意识去将你写下的这些文字组织起来，当然没有组织起来的这些文字碎片也不能称为你写出来的作品，就是因为如此有很多人才会感觉写作很难，那其实只是你没有用心，等你用心了一切都会自然而然的水到渠成。</p><p>写作的灵感本身就是来源于生活的，只要你还活在生活中那你就会有写的，只是有些人平时聊家常碎碎念很厉害，你要是让他写出来他就无从下笔，不知道从何说起了。话多有时候还真的不如写出一篇思想深刻的文章来更让人信服，文字的力量有时候比语言更能打动人心，所以能说的都尽量用写，你写不出来，在别人面前说什么都没有文字表达得更深刻。只有思想深刻，经过你自己思考的东西别人才会认可，也才能打动别人的心思，也才能让人容易记住，还记得很牢固而不容易忘记。让人记得不深刻，不能打动人心的东西都是表面的虚华，华而不实的东西给人就不是真实的感受，不真实的感受带给人的是没有一点用处的东西。</p><p>只要坚持每天都写几百字，那只要不多久对于你来说写个七八百字的都可以很轻松了，不要因为没有写作素材就认为找不到写的了，生活中的每件小事其实都可以写出来，只是有的人不愿意表达罢了。连文字都不愿意表达自我的人是真正内向的人，这种人一般不想让人了解自己的生活，更不可能让人了解自己的内心世界。写作必须要让文字从你的内心世界里走出来，不这样永远都写不出自己的东西。也许你写出来的东西别人会不喜欢，但又有什么关系，那本来就是真实的自己，你连自己都认识不清楚，又怎么去认识他人，了解他人的世界，你得先让你的想法从你的世界里走出来。</p><p>写作从来就不是什么难事，坚持用心就可以做到，你能看到的那些高谈阔论的文章也是别人通过不断的练习才能写得出来的，刚开始也不要因为没有写得有别人写的好而自卑，这真的没有必要用来打击自己。他人写得好也是从你这初级步奏起步的，别人都是经过风风雨雨的才能走出来，自己又害怕什么，你越害怕你就越是弱者，你只有真正战胜自己心里的恐惧、自卑、不安，这样你才能成为写作的高手。</p><p>对于不会写作，想步入这个自媒体又不是那么的容易，因为写作已经是最简单不过了，它是不需要去学习的，它不是一门高超的技术，要说学习写作你只要上完初中都已经全部学过了，你缺少的是练习而不是所谓的写作方法和技巧。我这是一篇自我写作思想深刻总结的文章，希望对于要学习写作继而做好自媒体的人有所帮助。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 写作 </tag>
+            
+            <tag> 感受 </tag>
+            
+            <tag> 自媒体 </tag>
+            
+            <tag> 最基础 </tag>
+            
+            <tag> 入门课程 </tag>
+            
+            <tag> 接触写作 </tag>
+            
+            <tag> 说错话 </tag>
+            
+            <tag> 手机电脑 </tag>
+            
+            <tag> 文字碎片 </tag>
+            
+            <tag> 写作很难 </tag>
+            
+            <tag> 碎碎念 </tag>
+            
+            <tag> 不愿意 </tag>
+            
+            <tag> 坚持用心 </tag>
+            
+            <tag> 弱者 </tag>
+            
+            <tag> 写作方法 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于迅雷推出的永久会员靠谱吗？值不值得购买？</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2ffb55a8/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2ffb55a8/</url>
@@ -14651,6 +14651,108 @@
     
     
     <entry>
+      <title>写作就是每天都坚持写一点点</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/92c11313/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/92c11313/</url>
+      
+        <content type="html"><![CDATA[<p>当自己不知道写什么的时候就写一写自己该怎么练习写作，写一写自己该怎么提高自己的写作能力，在边写作中思考写作的思路，这就是一种很好的用来提高自己写作能力的方法。放开自己的思维，把能想到的都写出来，对于写作不要太拘于一格，放开自己才能让自己的思维变得活跃起来，自己能想到的东西越多，自己能写出来的也就越多，当然写到的越多能想到的也就越多，自己写得自然也会越顺畅。这是一个良性循环的过程，反之，如果不能很好的放开自己那就会成为一个恶性循环的过程。</p><span id="more"></span><p>写作其实真的不难，想到什么就尽管去写，只要能把它写出来自己都已经成功一半了，不要怕自己写得不好，也不要怕自己写出的错别字太多，又或者是写出来的句子不够通顺，这些其实都无所谓，在写的过程中不要去过多的在乎这些问题，把一个问题或者是一个故事表达清楚，自己感觉字数也差不多达到了，那后面的步骤就是要多读几遍，一篇文章写好以后最少要读三遍才能发给其他人看，如果自己一遍都没有看过就发给其他人看，就会犯一些低级的错误，这种错误他人读一遍就可以看得出来。有时候尽管自己虽然读了三遍，但是还是会无可避免的犯一些错误，此时如果别人只读一遍其实已经很难发现了，因为你自己读了三遍都没有发现的错误，其他人只读过一遍是根本发现不了的。</p><p>曾经有人说过自己写的文章要至少读二十遍，其实我们自己写的用不着那么严格也是可以的，但是三遍已经是最低要求不能少了，自己阅读自己的文章发现自己错误的地方，这也是提高写作的一种方法，其实好文章都不过是经过多遍的修改得出来的，只是有些人不会去承认自己的文章是经过多遍打磨才得出来的，每个写作者其实都希望读者看到他的文章就是很流畅的一遍就写出来的，当然如果他自己不说自己的文章是经过几遍打磨才得出来的，那读者肯定就不清楚，自然就会认为那篇文章就是作者一蹴而就完成的。</p><p>写文章就是要学会编，说自己会写不如说自己会编，对于写文学作品多半写的就是自己的主观感受，对错都不过是在于自己笔下的一瞬间，这和写新闻文体是不一样的，新闻属于应用文体的范畴，新闻要力求事件的真实性，普通人最不适合写新闻的，只有那些新闻媒体机构才可以写，一般人无论如何都写不好，因为那要客观的看待问题而非主观意识。一般人写写文学体裁的就可以，文学作品表达的是写作者的主观感受，而不是客观事实，所以观点的对错没有那么的明显，只是别人读了文章后对作者观点赞同与不赞同的问题，因为那写的本身就是作者的想法，根本就没有对错之分。</p><p>写作对于拥有一个很能编的思维是真的很重要，每个成功的写作者可以说都是一个个的幻想家，他们能从一件事联想到其他的事，而这些只要写下来了，让人感觉就是非常奇异的一件事，或许每个读者他也曾有过作者大脑中划过的那一丝想法，只是作者将其写出来了，而读者没有，所以读者就会感觉这件事好像就是自己似曾相识的那种感觉。</p><p>那些写意识流小说的人想象力就很丰富，他们从一件事联想到另一件事，看似天马行空其实逻辑性却是非常的强，这种小说别人读了也会跟着他的思维走，因为给读者错觉那就是自己的思维，好像那些一件接着一件事件都是自己经历过一样。作为一个爱好写作的人来说我们就应该拥有意识流这样的思维，只有这样去想这样去写才会感觉写作不是枯燥的，只要懂得把玩它，它其实也很有趣。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 文章 </tag>
+            
+            <tag> 写作 </tag>
+            
+            <tag> 发现 </tag>
+            
+            <tag> 感觉 </tag>
+            
+            <tag> 每天 </tag>
+            
+            <tag> 坚持写 </tag>
+            
+            <tag> 练习写作 </tag>
+            
+            <tag> 顺畅 </tag>
+            
+            <tag> 循环 </tag>
+            
+            <tag> 通顺 </tag>
+            
+            <tag> 一蹴而就 </tag>
+            
+            <tag> 真实性 </tag>
+            
+            <tag> 主观意识 </tag>
+            
+            <tag> 丰富 </tag>
+            
+            <tag> 有趣 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>写作就是记录自己每天的生活点滴</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/301e49fc/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/301e49fc/</url>
+      
+        <content type="html"><![CDATA[<p>一直以来我都是认为写作就是为了记录自己的生活点滴，记录自己的心情的变化，现在我的理解依然就是这样，连自己的事都写不好，怎么还可能去写他人的事，关心他人的事还不如先从关心自己开始，有人一直都活在他人世界里，比关心自己还关心他人的事，就比如那些追星的，别人离婚分手了他还会伤心，不知道这是种什么心态，连自己都没有关心好还关心起他人的这些事来了，这有什么意义，他人的事和自己又会产生什么关联呢。</p><span id="more"></span><p>自己的手中的笔先用来写好自己再说吧，你关心他人去写他人琐碎事，可是他人却从来没有来过你的世界里，关心自己用自己的笔来写自己，总比是去关心他人用自己的笔去写他人强了很多，每个人的精神世界都是一个独立的个体，活好自己才是自己来到这个世界的真正意义所在，没有必要一定要把他人所思所想绑定到自己的身上，那样自己就会真的活得很累，你关心他人的那些琐碎事，可是谁又关心过你自己的事呢，答案是没有，因为你都不关心你自己他人又怎么关心你自己。人活在世上真的没有必要活得那么卑微，记住自己是一个有着思想独立的人，自己的思维方式价值观等不应该被任何人左右，自己有自己的生活方式，不应该活成他人想要的模样，自己做好自己就好没有必要去崇拜他人，自己一生只不过数十年，能活好自己就已经很不错了，再也没有什么其他的精力去花费在无关紧要的人身上。真的没有必要那样，一直活在他人世界里，那样会真的很累，人就应该为自己而活才是不愧这自己短短的一生。</p><p>我笔写我所想，我想的就是别人没有的，这本身就是一种创新了，自己所想的，自己的思想是独一无二的，不要就一直跟着他人的思想一直走，那样自己走着走着就会走入他人的世界，最终害了的还是自己，因为自己就一直活在他人世界里始终没有为自己而活过，如果对自己那怕只有一丝一毫的关心，那自己也会感到很幸福，但是一直都活在他人为自己营造的世界中，这样的活法还有什么值得去谈有幸福可言。</p><p>如果自己的笔都不能用来写自己所想的，那还有什么意义，也许自己现在所想的经过很多年后自己怎么也会记不起来，倒不如自己就将它写下来，在多年以后自己翻开曾经写的那些一字一句，也许会感觉曾经的那份热情不够成熟，当自己经历过生活的很多磨难后，自己才知道自己真正想要的是什么，那些曾经自己写下的美好的字句成为了自己最美好的回忆，自己随着年龄的增加再也不可能再次回到过去，再也写不出那些摆在自己眼前的匆匆岁月，自己也不可能还有曾经的那份心思写出让自己感动的文字。</p><p>多写写自己吧，自己才是自己生活的主导者，多年以后你会为自己这曾经的一份坚持所打动，只有文字才是永久不忘的记忆，除此之外还没有什么能表达自己还能让自己记得更牢固的了，多年过后自己一定会感谢自己当下的这一份坚持的初心是多么的难能可贵。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 世界 </tag>
+            
+            <tag> 写作 </tag>
+            
+            <tag> 心情 </tag>
+            
+            <tag> 幸福 </tag>
+            
+            <tag> 琐碎事 </tag>
+            
+            <tag> 记录自己 </tag>
+            
+            <tag> 生活点滴 </tag>
+            
+            <tag> 关联 </tag>
+            
+            <tag> 价值观 </tag>
+            
+            <tag> 崇拜 </tag>
+            
+            <tag> 热情 </tag>
+            
+            <tag> 感动 </tag>
+            
+            <tag> 难能可贵 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>写作就应该无拘无束，放开手去写</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/49d1263e/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/49d1263e/</url>
@@ -14714,108 +14816,6 @@
             <tag> 跟班 </tag>
             
             <tag> 个性 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>写作就是记录自己每天的生活点滴</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/301e49fc/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/301e49fc/</url>
-      
-        <content type="html"><![CDATA[<p>一直以来我都是认为写作就是为了记录自己的生活点滴，记录自己的心情的变化，现在我的理解依然就是这样，连自己的事都写不好，怎么还可能去写他人的事，关心他人的事还不如先从关心自己开始，有人一直都活在他人世界里，比关心自己还关心他人的事，就比如那些追星的，别人离婚分手了他还会伤心，不知道这是种什么心态，连自己都没有关心好还关心起他人的这些事来了，这有什么意义，他人的事和自己又会产生什么关联呢。</p><span id="more"></span><p>自己的手中的笔先用来写好自己再说吧，你关心他人去写他人琐碎事，可是他人却从来没有来过你的世界里，关心自己用自己的笔来写自己，总比是去关心他人用自己的笔去写他人强了很多，每个人的精神世界都是一个独立的个体，活好自己才是自己来到这个世界的真正意义所在，没有必要一定要把他人所思所想绑定到自己的身上，那样自己就会真的活得很累，你关心他人的那些琐碎事，可是谁又关心过你自己的事呢，答案是没有，因为你都不关心你自己他人又怎么关心你自己。人活在世上真的没有必要活得那么卑微，记住自己是一个有着思想独立的人，自己的思维方式价值观等不应该被任何人左右，自己有自己的生活方式，不应该活成他人想要的模样，自己做好自己就好没有必要去崇拜他人，自己一生只不过数十年，能活好自己就已经很不错了，再也没有什么其他的精力去花费在无关紧要的人身上。真的没有必要那样，一直活在他人世界里，那样会真的很累，人就应该为自己而活才是不愧这自己短短的一生。</p><p>我笔写我所想，我想的就是别人没有的，这本身就是一种创新了，自己所想的，自己的思想是独一无二的，不要就一直跟着他人的思想一直走，那样自己走着走着就会走入他人的世界，最终害了的还是自己，因为自己就一直活在他人世界里始终没有为自己而活过，如果对自己那怕只有一丝一毫的关心，那自己也会感到很幸福，但是一直都活在他人为自己营造的世界中，这样的活法还有什么值得去谈有幸福可言。</p><p>如果自己的笔都不能用来写自己所想的，那还有什么意义，也许自己现在所想的经过很多年后自己怎么也会记不起来，倒不如自己就将它写下来，在多年以后自己翻开曾经写的那些一字一句，也许会感觉曾经的那份热情不够成熟，当自己经历过生活的很多磨难后，自己才知道自己真正想要的是什么，那些曾经自己写下的美好的字句成为了自己最美好的回忆，自己随着年龄的增加再也不可能再次回到过去，再也写不出那些摆在自己眼前的匆匆岁月，自己也不可能还有曾经的那份心思写出让自己感动的文字。</p><p>多写写自己吧，自己才是自己生活的主导者，多年以后你会为自己这曾经的一份坚持所打动，只有文字才是永久不忘的记忆，除此之外还没有什么能表达自己还能让自己记得更牢固的了，多年过后自己一定会感谢自己当下的这一份坚持的初心是多么的难能可贵。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 情感美文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 世界 </tag>
-            
-            <tag> 写作 </tag>
-            
-            <tag> 心情 </tag>
-            
-            <tag> 幸福 </tag>
-            
-            <tag> 琐碎事 </tag>
-            
-            <tag> 记录自己 </tag>
-            
-            <tag> 生活点滴 </tag>
-            
-            <tag> 关联 </tag>
-            
-            <tag> 价值观 </tag>
-            
-            <tag> 崇拜 </tag>
-            
-            <tag> 热情 </tag>
-            
-            <tag> 感动 </tag>
-            
-            <tag> 难能可贵 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>写作就是每天都坚持写一点点</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/92c11313/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/92c11313/</url>
-      
-        <content type="html"><![CDATA[<p>当自己不知道写什么的时候就写一写自己该怎么练习写作，写一写自己该怎么提高自己的写作能力，在边写作中思考写作的思路，这就是一种很好的用来提高自己写作能力的方法。放开自己的思维，把能想到的都写出来，对于写作不要太拘于一格，放开自己才能让自己的思维变得活跃起来，自己能想到的东西越多，自己能写出来的也就越多，当然写到的越多能想到的也就越多，自己写得自然也会越顺畅。这是一个良性循环的过程，反之，如果不能很好的放开自己那就会成为一个恶性循环的过程。</p><span id="more"></span><p>写作其实真的不难，想到什么就尽管去写，只要能把它写出来自己都已经成功一半了，不要怕自己写得不好，也不要怕自己写出的错别字太多，又或者是写出来的句子不够通顺，这些其实都无所谓，在写的过程中不要去过多的在乎这些问题，把一个问题或者是一个故事表达清楚，自己感觉字数也差不多达到了，那后面的步骤就是要多读几遍，一篇文章写好以后最少要读三遍才能发给其他人看，如果自己一遍都没有看过就发给其他人看，就会犯一些低级的错误，这种错误他人读一遍就可以看得出来。有时候尽管自己虽然读了三遍，但是还是会无可避免的犯一些错误，此时如果别人只读一遍其实已经很难发现了，因为你自己读了三遍都没有发现的错误，其他人只读过一遍是根本发现不了的。</p><p>曾经有人说过自己写的文章要至少读二十遍，其实我们自己写的用不着那么严格也是可以的，但是三遍已经是最低要求不能少了，自己阅读自己的文章发现自己错误的地方，这也是提高写作的一种方法，其实好文章都不过是经过多遍的修改得出来的，只是有些人不会去承认自己的文章是经过多遍打磨才得出来的，每个写作者其实都希望读者看到他的文章就是很流畅的一遍就写出来的，当然如果他自己不说自己的文章是经过几遍打磨才得出来的，那读者肯定就不清楚，自然就会认为那篇文章就是作者一蹴而就完成的。</p><p>写文章就是要学会编，说自己会写不如说自己会编，对于写文学作品多半写的就是自己的主观感受，对错都不过是在于自己笔下的一瞬间，这和写新闻文体是不一样的，新闻属于应用文体的范畴，新闻要力求事件的真实性，普通人最不适合写新闻的，只有那些新闻媒体机构才可以写，一般人无论如何都写不好，因为那要客观的看待问题而非主观意识。一般人写写文学体裁的就可以，文学作品表达的是写作者的主观感受，而不是客观事实，所以观点的对错没有那么的明显，只是别人读了文章后对作者观点赞同与不赞同的问题，因为那写的本身就是作者的想法，根本就没有对错之分。</p><p>写作对于拥有一个很能编的思维是真的很重要，每个成功的写作者可以说都是一个个的幻想家，他们能从一件事联想到其他的事，而这些只要写下来了，让人感觉就是非常奇异的一件事，或许每个读者他也曾有过作者大脑中划过的那一丝想法，只是作者将其写出来了，而读者没有，所以读者就会感觉这件事好像就是自己似曾相识的那种感觉。</p><p>那些写意识流小说的人想象力就很丰富，他们从一件事联想到另一件事，看似天马行空其实逻辑性却是非常的强，这种小说别人读了也会跟着他的思维走，因为给读者错觉那就是自己的思维，好像那些一件接着一件事件都是自己经历过一样。作为一个爱好写作的人来说我们就应该拥有意识流这样的思维，只有这样去想这样去写才会感觉写作不是枯燥的，只要懂得把玩它，它其实也很有趣。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 情感美文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 文章 </tag>
-            
-            <tag> 写作 </tag>
-            
-            <tag> 发现 </tag>
-            
-            <tag> 感觉 </tag>
-            
-            <tag> 每天 </tag>
-            
-            <tag> 坚持写 </tag>
-            
-            <tag> 练习写作 </tag>
-            
-            <tag> 顺畅 </tag>
-            
-            <tag> 循环 </tag>
-            
-            <tag> 通顺 </tag>
-            
-            <tag> 一蹴而就 </tag>
-            
-            <tag> 真实性 </tag>
-            
-            <tag> 主观意识 </tag>
-            
-            <tag> 丰富 </tag>
-            
-            <tag> 有趣 </tag>
             
         </tags>
       
@@ -15487,6 +15487,37 @@
     
     
     <entry>
+      <title>又不知道该写什么了，开始犯难了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/31ccc028/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/31ccc028/</url>
+      
+        <content type="html"><![CDATA[<p>写着写着就不知道该写些什么了，每到这个时候就会感觉开始犯难了，既然是不知道要想着写什么，那就不用想了，直接打字写就是了，反正想半天也是什么都想不出来，只又边写着边想才能写出来。</p><span id="more"></span><p>如果是一直只停留在一开始要写什么的思维里面，那肯定是什么都写不出来的，写东西只有动笔了才有进一步的思维，一直想但是一直都不知道写什么永远只会停留在第一步，就是想的这个阶段。</p><p>想的东西只有写在纸上，把它写出来才算是有点眉目，如果是只想但是没有动笔写，那怎么感觉都想不出什么东西。在写的过程中自然就会把想的东西慢慢理通顺了，在不知道写什么的时候直接动笔顺便写就是最好的方法。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 写什么 </tag>
+            
+            <tag> 自然 </tag>
+            
+            <tag> 犯难 </tag>
+            
+            <tag> 打字 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>去年办的澳门通行证快过期了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f2d44d2/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f2d44d2/</url>
@@ -15516,37 +15547,6 @@
             <tag> 中国经济 </tag>
             
             <tag> 疫情 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>又不知道该写什么了，开始犯难了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/31ccc028/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/31ccc028/</url>
-      
-        <content type="html"><![CDATA[<p>写着写着就不知道该写些什么了，每到这个时候就会感觉开始犯难了，既然是不知道要想着写什么，那就不用想了，直接打字写就是了，反正想半天也是什么都想不出来，只又边写着边想才能写出来。</p><span id="more"></span><p>如果是一直只停留在一开始要写什么的思维里面，那肯定是什么都写不出来的，写东西只有动笔了才有进一步的思维，一直想但是一直都不知道写什么永远只会停留在第一步，就是想的这个阶段。</p><p>想的东西只有写在纸上，把它写出来才算是有点眉目，如果是只想但是没有动笔写，那怎么感觉都想不出什么东西。在写的过程中自然就会把想的东西慢慢理通顺了，在不知道写什么的时候直接动笔顺便写就是最好的方法。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 写什么 </tag>
-            
-            <tag> 自然 </tag>
-            
-            <tag> 犯难 </tag>
-            
-            <tag> 打字 </tag>
             
         </tags>
       
@@ -15645,53 +15645,6 @@
     
     
     <entry>
-      <title>可以免费玩Steam平台游戏的软件</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d41b06ee/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d41b06ee/</url>
-      
-        <content type="html"><![CDATA[<p>昨天晚上在一个下载网站去下载Pr的破解版，这个网站支持用迅雷下载速度非常快，才一两分钟Pr这个软件就下好了，因为是破解版的我试了下是真的可以免费用，而且破解和汉化都很简单，Pr是最好的视频剪辑软件比什么爱剪辑好很多，关键是可以免费用破解版，这下肯定是爽歪歪了。</p><span id="more"></span><p>后面我又看了这个网站还有没有其他能下载的，我在上面找了下看着还有可以下载单机游戏，于是我就想着下一个来玩一下，毕竟这下载速度这么快下个几G的单机游戏应该是没有问题的，现在能下载单机游戏的网站越来越少了，几年以前能下的下的游戏现在都不能下了，以前存在百度网盘上倒是有几个，但是每秒几十KB的下载速度怕是下载一个月都下不完。</p><p>这个网站写着可以下载单机游戏，但其实也下不了，只是下了一个游戏平台，这个游戏平台可以在上面买Steam平台的游戏，但是在这里买还不如去Steam平台买了，但是不需要买就可以免费玩一个Steam平台的游戏感觉还是不错的，就是注册之后这个网站就会送一个游戏，当然这个游戏下载和打开游玩其实是自动跳转到Steam平台去的，到底是什么原理我也搞不懂，但是这个Steam平台的账号不能直接登录Steam平台，应该就是相当于用的共享账号这么一回事。</p><p>这种平台我一共在这个网站下了两个，两个都注册了，有一个好像就是直接用微信扫码登录的，每个都可以免费领一个单机游戏，所以我一共就领了两个，一个是《灵界女孩》还有一个是《饥荒》，饥荒感觉不怎么好玩，但是感觉也不亏，在腾讯的游戏平台WeGame上买都还要花20多块钱，其实这些都是一些小游戏，算不上是3A大作，灵界女孩这个虽然只是2D的但是感觉挺好玩的，这是一款解密探险的游戏，这种游戏一般剧情都可以让人入迷。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 游戏 </tag>
-            
-            <tag> 软件 </tag>
-            
-            <tag> 注册 </tag>
-            
-            <tag> 视频剪辑 </tag>
-            
-            <tag> 免费玩 </tag>
-            
-            <tag> Steam </tag>
-            
-            <tag> 破解 </tag>
-            
-            <tag> 汉化 </tag>
-            
-            <tag> 爽歪歪 </tag>
-            
-            <tag> 灵界女孩 </tag>
-            
-            <tag> 饥荒 </tag>
-            
-            <tag> WeGame </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>可以看电视直播的神器Kodi</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/803c539a/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/803c539a/</url>
@@ -15733,6 +15686,53 @@
             <tag> 硬盘空间 </tag>
             
             <tag> Xcode </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>可以免费玩Steam平台游戏的软件</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d41b06ee/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d41b06ee/</url>
+      
+        <content type="html"><![CDATA[<p>昨天晚上在一个下载网站去下载Pr的破解版，这个网站支持用迅雷下载速度非常快，才一两分钟Pr这个软件就下好了，因为是破解版的我试了下是真的可以免费用，而且破解和汉化都很简单，Pr是最好的视频剪辑软件比什么爱剪辑好很多，关键是可以免费用破解版，这下肯定是爽歪歪了。</p><span id="more"></span><p>后面我又看了这个网站还有没有其他能下载的，我在上面找了下看着还有可以下载单机游戏，于是我就想着下一个来玩一下，毕竟这下载速度这么快下个几G的单机游戏应该是没有问题的，现在能下载单机游戏的网站越来越少了，几年以前能下的下的游戏现在都不能下了，以前存在百度网盘上倒是有几个，但是每秒几十KB的下载速度怕是下载一个月都下不完。</p><p>这个网站写着可以下载单机游戏，但其实也下不了，只是下了一个游戏平台，这个游戏平台可以在上面买Steam平台的游戏，但是在这里买还不如去Steam平台买了，但是不需要买就可以免费玩一个Steam平台的游戏感觉还是不错的，就是注册之后这个网站就会送一个游戏，当然这个游戏下载和打开游玩其实是自动跳转到Steam平台去的，到底是什么原理我也搞不懂，但是这个Steam平台的账号不能直接登录Steam平台，应该就是相当于用的共享账号这么一回事。</p><p>这种平台我一共在这个网站下了两个，两个都注册了，有一个好像就是直接用微信扫码登录的，每个都可以免费领一个单机游戏，所以我一共就领了两个，一个是《灵界女孩》还有一个是《饥荒》，饥荒感觉不怎么好玩，但是感觉也不亏，在腾讯的游戏平台WeGame上买都还要花20多块钱，其实这些都是一些小游戏，算不上是3A大作，灵界女孩这个虽然只是2D的但是感觉挺好玩的，这是一款解密探险的游戏，这种游戏一般剧情都可以让人入迷。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 游戏 </tag>
+            
+            <tag> 软件 </tag>
+            
+            <tag> 注册 </tag>
+            
+            <tag> 视频剪辑 </tag>
+            
+            <tag> 免费玩 </tag>
+            
+            <tag> Steam </tag>
+            
+            <tag> 破解 </tag>
+            
+            <tag> 汉化 </tag>
+            
+            <tag> 爽歪歪 </tag>
+            
+            <tag> 灵界女孩 </tag>
+            
+            <tag> 饥荒 </tag>
+            
+            <tag> WeGame </tag>
             
         </tags>
       
@@ -16352,65 +16352,6 @@
     
     
     <entry>
-      <title>在迷你主机虚拟机上安装黑苹果系统，体验一下Mac mini的感觉</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29c02f2/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29c02f2/</url>
-      
-        <content type="html"><![CDATA[<p>我这里用的虚拟机是<code>VMware 16</code>的版本，当然用15的版本也是可以安装的，安装好虚拟机之后是不能直接安装黑苹果系统的，因为这个虚拟机上直接安装是没有苹果系统的选项的，需要使用一个解锁软件对它进行解锁，这个解锁软件就是<code>unlocker</code>。</p><span id="more"></span><p>解锁之后创建苹果虚拟机系统的时候就可以选择苹果的Mac系统的选项了，虚拟机创建好了还需要苹果的系统镜像，镜像也好下载就是用的“MSDN,我告诉你”这个网站上下载，这个用种子文件加迅雷下载比较快，比别人分享在百度网盘的快很多，我大概只用了三十多分钟就下好了。</p><p>以前也下过一个14G多的，那个在笔记本电脑上可以用，传到台式机上就用不了，而且占很大空间，这次去这个网站下载的才7G多的，没有那么占空间，版本也是一样的都是10.15.7的，关键这个安装确实可以用。</p><p>下载下来的是后缀<code>.dmg</code>的文件，虚拟机直接用是识别不了的，这里需要下载 <code>TransMac</code>这个软件，用这个软件还有一个8G以上的U盘把镜像文件做成一个U盘启动盘，U盘里面有数据会被全部格式化得提前备份好。</p><p>做成U盘启动盘以后U盘要重新使用也要用<code>DiskGenius</code>这个软件删除分区才可以正常使用，启动盘做好就可以在刚创建的苹果虚拟机上编辑添加硬盘，选择U盘启动盘，这样开启虚拟机就可以安装了，但是这里会显示处理器被禁用了，相信很多人到这里就会放弃了，我上次也是到这一步就无法进行了。</p><p>到这里需要在虚拟机文件里面添加几行代码才能解决，找到创建的苹果虚拟机的位置文件夹，里面有个<code>macOS 10.15.vmx</code>文件用<code>notepad++</code>打开，在最后面一行下添加一下代码：</p><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">smc.version</span> = <span class="string">&quot;0&quot;</span></span><br><span class="line"><span class="attr">cpuid.0.eax</span> = <span class="string">&quot;0000:0000:0000:0000:0000:0000:0000:1011&quot;</span></span><br><span class="line"><span class="attr">cpuid.0.ebx</span> = <span class="string">&quot;0111:0101:0110:1110:0110:0101:0100:0111&quot;</span></span><br><span class="line"><span class="attr">cpuid.0.ecx</span> = <span class="string">&quot;0110:1100:0110:0101:0111:0100:0110:1110&quot;</span></span><br><span class="line"><span class="attr">cpuid.0.edx</span> = <span class="string">&quot;0100:1001:0110:0101:0110:1110:0110:1001&quot;</span></span><br><span class="line"><span class="attr">cpuid.1.eax</span> = <span class="string">&quot;0000:0000:0000:0001:0000:0110:0111:0001&quot;</span></span><br><span class="line"><span class="attr">cpuid.1.ebx</span> = <span class="string">&quot;0000:0010:0000:0001:0000:1000:0000:0000&quot;</span></span><br><span class="line"><span class="attr">cpuid.1.ecx</span> = <span class="string">&quot;1000:0010:1001:1000:0010:0010:0000:0011&quot;</span></span><br><span class="line"><span class="attr">cpuid.1.edx</span> = <span class="string">&quot;0000:0111:1000:1011:1111:1011:1111:1111&quot;</span></span><br><span class="line"><span class="attr">smbios.reflectHost</span> = <span class="string">&quot;TRUE&quot;</span></span><br><span class="line"><span class="attr">hw.model</span> = <span class="string">&quot;MacBookPro14,3&quot;</span></span><br><span class="line"><span class="attr">board-id</span> = <span class="string">&quot;Mac-551B86E5744E2388&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>然后保存，再重新开启虚拟机这样就可以正常安装了。</p><p>安装好以后是不能用全屏的，得下载<code>darwin1012.iso</code>这个镜像文件来安装<code>VMware Tools</code>，只有安装了这个才可以全屏，这个要用<code>CD/DVD</code>虚拟光驱来安装，我记得我是安装了两次才安装成功的，安装完这个就是体验黑苹果系统的时刻了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 安装 </tag>
-            
-            <tag> 代码 </tag>
-            
-            <tag> 迅雷下载 </tag>
-            
-            <tag> 虚拟机 </tag>
-            
-            <tag> unlocker </tag>
-            
-            <tag> 黑苹果系统 </tag>
-            
-            <tag> VMware 16 </tag>
-            
-            <tag> 进行解锁 </tag>
-            
-            <tag> 创建 </tag>
-            
-            <tag> MSDN </tag>
-            
-            <tag> TransMac </tag>
-            
-            <tag> 镜像文件 </tag>
-            
-            <tag> DiskGenius </tag>
-            
-            <tag> 硬盘 </tag>
-            
-            <tag> macOS </tag>
-            
-            <tag> notepad++ </tag>
-            
-            <tag> darwin1012 </tag>
-            
-            <tag> VMware Tools </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>在贝壳小岛卖出150贝，赚了9块钱</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/302d33ef/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/302d33ef/</url>
@@ -16458,6 +16399,65 @@
             <tag> 想骗贝 </tag>
             
             <tag> 有钱赚 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>在迷你主机虚拟机上安装黑苹果系统，体验一下Mac mini的感觉</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29c02f2/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29c02f2/</url>
+      
+        <content type="html"><![CDATA[<p>我这里用的虚拟机是<code>VMware 16</code>的版本，当然用15的版本也是可以安装的，安装好虚拟机之后是不能直接安装黑苹果系统的，因为这个虚拟机上直接安装是没有苹果系统的选项的，需要使用一个解锁软件对它进行解锁，这个解锁软件就是<code>unlocker</code>。</p><span id="more"></span><p>解锁之后创建苹果虚拟机系统的时候就可以选择苹果的Mac系统的选项了，虚拟机创建好了还需要苹果的系统镜像，镜像也好下载就是用的“MSDN,我告诉你”这个网站上下载，这个用种子文件加迅雷下载比较快，比别人分享在百度网盘的快很多，我大概只用了三十多分钟就下好了。</p><p>以前也下过一个14G多的，那个在笔记本电脑上可以用，传到台式机上就用不了，而且占很大空间，这次去这个网站下载的才7G多的，没有那么占空间，版本也是一样的都是10.15.7的，关键这个安装确实可以用。</p><p>下载下来的是后缀<code>.dmg</code>的文件，虚拟机直接用是识别不了的，这里需要下载 <code>TransMac</code>这个软件，用这个软件还有一个8G以上的U盘把镜像文件做成一个U盘启动盘，U盘里面有数据会被全部格式化得提前备份好。</p><p>做成U盘启动盘以后U盘要重新使用也要用<code>DiskGenius</code>这个软件删除分区才可以正常使用，启动盘做好就可以在刚创建的苹果虚拟机上编辑添加硬盘，选择U盘启动盘，这样开启虚拟机就可以安装了，但是这里会显示处理器被禁用了，相信很多人到这里就会放弃了，我上次也是到这一步就无法进行了。</p><p>到这里需要在虚拟机文件里面添加几行代码才能解决，找到创建的苹果虚拟机的位置文件夹，里面有个<code>macOS 10.15.vmx</code>文件用<code>notepad++</code>打开，在最后面一行下添加一下代码：</p><figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">smc.version</span> = <span class="string">&quot;0&quot;</span></span><br><span class="line"><span class="attr">cpuid.0.eax</span> = <span class="string">&quot;0000:0000:0000:0000:0000:0000:0000:1011&quot;</span></span><br><span class="line"><span class="attr">cpuid.0.ebx</span> = <span class="string">&quot;0111:0101:0110:1110:0110:0101:0100:0111&quot;</span></span><br><span class="line"><span class="attr">cpuid.0.ecx</span> = <span class="string">&quot;0110:1100:0110:0101:0111:0100:0110:1110&quot;</span></span><br><span class="line"><span class="attr">cpuid.0.edx</span> = <span class="string">&quot;0100:1001:0110:0101:0110:1110:0110:1001&quot;</span></span><br><span class="line"><span class="attr">cpuid.1.eax</span> = <span class="string">&quot;0000:0000:0000:0001:0000:0110:0111:0001&quot;</span></span><br><span class="line"><span class="attr">cpuid.1.ebx</span> = <span class="string">&quot;0000:0010:0000:0001:0000:1000:0000:0000&quot;</span></span><br><span class="line"><span class="attr">cpuid.1.ecx</span> = <span class="string">&quot;1000:0010:1001:1000:0010:0010:0000:0011&quot;</span></span><br><span class="line"><span class="attr">cpuid.1.edx</span> = <span class="string">&quot;0000:0111:1000:1011:1111:1011:1111:1111&quot;</span></span><br><span class="line"><span class="attr">smbios.reflectHost</span> = <span class="string">&quot;TRUE&quot;</span></span><br><span class="line"><span class="attr">hw.model</span> = <span class="string">&quot;MacBookPro14,3&quot;</span></span><br><span class="line"><span class="attr">board-id</span> = <span class="string">&quot;Mac-551B86E5744E2388&quot;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><p>然后保存，再重新开启虚拟机这样就可以正常安装了。</p><p>安装好以后是不能用全屏的，得下载<code>darwin1012.iso</code>这个镜像文件来安装<code>VMware Tools</code>，只有安装了这个才可以全屏，这个要用<code>CD/DVD</code>虚拟光驱来安装，我记得我是安装了两次才安装成功的，安装完这个就是体验黑苹果系统的时刻了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 代码 </tag>
+            
+            <tag> 安装 </tag>
+            
+            <tag> 迅雷下载 </tag>
+            
+            <tag> 虚拟机 </tag>
+            
+            <tag> unlocker </tag>
+            
+            <tag> 黑苹果系统 </tag>
+            
+            <tag> VMware 16 </tag>
+            
+            <tag> 进行解锁 </tag>
+            
+            <tag> 创建 </tag>
+            
+            <tag> MSDN </tag>
+            
+            <tag> TransMac </tag>
+            
+            <tag> 镜像文件 </tag>
+            
+            <tag> DiskGenius </tag>
+            
+            <tag> 硬盘 </tag>
+            
+            <tag> macOS </tag>
+            
+            <tag> notepad++ </tag>
+            
+            <tag> darwin1012 </tag>
+            
+            <tag> VMware Tools </tag>
             
         </tags>
       
@@ -16673,43 +16673,6 @@
     
     
     <entry>
-      <title>天气热了，整个人都不想动了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/28c4438a/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/28c4438a/</url>
-      
-        <content type="html"><![CDATA[<p>现在的天气突然就开始变热了，出门五分钟流汗两小时，那真的是一点都不夸张了。出去是不可能出去的了，只有开着空调风扇这样还舒服点。</p><span id="more"></span><p>天热了人也懒了，什么都不想做了，吃了午饭后就昏昏沉沉的就睡着了，有时就是这样，想要睡着就怎么也睡不着，不想睡的时候玩着手机突然的就都会睡着了。</p><p>现在整天没有事做也不想出去玩了，因为天气太热了，去玩回来就是一身的汗也太难受了。也只有吹风扇空调这样玩下手机写写文章舒服点了。</p><p>每天都写也没有什么主题可以写，就是想到什么就写什么了，因为不用特意去想需要写些什么，其实想了也没有用，因为还是写不出来，倒不如就这样边想边写还来得实在。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 流汗 </tag>
-            
-            <tag> 天气 </tag>
-            
-            <tag> 主题 </tag>
-            
-            <tag> 不想动 </tag>
-            
-            <tag> 昏昏沉沉 </tag>
-            
-            <tag> 难受 </tag>
-            
-            <tag> 实在 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>天气又变热了，难受</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1502a54/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1502a54/</url>
@@ -16732,9 +16695,9 @@
             
             <tag> 凉快 </tag>
             
-            <tag> 难受 </tag>
-            
             <tag> 变热 </tag>
+            
+            <tag> 难受 </tag>
             
             <tag> 绿化环保 </tag>
             
@@ -16745,6 +16708,43 @@
             <tag> 无所谓 </tag>
             
             <tag> 擦肩而过 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>天气热了，整个人都不想动了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/28c4438a/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/28c4438a/</url>
+      
+        <content type="html"><![CDATA[<p>现在的天气突然就开始变热了，出门五分钟流汗两小时，那真的是一点都不夸张了。出去是不可能出去的了，只有开着空调风扇这样还舒服点。</p><span id="more"></span><p>天热了人也懒了，什么都不想做了，吃了午饭后就昏昏沉沉的就睡着了，有时就是这样，想要睡着就怎么也睡不着，不想睡的时候玩着手机突然的就都会睡着了。</p><p>现在整天没有事做也不想出去玩了，因为天气太热了，去玩回来就是一身的汗也太难受了。也只有吹风扇空调这样玩下手机写写文章舒服点了。</p><p>每天都写也没有什么主题可以写，就是想到什么就写什么了，因为不用特意去想需要写些什么，其实想了也没有用，因为还是写不出来，倒不如就这样边想边写还来得实在。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 流汗 </tag>
+            
+            <tag> 天气 </tag>
+            
+            <tag> 主题 </tag>
+            
+            <tag> 难受 </tag>
+            
+            <tag> 不想动 </tag>
+            
+            <tag> 昏昏沉沉 </tag>
+            
+            <tag> 实在 </tag>
             
         </tags>
       
@@ -17029,6 +17029,53 @@
     
     
     <entry>
+      <title>如何通过用短视频平台来赚钱</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/425acf9a/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/425acf9a/</url>
+      
+        <content type="html"><![CDATA[<p>用短视频平台来赚钱理论上是可以的，但是要做起来却是有点难，最容易的就是直接刷短视频领金币，然后每天零点后系统自动兑换成可以提现的，但是赚不了多少，刷一天最多只能赚两块钱。</p><span id="more"></span><p>这样的平台很多，比如抖音极速版，快手也可以，但是有些账号没有这个功能，快手极速版也可以，但是都只能赚几块钱。</p><p>另外就是带货了，抖音要500个粉丝才可以，所以新手根本没有机会，再说了还要交500的保证金，也不适合新手玩，快手还好，没有粉丝限制，零个粉丝也照样可以开通快手小店，货源淘宝、京东的都有，发视频的时候就可以带上了，有人买就有佣金，但有没有人买是未知数，因为我也没有卖出去过，另外快手直接带淘宝联盟的也是要交500的保证金。</p><p>还有就是做直播了，直播游戏或者真人直播都可以，直播好像抖音看的人要多一点，我直播一下还有人送礼，快手基本上直播没有人看，抖音直播那个音符什么的满一元就可以提现。</p><p>能赚是能赚，但是赚不了多少，不要相信那些说月入上万的根本不可能，那些抖音直播上说自己一场直播赚多少的，其实就是为了卖他自己的课程，在咸鱼上可能卖5块钱都没有人看，他可以放在抖音上卖90多，其实买了一点用都没有，还为他增加收入，他开始的那些流水估计是刷的，后面买课程的人多了就是真的了，这都是套路来的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 流水 </tag>
+            
+            <tag> 短视频 </tag>
+            
+            <tag> 快手 </tag>
+            
+            <tag> 赚钱 </tag>
+            
+            <tag> 直播 </tag>
+            
+            <tag> 理论上 </tag>
+            
+            <tag> 提现 </tag>
+            
+            <tag> 抖音极速版 </tag>
+            
+            <tag> 淘宝联盟 </tag>
+            
+            <tag> 保证金 </tag>
+            
+            <tag> 课程 </tag>
+            
+            <tag> 咸鱼 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>如何零成本搭建属于自己的网站</title>
       <link href="/Hexo/919c09e7/"/>
       <url>/Hexo/919c09e7/</url>
@@ -17072,53 +17119,6 @@
             <tag> Markdown </tag>
             
             <tag> HTML </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>如何通过用短视频平台来赚钱</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/425acf9a/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/425acf9a/</url>
-      
-        <content type="html"><![CDATA[<p>用短视频平台来赚钱理论上是可以的，但是要做起来却是有点难，最容易的就是直接刷短视频领金币，然后每天零点后系统自动兑换成可以提现的，但是赚不了多少，刷一天最多只能赚两块钱。</p><span id="more"></span><p>这样的平台很多，比如抖音极速版，快手也可以，但是有些账号没有这个功能，快手极速版也可以，但是都只能赚几块钱。</p><p>另外就是带货了，抖音要500个粉丝才可以，所以新手根本没有机会，再说了还要交500的保证金，也不适合新手玩，快手还好，没有粉丝限制，零个粉丝也照样可以开通快手小店，货源淘宝、京东的都有，发视频的时候就可以带上了，有人买就有佣金，但有没有人买是未知数，因为我也没有卖出去过，另外快手直接带淘宝联盟的也是要交500的保证金。</p><p>还有就是做直播了，直播游戏或者真人直播都可以，直播好像抖音看的人要多一点，我直播一下还有人送礼，快手基本上直播没有人看，抖音直播那个音符什么的满一元就可以提现。</p><p>能赚是能赚，但是赚不了多少，不要相信那些说月入上万的根本不可能，那些抖音直播上说自己一场直播赚多少的，其实就是为了卖他自己的课程，在咸鱼上可能卖5块钱都没有人看，他可以放在抖音上卖90多，其实买了一点用都没有，还为他增加收入，他开始的那些流水估计是刷的，后面买课程的人多了就是真的了，这都是套路来的。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 流水 </tag>
-            
-            <tag> 短视频 </tag>
-            
-            <tag> 快手 </tag>
-            
-            <tag> 赚钱 </tag>
-            
-            <tag> 直播 </tag>
-            
-            <tag> 理论上 </tag>
-            
-            <tag> 提现 </tag>
-            
-            <tag> 抖音极速版 </tag>
-            
-            <tag> 淘宝联盟 </tag>
-            
-            <tag> 保证金 </tag>
-            
-            <tag> 课程 </tag>
-            
-            <tag> 咸鱼 </tag>
             
         </tags>
       
@@ -17745,45 +17745,6 @@
     
     
     <entry>
-      <title>快手直播放电影，每天都有一块钱</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e951b666/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e951b666/</url>
-      
-        <content type="html"><![CDATA[<p>快手3月份和4月份都有这个活动，就是直播满7天每天都有一块钱，好像是5天以上就可以拿到，直播也不难，放下上面提供的电影满三个小时和两个人评论就可以。</p><span id="more"></span><p>上个月我是直播满七天，结束后是可以领到7块钱的，这次第一天没有看到消息，所以最多只有六块钱了，这个赚钱是最容易的了，虽然没有多少钱，但是有赚也不错了，完成评论有个小号就可以了，就是发两个表情的事。</p><p>放快手上面的电影不会违规侵权，快手是买了版权的，不然快手放映厅也不会放在上面。只要有多余的手机和平板电脑，只要把评论任务做了，放着就不用管都可以，当然想要24小时不停的放也是可以的。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 评论 </tag>
-            
-            <tag> 手机 </tag>
-            
-            <tag> 赚钱 </tag>
-            
-            <tag> 平板电脑 </tag>
-            
-            <tag> 快手直播 </tag>
-            
-            <tag> 放电影 </tag>
-            
-            <tag> 一块钱 </tag>
-            
-            <tag> 三个小时 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>忘记那些虚无缥缈的东西，安心的做好自己</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/5182a2b3/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/5182a2b3/</url>
@@ -17831,6 +17792,45 @@
             <tag> 头破血流 </tag>
             
             <tag> 一层伤害 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>快手直播放电影，每天都有一块钱</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e951b666/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e951b666/</url>
+      
+        <content type="html"><![CDATA[<p>快手3月份和4月份都有这个活动，就是直播满7天每天都有一块钱，好像是5天以上就可以拿到，直播也不难，放下上面提供的电影满三个小时和两个人评论就可以。</p><span id="more"></span><p>上个月我是直播满七天，结束后是可以领到7块钱的，这次第一天没有看到消息，所以最多只有六块钱了，这个赚钱是最容易的了，虽然没有多少钱，但是有赚也不错了，完成评论有个小号就可以了，就是发两个表情的事。</p><p>放快手上面的电影不会违规侵权，快手是买了版权的，不然快手放映厅也不会放在上面。只要有多余的手机和平板电脑，只要把评论任务做了，放着就不用管都可以，当然想要24小时不停的放也是可以的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 评论 </tag>
+            
+            <tag> 手机 </tag>
+            
+            <tag> 赚钱 </tag>
+            
+            <tag> 平板电脑 </tag>
+            
+            <tag> 快手直播 </tag>
+            
+            <tag> 放电影 </tag>
+            
+            <tag> 一块钱 </tag>
+            
+            <tag> 三个小时 </tag>
             
         </tags>
       
@@ -18339,6 +18339,61 @@
     
     
     <entry>
+      <title>我的mini小主机终于组装好了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d0450d61/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d0450d61/</url>
+      
+        <content type="html"><![CDATA[<p>今天电源适配器终于到了，昨天才买的今天就到了，真的发货速度很快，果然只要配件对装机也不难啊，早知道都这样分开在一家买，那早都已经装好了，插上电源适配器开机成功那一刻还是感觉挺兴奋的，看着主板粉红色的灯下亮起来是真的太漂亮了。</p><span id="more"></span><p>这或许真的就是自己装机的乐趣，比买一台整机那种感觉舒服很多。安装系统虽然也不难，但是我也是费了一点劲的，好开始是想到用那个硬盘分区软件做一个系统启动盘，结果插上U盘启动了只能进那个软件的界面。</p><p>没有办法又只能把显示器连到笔记本电脑，用微软的那个软件重新做了一个win10启动盘，做这个笔记本电脑是很慢的，大概花了一个多小时才做好。做好后就直接把U盘插在mini主机上，我这个主板是可以不用进bios设置然后就直接可以安装系统的，刚一插上去就开始安装了，安装的时候用那个分区软件分的区居然用不了，只好把那个区删了，然后重新分100G来做系统盘，因为我的m.2固态是500G的，所以分100G做系统盘也还很多余量，然后剩下的就是未分配的了，这里未分配的就进系统再分。</p><p>系统安装好了就是等着安装驱动，不知道是网速原因还是上网的人太多了，驱动是下差不多30分钟才安装完，然后就是重启。</p><p>重启以后就是激活了，激活也差点难道我了，还好我笔记本电脑里面还有激活office的那个软件，这个软件也是可以激活系统的，当然直接用U盘传过来安装不了，会被系统自动删除，还好我想到了先安装一个腾讯电脑管家，然后系统自带的安全软件就没有那么强了，电脑管家也是会删除这个软件，但是恢复就可以了，安装好后系统就直接激活了，算是一个不错的惊喜。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 组装 </tag>
+            
+            <tag> 硬盘 </tag>
+            
+            <tag> 配件 </tag>
+            
+            <tag> mini小主机 </tag>
+            
+            <tag> 电源适配器 </tag>
+            
+            <tag> 装机 </tag>
+            
+            <tag> 不难 </tag>
+            
+            <tag> 开机 </tag>
+            
+            <tag> 太漂亮 </tag>
+            
+            <tag> 安装系统 </tag>
+            
+            <tag> win10启动盘 </tag>
+            
+            <tag> m.2固态 </tag>
+            
+            <tag> 安装驱动 </tag>
+            
+            <tag> 分区软件 </tag>
+            
+            <tag> 直接激活 </tag>
+            
+            <tag> 恢复 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>我的mini小主机算是组装完成了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dcfeae6e/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/dcfeae6e/</url>
@@ -18398,61 +18453,6 @@
             <tag> 机械硬盘 </tag>
             
             <tag> 爆满 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>我的mini小主机终于组装好了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d0450d61/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d0450d61/</url>
-      
-        <content type="html"><![CDATA[<p>今天电源适配器终于到了，昨天才买的今天就到了，真的发货速度很快，果然只要配件对装机也不难啊，早知道都这样分开在一家买，那早都已经装好了，插上电源适配器开机成功那一刻还是感觉挺兴奋的，看着主板粉红色的灯下亮起来是真的太漂亮了。</p><span id="more"></span><p>这或许真的就是自己装机的乐趣，比买一台整机那种感觉舒服很多。安装系统虽然也不难，但是我也是费了一点劲的，好开始是想到用那个硬盘分区软件做一个系统启动盘，结果插上U盘启动了只能进那个软件的界面。</p><p>没有办法又只能把显示器连到笔记本电脑，用微软的那个软件重新做了一个win10启动盘，做这个笔记本电脑是很慢的，大概花了一个多小时才做好。做好后就直接把U盘插在mini主机上，我这个主板是可以不用进bios设置然后就直接可以安装系统的，刚一插上去就开始安装了，安装的时候用那个分区软件分的区居然用不了，只好把那个区删了，然后重新分100G来做系统盘，因为我的m.2固态是500G的，所以分100G做系统盘也还很多余量，然后剩下的就是未分配的了，这里未分配的就进系统再分。</p><p>系统安装好了就是等着安装驱动，不知道是网速原因还是上网的人太多了，驱动是下差不多30分钟才安装完，然后就是重启。</p><p>重启以后就是激活了，激活也差点难道我了，还好我笔记本电脑里面还有激活office的那个软件，这个软件也是可以激活系统的，当然直接用U盘传过来安装不了，会被系统自动删除，还好我想到了先安装一个腾讯电脑管家，然后系统自带的安全软件就没有那么强了，电脑管家也是会删除这个软件，但是恢复就可以了，安装好后系统就直接激活了，算是一个不错的惊喜。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 组装 </tag>
-            
-            <tag> 硬盘 </tag>
-            
-            <tag> 配件 </tag>
-            
-            <tag> mini小主机 </tag>
-            
-            <tag> 电源适配器 </tag>
-            
-            <tag> 装机 </tag>
-            
-            <tag> 不难 </tag>
-            
-            <tag> 开机 </tag>
-            
-            <tag> 太漂亮 </tag>
-            
-            <tag> 安装系统 </tag>
-            
-            <tag> win10启动盘 </tag>
-            
-            <tag> m.2固态 </tag>
-            
-            <tag> 安装驱动 </tag>
-            
-            <tag> 分区软件 </tag>
-            
-            <tag> 直接激活 </tag>
-            
-            <tag> 恢复 </tag>
             
         </tags>
       
@@ -19306,9 +19306,9 @@
             
             <tag> 小时工 </tag>
             
-            <tag> 基础 </tag>
-            
             <tag> 练习写作 </tag>
+            
+            <tag> 基础 </tag>
             
             <tag> 故事 </tag>
             
@@ -19609,45 +19609,6 @@
     
     
     <entry>
-      <title>昨天在淘宝上买了一个充电的打火机，还以为可以用来点蚊香，结果不能</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29136023/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29136023/</url>
-      
-        <content type="html"><![CDATA[<p>昨天买的时候本来就问客服了，那时候是晚上十点过了，可能是她下班了，然后就没有回我，今天一看到她的回复说是不能，不能肯定我就是退款了，她发不发货我不管了，反正我没有收到货。</p><span id="more"></span><p>虽然用的是红包没有花一分钱，但是退款了我又可以用这个红包去买其他东西它不好吗，只能用来点烟有什么用，我又不抽烟，那买回来不等于是电子垃圾了吗。</p><p>这样退款是有点慢的要两天以后平台才会自动退款，反正我是不用管它，到时候退了又用红包买其他东西就可以，客服也是同意退的，快递拦截那是她们的事，只要她没有意见平台就是自动退的，我也不用去操心什么。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 淘宝 </tag>
-            
-            <tag> 充电 </tag>
-            
-            <tag> 打火机 </tag>
-            
-            <tag> 点蚊香 </tag>
-            
-            <tag> 客服 </tag>
-            
-            <tag> 红包 </tag>
-            
-            <tag> 自动退款 </tag>
-            
-            <tag> 快递拦截 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>昨天买的4pin一分二转接线今天到了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/885df388/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/885df388/</url>
@@ -19679,6 +19640,45 @@
             <tag> 调速 </tag>
             
             <tag> 绝缘胶布 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>昨天在淘宝上买了一个充电的打火机，还以为可以用来点蚊香，结果不能</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29136023/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/29136023/</url>
+      
+        <content type="html"><![CDATA[<p>昨天买的时候本来就问客服了，那时候是晚上十点过了，可能是她下班了，然后就没有回我，今天一看到她的回复说是不能，不能肯定我就是退款了，她发不发货我不管了，反正我没有收到货。</p><span id="more"></span><p>虽然用的是红包没有花一分钱，但是退款了我又可以用这个红包去买其他东西它不好吗，只能用来点烟有什么用，我又不抽烟，那买回来不等于是电子垃圾了吗。</p><p>这样退款是有点慢的要两天以后平台才会自动退款，反正我是不用管它，到时候退了又用红包买其他东西就可以，客服也是同意退的，快递拦截那是她们的事，只要她没有意见平台就是自动退的，我也不用去操心什么。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 淘宝 </tag>
+            
+            <tag> 充电 </tag>
+            
+            <tag> 打火机 </tag>
+            
+            <tag> 点蚊香 </tag>
+            
+            <tag> 客服 </tag>
+            
+            <tag> 红包 </tag>
+            
+            <tag> 自动退款 </tag>
+            
+            <tag> 快递拦截 </tag>
             
         </tags>
       
@@ -19863,43 +19863,6 @@
     
     
     <entry>
-      <title>昨晚没有睡好今天没有精神</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9e7487b3/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9e7487b3/</url>
-      
-        <content type="html"><![CDATA[<p>昨晚突然的就身体过敏了，全身起红泡，吃了点抗过敏的药才感觉舒服点，搞得今天都没有精神坐着看视频都会看到睡着，还是上网浏览网页才会感觉清醒一点。</p><span id="more"></span><p>过敏就算了还肚子不舒服，早上吃了一颗阿莫西林胶囊才好点，因该是昨晚喝的那口茶变质有问题了，因为是晚上我没有看的拿起杯子就喝下去了，喝下去我才感觉味道不对，因那是前一天放在那里的应该是被太阳晒变质了，自然喝下去就会感觉不好了。</p><p>这种情况看来我下次还是得注意点了，不然乱喝不干净的水闹肚子是真的难受了。</p><p>明天那个转换板才发货，电脑也是还装不成，真的这种感觉也是等得让人心急，但是心急还真的吃不了热豆腐，还是得必须的乖乖等着才可以啊。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 没有精神 </tag>
-            
-            <tag> 睡着 </tag>
-            
-            <tag> 清醒 </tag>
-            
-            <tag> 昨晚 </tag>
-            
-            <tag> 身体过敏 </tag>
-            
-            <tag> 注意 </tag>
-            
-            <tag> 心急 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>昨晚的一章题做到今天还没有做完</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1b760600/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1b760600/</url>
@@ -19929,6 +19892,43 @@
             <tag> 四月十一号 </tag>
             
             <tag> 准考证 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>昨晚没有睡好今天没有精神</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9e7487b3/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9e7487b3/</url>
+      
+        <content type="html"><![CDATA[<p>昨晚突然的就身体过敏了，全身起红泡，吃了点抗过敏的药才感觉舒服点，搞得今天都没有精神坐着看视频都会看到睡着，还是上网浏览网页才会感觉清醒一点。</p><span id="more"></span><p>过敏就算了还肚子不舒服，早上吃了一颗阿莫西林胶囊才好点，因该是昨晚喝的那口茶变质有问题了，因为是晚上我没有看的拿起杯子就喝下去了，喝下去我才感觉味道不对，因那是前一天放在那里的应该是被太阳晒变质了，自然喝下去就会感觉不好了。</p><p>这种情况看来我下次还是得注意点了，不然乱喝不干净的水闹肚子是真的难受了。</p><p>明天那个转换板才发货，电脑也是还装不成，真的这种感觉也是等得让人心急，但是心急还真的吃不了热豆腐，还是得必须的乖乖等着才可以啊。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 没有精神 </tag>
+            
+            <tag> 睡着 </tag>
+            
+            <tag> 清醒 </tag>
+            
+            <tag> 昨晚 </tag>
+            
+            <tag> 身体过敏 </tag>
+            
+            <tag> 注意 </tag>
+            
+            <tag> 心急 </tag>
             
         </tags>
       
@@ -21015,47 +21015,6 @@
     
     
     <entry>
-      <title>用腾讯手游助手这个刷快手是终于不闪退了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2b996869/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2b996869/</url>
-      
-        <content type="html"><![CDATA[<p>找了很多模拟器，就这个比较稳定一点，其他的用来刷快手要么是卡，要么就直接闪退，最烦的就是闪退了，记得用那个凤凰系统，一直可以循环不停的闪退，直到要拼手速把那个软件卸载了才可以。</p><span id="more"></span><p>腾讯手游助手这个用快手是不闪退，快手极速版还是会偶尔闪退的，但就是不能用自动点击器自动刷，这个有点不好，什么都可以自动化的今天，用手动是真的很花时间。</p><p>也没有找到什么其他方法，用按键精灵录制脚本也不行，不知道还有没有什么办法可以实现自动，用这个微信是很稳了，一点都不闪退，比蓝叠那个用微信好很多，蓝叠是用微信经常闪退，但是有些软件要用微信登录就登录不了，提示说没有安装微信，明明微信就已经打开了，还说没有安装微信，也不知道用什么办法才可以。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 刷快手 </tag>
-            
-            <tag> 闪退 </tag>
-            
-            <tag> 腾讯手游助手 </tag>
-            
-            <tag> 不闪退 </tag>
-            
-            <tag> 比较稳定 </tag>
-            
-            <tag> 拼手速 </tag>
-            
-            <tag> 快手极速版 </tag>
-            
-            <tag> 按键精灵 </tag>
-            
-            <tag> 蓝叠 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>用的联通卡无端地被订购附加产品，扣我一个月9块钱话费</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1f186519/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1f186519/</url>
@@ -21105,6 +21064,47 @@
             <tag> 没有用过 </tag>
             
             <tag> 工信部投诉 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>用腾讯手游助手这个刷快手是终于不闪退了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2b996869/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2b996869/</url>
+      
+        <content type="html"><![CDATA[<p>找了很多模拟器，就这个比较稳定一点，其他的用来刷快手要么是卡，要么就直接闪退，最烦的就是闪退了，记得用那个凤凰系统，一直可以循环不停的闪退，直到要拼手速把那个软件卸载了才可以。</p><span id="more"></span><p>腾讯手游助手这个用快手是不闪退，快手极速版还是会偶尔闪退的，但就是不能用自动点击器自动刷，这个有点不好，什么都可以自动化的今天，用手动是真的很花时间。</p><p>也没有找到什么其他方法，用按键精灵录制脚本也不行，不知道还有没有什么办法可以实现自动，用这个微信是很稳了，一点都不闪退，比蓝叠那个用微信好很多，蓝叠是用微信经常闪退，但是有些软件要用微信登录就登录不了，提示说没有安装微信，明明微信就已经打开了，还说没有安装微信，也不知道用什么办法才可以。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 刷快手 </tag>
+            
+            <tag> 闪退 </tag>
+            
+            <tag> 腾讯手游助手 </tag>
+            
+            <tag> 不闪退 </tag>
+            
+            <tag> 比较稳定 </tag>
+            
+            <tag> 拼手速 </tag>
+            
+            <tag> 快手极速版 </tag>
+            
+            <tag> 按键精灵 </tag>
+            
+            <tag> 蓝叠 </tag>
             
         </tags>
       
@@ -23342,45 +23342,6 @@
     
     
     <entry>
-      <title>记录自己真实的梦境:我昨晚做了两个梦，后面一个让我感到很害怕</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/</url>
-      
-        <content type="html"><![CDATA[<p>昨晚做了两个梦，第一个是梦到两个自己从未见过的女孩，梦到自己突然回到了高中时期，梦里两个女孩是和我同班的，而且离我家不是太远，一个感觉很真实，而另外一个我感觉很模糊。</p><span id="more"></span><p>真实的这个每天放学后，我都要跟着她后面走很长一段路，直到快要走到她家对面，我只能远远的看着她，我离她家对面的中间是一条河沟，看着不远，其实实际距离是非常的远，因为我站在她家对面，中间的河沟是一个U弧形的，要从我这边走下去，然后又从她家那边走上去，这种地方我现实中是见到过的，不知道为何会出现在我的梦里，而是且时间地点也是错误的。我只能远远的在对面看着她消失在我的视野里，但是我却就是不敢跟她表白，说我喜欢她。</p><p>第二个梦是梦到自己去一个厂里上班，也不知自己怎么就没有衣服穿了，别人就随便给了我一件，我也不看是不是女人穿的，自己就胡乱穿在身上了，后来遇到厂里一个上了年纪的女人，说我身上穿的那件衣服，是一个已经逝去的女人穿的，还告诉我那个女人的名字叫邓红，说她已经病逝一年多了。我他妈顿时就是毛骨悚然，在梦中我都感到害怕了，我怎么就穿着死去女人的衣服，难怪那衣服上还有女人的味道，我顿时就被吓惊醒了，这太恐怖了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 厂里上班 </tag>
-            
-            <tag> 衣服 </tag>
-            
-            <tag> 真实 </tag>
-            
-            <tag> 两个梦 </tag>
-            
-            <tag> 同班 </tag>
-            
-            <tag> 河沟 </tag>
-            
-            <tag> 吓惊醒了 </tag>
-            
-            <tag> 太恐怖了 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>记录自己的梦境：在梦里我回到了自己读初中的那个学校</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ab9a4404/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ab9a4404/</url>
@@ -23428,6 +23389,45 @@
             <tag> 梦醒了 </tag>
             
             <tag> 天亮了 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>记录自己真实的梦境:我昨晚做了两个梦，后面一个让我感到很害怕</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/</url>
+      
+        <content type="html"><![CDATA[<p>昨晚做了两个梦，第一个是梦到两个自己从未见过的女孩，梦到自己突然回到了高中时期，梦里两个女孩是和我同班的，而且离我家不是太远，一个感觉很真实，而另外一个我感觉很模糊。</p><span id="more"></span><p>真实的这个每天放学后，我都要跟着她后面走很长一段路，直到快要走到她家对面，我只能远远的看着她，我离她家对面的中间是一条河沟，看着不远，其实实际距离是非常的远，因为我站在她家对面，中间的河沟是一个U弧形的，要从我这边走下去，然后又从她家那边走上去，这种地方我现实中是见到过的，不知道为何会出现在我的梦里，而是且时间地点也是错误的。我只能远远的在对面看着她消失在我的视野里，但是我却就是不敢跟她表白，说我喜欢她。</p><p>第二个梦是梦到自己去一个厂里上班，也不知自己怎么就没有衣服穿了，别人就随便给了我一件，我也不看是不是女人穿的，自己就胡乱穿在身上了，后来遇到厂里一个上了年纪的女人，说我身上穿的那件衣服，是一个已经逝去的女人穿的，还告诉我那个女人的名字叫邓红，说她已经病逝一年多了。我他妈顿时就是毛骨悚然，在梦中我都感到害怕了，我怎么就穿着死去女人的衣服，难怪那衣服上还有女人的味道，我顿时就被吓惊醒了，这太恐怖了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 厂里上班 </tag>
+            
+            <tag> 衣服 </tag>
+            
+            <tag> 真实 </tag>
+            
+            <tag> 两个梦 </tag>
+            
+            <tag> 同班 </tag>
+            
+            <tag> 河沟 </tag>
+            
+            <tag> 吓惊醒了 </tag>
+            
+            <tag> 太恐怖了 </tag>
             
         </tags>
       
@@ -23953,61 +23953,6 @@
     
     
     <entry>
-      <title>读《围炉夜话》其十有感</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4ecdab72/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4ecdab72/</url>
-      
-        <content type="html"><![CDATA[<p>本来不属于自己的名利，但是自己却通过不正当的手段去得到了，开始时是觉得自己的运气好，但是以后也可能会因为这件事而惹祸上身。</p><span id="more"></span><p>塞翁失马未必就是一件坏事，但是马后面不仅回来了，还带了一群马回来，这也未必就是一件好事，福祸所倚，祸福所伏，说的也正是这个道理。</p><p>一个人穷困潦倒到了极点，还能咬紧牙关继续坚持活着，这样的人是最有能耐的，当苦难过去之后，顺境必然会到来，苦难可以磨练一个人的性格，先苦后甜的幸福不属于这样的人，哪还会属于谁呢？</p><p>人的聪明才智，最主要在于忠信二字，做一个不忠不信的人就算怎么有才智，那也是无用之才，忠信二字都没有的无用之才，也很难为他人创造价值，自然也无法实现自己的人生价值。</p><p>自己的聪明才智应该是要表现在忠信二字上，而不是用灵活机变的心思来代替，只有把最基本的做到了，才能往最深层次的去扩展。</p><p>读书人好坏不单就是看成绩考了多少分，还要看品行，品行才是最重要的，品行不好的人，成绩再怎么好，这样的人培养出来了对社会也没有什么用处。</p><p>读书人该做的就是：“为天地立心，为生民立命，为往圣继绝学，为万世开太平。”要以德为本，并且身体力行地去做，并不是认为自己成绩好就能轻易做到的，要以自己的本心，心无杂念地不断去摸索，最终才能做出成功的事业。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 成绩 </tag>
-            
-            <tag> 摸索 </tag>
-            
-            <tag> 围炉夜话 </tag>
-            
-            <tag> 名利 </tag>
-            
-            <tag> 不正当 </tag>
-            
-            <tag> 运气好 </tag>
-            
-            <tag> 惹祸上身 </tag>
-            
-            <tag> 福祸所倚 </tag>
-            
-            <tag> 祸福所伏 </tag>
-            
-            <tag> 穷困潦倒 </tag>
-            
-            <tag> 磨练 </tag>
-            
-            <tag> 忠信二字 </tag>
-            
-            <tag> 聪明才智 </tag>
-            
-            <tag> 读书人 </tag>
-            
-            <tag> 培养 </tag>
-            
-            <tag> 事业 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>读《围炉夜话》其四有感</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/37b7505e/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/37b7505e/</url>
@@ -24114,6 +24059,61 @@
     
     
     <entry>
+      <title>读《围炉夜话》其十有感</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4ecdab72/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/4ecdab72/</url>
+      
+        <content type="html"><![CDATA[<p>本来不属于自己的名利，但是自己却通过不正当的手段去得到了，开始时是觉得自己的运气好，但是以后也可能会因为这件事而惹祸上身。</p><span id="more"></span><p>塞翁失马未必就是一件坏事，但是马后面不仅回来了，还带了一群马回来，这也未必就是一件好事，福祸所倚，祸福所伏，说的也正是这个道理。</p><p>一个人穷困潦倒到了极点，还能咬紧牙关继续坚持活着，这样的人是最有能耐的，当苦难过去之后，顺境必然会到来，苦难可以磨练一个人的性格，先苦后甜的幸福不属于这样的人，哪还会属于谁呢？</p><p>人的聪明才智，最主要在于忠信二字，做一个不忠不信的人就算怎么有才智，那也是无用之才，忠信二字都没有的无用之才，也很难为他人创造价值，自然也无法实现自己的人生价值。</p><p>自己的聪明才智应该是要表现在忠信二字上，而不是用灵活机变的心思来代替，只有把最基本的做到了，才能往最深层次的去扩展。</p><p>读书人好坏不单就是看成绩考了多少分，还要看品行，品行才是最重要的，品行不好的人，成绩再怎么好，这样的人培养出来了对社会也没有什么用处。</p><p>读书人该做的就是：“为天地立心，为生民立命，为往圣继绝学，为万世开太平。”要以德为本，并且身体力行地去做，并不是认为自己成绩好就能轻易做到的，要以自己的本心，心无杂念地不断去摸索，最终才能做出成功的事业。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 成绩 </tag>
+            
+            <tag> 摸索 </tag>
+            
+            <tag> 围炉夜话 </tag>
+            
+            <tag> 名利 </tag>
+            
+            <tag> 不正当 </tag>
+            
+            <tag> 运气好 </tag>
+            
+            <tag> 惹祸上身 </tag>
+            
+            <tag> 福祸所倚 </tag>
+            
+            <tag> 祸福所伏 </tag>
+            
+            <tag> 穷困潦倒 </tag>
+            
+            <tag> 磨练 </tag>
+            
+            <tag> 忠信二字 </tag>
+            
+            <tag> 聪明才智 </tag>
+            
+            <tag> 读书人 </tag>
+            
+            <tag> 培养 </tag>
+            
+            <tag> 事业 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>读围炉夜话其一有感</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/cdfc97e/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/cdfc97e/</url>
@@ -24155,53 +24155,6 @@
             <tag> 恶小 </tag>
             
             <tag> 不可逆 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>赌王去世，他的家产如何分割？</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/35e8dbf5/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/35e8dbf5/</url>
-      
-        <content type="html"><![CDATA[<p>一代赌王何鸿燊于2020年5月26日在香港养和医院逝世，享年98岁。近年关于赌王家族的5000亿家产如何分配一直争议不断，网络上和坊间也是传得纷纷扰扰，让人不知所以然。</p><span id="more"></span><p>他的家产和家族的富裕程度香港和澳门两地无人不知无人不晓，他一生4个老婆，17个子女。</p><p>第一个原配妻子黎婉华，曾是澳门第一美人，生下1男三女，其中一男何猷光1981年在葡萄牙遭遇车祸去世。2004年，黎婉华去世。</p><p>第二太太蓝琼缨，1957年开始蓝琼缨始终陪伴在“赌王”身旁，经常出席一些社交和慈善活动，蓝琼缨为何鸿燊生了1男4女。</p><p>第三太太陈婉珍，1985年何鸿燊在香港给陈婉珍买了豪宅，并公开纳她为第三房太太，陈婉珍为何鸿燊生了1男2女。</p><p>第四太太梁安琪，1986年，何鸿燊在一次舞会上认识了比自己小39岁的广州姑娘（祖籍广东三水）梁安琪。之后，梁安琪成为何鸿燊的固定舞伴，被安排到何家赌场账房做文员，还开了一家舞蹈学校，自己当老师。</p><p>1989年，梁安琪正式成为“四太太”，梁安琪为何鸿燊生了3男2女。其中最小的儿子何猷佳一直是个谜，有的人说10岁时已经夭折，也有的人说他是个智障，所以一直没有公开露面。</p><p>除去已经去世的最大的儿子何猷光和最小的儿子何猷佳外，能分到家产的包括3个太太和15个子女，究竟谁能分得最多，那就要看赌王生前的遗嘱上怎么写了，但是始终免不了一场家产分割之争的大战。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 澳门 </tag>
-            
-            <tag> 赌王 </tag>
-            
-            <tag> 家产 </tag>
-            
-            <tag> 分割 </tag>
-            
-            <tag> 何鸿燊 </tag>
-            
-            <tag> 黎婉华 </tag>
-            
-            <tag> 第一美人 </tag>
-            
-            <tag> 蓝琼缨 </tag>
-            
-            <tag> 陈婉珍 </tag>
-            
-            <tag> 梁安琪 </tag>
-            
-            <tag> 何猷光 </tag>
-            
-            <tag> 何猷佳 </tag>
             
         </tags>
       
@@ -24354,6 +24307,53 @@
             <tag> 防疫要求 </tag>
             
             <tag> 距离远 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>赌王去世，他的家产如何分割？</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/35e8dbf5/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/35e8dbf5/</url>
+      
+        <content type="html"><![CDATA[<p>一代赌王何鸿燊于2020年5月26日在香港养和医院逝世，享年98岁。近年关于赌王家族的5000亿家产如何分配一直争议不断，网络上和坊间也是传得纷纷扰扰，让人不知所以然。</p><span id="more"></span><p>他的家产和家族的富裕程度香港和澳门两地无人不知无人不晓，他一生4个老婆，17个子女。</p><p>第一个原配妻子黎婉华，曾是澳门第一美人，生下1男三女，其中一男何猷光1981年在葡萄牙遭遇车祸去世。2004年，黎婉华去世。</p><p>第二太太蓝琼缨，1957年开始蓝琼缨始终陪伴在“赌王”身旁，经常出席一些社交和慈善活动，蓝琼缨为何鸿燊生了1男4女。</p><p>第三太太陈婉珍，1985年何鸿燊在香港给陈婉珍买了豪宅，并公开纳她为第三房太太，陈婉珍为何鸿燊生了1男2女。</p><p>第四太太梁安琪，1986年，何鸿燊在一次舞会上认识了比自己小39岁的广州姑娘（祖籍广东三水）梁安琪。之后，梁安琪成为何鸿燊的固定舞伴，被安排到何家赌场账房做文员，还开了一家舞蹈学校，自己当老师。</p><p>1989年，梁安琪正式成为“四太太”，梁安琪为何鸿燊生了3男2女。其中最小的儿子何猷佳一直是个谜，有的人说10岁时已经夭折，也有的人说他是个智障，所以一直没有公开露面。</p><p>除去已经去世的最大的儿子何猷光和最小的儿子何猷佳外，能分到家产的包括3个太太和15个子女，究竟谁能分得最多，那就要看赌王生前的遗嘱上怎么写了，但是始终免不了一场家产分割之争的大战。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 澳门 </tag>
+            
+            <tag> 赌王 </tag>
+            
+            <tag> 家产 </tag>
+            
+            <tag> 分割 </tag>
+            
+            <tag> 何鸿燊 </tag>
+            
+            <tag> 黎婉华 </tag>
+            
+            <tag> 第一美人 </tag>
+            
+            <tag> 蓝琼缨 </tag>
+            
+            <tag> 陈婉珍 </tag>
+            
+            <tag> 梁安琪 </tag>
+            
+            <tag> 何猷光 </tag>
+            
+            <tag> 何猷佳 </tag>
             
         </tags>
       
