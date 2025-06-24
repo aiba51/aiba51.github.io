@@ -1,3 +1,40 @@
+#EXTM3U
+
+#EXTM3U x-tvg-url="http://epg.51zmt.top:8000/e.xml,https://epg.112114.xyz/pp.xml,https://epg.pw/xmltv/epg_lite.xml"
+#EXTINF:-1  group-title="mylist" tvg-logo="https://iptv-search.com/static/channellogo/img/CCTV1.png",CCTV1
+http://106.46.112.123:8888/hls/1/index.m3u8
+#EXTINF:-1  group-title="mylist" tvg-logo="https://iptv-search.com/static/channellogo/img/CCTV2.png",CCTV2
+http://106.46.112.123:8888/hls/2/index.m3u8
+#EXTINF:-1  group-title="mylist" tvg-logo="https://iptv-search.com/static/channellogo/img/CCTV3.png",CCTV3
+http://106.46.112.123:8888/hls/3/index.m3u8
+#EXTINF:-1  group-title="mylist" tvg-logo="https://iptv-search.com/static/channellogo/img/CCTV4.png",CCTV4
+http://106.46.112.123:8888/hls/4/index.m3u8
+#EXTINF:-1  group-title="mylist" tvg-logo="https://iptv-search.com/static/channellogo/img/CCTV5.png",CCTV5
+http://106.46.112.123:8888/hls/5/index.m3u8
+#EXTINF:-1  group-title="mylist" tvg-logo="https://iptv-search.com/static/channellogo/img/CCTV6.png",CCTV6
+http://106.46.112.123:8888/hls/6/index.m3u8
+#EXTINF:-1  group-title="mylist" tvg-logo="https://iptv-search.com/static/channellogo/img/CCTV7.png",CCTV7
+http://106.46.112.123:8888/hls/7/index.m3u8
+#EXTINF:-1  group-title="mylist" tvg-logo="https://iptv-search.com/static/channellogo/img/CCTV8.png",CCTV8
+http://106.46.112.123:8888/hls/8/index.m3u8
+#EXTINF:-1  group-title="mylist" tvg-logo="https://iptv-search.com/static/channellogo/img/CCTV9.png",CCTV9
+http://106.46.112.123:8888/hls/9/index.m3u8
+#EXTINF:-1  group-title="mylist" tvg-logo="https://iptv-search.com/static/channellogo/img/CCTV10.png",CCTV10
+http://106.46.112.123:8888/hls/10/index.m3u8
+#EXTINF:-1  group-title="mylist" tvg-logo="https://iptv-search.com/static/channellogo/img/CCTV11.png",CCTV11
+http://106.46.112.123:8888/hls/11/index.m3u8
+#EXTINF:-1  group-title="mylist" tvg-logo="https://iptv-search.com/static/channellogo/img/CCTV12.png",CCTV12
+http://106.46.112.123:8888/hls/12/index.m3u8
+#EXTINF:-1  group-title="mylist" tvg-logo="https://iptv-search.com/static/channellogo/img/CCTV13.png",CCTV13
+http://106.46.112.123:8888/hls/13/index.m3u8
+#EXTINF:-1  group-title="mylist" tvg-logo="https://iptv-search.com/static/channellogo/img/CCTV14.png",CCTV14
+http://106.46.112.123:8888/hls/14/index.m3u8
+#EXTINF:-1  group-title="mylist" tvg-logo="https://iptv-search.com/static/channellogo/img/CCTV15.png",CCTV15
+http://106.46.112.123:8888/hls/15/index.m3u8
+#EXTINF:-1  group-title="mylist" tvg-logo="https://iptv-search.com/static/channellogo/img/CCTV16.png",CCTV16
+http://58.221.214.82:9901/tsfile/live/0002_2.m3u8
+
+
 #EXTM3U x-tvg-url="https://live.fanmingming.com/e.xml"
 #EXTINF:-1 tvg-name="CGTN Radio" tvg-logo="https://live.fanmingming.com/tv/CGTN Radio.png",CGTN Radio
 http://sk.cri.cn/am846.m3u8
@@ -685,70 +722,6 @@ http://live.cooltv.top/tv/cutv.php?id=tyyygb
 http://live.cooltv.top/tv/hz.php?id=23
 #EXTINF:-1 tvg-name="石家庄音乐广播" tvg-logo="https://live.fanmingming.com/tv/石家庄音乐广播.png",石家庄音乐广播
 http://pluslive2.sjzntv.cn/aac_yygb/playlist.m3u8
-
-#EXTINF:-1,CCTV1-综合
-https://node1.olelive.com:6443/live/CCTV1HD/hls.m3u8
-
-#EXTINF:-1,CCTV2-财经
-https://node1.olelive.com:6443/live/CCTV2HD/hls.m3u8
-
-#EXTINF:-1,CCTV3-综艺
-http://58.35.70.169:10055/live/cctv03/hls.m3u8
-
-#EXTINF:-1,CCTV4-中文国际（亚）
-http://183.204.13.13/1.v.smtcdns.net/hlslive-tx-cdn.ysp.cctv.cn/ysp/2022576603.m3u8
-
-
-
-#EXTINF:-1,CCTV4K-超高清
-http://27.222.3.214/liveali-tp4k.cctv.cn/live/4K10M.stream/playlist.m3u8
-
-#EXTINF:-1,CCTV5-体育
-https://node1.olelive.com:6443/live/CCTV5HD/hls.m3u8
-
-#EXTINF:-1,CCTV5+-体育赛事
-https://node1.olelive.com:6443/live/CCTV5PHD/hls.m3u8
-
-#EXTINF:-1,CCTV6-电影1
-http://183.204.13.13/1.v.smtcdns.net/hlslive-tx-cdn.ysp.cctv.cn/ysp/2022574303.m3u8
-
-#EXTINF:-1,CCTV6-电影2
-http://58.35.70.169:10055/live/cctv06/hls.m3u8
-
-
-#EXTINF:-1,CCTV7-国防军事
-http://58.35.70.169:10055/live/cctv07/hls.m3u8
-
-#EXTINF:-1,CCTV8-电视剧
-http://58.35.70.169:10055/live/cctv08/hls.m3u8
-
-#EXTINF:-1,CCTV9-记录
-https://node1.olelive.com:6443/live/CCTV9HD/hls.m3u8
-
-#EXTINF:-1,CCTV10-科教
-http://58.35.70.169:10055/live/cctv10/hls.m3u8
-
-#EXTINF:-1,CCTV11-戏曲
-http://58.35.70.169:10055/live/cctv11/hls.m3u8
-
-#EXTINF:-1,CCTV12-社会与法
-http://183.204.13.13/1.v.smtcdns.net/hlslive-tx-cdn.ysp.cctv.cn/ysp/2022575802.m3u8
-
-#EXTINF:-1,CCTV13-新闻
-https://node1.olelive.com:6443/live/CCTV13HD/hls.m3u8
-
-#EXTINF:-1,CCTV14-少儿
-http://58.35.70.169:10055/live/cctv14/hls.m3u8
-
-#EXTINF:-1,CCTV15-音乐
-http://183.204.13.13/1.v.smtcdns.net/hlslive-tx-cdn.ysp.cctv.cn/ysp/2022575502.m3u8
-
-#EXTINF:-1,CCTV16-奥林匹克
-http://183.204.13.13/1.v.smtcdns.net/hlslive-tx-cdn.ysp.cctv.cn/ysp/2022575403.m3u8
-
-#EXTINF:-1,CCTV17-农业农村
-http://183.204.13.13/1.v.smtcdns.net/hlslive-tx-cdn.ysp.cctv.cn/ysp/2022575303.m3u8
-
 
 
 #EXTINF:-1,贵州2
