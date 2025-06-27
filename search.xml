@@ -1651,8 +1651,6 @@
       
         <tags>
             
-            <tag> 泡面 </tag>
-            
             <tag> 夜晚 </tag>
             
             <tag> 回家路 </tag>
@@ -1680,6 +1678,8 @@
             <tag> 候车大厅 </tag>
             
             <tag> 消费 </tag>
+            
+            <tag> 泡面 </tag>
             
             <tag> 大屏幕 </tag>
             
@@ -5316,11 +5316,9 @@
       
         <tags>
             
-            <tag> 中山 </tag>
+            <tag> 毕节 </tag>
             
             <tag> 珠海 </tag>
-            
-            <tag> 毕节 </tag>
             
             <tag> 坐车 </tag>
             
@@ -5333,6 +5331,8 @@
             <tag> 刷二维码 </tag>
             
             <tag> 广州 </tag>
+            
+            <tag> 中山 </tag>
             
         </tags>
       
@@ -7287,9 +7287,9 @@
             
             <tag> 海边 </tag>
             
-            <tag> 中山 </tag>
-            
             <tag> 珠海 </tag>
+            
+            <tag> 中山 </tag>
             
             <tag> 不认床 </tag>
             
@@ -7318,9 +7318,9 @@
       
         <tags>
             
-            <tag> 中山 </tag>
-            
             <tag> 珠海 </tag>
+            
+            <tag> 中山 </tag>
             
             <tag> 浪费 </tag>
             
@@ -9703,13 +9703,13 @@
       
         <tags>
             
+            <tag> 泡面 </tag>
+            
             <tag> 2020 </tag>
             
             <tag> 一开年 </tag>
             
             <tag> 委托 </tag>
-            
-            <tag> 泡面 </tag>
             
             <tag> 感染病毒 </tag>
             
@@ -11095,6 +11095,49 @@
     
     
     <entry>
+      <title>Hexo在数据文件夹里添加谷歌和百度站点验证</title>
+      <link href="/Hexo/228e7a34/"/>
+      <url>/Hexo/228e7a34/</url>
+      
+        <content type="html"><![CDATA[<p>首先在<code>source</code>文件夹下新建一个<code>_data</code>文件夹，已经建过的这一步就可以略过。然后在next配置文件里面把<code>custom_file_path</code>下面的<code>head</code>前的注释去掉。</p><span id="more"></span><p>复制下<code>_data</code>后面的<code>head.njk</code>文件名，在<code>_data</code>文件夹里面新建一个<code>head.njk</code>文件，在谷歌获得的<code>html</code>标签文件到这里面，百度也是一样。</p><p>我开始第一次是用文件验证可以，第二次我用Gitee的二级域名再用文件验证的方式就不行了，但是我用Gitee的二级域名用的标签验证是可以的，所以还是直接用标签验证的这种方法比较可靠，百度和谷歌我都用的Gitee的二级域名验证成功了，就等着被收录就可以了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 数据文件夹 </tag>
+            
+            <tag> 谷歌 </tag>
+            
+            <tag> 百度 </tag>
+            
+            <tag> source </tag>
+            
+            <tag> next配置 </tag>
+            
+            <tag> html标签 </tag>
+            
+            <tag> gitee </tag>
+            
+            <tag> 二级域名 </tag>
+            
+            <tag> 收录 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo换电脑更新，能推送上去了才算迁移成功</title>
       <link href="/Hexo/3e845146/"/>
       <url>/Hexo/3e845146/</url>
@@ -11117,11 +11160,11 @@
             
             <tag> Hexo </tag>
             
+            <tag> gitee </tag>
+            
             <tag> 推送 </tag>
             
             <tag> 迁移 </tag>
-            
-            <tag> gitee </tag>
             
             <tag> 思路 </tag>
             
@@ -11142,11 +11185,11 @@
     
     
     <entry>
-      <title>Hexo在数据文件夹里添加谷歌和百度站点验证</title>
-      <link href="/Hexo/228e7a34/"/>
-      <url>/Hexo/228e7a34/</url>
+      <title>Hexo推送失败的问题解决</title>
+      <link href="/Hexo/5cc57a7a/"/>
+      <url>/Hexo/5cc57a7a/</url>
       
-        <content type="html"><![CDATA[<p>首先在<code>source</code>文件夹下新建一个<code>_data</code>文件夹，已经建过的这一步就可以略过。然后在next配置文件里面把<code>custom_file_path</code>下面的<code>head</code>前的注释去掉。</p><span id="more"></span><p>复制下<code>_data</code>后面的<code>head.njk</code>文件名，在<code>_data</code>文件夹里面新建一个<code>head.njk</code>文件，在谷歌获得的<code>html</code>标签文件到这里面，百度也是一样。</p><p>我开始第一次是用文件验证可以，第二次我用Gitee的二级域名再用文件验证的方式就不行了，但是我用Gitee的二级域名用的标签验证是可以的，所以还是直接用标签验证的这种方法比较可靠，百度和谷歌我都用的Gitee的二级域名验证成功了，就等着被收录就可以了。</p>]]></content>
+        <content type="html"><![CDATA[<p>错误失败的问题就如以下：</p><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Unlink of file &#x27;.git/objects/pack/pack</span><br><span class="line">-<span class="number">2334</span>b<span class="number">7896</span>f1a646c<span class="number">0137</span>9d<span class="number">3725</span>4fad<span class="number">0944</span>xxxxxxxx</span><br><span class="line">idx&#x27; failed. Should I try again? (y/n)</span><br></pre></td></tr></table></figure><span id="more"></span><p>一直按y也是没有用一直重复，网上的各种方法都试过了，但是都没有用，包括重新去Git官网重新下载安装Git，问题还是没有得到解决，这个问题也是苦恼了我一个晚上，但是踏破铁鞋无觅处，得来全不费工夫，我首先就是想到查看<code>.deploy_git</code>这个文件夹的属性，因为这个文件夹每次<code>hexo d</code>它都会更新一次，这一不看属性不知道一看吓了我一跳，TM的居然占了4G多的硬盘空间，话说我这一个小博客哪来这么多的文件，这简直就是一个巨无霸了。</p><p>后面又在网上查找了一下看到说这个文件夹是可以删除的，那当然是毫不犹豫的删掉它了，再每次<code>hexo d</code>它都会重新更新一次干嘛不删掉呢，删掉之后我重新用一键编译推送命令<code>hexo clean &amp;&amp; hexo deploy</code>更新推送，这一次居然问题解决了，只是时间比平时用得多了一点。</p><p>再次打开Git刚创建的这个文件夹看了下属性，这次终于不是我被它吓一跳了，而是感到很惊喜，这一次居然只占用300多M的硬盘空间了，真后悔早知道直接把它删了重新更新就可以解决问题，还走那么多弯路，但是不能保证长期有用，估计推送次数多了，它也还会重新变成巨无霸，所以如果以后遇到同样的问题还是得删，这个应该是Git设计有问题，为了追求每次推送的速度，所以每次都是往这个文件夹里增加文件，而不是每次用新的覆盖旧的，长此以往这个文件夹就会变得越来越大，到最后大到不能再继续写入就推送失败了。这个和QQ文件夹一个原理，QQ文件夹当里面文件大一定程度，那QQ发语音都会发不了，所以这个QQ文件就需要经常的删除，这个Git也是这个原理。</p><p>推送到Github成功以后自然要在浏览器上打开网站看下有没有什么不妥的地方，这也是给我的第二个惊喜的地方，之前打开网站一直很慢还以为是Github的访问速度问题，现在看来还真的不是了，这次打开可以用秒速来形容，真的比以往的打开速度非比寻常的快，没有想到删除这个文件夹带来的还有意外惊喜，看来以后还是要经常删一下才行啊。</p><p>仔细想一想还真的是觉得不可思议，先前那么4G多的巨无霸全部推送到Github那网站速度能快才怪了，一下加载4G多的文件网速再怎么快都会感觉慢了，相当于一下子下载一个4K的电影，用迅雷下载最快也要7到8分钟才行啊，到这里这一次Hexo网站更新遇到的问题就完美的解决了，还有意外收获感觉很值得记录一下，也对以后自己和别人有帮助。</p>]]></content>
       
       
       <categories>
@@ -11158,25 +11201,41 @@
       
         <tags>
             
+            <tag> Github </tag>
+            
             <tag> Hexo </tag>
             
-            <tag> gitee </tag>
+            <tag> 推送失败 </tag>
             
-            <tag> 数据文件夹 </tag>
+            <tag> 问题解决 </tag>
             
-            <tag> 谷歌 </tag>
+            <tag> 错误 </tag>
             
-            <tag> 百度 </tag>
+            <tag> 按y </tag>
             
-            <tag> source </tag>
+            <tag> 一直重复 </tag>
             
-            <tag> next配置 </tag>
+            <tag> Unlink of file </tag>
             
-            <tag> html标签 </tag>
+            <tag> idx </tag>
             
-            <tag> 二级域名 </tag>
+            <tag> .deploy_git </tag>
             
-            <tag> 收录 </tag>
+            <tag> hexo d </tag>
+            
+            <tag> hexo clean &amp;&amp; hexo deploy </tag>
+            
+            <tag> 更新推送 </tag>
+            
+            <tag> Git </tag>
+            
+            <tag> QQ文件夹 </tag>
+            
+            <tag> 惊喜 </tag>
+            
+            <tag> 迅雷下载 </tag>
+            
+            <tag> 巨无霸 </tag>
             
         </tags>
       
@@ -11207,6 +11266,8 @@
             
             <tag> 迁移 </tag>
             
+            <tag> Git </tag>
+            
             <tag> 换电脑 </tag>
             
             <tag> mini主机 </tag>
@@ -11215,129 +11276,7 @@
             
             <tag> 安装Node.js </tag>
             
-            <tag> Git </tag>
-            
             <tag> 效果 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hexo推送失败的问题解决</title>
-      <link href="/Hexo/5cc57a7a/"/>
-      <url>/Hexo/5cc57a7a/</url>
-      
-        <content type="html"><![CDATA[<p>错误失败的问题就如以下：</p><figure class="highlight 1c"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Unlink of file &#x27;.git/objects/pack/pack</span><br><span class="line">-<span class="number">2334</span>b<span class="number">7896</span>f1a646c<span class="number">0137</span>9d<span class="number">3725</span>4fad<span class="number">0944</span>xxxxxxxx</span><br><span class="line">idx&#x27; failed. Should I try again? (y/n)</span><br></pre></td></tr></table></figure><span id="more"></span><p>一直按y也是没有用一直重复，网上的各种方法都试过了，但是都没有用，包括重新去Git官网重新下载安装Git，问题还是没有得到解决，这个问题也是苦恼了我一个晚上，但是踏破铁鞋无觅处，得来全不费工夫，我首先就是想到查看<code>.deploy_git</code>这个文件夹的属性，因为这个文件夹每次<code>hexo d</code>它都会更新一次，这一不看属性不知道一看吓了我一跳，TM的居然占了4G多的硬盘空间，话说我这一个小博客哪来这么多的文件，这简直就是一个巨无霸了。</p><p>后面又在网上查找了一下看到说这个文件夹是可以删除的，那当然是毫不犹豫的删掉它了，再每次<code>hexo d</code>它都会重新更新一次干嘛不删掉呢，删掉之后我重新用一键编译推送命令<code>hexo clean &amp;&amp; hexo deploy</code>更新推送，这一次居然问题解决了，只是时间比平时用得多了一点。</p><p>再次打开Git刚创建的这个文件夹看了下属性，这次终于不是我被它吓一跳了，而是感到很惊喜，这一次居然只占用300多M的硬盘空间了，真后悔早知道直接把它删了重新更新就可以解决问题，还走那么多弯路，但是不能保证长期有用，估计推送次数多了，它也还会重新变成巨无霸，所以如果以后遇到同样的问题还是得删，这个应该是Git设计有问题，为了追求每次推送的速度，所以每次都是往这个文件夹里增加文件，而不是每次用新的覆盖旧的，长此以往这个文件夹就会变得越来越大，到最后大到不能再继续写入就推送失败了。这个和QQ文件夹一个原理，QQ文件夹当里面文件大一定程度，那QQ发语音都会发不了，所以这个QQ文件就需要经常的删除，这个Git也是这个原理。</p><p>推送到Github成功以后自然要在浏览器上打开网站看下有没有什么不妥的地方，这也是给我的第二个惊喜的地方，之前打开网站一直很慢还以为是Github的访问速度问题，现在看来还真的不是了，这次打开可以用秒速来形容，真的比以往的打开速度非比寻常的快，没有想到删除这个文件夹带来的还有意外惊喜，看来以后还是要经常删一下才行啊。</p><p>仔细想一想还真的是觉得不可思议，先前那么4G多的巨无霸全部推送到Github那网站速度能快才怪了，一下加载4G多的文件网速再怎么快都会感觉慢了，相当于一下子下载一个4K的电影，用迅雷下载最快也要7到8分钟才行啊，到这里这一次Hexo网站更新遇到的问题就完美的解决了，还有意外收获感觉很值得记录一下，也对以后自己和别人有帮助。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Github </tag>
-            
-            <tag> Hexo </tag>
-            
-            <tag> Git </tag>
-            
-            <tag> 推送失败 </tag>
-            
-            <tag> 问题解决 </tag>
-            
-            <tag> 错误 </tag>
-            
-            <tag> 按y </tag>
-            
-            <tag> 一直重复 </tag>
-            
-            <tag> Unlink of file </tag>
-            
-            <tag> idx </tag>
-            
-            <tag> .deploy_git </tag>
-            
-            <tag> hexo d </tag>
-            
-            <tag> hexo clean &amp;&amp; hexo deploy </tag>
-            
-            <tag> 更新推送 </tag>
-            
-            <tag> QQ文件夹 </tag>
-            
-            <tag> 惊喜 </tag>
-            
-            <tag> 迅雷下载 </tag>
-            
-            <tag> 巨无霸 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hexo网站配置多个SSH-Key一起推送多个远程仓库</title>
-      <link href="/Hexo/727937ad/"/>
-      <url>/Hexo/727937ad/</url>
-      
-        <content type="html"><![CDATA[<p>我要用<code>SSH</code>密钥这种链接推送其实不是因为它方便，当然也其实很方便，只是要在不设置<code>Git</code>密码的情况下，设置<code>Git</code>密码就要每次都输密码才能推送，所以我后面设置都是留空，这样我一键推送以后就可以去做其他事了。</p><span id="more"></span><p>之前用https这个链接其实也很方便的，至于有的人说每次都要输入密码才可以，我是第一次输入过后面的推送都是不用的，因为现在的<code>win10</code>系统是可以在本地账号里面保存凭据的，有了凭据肯定是不用每次都输密码了。</p><p>所以我要换成<code>SSH</code>这种链接的推送方式不是方便和不方便的问题了，问题是<code>Github</code>不能通过<code>https</code>这种加密链接推送了，几天之前<code>Github</code>就发邮件给我说这种推送方法不能用了，当时也还没有觉得有多大的问题，后面有一天是真的就推送不了，连用了几次一键推送都是失败的，于是就下定决心在昨天把它换了。</p><p>换个推送链接说起来和做起来真的不太难，可是关键的问题是换了之后出问题了，<code>Github</code>倒是能推送上去了，但是<code>Gitee</code>这个平台的仓库就推送不上去了，当时也不知道什么原因，就想着把<code>Gitee</code>这个链接在站点配置文件里注释一下，只保留Github这个单独推送，果然单独推送确实是可以的，那么问题就只在<code>Gitee</code>这一边了。当然其实我也可以用<code>Gitee</code>这里依然保持用<code>https</code>推送，因为那样也是可以的，只是我强迫症犯了，我做事喜欢保持整齐划一，要换自然要两个都换了才行。</p><p>在网上查了一下都没有找到什么答案，最后还是去看了<code>Gitee</code>上面的帮助文档，在文档里面搜了一下关于公钥配置的问题，突然看到可以配置多个<code>SSH-Key</code>的方法：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span>. 一个Gitee</span><br><span class="line"><span class="selector-tag">b</span>. 一个Github</span><br></pre></td></tr></table></figure><p><strong>解决方法：</strong></p><p>1.生成一个<code>Gitee</code>用的<code>SSH-Key</code></p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&#x27;xxxxx@company.com&#x27;</span> -f ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之前的版本</span></span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;xxxxx@company.com&quot;</span> -f ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之后的版本</span></span><br></pre></td></tr></table></figure><p>2.生成一个<code>Github</code>用的<code>SSH-Key</code></p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&#x27;xxxxx@qq.com&#x27;</span> -f ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之前的版本</span></span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;xxxxx@qq.com&quot;</span> -f ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之后的版本</span></span><br></pre></td></tr></table></figure><p>3.在<code> ~/.ssh</code> 目录下新建一个<code>config</code>文件，添加如下内容（其中<code>Host</code>和<code>HostName</code>填写<code>git</code>服务器的域名，<code>IdentityFile</code>指定私钥的路径）。这里的<code>config</code>文件怎么创建刚开始我也是搞不懂，其实也不难，就是找到<code>~/.ssh</code>这个文件夹目录，在它里面新建一个文本文档，然后把这个文本文档的名字和后缀改成<code>config</code>，这样就创建好了这个<code>config</code>文件，然后用<code>notepad++</code>打开添加如下内容后保存。</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># gitee</span></span><br><span class="line">Host gitee.com</span><br><span class="line">HostName gitee.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment"># github</span></span><br><span class="line">Host github.com</span><br><span class="line">HostName github.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br></pre></td></tr></table></figure><p>4.添加私钥,分别按顺序输入下面的代码</p><figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ssh-agent bash</span><br><span class="line">ssh-add ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line">ssh-add ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br></pre></td></tr></table></figure><p>注意：电脑重置系统以后就算密钥还在，这几个指令也必须按顺序添加。</p><p>5.把公钥添加到远程服务器Gitee和Github<br>到这里两个平台的<code>SSH-Key</code>就配置完成了，把两个不同平台的公钥分别添加到各自的平台，用<code>notepad++</code>分别打开<code>gitee_id_rsa.pub</code>和<code>github_id_rsa.pub</code>，打开后复制到添加公钥的地方就可以。</p><p>6.用ssh命令分别测试</p><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">ssh</span> -T git<span class="variable">@gitee</span>.com</span><br><span class="line">ssh -T git<span class="variable">@github</span>.com</span><br></pre></td></tr></table></figure><p>以gitee为例，成功的话会返回下图内容<br><img data-src="/Hexo/727937ad/1.png"></p><p>7.设置推送的配置信息</p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config <span class="attr">--global</span> user<span class="selector-class">.name</span> <span class="string">&quot;yourname&quot;</span></span><br><span class="line">git config <span class="attr">--global</span> user<span class="selector-class">.email</span> <span class="string">&quot;youremail&quot;</span></span><br></pre></td></tr></table></figure><p>这里要注意<code>Gitee</code>的公钥必须要添加到个人公钥才可以，具体不能推送的问题应该也不是要配置多个<code>SSH</code>密钥的这个问题，这个报错的问题是我后面才发现的，那就是我把电脑上创建的公钥放到部署公钥那里去了，发现这个问题是因为配置了两个密钥还是不能推送，后面一看原因就是在这里，因为部署公钥只能下载不能写入，就是这个公钥只能从这里部署到其他服务器上去，而不能用这个公钥从<code>Git</code>推送写入到仓库里面。</p><p>后面才发现后面有一行如下图的小字：<br><img data-src="/Hexo/727937ad/2.png"><br>说是要添加个人公钥才能对仓库进行写操作，到这里总算搞清楚问题所在了，那就先把添加到部署公钥这个删了，点了那个蓝色一行小字，跳转过去添加个人公钥，从本地电脑<code>notepad++</code>上打开的公钥直接复制过去添加确定输入密码就可以了。</p><p>重新使用一键编译和推送，然后发现正常推送了，也不需要输入密码的操作了，是的第一次就不需要，这个确实要比<code>https</code>这种方便很多了，只要一键推送了后面的事都可以不用管了，只要它不推送失败，都没有什么问题，打开网站只要刷新一下就更新了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 更新 </tag>
-            
-            <tag> Github </tag>
-            
-            <tag> Hexo </tag>
-            
-            <tag> 配置文件 </tag>
-            
-            <tag> 推送 </tag>
-            
-            <tag> gitee </tag>
-            
-            <tag> win10 </tag>
-            
-            <tag> Git </tag>
-            
-            <tag> 网站配置 </tag>
-            
-            <tag> SSH-Key </tag>
-            
-            <tag> 远程仓库 </tag>
-            
-            <tag> SSH </tag>
-            
-            <tag> 密码 </tag>
-            
-            <tag> https </tag>
-            
-            <tag> 注释 </tag>
-            
-            <tag> 强迫症 </tag>
-            
-            <tag> 答案 </tag>
-            
-            <tag> 公钥配置 </tag>
-            
-            <tag> config </tag>
             
         </tags>
       
@@ -11383,6 +11322,67 @@
             <tag> 文章封面图 </tag>
             
             <tag> 文章模板 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hexo网站配置多个SSH-Key一起推送多个远程仓库</title>
+      <link href="/Hexo/727937ad/"/>
+      <url>/Hexo/727937ad/</url>
+      
+        <content type="html"><![CDATA[<p>我要用<code>SSH</code>密钥这种链接推送其实不是因为它方便，当然也其实很方便，只是要在不设置<code>Git</code>密码的情况下，设置<code>Git</code>密码就要每次都输密码才能推送，所以我后面设置都是留空，这样我一键推送以后就可以去做其他事了。</p><span id="more"></span><p>之前用https这个链接其实也很方便的，至于有的人说每次都要输入密码才可以，我是第一次输入过后面的推送都是不用的，因为现在的<code>win10</code>系统是可以在本地账号里面保存凭据的，有了凭据肯定是不用每次都输密码了。</p><p>所以我要换成<code>SSH</code>这种链接的推送方式不是方便和不方便的问题了，问题是<code>Github</code>不能通过<code>https</code>这种加密链接推送了，几天之前<code>Github</code>就发邮件给我说这种推送方法不能用了，当时也还没有觉得有多大的问题，后面有一天是真的就推送不了，连用了几次一键推送都是失败的，于是就下定决心在昨天把它换了。</p><p>换个推送链接说起来和做起来真的不太难，可是关键的问题是换了之后出问题了，<code>Github</code>倒是能推送上去了，但是<code>Gitee</code>这个平台的仓库就推送不上去了，当时也不知道什么原因，就想着把<code>Gitee</code>这个链接在站点配置文件里注释一下，只保留Github这个单独推送，果然单独推送确实是可以的，那么问题就只在<code>Gitee</code>这一边了。当然其实我也可以用<code>Gitee</code>这里依然保持用<code>https</code>推送，因为那样也是可以的，只是我强迫症犯了，我做事喜欢保持整齐划一，要换自然要两个都换了才行。</p><p>在网上查了一下都没有找到什么答案，最后还是去看了<code>Gitee</code>上面的帮助文档，在文档里面搜了一下关于公钥配置的问题，突然看到可以配置多个<code>SSH-Key</code>的方法：</p><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">a</span>. 一个Gitee</span><br><span class="line"><span class="selector-tag">b</span>. 一个Github</span><br></pre></td></tr></table></figure><p><strong>解决方法：</strong></p><p>1.生成一个<code>Gitee</code>用的<code>SSH-Key</code></p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&#x27;xxxxx@company.com&#x27;</span> -f ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之前的版本</span></span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;xxxxx@company.com&quot;</span> -f ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之后的版本</span></span><br></pre></td></tr></table></figure><p>2.生成一个<code>Github</code>用的<code>SSH-Key</code></p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C <span class="string">&#x27;xxxxx@qq.com&#x27;</span> -f ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之前的版本</span></span><br></pre></td></tr></table></figure><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t ed25519 -C <span class="string">&quot;xxxxx@qq.com&quot;</span> -f ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line"><span class="comment">#适用于SSH8.8之后的版本</span></span><br></pre></td></tr></table></figure><p>3.在<code> ~/.ssh</code> 目录下新建一个<code>config</code>文件，添加如下内容（其中<code>Host</code>和<code>HostName</code>填写<code>git</code>服务器的域名，<code>IdentityFile</code>指定私钥的路径）。这里的<code>config</code>文件怎么创建刚开始我也是搞不懂，其实也不难，就是找到<code>~/.ssh</code>这个文件夹目录，在它里面新建一个文本文档，然后把这个文本文档的名字和后缀改成<code>config</code>，这样就创建好了这个<code>config</code>文件，然后用<code>notepad++</code>打开添加如下内容后保存。</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># gitee</span></span><br><span class="line">Host gitee.com</span><br><span class="line">HostName gitee.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br><span class="line"><span class="comment"># github</span></span><br><span class="line">Host github.com</span><br><span class="line">HostName github.com</span><br><span class="line">PreferredAuthentications publickey</span><br><span class="line">IdentityFile ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br></pre></td></tr></table></figure><p>4.添加私钥,分别按顺序输入下面的代码</p><figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">ssh-agent bash</span><br><span class="line">ssh-add ~<span class="regexp">/.ssh/gi</span>thub_id_rsa</span><br><span class="line">ssh-add ~<span class="regexp">/.ssh/gi</span>tee_id_rsa</span><br></pre></td></tr></table></figure><p>注意：电脑重置系统以后就算密钥还在，这几个指令也必须按顺序添加。</p><p>5.把公钥添加到远程服务器Gitee和Github<br>到这里两个平台的<code>SSH-Key</code>就配置完成了，把两个不同平台的公钥分别添加到各自的平台，用<code>notepad++</code>分别打开<code>gitee_id_rsa.pub</code>和<code>github_id_rsa.pub</code>，打开后复制到添加公钥的地方就可以。</p><p>6.用ssh命令分别测试</p><figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">ssh</span> -T git<span class="variable">@gitee</span>.com</span><br><span class="line">ssh -T git<span class="variable">@github</span>.com</span><br></pre></td></tr></table></figure><p>以gitee为例，成功的话会返回下图内容<br><img data-src="/Hexo/727937ad/1.png"></p><p>7.设置推送的配置信息</p><figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config <span class="attr">--global</span> user<span class="selector-class">.name</span> <span class="string">&quot;yourname&quot;</span></span><br><span class="line">git config <span class="attr">--global</span> user<span class="selector-class">.email</span> <span class="string">&quot;youremail&quot;</span></span><br></pre></td></tr></table></figure><p>这里要注意<code>Gitee</code>的公钥必须要添加到个人公钥才可以，具体不能推送的问题应该也不是要配置多个<code>SSH</code>密钥的这个问题，这个报错的问题是我后面才发现的，那就是我把电脑上创建的公钥放到部署公钥那里去了，发现这个问题是因为配置了两个密钥还是不能推送，后面一看原因就是在这里，因为部署公钥只能下载不能写入，就是这个公钥只能从这里部署到其他服务器上去，而不能用这个公钥从<code>Git</code>推送写入到仓库里面。</p><p>后面才发现后面有一行如下图的小字：<br><img data-src="/Hexo/727937ad/2.png"><br>说是要添加个人公钥才能对仓库进行写操作，到这里总算搞清楚问题所在了，那就先把添加到部署公钥这个删了，点了那个蓝色一行小字，跳转过去添加个人公钥，从本地电脑<code>notepad++</code>上打开的公钥直接复制过去添加确定输入密码就可以了。</p><p>重新使用一键编译和推送，然后发现正常推送了，也不需要输入密码的操作了，是的第一次就不需要，这个确实要比<code>https</code>这种方便很多了，只要一键推送了后面的事都可以不用管了，只要它不推送失败，都没有什么问题，打开网站只要刷新一下就更新了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 更新 </tag>
+            
+            <tag> Github </tag>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 配置文件 </tag>
+            
+            <tag> gitee </tag>
+            
+            <tag> 推送 </tag>
+            
+            <tag> win10 </tag>
+            
+            <tag> Git </tag>
+            
+            <tag> 网站配置 </tag>
+            
+            <tag> SSH-Key </tag>
+            
+            <tag> 远程仓库 </tag>
+            
+            <tag> SSH </tag>
+            
+            <tag> 密码 </tag>
+            
+            <tag> https </tag>
+            
+            <tag> 注释 </tag>
+            
+            <tag> 强迫症 </tag>
+            
+            <tag> 答案 </tag>
+            
+            <tag> 公钥配置 </tag>
+            
+            <tag> config </tag>
             
         </tags>
       
@@ -15487,6 +15487,37 @@
     
     
     <entry>
+      <title>又不知道该写什么了，开始犯难了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/31ccc028/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/31ccc028/</url>
+      
+        <content type="html"><![CDATA[<p>写着写着就不知道该写些什么了，每到这个时候就会感觉开始犯难了，既然是不知道要想着写什么，那就不用想了，直接打字写就是了，反正想半天也是什么都想不出来，只又边写着边想才能写出来。</p><span id="more"></span><p>如果是一直只停留在一开始要写什么的思维里面，那肯定是什么都写不出来的，写东西只有动笔了才有进一步的思维，一直想但是一直都不知道写什么永远只会停留在第一步，就是想的这个阶段。</p><p>想的东西只有写在纸上，把它写出来才算是有点眉目，如果是只想但是没有动笔写，那怎么感觉都想不出什么东西。在写的过程中自然就会把想的东西慢慢理通顺了，在不知道写什么的时候直接动笔顺便写就是最好的方法。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 写什么 </tag>
+            
+            <tag> 自然 </tag>
+            
+            <tag> 犯难 </tag>
+            
+            <tag> 打字 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>去年办的澳门通行证快过期了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f2d44d2/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/f2d44d2/</url>
@@ -15516,37 +15547,6 @@
             <tag> 中国经济 </tag>
             
             <tag> 疫情 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>又不知道该写什么了，开始犯难了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/31ccc028/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/31ccc028/</url>
-      
-        <content type="html"><![CDATA[<p>写着写着就不知道该写些什么了，每到这个时候就会感觉开始犯难了，既然是不知道要想着写什么，那就不用想了，直接打字写就是了，反正想半天也是什么都想不出来，只又边写着边想才能写出来。</p><span id="more"></span><p>如果是一直只停留在一开始要写什么的思维里面，那肯定是什么都写不出来的，写东西只有动笔了才有进一步的思维，一直想但是一直都不知道写什么永远只会停留在第一步，就是想的这个阶段。</p><p>想的东西只有写在纸上，把它写出来才算是有点眉目，如果是只想但是没有动笔写，那怎么感觉都想不出什么东西。在写的过程中自然就会把想的东西慢慢理通顺了，在不知道写什么的时候直接动笔顺便写就是最好的方法。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 写什么 </tag>
-            
-            <tag> 自然 </tag>
-            
-            <tag> 犯难 </tag>
-            
-            <tag> 打字 </tag>
             
         </tags>
       
@@ -15645,6 +15645,53 @@
     
     
     <entry>
+      <title>可以免费玩Steam平台游戏的软件</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d41b06ee/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d41b06ee/</url>
+      
+        <content type="html"><![CDATA[<p>昨天晚上在一个下载网站去下载Pr的破解版，这个网站支持用迅雷下载速度非常快，才一两分钟Pr这个软件就下好了，因为是破解版的我试了下是真的可以免费用，而且破解和汉化都很简单，Pr是最好的视频剪辑软件比什么爱剪辑好很多，关键是可以免费用破解版，这下肯定是爽歪歪了。</p><span id="more"></span><p>后面我又看了这个网站还有没有其他能下载的，我在上面找了下看着还有可以下载单机游戏，于是我就想着下一个来玩一下，毕竟这下载速度这么快下个几G的单机游戏应该是没有问题的，现在能下载单机游戏的网站越来越少了，几年以前能下的下的游戏现在都不能下了，以前存在百度网盘上倒是有几个，但是每秒几十KB的下载速度怕是下载一个月都下不完。</p><p>这个网站写着可以下载单机游戏，但其实也下不了，只是下了一个游戏平台，这个游戏平台可以在上面买Steam平台的游戏，但是在这里买还不如去Steam平台买了，但是不需要买就可以免费玩一个Steam平台的游戏感觉还是不错的，就是注册之后这个网站就会送一个游戏，当然这个游戏下载和打开游玩其实是自动跳转到Steam平台去的，到底是什么原理我也搞不懂，但是这个Steam平台的账号不能直接登录Steam平台，应该就是相当于用的共享账号这么一回事。</p><p>这种平台我一共在这个网站下了两个，两个都注册了，有一个好像就是直接用微信扫码登录的，每个都可以免费领一个单机游戏，所以我一共就领了两个，一个是《灵界女孩》还有一个是《饥荒》，饥荒感觉不怎么好玩，但是感觉也不亏，在腾讯的游戏平台WeGame上买都还要花20多块钱，其实这些都是一些小游戏，算不上是3A大作，灵界女孩这个虽然只是2D的但是感觉挺好玩的，这是一款解密探险的游戏，这种游戏一般剧情都可以让人入迷。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 游戏 </tag>
+            
+            <tag> 软件 </tag>
+            
+            <tag> 注册 </tag>
+            
+            <tag> 视频剪辑 </tag>
+            
+            <tag> 免费玩 </tag>
+            
+            <tag> Steam </tag>
+            
+            <tag> 破解 </tag>
+            
+            <tag> 汉化 </tag>
+            
+            <tag> 爽歪歪 </tag>
+            
+            <tag> 灵界女孩 </tag>
+            
+            <tag> 饥荒 </tag>
+            
+            <tag> WeGame </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>可以看电视直播的神器Kodi</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/803c539a/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/803c539a/</url>
@@ -15686,53 +15733,6 @@
             <tag> 硬盘空间 </tag>
             
             <tag> Xcode </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>可以免费玩Steam平台游戏的软件</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d41b06ee/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d41b06ee/</url>
-      
-        <content type="html"><![CDATA[<p>昨天晚上在一个下载网站去下载Pr的破解版，这个网站支持用迅雷下载速度非常快，才一两分钟Pr这个软件就下好了，因为是破解版的我试了下是真的可以免费用，而且破解和汉化都很简单，Pr是最好的视频剪辑软件比什么爱剪辑好很多，关键是可以免费用破解版，这下肯定是爽歪歪了。</p><span id="more"></span><p>后面我又看了这个网站还有没有其他能下载的，我在上面找了下看着还有可以下载单机游戏，于是我就想着下一个来玩一下，毕竟这下载速度这么快下个几G的单机游戏应该是没有问题的，现在能下载单机游戏的网站越来越少了，几年以前能下的下的游戏现在都不能下了，以前存在百度网盘上倒是有几个，但是每秒几十KB的下载速度怕是下载一个月都下不完。</p><p>这个网站写着可以下载单机游戏，但其实也下不了，只是下了一个游戏平台，这个游戏平台可以在上面买Steam平台的游戏，但是在这里买还不如去Steam平台买了，但是不需要买就可以免费玩一个Steam平台的游戏感觉还是不错的，就是注册之后这个网站就会送一个游戏，当然这个游戏下载和打开游玩其实是自动跳转到Steam平台去的，到底是什么原理我也搞不懂，但是这个Steam平台的账号不能直接登录Steam平台，应该就是相当于用的共享账号这么一回事。</p><p>这种平台我一共在这个网站下了两个，两个都注册了，有一个好像就是直接用微信扫码登录的，每个都可以免费领一个单机游戏，所以我一共就领了两个，一个是《灵界女孩》还有一个是《饥荒》，饥荒感觉不怎么好玩，但是感觉也不亏，在腾讯的游戏平台WeGame上买都还要花20多块钱，其实这些都是一些小游戏，算不上是3A大作，灵界女孩这个虽然只是2D的但是感觉挺好玩的，这是一款解密探险的游戏，这种游戏一般剧情都可以让人入迷。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 游戏 </tag>
-            
-            <tag> 软件 </tag>
-            
-            <tag> 注册 </tag>
-            
-            <tag> 视频剪辑 </tag>
-            
-            <tag> 免费玩 </tag>
-            
-            <tag> Steam </tag>
-            
-            <tag> 破解 </tag>
-            
-            <tag> 汉化 </tag>
-            
-            <tag> 爽歪歪 </tag>
-            
-            <tag> 灵界女孩 </tag>
-            
-            <tag> 饥荒 </tag>
-            
-            <tag> WeGame </tag>
             
         </tags>
       
@@ -16154,6 +16154,55 @@
     
     
     <entry>
+      <title>在电脑上免费安装Office2021</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6ea82b0e/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6ea82b0e/</url>
+      
+        <content type="html"><![CDATA[<p>现在的Office办公软件已经更新到2021版本了，而在没有安装这个版本之前我还用着Office2016，连2019都没有用上，而我安装这个版本是失败了几次才安装上的，之前安装过2019版本，但是尝试过几次之后都以失败告终了，这次安装2021虽然是失败过几次，但是最终还是安装成功了。</p><span id="more"></span><p>不得不说这个版本和2016真的是有很大的不同了，最明显的就是全黑模式支持了，我用的Word以前是虽然可以调成成黑色的，但是只有边框可以是黑色的，这次这个版本是可以全黑，连编辑文字这里也是全黑了，这个是真的很爽了，在上面写文章很久也不会感觉眼睛累了。</p><p>经过我的一番修改现在的word就是最好的用来码字的工具了，之前一直都安装失败最主要的就是没有把旧版的卸载后清除激活信息，导致重新安装新版的还是会自动激活成以前的版本的，但是自从我用了Office Tool Plus这个工具以后就不一样了，用这个刚开始我也是不会用，所以才安装失败了几次才成功。</p><p>第一次是用这个安装了Office2021结果一激活还是变成2016了真的是一夜回到解放前的那种感觉，还有一次是把之前的安装的密钥也卸载了，但是却不知道怎么激活，在网上找了别人的密钥来激活，激活后发现是2019版本，而我安装的是2021，激活那里就有一个提示升级，但是点击升级又升级不了，感觉也是很无法了，最后又是重新卸载了。</p><p>卸载后又再一次重新部署安装，这次才算是真的安装成功了，而激活的方法也是很简单，就是直接安装许可证书就可以了，这次才真的让我感觉到了一丝的惊喜，什么密钥激活那些根本就不需要，只要用这个工具安装了许可证书就是自动激活的了，这最新版本用着就是舒服。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 安装 </tag>
+            
+            <tag> Office2021 </tag>
+            
+            <tag> 免费 </tag>
+            
+            <tag> 电脑上 </tag>
+            
+            <tag> office2016 </tag>
+            
+            <tag> 办公软件 </tag>
+            
+            <tag> 安装成功 </tag>
+            
+            <tag> 黑色 </tag>
+            
+            <tag> 卸载后 </tag>
+            
+            <tag> 激活信息 </tag>
+            
+            <tag> 密钥激活 </tag>
+            
+            <tag> 提示升级 </tag>
+            
+            <tag> 许可证书 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>在电脑上用安卓模拟器玩游戏，居然也不卡</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8946f069/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8946f069/</url>
@@ -16199,55 +16248,6 @@
             <tag> 狂野飙车9 </tag>
             
             <tag> 王者荣耀 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>在电脑上免费安装Office2021</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6ea82b0e/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6ea82b0e/</url>
-      
-        <content type="html"><![CDATA[<p>现在的Office办公软件已经更新到2021版本了，而在没有安装这个版本之前我还用着Office2016，连2019都没有用上，而我安装这个版本是失败了几次才安装上的，之前安装过2019版本，但是尝试过几次之后都以失败告终了，这次安装2021虽然是失败过几次，但是最终还是安装成功了。</p><span id="more"></span><p>不得不说这个版本和2016真的是有很大的不同了，最明显的就是全黑模式支持了，我用的Word以前是虽然可以调成成黑色的，但是只有边框可以是黑色的，这次这个版本是可以全黑，连编辑文字这里也是全黑了，这个是真的很爽了，在上面写文章很久也不会感觉眼睛累了。</p><p>经过我的一番修改现在的word就是最好的用来码字的工具了，之前一直都安装失败最主要的就是没有把旧版的卸载后清除激活信息，导致重新安装新版的还是会自动激活成以前的版本的，但是自从我用了Office Tool Plus这个工具以后就不一样了，用这个刚开始我也是不会用，所以才安装失败了几次才成功。</p><p>第一次是用这个安装了Office2021结果一激活还是变成2016了真的是一夜回到解放前的那种感觉，还有一次是把之前的安装的密钥也卸载了，但是却不知道怎么激活，在网上找了别人的密钥来激活，激活后发现是2019版本，而我安装的是2021，激活那里就有一个提示升级，但是点击升级又升级不了，感觉也是很无法了，最后又是重新卸载了。</p><p>卸载后又再一次重新部署安装，这次才算是真的安装成功了，而激活的方法也是很简单，就是直接安装许可证书就可以了，这次才真的让我感觉到了一丝的惊喜，什么密钥激活那些根本就不需要，只要用这个工具安装了许可证书就是自动激活的了，这最新版本用着就是舒服。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 安装 </tag>
-            
-            <tag> Office2021 </tag>
-            
-            <tag> 免费 </tag>
-            
-            <tag> 电脑上 </tag>
-            
-            <tag> office2016 </tag>
-            
-            <tag> 办公软件 </tag>
-            
-            <tag> 安装成功 </tag>
-            
-            <tag> 黑色 </tag>
-            
-            <tag> 卸载后 </tag>
-            
-            <tag> 激活信息 </tag>
-            
-            <tag> 密钥激活 </tag>
-            
-            <tag> 提示升级 </tag>
-            
-            <tag> 许可证书 </tag>
             
         </tags>
       
@@ -17514,6 +17514,57 @@
     
     
     <entry>
+      <title>很久没有写了，今天又重新开始写文章</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/61e110e8/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/61e110e8/</url>
+      
+        <content type="html"><![CDATA[<p>四月份的考试只报考一科，但是也考过了，这次是只报考了一门，因为感觉时间太紧所以就没有多报其他的，也基本上是报考了才开始学习的，所以能考过也算是很不错了，分数多一分自然是好的，就是怕突然少几分那就麻烦了，又要得重考一次。</p><span id="more"></span><p>最近是很久都没有写文章了，自从简书把我账号封了，就真的不想写了，以后再写就只发在自己的网站了，动不动就封号，谁也接受不了，写在自己网站上是自由很多了。</p><p>也有很多以前用手机写的没有发到自己网站上来，现在就是每天发几篇还是把它发到自己的网站上来，因为那都是以前一些宝贵的记忆，只有发在自己网站上才是最可靠的，发在别人的平台上，为他增加了内容结果是不领情，为了几块钱说封号就封号了，写了几年才赚它几块钱就封号，做得是真的很绝。</p><p>真的是别想赚他钱了，它是想赚写作人的钱，给它提供内容它已经不满足了，要让写作的人购买会员，真的是贪得无厌了，会员费最少青铜的一个月也是要18块钱，有这个钱我自己买个域名它不香吗，还不用受它平台的窝囊气，自己想写的都可以完全放开去写，就算我写营销文发广告，谁又管得了我，因为这是我的平台，写文章以后也得去中心化了，因为这才是每个人权利得到保障的趋势。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 简书 </tag>
+            
+            <tag> 考试 </tag>
+            
+            <tag> 四月份 </tag>
+            
+            <tag> 写文章 </tag>
+            
+            <tag> 很久 </tag>
+            
+            <tag> 报考 </tag>
+            
+            <tag> 封号 </tag>
+            
+            <tag> 重新开始 </tag>
+            
+            <tag> 时间太紧 </tag>
+            
+            <tag> 宝贵 </tag>
+            
+            <tag> 几块钱 </tag>
+            
+            <tag> 营销文 </tag>
+            
+            <tag> 窝囊气 </tag>
+            
+            <tag> 去中心化 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>当读完一本书时才会感觉有成就感</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/92bcb8ff/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/92bcb8ff/</url>
@@ -17567,11 +17618,11 @@
     
     
     <entry>
-      <title>很久没有写了，今天又重新开始写文章</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/61e110e8/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/61e110e8/</url>
+      <title>很多今天还没有完成的事</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/78cd337d/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/78cd337d/</url>
       
-        <content type="html"><![CDATA[<p>四月份的考试只报考一科，但是也考过了，这次是只报考了一门，因为感觉时间太紧所以就没有多报其他的，也基本上是报考了才开始学习的，所以能考过也算是很不错了，分数多一分自然是好的，就是怕突然少几分那就麻烦了，又要得重考一次。</p><span id="more"></span><p>最近是很久都没有写文章了，自从简书把我账号封了，就真的不想写了，以后再写就只发在自己的网站了，动不动就封号，谁也接受不了，写在自己网站上是自由很多了。</p><p>也有很多以前用手机写的没有发到自己网站上来，现在就是每天发几篇还是把它发到自己的网站上来，因为那都是以前一些宝贵的记忆，只有发在自己网站上才是最可靠的，发在别人的平台上，为他增加了内容结果是不领情，为了几块钱说封号就封号了，写了几年才赚它几块钱就封号，做得是真的很绝。</p><p>真的是别想赚他钱了，它是想赚写作人的钱，给它提供内容它已经不满足了，要让写作的人购买会员，真的是贪得无厌了，会员费最少青铜的一个月也是要18块钱，有这个钱我自己买个域名它不香吗，还不用受它平台的窝囊气，自己想写的都可以完全放开去写，就算我写营销文发广告，谁又管得了我，因为这是我的平台，写文章以后也得去中心化了，因为这才是每个人权利得到保障的趋势。</p>]]></content>
+        <content type="html"><![CDATA[<p>眼看还有几天就要考试了，可是我这进度有点更不上啊，今天本来是要做完一章题库的，结果吃了晚饭以后就拿着手机就离不了手，一看手机就是一个多小时过去了，时间过得真的快啊。</p><span id="more"></span><p>刚开始感觉做完前面的选择题，看一遍后面的主观题还来得及，本来还想着要抄写一遍的，但是连看一遍都没有完成。拿着手机就把时间忘记了，一看就22点30过了，想着还要更新文章，打开电脑但是突然又不知道要写什么。</p><p>于是就随便看了一下网页，这样一看还是不知道该写什么，时间又过去了大概半个小时，眼看就23点过几分了，想着再不写，今天怕是更新不了，于是就想着写写今天的事吧。今天要做的事没有做完，这一天就这样浪费了。</p>]]></content>
       
       
       <categories>
@@ -17583,33 +17634,21 @@
       
         <tags>
             
-            <tag> 简书 </tag>
+            <tag> 手机 </tag>
             
             <tag> 考试 </tag>
             
-            <tag> 四月份 </tag>
+            <tag> 今天 </tag>
             
-            <tag> 写文章 </tag>
+            <tag> 更新文章 </tag>
             
-            <tag> 很久 </tag>
+            <tag> 浪费 </tag>
             
-            <tag> 报考 </tag>
+            <tag> 主观题 </tag>
             
-            <tag> 封号 </tag>
+            <tag> 进度 </tag>
             
-            <tag> 重新开始 </tag>
-            
-            <tag> 时间太紧 </tag>
-            
-            <tag> 宝贵 </tag>
-            
-            <tag> 几块钱 </tag>
-            
-            <tag> 营销文 </tag>
-            
-            <tag> 窝囊气 </tag>
-            
-            <tag> 去中心化 </tag>
+            <tag> 完成 </tag>
             
         </tags>
       
@@ -17653,45 +17692,6 @@
             <tag> 搜索引擎 </tag>
             
             <tag> 逻辑步骤 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>很多今天还没有完成的事</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/78cd337d/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/78cd337d/</url>
-      
-        <content type="html"><![CDATA[<p>眼看还有几天就要考试了，可是我这进度有点更不上啊，今天本来是要做完一章题库的，结果吃了晚饭以后就拿着手机就离不了手，一看手机就是一个多小时过去了，时间过得真的快啊。</p><span id="more"></span><p>刚开始感觉做完前面的选择题，看一遍后面的主观题还来得及，本来还想着要抄写一遍的，但是连看一遍都没有完成。拿着手机就把时间忘记了，一看就22点30过了，想着还要更新文章，打开电脑但是突然又不知道要写什么。</p><p>于是就随便看了一下网页，这样一看还是不知道该写什么，时间又过去了大概半个小时，眼看就23点过几分了，想着再不写，今天怕是更新不了，于是就想着写写今天的事吧。今天要做的事没有做完，这一天就这样浪费了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 手机 </tag>
-            
-            <tag> 考试 </tag>
-            
-            <tag> 今天 </tag>
-            
-            <tag> 更新文章 </tag>
-            
-            <tag> 浪费 </tag>
-            
-            <tag> 主观题 </tag>
-            
-            <tag> 进度 </tag>
-            
-            <tag> 完成 </tag>
             
         </tags>
       
@@ -17800,45 +17800,6 @@
     
     
     <entry>
-      <title>快手直播放电影，每天都有一块钱</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e951b666/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e951b666/</url>
-      
-        <content type="html"><![CDATA[<p>快手3月份和4月份都有这个活动，就是直播满7天每天都有一块钱，好像是5天以上就可以拿到，直播也不难，放下上面提供的电影满三个小时和两个人评论就可以。</p><span id="more"></span><p>上个月我是直播满七天，结束后是可以领到7块钱的，这次第一天没有看到消息，所以最多只有六块钱了，这个赚钱是最容易的了，虽然没有多少钱，但是有赚也不错了，完成评论有个小号就可以了，就是发两个表情的事。</p><p>放快手上面的电影不会违规侵权，快手是买了版权的，不然快手放映厅也不会放在上面。只要有多余的手机和平板电脑，只要把评论任务做了，放着就不用管都可以，当然想要24小时不停的放也是可以的。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 评论 </tag>
-            
-            <tag> 手机 </tag>
-            
-            <tag> 赚钱 </tag>
-            
-            <tag> 平板电脑 </tag>
-            
-            <tag> 快手直播 </tag>
-            
-            <tag> 放电影 </tag>
-            
-            <tag> 一块钱 </tag>
-            
-            <tag> 三个小时 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>快满八万字了，估计只差这一篇了</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/5f535978/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/5f535978/</url>
@@ -17902,6 +17863,45 @@
             <tag> 个人魅力 </tag>
             
             <tag> 灵魂 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>快手直播放电影，每天都有一块钱</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e951b666/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e951b666/</url>
+      
+        <content type="html"><![CDATA[<p>快手3月份和4月份都有这个活动，就是直播满7天每天都有一块钱，好像是5天以上就可以拿到，直播也不难，放下上面提供的电影满三个小时和两个人评论就可以。</p><span id="more"></span><p>上个月我是直播满七天，结束后是可以领到7块钱的，这次第一天没有看到消息，所以最多只有六块钱了，这个赚钱是最容易的了，虽然没有多少钱，但是有赚也不错了，完成评论有个小号就可以了，就是发两个表情的事。</p><p>放快手上面的电影不会违规侵权，快手是买了版权的，不然快手放映厅也不会放在上面。只要有多余的手机和平板电脑，只要把评论任务做了，放着就不用管都可以，当然想要24小时不停的放也是可以的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 评论 </tag>
+            
+            <tag> 手机 </tag>
+            
+            <tag> 赚钱 </tag>
+            
+            <tag> 平板电脑 </tag>
+            
+            <tag> 快手直播 </tag>
+            
+            <tag> 放电影 </tag>
+            
+            <tag> 一块钱 </tag>
+            
+            <tag> 三个小时 </tag>
             
         </tags>
       
@@ -18195,67 +18195,6 @@
     
     
     <entry>
-      <title>我昨晚梦到走一条艰难的路，那条路很窄，下面却是万丈深渊</title>
-      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/62e9a13e/"/>
-      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/62e9a13e/</url>
-      
-        <content type="html"><![CDATA[<p>我昨晚睡得迷迷糊糊之中，我梦到自己坐车去一个邻县游玩，到了那地方后，突然被一个朋友拉着去赶集，说那天正是赶集的日期，现实中我们这里是五天赶一场集市，邻县估计也是这样的吧。那个拉我和他去赶集的朋友我是一点印象都没有，梦里所见到的东西有时就是如此的荒诞和奇怪，他的样子长什么样我都看不清楚，他拉着我去赶集不会是想害我吧。</p><span id="more"></span><p>后来的梦境说明了一切，他想看我能不能坚持，如果不能克服心里的障碍的话我就会在梦境里面掉下悬崖摔死。我在梦境中问他离去赶集的地方有多远？他说：“两公里，不是太远，你们县那边也有人经常来这边赶集。”到这里我算是清楚一点了，这个集市是在两县的交界处，我不是要去另外的县游玩的吗，怎么兜兜转转又回来了，肯定不是这样的，因为这不符合我一贯做事的逻辑。</p><p>既然那朋友说了只有两公里远，那我和他走路一下子估计就能赶到了。刚开始走的时候那条路虽然狭窄，但是还算很平坦，那是一片绿叶葱葱的树林，路边上是一条河，河水流得很慢，河水看起来很深，就像那片树林一样，绿得让人心生恐惧。大树茂密的叶子挡住了阳光，偶尔有几声鸟叫和几个赶集的行人走过之外再无其他的热闹可看，死一般的沉寂倒是让我的思绪宁静了不少。</p><p>穿过那片树林以后，到了真正的死亡峡谷，两公里的路程一半是前面那片安静的树林，后面的一公里是这条充满死亡气息的悬崖边缘。刚开始走的时候这悬崖边上还算能走一个人，虽然下面已经是弥漫着雾气深不见底，但还不是太让人感觉害怕，只要靠后面走用手抓着岩石凸出来的地方慢慢走，那也还是可以走过去的，真正难走的是走到悬崖的中间以后。走到悬崖中间后路越来越狭窄，甚至走到最中间大概有一段几十米的地方，路就只有手的巴掌那么宽了。走到这里时我已经是大气不敢出了，我不敢站着走了，我站起来走的话我怕被风把我一下就吹下悬崖。虽然那天的天气是风和日丽的，天空无风也无云，蓝蓝天空下的太阳无情的照晒着这悬崖边上的峡谷，白白的雾气袅绕着恐惧的人心，再加上我小时候就有的恐高症，我在太阳的照晒和雾气的弥漫中竟开始头晕了。</p><p>前方万丈悬崖深渊的恐惧令我不敢快步前进，我只能斜着身体，抓着岩壁上岩石突出的地方慢慢的向前爬行着，就这几十米的距离也不知道我爬行了多久，这可能是我这一生中走过最艰难的路了。从早上的天空中一缕晨曦走进树林到走出这几十米的悬崖已经是快到日落西去的下午了，走出这几十米的艰险历程后面的路也就越走越宽了。没有用半个钟也就走到集市的街头了，走到街头的时候我回头望了望我这一路辛苦走过来的艰险之路，只看到一片白白的雾气笼罩着整个峡谷，犹如仙境一般，在雾气的笼罩下根本就看不到悬崖边上的小路。跟着我身后走硬要拉我来赶集的那位朋友也失去了踪影，我想他要不就是掉下悬崖摔死了，要不就是自己一个人悄悄回去了，莫不是他就成仙了，鬼知道他的，我跟他又不熟，还把我害得那么惨差点丢掉性命。</p><p>走到这街头的时候我已经是满脸和满身被石头刮伤的伤痕，街头的当地人看着我说小伙子你真勇敢，他们说能从那悬崖边上的小路走上街头的不多，每个月都有不少人来赶集从那悬崖边上的小路掉下峡谷摔死。我想到此我感觉我还是幸运的，我远远看着那弥漫着白白雾气从未散去过的峡谷，脸上和身上的汗也渐渐干了，伤口也没有那么痛了。</p><p>望着那如仙气袅绕的峡谷之上，我感觉身体也渐渐凉快舒畅了很多。渐渐的我从梦中醒来，原来是天亮了清晨的气温很凉快，原来这一切都只是我的梦幻，梦醒后终归现实，直到现在我的人生中还没有这样的经历。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 情感美文 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 梦境 </tag>
-            
-            <tag> 迷迷糊糊 </tag>
-            
-            <tag> 奇怪 </tag>
-            
-            <tag> 昨晚 </tag>
-            
-            <tag> 艰难 </tag>
-            
-            <tag> 路 </tag>
-            
-            <tag> 万丈深渊 </tag>
-            
-            <tag> 邻县游玩 </tag>
-            
-            <tag> 赶集 </tag>
-            
-            <tag> 荒诞 </tag>
-            
-            <tag> 交界处 </tag>
-            
-            <tag> 绿叶葱葱 </tag>
-            
-            <tag> 死亡峡谷 </tag>
-            
-            <tag> 弥漫 </tag>
-            
-            <tag> 快步前进 </tag>
-            
-            <tag> 一缕晨曦 </tag>
-            
-            <tag> 成仙 </tag>
-            
-            <tag> 悬崖 </tag>
-            
-            <tag> 梦幻 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>我在简书写作的这些日子</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/9b55eefb/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/9b55eefb/</url>
@@ -18331,6 +18270,67 @@
             <tag> 粉丝经济 </tag>
             
             <tag> 喜好差异 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我昨晚梦到走一条艰难的路，那条路很窄，下面却是万丈深渊</title>
+      <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/62e9a13e/"/>
+      <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/62e9a13e/</url>
+      
+        <content type="html"><![CDATA[<p>我昨晚睡得迷迷糊糊之中，我梦到自己坐车去一个邻县游玩，到了那地方后，突然被一个朋友拉着去赶集，说那天正是赶集的日期，现实中我们这里是五天赶一场集市，邻县估计也是这样的吧。那个拉我和他去赶集的朋友我是一点印象都没有，梦里所见到的东西有时就是如此的荒诞和奇怪，他的样子长什么样我都看不清楚，他拉着我去赶集不会是想害我吧。</p><span id="more"></span><p>后来的梦境说明了一切，他想看我能不能坚持，如果不能克服心里的障碍的话我就会在梦境里面掉下悬崖摔死。我在梦境中问他离去赶集的地方有多远？他说：“两公里，不是太远，你们县那边也有人经常来这边赶集。”到这里我算是清楚一点了，这个集市是在两县的交界处，我不是要去另外的县游玩的吗，怎么兜兜转转又回来了，肯定不是这样的，因为这不符合我一贯做事的逻辑。</p><p>既然那朋友说了只有两公里远，那我和他走路一下子估计就能赶到了。刚开始走的时候那条路虽然狭窄，但是还算很平坦，那是一片绿叶葱葱的树林，路边上是一条河，河水流得很慢，河水看起来很深，就像那片树林一样，绿得让人心生恐惧。大树茂密的叶子挡住了阳光，偶尔有几声鸟叫和几个赶集的行人走过之外再无其他的热闹可看，死一般的沉寂倒是让我的思绪宁静了不少。</p><p>穿过那片树林以后，到了真正的死亡峡谷，两公里的路程一半是前面那片安静的树林，后面的一公里是这条充满死亡气息的悬崖边缘。刚开始走的时候这悬崖边上还算能走一个人，虽然下面已经是弥漫着雾气深不见底，但还不是太让人感觉害怕，只要靠后面走用手抓着岩石凸出来的地方慢慢走，那也还是可以走过去的，真正难走的是走到悬崖的中间以后。走到悬崖中间后路越来越狭窄，甚至走到最中间大概有一段几十米的地方，路就只有手的巴掌那么宽了。走到这里时我已经是大气不敢出了，我不敢站着走了，我站起来走的话我怕被风把我一下就吹下悬崖。虽然那天的天气是风和日丽的，天空无风也无云，蓝蓝天空下的太阳无情的照晒着这悬崖边上的峡谷，白白的雾气袅绕着恐惧的人心，再加上我小时候就有的恐高症，我在太阳的照晒和雾气的弥漫中竟开始头晕了。</p><p>前方万丈悬崖深渊的恐惧令我不敢快步前进，我只能斜着身体，抓着岩壁上岩石突出的地方慢慢的向前爬行着，就这几十米的距离也不知道我爬行了多久，这可能是我这一生中走过最艰难的路了。从早上的天空中一缕晨曦走进树林到走出这几十米的悬崖已经是快到日落西去的下午了，走出这几十米的艰险历程后面的路也就越走越宽了。没有用半个钟也就走到集市的街头了，走到街头的时候我回头望了望我这一路辛苦走过来的艰险之路，只看到一片白白的雾气笼罩着整个峡谷，犹如仙境一般，在雾气的笼罩下根本就看不到悬崖边上的小路。跟着我身后走硬要拉我来赶集的那位朋友也失去了踪影，我想他要不就是掉下悬崖摔死了，要不就是自己一个人悄悄回去了，莫不是他就成仙了，鬼知道他的，我跟他又不熟，还把我害得那么惨差点丢掉性命。</p><p>走到这街头的时候我已经是满脸和满身被石头刮伤的伤痕，街头的当地人看着我说小伙子你真勇敢，他们说能从那悬崖边上的小路走上街头的不多，每个月都有不少人来赶集从那悬崖边上的小路掉下峡谷摔死。我想到此我感觉我还是幸运的，我远远看着那弥漫着白白雾气从未散去过的峡谷，脸上和身上的汗也渐渐干了，伤口也没有那么痛了。</p><p>望着那如仙气袅绕的峡谷之上，我感觉身体也渐渐凉快舒畅了很多。渐渐的我从梦中醒来，原来是天亮了清晨的气温很凉快，原来这一切都只是我的梦幻，梦醒后终归现实，直到现在我的人生中还没有这样的经历。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 情感美文 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 梦境 </tag>
+            
+            <tag> 迷迷糊糊 </tag>
+            
+            <tag> 奇怪 </tag>
+            
+            <tag> 昨晚 </tag>
+            
+            <tag> 艰难 </tag>
+            
+            <tag> 路 </tag>
+            
+            <tag> 万丈深渊 </tag>
+            
+            <tag> 邻县游玩 </tag>
+            
+            <tag> 赶集 </tag>
+            
+            <tag> 荒诞 </tag>
+            
+            <tag> 交界处 </tag>
+            
+            <tag> 绿叶葱葱 </tag>
+            
+            <tag> 死亡峡谷 </tag>
+            
+            <tag> 弥漫 </tag>
+            
+            <tag> 快步前进 </tag>
+            
+            <tag> 一缕晨曦 </tag>
+            
+            <tag> 成仙 </tag>
+            
+            <tag> 悬崖 </tag>
+            
+            <tag> 梦幻 </tag>
             
         </tags>
       
@@ -18963,6 +18963,45 @@
     
     
     <entry>
+      <title>挖狗狗币教程是终于写好了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/fb28f637/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/fb28f637/</url>
+      
+        <content type="html"><![CDATA[<p>教程其实也不难，就是用到的截图要几张，因为我写得比较详细，所以是差不多每一步都截图并且标注说明了，所以弄起来就比较费时间一点。</p><span id="more"></span><p>但是其实做起来就真的很简单了，因为就只用到两个网站，还有安装两个软件就可以了，但是为了能让更多的人看懂我还是把每一步都做到详细的写出来，并且是用的图文并茂的形式，让人一看就一目了然。</p><p>教程是有了，但是还是需要自己去实践摸索的，不实践看了再多还是不会，可能教程也不是很全面，但是小细节的东西真的不难的，就和安装一个软件一样没有什么区别，这个也就是安装两个软件然后设置一下就可以了，教程地址就放在下面了，平台上不发了，发在我的博客网站上了，这是教程地址：<a href="https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6d36d897/%22%E6%8C%96%E7%8B%97%E7%8B%97%E5%B8%81%E6%95%99%E7%A8%8B%22">挖狗狗币教程</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> 挖狗狗币 </tag>
+            
+            <tag> 截图 </tag>
+            
+            <tag> 两个网站 </tag>
+            
+            <tag> 一目了然 </tag>
+            
+            <tag> 实践摸索 </tag>
+            
+            <tag> 博客网站 </tag>
+            
+            <tag> 教程地址 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>挖狗狗币教程</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6d36d897/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6d36d897/</url>
@@ -19010,45 +19049,6 @@
             <tag> 挖矿速度 </tag>
             
             <tag> 钱包地址 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>挖狗狗币教程是终于写好了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/fb28f637/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/fb28f637/</url>
-      
-        <content type="html"><![CDATA[<p>教程其实也不难，就是用到的截图要几张，因为我写得比较详细，所以是差不多每一步都截图并且标注说明了，所以弄起来就比较费时间一点。</p><span id="more"></span><p>但是其实做起来就真的很简单了，因为就只用到两个网站，还有安装两个软件就可以了，但是为了能让更多的人看懂我还是把每一步都做到详细的写出来，并且是用的图文并茂的形式，让人一看就一目了然。</p><p>教程是有了，但是还是需要自己去实践摸索的，不实践看了再多还是不会，可能教程也不是很全面，但是小细节的东西真的不难的，就和安装一个软件一样没有什么区别，这个也就是安装两个软件然后设置一下就可以了，教程地址就放在下面了，平台上不发了，发在我的博客网站上了，这是教程地址：<a href="https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6d36d897/%22%E6%8C%96%E7%8B%97%E7%8B%97%E5%B8%81%E6%95%99%E7%A8%8B%22">挖狗狗币教程</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-            <tag> 挖狗狗币 </tag>
-            
-            <tag> 截图 </tag>
-            
-            <tag> 两个网站 </tag>
-            
-            <tag> 一目了然 </tag>
-            
-            <tag> 实践摸索 </tag>
-            
-            <tag> 博客网站 </tag>
-            
-            <tag> 教程地址 </tag>
             
         </tags>
       
@@ -19863,43 +19863,6 @@
     
     
     <entry>
-      <title>昨晚没有睡好今天没有精神</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9e7487b3/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9e7487b3/</url>
-      
-        <content type="html"><![CDATA[<p>昨晚突然的就身体过敏了，全身起红泡，吃了点抗过敏的药才感觉舒服点，搞得今天都没有精神坐着看视频都会看到睡着，还是上网浏览网页才会感觉清醒一点。</p><span id="more"></span><p>过敏就算了还肚子不舒服，早上吃了一颗阿莫西林胶囊才好点，因该是昨晚喝的那口茶变质有问题了，因为是晚上我没有看的拿起杯子就喝下去了，喝下去我才感觉味道不对，因那是前一天放在那里的应该是被太阳晒变质了，自然喝下去就会感觉不好了。</p><p>这种情况看来我下次还是得注意点了，不然乱喝不干净的水闹肚子是真的难受了。</p><p>明天那个转换板才发货，电脑也是还装不成，真的这种感觉也是等得让人心急，但是心急还真的吃不了热豆腐，还是得必须的乖乖等着才可以啊。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 没有精神 </tag>
-            
-            <tag> 睡着 </tag>
-            
-            <tag> 清醒 </tag>
-            
-            <tag> 昨晚 </tag>
-            
-            <tag> 身体过敏 </tag>
-            
-            <tag> 注意 </tag>
-            
-            <tag> 心急 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>昨晚的一章题做到今天还没有做完</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1b760600/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1b760600/</url>
@@ -19929,6 +19892,43 @@
             <tag> 四月十一号 </tag>
             
             <tag> 准考证 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>昨晚没有睡好今天没有精神</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9e7487b3/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9e7487b3/</url>
+      
+        <content type="html"><![CDATA[<p>昨晚突然的就身体过敏了，全身起红泡，吃了点抗过敏的药才感觉舒服点，搞得今天都没有精神坐着看视频都会看到睡着，还是上网浏览网页才会感觉清醒一点。</p><span id="more"></span><p>过敏就算了还肚子不舒服，早上吃了一颗阿莫西林胶囊才好点，因该是昨晚喝的那口茶变质有问题了，因为是晚上我没有看的拿起杯子就喝下去了，喝下去我才感觉味道不对，因那是前一天放在那里的应该是被太阳晒变质了，自然喝下去就会感觉不好了。</p><p>这种情况看来我下次还是得注意点了，不然乱喝不干净的水闹肚子是真的难受了。</p><p>明天那个转换板才发货，电脑也是还装不成，真的这种感觉也是等得让人心急，但是心急还真的吃不了热豆腐，还是得必须的乖乖等着才可以啊。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 没有精神 </tag>
+            
+            <tag> 睡着 </tag>
+            
+            <tag> 清醒 </tag>
+            
+            <tag> 昨晚 </tag>
+            
+            <tag> 身体过敏 </tag>
+            
+            <tag> 注意 </tag>
+            
+            <tag> 心急 </tag>
             
         </tags>
       
@@ -19972,55 +19972,6 @@
             <tag> 倒班 </tag>
             
             <tag> 修正 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>最不值得买的电脑</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Infinity/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Infinity/</url>
-      
-        <content type="html"><![CDATA[<p>电脑的种类现在已经越来越多了，有品牌机、自己DIY组装的主机、笔记本电脑、平板电脑、一体机，一体机现在是很少看到了，七八年前好像看到有人买过，现在也没有哪个公司发布和制造一体机了，原因就是没有人买了。</p><span id="more"></span><p>说实在的这种电脑是真的很坑，首先性能很差而且也不支持后期升级，还有携带不方便，和笔记本比起来简直就是一个巨无霸，又大又厚，这种电脑随身携带一点都不方便，就像走到哪里都总是带着一个大显示器一样，还没有现在的迷你主机加一个便携显示器方便，但是自己组装的迷你机又比它的性能强了不只N倍。</p><p>现在这东西已经是老古董了吧，比笔记本出来得晚，笔记本可以说是还活得好好的，一体机早已失去了踪影，在我身边我也只看到一个人买过，当时我都搞不懂他为什么会选择买一体机那种笨重性能差的东西，现在也想不通。</p><p>放着买一台笔记本的性能和那个大家伙也一样啊，难道是为了屏幕大，那笔记本外接显示器也一样啊，估计那东西还不支持外接显示器，而且以前的电脑屏幕大多都是720P的，放在现在看着几十电子垃圾了，送人都没有人要了，最多是只能买个收破烂的按斤称。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 电脑 </tag>
-            
-            <tag> 显示器 </tag>
-            
-            <tag> 平板 </tag>
-            
-            <tag> 电子垃圾 </tag>
-            
-            <tag> 笔记本 </tag>
-            
-            <tag> 种类 </tag>
-            
-            <tag> 越来越多 </tag>
-            
-            <tag> 不值得买 </tag>
-            
-            <tag> DIY组装 </tag>
-            
-            <tag> 品牌机 </tag>
-            
-            <tag> 一体机 </tag>
-            
-            <tag> 老古董 </tag>
-            
-            <tag> 720P </tag>
             
         </tags>
       
@@ -20088,6 +20039,55 @@
             <tag> 指法 </tag>
             
             <tag> 精彩评论 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>最不值得买的电脑</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Infinity/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Infinity/</url>
+      
+        <content type="html"><![CDATA[<p>电脑的种类现在已经越来越多了，有品牌机、自己DIY组装的主机、笔记本电脑、平板电脑、一体机，一体机现在是很少看到了，七八年前好像看到有人买过，现在也没有哪个公司发布和制造一体机了，原因就是没有人买了。</p><span id="more"></span><p>说实在的这种电脑是真的很坑，首先性能很差而且也不支持后期升级，还有携带不方便，和笔记本比起来简直就是一个巨无霸，又大又厚，这种电脑随身携带一点都不方便，就像走到哪里都总是带着一个大显示器一样，还没有现在的迷你主机加一个便携显示器方便，但是自己组装的迷你机又比它的性能强了不只N倍。</p><p>现在这东西已经是老古董了吧，比笔记本出来得晚，笔记本可以说是还活得好好的，一体机早已失去了踪影，在我身边我也只看到一个人买过，当时我都搞不懂他为什么会选择买一体机那种笨重性能差的东西，现在也想不通。</p><p>放着买一台笔记本的性能和那个大家伙也一样啊，难道是为了屏幕大，那笔记本外接显示器也一样啊，估计那东西还不支持外接显示器，而且以前的电脑屏幕大多都是720P的，放在现在看着几十电子垃圾了，送人都没有人要了，最多是只能买个收破烂的按斤称。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电脑 </tag>
+            
+            <tag> 显示器 </tag>
+            
+            <tag> 平板 </tag>
+            
+            <tag> 电子垃圾 </tag>
+            
+            <tag> 笔记本 </tag>
+            
+            <tag> 种类 </tag>
+            
+            <tag> 越来越多 </tag>
+            
+            <tag> 不值得买 </tag>
+            
+            <tag> DIY组装 </tag>
+            
+            <tag> 品牌机 </tag>
+            
+            <tag> 一体机 </tag>
+            
+            <tag> 老古董 </tag>
+            
+            <tag> 720P </tag>
             
         </tags>
       
@@ -21072,6 +21072,47 @@
     
     
     <entry>
+      <title>用腾讯手游助手这个刷快手是终于不闪退了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2b996869/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2b996869/</url>
+      
+        <content type="html"><![CDATA[<p>找了很多模拟器，就这个比较稳定一点，其他的用来刷快手要么是卡，要么就直接闪退，最烦的就是闪退了，记得用那个凤凰系统，一直可以循环不停的闪退，直到要拼手速把那个软件卸载了才可以。</p><span id="more"></span><p>腾讯手游助手这个用快手是不闪退，快手极速版还是会偶尔闪退的，但就是不能用自动点击器自动刷，这个有点不好，什么都可以自动化的今天，用手动是真的很花时间。</p><p>也没有找到什么其他方法，用按键精灵录制脚本也不行，不知道还有没有什么办法可以实现自动，用这个微信是很稳了，一点都不闪退，比蓝叠那个用微信好很多，蓝叠是用微信经常闪退，但是有些软件要用微信登录就登录不了，提示说没有安装微信，明明微信就已经打开了，还说没有安装微信，也不知道用什么办法才可以。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 刷快手 </tag>
+            
+            <tag> 闪退 </tag>
+            
+            <tag> 腾讯手游助手 </tag>
+            
+            <tag> 不闪退 </tag>
+            
+            <tag> 比较稳定 </tag>
+            
+            <tag> 拼手速 </tag>
+            
+            <tag> 快手极速版 </tag>
+            
+            <tag> 按键精灵 </tag>
+            
+            <tag> 蓝叠 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>用自动点击软件刷抖音极速版赚钱</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a8e10de5/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a8e10de5/</url>
@@ -21121,47 +21162,6 @@
     
     
     <entry>
-      <title>用腾讯手游助手这个刷快手是终于不闪退了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2b996869/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2b996869/</url>
-      
-        <content type="html"><![CDATA[<p>找了很多模拟器，就这个比较稳定一点，其他的用来刷快手要么是卡，要么就直接闪退，最烦的就是闪退了，记得用那个凤凰系统，一直可以循环不停的闪退，直到要拼手速把那个软件卸载了才可以。</p><span id="more"></span><p>腾讯手游助手这个用快手是不闪退，快手极速版还是会偶尔闪退的，但就是不能用自动点击器自动刷，这个有点不好，什么都可以自动化的今天，用手动是真的很花时间。</p><p>也没有找到什么其他方法，用按键精灵录制脚本也不行，不知道还有没有什么办法可以实现自动，用这个微信是很稳了，一点都不闪退，比蓝叠那个用微信好很多，蓝叠是用微信经常闪退，但是有些软件要用微信登录就登录不了，提示说没有安装微信，明明微信就已经打开了，还说没有安装微信，也不知道用什么办法才可以。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 刷快手 </tag>
-            
-            <tag> 闪退 </tag>
-            
-            <tag> 腾讯手游助手 </tag>
-            
-            <tag> 不闪退 </tag>
-            
-            <tag> 比较稳定 </tag>
-            
-            <tag> 拼手速 </tag>
-            
-            <tag> 快手极速版 </tag>
-            
-            <tag> 按键精灵 </tag>
-            
-            <tag> 蓝叠 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>用自动点击软件刷短视频还可以给自己涨粉</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5eaac7b5/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5eaac7b5/</url>
@@ -21188,9 +21188,9 @@
             
             <tag> 抖音极速版 </tag>
             
-            <tag> 模拟滑动 </tag>
-            
             <tag> 快手极速版 </tag>
+            
+            <tag> 模拟滑动 </tag>
             
             <tag> 涨粉 </tag>
             
@@ -21374,6 +21374,43 @@
     
     
     <entry>
+      <title>疫情又严重了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9772c3db/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9772c3db/</url>
+      
+        <content type="html"><![CDATA[<p>新冠病毒也就是差不多去年这个时候爆发的，现在又开始复发了，最大原因还是因为元旦放假的原因吧，听说石家庄感染的56个人都是参加婚礼感染的，这源头应该有点难查出来了。</p><span id="more"></span><p>这个疫情好像一直都没有断过，只是天气热的时候传染率降低了，现在天气一冷病毒的存活几率就开始变高了，所以冬天还是最需要防止的，至少现在只是局部的，情况还是比去年好很多，因为只要局部不扩散，那全国也没有去年那么举国上下防控的地步。</p><p>现在虽然说已经有疫苗了，但是有效性还是需要待观察的，不是谁说打了疫苗去疫情高风险地区不用做个人防护都可以了，那样感染的机率还是非常大的，做好个人防护，常消毒，看来今还得一战呢。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 新冠病毒 </tag>
+            
+            <tag> 元旦放假 </tag>
+            
+            <tag> 存活 </tag>
+            
+            <tag> 局部 </tag>
+            
+            <tag> 防控 </tag>
+            
+            <tag> 个人防护 </tag>
+            
+            <tag> 常消毒 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>电视剧《白发》和小说《白发皇妃》的区别</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/2f437ad2/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/2f437ad2/</url>
@@ -21463,43 +21500,6 @@
             <tag> 国家命运 </tag>
             
             <tag> 不辩真假 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>疫情又严重了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9772c3db/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9772c3db/</url>
-      
-        <content type="html"><![CDATA[<p>新冠病毒也就是差不多去年这个时候爆发的，现在又开始复发了，最大原因还是因为元旦放假的原因吧，听说石家庄感染的56个人都是参加婚礼感染的，这源头应该有点难查出来了。</p><span id="more"></span><p>这个疫情好像一直都没有断过，只是天气热的时候传染率降低了，现在天气一冷病毒的存活几率就开始变高了，所以冬天还是最需要防止的，至少现在只是局部的，情况还是比去年好很多，因为只要局部不扩散，那全国也没有去年那么举国上下防控的地步。</p><p>现在虽然说已经有疫苗了，但是有效性还是需要待观察的，不是谁说打了疫苗去疫情高风险地区不用做个人防护都可以了，那样感染的机率还是非常大的，做好个人防护，常消毒，看来今还得一战呢。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 新冠病毒 </tag>
-            
-            <tag> 元旦放假 </tag>
-            
-            <tag> 存活 </tag>
-            
-            <tag> 局部 </tag>
-            
-            <tag> 防控 </tag>
-            
-            <tag> 个人防护 </tag>
-            
-            <tag> 常消毒 </tag>
             
         </tags>
       
@@ -23342,6 +23342,45 @@
     
     
     <entry>
+      <title>记录自己真实的梦境:我昨晚做了两个梦，后面一个让我感到很害怕</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/</url>
+      
+        <content type="html"><![CDATA[<p>昨晚做了两个梦，第一个是梦到两个自己从未见过的女孩，梦到自己突然回到了高中时期，梦里两个女孩是和我同班的，而且离我家不是太远，一个感觉很真实，而另外一个我感觉很模糊。</p><span id="more"></span><p>真实的这个每天放学后，我都要跟着她后面走很长一段路，直到快要走到她家对面，我只能远远的看着她，我离她家对面的中间是一条河沟，看着不远，其实实际距离是非常的远，因为我站在她家对面，中间的河沟是一个U弧形的，要从我这边走下去，然后又从她家那边走上去，这种地方我现实中是见到过的，不知道为何会出现在我的梦里，而是且时间地点也是错误的。我只能远远的在对面看着她消失在我的视野里，但是我却就是不敢跟她表白，说我喜欢她。</p><p>第二个梦是梦到自己去一个厂里上班，也不知自己怎么就没有衣服穿了，别人就随便给了我一件，我也不看是不是女人穿的，自己就胡乱穿在身上了，后来遇到厂里一个上了年纪的女人，说我身上穿的那件衣服，是一个已经逝去的女人穿的，还告诉我那个女人的名字叫邓红，说她已经病逝一年多了。我他妈顿时就是毛骨悚然，在梦中我都感到害怕了，我怎么就穿着死去女人的衣服，难怪那衣服上还有女人的味道，我顿时就被吓惊醒了，这太恐怖了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 厂里上班 </tag>
+            
+            <tag> 衣服 </tag>
+            
+            <tag> 真实 </tag>
+            
+            <tag> 两个梦 </tag>
+            
+            <tag> 同班 </tag>
+            
+            <tag> 河沟 </tag>
+            
+            <tag> 吓惊醒了 </tag>
+            
+            <tag> 太恐怖了 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>记录自己的梦境：在梦里我回到了自己读初中的那个学校</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ab9a4404/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ab9a4404/</url>
@@ -23389,45 +23428,6 @@
             <tag> 梦醒了 </tag>
             
             <tag> 天亮了 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>记录自己真实的梦境:我昨晚做了两个梦，后面一个让我感到很害怕</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/</url>
-      
-        <content type="html"><![CDATA[<p>昨晚做了两个梦，第一个是梦到两个自己从未见过的女孩，梦到自己突然回到了高中时期，梦里两个女孩是和我同班的，而且离我家不是太远，一个感觉很真实，而另外一个我感觉很模糊。</p><span id="more"></span><p>真实的这个每天放学后，我都要跟着她后面走很长一段路，直到快要走到她家对面，我只能远远的看着她，我离她家对面的中间是一条河沟，看着不远，其实实际距离是非常的远，因为我站在她家对面，中间的河沟是一个U弧形的，要从我这边走下去，然后又从她家那边走上去，这种地方我现实中是见到过的，不知道为何会出现在我的梦里，而是且时间地点也是错误的。我只能远远的在对面看着她消失在我的视野里，但是我却就是不敢跟她表白，说我喜欢她。</p><p>第二个梦是梦到自己去一个厂里上班，也不知自己怎么就没有衣服穿了，别人就随便给了我一件，我也不看是不是女人穿的，自己就胡乱穿在身上了，后来遇到厂里一个上了年纪的女人，说我身上穿的那件衣服，是一个已经逝去的女人穿的，还告诉我那个女人的名字叫邓红，说她已经病逝一年多了。我他妈顿时就是毛骨悚然，在梦中我都感到害怕了，我怎么就穿着死去女人的衣服，难怪那衣服上还有女人的味道，我顿时就被吓惊醒了，这太恐怖了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 厂里上班 </tag>
-            
-            <tag> 衣服 </tag>
-            
-            <tag> 真实 </tag>
-            
-            <tag> 两个梦 </tag>
-            
-            <tag> 同班 </tag>
-            
-            <tag> 河沟 </tag>
-            
-            <tag> 吓惊醒了 </tag>
-            
-            <tag> 太恐怖了 </tag>
             
         </tags>
       
@@ -23514,53 +23514,6 @@
     
     
     <entry>
-      <title>读《围炉夜话》其七有感</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/304f301/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/304f301/</url>
-      
-        <content type="html"><![CDATA[<p>人人都想要自己的口才极佳，都希望自己能言善变，这是好事有时候也是坏事，好事就是可以为自己赢得更多的关注，坏事就是有时候可以为自己引来杀身之祸。</p><span id="more"></span><p>七国时候的苏秦身挂六国相印，在诸侯国之间穿梭游说，可以说是红极一时，但是谁也没有想到就是因为太能说而招来杀身之祸，有的时候不是什么话都能说的，说话的前提得是先为自己保命。</p><p>说错一句话命都没有了，那这句话还值得去说吗，话多言失其实也是这样的，能言善变也要学会收敛，学会低调才是啊，不管什么东西一但到了极限，那都是会物极必反的，说话同样也是这个道理，以为自己口才好什么都说出来，殊不知得罪了多少人自己都还不知道呢。</p><p>人人都想要拥有很多的财富，但是因为财富太多而丧命的人却也有很多，追求财富让自己过上更好的生活本身是没有错的，但是一味地只想着增加自己的财富，用的手段却是为人所不耻的，那这样的财富再多对自身其实是没有好处只有坏处的，人为财死，鸟为食亡说的也正是这样。</p><p>做人不能太过于只贪恋财富，是人来支配金钱，而不是金钱来驱使人类，一旦对财富追求到了一种走火入魔的地步，那就是什么违法犯罪的事都能够做得出来。要想不被金钱卷入毁灭的深渊，有时候就得用平常之心去对待，不能太过于执迷。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 关注 </tag>
-            
-            <tag> 围炉夜话 </tag>
-            
-            <tag> 人人 </tag>
-            
-            <tag> 口才极佳 </tag>
-            
-            <tag> 苏秦 </tag>
-            
-            <tag> 六国相印 </tag>
-            
-            <tag> 穿梭游说 </tag>
-            
-            <tag> 财富 </tag>
-            
-            <tag> 丧命 </tag>
-            
-            <tag> 金钱 </tag>
-            
-            <tag> 平常之心 </tag>
-            
-            <tag> 执迷 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>读《公共关系学》一书</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a0005d8f/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/a0005d8f/</url>
@@ -23602,6 +23555,53 @@
             <tag> 心理学 </tag>
             
             <tag> 广告学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>读《围炉夜话》其七有感</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/304f301/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/304f301/</url>
+      
+        <content type="html"><![CDATA[<p>人人都想要自己的口才极佳，都希望自己能言善变，这是好事有时候也是坏事，好事就是可以为自己赢得更多的关注，坏事就是有时候可以为自己引来杀身之祸。</p><span id="more"></span><p>七国时候的苏秦身挂六国相印，在诸侯国之间穿梭游说，可以说是红极一时，但是谁也没有想到就是因为太能说而招来杀身之祸，有的时候不是什么话都能说的，说话的前提得是先为自己保命。</p><p>说错一句话命都没有了，那这句话还值得去说吗，话多言失其实也是这样的，能言善变也要学会收敛，学会低调才是啊，不管什么东西一但到了极限，那都是会物极必反的，说话同样也是这个道理，以为自己口才好什么都说出来，殊不知得罪了多少人自己都还不知道呢。</p><p>人人都想要拥有很多的财富，但是因为财富太多而丧命的人却也有很多，追求财富让自己过上更好的生活本身是没有错的，但是一味地只想着增加自己的财富，用的手段却是为人所不耻的，那这样的财富再多对自身其实是没有好处只有坏处的，人为财死，鸟为食亡说的也正是这样。</p><p>做人不能太过于只贪恋财富，是人来支配金钱，而不是金钱来驱使人类，一旦对财富追求到了一种走火入魔的地步，那就是什么违法犯罪的事都能够做得出来。要想不被金钱卷入毁灭的深渊，有时候就得用平常之心去对待，不能太过于执迷。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 关注 </tag>
+            
+            <tag> 围炉夜话 </tag>
+            
+            <tag> 人人 </tag>
+            
+            <tag> 口才极佳 </tag>
+            
+            <tag> 苏秦 </tag>
+            
+            <tag> 六国相印 </tag>
+            
+            <tag> 穿梭游说 </tag>
+            
+            <tag> 财富 </tag>
+            
+            <tag> 丧命 </tag>
+            
+            <tag> 金钱 </tag>
+            
+            <tag> 平常之心 </tag>
+            
+            <tag> 执迷 </tag>
             
         </tags>
       
