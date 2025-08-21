@@ -6,7 +6,7 @@
   <link href="https://aixz.xyz/atom.xml" rel="self"/>
   
   <link href="https://aixz.xyz/"/>
-  <updated>2024-10-04T16:29:19.000Z</updated>
+  <updated>2025-08-21T06:25:30.000Z</updated>
   <id>https://aixz.xyz/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>fastboot提取boot分区</title>
+    <link href="https://aixz.xyz/uncategorized/7617f1b0/"/>
+    <id>https://aixz.xyz/uncategorized/7617f1b0/</id>
+    <published>2025-08-21T06:25:30.000Z</published>
+    <updated>2025-08-21T06:25:30.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>fastboot提取boot分区，临时刷入修补过的通用boot，开机恢复。</p><span id="more"></span><h2 id="提取boot"><a href="#提取boot" class="headerlink" title="提取boot"></a>提取boot</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">adb devices</span></span><br><span class="line"><span class="attribute">adb reboot bootloader</span></span><br></pre></td></tr></table></figure><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">fastboot getvar current-slot</span></span><br></pre></td></tr></table></figure><p>#输出：“current-slot: b”</p><p>#一次性启动，重启恢复</p><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">fastboot</span> boot E:\摩托罗拉刷机文件\安卓<span class="number">13</span>Root文件\已修补boot\magisk_patched-<span class="number">26100</span>_kKecK.img</span><br></pre></td></tr></table></figure><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">fastboot reboot</span></span><br></pre></td></tr></table></figure><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb <span class="keyword">shell</span></span><br></pre></td></tr></table></figure><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">su</span></span><br></pre></td></tr></table></figure><figure class="highlight xl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd dev/<span class="keyword">block</span>/<span class="keyword">by</span>-<span class="keyword">name</span></span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span> -l boot_b</span><br></pre></td></tr></table></figure><p>#输出：boot_b -&gt; &#x2F;dev&#x2F;block&#x2F;sdf22</p><figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dd <span class="keyword">if</span>=<span class="regexp">/dev/</span>block/sdf22 of=<span class="regexp">/sdcard/</span>boot.img</span><br></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">&lt;p&gt;fastboot提取boot分区，临时刷入修补过的通用boot，开机恢复。&lt;/p&gt;</summary>
+    
+    
+    
+    
+    <category term="adb" scheme="https://aixz.xyz/tags/adb/"/>
+    
+    <category term="fastboot" scheme="https://aixz.xyz/tags/fastboot/"/>
+    
+    <category term="boot分区" scheme="https://aixz.xyz/tags/boot%E5%88%86%E5%8C%BA/"/>
+    
+  </entry>
   
   <entry>
     <title>别让逆来顺受害了你</title>
@@ -806,35 +829,6 @@
     <category term="耽误事" scheme="https://aixz.xyz/tags/%E8%80%BD%E8%AF%AF%E4%BA%8B/"/>
     
     <category term="环境" scheme="https://aixz.xyz/tags/%E7%8E%AF%E5%A2%83/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>轿夫的新鞋</title>
-    <link href="https://aixz.xyz/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/e7090870/"/>
-    <id>https://aixz.xyz/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/e7090870/</id>
-    <published>2023-02-23T16:16:57.000Z</published>
-    <updated>2023-02-23T16:16:57.000Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="作文题："><a href="#作文题：" class="headerlink" title="作文题："></a>作文题：</h1><p>古代有个官员对下属们讲了一件事：昨天雨后乘轿进城，轿夫穿的是双新鞋。开始，他小心地挑着干净地面落脚，后来一不小心踩进泥水里，于是便不再顾及新鞋。一个下属听后说：“终生不敢忘。”结合上面的材料，自拟题目，写一篇不少于800字的文章，文体不限，诗歌除外。</p><span id="more"></span><p>昨天雨后，天气阴沉沉的，路上泥泞不堪。有个官员要乘轿进城办事，他叫来了两个轿夫。他一眼就看出来，这两个轿夫都是穷苦人家出身，衣服破烂不堪，但是他们的脚上却都穿着双新鞋。</p><p>官员心想：“这两个人一定是刚刚买了新鞋，想要保护好它们。”于是他对他们说：“今天路上很脏，你们要小心点走，别把新鞋弄脏了。”</p><p>轿夫们听了官员的话，都点点头表示答应。然后他们抬起轿子就往城里走。</p><p>开始的时候，轿夫们都很小心地挑着干净地面落脚，尽量避开泥水和石头。但是路上实在太难走了，有时候一个不小心就会踩到一个坑里或者被一个车辙绊倒。</p><p>其中一个轿夫就遇到了这样的情况。他正走着呢，突然一只脚陷进了一个深深的水坑里。他感觉到冷冰冰的泥水浸透了他的新鞋和袜子，顺着腿流到裤子上。</p><p>他心里非常难过和生气。他想：“我的新鞋啊！我省吃俭用才买来的！现在全毁了！”</p>]]></content>
-    
-    
-    <summary type="html">&lt;h1 id=&quot;作文题：&quot;&gt;&lt;a href=&quot;#作文题：&quot; class=&quot;headerlink&quot; title=&quot;作文题：&quot;&gt;&lt;/a&gt;作文题：&lt;/h1&gt;&lt;p&gt;古代有个官员对下属们讲了一件事：昨天雨后乘轿进城，轿夫穿的是双新鞋。开始，他小心地挑着干净地面落脚，后来一不小心踩进泥水里，于是便不再顾及新鞋。一个下属听后说：“终生不敢忘。”结合上面的材料，自拟题目，写一篇不少于800字的文章，文体不限，诗歌除外。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="作文练习" scheme="https://aixz.xyz/categories/%E4%BD%9C%E6%96%87%E7%BB%83%E4%B9%A0/"/>
-    
-    
-    <category term="新鞋" scheme="https://aixz.xyz/tags/%E6%96%B0%E9%9E%8B/"/>
-    
-    <category term="轿夫" scheme="https://aixz.xyz/tags/%E8%BD%BF%E5%A4%AB/"/>
-    
-    <category term="官员" scheme="https://aixz.xyz/tags/%E5%AE%98%E5%91%98/"/>
-    
-    <category term="干净地面" scheme="https://aixz.xyz/tags/%E5%B9%B2%E5%87%80%E5%9C%B0%E9%9D%A2/"/>
-    
-    <category term="袜子" scheme="https://aixz.xyz/tags/%E8%A2%9C%E5%AD%90/"/>
     
   </entry>
   

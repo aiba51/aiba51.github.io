@@ -4,6 +4,29 @@
   
     
     <entry>
+      <title>fastboot提取boot分区</title>
+      <link href="/uncategorized/7617f1b0/"/>
+      <url>/uncategorized/7617f1b0/</url>
+      
+        <content type="html"><![CDATA[<p>fastboot提取boot分区，临时刷入修补过的通用boot，开机恢复。</p><span id="more"></span><h2 id="提取boot"><a href="#提取boot" class="headerlink" title="提取boot"></a>提取boot</h2><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">adb devices</span></span><br><span class="line"><span class="attribute">adb reboot bootloader</span></span><br></pre></td></tr></table></figure><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">fastboot getvar current-slot</span></span><br></pre></td></tr></table></figure><p>#输出：“current-slot: b”</p><p>#一次性启动，重启恢复</p><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">fastboot</span> boot E:\摩托罗拉刷机文件\安卓<span class="number">13</span>Root文件\已修补boot\magisk_patched-<span class="number">26100</span>_kKecK.img</span><br></pre></td></tr></table></figure><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">fastboot reboot</span></span><br></pre></td></tr></table></figure><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">adb <span class="keyword">shell</span></span><br></pre></td></tr></table></figure><figure class="highlight ebnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">su</span></span><br></pre></td></tr></table></figure><figure class="highlight xl"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd dev/<span class="keyword">block</span>/<span class="keyword">by</span>-<span class="keyword">name</span></span><br></pre></td></tr></table></figure><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">ls</span> -l boot_b</span><br></pre></td></tr></table></figure><p>#输出：boot_b -&gt; &#x2F;dev&#x2F;block&#x2F;sdf22</p><figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dd <span class="keyword">if</span>=<span class="regexp">/dev/</span>block/sdf22 of=<span class="regexp">/sdcard/</span>boot.img</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> adb </tag>
+            
+            <tag> fastboot </tag>
+            
+            <tag> boot分区 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>别让逆来顺受害了你</title>
       <link href="/%E6%95%A3%E6%96%87/d93034b5/"/>
       <url>/%E6%95%A3%E6%96%87/d93034b5/</url>
@@ -5098,9 +5121,9 @@
             
             <tag> 文字 </tag>
             
-            <tag> 管理心理学 </tag>
-            
             <tag> 生活 </tag>
+            
+            <tag> 管理心理学 </tag>
             
             <tag> 辅导书 </tag>
             
@@ -5316,9 +5339,11 @@
       
         <tags>
             
-            <tag> 毕节 </tag>
+            <tag> 中山 </tag>
             
             <tag> 珠海 </tag>
+            
+            <tag> 毕节 </tag>
             
             <tag> 坐车 </tag>
             
@@ -5331,8 +5356,6 @@
             <tag> 刷二维码 </tag>
             
             <tag> 广州 </tag>
-            
-            <tag> 中山 </tag>
             
         </tags>
       
@@ -7287,9 +7310,9 @@
             
             <tag> 海边 </tag>
             
-            <tag> 珠海 </tag>
-            
             <tag> 中山 </tag>
+            
+            <tag> 珠海 </tag>
             
             <tag> 不认床 </tag>
             
@@ -7318,9 +7341,9 @@
       
         <tags>
             
-            <tag> 珠海 </tag>
-            
             <tag> 中山 </tag>
+            
+            <tag> 珠海 </tag>
             
             <tag> 浪费 </tag>
             
@@ -8230,9 +8253,9 @@
             
             <tag> 坚持 </tag>
             
-            <tag> 学习 </tag>
-            
             <tag> 生活 </tag>
+            
+            <tag> 学习 </tag>
             
             <tag> 空洞 </tag>
             
@@ -11185,6 +11208,47 @@
     
     
     <entry>
+      <title>Hexo换电脑迁移</title>
+      <link href="/Hexo/cf1c7373/"/>
+      <url>/Hexo/cf1c7373/</url>
+      
+        <content type="html"><![CDATA[<p>因为自己组装好了一台mini主机了，所以就想把以前的旧电脑上的Hexo网站的文件复制到新电脑上，这里我用的是换到移动硬盘里，因为这样更新应该是比直接放在电脑的硬盘里面要好一些，毕竟移动硬盘只要在其他电脑安装了那几个程序那插上移动硬盘也是可以照样接着更新。</p><span id="more"></span><p>这个方法也很简单，就是先在新电脑上安装Node.js和Git，然后再用Git安装Hexo，安装好以后初始化到要放站点文件的移动硬盘盘符。</p><p>新电脑弄好了就开始从旧电脑复制了，这里旧电脑上先要升级一下Hexo版本和插件，主题不用升级，升级完成以后复制整个站点文件到移动硬盘刚在新电脑上安装初始化的那个文件夹，同名文件夹复制过来覆盖就可以了，比如我这里旧电脑上的网站文件的路径是&#x2F;d&#x2F;blog，但是我移动硬盘在新电脑里也刚好有个D盘，所以这里我就不用改了，就直接复制旧站点的整个blog文件夹来覆盖新建的这个就可以了。</p><p>复制完了就把移动硬盘插到新电脑上，切换到网站的根目录，然后用hexo v检查一下版本，能出现版本就说明已经迁移成功了，我这里已经是成功了并且Hexo的版本是我刚在旧电脑上更新的5.30版本，这个是目前最新的版本。</p><p>本地预览也完全没有问题，唯一不足的缺点就是以前发布的文章全部是按今天发布的来显示了，这个也没有什么好的解决办法，也只能是这样了，发这一篇文章上去就看线上的效果如何了。这里不建议一下就删除旧电脑上的站点文件，如果不行还可以从那里恢复，只要新增加的文章不是太多还是可以同步一下的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+            <tag> 路径 </tag>
+            
+            <tag> 迁移 </tag>
+            
+            <tag> 换电脑 </tag>
+            
+            <tag> mini主机 </tag>
+            
+            <tag> 移动硬盘 </tag>
+            
+            <tag> 安装Node.js </tag>
+            
+            <tag> Git </tag>
+            
+            <tag> 效果 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hexo推送失败的问题解决</title>
       <link href="/Hexo/5cc57a7a/"/>
       <url>/Hexo/5cc57a7a/</url>
@@ -11204,6 +11268,8 @@
             <tag> Github </tag>
             
             <tag> Hexo </tag>
+            
+            <tag> Git </tag>
             
             <tag> 推送失败 </tag>
             
@@ -11227,8 +11293,6 @@
             
             <tag> 更新推送 </tag>
             
-            <tag> Git </tag>
-            
             <tag> QQ文件夹 </tag>
             
             <tag> 惊喜 </tag>
@@ -11236,47 +11300,6 @@
             <tag> 迅雷下载 </tag>
             
             <tag> 巨无霸 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hexo换电脑迁移</title>
-      <link href="/Hexo/cf1c7373/"/>
-      <url>/Hexo/cf1c7373/</url>
-      
-        <content type="html"><![CDATA[<p>因为自己组装好了一台mini主机了，所以就想把以前的旧电脑上的Hexo网站的文件复制到新电脑上，这里我用的是换到移动硬盘里，因为这样更新应该是比直接放在电脑的硬盘里面要好一些，毕竟移动硬盘只要在其他电脑安装了那几个程序那插上移动硬盘也是可以照样接着更新。</p><span id="more"></span><p>这个方法也很简单，就是先在新电脑上安装Node.js和Git，然后再用Git安装Hexo，安装好以后初始化到要放站点文件的移动硬盘盘符。</p><p>新电脑弄好了就开始从旧电脑复制了，这里旧电脑上先要升级一下Hexo版本和插件，主题不用升级，升级完成以后复制整个站点文件到移动硬盘刚在新电脑上安装初始化的那个文件夹，同名文件夹复制过来覆盖就可以了，比如我这里旧电脑上的网站文件的路径是&#x2F;d&#x2F;blog，但是我移动硬盘在新电脑里也刚好有个D盘，所以这里我就不用改了，就直接复制旧站点的整个blog文件夹来覆盖新建的这个就可以了。</p><p>复制完了就把移动硬盘插到新电脑上，切换到网站的根目录，然后用hexo v检查一下版本，能出现版本就说明已经迁移成功了，我这里已经是成功了并且Hexo的版本是我刚在旧电脑上更新的5.30版本，这个是目前最新的版本。</p><p>本地预览也完全没有问题，唯一不足的缺点就是以前发布的文章全部是按今天发布的来显示了，这个也没有什么好的解决办法，也只能是这样了，发这一篇文章上去就看线上的效果如何了。这里不建议一下就删除旧电脑上的站点文件，如果不行还可以从那里恢复，只要新增加的文章不是太多还是可以同步一下的。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> Hexo </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> Hexo </tag>
-            
-            <tag> 路径 </tag>
-            
-            <tag> 迁移 </tag>
-            
-            <tag> Git </tag>
-            
-            <tag> 换电脑 </tag>
-            
-            <tag> mini主机 </tag>
-            
-            <tag> 移动硬盘 </tag>
-            
-            <tag> 安装Node.js </tag>
-            
-            <tag> 效果 </tag>
             
         </tags>
       
@@ -12843,43 +12866,6 @@
     
     
     <entry>
-      <title>人力资源管理（一）一考通论述题</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8607dead/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8607dead/</url>
-      
-        <content type="html"><![CDATA[<h2 id="四、论述题"><a href="#四、论述题" class="headerlink" title="四、论述题"></a>四、论述题</h2><p><strong>1.(1P60)试述人力资源管理的发展趋势。</strong></p><p>答:</p><p>(1).人本管理成为人力资源管理的中心思想。</p><p>(2).人力资源管理全面参与组织战略管理过程。</p><p>(3).人力资源管理全球化。</p><p>(4).人力资源管理的重心为知识型员工的管理。</p><p>(5).人力资源管理的新职能是向员工提供客户化的人力资源产品与服务。</p><span id="more"></span><p><strong>2.(9P265)试述影响薪酬水平的宏观因素。</strong></p><p>答:</p><p>(1).劳动生产率水平。员工实际平均薪酬增幅要略低于劳动生产率增幅。</p><p>(2).积累消费水平。国民收人总量既定时,薪酬水平与消费水平成正比。</p><p>(3).政府政策法规调节。主要指财政政策、货币政策、最低工资规定等。</p><p>(4).劳动力市场供求状况。劳动力供大于求,薪酬水平下降;反之亦然。</p><p>(5).物价变动。货币薪酬水平既定,物价上涨会导致实际薪酬水平下降。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 发展趋势 </tag>
-            
-            <tag> 薪酬水平 </tag>
-            
-            <tag> 中心思想 </tag>
-            
-            <tag> 全球化 </tag>
-            
-            <tag> 知识型 </tag>
-            
-            <tag> 宏观因素 </tag>
-            
-            <tag> 劳动力 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>人力资源管理（一）自考通分析说明题1</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d850f6a5/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/d850f6a5/</url>
@@ -12915,6 +12901,43 @@
             <tag> 先入为主 </tag>
             
             <tag> 互动 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>人力资源管理（一）一考通论述题</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8607dead/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/8607dead/</url>
+      
+        <content type="html"><![CDATA[<h2 id="四、论述题"><a href="#四、论述题" class="headerlink" title="四、论述题"></a>四、论述题</h2><p><strong>1.(1P60)试述人力资源管理的发展趋势。</strong></p><p>答:</p><p>(1).人本管理成为人力资源管理的中心思想。</p><p>(2).人力资源管理全面参与组织战略管理过程。</p><p>(3).人力资源管理全球化。</p><p>(4).人力资源管理的重心为知识型员工的管理。</p><p>(5).人力资源管理的新职能是向员工提供客户化的人力资源产品与服务。</p><span id="more"></span><p><strong>2.(9P265)试述影响薪酬水平的宏观因素。</strong></p><p>答:</p><p>(1).劳动生产率水平。员工实际平均薪酬增幅要略低于劳动生产率增幅。</p><p>(2).积累消费水平。国民收人总量既定时,薪酬水平与消费水平成正比。</p><p>(3).政府政策法规调节。主要指财政政策、货币政策、最低工资规定等。</p><p>(4).劳动力市场供求状况。劳动力供大于求,薪酬水平下降;反之亦然。</p><p>(5).物价变动。货币薪酬水平既定,物价上涨会导致实际薪酬水平下降。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 发展趋势 </tag>
+            
+            <tag> 薪酬水平 </tag>
+            
+            <tag> 中心思想 </tag>
+            
+            <tag> 全球化 </tag>
+            
+            <tag> 知识型 </tag>
+            
+            <tag> 宏观因素 </tag>
+            
+            <tag> 劳动力 </tag>
             
         </tags>
       
@@ -17514,57 +17537,6 @@
     
     
     <entry>
-      <title>很久没有写了，今天又重新开始写文章</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/61e110e8/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/61e110e8/</url>
-      
-        <content type="html"><![CDATA[<p>四月份的考试只报考一科，但是也考过了，这次是只报考了一门，因为感觉时间太紧所以就没有多报其他的，也基本上是报考了才开始学习的，所以能考过也算是很不错了，分数多一分自然是好的，就是怕突然少几分那就麻烦了，又要得重考一次。</p><span id="more"></span><p>最近是很久都没有写文章了，自从简书把我账号封了，就真的不想写了，以后再写就只发在自己的网站了，动不动就封号，谁也接受不了，写在自己网站上是自由很多了。</p><p>也有很多以前用手机写的没有发到自己网站上来，现在就是每天发几篇还是把它发到自己的网站上来，因为那都是以前一些宝贵的记忆，只有发在自己网站上才是最可靠的，发在别人的平台上，为他增加了内容结果是不领情，为了几块钱说封号就封号了，写了几年才赚它几块钱就封号，做得是真的很绝。</p><p>真的是别想赚他钱了，它是想赚写作人的钱，给它提供内容它已经不满足了，要让写作的人购买会员，真的是贪得无厌了，会员费最少青铜的一个月也是要18块钱，有这个钱我自己买个域名它不香吗，还不用受它平台的窝囊气，自己想写的都可以完全放开去写，就算我写营销文发广告，谁又管得了我，因为这是我的平台，写文章以后也得去中心化了，因为这才是每个人权利得到保障的趋势。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 简书 </tag>
-            
-            <tag> 考试 </tag>
-            
-            <tag> 四月份 </tag>
-            
-            <tag> 写文章 </tag>
-            
-            <tag> 很久 </tag>
-            
-            <tag> 报考 </tag>
-            
-            <tag> 封号 </tag>
-            
-            <tag> 重新开始 </tag>
-            
-            <tag> 时间太紧 </tag>
-            
-            <tag> 宝贵 </tag>
-            
-            <tag> 几块钱 </tag>
-            
-            <tag> 营销文 </tag>
-            
-            <tag> 窝囊气 </tag>
-            
-            <tag> 去中心化 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>当读完一本书时才会感觉有成就感</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/92bcb8ff/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/92bcb8ff/</url>
@@ -17618,11 +17590,11 @@
     
     
     <entry>
-      <title>很多今天还没有完成的事</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/78cd337d/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/78cd337d/</url>
+      <title>很久没有写了，今天又重新开始写文章</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/61e110e8/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/61e110e8/</url>
       
-        <content type="html"><![CDATA[<p>眼看还有几天就要考试了，可是我这进度有点更不上啊，今天本来是要做完一章题库的，结果吃了晚饭以后就拿着手机就离不了手，一看手机就是一个多小时过去了，时间过得真的快啊。</p><span id="more"></span><p>刚开始感觉做完前面的选择题，看一遍后面的主观题还来得及，本来还想着要抄写一遍的，但是连看一遍都没有完成。拿着手机就把时间忘记了，一看就22点30过了，想着还要更新文章，打开电脑但是突然又不知道要写什么。</p><p>于是就随便看了一下网页，这样一看还是不知道该写什么，时间又过去了大概半个小时，眼看就23点过几分了，想着再不写，今天怕是更新不了，于是就想着写写今天的事吧。今天要做的事没有做完，这一天就这样浪费了。</p>]]></content>
+        <content type="html"><![CDATA[<p>四月份的考试只报考一科，但是也考过了，这次是只报考了一门，因为感觉时间太紧所以就没有多报其他的，也基本上是报考了才开始学习的，所以能考过也算是很不错了，分数多一分自然是好的，就是怕突然少几分那就麻烦了，又要得重考一次。</p><span id="more"></span><p>最近是很久都没有写文章了，自从简书把我账号封了，就真的不想写了，以后再写就只发在自己的网站了，动不动就封号，谁也接受不了，写在自己网站上是自由很多了。</p><p>也有很多以前用手机写的没有发到自己网站上来，现在就是每天发几篇还是把它发到自己的网站上来，因为那都是以前一些宝贵的记忆，只有发在自己网站上才是最可靠的，发在别人的平台上，为他增加了内容结果是不领情，为了几块钱说封号就封号了，写了几年才赚它几块钱就封号，做得是真的很绝。</p><p>真的是别想赚他钱了，它是想赚写作人的钱，给它提供内容它已经不满足了，要让写作的人购买会员，真的是贪得无厌了，会员费最少青铜的一个月也是要18块钱，有这个钱我自己买个域名它不香吗，还不用受它平台的窝囊气，自己想写的都可以完全放开去写，就算我写营销文发广告，谁又管得了我，因为这是我的平台，写文章以后也得去中心化了，因为这才是每个人权利得到保障的趋势。</p>]]></content>
       
       
       <categories>
@@ -17634,21 +17606,33 @@
       
         <tags>
             
-            <tag> 手机 </tag>
+            <tag> 简书 </tag>
             
             <tag> 考试 </tag>
             
-            <tag> 今天 </tag>
+            <tag> 四月份 </tag>
             
-            <tag> 更新文章 </tag>
+            <tag> 写文章 </tag>
             
-            <tag> 浪费 </tag>
+            <tag> 很久 </tag>
             
-            <tag> 主观题 </tag>
+            <tag> 报考 </tag>
             
-            <tag> 进度 </tag>
+            <tag> 封号 </tag>
             
-            <tag> 完成 </tag>
+            <tag> 重新开始 </tag>
+            
+            <tag> 时间太紧 </tag>
+            
+            <tag> 宝贵 </tag>
+            
+            <tag> 几块钱 </tag>
+            
+            <tag> 营销文 </tag>
+            
+            <tag> 窝囊气 </tag>
+            
+            <tag> 去中心化 </tag>
             
         </tags>
       
@@ -17692,6 +17676,45 @@
             <tag> 搜索引擎 </tag>
             
             <tag> 逻辑步骤 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>很多今天还没有完成的事</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/78cd337d/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/78cd337d/</url>
+      
+        <content type="html"><![CDATA[<p>眼看还有几天就要考试了，可是我这进度有点更不上啊，今天本来是要做完一章题库的，结果吃了晚饭以后就拿着手机就离不了手，一看手机就是一个多小时过去了，时间过得真的快啊。</p><span id="more"></span><p>刚开始感觉做完前面的选择题，看一遍后面的主观题还来得及，本来还想着要抄写一遍的，但是连看一遍都没有完成。拿着手机就把时间忘记了，一看就22点30过了，想着还要更新文章，打开电脑但是突然又不知道要写什么。</p><p>于是就随便看了一下网页，这样一看还是不知道该写什么，时间又过去了大概半个小时，眼看就23点过几分了，想着再不写，今天怕是更新不了，于是就想着写写今天的事吧。今天要做的事没有做完，这一天就这样浪费了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 手机 </tag>
+            
+            <tag> 考试 </tag>
+            
+            <tag> 今天 </tag>
+            
+            <tag> 更新文章 </tag>
+            
+            <tag> 浪费 </tag>
+            
+            <tag> 主观题 </tag>
+            
+            <tag> 进度 </tag>
+            
+            <tag> 完成 </tag>
             
         </tags>
       
@@ -17800,6 +17823,45 @@
     
     
     <entry>
+      <title>快手直播放电影，每天都有一块钱</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e951b666/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e951b666/</url>
+      
+        <content type="html"><![CDATA[<p>快手3月份和4月份都有这个活动，就是直播满7天每天都有一块钱，好像是5天以上就可以拿到，直播也不难，放下上面提供的电影满三个小时和两个人评论就可以。</p><span id="more"></span><p>上个月我是直播满七天，结束后是可以领到7块钱的，这次第一天没有看到消息，所以最多只有六块钱了，这个赚钱是最容易的了，虽然没有多少钱，但是有赚也不错了，完成评论有个小号就可以了，就是发两个表情的事。</p><p>放快手上面的电影不会违规侵权，快手是买了版权的，不然快手放映厅也不会放在上面。只要有多余的手机和平板电脑，只要把评论任务做了，放着就不用管都可以，当然想要24小时不停的放也是可以的。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 评论 </tag>
+            
+            <tag> 手机 </tag>
+            
+            <tag> 赚钱 </tag>
+            
+            <tag> 平板电脑 </tag>
+            
+            <tag> 快手直播 </tag>
+            
+            <tag> 放电影 </tag>
+            
+            <tag> 一块钱 </tag>
+            
+            <tag> 三个小时 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>快满八万字了，估计只差这一篇了</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/5f535978/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/5f535978/</url>
@@ -17863,45 +17925,6 @@
             <tag> 个人魅力 </tag>
             
             <tag> 灵魂 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>快手直播放电影，每天都有一块钱</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e951b666/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e951b666/</url>
-      
-        <content type="html"><![CDATA[<p>快手3月份和4月份都有这个活动，就是直播满7天每天都有一块钱，好像是5天以上就可以拿到，直播也不难，放下上面提供的电影满三个小时和两个人评论就可以。</p><span id="more"></span><p>上个月我是直播满七天，结束后是可以领到7块钱的，这次第一天没有看到消息，所以最多只有六块钱了，这个赚钱是最容易的了，虽然没有多少钱，但是有赚也不错了，完成评论有个小号就可以了，就是发两个表情的事。</p><p>放快手上面的电影不会违规侵权，快手是买了版权的，不然快手放映厅也不会放在上面。只要有多余的手机和平板电脑，只要把评论任务做了，放着就不用管都可以，当然想要24小时不停的放也是可以的。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 评论 </tag>
-            
-            <tag> 手机 </tag>
-            
-            <tag> 赚钱 </tag>
-            
-            <tag> 平板电脑 </tag>
-            
-            <tag> 快手直播 </tag>
-            
-            <tag> 放电影 </tag>
-            
-            <tag> 一块钱 </tag>
-            
-            <tag> 三个小时 </tag>
             
         </tags>
       
@@ -18963,45 +18986,6 @@
     
     
     <entry>
-      <title>挖狗狗币教程是终于写好了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/fb28f637/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/fb28f637/</url>
-      
-        <content type="html"><![CDATA[<p>教程其实也不难，就是用到的截图要几张，因为我写得比较详细，所以是差不多每一步都截图并且标注说明了，所以弄起来就比较费时间一点。</p><span id="more"></span><p>但是其实做起来就真的很简单了，因为就只用到两个网站，还有安装两个软件就可以了，但是为了能让更多的人看懂我还是把每一步都做到详细的写出来，并且是用的图文并茂的形式，让人一看就一目了然。</p><p>教程是有了，但是还是需要自己去实践摸索的，不实践看了再多还是不会，可能教程也不是很全面，但是小细节的东西真的不难的，就和安装一个软件一样没有什么区别，这个也就是安装两个软件然后设置一下就可以了，教程地址就放在下面了，平台上不发了，发在我的博客网站上了，这是教程地址：<a href="https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6d36d897/%22%E6%8C%96%E7%8B%97%E7%8B%97%E5%B8%81%E6%95%99%E7%A8%8B%22">挖狗狗币教程</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 教程 </tag>
-            
-            <tag> 挖狗狗币 </tag>
-            
-            <tag> 截图 </tag>
-            
-            <tag> 两个网站 </tag>
-            
-            <tag> 一目了然 </tag>
-            
-            <tag> 实践摸索 </tag>
-            
-            <tag> 博客网站 </tag>
-            
-            <tag> 教程地址 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>挖狗狗币教程</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6d36d897/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6d36d897/</url>
@@ -19049,6 +19033,45 @@
             <tag> 挖矿速度 </tag>
             
             <tag> 钱包地址 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>挖狗狗币教程是终于写好了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/fb28f637/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/fb28f637/</url>
+      
+        <content type="html"><![CDATA[<p>教程其实也不难，就是用到的截图要几张，因为我写得比较详细，所以是差不多每一步都截图并且标注说明了，所以弄起来就比较费时间一点。</p><span id="more"></span><p>但是其实做起来就真的很简单了，因为就只用到两个网站，还有安装两个软件就可以了，但是为了能让更多的人看懂我还是把每一步都做到详细的写出来，并且是用的图文并茂的形式，让人一看就一目了然。</p><p>教程是有了，但是还是需要自己去实践摸索的，不实践看了再多还是不会，可能教程也不是很全面，但是小细节的东西真的不难的，就和安装一个软件一样没有什么区别，这个也就是安装两个软件然后设置一下就可以了，教程地址就放在下面了，平台上不发了，发在我的博客网站上了，这是教程地址：<a href="https://aixz.xyz/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/6d36d897/%22%E6%8C%96%E7%8B%97%E7%8B%97%E5%B8%81%E6%95%99%E7%A8%8B%22">挖狗狗币教程</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 教程 </tag>
+            
+            <tag> 挖狗狗币 </tag>
+            
+            <tag> 截图 </tag>
+            
+            <tag> 两个网站 </tag>
+            
+            <tag> 一目了然 </tag>
+            
+            <tag> 实践摸索 </tag>
+            
+            <tag> 博客网站 </tag>
+            
+            <tag> 教程地址 </tag>
             
         </tags>
       
@@ -19781,45 +19804,6 @@
     
     
     <entry>
-      <title>昨晚喝酒了，以为今天考试过不了，结果还是过了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/59f9dff9/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/59f9dff9/</url>
-      
-        <content type="html"><![CDATA[<p>昨天晚上坐公交车回来后，在下公交车的站台路边超市买了一瓶酒，还有一个酒杯和一包麻辣鱼，总共花了17块钱。其实想喝酒的原因可能是去镇上逛了一圈什么也没有买到心情有点失落，再加上身体也感觉有点累了，所以就想喝杯酒来解解乏。</p><span id="more"></span><p>酒确实是个好东西喝了就一觉睡到早上闹钟响了，但也有不好的就是容易伤记忆，也许昨天记得的东西，今天晚上喝了点酒明天就会不记得了。</p><p>但是还好，今天考试的东西本来就不是很难，只要七十分就可以通过了，所以只要多看几遍昨天记的笔记一般都是可以通过的。我也是有些忘记了的，当考试的时候就怎么也记不起来，但是也不是要求满分，所以就算有些记不起来也是能通过的。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 考试 </tag>
-            
-            <tag> 超市 </tag>
-            
-            <tag> 昨天晚上 </tag>
-            
-            <tag> 想喝酒 </tag>
-            
-            <tag> 解乏 </tag>
-            
-            <tag> 闹钟响了 </tag>
-            
-            <tag> 要求满分 </tag>
-            
-            <tag> 能通过 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>昨晚断电一下子，来电后电脑开不了机</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c983425/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1c983425/</url>
@@ -19863,11 +19847,11 @@
     
     
     <entry>
-      <title>昨晚的一章题做到今天还没有做完</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1b760600/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1b760600/</url>
+      <title>昨晚喝酒了，以为今天考试过不了，结果还是过了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/59f9dff9/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/59f9dff9/</url>
       
-        <content type="html"><![CDATA[<p>昨晚睡觉睡了一会儿，肚子突然感觉特别难受，今天就是一天都没有精神，早上就拿着手机看了下新闻，想做题但是没有精神，下午才感觉有点精神了才去做。</p><span id="more"></span><p>今天是一天都不敢吃饭，吃了肚子又难受，还是饿着好点了，就只吃了点前几天在淘宝上买的小零食，只有到了晚上感觉饿了，才想吃点零食喝点水。</p><p>昨天晚上就开始做的一章题今天是还没有做完，这章是第九章了，做完这章就只剩一章了，还是更新完这篇文章就去把它做完，做完再睡觉，今天的事必须今天做完，不敢再拖了，离四月十一号是没有几天了，我经常都记成十号，还是我刚看了准考证是十一号，比十号还好多一天。</p>]]></content>
+        <content type="html"><![CDATA[<p>昨天晚上坐公交车回来后，在下公交车的站台路边超市买了一瓶酒，还有一个酒杯和一包麻辣鱼，总共花了17块钱。其实想喝酒的原因可能是去镇上逛了一圈什么也没有买到心情有点失落，再加上身体也感觉有点累了，所以就想喝杯酒来解解乏。</p><span id="more"></span><p>酒确实是个好东西喝了就一觉睡到早上闹钟响了，但也有不好的就是容易伤记忆，也许昨天记得的东西，今天晚上喝了点酒明天就会不记得了。</p><p>但是还好，今天考试的东西本来就不是很难，只要七十分就可以通过了，所以只要多看几遍昨天记的笔记一般都是可以通过的。我也是有些忘记了的，当考试的时候就怎么也记不起来，但是也不是要求满分，所以就算有些记不起来也是能通过的。</p>]]></content>
       
       
       <categories>
@@ -19879,19 +19863,21 @@
       
         <tags>
             
-            <tag> 睡觉 </tag>
+            <tag> 考试 </tag>
             
-            <tag> 一章题 </tag>
+            <tag> 超市 </tag>
             
-            <tag> 昨晚 </tag>
+            <tag> 昨天晚上 </tag>
             
-            <tag> 吃点零食 </tag>
+            <tag> 想喝酒 </tag>
             
-            <tag> 更新完 </tag>
+            <tag> 解乏 </tag>
             
-            <tag> 四月十一号 </tag>
+            <tag> 闹钟响了 </tag>
             
-            <tag> 准考证 </tag>
+            <tag> 要求满分 </tag>
+            
+            <tag> 能通过 </tag>
             
         </tags>
       
@@ -19937,6 +19923,43 @@
     
     
     <entry>
+      <title>昨晚的一章题做到今天还没有做完</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1b760600/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1b760600/</url>
+      
+        <content type="html"><![CDATA[<p>昨晚睡觉睡了一会儿，肚子突然感觉特别难受，今天就是一天都没有精神，早上就拿着手机看了下新闻，想做题但是没有精神，下午才感觉有点精神了才去做。</p><span id="more"></span><p>今天是一天都不敢吃饭，吃了肚子又难受，还是饿着好点了，就只吃了点前几天在淘宝上买的小零食，只有到了晚上感觉饿了，才想吃点零食喝点水。</p><p>昨天晚上就开始做的一章题今天是还没有做完，这章是第九章了，做完这章就只剩一章了，还是更新完这篇文章就去把它做完，做完再睡觉，今天的事必须今天做完，不敢再拖了，离四月十一号是没有几天了，我经常都记成十号，还是我刚看了准考证是十一号，比十号还好多一天。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 睡觉 </tag>
+            
+            <tag> 一章题 </tag>
+            
+            <tag> 昨晚 </tag>
+            
+            <tag> 吃点零食 </tag>
+            
+            <tag> 更新完 </tag>
+            
+            <tag> 四月十一号 </tag>
+            
+            <tag> 准考证 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>晚上睡不着，白天睡不醒</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/16ee5046/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/16ee5046/</url>
@@ -19972,6 +19995,55 @@
             <tag> 倒班 </tag>
             
             <tag> 修正 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>最不值得买的电脑</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Infinity/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Infinity/</url>
+      
+        <content type="html"><![CDATA[<p>电脑的种类现在已经越来越多了，有品牌机、自己DIY组装的主机、笔记本电脑、平板电脑、一体机，一体机现在是很少看到了，七八年前好像看到有人买过，现在也没有哪个公司发布和制造一体机了，原因就是没有人买了。</p><span id="more"></span><p>说实在的这种电脑是真的很坑，首先性能很差而且也不支持后期升级，还有携带不方便，和笔记本比起来简直就是一个巨无霸，又大又厚，这种电脑随身携带一点都不方便，就像走到哪里都总是带着一个大显示器一样，还没有现在的迷你主机加一个便携显示器方便，但是自己组装的迷你机又比它的性能强了不只N倍。</p><p>现在这东西已经是老古董了吧，比笔记本出来得晚，笔记本可以说是还活得好好的，一体机早已失去了踪影，在我身边我也只看到一个人买过，当时我都搞不懂他为什么会选择买一体机那种笨重性能差的东西，现在也想不通。</p><p>放着买一台笔记本的性能和那个大家伙也一样啊，难道是为了屏幕大，那笔记本外接显示器也一样啊，估计那东西还不支持外接显示器，而且以前的电脑屏幕大多都是720P的，放在现在看着几十电子垃圾了，送人都没有人要了，最多是只能买个收破烂的按斤称。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 电脑 </tag>
+            
+            <tag> 显示器 </tag>
+            
+            <tag> 平板 </tag>
+            
+            <tag> 电子垃圾 </tag>
+            
+            <tag> 笔记本 </tag>
+            
+            <tag> 种类 </tag>
+            
+            <tag> 越来越多 </tag>
+            
+            <tag> 不值得买 </tag>
+            
+            <tag> DIY组装 </tag>
+            
+            <tag> 品牌机 </tag>
+            
+            <tag> 一体机 </tag>
+            
+            <tag> 老古董 </tag>
+            
+            <tag> 720P </tag>
             
         </tags>
       
@@ -20039,55 +20111,6 @@
             <tag> 指法 </tag>
             
             <tag> 精彩评论 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>最不值得买的电脑</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Infinity/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/Infinity/</url>
-      
-        <content type="html"><![CDATA[<p>电脑的种类现在已经越来越多了，有品牌机、自己DIY组装的主机、笔记本电脑、平板电脑、一体机，一体机现在是很少看到了，七八年前好像看到有人买过，现在也没有哪个公司发布和制造一体机了，原因就是没有人买了。</p><span id="more"></span><p>说实在的这种电脑是真的很坑，首先性能很差而且也不支持后期升级，还有携带不方便，和笔记本比起来简直就是一个巨无霸，又大又厚，这种电脑随身携带一点都不方便，就像走到哪里都总是带着一个大显示器一样，还没有现在的迷你主机加一个便携显示器方便，但是自己组装的迷你机又比它的性能强了不只N倍。</p><p>现在这东西已经是老古董了吧，比笔记本出来得晚，笔记本可以说是还活得好好的，一体机早已失去了踪影，在我身边我也只看到一个人买过，当时我都搞不懂他为什么会选择买一体机那种笨重性能差的东西，现在也想不通。</p><p>放着买一台笔记本的性能和那个大家伙也一样啊，难道是为了屏幕大，那笔记本外接显示器也一样啊，估计那东西还不支持外接显示器，而且以前的电脑屏幕大多都是720P的，放在现在看着几十电子垃圾了，送人都没有人要了，最多是只能买个收破烂的按斤称。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 电脑 </tag>
-            
-            <tag> 显示器 </tag>
-            
-            <tag> 平板 </tag>
-            
-            <tag> 电子垃圾 </tag>
-            
-            <tag> 笔记本 </tag>
-            
-            <tag> 种类 </tag>
-            
-            <tag> 越来越多 </tag>
-            
-            <tag> 不值得买 </tag>
-            
-            <tag> DIY组装 </tag>
-            
-            <tag> 品牌机 </tag>
-            
-            <tag> 一体机 </tag>
-            
-            <tag> 老古董 </tag>
-            
-            <tag> 720P </tag>
             
         </tags>
       
@@ -21015,6 +21038,47 @@
     
     
     <entry>
+      <title>用腾讯手游助手这个刷快手是终于不闪退了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2b996869/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2b996869/</url>
+      
+        <content type="html"><![CDATA[<p>找了很多模拟器，就这个比较稳定一点，其他的用来刷快手要么是卡，要么就直接闪退，最烦的就是闪退了，记得用那个凤凰系统，一直可以循环不停的闪退，直到要拼手速把那个软件卸载了才可以。</p><span id="more"></span><p>腾讯手游助手这个用快手是不闪退，快手极速版还是会偶尔闪退的，但就是不能用自动点击器自动刷，这个有点不好，什么都可以自动化的今天，用手动是真的很花时间。</p><p>也没有找到什么其他方法，用按键精灵录制脚本也不行，不知道还有没有什么办法可以实现自动，用这个微信是很稳了，一点都不闪退，比蓝叠那个用微信好很多，蓝叠是用微信经常闪退，但是有些软件要用微信登录就登录不了，提示说没有安装微信，明明微信就已经打开了，还说没有安装微信，也不知道用什么办法才可以。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 刷快手 </tag>
+            
+            <tag> 闪退 </tag>
+            
+            <tag> 腾讯手游助手 </tag>
+            
+            <tag> 不闪退 </tag>
+            
+            <tag> 比较稳定 </tag>
+            
+            <tag> 拼手速 </tag>
+            
+            <tag> 快手极速版 </tag>
+            
+            <tag> 按键精灵 </tag>
+            
+            <tag> 蓝叠 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>用的联通卡无端地被订购附加产品，扣我一个月9块钱话费</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1f186519/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/1f186519/</url>
@@ -21072,11 +21136,11 @@
     
     
     <entry>
-      <title>用腾讯手游助手这个刷快手是终于不闪退了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2b996869/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2b996869/</url>
+      <title>用自动点击软件刷短视频还可以给自己涨粉</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5eaac7b5/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5eaac7b5/</url>
       
-        <content type="html"><![CDATA[<p>找了很多模拟器，就这个比较稳定一点，其他的用来刷快手要么是卡，要么就直接闪退，最烦的就是闪退了，记得用那个凤凰系统，一直可以循环不停的闪退，直到要拼手速把那个软件卸载了才可以。</p><span id="more"></span><p>腾讯手游助手这个用快手是不闪退，快手极速版还是会偶尔闪退的，但就是不能用自动点击器自动刷，这个有点不好，什么都可以自动化的今天，用手动是真的很花时间。</p><p>也没有找到什么其他方法，用按键精灵录制脚本也不行，不知道还有没有什么办法可以实现自动，用这个微信是很稳了，一点都不闪退，比蓝叠那个用微信好很多，蓝叠是用微信经常闪退，但是有些软件要用微信登录就登录不了，提示说没有安装微信，明明微信就已经打开了，还说没有安装微信，也不知道用什么办法才可以。</p>]]></content>
+        <content type="html"><![CDATA[<p>前面我有一篇文章写了用点击软件刷抖音极速版可以赚钱，这里写一下怎么用自动点击软件给自己涨粉，抖音和快手都可以用的，特别是快手用这个方法涨粉非常明显。</p><span id="more"></span><p>快手和快手极速版都有红包挂件，刷视频不但完成任务可以赚钱，关键的是你刷发现那里推荐的视频，在下面点赞评论是可以给自己涨粉的，当然用手工操作也是可以的，只不过是有点累。</p><p>如果自己有两个手机那用自动点击软件的优势就出来了，你可以一个手机刷快手，另外一个手机刷快手极速版或者抖音极速版，两个手机都设置自动点赞评论，遇到直播的地方就手动跳过。</p><p>现在短视频要想涨粉就必须要账号活跃才行，只有多评论人家才会看到你，作品好坏根本都无所谓，因为是用的算法推荐的，他只会根据作者的活跃度来推荐作品，不活跃它肯定就不会推荐，多评论就是多曝光自己，多增加自己的活跃度。</p><p>这样做比手动的优势就出来了，当然如果有三个安卓手机那就更好了，三个一起刷，如果是只想做完成红包挂件的任务，那就只添加一个模拟滑动就可以了，时间可以设置在7-8秒左右就差不多了，这个的好处就是不用人看守，遇到直播也不用手动跳过，因为直播要你点击了它才会跳进去，不点击时间一到它就会自动滑走，非常适合晚上睡觉的时候手机挂机刷短视频。</p><p> <strong><span class="exturl" data-url="aHR0cHM6Ly9uYmljbXh1eDMubTZ0emEzaXA3eDh6cjEuY29tL2YvWTFDUGNSTE4yX0FP" title="下载快手极速版">下载快手极速版<i class="fa fa-external-link-alt"></i></span></strong> </p><p>填写我的邀请码：<strong>500973774</strong></p><p>可以<strong>立赚2元</strong>，你也可以再邀请别人赚更多。</p>]]></content>
       
       
       <categories>
@@ -21088,23 +21152,29 @@
       
         <tags>
             
-            <tag> 刷快手 </tag>
+            <tag> 快手 </tag>
             
-            <tag> 闪退 </tag>
+            <tag> 自动点击 </tag>
             
-            <tag> 腾讯手游助手 </tag>
+            <tag> 刷短视频 </tag>
             
-            <tag> 不闪退 </tag>
+            <tag> 红包挂件 </tag>
             
-            <tag> 比较稳定 </tag>
-            
-            <tag> 拼手速 </tag>
+            <tag> 抖音极速版 </tag>
             
             <tag> 快手极速版 </tag>
             
-            <tag> 按键精灵 </tag>
+            <tag> 涨粉 </tag>
             
-            <tag> 蓝叠 </tag>
+            <tag> 手工操作 </tag>
+            
+            <tag> 账号活跃 </tag>
+            
+            <tag> 推荐作品 </tag>
+            
+            <tag> 模拟滑动 </tag>
+            
+            <tag> 挂机刷 </tag>
             
         </tags>
       
@@ -21139,6 +21209,8 @@
             
             <tag> 智能 </tag>
             
+            <tag> 模拟滑动 </tag>
+            
             <tag> 刷抖音 </tag>
             
             <tag> 极速版 </tag>
@@ -21147,60 +21219,11 @@
             
             <tag> 解放双手 </tag>
             
-            <tag> 模拟滑动 </tag>
-            
             <tag> 下一轮 </tag>
             
             <tag> 点赞评论 </tag>
             
             <tag> 伤眼睛 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>用自动点击软件刷短视频还可以给自己涨粉</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5eaac7b5/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/5eaac7b5/</url>
-      
-        <content type="html"><![CDATA[<p>前面我有一篇文章写了用点击软件刷抖音极速版可以赚钱，这里写一下怎么用自动点击软件给自己涨粉，抖音和快手都可以用的，特别是快手用这个方法涨粉非常明显。</p><span id="more"></span><p>快手和快手极速版都有红包挂件，刷视频不但完成任务可以赚钱，关键的是你刷发现那里推荐的视频，在下面点赞评论是可以给自己涨粉的，当然用手工操作也是可以的，只不过是有点累。</p><p>如果自己有两个手机那用自动点击软件的优势就出来了，你可以一个手机刷快手，另外一个手机刷快手极速版或者抖音极速版，两个手机都设置自动点赞评论，遇到直播的地方就手动跳过。</p><p>现在短视频要想涨粉就必须要账号活跃才行，只有多评论人家才会看到你，作品好坏根本都无所谓，因为是用的算法推荐的，他只会根据作者的活跃度来推荐作品，不活跃它肯定就不会推荐，多评论就是多曝光自己，多增加自己的活跃度。</p><p>这样做比手动的优势就出来了，当然如果有三个安卓手机那就更好了，三个一起刷，如果是只想做完成红包挂件的任务，那就只添加一个模拟滑动就可以了，时间可以设置在7-8秒左右就差不多了，这个的好处就是不用人看守，遇到直播也不用手动跳过，因为直播要你点击了它才会跳进去，不点击时间一到它就会自动滑走，非常适合晚上睡觉的时候手机挂机刷短视频。</p><p> <strong><span class="exturl" data-url="aHR0cHM6Ly9uYmljbXh1eDMubTZ0emEzaXA3eDh6cjEuY29tL2YvWTFDUGNSTE4yX0FP" title="下载快手极速版">下载快手极速版<i class="fa fa-external-link-alt"></i></span></strong> </p><p>填写我的邀请码：<strong>500973774</strong></p><p>可以<strong>立赚2元</strong>，你也可以再邀请别人赚更多。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 快手 </tag>
-            
-            <tag> 自动点击 </tag>
-            
-            <tag> 刷短视频 </tag>
-            
-            <tag> 红包挂件 </tag>
-            
-            <tag> 抖音极速版 </tag>
-            
-            <tag> 快手极速版 </tag>
-            
-            <tag> 模拟滑动 </tag>
-            
-            <tag> 涨粉 </tag>
-            
-            <tag> 手工操作 </tag>
-            
-            <tag> 账号活跃 </tag>
-            
-            <tag> 推荐作品 </tag>
-            
-            <tag> 挂机刷 </tag>
             
         </tags>
       
@@ -21323,94 +21346,6 @@
     
     
     <entry>
-      <title>电脑上可以免费看电影的软件</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3a21a683/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3a21a683/</url>
-      
-        <content type="html"><![CDATA[<p>这个软件其实很早就有了，上面的电影还是挺多的，除了清晰度最高只有蓝光之外没有其他缺点了，但是它不需要会员是完全免费的，以前是叫电影天堂，是微软应用商店的UWP软件。</p><span id="more"></span><p>后面不知道为什么被微软下架了，但是只要安装过的电脑没有卸载和重装都是有的，后面开发者又重新上架了，改名为Sky电影，在电脑上应用商店一搜就可以找到，安装完之后打开是看不到内容的，只看到一些上映的电影信息，要在查询那里输入sky三个字母，之后打开就是另外一个世界。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3a21a683/Sky%E7%94%B5%E5%BD%B1.jpg"></p><p>这个可以说是一个良心软件了，从电脑安装win10系统以来我就在用的了，有时候感觉在优酷充了会员看的电影都没有这个上面好看，只要不在乎没有4K高清度的可以用这个看，反正是不要会员，想看都可以随时看。</p><p>电影、电视剧、综艺、电视直播都是有的，用了这个想看电视不用安装其他软件都是可以的，有的电影在优爱腾这些平台没有的，上面也可以找到，看电影真的就要这种电影多的，想看什么就点什么，有一种上初中的时候去街上买CD光盘看电影的那种感觉，但是那时候有时花了两元钱看着封面可以，但是买回家放到影碟机里看了才知道很烂，这个软件就不一样了，感觉不好看就重新换一个就是了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 免费 </tag>
-            
-            <tag> 会员 </tag>
-            
-            <tag> 软件 </tag>
-            
-            <tag> 电视剧 </tag>
-            
-            <tag> 电视直播 </tag>
-            
-            <tag> 电脑上 </tag>
-            
-            <tag> 看电影 </tag>
-            
-            <tag> 优酷 </tag>
-            
-            <tag> 挺多 </tag>
-            
-            <tag> 清晰度 </tag>
-            
-            <tag> 蓝光 </tag>
-            
-            <tag> Sky电影 </tag>
-            
-            <tag> 电影天堂 </tag>
-            
-            <tag> 综艺 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>疫情又严重了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9772c3db/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9772c3db/</url>
-      
-        <content type="html"><![CDATA[<p>新冠病毒也就是差不多去年这个时候爆发的，现在又开始复发了，最大原因还是因为元旦放假的原因吧，听说石家庄感染的56个人都是参加婚礼感染的，这源头应该有点难查出来了。</p><span id="more"></span><p>这个疫情好像一直都没有断过，只是天气热的时候传染率降低了，现在天气一冷病毒的存活几率就开始变高了，所以冬天还是最需要防止的，至少现在只是局部的，情况还是比去年好很多，因为只要局部不扩散，那全国也没有去年那么举国上下防控的地步。</p><p>现在虽然说已经有疫苗了，但是有效性还是需要待观察的，不是谁说打了疫苗去疫情高风险地区不用做个人防护都可以了，那样感染的机率还是非常大的，做好个人防护，常消毒，看来今还得一战呢。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 新冠病毒 </tag>
-            
-            <tag> 元旦放假 </tag>
-            
-            <tag> 存活 </tag>
-            
-            <tag> 局部 </tag>
-            
-            <tag> 防控 </tag>
-            
-            <tag> 个人防护 </tag>
-            
-            <tag> 常消毒 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>电视剧《白发》和小说《白发皇妃》的区别</title>
       <link href="/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/2f437ad2/"/>
       <url>/%E6%83%85%E6%84%9F%E7%BE%8E%E6%96%87/2f437ad2/</url>
@@ -21500,6 +21435,94 @@
             <tag> 国家命运 </tag>
             
             <tag> 不辩真假 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>电脑上可以免费看电影的软件</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3a21a683/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3a21a683/</url>
+      
+        <content type="html"><![CDATA[<p>这个软件其实很早就有了，上面的电影还是挺多的，除了清晰度最高只有蓝光之外没有其他缺点了，但是它不需要会员是完全免费的，以前是叫电影天堂，是微软应用商店的UWP软件。</p><span id="more"></span><p>后面不知道为什么被微软下架了，但是只要安装过的电脑没有卸载和重装都是有的，后面开发者又重新上架了，改名为Sky电影，在电脑上应用商店一搜就可以找到，安装完之后打开是看不到内容的，只看到一些上映的电影信息，要在查询那里输入sky三个字母，之后打开就是另外一个世界。</p><p><img data-src="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/3a21a683/Sky%E7%94%B5%E5%BD%B1.jpg"></p><p>这个可以说是一个良心软件了，从电脑安装win10系统以来我就在用的了，有时候感觉在优酷充了会员看的电影都没有这个上面好看，只要不在乎没有4K高清度的可以用这个看，反正是不要会员，想看都可以随时看。</p><p>电影、电视剧、综艺、电视直播都是有的，用了这个想看电视不用安装其他软件都是可以的，有的电影在优爱腾这些平台没有的，上面也可以找到，看电影真的就要这种电影多的，想看什么就点什么，有一种上初中的时候去街上买CD光盘看电影的那种感觉，但是那时候有时花了两元钱看着封面可以，但是买回家放到影碟机里看了才知道很烂，这个软件就不一样了，感觉不好看就重新换一个就是了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 免费 </tag>
+            
+            <tag> 会员 </tag>
+            
+            <tag> 软件 </tag>
+            
+            <tag> 电视剧 </tag>
+            
+            <tag> 电视直播 </tag>
+            
+            <tag> 电脑上 </tag>
+            
+            <tag> 看电影 </tag>
+            
+            <tag> 优酷 </tag>
+            
+            <tag> 挺多 </tag>
+            
+            <tag> 清晰度 </tag>
+            
+            <tag> 蓝光 </tag>
+            
+            <tag> Sky电影 </tag>
+            
+            <tag> 电影天堂 </tag>
+            
+            <tag> 综艺 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>疫情又严重了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9772c3db/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/9772c3db/</url>
+      
+        <content type="html"><![CDATA[<p>新冠病毒也就是差不多去年这个时候爆发的，现在又开始复发了，最大原因还是因为元旦放假的原因吧，听说石家庄感染的56个人都是参加婚礼感染的，这源头应该有点难查出来了。</p><span id="more"></span><p>这个疫情好像一直都没有断过，只是天气热的时候传染率降低了，现在天气一冷病毒的存活几率就开始变高了，所以冬天还是最需要防止的，至少现在只是局部的，情况还是比去年好很多，因为只要局部不扩散，那全国也没有去年那么举国上下防控的地步。</p><p>现在虽然说已经有疫苗了，但是有效性还是需要待观察的，不是谁说打了疫苗去疫情高风险地区不用做个人防护都可以了，那样感染的机率还是非常大的，做好个人防护，常消毒，看来今还得一战呢。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 新冠病毒 </tag>
+            
+            <tag> 元旦放假 </tag>
+            
+            <tag> 存活 </tag>
+            
+            <tag> 局部 </tag>
+            
+            <tag> 防控 </tag>
+            
+            <tag> 个人防护 </tag>
+            
+            <tag> 常消毒 </tag>
             
         </tags>
       
@@ -23342,45 +23365,6 @@
     
     
     <entry>
-      <title>记录自己真实的梦境:我昨晚做了两个梦，后面一个让我感到很害怕</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/</url>
-      
-        <content type="html"><![CDATA[<p>昨晚做了两个梦，第一个是梦到两个自己从未见过的女孩，梦到自己突然回到了高中时期，梦里两个女孩是和我同班的，而且离我家不是太远，一个感觉很真实，而另外一个我感觉很模糊。</p><span id="more"></span><p>真实的这个每天放学后，我都要跟着她后面走很长一段路，直到快要走到她家对面，我只能远远的看着她，我离她家对面的中间是一条河沟，看着不远，其实实际距离是非常的远，因为我站在她家对面，中间的河沟是一个U弧形的，要从我这边走下去，然后又从她家那边走上去，这种地方我现实中是见到过的，不知道为何会出现在我的梦里，而是且时间地点也是错误的。我只能远远的在对面看着她消失在我的视野里，但是我却就是不敢跟她表白，说我喜欢她。</p><p>第二个梦是梦到自己去一个厂里上班，也不知自己怎么就没有衣服穿了，别人就随便给了我一件，我也不看是不是女人穿的，自己就胡乱穿在身上了，后来遇到厂里一个上了年纪的女人，说我身上穿的那件衣服，是一个已经逝去的女人穿的，还告诉我那个女人的名字叫邓红，说她已经病逝一年多了。我他妈顿时就是毛骨悚然，在梦中我都感到害怕了，我怎么就穿着死去女人的衣服，难怪那衣服上还有女人的味道，我顿时就被吓惊醒了，这太恐怖了。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 厂里上班 </tag>
-            
-            <tag> 衣服 </tag>
-            
-            <tag> 真实 </tag>
-            
-            <tag> 两个梦 </tag>
-            
-            <tag> 同班 </tag>
-            
-            <tag> 河沟 </tag>
-            
-            <tag> 吓惊醒了 </tag>
-            
-            <tag> 太恐怖了 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>记录自己的梦境：在梦里我回到了自己读初中的那个学校</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ab9a4404/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/ab9a4404/</url>
@@ -23436,6 +23420,45 @@
     
     
     <entry>
+      <title>记录自己真实的梦境:我昨晚做了两个梦，后面一个让我感到很害怕</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/acf4d531/</url>
+      
+        <content type="html"><![CDATA[<p>昨晚做了两个梦，第一个是梦到两个自己从未见过的女孩，梦到自己突然回到了高中时期，梦里两个女孩是和我同班的，而且离我家不是太远，一个感觉很真实，而另外一个我感觉很模糊。</p><span id="more"></span><p>真实的这个每天放学后，我都要跟着她后面走很长一段路，直到快要走到她家对面，我只能远远的看着她，我离她家对面的中间是一条河沟，看着不远，其实实际距离是非常的远，因为我站在她家对面，中间的河沟是一个U弧形的，要从我这边走下去，然后又从她家那边走上去，这种地方我现实中是见到过的，不知道为何会出现在我的梦里，而是且时间地点也是错误的。我只能远远的在对面看着她消失在我的视野里，但是我却就是不敢跟她表白，说我喜欢她。</p><p>第二个梦是梦到自己去一个厂里上班，也不知自己怎么就没有衣服穿了，别人就随便给了我一件，我也不看是不是女人穿的，自己就胡乱穿在身上了，后来遇到厂里一个上了年纪的女人，说我身上穿的那件衣服，是一个已经逝去的女人穿的，还告诉我那个女人的名字叫邓红，说她已经病逝一年多了。我他妈顿时就是毛骨悚然，在梦中我都感到害怕了，我怎么就穿着死去女人的衣服，难怪那衣服上还有女人的味道，我顿时就被吓惊醒了，这太恐怖了。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 厂里上班 </tag>
+            
+            <tag> 衣服 </tag>
+            
+            <tag> 真实 </tag>
+            
+            <tag> 两个梦 </tag>
+            
+            <tag> 同班 </tag>
+            
+            <tag> 河沟 </tag>
+            
+            <tag> 吓惊醒了 </tag>
+            
+            <tag> 太恐怖了 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>试用一款清僵尸粉的软件</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/992367e2/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/992367e2/</url>
@@ -23469,43 +23492,6 @@
             <tag> 酷V群发器 </tag>
             
             <tag> 群发 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>说是不用排队的，结果人很多</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2fad63c5/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2fad63c5/</url>
-      
-        <content type="html"><![CDATA[<p>今天去打疫苗，那个大喇叭里面说的是不用排队的，结果去了人很多，我去的时候就已经排了四排了，后面那个公交车还在一车一车的拉人过来，还好我是骑电动车去的，要是等公交车不知道要等多久。</p><span id="more"></span><p>坐公交车是去的时候要等，来的时候也是要等，再说了那么多人去卫生院，肯定是要等的时间比平时长了。自己骑电动车去就快了，十多分钟就到了。</p><p>除了要在外面排队很长时间之外，进去了还是很快的，一会就打好了，打好了还要在里面观察半个小时，到了那个医师写在单上的时间就可以走了。</p><p>感觉除了打的时候痛一点外，手感觉有点麻木之外，好像也没有什么副作用，打了还是要继续戴口罩的，因为还是不能保证百分百的有效。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 结果 </tag>
-            
-            <tag> 骑电动车 </tag>
-            
-            <tag> 观察 </tag>
-            
-            <tag> 打疫苗 </tag>
-            
-            <tag> 不用排队 </tag>
-            
-            <tag> 戴口罩 </tag>
-            
-            <tag> 坐公交车 </tag>
             
         </tags>
       
@@ -23555,6 +23541,43 @@
             <tag> 心理学 </tag>
             
             <tag> 广告学 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>说是不用排队的，结果人很多</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2fad63c5/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/2fad63c5/</url>
+      
+        <content type="html"><![CDATA[<p>今天去打疫苗，那个大喇叭里面说的是不用排队的，结果去了人很多，我去的时候就已经排了四排了，后面那个公交车还在一车一车的拉人过来，还好我是骑电动车去的，要是等公交车不知道要等多久。</p><span id="more"></span><p>坐公交车是去的时候要等，来的时候也是要等，再说了那么多人去卫生院，肯定是要等的时间比平时长了。自己骑电动车去就快了，十多分钟就到了。</p><p>除了要在外面排队很长时间之外，进去了还是很快的，一会就打好了，打好了还要在里面观察半个小时，到了那个医师写在单上的时间就可以走了。</p><p>感觉除了打的时候痛一点外，手感觉有点麻木之外，好像也没有什么副作用，打了还是要继续戴口罩的，因为还是不能保证百分百的有效。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 结果 </tag>
+            
+            <tag> 骑电动车 </tag>
+            
+            <tag> 观察 </tag>
+            
+            <tag> 打疫苗 </tag>
+            
+            <tag> 不用排队 </tag>
+            
+            <tag> 戴口罩 </tag>
+            
+            <tag> 坐公交车 </tag>
             
         </tags>
       
@@ -24993,47 +25016,6 @@
     
     
     <entry>
-      <title>题库的试题是终于做完了，明天要起早点来去考试了</title>
-      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e2cd592c/"/>
-      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e2cd592c/</url>
-      
-        <content type="html"><![CDATA[<p>今天没有什么事所以一下子就把最后的一套试题做完了，感觉今天做的这一套做得还可以，比前天做的那套正确率要高很多。</p><span id="more"></span><p>今天做的这套单选题只错了三个，多选也只错了两个，照这样的正确率考过应该是没有多大问题的，前面的选择题就可以拿三十多分，后面主观题随便拿个20多分也完全是可以的，反正我是感觉有信心能考过的。</p><p>明天不知道是骑车去考试还是坐公交车，公交车是太难等了，想着还是骑车去吧，骑车去回来的时候方便点，坐公交中午是没有回来的公交车，要走另一条线路太绕了，还要转一路公交车，实在是难等，骑电动车去就是放在外面怕被人偷，有保安在外面看着的应该没有事吧。</p><p>上次看着很多人也是骑电动车去的，上次去考一次是早上一次下午，早上那次回来的时候我坐公交车都坐睡着去。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 日常记录 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> 公交车 </tag>
-            
-            <tag> 题库 </tag>
-            
-            <tag> 做完 </tag>
-            
-            <tag> 试题 </tag>
-            
-            <tag> 去考试 </tag>
-            
-            <tag> 正确率 </tag>
-            
-            <tag> 有信心 </tag>
-            
-            <tag> 被人偷 </tag>
-            
-            <tag> 坐睡着 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>马上又要到元宵节了</title>
       <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c4e203d2/"/>
       <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/c4e203d2/</url>
@@ -25069,6 +25051,47 @@
             <tag> 太甜 </tag>
             
             <tag> 酱油 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>题库的试题是终于做完了，明天要起早点来去考试了</title>
+      <link href="/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e2cd592c/"/>
+      <url>/%E6%97%A5%E5%B8%B8%E8%AE%B0%E5%BD%95/e2cd592c/</url>
+      
+        <content type="html"><![CDATA[<p>今天没有什么事所以一下子就把最后的一套试题做完了，感觉今天做的这一套做得还可以，比前天做的那套正确率要高很多。</p><span id="more"></span><p>今天做的这套单选题只错了三个，多选也只错了两个，照这样的正确率考过应该是没有多大问题的，前面的选择题就可以拿三十多分，后面主观题随便拿个20多分也完全是可以的，反正我是感觉有信心能考过的。</p><p>明天不知道是骑车去考试还是坐公交车，公交车是太难等了，想着还是骑车去吧，骑车去回来的时候方便点，坐公交中午是没有回来的公交车，要走另一条线路太绕了，还要转一路公交车，实在是难等，骑电动车去就是放在外面怕被人偷，有保安在外面看着的应该没有事吧。</p><p>上次看着很多人也是骑电动车去的，上次去考一次是早上一次下午，早上那次回来的时候我坐公交车都坐睡着去。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 日常记录 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 公交车 </tag>
+            
+            <tag> 题库 </tag>
+            
+            <tag> 做完 </tag>
+            
+            <tag> 试题 </tag>
+            
+            <tag> 去考试 </tag>
+            
+            <tag> 正确率 </tag>
+            
+            <tag> 有信心 </tag>
+            
+            <tag> 被人偷 </tag>
+            
+            <tag> 坐睡着 </tag>
             
         </tags>
       
